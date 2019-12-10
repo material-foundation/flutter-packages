@@ -1,3 +1,18 @@
+## [0.1.1] - 2019-12-10
+
+### Generated method names changed back to pre 0.1.0 (breaking change).
+
+For example,
+
+`GoogleFonts.latoTextStyle(...)` is now `GoogleFonts.lato(...)`.
+
+### Text theme parameters are now optional positional parameters (breaking change).
+
+For example,
+
+`GoogleFonts.latoTextTheme(textTheme: TextTheme(...))` is now `GoogleFonts.latoTextTheme(TextTheme(...))`.
+
+
 ## [0.1.0] - 2019-12-06
 
 ### Generated method names changed (breaking change).
