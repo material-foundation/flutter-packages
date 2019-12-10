@@ -44,8 +44,7 @@ void main() {
           {'variant': variant, 'url': item['files'][variant]}
       ],
       'themeParams': [
-        for (final themeParam in themeParams)
-          {'value': themeParam}
+        for (final themeParam in themeParams) {'value': themeParam}
       ]
     });
   }
