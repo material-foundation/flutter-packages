@@ -28,7 +28,7 @@ To use `GoogleFonts` with the default TextStyle:
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.latoTextStyle(),
+  style: GoogleFonts.lato(),
 ),
 ```
 
@@ -37,7 +37,7 @@ To use `GoogleFonts` with an existing `TextStyle`:
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.latoTextStyle(
+  style: GoogleFonts.lato(
     textStyle: TextStyle(color: Colors.blue, letterSpacing: .5),
   ),
 ),
@@ -48,7 +48,7 @@ or
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.latoTextStyle(textStyle: Theme.of(context).textTheme.display1),
+  style: GoogleFonts.lato(textStyle: Theme.of(context).textTheme.display1),
 ),
 ```
 
@@ -57,7 +57,7 @@ To override the `fontSize`, `fontWeight`, or `fontStyle`:
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.latoTextStyle(
+  style: GoogleFonts.lato(
     textStyle: Theme.of(context).textTheme.display1,
     fontSize: 48,
     fontWeight: FontWeight.w700,
