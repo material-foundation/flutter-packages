@@ -110,7 +110,7 @@ packages:
     source: hosted
     version: "4.1.1"
   mustache:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: mustache
       url: "https://pub.dartlang.org"

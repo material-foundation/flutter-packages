@@ -12,7 +12,7 @@ import 'src/google_fonts_variant.dart';
 
 class GoogleFonts {
   {{#method}}
-  static TextStyle {{methodName}}TextStyle({
+  static TextStyle {{methodName}}({
     TextStyle textStyle,
     double fontSize,
     FontWeight fontWeight,
@@ -38,7 +38,7 @@ class GoogleFonts {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       {{#themeParams}}
-      {{value}}: GoogleFonts.{{methodName}}TextStyle(textStyle: textTheme?.{{value}}),
+      {{value}}: GoogleFonts.{{methodName}}(textStyle: textTheme?.{{value}}),
       {{/themeParams}}
     );
   }
