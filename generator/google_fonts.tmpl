@@ -1,0 +1,47 @@
+// GENERATED CODE - DO NOT EDIT
+
+// Copyright 2019 The Flutter team. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// WARNING: This package is experimental and should not be used in production.
+
+import 'package:flutter/material.dart';
+import 'src/google_fonts_base.dart';
+import 'src/google_fonts_variant.dart';
+
+class GoogleFonts {
+  {{#method}}
+  static TextStyle {{methodName}}TextStyle({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      {{#fontUrls}}
+      GoogleFontsVariant.fromString('{{variant}}'): '{{url}}',
+      {{/fontUrls}}
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: '{{fontFamily}}',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme {{methodName}}TextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      {{#themeParams}}
+      {{value}}: GoogleFonts.{{methodName}}TextStyle(textStyle: textTheme?.{{value}}),
+      {{/themeParams}}
+    );
+  }
+
+  {{/method}}
+}
