@@ -18,8 +18,7 @@ main() {
       fontStyle: FontStyle.normal,
     );
 
-    final outputTextStyle =
-        GoogleFonts.robotoTextStyle(textStyle: inputTextStyle);
+    final outputTextStyle = GoogleFonts.roboto(textStyle: inputTextStyle);
 
     expect(outputTextStyle.fontFamily, equals('Roboto_regular'));
   });
@@ -31,8 +30,7 @@ main() {
       fontStyle: FontStyle.italic,
     );
 
-    final outputTextStyle =
-        GoogleFonts.robotoTextStyle(textStyle: inputTextStyle);
+    final outputTextStyle = GoogleFonts.roboto(textStyle: inputTextStyle);
 
     expect(outputTextStyle.fontFamily, equals('Roboto_italic'));
   });
@@ -44,8 +42,7 @@ main() {
       fontStyle: FontStyle.normal,
     );
 
-    final outputTextStyle =
-        GoogleFonts.robotoTextStyle(textStyle: inputTextStyle);
+    final outputTextStyle = GoogleFonts.roboto(textStyle: inputTextStyle);
 
     expect(outputTextStyle.fontFamily, equals('Roboto_500'));
   });
@@ -57,8 +54,7 @@ main() {
       fontStyle: FontStyle.italic,
     );
 
-    final outputTextStyle =
-        GoogleFonts.robotoTextStyle(textStyle: inputTextStyle);
+    final outputTextStyle = GoogleFonts.roboto(textStyle: inputTextStyle);
 
     expect(outputTextStyle.fontFamily, equals('Roboto_500italic'));
   });
@@ -73,8 +69,7 @@ main() {
       fontStyle: FontStyle.italic,
     );
 
-    final outputTextStyle =
-        GoogleFonts.cardoTextStyle(textStyle: inputTextStyle);
+    final outputTextStyle = GoogleFonts.cardo(textStyle: inputTextStyle);
 
     expect(outputTextStyle.fontFamily, equals('Cardo_italic'));
   });
@@ -86,7 +81,7 @@ main() {
       fontStyle: FontStyle.italic,
     );
 
-    final outputTextStyle = GoogleFonts.cardoTextStyle(
+    final outputTextStyle = GoogleFonts.cardo(
       textStyle: inputTextStyle,
       fontWeight: FontWeight.w200,
       fontStyle: FontStyle.normal,
@@ -98,7 +93,7 @@ main() {
 
   testWidgets('Defaults to regular when no Text style is passed',
       (tester) async {
-    final outputTextStyle = GoogleFonts.latoTextStyle();
+    final outputTextStyle = GoogleFonts.lato();
 
     expect(outputTextStyle.fontFamily, equals('Lato_regular'));
   });
@@ -106,7 +101,7 @@ main() {
   testWidgets(
       'Defaults to regular when a Text style with no weight or style is passed',
       (tester) async {
-    final outputTextStyle = GoogleFonts.latoTextStyle(textStyle: TextStyle());
+    final outputTextStyle = GoogleFonts.lato(textStyle: TextStyle());
 
     expect(outputTextStyle.fontFamily, equals('Lato_regular'));
   });
@@ -114,14 +109,14 @@ main() {
   testWidgets('fontSize is honored when passed in via a TextStyle param',
       (tester) async {
     final textStyle = TextStyle(fontSize: 37);
-    final outputTextStyle = GoogleFonts.ranchoTextStyle(textStyle: textStyle);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
 
     expect(outputTextStyle.fontSize, equals(37));
   });
 
   testWidgets('fontSize is honored from a passed in the fontSize param',
       (tester) async {
-    final outputTextStyle = GoogleFonts.ranchoTextStyle(fontSize: 31);
+    final outputTextStyle = GoogleFonts.rancho(fontSize: 31);
 
     expect(outputTextStyle.fontSize, equals(31));
   });
@@ -130,7 +125,7 @@ main() {
       'fontSize from top level fontSize param takes precedence over fontSize '
       'from TextStyle param', (tester) async {
     final textStyle = TextStyle(fontSize: 41);
-    final outputTextStyle = GoogleFonts.ranchoTextStyle(
+    final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
       fontSize: 47,
     );
@@ -161,7 +156,7 @@ main() {
     // In app this is usually obtained by Theme.of(context).textTheme.
     final baseTextTheme = TextTheme(
       display2: TextStyle(fontWeight: FontWeight.w700),
-      body1: GoogleFonts.acmeTextStyle(),
+      body1: GoogleFonts.acme(),
       subtitle: TextStyle(fontStyle: FontStyle.italic),
     );
 
