@@ -513,6 +513,86 @@ class GoogleFonts {
     );
   }
 
+  static TextStyle alata({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/alata/v1/PbytFmztEwbIofe6xKcRQEOX.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'Alata',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme alataTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.alata(textStyle: textTheme?.display4),
+      display3: GoogleFonts.alata(textStyle: textTheme?.display3),
+      display2: GoogleFonts.alata(textStyle: textTheme?.display2),
+      display1: GoogleFonts.alata(textStyle: textTheme?.display1),
+      headline: GoogleFonts.alata(textStyle: textTheme?.headline),
+      title: GoogleFonts.alata(textStyle: textTheme?.title),
+      subhead: GoogleFonts.alata(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.alata(textStyle: textTheme?.body2),
+      body1: GoogleFonts.alata(textStyle: textTheme?.body1),
+      caption: GoogleFonts.alata(textStyle: textTheme?.caption),
+      button: GoogleFonts.alata(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.alata(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.alata(textStyle: textTheme?.overline),
+    );
+  }
+
+  static TextStyle alatsi({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/alatsi/v1/TK3iWkUJAxQ2nLNGHjUHte5fKg.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'Alatsi',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme alatsiTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.alatsi(textStyle: textTheme?.display4),
+      display3: GoogleFonts.alatsi(textStyle: textTheme?.display3),
+      display2: GoogleFonts.alatsi(textStyle: textTheme?.display2),
+      display1: GoogleFonts.alatsi(textStyle: textTheme?.display1),
+      headline: GoogleFonts.alatsi(textStyle: textTheme?.headline),
+      title: GoogleFonts.alatsi(textStyle: textTheme?.title),
+      subhead: GoogleFonts.alatsi(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.alatsi(textStyle: textTheme?.body2),
+      body1: GoogleFonts.alatsi(textStyle: textTheme?.body1),
+      caption: GoogleFonts.alatsi(textStyle: textTheme?.caption),
+      button: GoogleFonts.alatsi(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.alatsi(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.alatsi(textStyle: textTheme?.overline),
+    );
+  }
+
   static TextStyle aldrich({
     TextStyle textStyle,
     double fontSize,
@@ -4792,6 +4872,48 @@ class GoogleFonts {
     );
   }
 
+  static TextStyle baskervville({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/baskervville/v1/YA9Ur0yU4l_XOrogbkun3kQgt5OohvbJ9A.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/baskervville/v1/YA9Kr0yU4l_XOrogbkun3kQQtZmspPPZ9Mlt.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'Baskervville',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme baskervvilleTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.baskervville(textStyle: textTheme?.display4),
+      display3: GoogleFonts.baskervville(textStyle: textTheme?.display3),
+      display2: GoogleFonts.baskervville(textStyle: textTheme?.display2),
+      display1: GoogleFonts.baskervville(textStyle: textTheme?.display1),
+      headline: GoogleFonts.baskervville(textStyle: textTheme?.headline),
+      title: GoogleFonts.baskervville(textStyle: textTheme?.title),
+      subhead: GoogleFonts.baskervville(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.baskervville(textStyle: textTheme?.body2),
+      body1: GoogleFonts.baskervville(textStyle: textTheme?.body1),
+      caption: GoogleFonts.baskervville(textStyle: textTheme?.caption),
+      button: GoogleFonts.baskervville(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.baskervville(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.baskervville(textStyle: textTheme?.overline),
+    );
+  }
+
   static TextStyle battambang({
     TextStyle textStyle,
     double fontSize,
@@ -4977,6 +5099,46 @@ class GoogleFonts {
       button: GoogleFonts.beVietnam(textStyle: textTheme?.button),
       subtitle: GoogleFonts.beVietnam(textStyle: textTheme?.subtitle),
       overline: GoogleFonts.beVietnam(textStyle: textTheme?.overline),
+    );
+  }
+
+  static TextStyle bebasNeue({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXooxW5rygbi49c.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'BebasNeue',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme bebasNeueTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.bebasNeue(textStyle: textTheme?.display4),
+      display3: GoogleFonts.bebasNeue(textStyle: textTheme?.display3),
+      display2: GoogleFonts.bebasNeue(textStyle: textTheme?.display2),
+      display1: GoogleFonts.bebasNeue(textStyle: textTheme?.display1),
+      headline: GoogleFonts.bebasNeue(textStyle: textTheme?.headline),
+      title: GoogleFonts.bebasNeue(textStyle: textTheme?.title),
+      subhead: GoogleFonts.bebasNeue(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.bebasNeue(textStyle: textTheme?.body2),
+      body1: GoogleFonts.bebasNeue(textStyle: textTheme?.body1),
+      caption: GoogleFonts.bebasNeue(textStyle: textTheme?.caption),
+      button: GoogleFonts.bebasNeue(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.bebasNeue(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.bebasNeue(textStyle: textTheme?.overline),
     );
   }
 
@@ -5899,21 +6061,21 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('100'):
-          'http://fonts.gstatic.com/s/blinker/v2/cIf_MaFatEE-VTaP_E2hZEsCkIt9QQ.ttf',
+          'http://fonts.gstatic.com/s/blinker/v3/cIf_MaFatEE-VTaP_E2hZEsCkIt9QQ.ttf',
       GoogleFontsVariant.fromString('200'):
-          'http://fonts.gstatic.com/s/blinker/v2/cIf4MaFatEE-VTaP_OGARGEsnIJkWL4.ttf',
+          'http://fonts.gstatic.com/s/blinker/v3/cIf4MaFatEE-VTaP_OGARGEsnIJkWL4.ttf',
       GoogleFontsVariant.fromString('300'):
-          'http://fonts.gstatic.com/s/blinker/v2/cIf4MaFatEE-VTaP_IWDRGEsnIJkWL4.ttf',
+          'http://fonts.gstatic.com/s/blinker/v3/cIf4MaFatEE-VTaP_IWDRGEsnIJkWL4.ttf',
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/blinker/v2/cIf9MaFatEE-VTaPxCmrYGkHgIs.ttf',
+          'http://fonts.gstatic.com/s/blinker/v3/cIf9MaFatEE-VTaPxCmrYGkHgIs.ttf',
       GoogleFontsVariant.fromString('600'):
-          'http://fonts.gstatic.com/s/blinker/v2/cIf4MaFatEE-VTaP_PGFRGEsnIJkWL4.ttf',
+          'http://fonts.gstatic.com/s/blinker/v3/cIf4MaFatEE-VTaP_PGFRGEsnIJkWL4.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/blinker/v2/cIf4MaFatEE-VTaP_JWERGEsnIJkWL4.ttf',
+          'http://fonts.gstatic.com/s/blinker/v3/cIf4MaFatEE-VTaP_JWERGEsnIJkWL4.ttf',
       GoogleFontsVariant.fromString('800'):
-          'http://fonts.gstatic.com/s/blinker/v2/cIf4MaFatEE-VTaP_ImHRGEsnIJkWL4.ttf',
+          'http://fonts.gstatic.com/s/blinker/v3/cIf4MaFatEE-VTaP_ImHRGEsnIJkWL4.ttf',
       GoogleFontsVariant.fromString('900'):
-          'http://fonts.gstatic.com/s/blinker/v2/cIf4MaFatEE-VTaP_K2GRGEsnIJkWL4.ttf',
+          'http://fonts.gstatic.com/s/blinker/v3/cIf4MaFatEE-VTaP_K2GRGEsnIJkWL4.ttf',
     };
 
     return googleFontsTextStyle(
@@ -6939,6 +7101,46 @@ class GoogleFonts {
     );
   }
 
+  static TextStyle calistoga({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/calistoga/v1/6NUU8F2OJg6MeR7l4e0vtMYAwdRZfw.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'Calistoga',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme calistogaTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.calistoga(textStyle: textTheme?.display4),
+      display3: GoogleFonts.calistoga(textStyle: textTheme?.display3),
+      display2: GoogleFonts.calistoga(textStyle: textTheme?.display2),
+      display1: GoogleFonts.calistoga(textStyle: textTheme?.display1),
+      headline: GoogleFonts.calistoga(textStyle: textTheme?.headline),
+      title: GoogleFonts.calistoga(textStyle: textTheme?.title),
+      subhead: GoogleFonts.calistoga(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.calistoga(textStyle: textTheme?.body2),
+      body1: GoogleFonts.calistoga(textStyle: textTheme?.body1),
+      caption: GoogleFonts.calistoga(textStyle: textTheme?.caption),
+      button: GoogleFonts.calistoga(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.calistoga(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.calistoga(textStyle: textTheme?.overline),
+    );
+  }
+
   static TextStyle calligraffitti({
     TextStyle textStyle,
     double fontSize,
@@ -7805,19 +8007,19 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('200'):
-          'http://fonts.gstatic.com/s/changa/v7/2-cl9JNi2YuVOUcsqb2bUsT5rZhaZg.ttf',
+          'http://fonts.gstatic.com/s/changa/v8/2-c79JNi2YuVOUcOarRPgnNGooxCZy2xQjDp9htf1ZM.ttf',
       GoogleFontsVariant.fromString('300'):
-          'http://fonts.gstatic.com/s/changa/v7/2-cl9JNi2YuVOUcszb6bUsT5rZhaZg.ttf',
+          'http://fonts.gstatic.com/s/changa/v8/2-c79JNi2YuVOUcOarRPgnNGooxCZ_OxQjDp9htf1ZM.ttf',
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/changa/v7/2-cm9JNi2YuVOUcUYZa_Wu_lpA.ttf',
+          'http://fonts.gstatic.com/s/changa/v8/2-c79JNi2YuVOUcOarRPgnNGooxCZ62xQjDp9htf1ZM.ttf',
       GoogleFontsVariant.fromString('500'):
-          'http://fonts.gstatic.com/s/changa/v7/2-cl9JNi2YuVOUcslb-bUsT5rZhaZg.ttf',
+          'http://fonts.gstatic.com/s/changa/v8/2-c79JNi2YuVOUcOarRPgnNGooxCZ5-xQjDp9htf1ZM.ttf',
       GoogleFontsVariant.fromString('600'):
-          'http://fonts.gstatic.com/s/changa/v7/2-cl9JNi2YuVOUcsubibUsT5rZhaZg.ttf',
+          'http://fonts.gstatic.com/s/changa/v8/2-c79JNi2YuVOUcOarRPgnNGooxCZ3O2QjDp9htf1ZM.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/changa/v7/2-cl9JNi2YuVOUcs3bmbUsT5rZhaZg.ttf',
+          'http://fonts.gstatic.com/s/changa/v8/2-c79JNi2YuVOUcOarRPgnNGooxCZ0q2QjDp9htf1ZM.ttf',
       GoogleFontsVariant.fromString('800'):
-          'http://fonts.gstatic.com/s/changa/v7/2-cl9JNi2YuVOUcswbqbUsT5rZhaZg.ttf',
+          'http://fonts.gstatic.com/s/changa/v8/2-c79JNi2YuVOUcOarRPgnNGooxCZy22QjDp9htf1ZM.ttf',
     };
 
     return googleFontsTextStyle(
@@ -9623,6 +9825,52 @@ class GoogleFonts {
     );
   }
 
+  static TextStyle courierPrime({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/courierprime/v1/u-450q2lgwslOqpF_6gQ8kELWwZjW-_-tvg.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/courierprime/v1/u-4n0q2lgwslOqpF_6gQ8kELawRpX837pvjxPA.ttf',
+      GoogleFontsVariant.fromString('700'):
+          'http://fonts.gstatic.com/s/courierprime/v1/u-4k0q2lgwslOqpF_6gQ8kELY7pMf-fVqvHoJXw.ttf',
+      GoogleFontsVariant.fromString('700italic'):
+          'http://fonts.gstatic.com/s/courierprime/v1/u-4i0q2lgwslOqpF_6gQ8kELawRR4-LfrtPtNXyeAg.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'CourierPrime',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme courierPrimeTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.courierPrime(textStyle: textTheme?.display4),
+      display3: GoogleFonts.courierPrime(textStyle: textTheme?.display3),
+      display2: GoogleFonts.courierPrime(textStyle: textTheme?.display2),
+      display1: GoogleFonts.courierPrime(textStyle: textTheme?.display1),
+      headline: GoogleFonts.courierPrime(textStyle: textTheme?.headline),
+      title: GoogleFonts.courierPrime(textStyle: textTheme?.title),
+      subhead: GoogleFonts.courierPrime(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.courierPrime(textStyle: textTheme?.body2),
+      body1: GoogleFonts.courierPrime(textStyle: textTheme?.body1),
+      caption: GoogleFonts.courierPrime(textStyle: textTheme?.caption),
+      button: GoogleFonts.courierPrime(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.courierPrime(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.courierPrime(textStyle: textTheme?.overline),
+    );
+  }
+
   static TextStyle cousine({
     TextStyle textStyle,
     double fontSize,
@@ -10247,17 +10495,17 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/dmsans/v3/rP2Hp2ywxg089UriOZSCHBeHFl0.ttf',
+          'http://fonts.gstatic.com/s/dmsans/v4/rP2Hp2ywxg089UriOZSCHBeHFl0.ttf',
       GoogleFontsVariant.fromString('italic'):
-          'http://fonts.gstatic.com/s/dmsans/v3/rP2Fp2ywxg089UriCZaIGDWCBl0O8Q.ttf',
+          'http://fonts.gstatic.com/s/dmsans/v4/rP2Fp2ywxg089UriCZaIGDWCBl0O8Q.ttf',
       GoogleFontsVariant.fromString('500'):
-          'http://fonts.gstatic.com/s/dmsans/v3/rP2Cp2ywxg089UriAWCrOB-sClQX6Cg.ttf',
+          'http://fonts.gstatic.com/s/dmsans/v4/rP2Cp2ywxg089UriAWCrOB-sClQX6Cg.ttf',
       GoogleFontsVariant.fromString('500italic'):
-          'http://fonts.gstatic.com/s/dmsans/v3/rP2Ap2ywxg089UriCZaw7BymDnYS-Cjk6Q.ttf',
+          'http://fonts.gstatic.com/s/dmsans/v4/rP2Ap2ywxg089UriCZaw7BymDnYS-Cjk6Q.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/dmsans/v3/rP2Cp2ywxg089UriASitOB-sClQX6Cg.ttf',
+          'http://fonts.gstatic.com/s/dmsans/v4/rP2Cp2ywxg089UriASitOB-sClQX6Cg.ttf',
       GoogleFontsVariant.fromString('700italic'):
-          'http://fonts.gstatic.com/s/dmsans/v3/rP2Ap2ywxg089UriCZawpBqmDnYS-Cjk6Q.ttf',
+          'http://fonts.gstatic.com/s/dmsans/v4/rP2Ap2ywxg089UriCZawpBqmDnYS-Cjk6Q.ttf',
     };
 
     return googleFontsTextStyle(
@@ -10297,9 +10545,9 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/dmserifdisplay/v3/-nFnOHM81r4j6k0gjAW3mujVU2B2K_d709jy92k.ttf',
+          'http://fonts.gstatic.com/s/dmserifdisplay/v4/-nFnOHM81r4j6k0gjAW3mujVU2B2K_d709jy92k.ttf',
       GoogleFontsVariant.fromString('italic'):
-          'http://fonts.gstatic.com/s/dmserifdisplay/v3/-nFhOHM81r4j6k0gjAW3mujVU2B2G_Vx1_r352np3Q.ttf',
+          'http://fonts.gstatic.com/s/dmserifdisplay/v4/-nFhOHM81r4j6k0gjAW3mujVU2B2G_Vx1_r352np3Q.ttf',
     };
 
     return googleFontsTextStyle(
@@ -10339,9 +10587,9 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/dmseriftext/v3/rnCu-xZa_krGokauCeNq1wWyafOPXHIJErY.ttf',
+          'http://fonts.gstatic.com/s/dmseriftext/v4/rnCu-xZa_krGokauCeNq1wWyafOPXHIJErY.ttf',
       GoogleFontsVariant.fromString('italic'):
-          'http://fonts.gstatic.com/s/dmseriftext/v3/rnCw-xZa_krGokauCeNq1wWyWfGFWFAMArZKqQ.ttf',
+          'http://fonts.gstatic.com/s/dmseriftext/v4/rnCw-xZa_krGokauCeNq1wWyWfGFWFAMArZKqQ.ttf',
     };
 
     return googleFontsTextStyle(
@@ -10421,9 +10669,13 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/dancingscript/v11/If2RXTr6YS-zF4S-kcSWSVi_swLngOAliz4X.ttf',
+          'http://fonts.gstatic.com/s/dancingscript/v13/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSoHTeB9ptDqpw.ttf',
+      GoogleFontsVariant.fromString('500'):
+          'http://fonts.gstatic.com/s/dancingscript/v13/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BAyoHTeB9ptDqpw.ttf',
+      GoogleFontsVariant.fromString('600'):
+          'http://fonts.gstatic.com/s/dancingscript/v13/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B7y0HTeB9ptDqpw.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/dancingscript/v11/If2SXTr6YS-zF4S-kcSWSVi_szpbr8QtoCIervbA.ttf',
+          'http://fonts.gstatic.com/s/dancingscript/v13/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B1i0HTeB9ptDqpw.ttf',
     };
 
     return googleFontsTextStyle(
@@ -11535,25 +11787,25 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/ebgaramond/v11/SlGUmQSNjdsmc35JDF1K5FRyQjgdYxPJ.ttf',
-      GoogleFontsVariant.fromString('italic'):
-          'http://fonts.gstatic.com/s/ebgaramond/v11/SlGWmQSNjdsmc35JDF1K5GRwSDw_ZgPJtWk.ttf',
+          'http://fonts.gstatic.com/s/ebgaramond/v12/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RUA4V-e6yHgQ.ttf',
       GoogleFontsVariant.fromString('500'):
-          'http://fonts.gstatic.com/s/ebgaramond/v11/SlGJmQSNjdsmc35JDF1K5GyGaxwVSA_ArHC_.ttf',
-      GoogleFontsVariant.fromString('500italic'):
-          'http://fonts.gstatic.com/s/ebgaramond/v11/SlGLmQSNjdsmc35JDF1K5GRwcMgWQgviqWC_O7Y.ttf',
+          'http://fonts.gstatic.com/s/ebgaramond/v12/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRUA4V-e6yHgQ.ttf',
       GoogleFontsVariant.fromString('600'):
-          'http://fonts.gstatic.com/s/ebgaramond/v11/SlGJmQSNjdsmc35JDF1K5GyqbBwVSA_ArHC_.ttf',
-      GoogleFontsVariant.fromString('600italic'):
-          'http://fonts.gstatic.com/s/ebgaramond/v11/SlGLmQSNjdsmc35JDF1K5GRwcOQRQgviqWC_O7Y.ttf',
+          'http://fonts.gstatic.com/s/ebgaramond/v12/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-NfNUA4V-e6yHgQ.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/ebgaramond/v11/SlGJmQSNjdsmc35JDF1K5GzObRwVSA_ArHC_.ttf',
-      GoogleFontsVariant.fromString('700italic'):
-          'http://fonts.gstatic.com/s/ebgaramond/v11/SlGLmQSNjdsmc35JDF1K5GRwcIAQQgviqWC_O7Y.ttf',
+          'http://fonts.gstatic.com/s/ebgaramond/v12/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-DPNUA4V-e6yHgQ.ttf',
       GoogleFontsVariant.fromString('800'):
-          'http://fonts.gstatic.com/s/ebgaramond/v11/SlGJmQSNjdsmc35JDF1K5GzSbhwVSA_ArHC_.ttf',
+          'http://fonts.gstatic.com/s/ebgaramond/v12/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-a_NUA4V-e6yHgQ.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/ebgaramond/v12/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7e8QI96WamXgXFI.ttf',
+      GoogleFontsVariant.fromString('500italic'):
+          'http://fonts.gstatic.com/s/ebgaramond/v12/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7eOQI96WamXgXFI.ttf',
+      GoogleFontsVariant.fromString('600italic'):
+          'http://fonts.gstatic.com/s/ebgaramond/v12/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7diR496WamXgXFI.ttf',
+      GoogleFontsVariant.fromString('700italic'):
+          'http://fonts.gstatic.com/s/ebgaramond/v12/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7dbR496WamXgXFI.ttf',
       GoogleFontsVariant.fromString('800italic'):
-          'http://fonts.gstatic.com/s/ebgaramond/v11/SlGLmQSNjdsmc35JDF1K5GRwcJwTQgviqWC_O7Y.ttf',
+          'http://fonts.gstatic.com/s/ebgaramond/v12/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7c8R496WamXgXFI.ttf',
     };
 
     return googleFontsTextStyle(
@@ -13233,21 +13485,21 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/faustina/v4/XLYlIZPxYpJfTbZAFW-4F81Kp28v.ttf',
-      GoogleFontsVariant.fromString('italic'):
-          'http://fonts.gstatic.com/s/faustina/v4/XLYjIZPxYpJfTbZAFV-6Hcloon8vVXg.ttf',
+          'http://fonts.gstatic.com/s/faustina/v5/XLY4IZPxYpJfTbZAFXWzNT2SO8wpWHlsgoEvGVWWe8tbEg.ttf',
       GoogleFontsVariant.fromString('500'):
-          'http://fonts.gstatic.com/s/faustina/v4/XLYiIZPxYpJfTbZAFVdMPulCjHMmTGFt.ttf',
-      GoogleFontsVariant.fromString('500italic'):
-          'http://fonts.gstatic.com/s/faustina/v4/XLYgIZPxYpJfTbZAFV-6JT1BhncESXFtUsM.ttf',
+          'http://fonts.gstatic.com/s/faustina/v5/XLY4IZPxYpJfTbZAFXWzNT2SO8wpWHlssIEvGVWWe8tbEg.ttf',
       GoogleFontsVariant.fromString('600'):
-          'http://fonts.gstatic.com/s/faustina/v4/XLYiIZPxYpJfTbZAFVdgOelCjHMmTGFt.ttf',
-      GoogleFontsVariant.fromString('600italic'):
-          'http://fonts.gstatic.com/s/faustina/v4/XLYgIZPxYpJfTbZAFV-6JRFGhncESXFtUsM.ttf',
+          'http://fonts.gstatic.com/s/faustina/v5/XLY4IZPxYpJfTbZAFXWzNT2SO8wpWHlsXIYvGVWWe8tbEg.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/faustina/v4/XLYiIZPxYpJfTbZAFVcEOOlCjHMmTGFt.ttf',
+          'http://fonts.gstatic.com/s/faustina/v5/XLY4IZPxYpJfTbZAFXWzNT2SO8wpWHlsZYYvGVWWe8tbEg.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/faustina/v5/XLY2IZPxYpJfTbZAFV-6B8JKUqez9n55SsLHWl-SWc5LEnoF.ttf',
+      GoogleFontsVariant.fromString('500italic'):
+          'http://fonts.gstatic.com/s/faustina/v5/XLY2IZPxYpJfTbZAFV-6B8JKUqez9n55SsL1Wl-SWc5LEnoF.ttf',
+      GoogleFontsVariant.fromString('600italic'):
+          'http://fonts.gstatic.com/s/faustina/v5/XLY2IZPxYpJfTbZAFV-6B8JKUqez9n55SsIZXV-SWc5LEnoF.ttf',
       GoogleFontsVariant.fromString('700italic'):
-          'http://fonts.gstatic.com/s/faustina/v4/XLYgIZPxYpJfTbZAFV-6JXVHhncESXFtUsM.ttf',
+          'http://fonts.gstatic.com/s/faustina/v5/XLY2IZPxYpJfTbZAFV-6B8JKUqez9n55SsIgXV-SWc5LEnoF.ttf',
     };
 
     return googleFontsTextStyle(
@@ -14908,6 +15160,60 @@ class GoogleFonts {
     );
   }
 
+  static TextStyle gelasio({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/gelasio/v1/cIf9MaFfvUQxTTqSxCmrYGkHgIs.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/gelasio/v1/cIf_MaFfvUQxTTqS9CuhZEsCkIt9QQ.ttf',
+      GoogleFontsVariant.fromString('500'):
+          'http://fonts.gstatic.com/s/gelasio/v1/cIf4MaFfvUQxTTqS_N2CRGEsnIJkWL4.ttf',
+      GoogleFontsVariant.fromString('500italic'):
+          'http://fonts.gstatic.com/s/gelasio/v1/cIf6MaFfvUQxTTqS9CuZkGImmKBhSL7Y1Q.ttf',
+      GoogleFontsVariant.fromString('600'):
+          'http://fonts.gstatic.com/s/gelasio/v1/cIf4MaFfvUQxTTqS_PGFRGEsnIJkWL4.ttf',
+      GoogleFontsVariant.fromString('600italic'):
+          'http://fonts.gstatic.com/s/gelasio/v1/cIf6MaFfvUQxTTqS9CuZvGUmmKBhSL7Y1Q.ttf',
+      GoogleFontsVariant.fromString('700'):
+          'http://fonts.gstatic.com/s/gelasio/v1/cIf4MaFfvUQxTTqS_JWERGEsnIJkWL4.ttf',
+      GoogleFontsVariant.fromString('700italic'):
+          'http://fonts.gstatic.com/s/gelasio/v1/cIf6MaFfvUQxTTqS9CuZ2GQmmKBhSL7Y1Q.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'Gelasio',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme gelasioTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.gelasio(textStyle: textTheme?.display4),
+      display3: GoogleFonts.gelasio(textStyle: textTheme?.display3),
+      display2: GoogleFonts.gelasio(textStyle: textTheme?.display2),
+      display1: GoogleFonts.gelasio(textStyle: textTheme?.display1),
+      headline: GoogleFonts.gelasio(textStyle: textTheme?.headline),
+      title: GoogleFonts.gelasio(textStyle: textTheme?.title),
+      subhead: GoogleFonts.gelasio(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.gelasio(textStyle: textTheme?.body2),
+      body1: GoogleFonts.gelasio(textStyle: textTheme?.body1),
+      caption: GoogleFonts.gelasio(textStyle: textTheme?.caption),
+      button: GoogleFonts.gelasio(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.gelasio(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.gelasio(textStyle: textTheme?.overline),
+    );
+  }
+
   static TextStyle gentiumBasic({
     TextStyle textStyle,
     double fontSize,
@@ -15239,6 +15545,46 @@ class GoogleFonts {
       button: GoogleFonts.gildaDisplay(textStyle: textTheme?.button),
       subtitle: GoogleFonts.gildaDisplay(textStyle: textTheme?.subtitle),
       overline: GoogleFonts.gildaDisplay(textStyle: textTheme?.overline),
+    );
+  }
+
+  static TextStyle girassol({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/girassol/v1/JTUUjIo_-DK48laaNC9Nz2pJzxbi.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'Girassol',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme girassolTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.girassol(textStyle: textTheme?.display4),
+      display3: GoogleFonts.girassol(textStyle: textTheme?.display3),
+      display2: GoogleFonts.girassol(textStyle: textTheme?.display2),
+      display1: GoogleFonts.girassol(textStyle: textTheme?.display1),
+      headline: GoogleFonts.girassol(textStyle: textTheme?.headline),
+      title: GoogleFonts.girassol(textStyle: textTheme?.title),
+      subhead: GoogleFonts.girassol(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.girassol(textStyle: textTheme?.body2),
+      body1: GoogleFonts.girassol(textStyle: textTheme?.body1),
+      caption: GoogleFonts.girassol(textStyle: textTheme?.caption),
+      button: GoogleFonts.girassol(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.girassol(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.girassol(textStyle: textTheme?.overline),
     );
   }
 
@@ -16017,6 +16363,50 @@ class GoogleFonts {
       button: GoogleFonts.gugi(textStyle: textTheme?.button),
       subtitle: GoogleFonts.gugi(textStyle: textTheme?.subtitle),
       overline: GoogleFonts.gugi(textStyle: textTheme?.overline),
+    );
+  }
+
+  static TextStyle gupter({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/gupter/v1/2-cm9JNmxJqPO1QUYZa_Wu_lpA.ttf',
+      GoogleFontsVariant.fromString('500'):
+          'http://fonts.gstatic.com/s/gupter/v1/2-cl9JNmxJqPO1Qslb-bUsT5rZhaZg.ttf',
+      GoogleFontsVariant.fromString('700'):
+          'http://fonts.gstatic.com/s/gupter/v1/2-cl9JNmxJqPO1Qs3bmbUsT5rZhaZg.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'Gupter',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme gupterTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.gupter(textStyle: textTheme?.display4),
+      display3: GoogleFonts.gupter(textStyle: textTheme?.display3),
+      display2: GoogleFonts.gupter(textStyle: textTheme?.display2),
+      display1: GoogleFonts.gupter(textStyle: textTheme?.display1),
+      headline: GoogleFonts.gupter(textStyle: textTheme?.headline),
+      title: GoogleFonts.gupter(textStyle: textTheme?.title),
+      subhead: GoogleFonts.gupter(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.gupter(textStyle: textTheme?.body2),
+      body1: GoogleFonts.gupter(textStyle: textTheme?.body1),
+      caption: GoogleFonts.gupter(textStyle: textTheme?.caption),
+      button: GoogleFonts.gupter(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.gupter(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.gupter(textStyle: textTheme?.overline),
     );
   }
 
@@ -17739,6 +18129,56 @@ class GoogleFonts {
     );
   }
 
+  static TextStyle ibarraRealNova({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/ibarrarealnova/v1/sZlfdQiA-DBIDCcaWtQzL4BZHoiDoHxSENxuLuE.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/ibarrarealnova/v1/sZlZdQiA-DBIDCcaWtQzL4BZHoiDkH5YFP5rPuF6EA.ttf',
+      GoogleFontsVariant.fromString('600'):
+          'http://fonts.gstatic.com/s/ibarrarealnova/v1/sZlYdQiA-DBIDCcaWtQzL4BZHoiDmKR8NNRFMuhjCXY.ttf',
+      GoogleFontsVariant.fromString('600italic'):
+          'http://fonts.gstatic.com/s/ibarrarealnova/v1/sZladQiA-DBIDCcaWtQzL4BZHoiDkH5gzNBPNspmGXawpg.ttf',
+      GoogleFontsVariant.fromString('700'):
+          'http://fonts.gstatic.com/s/ibarrarealnova/v1/sZlYdQiA-DBIDCcaWtQzL4BZHoiDmMB9NNRFMuhjCXY.ttf',
+      GoogleFontsVariant.fromString('700italic'):
+          'http://fonts.gstatic.com/s/ibarrarealnova/v1/sZladQiA-DBIDCcaWtQzL4BZHoiDkH5gqNFPNspmGXawpg.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'IbarraRealNova',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme ibarraRealNovaTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.ibarraRealNova(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ibarraRealNova(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ibarraRealNova(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ibarraRealNova(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ibarraRealNova(textStyle: textTheme?.headline),
+      title: GoogleFonts.ibarraRealNova(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ibarraRealNova(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ibarraRealNova(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ibarraRealNova(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ibarraRealNova(textStyle: textTheme?.caption),
+      button: GoogleFonts.ibarraRealNova(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ibarraRealNova(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ibarraRealNova(textStyle: textTheme?.overline),
+    );
+  }
+
   static TextStyle iceberg({
     TextStyle textStyle,
     double fontSize,
@@ -18072,6 +18512,56 @@ class GoogleFonts {
       button: GoogleFonts.inknutAntiqua(textStyle: textTheme?.button),
       subtitle: GoogleFonts.inknutAntiqua(textStyle: textTheme?.subtitle),
       overline: GoogleFonts.inknutAntiqua(textStyle: textTheme?.overline),
+    );
+  }
+
+  static TextStyle inriaSerif({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('300'):
+          'http://fonts.gstatic.com/s/inriaserif/v1/fC14PYxPY3rXxEndZJAzN3wAVQjFhFyta3xN.ttf',
+      GoogleFontsVariant.fromString('300italic'):
+          'http://fonts.gstatic.com/s/inriaserif/v1/fC16PYxPY3rXxEndZJAzN3SuT4THjliPbmxN0_E.ttf',
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/inriaserif/v1/fC1lPYxPY3rXxEndZJAzN0SsfSzNr0Ck.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/inriaserif/v1/fC1nPYxPY3rXxEndZJAzN3SudyjvqlCkcmU.ttf',
+      GoogleFontsVariant.fromString('700'):
+          'http://fonts.gstatic.com/s/inriaserif/v1/fC14PYxPY3rXxEndZJAzN3wQUgjFhFyta3xN.ttf',
+      GoogleFontsVariant.fromString('700italic'):
+          'http://fonts.gstatic.com/s/inriaserif/v1/fC16PYxPY3rXxEndZJAzN3SuT5TAjliPbmxN0_E.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'InriaSerif',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme inriaSerifTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.inriaSerif(textStyle: textTheme?.display4),
+      display3: GoogleFonts.inriaSerif(textStyle: textTheme?.display3),
+      display2: GoogleFonts.inriaSerif(textStyle: textTheme?.display2),
+      display1: GoogleFonts.inriaSerif(textStyle: textTheme?.display1),
+      headline: GoogleFonts.inriaSerif(textStyle: textTheme?.headline),
+      title: GoogleFonts.inriaSerif(textStyle: textTheme?.title),
+      subhead: GoogleFonts.inriaSerif(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.inriaSerif(textStyle: textTheme?.body2),
+      body1: GoogleFonts.inriaSerif(textStyle: textTheme?.body1),
+      caption: GoogleFonts.inriaSerif(textStyle: textTheme?.caption),
+      button: GoogleFonts.inriaSerif(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.inriaSerif(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.inriaSerif(textStyle: textTheme?.overline),
     );
   }
 
@@ -19422,13 +19912,13 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/karla/v8/qkBbXvYC6trAT4RSJN225aZO.ttf',
+          'http://fonts.gstatic.com/s/karla/v13/qkBbXvYC6trAT4RSJN225aZO.ttf',
       GoogleFontsVariant.fromString('italic'):
-          'http://fonts.gstatic.com/s/karla/v8/qkBVXvYC6trAT7RQLtmU4LZOgAU.ttf',
+          'http://fonts.gstatic.com/s/karla/v13/qkBVXvYC6trAT7RQLtmU4LZOgAU.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/karla/v8/qkBWXvYC6trAT7zuC_m-zrpHmRzC.ttf',
+          'http://fonts.gstatic.com/s/karla/v13/qkBWXvYC6trAT7zuC_m-zrpHmRzC.ttf',
       GoogleFontsVariant.fromString('700italic'):
-          'http://fonts.gstatic.com/s/karla/v8/qkBQXvYC6trAT7RQFmW7xL5lnAzCKNg.ttf',
+          'http://fonts.gstatic.com/s/karla/v13/qkBQXvYC6trAT7RQFmW7xL5lnAzCKNg.ttf',
     };
 
     return googleFontsTextStyle(
@@ -20598,6 +21088,64 @@ class GoogleFonts {
     );
   }
 
+  static TextStyle kulimPark({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('200'):
+          'http://fonts.gstatic.com/s/kulimpark/v1/fdN49secq3hflz1Uu3IwjJYNwa5aZbUvGjU.ttf',
+      GoogleFontsVariant.fromString('200italic'):
+          'http://fonts.gstatic.com/s/kulimpark/v1/fdNm9secq3hflz1Uu3IwhFwUKa9QYZcqCjVVUA.ttf',
+      GoogleFontsVariant.fromString('300'):
+          'http://fonts.gstatic.com/s/kulimpark/v1/fdN49secq3hflz1Uu3IwjPIOwa5aZbUvGjU.ttf',
+      GoogleFontsVariant.fromString('300italic'):
+          'http://fonts.gstatic.com/s/kulimpark/v1/fdNm9secq3hflz1Uu3IwhFwUTaxQYZcqCjVVUA.ttf',
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/kulimpark/v1/fdN79secq3hflz1Uu3IwtF4m5aZxebw.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/kulimpark/v1/fdN59secq3hflz1Uu3IwhFws4YR0abw2Aw.ttf',
+      GoogleFontsVariant.fromString('600'):
+          'http://fonts.gstatic.com/s/kulimpark/v1/fdN49secq3hflz1Uu3IwjIYIwa5aZbUvGjU.ttf',
+      GoogleFontsVariant.fromString('600italic'):
+          'http://fonts.gstatic.com/s/kulimpark/v1/fdNm9secq3hflz1Uu3IwhFwUOapQYZcqCjVVUA.ttf',
+      GoogleFontsVariant.fromString('700'):
+          'http://fonts.gstatic.com/s/kulimpark/v1/fdN49secq3hflz1Uu3IwjOIJwa5aZbUvGjU.ttf',
+      GoogleFontsVariant.fromString('700italic'):
+          'http://fonts.gstatic.com/s/kulimpark/v1/fdNm9secq3hflz1Uu3IwhFwUXatQYZcqCjVVUA.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'KulimPark',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme kulimParkTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.kulimPark(textStyle: textTheme?.display4),
+      display3: GoogleFonts.kulimPark(textStyle: textTheme?.display3),
+      display2: GoogleFonts.kulimPark(textStyle: textTheme?.display2),
+      display1: GoogleFonts.kulimPark(textStyle: textTheme?.display1),
+      headline: GoogleFonts.kulimPark(textStyle: textTheme?.headline),
+      title: GoogleFonts.kulimPark(textStyle: textTheme?.title),
+      subhead: GoogleFonts.kulimPark(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.kulimPark(textStyle: textTheme?.body2),
+      body1: GoogleFonts.kulimPark(textStyle: textTheme?.body1),
+      caption: GoogleFonts.kulimPark(textStyle: textTheme?.caption),
+      button: GoogleFonts.kulimPark(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.kulimPark(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.kulimPark(textStyle: textTheme?.overline),
+    );
+  }
+
   static TextStyle kumarOne({
     TextStyle textStyle,
     double fontSize,
@@ -21276,13 +21824,15 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('300'):
-          'http://fonts.gstatic.com/s/lemonada/v7/0QIkMXFD9oygTWy_R8PindGu2bje-RpH.ttf',
+          'http://fonts.gstatic.com/s/lemonada/v8/0QI-MXFD9oygTWy_R-FFlwV-bgfR7QJGJOt2mfWc3Z2pTg.ttf',
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/lemonada/v7/0QIjMXFD9oygTWy_R_tOtfWm8qTX.ttf',
+          'http://fonts.gstatic.com/s/lemonada/v8/0QI-MXFD9oygTWy_R-FFlwV-bgfR7QJGeut2mfWc3Z2pTg.ttf',
+      GoogleFontsVariant.fromString('500'):
+          'http://fonts.gstatic.com/s/lemonada/v8/0QI-MXFD9oygTWy_R-FFlwV-bgfR7QJGSOt2mfWc3Z2pTg.ttf',
       GoogleFontsVariant.fromString('600'):
-          'http://fonts.gstatic.com/s/lemonada/v7/0QIkMXFD9oygTWy_R8OWm9Gu2bje-RpH.ttf',
+          'http://fonts.gstatic.com/s/lemonada/v8/0QI-MXFD9oygTWy_R-FFlwV-bgfR7QJGpOx2mfWc3Z2pTg.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/lemonada/v7/0QIkMXFD9oygTWy_R8PymtGu2bje-RpH.ttf',
+          'http://fonts.gstatic.com/s/lemonada/v8/0QI-MXFD9oygTWy_R-FFlwV-bgfR7QJGnex2mfWc3Z2pTg.ttf',
     };
 
     return googleFontsTextStyle(
@@ -23424,7 +23974,7 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/majormonodisplay/v3/RWmVoLyb5fEqtsfBX9PDZIGr2tFubRhLCn2QIndPww.ttf',
+          'http://fonts.gstatic.com/s/majormonodisplay/v4/RWmVoLyb5fEqtsfBX9PDZIGr2tFubRhLCn2QIndPww.ttf',
     };
 
     return googleFontsTextStyle(
@@ -23730,21 +24280,21 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/manuale/v4/f0X20eas_8Z-TFZdBPbEw8nG6aY.ttf',
-      GoogleFontsVariant.fromString('italic'):
-          'http://fonts.gstatic.com/s/manuale/v4/f0X00eas_8Z-TFZdNPTOx-vD-aYfeA.ttf',
+          'http://fonts.gstatic.com/s/manuale/v5/f0Xp0eas_8Z-TFZdHv3mMxFaSqASeeHke7wD1TB_JHHY.ttf',
       GoogleFontsVariant.fromString('500'):
-          'http://fonts.gstatic.com/s/manuale/v4/f0Xz0eas_8Z-TFZdPALt58Ht9a8GYeA.ttf',
-      GoogleFontsVariant.fromString('500italic'):
-          'http://fonts.gstatic.com/s/manuale/v4/f0Xx0eas_8Z-TFZdNPT2M8Ln8Y0DceA0OQ.ttf',
+          'http://fonts.gstatic.com/s/manuale/v5/f0Xp0eas_8Z-TFZdHv3mMxFaSqASeeHWe7wD1TB_JHHY.ttf',
       GoogleFontsVariant.fromString('600'):
-          'http://fonts.gstatic.com/s/manuale/v4/f0Xz0eas_8Z-TFZdPC7q58Ht9a8GYeA.ttf',
-      GoogleFontsVariant.fromString('600italic'):
-          'http://fonts.gstatic.com/s/manuale/v4/f0Xx0eas_8Z-TFZdNPT2H8Xn8Y0DceA0OQ.ttf',
+          'http://fonts.gstatic.com/s/manuale/v5/f0Xp0eas_8Z-TFZdHv3mMxFaSqASeeE6fLwD1TB_JHHY.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/manuale/v4/f0Xz0eas_8Z-TFZdPErr58Ht9a8GYeA.ttf',
+          'http://fonts.gstatic.com/s/manuale/v5/f0Xp0eas_8Z-TFZdHv3mMxFaSqASeeEDfLwD1TB_JHHY.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/manuale/v5/f0Xn0eas_8Z-TFZdNPTUzMkzITq8fvQsOFRA3zRdIWHYr8M.ttf',
+      GoogleFontsVariant.fromString('500italic'):
+          'http://fonts.gstatic.com/s/manuale/v5/f0Xn0eas_8Z-TFZdNPTUzMkzITq8fvQsOGZA3zRdIWHYr8M.ttf',
+      GoogleFontsVariant.fromString('600italic'):
+          'http://fonts.gstatic.com/s/manuale/v5/f0Xn0eas_8Z-TFZdNPTUzMkzITq8fvQsOIpH3zRdIWHYr8M.ttf',
       GoogleFontsVariant.fromString('700italic'):
-          'http://fonts.gstatic.com/s/manuale/v4/f0Xx0eas_8Z-TFZdNPT2e8Tn8Y0DceA0OQ.ttf',
+          'http://fonts.gstatic.com/s/manuale/v5/f0Xn0eas_8Z-TFZdNPTUzMkzITq8fvQsOLNH3zRdIWHYr8M.ttf',
     };
 
     return googleFontsTextStyle(
@@ -24302,13 +24852,17 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/mavenpro/v13/7Au9p_AqnyWWAxW2Wk32ym4JMFge0g.ttf',
+          'http://fonts.gstatic.com/s/mavenpro/v18/7Auup_AqnyWWAxW2Wk3swUz56MS91Eww8SX25nCpozp5GvU.ttf',
       GoogleFontsVariant.fromString('500'):
-          'http://fonts.gstatic.com/s/mavenpro/v13/7Au4p_AqnyWWAxW2Wk3OPkctOHMC21go8A.ttf',
+          'http://fonts.gstatic.com/s/mavenpro/v18/7Auup_AqnyWWAxW2Wk3swUz56MS91Eww8Rf25nCpozp5GvU.ttf',
+      GoogleFontsVariant.fromString('600'):
+          'http://fonts.gstatic.com/s/mavenpro/v18/7Auup_AqnyWWAxW2Wk3swUz56MS91Eww8fvx5nCpozp5GvU.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/mavenpro/v13/7Au4p_AqnyWWAxW2Wk3OdkEtOHMC21go8A.ttf',
+          'http://fonts.gstatic.com/s/mavenpro/v18/7Auup_AqnyWWAxW2Wk3swUz56MS91Eww8cLx5nCpozp5GvU.ttf',
+      GoogleFontsVariant.fromString('800'):
+          'http://fonts.gstatic.com/s/mavenpro/v18/7Auup_AqnyWWAxW2Wk3swUz56MS91Eww8aXx5nCpozp5GvU.ttf',
       GoogleFontsVariant.fromString('900'):
-          'http://fonts.gstatic.com/s/mavenpro/v13/7Au4p_AqnyWWAxW2Wk3OTkMtOHMC21go8A.ttf',
+          'http://fonts.gstatic.com/s/mavenpro/v18/7Auup_AqnyWWAxW2Wk3swUz56MS91Eww8Yzx5nCpozp5GvU.ttf',
     };
 
     return googleFontsTextStyle(
@@ -26614,33 +27168,37 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('200'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au_p_0qiz-adf3nCCL8zkwMIFg.ttf',
-      GoogleFontsVariant.fromString('200italic'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au9p_0qiz-afTf-4CP2ym4JMFge0g.ttf',
+          'http://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFlOkHkw2-m9x2iC.ttf',
       GoogleFontsVariant.fromString('300'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au_p_0qiz-adZnkCCL8zkwMIFg.ttf',
-      GoogleFontsVariant.fromString('300italic'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au9p_0qiz-afTf-hCD2ym4JMFge0g.ttf',
+          'http://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFmQkHkw2-m9x2iC.ttf',
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/muli/v16/7Auwp_0qiz-aTTXMLCrX0kU.ttf',
-      GoogleFontsVariant.fromString('italic'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au-p_0qiz-afTfGKAjSwkUVOQ.ttf',
+          'http://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkHkw2-m9x2iC.ttf',
+      GoogleFontsVariant.fromString('500'):
+          'http://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFn8kHkw2-m9x2iC.ttf',
       GoogleFontsVariant.fromString('600'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au_p_0qiz-ade3iCCL8zkwMIFg.ttf',
-      GoogleFontsVariant.fromString('600italic'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au9p_0qiz-afTf-8Cb2ym4JMFge0g.ttf',
+          'http://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFkQl3kw2-m9x2iC.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au_p_0qiz-adYnjCCL8zkwMIFg.ttf',
-      GoogleFontsVariant.fromString('700italic'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au9p_0qiz-afTf-lCf2ym4JMFge0g.ttf',
+          'http://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFkpl3kw2-m9x2iC.ttf',
       GoogleFontsVariant.fromString('800'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au_p_0qiz-adZXgCCL8zkwMIFg.ttf',
-      GoogleFontsVariant.fromString('800italic'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au9p_0qiz-afTf-iCT2ym4JMFge0g.ttf',
+          'http://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFlOl3kw2-m9x2iC.ttf',
       GoogleFontsVariant.fromString('900'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au_p_0qiz-adbHhCCL8zkwMIFg.ttf',
+          'http://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFlnl3kw2-m9x2iC.ttf',
+      GoogleFontsVariant.fromString('200italic'):
+          'http://fonts.gstatic.com/s/muli/v19/7Aujp_0qiz-afTfcIyoiGtm2P0wG0xFz0e2fwniCvzM.ttf',
+      GoogleFontsVariant.fromString('300italic'):
+          'http://fonts.gstatic.com/s/muli/v19/7Aujp_0qiz-afTfcIyoiGtm2P0wG089z0e2fwniCvzM.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/muli/v19/7Aujp_0qiz-afTfcIyoiGtm2P0wG05Fz0e2fwniCvzM.ttf',
+      GoogleFontsVariant.fromString('500italic'):
+          'http://fonts.gstatic.com/s/muli/v19/7Aujp_0qiz-afTfcIyoiGtm2P0wG06Nz0e2fwniCvzM.ttf',
+      GoogleFontsVariant.fromString('600italic'):
+          'http://fonts.gstatic.com/s/muli/v19/7Aujp_0qiz-afTfcIyoiGtm2P0wG00900e2fwniCvzM.ttf',
+      GoogleFontsVariant.fromString('700italic'):
+          'http://fonts.gstatic.com/s/muli/v19/7Aujp_0qiz-afTfcIyoiGtm2P0wG03Z00e2fwniCvzM.ttf',
+      GoogleFontsVariant.fromString('800italic'):
+          'http://fonts.gstatic.com/s/muli/v19/7Aujp_0qiz-afTfcIyoiGtm2P0wG0xF00e2fwniCvzM.ttf',
       GoogleFontsVariant.fromString('900italic'):
-          'http://fonts.gstatic.com/s/muli/v16/7Au9p_0qiz-afTf-rCX2ym4JMFge0g.ttf',
+          'http://fonts.gstatic.com/s/muli/v19/7Aujp_0qiz-afTfcIyoiGtm2P0wG0zh00e2fwniCvzM.ttf',
     };
 
     return googleFontsTextStyle(
@@ -28492,33 +29050,33 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('200'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofA-sekZuHJeTsfDQ.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA-sekZuHJeTsfDQ.ttf',
       GoogleFontsVariant.fromString('200italic'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXQ3I6Li01BKofIMN5MZ-vNWz4PDWtj.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN5MZ-vNWz4PDWtj.ttf',
       GoogleFontsVariant.fromString('300'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofAnsSkZuHJeTsfDQ.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAnsSkZuHJeTsfDQ.ttf',
       GoogleFontsVariant.fromString('300italic'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXQ3I6Li01BKofIMN4oZOvNWz4PDWtj.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN4oZOvNWz4PDWtj.ttf',
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXV3I6Li01BKof4MuyAbsrVcA.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKof4MuyAbsrVcA.ttf',
       GoogleFontsVariant.fromString('italic'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXX3I6Li01BKofIMOaETM_FcCIG.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXX3I6Li01BKofIMOaETM_FcCIG.ttf',
       GoogleFontsVariant.fromString('600'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofA6sKkZuHJeTsfDQ.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKkZuHJeTsfDQ.ttf',
       GoogleFontsVariant.fromString('600italic'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXQ3I6Li01BKofIMN5cYuvNWz4PDWtj.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN5cYuvNWz4PDWtj.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofAjsOkZuHJeTsfDQ.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAjsOkZuHJeTsfDQ.ttf',
       GoogleFontsVariant.fromString('700italic'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXQ3I6Li01BKofIMN44Y-vNWz4PDWtj.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN44Y-vNWz4PDWtj.ttf',
       GoogleFontsVariant.fromString('800'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofAksCkZuHJeTsfDQ.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAksCkZuHJeTsfDQ.ttf',
       GoogleFontsVariant.fromString('800italic'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXQ3I6Li01BKofIMN4kYOvNWz4PDWtj.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN4kYOvNWz4PDWtj.ttf',
       GoogleFontsVariant.fromString('900'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofAtsGkZuHJeTsfDQ.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAtsGkZuHJeTsfDQ.ttf',
       GoogleFontsVariant.fromString('900italic'):
-          'http://fonts.gstatic.com/s/nunito/v11/XRXQ3I6Li01BKofIMN4AYevNWz4PDWtj.ttf',
+          'http://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN4AYevNWz4PDWtj.ttf',
     };
 
     return googleFontsTextStyle(
@@ -28613,6 +29171,46 @@ class GoogleFonts {
       button: GoogleFonts.nunitoSans(textStyle: textTheme?.button),
       subtitle: GoogleFonts.nunitoSans(textStyle: textTheme?.subtitle),
       overline: GoogleFonts.nunitoSans(textStyle: textTheme?.overline),
+    );
+  }
+
+  static TextStyle odibeeSans({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/odibeesans/v1/neIPzCSooYAho6WvjeToRYkyepH9qGsf.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'OdibeeSans',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme odibeeSansTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.odibeeSans(textStyle: textTheme?.display4),
+      display3: GoogleFonts.odibeeSans(textStyle: textTheme?.display3),
+      display2: GoogleFonts.odibeeSans(textStyle: textTheme?.display2),
+      display1: GoogleFonts.odibeeSans(textStyle: textTheme?.display1),
+      headline: GoogleFonts.odibeeSans(textStyle: textTheme?.headline),
+      title: GoogleFonts.odibeeSans(textStyle: textTheme?.title),
+      subhead: GoogleFonts.odibeeSans(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.odibeeSans(textStyle: textTheme?.body2),
+      body1: GoogleFonts.odibeeSans(textStyle: textTheme?.body1),
+      caption: GoogleFonts.odibeeSans(textStyle: textTheme?.caption),
+      button: GoogleFonts.odibeeSans(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.odibeeSans(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.odibeeSans(textStyle: textTheme?.overline),
     );
   }
 
@@ -29014,13 +29612,17 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/orbitron/v11/yMJRMIlzdpvBhQQL_Tq8fSx5i814.ttf',
+          'http://fonts.gstatic.com/s/orbitron/v14/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6xpmIyXjU1pg.ttf',
       GoogleFontsVariant.fromString('500'):
-          'http://fonts.gstatic.com/s/orbitron/v11/yMJWMIlzdpvBhQQL_QJIVAhxoNFxW0Hz.ttf',
+          'http://fonts.gstatic.com/s/orbitron/v14/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyKS6xpmIyXjU1pg.ttf',
+      GoogleFontsVariant.fromString('600'):
+          'http://fonts.gstatic.com/s/orbitron/v14/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyxSmxpmIyXjU1pg.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/orbitron/v11/yMJWMIlzdpvBhQQL_QIAUghxoNFxW0Hz.ttf',
+          'http://fonts.gstatic.com/s/orbitron/v14/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1ny_CmxpmIyXjU1pg.ttf',
+      GoogleFontsVariant.fromString('800'):
+          'http://fonts.gstatic.com/s/orbitron/v14/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nymymxpmIyXjU1pg.ttf',
       GoogleFontsVariant.fromString('900'):
-          'http://fonts.gstatic.com/s/orbitron/v11/yMJWMIlzdpvBhQQL_QI4UAhxoNFxW0Hz.ttf',
+          'http://fonts.gstatic.com/s/orbitron/v14/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nysimxpmIyXjU1pg.ttf',
     };
 
     return googleFontsTextStyle(
@@ -31012,17 +31614,17 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/playfairdisplay/v15/nuFiD-vYSZviVYUb_rj3ij__anPXPTvSgWE_-xU.ttf',
+          'http://fonts.gstatic.com/s/playfairdisplay/v18/nuFiD-vYSZviVYUb_rj3ij__anPXPTvSgWE_-xU.ttf',
       GoogleFontsVariant.fromString('italic'):
-          'http://fonts.gstatic.com/s/playfairdisplay/v15/nuFkD-vYSZviVYUb_rj3ij__anPXDTnYhUM66xV7PQ.ttf',
+          'http://fonts.gstatic.com/s/playfairdisplay/v18/nuFkD-vYSZviVYUb_rj3ij__anPXDTnYhUM66xV7PQ.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/playfairdisplay/v15/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9pWkU5xxiJKY.ttf',
+          'http://fonts.gstatic.com/s/playfairdisplay/v18/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9pWkU5xxiJKY.ttf',
       GoogleFontsVariant.fromString('700italic'):
-          'http://fonts.gstatic.com/s/playfairdisplay/v15/nuFnD-vYSZviVYUb_rj3ij__anPXDTngOWwe4z5nNKaV_w.ttf',
+          'http://fonts.gstatic.com/s/playfairdisplay/v18/nuFnD-vYSZviVYUb_rj3ij__anPXDTngOWwe4z5nNKaV_w.ttf',
       GoogleFontsVariant.fromString('900'):
-          'http://fonts.gstatic.com/s/playfairdisplay/v15/nuFlD-vYSZviVYUb_rj3ij__anPXBb__pWkU5xxiJKY.ttf',
+          'http://fonts.gstatic.com/s/playfairdisplay/v18/nuFlD-vYSZviVYUb_rj3ij__anPXBb__pWkU5xxiJKY.ttf',
       GoogleFontsVariant.fromString('900italic'):
-          'http://fonts.gstatic.com/s/playfairdisplay/v15/nuFnD-vYSZviVYUb_rj3ij__anPXDTngAW4e4z5nNKaV_w.ttf',
+          'http://fonts.gstatic.com/s/playfairdisplay/v18/nuFnD-vYSZviVYUb_rj3ij__anPXDTngAW4e4z5nNKaV_w.ttf',
     };
 
     return googleFontsTextStyle(
@@ -32009,6 +32611,80 @@ class GoogleFonts {
       button: GoogleFonts.prozaLibre(textStyle: textTheme?.button),
       subtitle: GoogleFonts.prozaLibre(textStyle: textTheme?.subtitle),
       overline: GoogleFonts.prozaLibre(textStyle: textTheme?.overline),
+    );
+  }
+
+  static TextStyle publicSans({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('100'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpi5ww0pX189fg.ttf',
+      GoogleFontsVariant.fromString('200'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymulpm5ww0pX189fg.ttf',
+      GoogleFontsVariant.fromString('300'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuSJm5ww0pX189fg.ttf',
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5ww0pX189fg.ttf',
+      GoogleFontsVariant.fromString('500'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuJJm5ww0pX189fg.ttf',
+      GoogleFontsVariant.fromString('600'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuyJ65ww0pX189fg.ttf',
+      GoogleFontsVariant.fromString('700'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww0pX189fg.ttf',
+      GoogleFontsVariant.fromString('800'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymulp65ww0pX189fg.ttf',
+      GoogleFontsVariant.fromString('900'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuv565ww0pX189fg.ttf',
+      GoogleFontsVariant.fromString('100italic'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgQctfVotfj7j.ttf',
+      GoogleFontsVariant.fromString('200italic'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673trRgActfVotfj7j.ttf',
+      GoogleFontsVariant.fromString('300italic'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673toPgActfVotfj7j.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgActfVotfj7j.ttf',
+      GoogleFontsVariant.fromString('500italic'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpjgActfVotfj7j.ttf',
+      GoogleFontsVariant.fromString('600italic'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tqPhwctfVotfj7j.ttf',
+      GoogleFontsVariant.fromString('700italic'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tq2hwctfVotfj7j.ttf',
+      GoogleFontsVariant.fromString('800italic'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673trRhwctfVotfj7j.ttf',
+      GoogleFontsVariant.fromString('900italic'):
+          'http://fonts.gstatic.com/s/publicsans/v2/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tr4hwctfVotfj7j.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'PublicSans',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme publicSansTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.publicSans(textStyle: textTheme?.display4),
+      display3: GoogleFonts.publicSans(textStyle: textTheme?.display3),
+      display2: GoogleFonts.publicSans(textStyle: textTheme?.display2),
+      display1: GoogleFonts.publicSans(textStyle: textTheme?.display1),
+      headline: GoogleFonts.publicSans(textStyle: textTheme?.headline),
+      title: GoogleFonts.publicSans(textStyle: textTheme?.title),
+      subhead: GoogleFonts.publicSans(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.publicSans(textStyle: textTheme?.body2),
+      body1: GoogleFonts.publicSans(textStyle: textTheme?.body1),
+      caption: GoogleFonts.publicSans(textStyle: textTheme?.caption),
+      button: GoogleFonts.publicSans(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.publicSans(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.publicSans(textStyle: textTheme?.overline),
     );
   }
 
@@ -33782,13 +34458,23 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('100'):
-          'http://fonts.gstatic.com/s/robotoslab/v9/BngOUXZYTXPIvIBgJJSb6u-u5qCr5RCDY_k.ttf',
+          'http://fonts.gstatic.com/s/robotoslab/v10/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWWaG5iddG-1A.ttf',
+      GoogleFontsVariant.fromString('200'):
+          'http://fonts.gstatic.com/s/robotoslab/v10/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISWaG5iddG-1A.ttf',
       GoogleFontsVariant.fromString('300'):
-          'http://fonts.gstatic.com/s/robotoslab/v9/BngRUXZYTXPIvIBgJJSb6u9mxICByxyKeuDp.ttf',
+          'http://fonts.gstatic.com/s/robotoslab/v10/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSWaG5iddG-1A.ttf',
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/robotoslab/v9/BngMUXZYTXPIvIBgJJSb6tfK7KSJ4ACD.ttf',
+          'http://fonts.gstatic.com/s/robotoslab/v10/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaG5iddG-1A.ttf',
+      GoogleFontsVariant.fromString('500'):
+          'http://fonts.gstatic.com/s/robotoslab/v10/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSWaG5iddG-1A.ttf',
+      GoogleFontsVariant.fromString('600'):
+          'http://fonts.gstatic.com/s/robotoslab/v10/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOWaG5iddG-1A.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/robotoslab/v9/BngRUXZYTXPIvIBgJJSb6u92w4CByxyKeuDp.ttf',
+          'http://fonts.gstatic.com/s/robotoslab/v10/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4OWaG5iddG-1A.ttf',
+      GoogleFontsVariant.fromString('800'):
+          'http://fonts.gstatic.com/s/robotoslab/v10/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOWaG5iddG-1A.ttf',
+      GoogleFontsVariant.fromString('900'):
+          'http://fonts.gstatic.com/s/robotoslab/v10/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOWaG5iddG-1A.ttf',
     };
 
     return googleFontsTextStyle(
@@ -33908,23 +34594,23 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('100'):
-          'http://fonts.gstatic.com/s/rokkitt/v14/qFdG35qfgYFjGy5hmCWCc_TOyh4Qig.ttf',
+          'http://fonts.gstatic.com/s/rokkitt/v17/qFdb35qfgYFjGy5hukqqhw5XeRgdi1rydpDLE76HvN6n.ttf',
       GoogleFontsVariant.fromString('200'):
-          'http://fonts.gstatic.com/s/rokkitt/v14/qFdB35qfgYFjGy5hmImjU97gxhcJk1s.ttf',
+          'http://fonts.gstatic.com/s/rokkitt/v17/qFdb35qfgYFjGy5hukqqhw5XeRgdi1pyd5DLE76HvN6n.ttf',
       GoogleFontsVariant.fromString('300'):
-          'http://fonts.gstatic.com/s/rokkitt/v14/qFdB35qfgYFjGy5hmO2gU97gxhcJk1s.ttf',
+          'http://fonts.gstatic.com/s/rokkitt/v17/qFdb35qfgYFjGy5hukqqhw5XeRgdi1qsd5DLE76HvN6n.ttf',
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/rokkitt/v14/qFdE35qfgYFjGy5hoEGId9bL2h4.ttf',
+          'http://fonts.gstatic.com/s/rokkitt/v17/qFdb35qfgYFjGy5hukqqhw5XeRgdi1ryd5DLE76HvN6n.ttf',
       GoogleFontsVariant.fromString('500'):
-          'http://fonts.gstatic.com/s/rokkitt/v14/qFdB35qfgYFjGy5hmLWhU97gxhcJk1s.ttf',
+          'http://fonts.gstatic.com/s/rokkitt/v17/qFdb35qfgYFjGy5hukqqhw5XeRgdi1rAd5DLE76HvN6n.ttf',
       GoogleFontsVariant.fromString('600'):
-          'http://fonts.gstatic.com/s/rokkitt/v14/qFdB35qfgYFjGy5hmJmmU97gxhcJk1s.ttf',
+          'http://fonts.gstatic.com/s/rokkitt/v17/qFdb35qfgYFjGy5hukqqhw5XeRgdi1oscJDLE76HvN6n.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/rokkitt/v14/qFdB35qfgYFjGy5hmP2nU97gxhcJk1s.ttf',
+          'http://fonts.gstatic.com/s/rokkitt/v17/qFdb35qfgYFjGy5hukqqhw5XeRgdi1oVcJDLE76HvN6n.ttf',
       GoogleFontsVariant.fromString('800'):
-          'http://fonts.gstatic.com/s/rokkitt/v14/qFdB35qfgYFjGy5hmOGkU97gxhcJk1s.ttf',
+          'http://fonts.gstatic.com/s/rokkitt/v17/qFdb35qfgYFjGy5hukqqhw5XeRgdi1pycJDLE76HvN6n.ttf',
       GoogleFontsVariant.fromString('900'):
-          'http://fonts.gstatic.com/s/rokkitt/v14/qFdB35qfgYFjGy5hmMWlU97gxhcJk1s.ttf',
+          'http://fonts.gstatic.com/s/rokkitt/v17/qFdb35qfgYFjGy5hukqqhw5XeRgdi1pbcJDLE76HvN6n.ttf',
     };
 
     return googleFontsTextStyle(
@@ -37164,6 +37850,54 @@ class GoogleFonts {
     );
   }
 
+  static TextStyle solway({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('300'):
+          'http://fonts.gstatic.com/s/solway/v1/AMOTz46Cs2uTAOCuLlgZms0QW3mqyg.ttf',
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/solway/v1/AMOQz46Cs2uTAOCWgnA9kuYMUg.ttf',
+      GoogleFontsVariant.fromString('500'):
+          'http://fonts.gstatic.com/s/solway/v1/AMOTz46Cs2uTAOCudlkZms0QW3mqyg.ttf',
+      GoogleFontsVariant.fromString('700'):
+          'http://fonts.gstatic.com/s/solway/v1/AMOTz46Cs2uTAOCuPl8Zms0QW3mqyg.ttf',
+      GoogleFontsVariant.fromString('800'):
+          'http://fonts.gstatic.com/s/solway/v1/AMOTz46Cs2uTAOCuIlwZms0QW3mqyg.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'Solway',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme solwayTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.solway(textStyle: textTheme?.display4),
+      display3: GoogleFonts.solway(textStyle: textTheme?.display3),
+      display2: GoogleFonts.solway(textStyle: textTheme?.display2),
+      display1: GoogleFonts.solway(textStyle: textTheme?.display1),
+      headline: GoogleFonts.solway(textStyle: textTheme?.headline),
+      title: GoogleFonts.solway(textStyle: textTheme?.title),
+      subhead: GoogleFonts.solway(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.solway(textStyle: textTheme?.body2),
+      body1: GoogleFonts.solway(textStyle: textTheme?.body1),
+      caption: GoogleFonts.solway(textStyle: textTheme?.caption),
+      button: GoogleFonts.solway(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.solway(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.solway(textStyle: textTheme?.overline),
+    );
+  }
+
   static TextStyle songMyung({
     TextStyle textStyle,
     double fontSize,
@@ -38046,7 +38780,7 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/stalinistone/v23/MQpS-WezM9W4Dd7D3B7I-UT7eZ-UPyacPbo.ttf',
+          'http://fonts.gstatic.com/s/stalinistone/v25/MQpS-WezM9W4Dd7D3B7I-UT7eZ-UPyacPbo.ttf',
     };
 
     return googleFontsTextStyle(
@@ -38399,6 +39133,50 @@ class GoogleFonts {
       button: GoogleFonts.suezOne(textStyle: textTheme?.button),
       subtitle: GoogleFonts.suezOne(textStyle: textTheme?.subtitle),
       overline: GoogleFonts.suezOne(textStyle: textTheme?.overline),
+    );
+  }
+
+  static TextStyle sulphurPoint({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('300'):
+          'http://fonts.gstatic.com/s/sulphurpoint/v1/RLpkK5vv8KaycDcazWFPBj2afVU6n6kFUHPIFaU.ttf',
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/sulphurpoint/v1/RLp5K5vv8KaycDcazWFPBj2aRfkSu6EuTHo.ttf',
+      GoogleFontsVariant.fromString('700'):
+          'http://fonts.gstatic.com/s/sulphurpoint/v1/RLpkK5vv8KaycDcazWFPBj2afUU9n6kFUHPIFaU.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'SulphurPoint',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme sulphurPointTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.sulphurPoint(textStyle: textTheme?.display4),
+      display3: GoogleFonts.sulphurPoint(textStyle: textTheme?.display3),
+      display2: GoogleFonts.sulphurPoint(textStyle: textTheme?.display2),
+      display1: GoogleFonts.sulphurPoint(textStyle: textTheme?.display1),
+      headline: GoogleFonts.sulphurPoint(textStyle: textTheme?.headline),
+      title: GoogleFonts.sulphurPoint(textStyle: textTheme?.title),
+      subhead: GoogleFonts.sulphurPoint(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.sulphurPoint(textStyle: textTheme?.body2),
+      body1: GoogleFonts.sulphurPoint(textStyle: textTheme?.body1),
+      caption: GoogleFonts.sulphurPoint(textStyle: textTheme?.caption),
+      button: GoogleFonts.sulphurPoint(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.sulphurPoint(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.sulphurPoint(textStyle: textTheme?.overline),
     );
   }
 
@@ -39629,6 +40407,80 @@ class GoogleFonts {
       button: GoogleFonts.titilliumWeb(textStyle: textTheme?.button),
       subtitle: GoogleFonts.titilliumWeb(textStyle: textTheme?.subtitle),
       overline: GoogleFonts.titilliumWeb(textStyle: textTheme?.overline),
+    );
+  }
+
+  static TextStyle tomorrow({
+    TextStyle textStyle,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+  }) {
+    final fonts = <GoogleFontsVariant, String>{
+      GoogleFontsVariant.fromString('100'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLgrETNbFtZCeGqgR2xe2XiKMiokE4.ttf',
+      GoogleFontsVariant.fromString('100italic'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLirETNbFtZCeGqgRXXQwHoLOqtgE5h0A.ttf',
+      GoogleFontsVariant.fromString('200'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLhrETNbFtZCeGqgR0dWkXIBsShiVd4.ttf',
+      GoogleFontsVariant.fromString('200italic'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLjrETNbFtZCeGqgRXXQ63JDMCDjEd4yVY.ttf',
+      GoogleFontsVariant.fromString('300'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLhrETNbFtZCeGqgR15WUXIBsShiVd4.ttf',
+      GoogleFontsVariant.fromString('300italic'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLjrETNbFtZCeGqgRXXQ8nKDMCDjEd4yVY.ttf',
+      GoogleFontsVariant.fromString('regular'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLmrETNbFtZCeGqgSXVcWHALdio.ttf',
+      GoogleFontsVariant.fromString('italic'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLgrETNbFtZCeGqgRXXe2XiKMiokE4.ttf',
+      GoogleFontsVariant.fromString('500'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLhrETNbFtZCeGqgR0hWEXIBsShiVd4.ttf',
+      GoogleFontsVariant.fromString('500italic'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLjrETNbFtZCeGqgRXXQ5HLDMCDjEd4yVY.ttf',
+      GoogleFontsVariant.fromString('600'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLhrETNbFtZCeGqgR0NX0XIBsShiVd4.ttf',
+      GoogleFontsVariant.fromString('600italic'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLjrETNbFtZCeGqgRXXQ73MDMCDjEd4yVY.ttf',
+      GoogleFontsVariant.fromString('700'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLhrETNbFtZCeGqgR1pXkXIBsShiVd4.ttf',
+      GoogleFontsVariant.fromString('700italic'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLjrETNbFtZCeGqgRXXQ9nNDMCDjEd4yVY.ttf',
+      GoogleFontsVariant.fromString('800'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLhrETNbFtZCeGqgR11XUXIBsShiVd4.ttf',
+      GoogleFontsVariant.fromString('800italic'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLjrETNbFtZCeGqgRXXQ8XODMCDjEd4yVY.ttf',
+      GoogleFontsVariant.fromString('900'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLhrETNbFtZCeGqgR1RXEXIBsShiVd4.ttf',
+      GoogleFontsVariant.fromString('900italic'):
+          'http://fonts.gstatic.com/s/tomorrow/v2/WBLjrETNbFtZCeGqgRXXQ-HPDMCDjEd4yVY.ttf',
+    };
+
+    return googleFontsTextStyle(
+      fontFamily: 'Tomorrow',
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      textStyle: textStyle,
+      fontStyle: fontStyle,
+      fonts: fonts,
+    );
+  }
+
+  static TextTheme tomorrowTextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      display4: GoogleFonts.tomorrow(textStyle: textTheme?.display4),
+      display3: GoogleFonts.tomorrow(textStyle: textTheme?.display3),
+      display2: GoogleFonts.tomorrow(textStyle: textTheme?.display2),
+      display1: GoogleFonts.tomorrow(textStyle: textTheme?.display1),
+      headline: GoogleFonts.tomorrow(textStyle: textTheme?.headline),
+      title: GoogleFonts.tomorrow(textStyle: textTheme?.title),
+      subhead: GoogleFonts.tomorrow(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.tomorrow(textStyle: textTheme?.body2),
+      body1: GoogleFonts.tomorrow(textStyle: textTheme?.body1),
+      caption: GoogleFonts.tomorrow(textStyle: textTheme?.caption),
+      button: GoogleFonts.tomorrow(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.tomorrow(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.tomorrow(textStyle: textTheme?.overline),
     );
   }
 
@@ -41451,13 +42303,17 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       GoogleFontsVariant.fromString('200'):
-          'http://fonts.gstatic.com/s/yanonekaffeesatz/v11/3y9-6aknfjLm_3lMKjiMgmUUYBs04YfUPs-tNtKENeNp.ttf',
+          'http://fonts.gstatic.com/s/yanonekaffeesatz/v13/3y9I6aknfjLm_3lMKjiMgmUUYBs04aUXNxt9gW2LIftodtWpcGuLCnXkVA.ttf',
       GoogleFontsVariant.fromString('300'):
-          'http://fonts.gstatic.com/s/yanonekaffeesatz/v11/3y9-6aknfjLm_3lMKjiMgmUUYBs04YewPc-tNtKENeNp.ttf',
+          'http://fonts.gstatic.com/s/yanonekaffeesatz/v13/3y9I6aknfjLm_3lMKjiMgmUUYBs04aUXNxt9gW2LIftoqNWpcGuLCnXkVA.ttf',
       GoogleFontsVariant.fromString('regular'):
-          'http://fonts.gstatic.com/s/yanonekaffeesatz/v11/3y976aknfjLm_3lMKjiMgmUUYBs04b8cFeulHc6N.ttf',
+          'http://fonts.gstatic.com/s/yanonekaffeesatz/v13/3y9I6aknfjLm_3lMKjiMgmUUYBs04aUXNxt9gW2LIfto9tWpcGuLCnXkVA.ttf',
+      GoogleFontsVariant.fromString('500'):
+          'http://fonts.gstatic.com/s/yanonekaffeesatz/v13/3y9I6aknfjLm_3lMKjiMgmUUYBs04aUXNxt9gW2LIftoxNWpcGuLCnXkVA.ttf',
+      GoogleFontsVariant.fromString('600'):
+          'http://fonts.gstatic.com/s/yanonekaffeesatz/v13/3y9I6aknfjLm_3lMKjiMgmUUYBs04aUXNxt9gW2LIftoKNKpcGuLCnXkVA.ttf',
       GoogleFontsVariant.fromString('700'):
-          'http://fonts.gstatic.com/s/yanonekaffeesatz/v11/3y9-6aknfjLm_3lMKjiMgmUUYBs04YegOs-tNtKENeNp.ttf',
+          'http://fonts.gstatic.com/s/yanonekaffeesatz/v13/3y9I6aknfjLm_3lMKjiMgmUUYBs04aUXNxt9gW2LIftoEdKpcGuLCnXkVA.ttf',
     };
 
     return googleFontsTextStyle(
