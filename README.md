@@ -3,7 +3,7 @@
 NOTE: This package is in Beta. The API is subject to change.
 
 The `google_fonts` package for Flutter allows you to easily use any of the 960 fonts
-(and their variants) from [fonts.google.com](fonts.google.com) in your Flutter app.
+(and their variants) from [fonts.google.com](https://fonts.google.com/) in your Flutter app.
 
 ## Getting Started
 
@@ -94,4 +94,4 @@ MaterialApp(
 
 ## What's Next?
 
-In a future release, this package will defer to `.ttf` files you specify in the pubspec before fetching them via http. This means you can get the best of both worlds by having access to all [fonts.google.com](fonts.google.com) fonts and their variants during development, while also ensuring your production app has an optimal offline/slow connection experience.
+In a future release, this package will defer to `.ttf` files you specify in the pubspec before fetching them via http. This means you can get the best of both worlds by having access to all [fonts.google.com](https://fonts.google.com/) fonts and their variants during development, while also ensuring your production app has an optimal offline/slow connection experience.
