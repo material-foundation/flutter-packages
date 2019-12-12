@@ -1,3 +1,8 @@
+## [0.2.0] - 2019-12-12
+
+* Updated to include all fonts currently on fonts.google.com.
+
+
 ## [0.1.1] - 2019-12-10
 
 ### Generated method names changed back to pre 0.1.0 (breaking change).
