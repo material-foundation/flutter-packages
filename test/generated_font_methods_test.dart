@@ -343,6 +343,33 @@ main() {
     expect(outputTextStyle.height, equals(37));
   });
 
+  testWidgets('locale is honored when passed in via the TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(locale: const Locale('abc'));
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.locale, equals(const Locale('abc')));
+  });
+
+  testWidgets('locale is honored when passed in as a top-level param',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(locale: const Locale('xyz'));
+
+    expect(outputTextStyle.locale, equals(const Locale('xyz')));
+  });
+
+  testWidgets(
+      'locale from the top-level param takes precedence over locale '
+      'from the TextStyle param', (tester) async {
+    final textStyle = TextStyle(locale: const Locale('anc'));
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      locale: const Locale('xyz'),
+    );
+
+    expect(outputTextStyle.locale, equals(const Locale('xyz')));
+  });
+
   /////////////////////
   // TextTheme tests //
   /////////////////////
