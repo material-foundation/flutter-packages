@@ -143,7 +143,8 @@ main() {
 
   testWidgets('backgroundColor is honored from a passed in the fontSize param',
       (tester) async {
-    final outputTextStyle = GoogleFonts.rancho(backgroundColor: Color(0xFACEFEED));
+    final outputTextStyle =
+        GoogleFonts.rancho(backgroundColor: Color(0xFACEFEED));
 
     expect(outputTextStyle.backgroundColor, equals(Color(0xFACEFEED)));
   });
@@ -188,19 +189,19 @@ main() {
   });
 
   testWidgets('fontWeight is honored when passed in via a TextStyle param',
-          (tester) async {
-        final textStyle = TextStyle(fontWeight: FontWeight.w800);
-        final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+      (tester) async {
+    final textStyle = TextStyle(fontWeight: FontWeight.w800);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
 
-        expect(outputTextStyle.fontWeight, equals(FontWeight.w800));
-      });
+    expect(outputTextStyle.fontWeight, equals(FontWeight.w800));
+  });
 
   testWidgets('fontWeight is honored from a passed in the fontWeight param',
-          (tester) async {
-        final outputTextStyle = GoogleFonts.rancho(fontWeight: FontWeight.w200);
+      (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(fontWeight: FontWeight.w200);
 
-        expect(outputTextStyle.fontWeight, equals(FontWeight.w200));
-      });
+    expect(outputTextStyle.fontWeight, equals(FontWeight.w200));
+  });
 
   testWidgets(
       'fontWeight from top level fontWeight param takes precedence over '
@@ -208,10 +209,93 @@ main() {
     final textStyle = TextStyle(fontWeight: FontWeight.w800);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
-        fontWeight: FontWeight.w200
+      fontWeight: FontWeight.w200,
     );
 
     expect(outputTextStyle.fontWeight, equals(FontWeight.w200));
+  });
+
+  testWidgets('fontStyle is honored when passed in via a TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(fontStyle: FontStyle.normal);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.fontStyle, equals(FontStyle.normal));
+  });
+
+  testWidgets('fontStyle is honored from a passed in the fontStyle param',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(fontStyle: FontStyle.italic);
+
+    expect(outputTextStyle.fontStyle, equals(FontStyle.italic));
+  });
+
+  testWidgets(
+      'fontStyle from top level fontStyle param takes precedence over '
+      'fontStyle from TextStyle param', (tester) async {
+    final textStyle = TextStyle(fontStyle: FontStyle.normal);
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      fontStyle: FontStyle.italic,
+    );
+
+    expect(outputTextStyle.fontStyle, equals(FontStyle.italic));
+  });
+
+  testWidgets('letterSpacing is honored when passed in via a TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(letterSpacing: 0.4);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.letterSpacing, equals(0.4));
+  });
+
+  testWidgets(
+      'letterSpacing is honored from a passed in the letterSpacing '
+      'param', (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(letterSpacing: 0.3);
+
+    expect(outputTextStyle.letterSpacing, equals(0.3));
+  });
+
+  testWidgets(
+      'fontStyle from top level fontStyle param takes precedence over '
+      'fontStyle from TextStyle param', (tester) async {
+    final textStyle = TextStyle(letterSpacing: 0.4);
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      letterSpacing: 0.3,
+    );
+
+    expect(outputTextStyle.letterSpacing, equals(0.3));
+  });
+
+  testWidgets('wordSpacing is honored when passed in via a TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(wordSpacing: 0.4);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.wordSpacing, equals(0.4));
+  });
+
+  testWidgets(
+      'wordSpacing is honored from a passed in the wordSpacing '
+      'param', (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(wordSpacing: 0.3);
+
+    expect(outputTextStyle.wordSpacing, equals(0.3));
+  });
+
+  testWidgets(
+      'wordSpacing from top level wordSpacing param takes precedence over '
+      'wordSpacing from TextStyle param', (tester) async {
+    final textStyle = TextStyle(wordSpacing: 0.4);
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      wordSpacing: 0.3,
+    );
+
+    expect(outputTextStyle.wordSpacing, equals(0.3));
   });
 
   testWidgets('TextTheme method works in the default case', (tester) async {
