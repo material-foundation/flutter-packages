@@ -432,6 +432,37 @@ main() {
     expect(outputTextStyle.background, equals(paint2));
   });
 
+  testWidgets('shadows is honored when passed in via the TextStyle param',
+      (tester) async {
+    final shadows = [Shadow(blurRadius: 1)];
+    final textStyle = TextStyle(shadows: shadows);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.shadows, equals(shadows));
+  });
+
+  testWidgets('shadows is honored when passed in as a top-level param',
+      (tester) async {
+    final shadows = [Shadow(blurRadius: 2)];
+    final outputTextStyle = GoogleFonts.rancho(shadows: shadows);
+
+    expect(outputTextStyle.shadows, equals(shadows));
+  });
+
+  testWidgets(
+      'shadows from the top-level param takes precedence over shadows '
+      'from the TextStyle param', (tester) async {
+    final shadows1 = [Shadow(blurRadius: 1)];
+    final shadows2 = [Shadow(blurRadius: 2)];
+    final textStyle = TextStyle(shadows: shadows1);
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      shadows: shadows2,
+    );
+
+    expect(outputTextStyle.shadows, equals(shadows2));
+  });
+
   /////////////////////
   // TextTheme tests //
   /////////////////////
