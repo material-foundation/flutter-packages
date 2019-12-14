@@ -298,6 +298,34 @@ main() {
     expect(outputTextStyle.wordSpacing, equals(0.3));
   });
 
+  testWidgets('textBaseline is honored when passed in via a TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(textBaseline: TextBaseline.ideographic);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.textBaseline, equals(TextBaseline.ideographic));
+  });
+
+  testWidgets('textBaseline is honored from a passed in the textBaseline param',
+      (tester) async {
+    final outputTextStyle =
+        GoogleFonts.rancho(textBaseline: TextBaseline.alphabetic);
+
+    expect(outputTextStyle.textBaseline, equals(TextBaseline.alphabetic));
+  });
+
+  testWidgets(
+      'textBaseline from top level textBaseline param takes precedence over '
+      'textBaseline from TextStyle param', (tester) async {
+    final textStyle = TextStyle(textBaseline: TextBaseline.ideographic);
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      textBaseline: TextBaseline.alphabetic,
+    );
+
+    expect(outputTextStyle.textBaseline, equals(TextBaseline.alphabetic));
+  });
+
   testWidgets('TextTheme method works in the default case', (tester) async {
     final textTheme = GoogleFonts.oswaldTextTheme();
     final expectedFamilyWithVariant = 'Oswald_regular';
