@@ -133,6 +133,33 @@ main() {
     expect(outputTextStyle.color, Color(0xFACEFEED));
   });
 
+  testWidgets('backgroundColor is honored when passed in via a TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(backgroundColor: Color(0xDEADBEEF));
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.backgroundColor, equals(Color(0xDEADBEEF)));
+  });
+
+  testWidgets('backgroundColor is honored from a passed in the fontSize param',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(backgroundColor: Color(0xFACEFEED));
+
+    expect(outputTextStyle.backgroundColor, equals(Color(0xFACEFEED)));
+  });
+
+  testWidgets(
+      'backgroundColor from top level backgroundColor param takes precedence '
+      'over backgroundColor from TextStyle param', (tester) async {
+    final textStyle = TextStyle(backgroundColor: Color(0xDEADBEEF));
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      backgroundColor: Color(0xFACEFEED),
+    );
+
+    expect(outputTextStyle.backgroundColor, Color(0xFACEFEED));
+  });
+
   testWidgets('fontSize is honored when passed in via a TextStyle param',
       (tester) async {
     final textStyle = TextStyle(fontSize: 37);
