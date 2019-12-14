@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -462,6 +464,39 @@ main() {
 
     expect(outputTextStyle.shadows, equals(shadows2));
   });
+
+  testWidgets('fontFeatures is honored when passed in via the TextStyle param',
+      (tester) async {
+    final fontFeatures = [FontFeature.slashedZero()];
+    final textStyle = TextStyle(fontFeatures: fontFeatures);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.fontFeatures, equals(fontFeatures));
+  });
+
+  testWidgets('fontFeatures is honored when passed in as a top-level param',
+      (tester) async {
+    final fontFeatures = [FontFeature.oldstyleFigures()];
+    final outputTextStyle = GoogleFonts.rancho(fontFeatures: fontFeatures);
+
+    expect(outputTextStyle.fontFeatures, equals(fontFeatures));
+  });
+
+  testWidgets(
+      'fontFeatures from the top-level param takes precedence over '
+      'fontFeatures from the TextStyle param', (tester) async {
+    final fontFeatures1 = [FontFeature.slashedZero()];
+    final fontFeatures2 = [FontFeature.oldstyleFigures()];
+    final textStyle = TextStyle(fontFeatures: fontFeatures1);
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      fontFeatures: fontFeatures2,
+    );
+
+    expect(outputTextStyle.fontFeatures, equals(fontFeatures2));
+  });
+
+
 
   /////////////////////
   // TextTheme tests //
