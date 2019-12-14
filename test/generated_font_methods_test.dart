@@ -101,58 +101,58 @@ main() {
 
   testWidgets('color is honored when passed in via the TextStyle param',
       (tester) async {
-    final textStyle = TextStyle(color: Color(0xDEADBEEF));
+    final textStyle = TextStyle(color: const Color(0xDEADBEEF));
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
 
-    expect(outputTextStyle.color, equals(Color(0xDEADBEEF)));
+    expect(outputTextStyle.color, equals(const Color(0xDEADBEEF)));
   });
 
   testWidgets('color is honored when passed in as a top-level param',
       (tester) async {
-    final outputTextStyle = GoogleFonts.rancho(color: Color(0xFACEFEED));
+    final outputTextStyle = GoogleFonts.rancho(color: const Color(0xFACEFEED));
 
-    expect(outputTextStyle.color, equals(Color(0xFACEFEED)));
+    expect(outputTextStyle.color, equals(const Color(0xFACEFEED)));
   });
 
   testWidgets(
       'color from the top-level param takes precedence over color '
       'from the TextStyle param', (tester) async {
-    final textStyle = TextStyle(color: Color(0xDEADBEEF));
+    final textStyle = TextStyle(color: const Color(0xDEADBEEF));
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
-      color: Color(0xFACEFEED),
+      color: const Color(0xFACEFEED),
     );
 
-    expect(outputTextStyle.color, Color(0xFACEFEED));
+    expect(outputTextStyle.color, const Color(0xFACEFEED));
   });
 
   testWidgets(
       'backgroundColor is honored when passed in via the TextStyle param',
       (tester) async {
-    final textStyle = TextStyle(backgroundColor: Color(0xDEADBEEF));
+    final textStyle = TextStyle(backgroundColor: const Color(0xDEADBEEF));
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
 
-    expect(outputTextStyle.backgroundColor, equals(Color(0xDEADBEEF)));
+    expect(outputTextStyle.backgroundColor, equals(const Color(0xDEADBEEF)));
   });
 
   testWidgets('backgroundColor is honored when passed in as a top-level param',
       (tester) async {
     final outputTextStyle =
-        GoogleFonts.rancho(backgroundColor: Color(0xFACEFEED));
+        GoogleFonts.rancho(backgroundColor: const Color(0xFACEFEED));
 
-    expect(outputTextStyle.backgroundColor, equals(Color(0xFACEFEED)));
+    expect(outputTextStyle.backgroundColor, equals(const Color(0xFACEFEED)));
   });
 
   testWidgets(
       'backgroundColor from the top-level param takes precedence over '
       'backgroundColor from TextStyle param', (tester) async {
-    final textStyle = TextStyle(backgroundColor: Color(0xDEADBEEF));
+    final textStyle = TextStyle(backgroundColor: const Color(0xDEADBEEF));
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
-      backgroundColor: Color(0xFACEFEED),
+      backgroundColor: const Color(0xFACEFEED),
     );
 
-    expect(outputTextStyle.backgroundColor, Color(0xFACEFEED));
+    expect(outputTextStyle.backgroundColor, const Color(0xFACEFEED));
   });
 
   testWidgets('fontSize is honored when passed in via the TextStyle param',
@@ -374,7 +374,7 @@ main() {
 
   testWidgets('foreground is honored when passed in via the TextStyle param',
       (tester) async {
-    final paint = Paint()..color = Color(0xDEADBEEF);
+    final paint = Paint()..color = const Color(0xDEADBEEF);
     final textStyle = TextStyle(foreground: paint);
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
 
@@ -383,7 +383,7 @@ main() {
 
   testWidgets('foreground is honored when passed in as a top-level param',
       (tester) async {
-    final paint = Paint()..color = Color(0xFACEFEED);
+    final paint = Paint()..color = const Color(0xFACEFEED);
     final outputTextStyle = GoogleFonts.rancho(foreground: paint);
 
     expect(outputTextStyle.foreground, equals(paint));
@@ -392,8 +392,8 @@ main() {
   testWidgets(
       'foreground from the top-level param takes precedence over foreground '
       'from the TextStyle param', (tester) async {
-    final paint1 = Paint()..color = Color(0xDEADBEEF);
-    final paint2 = Paint()..color = Color(0xFACEFEED);
+    final paint1 = Paint()..color = const Color(0xDEADBEEF);
+    final paint2 = Paint()..color = const Color(0xFACEFEED);
     final textStyle = TextStyle(foreground: paint1);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
@@ -405,7 +405,7 @@ main() {
 
   testWidgets('background is honored when passed in via the TextStyle param',
       (tester) async {
-    final paint = Paint()..color = Color(0xDEADBEEF);
+    final paint = Paint()..color = const Color(0xDEADBEEF);
     final textStyle = TextStyle(background: paint);
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
 
@@ -414,7 +414,7 @@ main() {
 
   testWidgets('background is honored when passed in as a top-level param',
       (tester) async {
-    final paint = Paint()..color = Color(0xFACEFEED);
+    final paint = Paint()..color = const Color(0xFACEFEED);
     final outputTextStyle = GoogleFonts.rancho(background: paint);
 
     expect(outputTextStyle.background, equals(paint));
@@ -423,8 +423,8 @@ main() {
   testWidgets(
       'background from the top-level param takes precedence over background '
       'from the TextStyle param', (tester) async {
-    final paint1 = Paint()..color = Color(0xDEADBEEF);
-    final paint2 = Paint()..color = Color(0xFACEFEED);
+    final paint1 = Paint()..color = const Color(0xDEADBEEF);
+    final paint2 = Paint()..color = const Color(0xFACEFEED);
     final textStyle = TextStyle(background: paint1);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
@@ -530,29 +530,29 @@ main() {
   testWidgets(
       'decorationColor is honored when passed in via the TextStyle param',
       (tester) async {
-    final textStyle = TextStyle(decorationColor: Color(0xDEADBEEF));
+    final textStyle = TextStyle(decorationColor: const Color(0xDEADBEEF));
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
 
-    expect(outputTextStyle.decorationColor, Color(0xDEADBEEF));
+    expect(outputTextStyle.decorationColor, const Color(0xDEADBEEF));
   });
 
   testWidgets('decorationColor is honored when passed in as a top-level param',
       (tester) async {
-    final outputTextStyle = GoogleFonts.rancho(decorationColor: Color(0xFACEFEED));
+    final outputTextStyle = GoogleFonts.rancho(decorationColor: const Color(0xFACEFEED));
 
-    expect(outputTextStyle.decorationColor, equals(Color(0xFACEFEED)));
+    expect(outputTextStyle.decorationColor, equals(const Color(0xFACEFEED)));
   });
 
   testWidgets(
       'decorationColor from the top-level param takes precedence over '
       'decorationColor from the TextStyle param', (tester) async {
-    final textStyle = TextStyle(decorationColor: Color(0xDEADBEEF));
+    final textStyle = TextStyle(decorationColor: const Color(0xDEADBEEF));
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
-      decorationColor: Color(0xFACEFEED),
+      decorationColor: const Color(0xFACEFEED),
     );
 
-    expect(outputTextStyle.decorationColor, equals(Color(0xFACEFEED)));
+    expect(outputTextStyle.decorationColor, equals(const Color(0xFACEFEED)));
   });
 
   /////////////////////
