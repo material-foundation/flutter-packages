@@ -12,6 +12,10 @@ main() {
     clearCache();
   });
 
+  //////////////////////////////
+  // Derived fontFamily tests //
+  //////////////////////////////
+
   testWidgets('Text style with a direct match is used', (tester) async {
     final inputTextStyle = TextStyle(
       fontWeight: FontWeight.w400,
@@ -74,23 +78,6 @@ main() {
     expect(outputTextStyle.fontFamily, equals('Cardo_italic'));
   });
 
-  testWidgets('Font weight and font style params are preferred',
-      (tester) async {
-    final inputTextStyle = TextStyle(
-      fontWeight: FontWeight.w600,
-      fontStyle: FontStyle.italic,
-    );
-
-    final outputTextStyle = GoogleFonts.cardo(
-      textStyle: inputTextStyle,
-      fontWeight: FontWeight.w200,
-      fontStyle: FontStyle.normal,
-    );
-
-    expect(outputTextStyle.fontWeight, equals(FontWeight.w200));
-    expect(outputTextStyle.fontStyle, equals(FontStyle.normal));
-  });
-
   testWidgets('Defaults to regular when no Text style is passed',
       (tester) async {
     final outputTextStyle = GoogleFonts.lato();
@@ -106,7 +93,11 @@ main() {
     expect(outputTextStyle.fontFamily, equals('Lato_regular'));
   });
 
-  testWidgets('color is honored when passed in via a TextStyle param',
+  ///////////////////////////
+  // TextStyle param tests //
+  ///////////////////////////
+
+  testWidgets('color is honored when passed in via the TextStyle param',
       (tester) async {
     final textStyle = TextStyle(color: Color(0xDEADBEEF));
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
@@ -114,7 +105,7 @@ main() {
     expect(outputTextStyle.color, equals(Color(0xDEADBEEF)));
   });
 
-  testWidgets('color is honored from a passed in the fontSize param',
+  testWidgets('color is honored when passed in as a top-level param',
       (tester) async {
     final outputTextStyle = GoogleFonts.rancho(color: Color(0xFACEFEED));
 
@@ -122,8 +113,8 @@ main() {
   });
 
   testWidgets(
-      'color from top level color param takes precedence over color '
-      'from TextStyle param', (tester) async {
+      'color from the top-level param takes precedence over color '
+      'from the TextStyle param', (tester) async {
     final textStyle = TextStyle(color: Color(0xDEADBEEF));
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
@@ -133,7 +124,8 @@ main() {
     expect(outputTextStyle.color, Color(0xFACEFEED));
   });
 
-  testWidgets('backgroundColor is honored when passed in via a TextStyle param',
+  testWidgets(
+      'backgroundColor is honored when passed in via the TextStyle param',
       (tester) async {
     final textStyle = TextStyle(backgroundColor: Color(0xDEADBEEF));
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
@@ -141,7 +133,7 @@ main() {
     expect(outputTextStyle.backgroundColor, equals(Color(0xDEADBEEF)));
   });
 
-  testWidgets('backgroundColor is honored from a passed in the fontSize param',
+  testWidgets('backgroundColor is honored when passed in as a top-level param',
       (tester) async {
     final outputTextStyle =
         GoogleFonts.rancho(backgroundColor: Color(0xFACEFEED));
@@ -150,8 +142,8 @@ main() {
   });
 
   testWidgets(
-      'backgroundColor from top level backgroundColor param takes precedence '
-      'over backgroundColor from TextStyle param', (tester) async {
+      'backgroundColor from the top-level param takes precedence over '
+      'backgroundColor from TextStyle param', (tester) async {
     final textStyle = TextStyle(backgroundColor: Color(0xDEADBEEF));
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
@@ -161,7 +153,7 @@ main() {
     expect(outputTextStyle.backgroundColor, Color(0xFACEFEED));
   });
 
-  testWidgets('fontSize is honored when passed in via a TextStyle param',
+  testWidgets('fontSize is honored when passed in via the TextStyle param',
       (tester) async {
     final textStyle = TextStyle(fontSize: 37);
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
@@ -169,7 +161,7 @@ main() {
     expect(outputTextStyle.fontSize, equals(37));
   });
 
-  testWidgets('fontSize is honored from a passed in the fontSize param',
+  testWidgets('fontSize is honored when passed in as a top-level param',
       (tester) async {
     final outputTextStyle = GoogleFonts.rancho(fontSize: 31);
 
@@ -177,8 +169,8 @@ main() {
   });
 
   testWidgets(
-      'fontSize from top level fontSize param takes precedence over fontSize '
-      'from TextStyle param', (tester) async {
+      'fontSize from the top-level param takes precedence over fontSize '
+      'from the TextStyle param', (tester) async {
     final textStyle = TextStyle(fontSize: 37);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
@@ -188,7 +180,7 @@ main() {
     expect(outputTextStyle.fontSize, equals(31));
   });
 
-  testWidgets('fontWeight is honored when passed in via a TextStyle param',
+  testWidgets('fontWeight is honored when passed in via the TextStyle param',
       (tester) async {
     final textStyle = TextStyle(fontWeight: FontWeight.w800);
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
@@ -196,7 +188,7 @@ main() {
     expect(outputTextStyle.fontWeight, equals(FontWeight.w800));
   });
 
-  testWidgets('fontWeight is honored from a passed in the fontWeight param',
+  testWidgets('fontWeight is honored when passed in as a top-level param',
       (tester) async {
     final outputTextStyle = GoogleFonts.rancho(fontWeight: FontWeight.w200);
 
@@ -204,8 +196,8 @@ main() {
   });
 
   testWidgets(
-      'fontWeight from top level fontWeight param takes precedence over '
-      'fontWeight from TextStyle param', (tester) async {
+      'fontWeight from the top-level param takes precedence over fontWeight '
+      'from the TextStyle param', (tester) async {
     final textStyle = TextStyle(fontWeight: FontWeight.w800);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
@@ -215,7 +207,7 @@ main() {
     expect(outputTextStyle.fontWeight, equals(FontWeight.w200));
   });
 
-  testWidgets('fontStyle is honored when passed in via a TextStyle param',
+  testWidgets('fontStyle is honored when passed in via the TextStyle param',
       (tester) async {
     final textStyle = TextStyle(fontStyle: FontStyle.normal);
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
@@ -223,7 +215,7 @@ main() {
     expect(outputTextStyle.fontStyle, equals(FontStyle.normal));
   });
 
-  testWidgets('fontStyle is honored from a passed in the fontStyle param',
+  testWidgets('fontStyle is honored when passed in as a top-level param',
       (tester) async {
     final outputTextStyle = GoogleFonts.rancho(fontStyle: FontStyle.italic);
 
@@ -231,8 +223,8 @@ main() {
   });
 
   testWidgets(
-      'fontStyle from top level fontStyle param takes precedence over '
-      'fontStyle from TextStyle param', (tester) async {
+      'fontStyle from the top-level param takes precedence over fontStyle '
+      'from the TextStyle param', (tester) async {
     final textStyle = TextStyle(fontStyle: FontStyle.normal);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
@@ -242,7 +234,7 @@ main() {
     expect(outputTextStyle.fontStyle, equals(FontStyle.italic));
   });
 
-  testWidgets('letterSpacing is honored when passed in via a TextStyle param',
+  testWidgets('letterSpacing is honored when passed in via the TextStyle param',
       (tester) async {
     final textStyle = TextStyle(letterSpacing: 0.4);
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
@@ -250,17 +242,16 @@ main() {
     expect(outputTextStyle.letterSpacing, equals(0.4));
   });
 
-  testWidgets(
-      'letterSpacing is honored from a passed in the letterSpacing '
-      'param', (tester) async {
+  testWidgets('letterSpacing is honored when passed in as a top-level param',
+      (tester) async {
     final outputTextStyle = GoogleFonts.rancho(letterSpacing: 0.3);
 
     expect(outputTextStyle.letterSpacing, equals(0.3));
   });
 
   testWidgets(
-      'fontStyle from top level fontStyle param takes precedence over '
-      'fontStyle from TextStyle param', (tester) async {
+      'letterSpacing from the top-level param takes precedence over '
+      'letterSpacing from the TextStyle param', (tester) async {
     final textStyle = TextStyle(letterSpacing: 0.4);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
@@ -270,7 +261,7 @@ main() {
     expect(outputTextStyle.letterSpacing, equals(0.3));
   });
 
-  testWidgets('wordSpacing is honored when passed in via a TextStyle param',
+  testWidgets('wordSpacing is honored when passed in via the TextStyle param',
       (tester) async {
     final textStyle = TextStyle(wordSpacing: 0.4);
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
@@ -278,17 +269,16 @@ main() {
     expect(outputTextStyle.wordSpacing, equals(0.4));
   });
 
-  testWidgets(
-      'wordSpacing is honored from a passed in the wordSpacing '
-      'param', (tester) async {
+  testWidgets('wordSpacing is honored when passed in as a top-level param',
+      (tester) async {
     final outputTextStyle = GoogleFonts.rancho(wordSpacing: 0.3);
 
     expect(outputTextStyle.wordSpacing, equals(0.3));
   });
 
   testWidgets(
-      'wordSpacing from top level wordSpacing param takes precedence over '
-      'wordSpacing from TextStyle param', (tester) async {
+      'wordSpacing from the top-level param takes precedence over wordSpacing '
+      'from the TextStyle param', (tester) async {
     final textStyle = TextStyle(wordSpacing: 0.4);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
@@ -298,7 +288,7 @@ main() {
     expect(outputTextStyle.wordSpacing, equals(0.3));
   });
 
-  testWidgets('textBaseline is honored when passed in via a TextStyle param',
+  testWidgets('textBaseline is honored when passed in via the TextStyle param',
       (tester) async {
     final textStyle = TextStyle(textBaseline: TextBaseline.ideographic);
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
@@ -306,7 +296,7 @@ main() {
     expect(outputTextStyle.textBaseline, equals(TextBaseline.ideographic));
   });
 
-  testWidgets('textBaseline is honored from a passed in the textBaseline param',
+  testWidgets('textBaseline is honored when passed in as a top-level param',
       (tester) async {
     final outputTextStyle =
         GoogleFonts.rancho(textBaseline: TextBaseline.alphabetic);
@@ -315,8 +305,8 @@ main() {
   });
 
   testWidgets(
-      'textBaseline from top level textBaseline param takes precedence over '
-      'textBaseline from TextStyle param', (tester) async {
+      'textBaseline from the top-level param takes precedence over textBaseline'
+      'from the TextStyle param', (tester) async {
     final textStyle = TextStyle(textBaseline: TextBaseline.ideographic);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
@@ -325,6 +315,37 @@ main() {
 
     expect(outputTextStyle.textBaseline, equals(TextBaseline.alphabetic));
   });
+
+  testWidgets('height is honored when passed in via the TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(height: 33);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.height, equals(33));
+  });
+
+  testWidgets('height is honored when passed in as a top-level param',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(height: 37);
+
+    expect(outputTextStyle.height, equals(37));
+  });
+
+  testWidgets(
+      'height from the top-level param takes precedence over height '
+      'from the TextStyle param', (tester) async {
+    final textStyle = TextStyle(height: 33);
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      height: 37,
+    );
+
+    expect(outputTextStyle.height, equals(37));
+  });
+
+  /////////////////////
+  // TextTheme tests //
+  /////////////////////
 
   testWidgets('TextTheme method works in the default case', (tester) async {
     final textTheme = GoogleFonts.oswaldTextTheme();
