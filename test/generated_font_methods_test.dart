@@ -106,6 +106,33 @@ main() {
     expect(outputTextStyle.fontFamily, equals('Lato_regular'));
   });
 
+  testWidgets('color is honored when passed in via a TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(color: Color(0xDEADBEEF));
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.color, equals(Color(0xDEADBEEF)));
+  });
+
+  testWidgets('color is honored from a passed in the fontSize param',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(color: Color(0xFACEFEED));
+
+    expect(outputTextStyle.color, equals(Color(0xFACEFEED)));
+  });
+
+  testWidgets(
+      'color from top level color param takes precedence over color '
+      'from TextStyle param', (tester) async {
+    final textStyle = TextStyle(color: Color(0xDEADBEEF));
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      color: Color(0xFACEFEED),
+    );
+
+    expect(outputTextStyle.color, Color(0xFACEFEED));
+  });
+
   testWidgets('fontSize is honored when passed in via a TextStyle param',
       (tester) async {
     final textStyle = TextStyle(fontSize: 37);
