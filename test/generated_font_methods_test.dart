@@ -538,7 +538,8 @@ main() {
 
   testWidgets('decorationColor is honored when passed in as a top-level param',
       (tester) async {
-    final outputTextStyle = GoogleFonts.rancho(decorationColor: const Color(0xFACEFEED));
+    final outputTextStyle =
+        GoogleFonts.rancho(decorationColor: const Color(0xFACEFEED));
 
     expect(outputTextStyle.decorationColor, equals(const Color(0xFACEFEED)));
   });
@@ -553,6 +554,35 @@ main() {
     );
 
     expect(outputTextStyle.decorationColor, equals(const Color(0xFACEFEED)));
+  });
+
+  testWidgets(
+      'decorationStyle is honored when passed in via the TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(decorationStyle: TextDecorationStyle.dashed);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.decorationStyle, TextDecorationStyle.dashed);
+  });
+
+  testWidgets('decorationStyle is honored when passed in as a top-level param',
+      (tester) async {
+    final outputTextStyle =
+        GoogleFonts.rancho(decorationStyle: TextDecorationStyle.dotted);
+
+    expect(outputTextStyle.decorationStyle, equals(TextDecorationStyle.dotted));
+  });
+
+  testWidgets(
+      'decorationStyle from the top-level param takes precedence over '
+      'decorationStyle from the TextStyle param', (tester) async {
+    final textStyle = TextStyle(decorationStyle: TextDecorationStyle.dashed);
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      decorationStyle: TextDecorationStyle.dotted,
+    );
+
+    expect(outputTextStyle.decorationStyle, equals(TextDecorationStyle.dotted));
   });
 
   /////////////////////
