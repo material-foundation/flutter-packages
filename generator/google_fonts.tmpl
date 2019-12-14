@@ -6,6 +6,7 @@
 
 // WARNING: This package is experimental and should not be used in production.
 
+import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'src/google_fonts_base.dart';
 import 'src/google_fonts_variant.dart';
@@ -14,9 +15,24 @@ class GoogleFonts {
   {{#method}}
   static TextStyle {{methodName}}({
     TextStyle textStyle,
+    Color color,
+    Color backgroundColor,
     double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
+    double letterSpacing,
+    double wordSpacing,
+    TextBaseline textBaseline,
+    double height,
+    Locale locale,
+    Paint foreground,
+    Paint background,
+    List<ui.Shadow> shadows,
+    List<ui.FontFeature> fontFeatures,
+    TextDecoration decoration,
+    Color decorationColor,
+    TextDecorationStyle decorationStyle,
+    double decorationThickness,
   }) {
     final fonts = <GoogleFontsVariant, String>{
       {{#fontUrls}}
@@ -25,11 +41,26 @@ class GoogleFonts {
     };
 
     return googleFontsTextStyle(
+      textStyle: textStyle,
       fontFamily: '{{fontFamily}}',
+      color: color,
+      backgroundColor: backgroundColor,
       fontSize: fontSize,
       fontWeight: fontWeight,
-      textStyle: textStyle,
       fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
       fonts: fonts,
     );
   }
