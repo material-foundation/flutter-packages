@@ -178,13 +178,40 @@ main() {
   testWidgets(
       'fontSize from top level fontSize param takes precedence over fontSize '
       'from TextStyle param', (tester) async {
-    final textStyle = TextStyle(fontSize: 41);
+    final textStyle = TextStyle(fontSize: 37);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
-      fontSize: 47,
+      fontSize: 31,
     );
 
-    expect(outputTextStyle.fontSize, equals(47));
+    expect(outputTextStyle.fontSize, equals(31));
+  });
+
+  testWidgets('fontWeight is honored when passed in via a TextStyle param',
+          (tester) async {
+        final textStyle = TextStyle(fontWeight: FontWeight.w800);
+        final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+        expect(outputTextStyle.fontWeight, equals(FontWeight.w800));
+      });
+
+  testWidgets('fontWeight is honored from a passed in the fontWeight param',
+          (tester) async {
+        final outputTextStyle = GoogleFonts.rancho(fontWeight: FontWeight.w200);
+
+        expect(outputTextStyle.fontWeight, equals(FontWeight.w200));
+      });
+
+  testWidgets(
+      'fontWeight from top level fontWeight param takes precedence over '
+      'fontWeight from TextStyle param', (tester) async {
+    final textStyle = TextStyle(fontWeight: FontWeight.w800);
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+        fontWeight: FontWeight.w200
+    );
+
+    expect(outputTextStyle.fontWeight, equals(FontWeight.w200));
   });
 
   testWidgets('TextTheme method works in the default case', (tester) async {
