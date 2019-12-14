@@ -527,6 +527,34 @@ main() {
     expect(outputTextStyle.decoration, equals(decoration2));
   });
 
+  testWidgets(
+      'decorationColor is honored when passed in via the TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(decorationColor: Color(0xDEADBEEF));
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.decorationColor, Color(0xDEADBEEF));
+  });
+
+  testWidgets('decorationColor is honored when passed in as a top-level param',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(decorationColor: Color(0xFACEFEED));
+
+    expect(outputTextStyle.decorationColor, equals(Color(0xFACEFEED)));
+  });
+
+  testWidgets(
+      'decorationColor from the top-level param takes precedence over '
+      'decorationColor from the TextStyle param', (tester) async {
+    final textStyle = TextStyle(decorationColor: Color(0xDEADBEEF));
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      decorationColor: Color(0xFACEFEED),
+    );
+
+    expect(outputTextStyle.decorationColor, equals(Color(0xFACEFEED)));
+  });
+
   /////////////////////
   // TextTheme tests //
   /////////////////////
