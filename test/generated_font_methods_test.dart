@@ -585,6 +585,33 @@ main() {
     expect(outputTextStyle.decorationStyle, equals(TextDecorationStyle.dotted));
   });
 
+  testWidgets(
+      'decorationThickness is honored when passed in via the TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(decorationThickness: 2);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.decorationThickness, 2);
+  });
+
+  testWidgets(
+      'decorationThickness is honored when passed in as a top-level param',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(decorationThickness: 3);
+
+    expect(outputTextStyle.decorationThickness, equals(3));
+  });
+
+  testWidgets(
+      'decorationThickness from the top-level param takes precedence over '
+      'decorationThickness from the TextStyle param', (tester) async {
+    final textStyle = TextStyle(decorationThickness: 2);
+    final outputTextStyle =
+        GoogleFonts.rancho(textStyle: textStyle, decorationThickness: 3);
+
+    expect(outputTextStyle.decorationThickness, equals(3));
+  });
+
   /////////////////////
   // TextTheme tests //
   /////////////////////
