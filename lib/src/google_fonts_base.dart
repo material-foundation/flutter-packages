@@ -57,25 +57,24 @@ TextStyle googleFontsTextStyle({
 
   textStyle ??= TextStyle();
   textStyle = textStyle.copyWith(
-    color: color,
-    backgroundColor: backgroundColor,
-    fontSize: fontSize,
-    fontWeight: fontWeight,
-    fontStyle: fontStyle,
-    letterSpacing: letterSpacing,
-    wordSpacing: wordSpacing,
-    textBaseline: textBaseline,
-    height: height,
-    locale: locale,
-    foreground: foreground,
-    background: background,
-    shadows: shadows,
-    fontFeatures: fontFeatures,
-    decoration: decoration,
-    decorationColor: decorationColor,
-    decorationStyle: decorationStyle,
-    decorationThickness: decorationThickness
-  );
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness);
 
   final variant = _closestMatch(
     GoogleFontsVariant(
