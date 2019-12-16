@@ -17,8 +17,8 @@ matrix:
   allow_failures:
     - env: FLUTTER_VERSION=beta
 before_script:
-  - git clone https://github.com/flutter/flutter.git -b $FLUTTER_VERSION
-  - ./flutter/bin/flutter doctor
+  - git clone https://github.com/flutter/flutter.git ../flutter -b $FLUTTER_VERSION
+  - ../flutter/bin/flutter doctor
   - chmod +x travis_script.sh
 script:
   - ./travis_script.sh

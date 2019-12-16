@@ -2,7 +2,7 @@ set -e
 
 # Backs up one directory at a time, looking for one called "flutter".
 function getFlutterPath() {
-    local path=""
+    local path="."
     local counter=0
 
     while [[ "${counter}" -lt 10 ]]; do
@@ -11,8 +11,6 @@ function getFlutterPath() {
         path="${path}/.."
     done
 }
-
-
 
 echo "== Testing on Flutter's $FLUTTER_VERSION channel =="
 
