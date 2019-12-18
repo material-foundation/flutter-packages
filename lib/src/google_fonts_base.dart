@@ -74,7 +74,7 @@ TextStyle googleFontsTextStyle({
     decoration: decoration,
     decorationColor: decorationColor,
     decorationStyle: decorationStyle,
-    decorationThickness: decorationThickness
+    decorationThickness: decorationThickness,
   );
 
   final variant = _closestMatch(
