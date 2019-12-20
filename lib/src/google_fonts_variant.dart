@@ -19,8 +19,63 @@ class GoogleFontsVariant {
             ? FontStyle.italic
             : FontStyle.normal;
 
+  GoogleFontsVariant.fromFontJson(Map<String, dynamic> fontJson)
+      : this.fontWeight = FontWeight.values[
+  (fontJson['weight'] == null ? 400 : fontJson['weight']) ~/ 100 - 1],
+        this.fontStyle =
+        fontJson['style'] == null ? FontStyle.normal : FontStyle.italic;
+
+  /// 'Regular' -> weight: 400, style: normal
+  /// 'Italic' -> weight: 400, style: italic
+  /// 'Bold' -> weight: 700, style: normal
+  /// 'BoldItalic' -> weight: 700, style: italic
+  GoogleFontsVariant.fromApiFilenamePart(String filenamePart)
+  : this.fontWeight = _extractFontWeightFromApiFilenamePart(filenamePart),
+        this.fontStyle = _extractFontStyleFromApiFilenamePart(filenamePart);
+
   final FontWeight fontWeight;
   final FontStyle fontStyle;
+
+  static FontWeight _extractFontWeightFromApiFilenamePart(String filenamePart) {
+    if (filenamePart.contains('Thin')) return FontWeight.w100;
+
+    // ExtraLight must be checked before Light because of the substring match.
+    if (filenamePart.contains('ExtraLight')) return FontWeight.w200;
+    if (filenamePart.contains('Light')) return FontWeight.w300;
+
+    if (filenamePart.contains('Medium')) return FontWeight.w500;
+
+    // SemiBold and ExtraBold must be checked before Bold because of the
+    // substring match.
+    if (filenamePart.contains('SemiBold')) return FontWeight.w600;
+    if (filenamePart.contains('ExtraBold')) return FontWeight.w800;
+    if (filenamePart.contains('Bold')) return FontWeight.w700;
+
+    if (filenamePart.contains('Black')) return FontWeight.w900;
+    return FontWeight.w400;
+  }
+
+  static FontStyle _extractFontStyleFromApiFilenamePart(String filenamePart) {
+    if (filenamePart.contains('Italic')) return FontStyle.italic;
+    return FontStyle.normal;
+  }
+
+  String toApiFilenamePart() {
+    var weightPrefix;
+    if (fontWeight == FontWeight.w100) weightPrefix = 'Thin';
+    if (fontWeight == FontWeight.w200) weightPrefix = 'ExtraLight';
+    if (fontWeight == FontWeight.w300) weightPrefix = 'Light';
+    if (fontWeight == FontWeight.w400) weightPrefix = 'Regular';
+    if (fontWeight == FontWeight.w500) weightPrefix = 'Medium';
+    if (fontWeight == FontWeight.w600) weightPrefix = 'SemiBold';
+    if (fontWeight == FontWeight.w700) weightPrefix = 'Bold';
+    if (fontWeight == FontWeight.w800) weightPrefix = 'ExtraBold';
+    if (fontWeight == FontWeight.w900) weightPrefix = 'Black';
+    if (weightPrefix == null) weightPrefix = 'Regular';
+    final italicSuffix = fontStyle == FontStyle.italic ? 'Italic' : '';
+    if (weightPrefix == 'Regular') return italicSuffix == '' ? weightPrefix : italicSuffix;
+    return '$weightPrefix$italicSuffix';
+  }
 
   @override
   String toString() {
