@@ -252,10 +252,7 @@ bool _isFamilyWithVariantInManifest(
   GoogleFontsFamilyWithVariant familyWithVariant,
   Map<String, dynamic> manifestJson,
 ) {
-
-  if (manifestJson == null) {
-    return false;
-  }
+  if (manifestJson == null) return false;
 
   for (final assetList in manifestJson.values) {
     for (final String asset in assetList) {
