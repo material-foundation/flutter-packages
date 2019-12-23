@@ -12,6 +12,10 @@ import 'src/google_fonts_base.dart';
 import 'src/google_fonts_variant.dart';
 
 class GoogleFonts {
+  /// Applies the ABeeZee font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/ABeeZee
   static TextStyle aBeeZee({
     TextStyle textStyle,
     Color color,
@@ -65,6 +69,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the ABeeZee font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/ABeeZee
   static TextTheme aBeeZeeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -84,6 +93,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Abel font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Abel
   static TextStyle abel({
     TextStyle textStyle,
     Color color,
@@ -135,6 +148,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Abel font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Abel
   static TextTheme abelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -154,6 +172,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Abhaya Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Abhaya+Libre
   static TextStyle abhayaLibre({
     TextStyle textStyle,
     Color color,
@@ -213,6 +235,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Abhaya Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Abhaya+Libre
   static TextTheme abhayaLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -232,6 +259,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Abril Fatface font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Abril+Fatface
   static TextStyle abrilFatface({
     TextStyle textStyle,
     Color color,
@@ -283,6 +314,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Abril Fatface font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Abril+Fatface
   static TextTheme abrilFatfaceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -302,6 +338,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aclonica font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aclonica
   static TextStyle aclonica({
     TextStyle textStyle,
     Color color,
@@ -353,6 +393,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aclonica font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aclonica
   static TextTheme aclonicaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -372,6 +417,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Acme font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Acme
   static TextStyle acme({
     TextStyle textStyle,
     Color color,
@@ -423,6 +472,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Acme font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Acme
   static TextTheme acmeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -442,6 +496,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Actor font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Actor
   static TextStyle actor({
     TextStyle textStyle,
     Color color,
@@ -493,6 +551,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Actor font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Actor
   static TextTheme actorTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -512,6 +575,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Adamina font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Adamina
   static TextStyle adamina({
     TextStyle textStyle,
     Color color,
@@ -563,6 +630,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Adamina font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Adamina
   static TextTheme adaminaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -582,6 +654,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Advent Pro font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Advent+Pro
   static TextStyle adventPro({
     TextStyle textStyle,
     Color color,
@@ -645,6 +721,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Advent Pro font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Advent+Pro
   static TextTheme adventProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -664,6 +745,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aguafina Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aguafina+Script
   static TextStyle aguafinaScript({
     TextStyle textStyle,
     Color color,
@@ -715,6 +800,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aguafina Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aguafina+Script
   static TextTheme aguafinaScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -734,6 +824,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Akronim font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Akronim
   static TextStyle akronim({
     TextStyle textStyle,
     Color color,
@@ -785,6 +879,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Akronim font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Akronim
   static TextTheme akronimTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -804,6 +903,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aladin font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aladin
   static TextStyle aladin({
     TextStyle textStyle,
     Color color,
@@ -855,6 +958,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aladin font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aladin
   static TextTheme aladinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -874,6 +982,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alata font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alata
   static TextStyle alata({
     TextStyle textStyle,
     Color color,
@@ -925,6 +1037,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alata font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alata
   static TextTheme alataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -944,6 +1061,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alatsi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alatsi
   static TextStyle alatsi({
     TextStyle textStyle,
     Color color,
@@ -995,6 +1116,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alatsi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alatsi
   static TextTheme alatsiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1014,6 +1140,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aldrich font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aldrich
   static TextStyle aldrich({
     TextStyle textStyle,
     Color color,
@@ -1065,6 +1195,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aldrich font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aldrich
   static TextTheme aldrichTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1084,6 +1219,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alef font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alef
   static TextStyle alef({
     TextStyle textStyle,
     Color color,
@@ -1137,6 +1276,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alef font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alef
   static TextTheme alefTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1156,6 +1300,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alegreya font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alegreya
   static TextStyle alegreya({
     TextStyle textStyle,
     Color color,
@@ -1225,6 +1373,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alegreya font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alegreya
   static TextTheme alegreyaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1244,6 +1397,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alegreya SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alegreya+SC
   static TextStyle alegreyaSC({
     TextStyle textStyle,
     Color color,
@@ -1313,6 +1470,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alegreya SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alegreya+SC
   static TextTheme alegreyaSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1332,6 +1494,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alegreya Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alegreya+Sans
   static TextStyle alegreyaSans({
     TextStyle textStyle,
     Color color,
@@ -1409,6 +1575,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alegreya Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alegreya+Sans
   static TextTheme alegreyaSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1428,6 +1599,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alegreya Sans SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alegreya+Sans+SC
   static TextStyle alegreyaSansSC({
     TextStyle textStyle,
     Color color,
@@ -1505,6 +1680,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alegreya Sans SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alegreya+Sans+SC
   static TextTheme alegreyaSansSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1524,6 +1704,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aleo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aleo
   static TextStyle aleo({
     TextStyle textStyle,
     Color color,
@@ -1585,6 +1769,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aleo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aleo
   static TextTheme aleoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1604,6 +1793,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alex Brush font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alex+Brush
   static TextStyle alexBrush({
     TextStyle textStyle,
     Color color,
@@ -1655,6 +1848,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alex Brush font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alex+Brush
   static TextTheme alexBrushTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1674,6 +1872,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alfa Slab One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alfa+Slab+One
   static TextStyle alfaSlabOne({
     TextStyle textStyle,
     Color color,
@@ -1725,6 +1927,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alfa Slab One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alfa+Slab+One
   static TextTheme alfaSlabOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1744,6 +1951,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alice font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alice
   static TextStyle alice({
     TextStyle textStyle,
     Color color,
@@ -1795,6 +2006,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alice font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alice
   static TextTheme aliceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1814,6 +2030,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alike font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alike
   static TextStyle alike({
     TextStyle textStyle,
     Color color,
@@ -1865,6 +2085,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alike font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alike
   static TextTheme alikeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1884,6 +2109,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alike Angular font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alike+Angular
   static TextStyle alikeAngular({
     TextStyle textStyle,
     Color color,
@@ -1935,6 +2164,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Alike Angular font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Alike+Angular
   static TextTheme alikeAngularTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -1954,6 +2188,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Allan font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Allan
   static TextStyle allan({
     TextStyle textStyle,
     Color color,
@@ -2007,6 +2245,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Allan font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Allan
   static TextTheme allanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2026,6 +2269,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Allerta font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Allerta
   static TextStyle allerta({
     TextStyle textStyle,
     Color color,
@@ -2077,6 +2324,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Allerta font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Allerta
   static TextTheme allertaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2096,6 +2348,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Allerta Stencil font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Allerta+Stencil
   static TextStyle allertaStencil({
     TextStyle textStyle,
     Color color,
@@ -2147,6 +2403,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Allerta Stencil font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Allerta+Stencil
   static TextTheme allertaStencilTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2166,6 +2427,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Allura font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Allura
   static TextStyle allura({
     TextStyle textStyle,
     Color color,
@@ -2217,6 +2482,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Allura font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Allura
   static TextTheme alluraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2236,6 +2506,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Almarai font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Almarai
   static TextStyle almarai({
     TextStyle textStyle,
     Color color,
@@ -2293,6 +2567,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Almarai font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Almarai
   static TextTheme almaraiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2312,6 +2591,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Almendra font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Almendra
   static TextStyle almendra({
     TextStyle textStyle,
     Color color,
@@ -2369,6 +2652,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Almendra font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Almendra
   static TextTheme almendraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2388,6 +2676,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Almendra Display font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Almendra+Display
   static TextStyle almendraDisplay({
     TextStyle textStyle,
     Color color,
@@ -2439,6 +2731,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Almendra Display font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Almendra+Display
   static TextTheme almendraDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2458,6 +2755,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Almendra SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Almendra+SC
   static TextStyle almendraSC({
     TextStyle textStyle,
     Color color,
@@ -2509,6 +2810,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Almendra SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Almendra+SC
   static TextTheme almendraSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2528,6 +2834,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amarante font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amarante
   static TextStyle amarante({
     TextStyle textStyle,
     Color color,
@@ -2579,6 +2889,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amarante font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amarante
   static TextTheme amaranteTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2598,6 +2913,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amaranth font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amaranth
   static TextStyle amaranth({
     TextStyle textStyle,
     Color color,
@@ -2655,6 +2974,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amaranth font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amaranth
   static TextTheme amaranthTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2674,6 +2998,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amatic SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amatic+SC
   static TextStyle amaticSC({
     TextStyle textStyle,
     Color color,
@@ -2727,6 +3055,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amatic SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amatic+SC
   static TextTheme amaticSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2746,6 +3079,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amethysta font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amethysta
   static TextStyle amethysta({
     TextStyle textStyle,
     Color color,
@@ -2797,6 +3134,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amethysta font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amethysta
   static TextTheme amethystaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2816,6 +3158,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amiko font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amiko
   static TextStyle amiko({
     TextStyle textStyle,
     Color color,
@@ -2871,6 +3217,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amiko font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amiko
   static TextTheme amikoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2890,6 +3241,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amiri font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amiri
   static TextStyle amiri({
     TextStyle textStyle,
     Color color,
@@ -2947,6 +3302,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amiri font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amiri
   static TextTheme amiriTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -2966,6 +3326,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amita font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amita
   static TextStyle amita({
     TextStyle textStyle,
     Color color,
@@ -3019,6 +3383,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Amita font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Amita
   static TextTheme amitaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3038,6 +3407,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Anaheim font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Anaheim
   static TextStyle anaheim({
     TextStyle textStyle,
     Color color,
@@ -3089,6 +3462,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Anaheim font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Anaheim
   static TextTheme anaheimTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3108,6 +3486,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Andada font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Andada
   static TextStyle andada({
     TextStyle textStyle,
     Color color,
@@ -3159,6 +3541,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Andada font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Andada
   static TextTheme andadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3178,6 +3565,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Andika font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Andika
   static TextStyle andika({
     TextStyle textStyle,
     Color color,
@@ -3229,6 +3620,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Andika font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Andika
   static TextTheme andikaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3248,6 +3644,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Angkor font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Angkor
   static TextStyle angkor({
     TextStyle textStyle,
     Color color,
@@ -3299,6 +3699,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Angkor font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Angkor
   static TextTheme angkorTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3318,6 +3723,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Annie Use Your Telescope font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Annie+Use+Your+Telescope
   static TextStyle annieUseYourTelescope({
     TextStyle textStyle,
     Color color,
@@ -3369,6 +3778,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Annie Use Your Telescope font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Annie+Use+Your+Telescope
   static TextTheme annieUseYourTelescopeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3395,6 +3809,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Anonymous Pro font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Anonymous+Pro
   static TextStyle anonymousPro({
     TextStyle textStyle,
     Color color,
@@ -3452,6 +3870,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Anonymous Pro font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Anonymous+Pro
   static TextTheme anonymousProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3471,6 +3894,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Antic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Antic
   static TextStyle antic({
     TextStyle textStyle,
     Color color,
@@ -3522,6 +3949,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Antic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Antic
   static TextTheme anticTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3541,6 +3973,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Antic Didone font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Antic+Didone
   static TextStyle anticDidone({
     TextStyle textStyle,
     Color color,
@@ -3592,6 +4028,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Antic Didone font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Antic+Didone
   static TextTheme anticDidoneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3611,6 +4052,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Antic Slab font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Antic+Slab
   static TextStyle anticSlab({
     TextStyle textStyle,
     Color color,
@@ -3662,6 +4107,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Antic Slab font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Antic+Slab
   static TextTheme anticSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3681,6 +4131,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Anton font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Anton
   static TextStyle anton({
     TextStyle textStyle,
     Color color,
@@ -3732,6 +4186,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Anton font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Anton
   static TextTheme antonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3751,6 +4210,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arapey font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arapey
   static TextStyle arapey({
     TextStyle textStyle,
     Color color,
@@ -3804,6 +4267,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arapey font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arapey
   static TextTheme arapeyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3823,6 +4291,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arbutus font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arbutus
   static TextStyle arbutus({
     TextStyle textStyle,
     Color color,
@@ -3874,6 +4346,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arbutus font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arbutus
   static TextTheme arbutusTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3893,6 +4370,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arbutus Slab font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arbutus+Slab
   static TextStyle arbutusSlab({
     TextStyle textStyle,
     Color color,
@@ -3944,6 +4425,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arbutus Slab font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arbutus+Slab
   static TextTheme arbutusSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -3963,6 +4449,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Architects Daughter font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Architects+Daughter
   static TextStyle architectsDaughter({
     TextStyle textStyle,
     Color color,
@@ -4014,6 +4504,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Architects Daughter font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Architects+Daughter
   static TextTheme architectsDaughterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4033,6 +4528,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Archivo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Archivo
   static TextStyle archivo({
     TextStyle textStyle,
     Color color,
@@ -4098,6 +4597,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Archivo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Archivo
   static TextTheme archivoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4117,6 +4621,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Archivo Black font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Archivo+Black
   static TextStyle archivoBlack({
     TextStyle textStyle,
     Color color,
@@ -4168,6 +4676,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Archivo Black font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Archivo+Black
   static TextTheme archivoBlackTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4187,6 +4700,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Archivo Narrow font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Archivo+Narrow
   static TextStyle archivoNarrow({
     TextStyle textStyle,
     Color color,
@@ -4252,6 +4769,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Archivo Narrow font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Archivo+Narrow
   static TextTheme archivoNarrowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4271,6 +4793,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aref Ruqaa font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aref+Ruqaa
   static TextStyle arefRuqaa({
     TextStyle textStyle,
     Color color,
@@ -4324,6 +4850,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aref Ruqaa font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aref+Ruqaa
   static TextTheme arefRuqaaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4343,6 +4874,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arima Madurai font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arima+Madurai
   static TextStyle arimaMadurai({
     TextStyle textStyle,
     Color color,
@@ -4408,6 +4943,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arima Madurai font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arima+Madurai
   static TextTheme arimaMaduraiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4427,6 +4967,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arimo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arimo
   static TextStyle arimo({
     TextStyle textStyle,
     Color color,
@@ -4484,6 +5028,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arimo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arimo
   static TextTheme arimoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4503,6 +5052,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arizonia font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arizonia
   static TextStyle arizonia({
     TextStyle textStyle,
     Color color,
@@ -4554,6 +5107,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arizonia font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arizonia
   static TextTheme arizoniaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4573,6 +5131,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Armata font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Armata
   static TextStyle armata({
     TextStyle textStyle,
     Color color,
@@ -4624,6 +5186,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Armata font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Armata
   static TextTheme armataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4643,6 +5210,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arsenal font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arsenal
   static TextStyle arsenal({
     TextStyle textStyle,
     Color color,
@@ -4700,6 +5271,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arsenal font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arsenal
   static TextTheme arsenalTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4719,6 +5295,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Artifika font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Artifika
   static TextStyle artifika({
     TextStyle textStyle,
     Color color,
@@ -4770,6 +5350,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Artifika font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Artifika
   static TextTheme artifikaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4789,6 +5374,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arvo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arvo
   static TextStyle arvo({
     TextStyle textStyle,
     Color color,
@@ -4846,6 +5435,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arvo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arvo
   static TextTheme arvoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4865,6 +5459,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arya font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arya
   static TextStyle arya({
     TextStyle textStyle,
     Color color,
@@ -4918,6 +5516,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Arya font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Arya
   static TextTheme aryaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -4937,6 +5540,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Asap font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Asap
   static TextStyle asap({
     TextStyle textStyle,
     Color color,
@@ -5002,6 +5609,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Asap font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Asap
   static TextTheme asapTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5021,6 +5633,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Asap Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Asap+Condensed
   static TextStyle asapCondensed({
     TextStyle textStyle,
     Color color,
@@ -5086,6 +5702,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Asap Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Asap+Condensed
   static TextTheme asapCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5105,6 +5726,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Asar font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Asar
   static TextStyle asar({
     TextStyle textStyle,
     Color color,
@@ -5156,6 +5781,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Asar font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Asar
   static TextTheme asarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5175,6 +5805,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Asset font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Asset
   static TextStyle asset({
     TextStyle textStyle,
     Color color,
@@ -5226,6 +5860,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Asset font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Asset
   static TextTheme assetTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5245,6 +5884,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Assistant font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Assistant
   static TextStyle assistant({
     TextStyle textStyle,
     Color color,
@@ -5306,6 +5949,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Assistant font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Assistant
   static TextTheme assistantTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5325,6 +5973,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Astloch font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Astloch
   static TextStyle astloch({
     TextStyle textStyle,
     Color color,
@@ -5378,6 +6030,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Astloch font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Astloch
   static TextTheme astlochTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5397,6 +6054,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Asul font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Asul
   static TextStyle asul({
     TextStyle textStyle,
     Color color,
@@ -5450,6 +6111,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Asul font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Asul
   static TextTheme asulTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5469,6 +6135,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Athiti font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Athiti
   static TextStyle athiti({
     TextStyle textStyle,
     Color color,
@@ -5530,6 +6200,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Athiti font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Athiti
   static TextTheme athitiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5549,6 +6224,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Atma font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Atma
   static TextStyle atma({
     TextStyle textStyle,
     Color color,
@@ -5608,6 +6287,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Atma font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Atma
   static TextTheme atmaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5627,6 +6311,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Atomic Age font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Atomic+Age
   static TextStyle atomicAge({
     TextStyle textStyle,
     Color color,
@@ -5678,6 +6366,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Atomic Age font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Atomic+Age
   static TextTheme atomicAgeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5697,6 +6390,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aubrey font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aubrey
   static TextStyle aubrey({
     TextStyle textStyle,
     Color color,
@@ -5748,6 +6445,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Aubrey font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Aubrey
   static TextTheme aubreyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5767,6 +6469,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Audiowide font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Audiowide
   static TextStyle audiowide({
     TextStyle textStyle,
     Color color,
@@ -5818,6 +6524,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Audiowide font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Audiowide
   static TextTheme audiowideTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5837,6 +6548,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Autour One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Autour+One
   static TextStyle autourOne({
     TextStyle textStyle,
     Color color,
@@ -5888,6 +6603,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Autour One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Autour+One
   static TextTheme autourOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5907,6 +6627,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Average font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Average
   static TextStyle average({
     TextStyle textStyle,
     Color color,
@@ -5958,6 +6682,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Average font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Average
   static TextTheme averageTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -5977,6 +6706,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Average Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Average+Sans
   static TextStyle averageSans({
     TextStyle textStyle,
     Color color,
@@ -6028,6 +6761,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Average Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Average+Sans
   static TextTheme averageSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6047,6 +6785,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Averia Gruesa Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Averia+Gruesa+Libre
   static TextStyle averiaGruesaLibre({
     TextStyle textStyle,
     Color color,
@@ -6098,6 +6840,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Averia Gruesa Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Averia+Gruesa+Libre
   static TextTheme averiaGruesaLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6117,6 +6864,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Averia Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Averia+Libre
   static TextStyle averiaLibre({
     TextStyle textStyle,
     Color color,
@@ -6178,6 +6929,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Averia Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Averia+Libre
   static TextTheme averiaLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6197,6 +6953,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Averia Sans Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Averia+Sans+Libre
   static TextStyle averiaSansLibre({
     TextStyle textStyle,
     Color color,
@@ -6258,6 +7018,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Averia Sans Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Averia+Sans+Libre
   static TextTheme averiaSansLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6277,6 +7042,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Averia Serif Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Averia+Serif+Libre
   static TextStyle averiaSerifLibre({
     TextStyle textStyle,
     Color color,
@@ -6338,6 +7107,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Averia Serif Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Averia+Serif+Libre
   static TextTheme averiaSerifLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6357,6 +7131,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the B612 font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/B612
   static TextStyle b612({
     TextStyle textStyle,
     Color color,
@@ -6414,6 +7192,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the B612 font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/B612
   static TextTheme b612TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6433,6 +7216,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the B612 Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/B612+Mono
   static TextStyle b612Mono({
     TextStyle textStyle,
     Color color,
@@ -6490,6 +7277,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the B612 Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/B612+Mono
   static TextTheme b612MonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6509,6 +7301,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bad Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bad+Script
   static TextStyle badScript({
     TextStyle textStyle,
     Color color,
@@ -6560,6 +7356,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bad Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bad+Script
   static TextTheme badScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6579,6 +7380,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bahiana font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bahiana
   static TextStyle bahiana({
     TextStyle textStyle,
     Color color,
@@ -6630,6 +7435,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bahiana font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bahiana
   static TextTheme bahianaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6649,6 +7459,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bahianita font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bahianita
   static TextStyle bahianita({
     TextStyle textStyle,
     Color color,
@@ -6700,6 +7514,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bahianita font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bahianita
   static TextTheme bahianitaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6719,6 +7538,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bai Jamjuree font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bai+Jamjuree
   static TextStyle baiJamjuree({
     TextStyle textStyle,
     Color color,
@@ -6792,6 +7615,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bai Jamjuree font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bai+Jamjuree
   static TextTheme baiJamjureeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6811,6 +7639,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo
   static TextStyle baloo({
     TextStyle textStyle,
     Color color,
@@ -6862,6 +7694,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo
   static TextTheme balooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6881,6 +7718,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Bhai font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Bhai
   static TextStyle balooBhai({
     TextStyle textStyle,
     Color color,
@@ -6932,6 +7773,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Bhai font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Bhai
   static TextTheme balooBhaiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -6951,6 +7797,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Bhaijaan font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Bhaijaan
   static TextStyle balooBhaijaan({
     TextStyle textStyle,
     Color color,
@@ -7002,6 +7852,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Bhaijaan font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Bhaijaan
   static TextTheme balooBhaijaanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7021,6 +7876,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Bhaina font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Bhaina
   static TextStyle balooBhaina({
     TextStyle textStyle,
     Color color,
@@ -7072,6 +7931,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Bhaina font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Bhaina
   static TextTheme balooBhainaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7091,6 +7955,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Chettan font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Chettan
   static TextStyle balooChettan({
     TextStyle textStyle,
     Color color,
@@ -7142,6 +8010,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Chettan font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Chettan
   static TextTheme balooChettanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7161,6 +8034,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Da font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Da
   static TextStyle balooDa({
     TextStyle textStyle,
     Color color,
@@ -7212,6 +8089,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Da font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Da
   static TextTheme balooDaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7231,6 +8113,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Paaji font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Paaji
   static TextStyle balooPaaji({
     TextStyle textStyle,
     Color color,
@@ -7282,6 +8168,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Paaji font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Paaji
   static TextTheme balooPaajiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7301,6 +8192,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Tamma font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Tamma
   static TextStyle balooTamma({
     TextStyle textStyle,
     Color color,
@@ -7352,6 +8247,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Tamma font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Tamma
   static TextTheme balooTammaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7371,6 +8271,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Tammudu font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Tammudu
   static TextStyle balooTammudu({
     TextStyle textStyle,
     Color color,
@@ -7422,6 +8326,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Tammudu font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Tammudu
   static TextTheme balooTammuduTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7441,6 +8350,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Thambi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Thambi
   static TextStyle balooThambi({
     TextStyle textStyle,
     Color color,
@@ -7492,6 +8405,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baloo Thambi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baloo+Thambi
   static TextTheme balooThambiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7511,6 +8429,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Balthazar font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Balthazar
   static TextStyle balthazar({
     TextStyle textStyle,
     Color color,
@@ -7562,6 +8484,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Balthazar font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Balthazar
   static TextTheme balthazarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7581,6 +8508,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bangers font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bangers
   static TextStyle bangers({
     TextStyle textStyle,
     Color color,
@@ -7632,6 +8563,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bangers font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bangers
   static TextTheme bangersTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7651,6 +8587,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Barlow font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Barlow
   static TextStyle barlow({
     TextStyle textStyle,
     Color color,
@@ -7736,6 +8676,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Barlow font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Barlow
   static TextTheme barlowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7755,6 +8700,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Barlow Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Barlow+Condensed
   static TextStyle barlowCondensed({
     TextStyle textStyle,
     Color color,
@@ -7840,6 +8789,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Barlow Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Barlow+Condensed
   static TextTheme barlowCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7859,6 +8813,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Barlow Semi Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Barlow+Semi+Condensed
   static TextStyle barlowSemiCondensed({
     TextStyle textStyle,
     Color color,
@@ -7944,6 +8902,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Barlow Semi Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Barlow+Semi+Condensed
   static TextTheme barlowSemiCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -7963,6 +8926,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Barriecito font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Barriecito
   static TextStyle barriecito({
     TextStyle textStyle,
     Color color,
@@ -8014,6 +8981,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Barriecito font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Barriecito
   static TextTheme barriecitoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8033,6 +9005,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Barrio font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Barrio
   static TextStyle barrio({
     TextStyle textStyle,
     Color color,
@@ -8084,6 +9060,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Barrio font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Barrio
   static TextTheme barrioTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8103,6 +9084,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Basic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Basic
   static TextStyle basic({
     TextStyle textStyle,
     Color color,
@@ -8154,6 +9139,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Basic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Basic
   static TextTheme basicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8173,6 +9163,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baskervville font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baskervville
   static TextStyle baskervville({
     TextStyle textStyle,
     Color color,
@@ -8226,6 +9220,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baskervville font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baskervville
   static TextTheme baskervvilleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8245,6 +9244,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Battambang font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Battambang
   static TextStyle battambang({
     TextStyle textStyle,
     Color color,
@@ -8298,6 +9301,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Battambang font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Battambang
   static TextTheme battambangTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8317,6 +9325,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baumans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baumans
   static TextStyle baumans({
     TextStyle textStyle,
     Color color,
@@ -8368,6 +9380,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Baumans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Baumans
   static TextTheme baumansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8387,6 +9404,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bayon font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bayon
   static TextStyle bayon({
     TextStyle textStyle,
     Color color,
@@ -8438,6 +9459,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bayon font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bayon
   static TextTheme bayonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8457,6 +9483,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Be Vietnam font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Be+Vietnam
   static TextStyle beVietnam({
     TextStyle textStyle,
     Color color,
@@ -8534,6 +9564,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Be Vietnam font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Be+Vietnam
   static TextTheme beVietnamTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8553,6 +9588,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bebas Neue font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bebas+Neue
   static TextStyle bebasNeue({
     TextStyle textStyle,
     Color color,
@@ -8604,6 +9643,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bebas Neue font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bebas+Neue
   static TextTheme bebasNeueTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8623,6 +9667,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Belgrano font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Belgrano
   static TextStyle belgrano({
     TextStyle textStyle,
     Color color,
@@ -8674,6 +9722,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Belgrano font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Belgrano
   static TextTheme belgranoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8693,6 +9746,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bellefair font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bellefair
   static TextStyle bellefair({
     TextStyle textStyle,
     Color color,
@@ -8744,6 +9801,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bellefair font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bellefair
   static TextTheme bellefairTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8763,6 +9825,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Belleza font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Belleza
   static TextStyle belleza({
     TextStyle textStyle,
     Color color,
@@ -8814,6 +9880,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Belleza font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Belleza
   static TextTheme bellezaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8833,6 +9904,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the BenchNine font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/BenchNine
   static TextStyle benchNine({
     TextStyle textStyle,
     Color color,
@@ -8888,6 +9963,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the BenchNine font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/BenchNine
   static TextTheme benchNineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8907,6 +9987,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bentham font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bentham
   static TextStyle bentham({
     TextStyle textStyle,
     Color color,
@@ -8958,6 +10042,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bentham font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bentham
   static TextTheme benthamTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -8977,6 +10066,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Berkshire Swash font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Berkshire+Swash
   static TextStyle berkshireSwash({
     TextStyle textStyle,
     Color color,
@@ -9028,6 +10121,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Berkshire Swash font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Berkshire+Swash
   static TextTheme berkshireSwashTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9047,6 +10145,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Beth Ellen font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Beth+Ellen
   static TextStyle bethEllen({
     TextStyle textStyle,
     Color color,
@@ -9098,6 +10200,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Beth Ellen font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Beth+Ellen
   static TextTheme bethEllenTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9117,6 +10224,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bevan font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bevan
   static TextStyle bevan({
     TextStyle textStyle,
     Color color,
@@ -9168,6 +10279,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bevan font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bevan
   static TextTheme bevanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9187,6 +10303,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Big Shoulders Display font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Display
   static TextStyle bigShouldersDisplay({
     TextStyle textStyle,
     Color color,
@@ -9252,6 +10372,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Big Shoulders Display font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Display
   static TextTheme bigShouldersDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9271,6 +10396,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Big Shoulders Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Text
   static TextStyle bigShouldersText({
     TextStyle textStyle,
     Color color,
@@ -9336,6 +10465,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Big Shoulders Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Text
   static TextTheme bigShouldersTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9355,6 +10489,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bigelow Rules font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bigelow+Rules
   static TextStyle bigelowRules({
     TextStyle textStyle,
     Color color,
@@ -9406,6 +10544,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bigelow Rules font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bigelow+Rules
   static TextTheme bigelowRulesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9425,6 +10568,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bigshot One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bigshot+One
   static TextStyle bigshotOne({
     TextStyle textStyle,
     Color color,
@@ -9476,6 +10623,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bigshot One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bigshot+One
   static TextTheme bigshotOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9495,6 +10647,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bilbo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bilbo
   static TextStyle bilbo({
     TextStyle textStyle,
     Color color,
@@ -9546,6 +10702,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bilbo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bilbo
   static TextTheme bilboTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9565,6 +10726,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bilbo Swash Caps font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bilbo+Swash+Caps
   static TextStyle bilboSwashCaps({
     TextStyle textStyle,
     Color color,
@@ -9616,6 +10781,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bilbo Swash Caps font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bilbo+Swash+Caps
   static TextTheme bilboSwashCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9635,6 +10805,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the BioRhyme font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/BioRhyme
   static TextStyle bioRhyme({
     TextStyle textStyle,
     Color color,
@@ -9694,6 +10868,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the BioRhyme font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/BioRhyme
   static TextTheme bioRhymeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9713,6 +10892,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the BioRhyme Expanded font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/BioRhyme+Expanded
   static TextStyle bioRhymeExpanded({
     TextStyle textStyle,
     Color color,
@@ -9772,6 +10955,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the BioRhyme Expanded font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/BioRhyme+Expanded
   static TextTheme bioRhymeExpandedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9791,6 +10979,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Biryani font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Biryani
   static TextStyle biryani({
     TextStyle textStyle,
     Color color,
@@ -9854,6 +11046,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Biryani font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Biryani
   static TextTheme biryaniTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9873,6 +11070,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bitter font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bitter
   static TextStyle bitter({
     TextStyle textStyle,
     Color color,
@@ -9928,6 +11129,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bitter font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bitter
   static TextTheme bitterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -9947,6 +11153,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Black And White Picture font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Black+And+White+Picture
   static TextStyle blackAndWhitePicture({
     TextStyle textStyle,
     Color color,
@@ -9998,6 +11208,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Black And White Picture font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Black+And+White+Picture
   static TextTheme blackAndWhitePictureTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10024,6 +11239,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Black Han Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Black+Han+Sans
   static TextStyle blackHanSans({
     TextStyle textStyle,
     Color color,
@@ -10075,6 +11294,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Black Han Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Black+Han+Sans
   static TextTheme blackHanSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10094,6 +11318,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Black Ops One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Black+Ops+One
   static TextStyle blackOpsOne({
     TextStyle textStyle,
     Color color,
@@ -10145,6 +11373,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Black Ops One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Black+Ops+One
   static TextTheme blackOpsOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10164,6 +11397,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Blinker font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Blinker
   static TextStyle blinker({
     TextStyle textStyle,
     Color color,
@@ -10229,6 +11466,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Blinker font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Blinker
   static TextTheme blinkerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10248,6 +11490,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bokor font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bokor
   static TextStyle bokor({
     TextStyle textStyle,
     Color color,
@@ -10299,6 +11545,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bokor font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bokor
   static TextTheme bokorTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10318,6 +11569,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bonbon font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bonbon
   static TextStyle bonbon({
     TextStyle textStyle,
     Color color,
@@ -10369,6 +11624,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bonbon font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bonbon
   static TextTheme bonbonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10388,6 +11648,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Boogaloo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Boogaloo
   static TextStyle boogaloo({
     TextStyle textStyle,
     Color color,
@@ -10439,6 +11703,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Boogaloo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Boogaloo
   static TextTheme boogalooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10458,6 +11727,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bowlby One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bowlby+One
   static TextStyle bowlbyOne({
     TextStyle textStyle,
     Color color,
@@ -10509,6 +11782,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bowlby One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bowlby+One
   static TextTheme bowlbyOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10528,6 +11806,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bowlby One SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bowlby+One+SC
   static TextStyle bowlbyOneSC({
     TextStyle textStyle,
     Color color,
@@ -10579,6 +11861,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bowlby One SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bowlby+One+SC
   static TextTheme bowlbyOneSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10598,6 +11885,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Brawler font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Brawler
   static TextStyle brawler({
     TextStyle textStyle,
     Color color,
@@ -10649,6 +11940,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Brawler font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Brawler
   static TextTheme brawlerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10668,6 +11964,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bree Serif font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bree+Serif
   static TextStyle breeSerif({
     TextStyle textStyle,
     Color color,
@@ -10719,6 +12019,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bree Serif font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bree+Serif
   static TextTheme breeSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10738,6 +12043,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bubblegum Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bubblegum+Sans
   static TextStyle bubblegumSans({
     TextStyle textStyle,
     Color color,
@@ -10789,6 +12098,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bubblegum Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bubblegum+Sans
   static TextTheme bubblegumSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10808,6 +12122,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bubbler One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bubbler+One
   static TextStyle bubblerOne({
     TextStyle textStyle,
     Color color,
@@ -10859,6 +12177,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bubbler One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bubbler+One
   static TextTheme bubblerOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10878,6 +12201,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Buda font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Buda
   static TextStyle buda({
     TextStyle textStyle,
     Color color,
@@ -10929,6 +12256,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Buda font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Buda
   static TextTheme budaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -10948,6 +12280,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Buenard font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Buenard
   static TextStyle buenard({
     TextStyle textStyle,
     Color color,
@@ -11001,6 +12337,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Buenard font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Buenard
   static TextTheme buenardTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11020,6 +12361,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bungee font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bungee
   static TextStyle bungee({
     TextStyle textStyle,
     Color color,
@@ -11071,6 +12416,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bungee font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bungee
   static TextTheme bungeeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11090,6 +12440,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bungee Hairline font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bungee+Hairline
   static TextStyle bungeeHairline({
     TextStyle textStyle,
     Color color,
@@ -11141,6 +12495,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bungee Hairline font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bungee+Hairline
   static TextTheme bungeeHairlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11160,6 +12519,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bungee Inline font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bungee+Inline
   static TextStyle bungeeInline({
     TextStyle textStyle,
     Color color,
@@ -11211,6 +12574,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bungee Inline font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bungee+Inline
   static TextTheme bungeeInlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11230,6 +12598,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bungee Outline font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bungee+Outline
   static TextStyle bungeeOutline({
     TextStyle textStyle,
     Color color,
@@ -11281,6 +12653,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bungee Outline font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bungee+Outline
   static TextTheme bungeeOutlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11300,6 +12677,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bungee Shade font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bungee+Shade
   static TextStyle bungeeShade({
     TextStyle textStyle,
     Color color,
@@ -11351,6 +12732,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Bungee Shade font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Bungee+Shade
   static TextTheme bungeeShadeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11370,6 +12756,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Butcherman font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Butcherman
   static TextStyle butcherman({
     TextStyle textStyle,
     Color color,
@@ -11421,6 +12811,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Butcherman font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Butcherman
   static TextTheme butchermanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11440,6 +12835,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Butterfly Kids font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Butterfly+Kids
   static TextStyle butterflyKids({
     TextStyle textStyle,
     Color color,
@@ -11491,6 +12890,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Butterfly Kids font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Butterfly+Kids
   static TextTheme butterflyKidsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11510,6 +12914,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cabin font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cabin
   static TextStyle cabin({
     TextStyle textStyle,
     Color color,
@@ -11575,6 +12983,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cabin font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cabin
   static TextTheme cabinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11594,6 +13007,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cabin Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cabin+Condensed
   static TextStyle cabinCondensed({
     TextStyle textStyle,
     Color color,
@@ -11651,6 +13068,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cabin Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cabin+Condensed
   static TextTheme cabinCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11670,6 +13092,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cabin Sketch font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cabin+Sketch
   static TextStyle cabinSketch({
     TextStyle textStyle,
     Color color,
@@ -11723,6 +13149,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cabin Sketch font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cabin+Sketch
   static TextTheme cabinSketchTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11742,6 +13173,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Caesar Dressing font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Caesar+Dressing
   static TextStyle caesarDressing({
     TextStyle textStyle,
     Color color,
@@ -11793,6 +13228,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Caesar Dressing font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Caesar+Dressing
   static TextTheme caesarDressingTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11812,6 +13252,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cagliostro font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cagliostro
   static TextStyle cagliostro({
     TextStyle textStyle,
     Color color,
@@ -11863,6 +13307,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cagliostro font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cagliostro
   static TextTheme cagliostroTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11882,6 +13331,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cairo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cairo
   static TextStyle cairo({
     TextStyle textStyle,
     Color color,
@@ -11943,6 +13396,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cairo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cairo
   static TextTheme cairoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -11962,6 +13420,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Calistoga font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Calistoga
   static TextStyle calistoga({
     TextStyle textStyle,
     Color color,
@@ -12013,6 +13475,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Calistoga font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Calistoga
   static TextTheme calistogaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12032,6 +13499,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Calligraffitti font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Calligraffitti
   static TextStyle calligraffitti({
     TextStyle textStyle,
     Color color,
@@ -12083,6 +13554,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Calligraffitti font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Calligraffitti
   static TextTheme calligraffittiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12102,6 +13578,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cambay font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cambay
   static TextStyle cambay({
     TextStyle textStyle,
     Color color,
@@ -12159,6 +13639,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cambay font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cambay
   static TextTheme cambayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12178,6 +13663,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cambo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cambo
   static TextStyle cambo({
     TextStyle textStyle,
     Color color,
@@ -12229,6 +13718,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cambo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cambo
   static TextTheme camboTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12248,6 +13742,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Candal font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Candal
   static TextStyle candal({
     TextStyle textStyle,
     Color color,
@@ -12299,6 +13797,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Candal font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Candal
   static TextTheme candalTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12318,6 +13821,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cantarell font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cantarell
   static TextStyle cantarell({
     TextStyle textStyle,
     Color color,
@@ -12375,6 +13882,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cantarell font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cantarell
   static TextTheme cantarellTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12394,6 +13906,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cantata One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cantata+One
   static TextStyle cantataOne({
     TextStyle textStyle,
     Color color,
@@ -12445,6 +13961,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cantata One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cantata+One
   static TextTheme cantataOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12464,6 +13985,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cantora One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cantora+One
   static TextStyle cantoraOne({
     TextStyle textStyle,
     Color color,
@@ -12515,6 +14040,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cantora One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cantora+One
   static TextTheme cantoraOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12534,6 +14064,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Capriola font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Capriola
   static TextStyle capriola({
     TextStyle textStyle,
     Color color,
@@ -12585,6 +14119,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Capriola font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Capriola
   static TextTheme capriolaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12604,6 +14143,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cardo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cardo
   static TextStyle cardo({
     TextStyle textStyle,
     Color color,
@@ -12659,6 +14202,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cardo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cardo
   static TextTheme cardoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12678,6 +14226,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Carme font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Carme
   static TextStyle carme({
     TextStyle textStyle,
     Color color,
@@ -12729,6 +14281,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Carme font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Carme
   static TextTheme carmeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12748,6 +14305,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Carrois Gothic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Carrois+Gothic
   static TextStyle carroisGothic({
     TextStyle textStyle,
     Color color,
@@ -12799,6 +14360,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Carrois Gothic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Carrois+Gothic
   static TextTheme carroisGothicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12818,6 +14384,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Carrois Gothic SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Carrois+Gothic+SC
   static TextStyle carroisGothicSC({
     TextStyle textStyle,
     Color color,
@@ -12869,6 +14439,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Carrois Gothic SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Carrois+Gothic+SC
   static TextTheme carroisGothicSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12888,6 +14463,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Carter One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Carter+One
   static TextStyle carterOne({
     TextStyle textStyle,
     Color color,
@@ -12939,6 +14518,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Carter One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Carter+One
   static TextTheme carterOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -12958,6 +14542,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Catamaran font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Catamaran
   static TextStyle catamaran({
     TextStyle textStyle,
     Color color,
@@ -13025,6 +14613,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Catamaran font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Catamaran
   static TextTheme catamaranTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13044,6 +14637,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Caudex font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Caudex
   static TextStyle caudex({
     TextStyle textStyle,
     Color color,
@@ -13101,6 +14698,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Caudex font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Caudex
   static TextTheme caudexTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13120,6 +14722,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Caveat font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Caveat
   static TextStyle caveat({
     TextStyle textStyle,
     Color color,
@@ -13173,6 +14779,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Caveat font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Caveat
   static TextTheme caveatTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13192,6 +14803,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Caveat Brush font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Caveat+Brush
   static TextStyle caveatBrush({
     TextStyle textStyle,
     Color color,
@@ -13243,6 +14858,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Caveat Brush font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Caveat+Brush
   static TextTheme caveatBrushTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13262,6 +14882,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cedarville Cursive font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cedarville+Cursive
   static TextStyle cedarvilleCursive({
     TextStyle textStyle,
     Color color,
@@ -13313,6 +14937,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cedarville Cursive font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cedarville+Cursive
   static TextTheme cedarvilleCursiveTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13332,6 +14961,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ceviche One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ceviche+One
   static TextStyle cevicheOne({
     TextStyle textStyle,
     Color color,
@@ -13383,6 +15016,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ceviche One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ceviche+One
   static TextTheme cevicheOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13402,6 +15040,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chakra Petch font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chakra+Petch
   static TextStyle chakraPetch({
     TextStyle textStyle,
     Color color,
@@ -13471,6 +15113,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chakra Petch font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chakra+Petch
   static TextTheme chakraPetchTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13490,6 +15137,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Changa font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Changa
   static TextStyle changa({
     TextStyle textStyle,
     Color color,
@@ -13553,6 +15204,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Changa font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Changa
   static TextTheme changaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13572,6 +15228,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Changa One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Changa+One
   static TextStyle changaOne({
     TextStyle textStyle,
     Color color,
@@ -13625,6 +15285,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Changa One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Changa+One
   static TextTheme changaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13644,6 +15309,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chango font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chango
   static TextStyle chango({
     TextStyle textStyle,
     Color color,
@@ -13695,6 +15364,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chango font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chango
   static TextTheme changoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13714,6 +15388,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Charm font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Charm
   static TextStyle charm({
     TextStyle textStyle,
     Color color,
@@ -13767,6 +15445,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Charm font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Charm
   static TextTheme charmTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13786,6 +15469,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Charmonman font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Charmonman
   static TextStyle charmonman({
     TextStyle textStyle,
     Color color,
@@ -13839,6 +15526,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Charmonman font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Charmonman
   static TextTheme charmonmanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13858,6 +15550,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chathura font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chathura
   static TextStyle chathura({
     TextStyle textStyle,
     Color color,
@@ -13917,6 +15613,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chathura font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chathura
   static TextTheme chathuraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -13936,6 +15637,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chau Philomene One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chau+Philomene+One
   static TextStyle chauPhilomeneOne({
     TextStyle textStyle,
     Color color,
@@ -13989,6 +15694,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chau Philomene One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chau+Philomene+One
   static TextTheme chauPhilomeneOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14008,6 +15718,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chela One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chela+One
   static TextStyle chelaOne({
     TextStyle textStyle,
     Color color,
@@ -14059,6 +15773,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chela One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chela+One
   static TextTheme chelaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14078,6 +15797,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chelsea Market font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chelsea+Market
   static TextStyle chelseaMarket({
     TextStyle textStyle,
     Color color,
@@ -14129,6 +15852,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chelsea Market font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chelsea+Market
   static TextTheme chelseaMarketTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14148,6 +15876,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chenla font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chenla
   static TextStyle chenla({
     TextStyle textStyle,
     Color color,
@@ -14199,6 +15931,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chenla font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chenla
   static TextTheme chenlaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14218,6 +15955,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cherry Cream Soda font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cherry+Cream+Soda
   static TextStyle cherryCreamSoda({
     TextStyle textStyle,
     Color color,
@@ -14269,6 +16010,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cherry Cream Soda font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cherry+Cream+Soda
   static TextTheme cherryCreamSodaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14288,6 +16034,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cherry Swash font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cherry+Swash
   static TextStyle cherrySwash({
     TextStyle textStyle,
     Color color,
@@ -14341,6 +16091,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cherry Swash font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cherry+Swash
   static TextTheme cherrySwashTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14360,6 +16115,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chewy font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chewy
   static TextStyle chewy({
     TextStyle textStyle,
     Color color,
@@ -14411,6 +16170,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chewy font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chewy
   static TextTheme chewyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14430,6 +16194,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chicle font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chicle
   static TextStyle chicle({
     TextStyle textStyle,
     Color color,
@@ -14481,6 +16249,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chicle font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chicle
   static TextTheme chicleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14500,6 +16273,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chilanka font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chilanka
   static TextStyle chilanka({
     TextStyle textStyle,
     Color color,
@@ -14551,6 +16328,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chilanka font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chilanka
   static TextTheme chilankaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14570,6 +16352,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chivo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chivo
   static TextStyle chivo({
     TextStyle textStyle,
     Color color,
@@ -14635,6 +16421,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chivo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chivo
   static TextTheme chivoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14654,6 +16445,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chonburi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chonburi
   static TextStyle chonburi({
     TextStyle textStyle,
     Color color,
@@ -14705,6 +16500,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Chonburi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Chonburi
   static TextTheme chonburiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14724,6 +16524,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cinzel font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cinzel
   static TextStyle cinzel({
     TextStyle textStyle,
     Color color,
@@ -14779,6 +16583,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cinzel font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cinzel
   static TextTheme cinzelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14798,6 +16607,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cinzel Decorative font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cinzel+Decorative
   static TextStyle cinzelDecorative({
     TextStyle textStyle,
     Color color,
@@ -14853,6 +16666,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cinzel Decorative font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cinzel+Decorative
   static TextTheme cinzelDecorativeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14872,6 +16690,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Clicker Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Clicker+Script
   static TextStyle clickerScript({
     TextStyle textStyle,
     Color color,
@@ -14923,6 +16745,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Clicker Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Clicker+Script
   static TextTheme clickerScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -14942,6 +16769,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Coda font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Coda
   static TextStyle coda({
     TextStyle textStyle,
     Color color,
@@ -14995,6 +16826,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Coda font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Coda
   static TextTheme codaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15014,6 +16850,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Coda Caption font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Coda+Caption
   static TextStyle codaCaption({
     TextStyle textStyle,
     Color color,
@@ -15065,6 +16905,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Coda Caption font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Coda+Caption
   static TextTheme codaCaptionTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15084,6 +16929,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Codystar font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Codystar
   static TextStyle codystar({
     TextStyle textStyle,
     Color color,
@@ -15137,6 +16986,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Codystar font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Codystar
   static TextTheme codystarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15156,6 +17010,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Coiny font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Coiny
   static TextStyle coiny({
     TextStyle textStyle,
     Color color,
@@ -15207,6 +17065,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Coiny font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Coiny
   static TextTheme coinyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15226,6 +17089,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Combo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Combo
   static TextStyle combo({
     TextStyle textStyle,
     Color color,
@@ -15277,6 +17144,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Combo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Combo
   static TextTheme comboTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15296,6 +17168,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Comfortaa font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Comfortaa
   static TextStyle comfortaa({
     TextStyle textStyle,
     Color color,
@@ -15355,6 +17231,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Comfortaa font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Comfortaa
   static TextTheme comfortaaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15374,6 +17255,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Coming Soon font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Coming+Soon
   static TextStyle comingSoon({
     TextStyle textStyle,
     Color color,
@@ -15425,6 +17310,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Coming Soon font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Coming+Soon
   static TextTheme comingSoonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15444,6 +17334,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Concert One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Concert+One
   static TextStyle concertOne({
     TextStyle textStyle,
     Color color,
@@ -15495,6 +17389,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Concert One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Concert+One
   static TextTheme concertOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15514,6 +17413,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Condiment font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Condiment
   static TextStyle condiment({
     TextStyle textStyle,
     Color color,
@@ -15565,6 +17468,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Condiment font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Condiment
   static TextTheme condimentTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15584,6 +17492,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Content font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Content
   static TextStyle content({
     TextStyle textStyle,
     Color color,
@@ -15637,6 +17549,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Content font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Content
   static TextTheme contentTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15656,6 +17573,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Contrail One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Contrail+One
   static TextStyle contrailOne({
     TextStyle textStyle,
     Color color,
@@ -15707,6 +17628,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Contrail One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Contrail+One
   static TextTheme contrailOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15726,6 +17652,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Convergence font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Convergence
   static TextStyle convergence({
     TextStyle textStyle,
     Color color,
@@ -15777,6 +17707,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Convergence font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Convergence
   static TextTheme convergenceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15796,6 +17731,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cookie font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cookie
   static TextStyle cookie({
     TextStyle textStyle,
     Color color,
@@ -15847,6 +17786,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cookie font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cookie
   static TextTheme cookieTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15866,6 +17810,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Copse font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Copse
   static TextStyle copse({
     TextStyle textStyle,
     Color color,
@@ -15917,6 +17865,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Copse font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Copse
   static TextTheme copseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -15936,6 +17889,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Corben font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Corben
   static TextStyle corben({
     TextStyle textStyle,
     Color color,
@@ -15989,6 +17946,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Corben font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Corben
   static TextTheme corbenTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16008,6 +17970,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant
   static TextStyle cormorant({
     TextStyle textStyle,
     Color color,
@@ -16077,6 +18043,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant
   static TextTheme cormorantTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16096,6 +18067,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant Garamond font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant+Garamond
   static TextStyle cormorantGaramond({
     TextStyle textStyle,
     Color color,
@@ -16165,6 +18140,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant Garamond font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant+Garamond
   static TextTheme cormorantGaramondTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16184,6 +18164,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant Infant font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant+Infant
   static TextStyle cormorantInfant({
     TextStyle textStyle,
     Color color,
@@ -16253,6 +18237,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant Infant font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant+Infant
   static TextTheme cormorantInfantTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16272,6 +18261,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant+SC
   static TextStyle cormorantSC({
     TextStyle textStyle,
     Color color,
@@ -16331,6 +18324,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant+SC
   static TextTheme cormorantSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16350,6 +18348,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant Unicase font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant+Unicase
   static TextStyle cormorantUnicase({
     TextStyle textStyle,
     Color color,
@@ -16409,6 +18411,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant Unicase font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant+Unicase
   static TextTheme cormorantUnicaseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16428,6 +18435,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant Upright font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant+Upright
   static TextStyle cormorantUpright({
     TextStyle textStyle,
     Color color,
@@ -16487,6 +18498,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cormorant Upright font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cormorant+Upright
   static TextTheme cormorantUprightTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16506,6 +18522,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Courgette font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Courgette
   static TextStyle courgette({
     TextStyle textStyle,
     Color color,
@@ -16557,6 +18577,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Courgette font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Courgette
   static TextTheme courgetteTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16576,6 +18601,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Courier Prime font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Courier+Prime
   static TextStyle courierPrime({
     TextStyle textStyle,
     Color color,
@@ -16633,6 +18662,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Courier Prime font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Courier+Prime
   static TextTheme courierPrimeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16652,6 +18686,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cousine font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cousine
   static TextStyle cousine({
     TextStyle textStyle,
     Color color,
@@ -16709,6 +18747,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cousine font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cousine
   static TextTheme cousineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16728,6 +18771,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Coustard font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Coustard
   static TextStyle coustard({
     TextStyle textStyle,
     Color color,
@@ -16781,6 +18828,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Coustard font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Coustard
   static TextTheme coustardTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16800,6 +18852,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Covered By Your Grace font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Covered+By+Your+Grace
   static TextStyle coveredByYourGrace({
     TextStyle textStyle,
     Color color,
@@ -16851,6 +18907,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Covered By Your Grace font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Covered+By+Your+Grace
   static TextTheme coveredByYourGraceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16870,6 +18931,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Crafty Girls font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Crafty+Girls
   static TextStyle craftyGirls({
     TextStyle textStyle,
     Color color,
@@ -16921,6 +18986,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Crafty Girls font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Crafty+Girls
   static TextTheme craftyGirlsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -16940,6 +19010,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Creepster font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Creepster
   static TextStyle creepster({
     TextStyle textStyle,
     Color color,
@@ -16991,6 +19065,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Creepster font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Creepster
   static TextTheme creepsterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17010,6 +19089,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Crete Round font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Crete+Round
   static TextStyle creteRound({
     TextStyle textStyle,
     Color color,
@@ -17063,6 +19146,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Crete Round font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Crete+Round
   static TextTheme creteRoundTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17082,6 +19170,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Crimson Pro font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Crimson+Pro
   static TextStyle crimsonPro({
     TextStyle textStyle,
     Color color,
@@ -17163,6 +19255,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Crimson Pro font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Crimson+Pro
   static TextTheme crimsonProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17182,6 +19279,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Crimson Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Crimson+Text
   static TextStyle crimsonText({
     TextStyle textStyle,
     Color color,
@@ -17243,6 +19344,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Crimson Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Crimson+Text
   static TextTheme crimsonTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17262,6 +19368,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Croissant One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Croissant+One
   static TextStyle croissantOne({
     TextStyle textStyle,
     Color color,
@@ -17313,6 +19423,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Croissant One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Croissant+One
   static TextTheme croissantOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17332,6 +19447,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Crushed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Crushed
   static TextStyle crushed({
     TextStyle textStyle,
     Color color,
@@ -17383,6 +19502,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Crushed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Crushed
   static TextTheme crushedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17402,6 +19526,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cuprum font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cuprum
   static TextStyle cuprum({
     TextStyle textStyle,
     Color color,
@@ -17459,6 +19587,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cuprum font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cuprum
   static TextTheme cuprumTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17478,6 +19611,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cute Font font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cute+Font
   static TextStyle cuteFont({
     TextStyle textStyle,
     Color color,
@@ -17529,6 +19666,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cute Font font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cute+Font
   static TextTheme cuteFontTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17548,6 +19690,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cutive font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cutive
   static TextStyle cutive({
     TextStyle textStyle,
     Color color,
@@ -17599,6 +19745,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cutive font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cutive
   static TextTheme cutiveTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17618,6 +19769,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cutive Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cutive+Mono
   static TextStyle cutiveMono({
     TextStyle textStyle,
     Color color,
@@ -17669,6 +19824,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Cutive Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Cutive+Mono
   static TextTheme cutiveMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17688,6 +19848,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the DM Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/DM+Sans
   static TextStyle dMSans({
     TextStyle textStyle,
     Color color,
@@ -17749,6 +19913,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the DM Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/DM+Sans
   static TextTheme dMSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17768,6 +19937,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the DM Serif Display font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/DM+Serif+Display
   static TextStyle dMSerifDisplay({
     TextStyle textStyle,
     Color color,
@@ -17821,6 +19994,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the DM Serif Display font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/DM+Serif+Display
   static TextTheme dMSerifDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17840,6 +20018,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the DM Serif Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/DM+Serif+Text
   static TextStyle dMSerifText({
     TextStyle textStyle,
     Color color,
@@ -17893,6 +20075,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the DM Serif Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/DM+Serif+Text
   static TextTheme dMSerifTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17912,6 +20099,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Damion font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Damion
   static TextStyle damion({
     TextStyle textStyle,
     Color color,
@@ -17963,6 +20154,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Damion font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Damion
   static TextTheme damionTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -17982,6 +20178,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dancing Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dancing+Script
   static TextStyle dancingScript({
     TextStyle textStyle,
     Color color,
@@ -18039,6 +20239,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dancing Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dancing+Script
   static TextTheme dancingScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18058,6 +20263,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dangrek font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dangrek
   static TextStyle dangrek({
     TextStyle textStyle,
     Color color,
@@ -18109,6 +20318,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dangrek font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dangrek
   static TextTheme dangrekTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18128,6 +20342,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Darker Grotesque font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Darker+Grotesque
   static TextStyle darkerGrotesque({
     TextStyle textStyle,
     Color color,
@@ -18191,6 +20409,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Darker Grotesque font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Darker+Grotesque
   static TextTheme darkerGrotesqueTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18210,6 +20433,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the David Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/David+Libre
   static TextStyle davidLibre({
     TextStyle textStyle,
     Color color,
@@ -18265,6 +20492,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the David Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/David+Libre
   static TextTheme davidLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18284,6 +20516,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dawning of a New Day font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dawning+of+a+New+Day
   static TextStyle dawningofaNewDay({
     TextStyle textStyle,
     Color color,
@@ -18335,6 +20571,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dawning of a New Day font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dawning+of+a+New+Day
   static TextTheme dawningofaNewDayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18354,6 +20595,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Days One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Days+One
   static TextStyle daysOne({
     TextStyle textStyle,
     Color color,
@@ -18405,6 +20650,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Days One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Days+One
   static TextTheme daysOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18424,6 +20674,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dekko font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dekko
   static TextStyle dekko({
     TextStyle textStyle,
     Color color,
@@ -18475,6 +20729,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dekko font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dekko
   static TextTheme dekkoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18494,6 +20753,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Delius font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Delius
   static TextStyle delius({
     TextStyle textStyle,
     Color color,
@@ -18545,6 +20808,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Delius font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Delius
   static TextTheme deliusTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18564,6 +20832,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Delius Swash Caps font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Delius+Swash+Caps
   static TextStyle deliusSwashCaps({
     TextStyle textStyle,
     Color color,
@@ -18615,6 +20887,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Delius Swash Caps font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Delius+Swash+Caps
   static TextTheme deliusSwashCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18634,6 +20911,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Delius Unicase font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Delius+Unicase
   static TextStyle deliusUnicase({
     TextStyle textStyle,
     Color color,
@@ -18687,6 +20968,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Delius Unicase font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Delius+Unicase
   static TextTheme deliusUnicaseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18706,6 +20992,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Della Respira font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Della+Respira
   static TextStyle dellaRespira({
     TextStyle textStyle,
     Color color,
@@ -18757,6 +21047,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Della Respira font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Della+Respira
   static TextTheme dellaRespiraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18776,6 +21071,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Denk One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Denk+One
   static TextStyle denkOne({
     TextStyle textStyle,
     Color color,
@@ -18827,6 +21126,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Denk One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Denk+One
   static TextTheme denkOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18846,6 +21150,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Devonshire font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Devonshire
   static TextStyle devonshire({
     TextStyle textStyle,
     Color color,
@@ -18897,6 +21205,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Devonshire font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Devonshire
   static TextTheme devonshireTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18916,6 +21229,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dhurjati font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dhurjati
   static TextStyle dhurjati({
     TextStyle textStyle,
     Color color,
@@ -18967,6 +21284,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dhurjati font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dhurjati
   static TextTheme dhurjatiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -18986,6 +21308,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Didact Gothic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Didact+Gothic
   static TextStyle didactGothic({
     TextStyle textStyle,
     Color color,
@@ -19037,6 +21363,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Didact Gothic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Didact+Gothic
   static TextTheme didactGothicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19056,6 +21387,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Diplomata font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Diplomata
   static TextStyle diplomata({
     TextStyle textStyle,
     Color color,
@@ -19107,6 +21442,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Diplomata font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Diplomata
   static TextTheme diplomataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19126,6 +21466,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Diplomata SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Diplomata+SC
   static TextStyle diplomataSC({
     TextStyle textStyle,
     Color color,
@@ -19177,6 +21521,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Diplomata SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Diplomata+SC
   static TextTheme diplomataSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19196,6 +21545,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Do Hyeon font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Do+Hyeon
   static TextStyle doHyeon({
     TextStyle textStyle,
     Color color,
@@ -19247,6 +21600,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Do Hyeon font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Do+Hyeon
   static TextTheme doHyeonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19266,6 +21624,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dokdo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dokdo
   static TextStyle dokdo({
     TextStyle textStyle,
     Color color,
@@ -19317,6 +21679,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dokdo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dokdo
   static TextTheme dokdoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19336,6 +21703,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Domine font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Domine
   static TextStyle domine({
     TextStyle textStyle,
     Color color,
@@ -19389,6 +21760,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Domine font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Domine
   static TextTheme domineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19408,6 +21784,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Donegal One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Donegal+One
   static TextStyle donegalOne({
     TextStyle textStyle,
     Color color,
@@ -19459,6 +21839,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Donegal One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Donegal+One
   static TextTheme donegalOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19478,6 +21863,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Doppio One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Doppio+One
   static TextStyle doppioOne({
     TextStyle textStyle,
     Color color,
@@ -19529,6 +21918,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Doppio One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Doppio+One
   static TextTheme doppioOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19548,6 +21942,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dorsa font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dorsa
   static TextStyle dorsa({
     TextStyle textStyle,
     Color color,
@@ -19599,6 +21997,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dorsa font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dorsa
   static TextTheme dorsaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19618,6 +22021,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dosis font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dosis
   static TextStyle dosis({
     TextStyle textStyle,
     Color color,
@@ -19681,6 +22088,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dosis font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dosis
   static TextTheme dosisTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19700,6 +22112,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dr Sugiyama font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dr+Sugiyama
   static TextStyle drSugiyama({
     TextStyle textStyle,
     Color color,
@@ -19751,6 +22167,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dr Sugiyama font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dr+Sugiyama
   static TextTheme drSugiyamaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19770,6 +22191,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Duru Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Duru+Sans
   static TextStyle duruSans({
     TextStyle textStyle,
     Color color,
@@ -19821,6 +22246,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Duru Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Duru+Sans
   static TextTheme duruSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19840,6 +22270,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dynalight font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dynalight
   static TextStyle dynalight({
     TextStyle textStyle,
     Color color,
@@ -19891,6 +22325,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Dynalight font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Dynalight
   static TextTheme dynalightTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19910,6 +22349,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the EB Garamond font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/EB+Garamond
   static TextStyle eBGaramond({
     TextStyle textStyle,
     Color color,
@@ -19979,6 +22422,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the EB Garamond font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/EB+Garamond
   static TextTheme eBGaramondTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -19998,6 +22446,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Eagle Lake font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Eagle+Lake
   static TextStyle eagleLake({
     TextStyle textStyle,
     Color color,
@@ -20049,6 +22501,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Eagle Lake font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Eagle+Lake
   static TextTheme eagleLakeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20068,6 +22525,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the East Sea Dokdo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/East+Sea+Dokdo
   static TextStyle eastSeaDokdo({
     TextStyle textStyle,
     Color color,
@@ -20119,6 +22580,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the East Sea Dokdo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/East+Sea+Dokdo
   static TextTheme eastSeaDokdoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20138,6 +22604,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Eater font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Eater
   static TextStyle eater({
     TextStyle textStyle,
     Color color,
@@ -20189,6 +22659,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Eater font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Eater
   static TextTheme eaterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20208,6 +22683,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Economica font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Economica
   static TextStyle economica({
     TextStyle textStyle,
     Color color,
@@ -20265,6 +22744,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Economica font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Economica
   static TextTheme economicaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20284,6 +22768,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Eczar font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Eczar
   static TextStyle eczar({
     TextStyle textStyle,
     Color color,
@@ -20343,6 +22831,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Eczar font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Eczar
   static TextTheme eczarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20362,6 +22855,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the El Messiri font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/El+Messiri
   static TextStyle elMessiri({
     TextStyle textStyle,
     Color color,
@@ -20419,6 +22916,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the El Messiri font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/El+Messiri
   static TextTheme elMessiriTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20438,6 +22940,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Electrolize font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Electrolize
   static TextStyle electrolize({
     TextStyle textStyle,
     Color color,
@@ -20489,6 +22995,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Electrolize font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Electrolize
   static TextTheme electrolizeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20508,6 +23019,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Elsie font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Elsie
   static TextStyle elsie({
     TextStyle textStyle,
     Color color,
@@ -20561,6 +23076,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Elsie font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Elsie
   static TextTheme elsieTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20580,6 +23100,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Elsie Swash Caps font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Elsie+Swash+Caps
   static TextStyle elsieSwashCaps({
     TextStyle textStyle,
     Color color,
@@ -20633,6 +23157,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Elsie Swash Caps font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Elsie+Swash+Caps
   static TextTheme elsieSwashCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20652,6 +23181,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Emblema One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Emblema+One
   static TextStyle emblemaOne({
     TextStyle textStyle,
     Color color,
@@ -20703,6 +23236,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Emblema One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Emblema+One
   static TextTheme emblemaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20722,6 +23260,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Emilys Candy font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Emilys+Candy
   static TextStyle emilysCandy({
     TextStyle textStyle,
     Color color,
@@ -20773,6 +23315,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Emilys Candy font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Emilys+Candy
   static TextTheme emilysCandyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20792,6 +23339,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Encode Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Encode+Sans
   static TextStyle encodeSans({
     TextStyle textStyle,
     Color color,
@@ -20859,6 +23410,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Encode Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Encode+Sans
   static TextTheme encodeSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20878,6 +23434,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Encode Sans Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Encode+Sans+Condensed
   static TextStyle encodeSansCondensed({
     TextStyle textStyle,
     Color color,
@@ -20945,6 +23505,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Encode Sans Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Encode+Sans+Condensed
   static TextTheme encodeSansCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -20964,6 +23529,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Encode Sans Expanded font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Encode+Sans+Expanded
   static TextStyle encodeSansExpanded({
     TextStyle textStyle,
     Color color,
@@ -21031,6 +23600,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Encode Sans Expanded font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Encode+Sans+Expanded
   static TextTheme encodeSansExpandedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21050,6 +23624,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Encode Sans Semi Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Encode+Sans+Semi+Condensed
   static TextStyle encodeSansSemiCondensed({
     TextStyle textStyle,
     Color color,
@@ -21117,6 +23695,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Encode Sans Semi Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Encode+Sans+Semi+Condensed
   static TextTheme encodeSansSemiCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21145,6 +23728,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Encode Sans Semi Expanded font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Encode+Sans+Semi+Expanded
   static TextStyle encodeSansSemiExpanded({
     TextStyle textStyle,
     Color color,
@@ -21212,6 +23799,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Encode Sans Semi Expanded font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Encode+Sans+Semi+Expanded
   static TextTheme encodeSansSemiExpandedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21240,6 +23832,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Engagement font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Engagement
   static TextStyle engagement({
     TextStyle textStyle,
     Color color,
@@ -21291,6 +23887,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Engagement font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Engagement
   static TextTheme engagementTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21310,6 +23911,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Englebert font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Englebert
   static TextStyle englebert({
     TextStyle textStyle,
     Color color,
@@ -21361,6 +23966,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Englebert font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Englebert
   static TextTheme englebertTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21380,6 +23990,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Enriqueta font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Enriqueta
   static TextStyle enriqueta({
     TextStyle textStyle,
     Color color,
@@ -21437,6 +24051,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Enriqueta font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Enriqueta
   static TextTheme enriquetaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21456,6 +24075,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Erica One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Erica+One
   static TextStyle ericaOne({
     TextStyle textStyle,
     Color color,
@@ -21507,6 +24130,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Erica One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Erica+One
   static TextTheme ericaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21526,6 +24154,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Esteban font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Esteban
   static TextStyle esteban({
     TextStyle textStyle,
     Color color,
@@ -21577,6 +24209,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Esteban font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Esteban
   static TextTheme estebanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21596,6 +24233,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Euphoria Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Euphoria+Script
   static TextStyle euphoriaScript({
     TextStyle textStyle,
     Color color,
@@ -21647,6 +24288,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Euphoria Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Euphoria+Script
   static TextTheme euphoriaScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21666,6 +24312,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ewert font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ewert
   static TextStyle ewert({
     TextStyle textStyle,
     Color color,
@@ -21717,6 +24367,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ewert font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ewert
   static TextTheme ewertTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21736,6 +24391,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Exo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Exo
   static TextStyle exo({
     TextStyle textStyle,
     Color color,
@@ -21821,6 +24480,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Exo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Exo
   static TextTheme exoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21840,6 +24504,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Exo 2 font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Exo+2
   static TextStyle exo2({
     TextStyle textStyle,
     Color color,
@@ -21925,6 +24593,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Exo 2 font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Exo+2
   static TextTheme exo2TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -21944,6 +24617,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Expletus Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Expletus+Sans
   static TextStyle expletusSans({
     TextStyle textStyle,
     Color color,
@@ -22009,6 +24686,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Expletus Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Expletus+Sans
   static TextTheme expletusSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22028,6 +24710,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fahkwang font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fahkwang
   static TextStyle fahkwang({
     TextStyle textStyle,
     Color color,
@@ -22101,6 +24787,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fahkwang font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fahkwang
   static TextTheme fahkwangTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22120,6 +24811,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fanwood Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fanwood+Text
   static TextStyle fanwoodText({
     TextStyle textStyle,
     Color color,
@@ -22173,6 +24868,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fanwood Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fanwood+Text
   static TextTheme fanwoodTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22192,6 +24892,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Farro font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Farro
   static TextStyle farro({
     TextStyle textStyle,
     Color color,
@@ -22249,6 +24953,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Farro font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Farro
   static TextTheme farroTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22268,6 +24977,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Farsan font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Farsan
   static TextStyle farsan({
     TextStyle textStyle,
     Color color,
@@ -22319,6 +25032,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Farsan font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Farsan
   static TextTheme farsanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22338,6 +25056,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fascinate font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fascinate
   static TextStyle fascinate({
     TextStyle textStyle,
     Color color,
@@ -22389,6 +25111,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fascinate font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fascinate
   static TextTheme fascinateTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22408,6 +25135,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fascinate Inline font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fascinate+Inline
   static TextStyle fascinateInline({
     TextStyle textStyle,
     Color color,
@@ -22459,6 +25190,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fascinate Inline font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fascinate+Inline
   static TextTheme fascinateInlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22478,6 +25214,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Faster One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Faster+One
   static TextStyle fasterOne({
     TextStyle textStyle,
     Color color,
@@ -22529,6 +25269,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Faster One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Faster+One
   static TextTheme fasterOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22548,6 +25293,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fasthand font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fasthand
   static TextStyle fasthand({
     TextStyle textStyle,
     Color color,
@@ -22599,6 +25348,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fasthand font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fasthand
   static TextTheme fasthandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22618,6 +25372,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fauna One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fauna+One
   static TextStyle faunaOne({
     TextStyle textStyle,
     Color color,
@@ -22669,6 +25427,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fauna One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fauna+One
   static TextTheme faunaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22688,6 +25451,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Faustina font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Faustina
   static TextStyle faustina({
     TextStyle textStyle,
     Color color,
@@ -22753,6 +25520,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Faustina font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Faustina
   static TextTheme faustinaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22772,6 +25544,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Federant font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Federant
   static TextStyle federant({
     TextStyle textStyle,
     Color color,
@@ -22823,6 +25599,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Federant font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Federant
   static TextTheme federantTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22842,6 +25623,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Federo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Federo
   static TextStyle federo({
     TextStyle textStyle,
     Color color,
@@ -22893,6 +25678,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Federo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Federo
   static TextTheme federoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22912,6 +25702,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Felipa font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Felipa
   static TextStyle felipa({
     TextStyle textStyle,
     Color color,
@@ -22963,6 +25757,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Felipa font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Felipa
   static TextTheme felipaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -22982,6 +25781,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fenix font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fenix
   static TextStyle fenix({
     TextStyle textStyle,
     Color color,
@@ -23033,6 +25836,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fenix font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fenix
   static TextTheme fenixTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23052,6 +25860,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Finger Paint font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Finger+Paint
   static TextStyle fingerPaint({
     TextStyle textStyle,
     Color color,
@@ -23103,6 +25915,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Finger Paint font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Finger+Paint
   static TextTheme fingerPaintTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23122,6 +25939,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fira Code font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fira+Code
   static TextStyle firaCode({
     TextStyle textStyle,
     Color color,
@@ -23181,6 +26002,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fira Code font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fira+Code
   static TextTheme firaCodeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23200,6 +26026,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fira Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fira+Mono
   static TextStyle firaMono({
     TextStyle textStyle,
     Color color,
@@ -23255,6 +26085,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fira Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fira+Mono
   static TextTheme firaMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23274,6 +26109,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fira Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fira+Sans
   static TextStyle firaSans({
     TextStyle textStyle,
     Color color,
@@ -23359,6 +26198,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fira Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fira+Sans
   static TextTheme firaSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23378,6 +26222,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fira Sans Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fira+Sans+Condensed
   static TextStyle firaSansCondensed({
     TextStyle textStyle,
     Color color,
@@ -23463,6 +26311,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fira Sans Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fira+Sans+Condensed
   static TextTheme firaSansCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23482,6 +26335,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fira Sans Extra Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed
   static TextStyle firaSansExtraCondensed({
     TextStyle textStyle,
     Color color,
@@ -23567,6 +26424,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fira Sans Extra Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed
   static TextTheme firaSansExtraCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23595,6 +26457,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fjalla One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fjalla+One
   static TextStyle fjallaOne({
     TextStyle textStyle,
     Color color,
@@ -23646,6 +26512,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fjalla One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fjalla+One
   static TextTheme fjallaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23665,6 +26536,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fjord One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fjord+One
   static TextStyle fjordOne({
     TextStyle textStyle,
     Color color,
@@ -23716,6 +26591,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fjord One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fjord+One
   static TextTheme fjordOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23735,6 +26615,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Flamenco font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Flamenco
   static TextStyle flamenco({
     TextStyle textStyle,
     Color color,
@@ -23788,6 +26672,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Flamenco font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Flamenco
   static TextTheme flamencoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23807,6 +26696,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Flavors font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Flavors
   static TextStyle flavors({
     TextStyle textStyle,
     Color color,
@@ -23858,6 +26751,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Flavors font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Flavors
   static TextTheme flavorsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23877,6 +26775,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fondamento font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fondamento
   static TextStyle fondamento({
     TextStyle textStyle,
     Color color,
@@ -23930,6 +26832,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fondamento font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fondamento
   static TextTheme fondamentoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -23949,6 +26856,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fontdiner Swanky font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fontdiner+Swanky
   static TextStyle fontdinerSwanky({
     TextStyle textStyle,
     Color color,
@@ -24000,6 +26911,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fontdiner Swanky font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fontdiner+Swanky
   static TextTheme fontdinerSwankyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24019,6 +26935,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Forum font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Forum
   static TextStyle forum({
     TextStyle textStyle,
     Color color,
@@ -24070,6 +26990,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Forum font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Forum
   static TextTheme forumTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24089,6 +27014,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Francois One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Francois+One
   static TextStyle francoisOne({
     TextStyle textStyle,
     Color color,
@@ -24140,6 +27069,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Francois One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Francois+One
   static TextTheme francoisOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24159,6 +27093,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Frank Ruhl Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Frank+Ruhl+Libre
   static TextStyle frankRuhlLibre({
     TextStyle textStyle,
     Color color,
@@ -24218,6 +27156,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Frank Ruhl Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Frank+Ruhl+Libre
   static TextTheme frankRuhlLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24237,6 +27180,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Freckle Face font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Freckle+Face
   static TextStyle freckleFace({
     TextStyle textStyle,
     Color color,
@@ -24288,6 +27235,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Freckle Face font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Freckle+Face
   static TextTheme freckleFaceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24307,6 +27259,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fredericka the Great font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fredericka+the+Great
   static TextStyle frederickatheGreat({
     TextStyle textStyle,
     Color color,
@@ -24358,6 +27314,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fredericka the Great font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fredericka+the+Great
   static TextTheme frederickatheGreatTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24377,6 +27338,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fredoka One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fredoka+One
   static TextStyle fredokaOne({
     TextStyle textStyle,
     Color color,
@@ -24428,6 +27393,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fredoka One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fredoka+One
   static TextTheme fredokaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24447,6 +27417,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Freehand font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Freehand
   static TextStyle freehand({
     TextStyle textStyle,
     Color color,
@@ -24498,6 +27472,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Freehand font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Freehand
   static TextTheme freehandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24517,6 +27496,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fresca font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fresca
   static TextStyle fresca({
     TextStyle textStyle,
     Color color,
@@ -24568,6 +27551,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fresca font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fresca
   static TextTheme frescaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24587,6 +27575,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Frijole font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Frijole
   static TextStyle frijole({
     TextStyle textStyle,
     Color color,
@@ -24638,6 +27630,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Frijole font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Frijole
   static TextTheme frijoleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24657,6 +27654,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fruktur font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fruktur
   static TextStyle fruktur({
     TextStyle textStyle,
     Color color,
@@ -24708,6 +27709,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fruktur font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fruktur
   static TextTheme frukturTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24727,6 +27733,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fugaz One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fugaz+One
   static TextStyle fugazOne({
     TextStyle textStyle,
     Color color,
@@ -24778,6 +27788,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fugaz One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fugaz+One
   static TextTheme fugazOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24797,6 +27812,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the GFS Didot font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/GFS+Didot
   static TextStyle gFSDidot({
     TextStyle textStyle,
     Color color,
@@ -24848,6 +27867,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the GFS Didot font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/GFS+Didot
   static TextTheme gFSDidotTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24867,6 +27891,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the GFS Neohellenic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/GFS+Neohellenic
   static TextStyle gFSNeohellenic({
     TextStyle textStyle,
     Color color,
@@ -24924,6 +27952,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the GFS Neohellenic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/GFS+Neohellenic
   static TextTheme gFSNeohellenicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -24943,6 +27976,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gabriela font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gabriela
   static TextStyle gabriela({
     TextStyle textStyle,
     Color color,
@@ -24994,6 +28031,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gabriela font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gabriela
   static TextTheme gabrielaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25013,6 +28055,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gaegu font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gaegu
   static TextStyle gaegu({
     TextStyle textStyle,
     Color color,
@@ -25068,6 +28114,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gaegu font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gaegu
   static TextTheme gaeguTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25087,6 +28138,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gafata font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gafata
   static TextStyle gafata({
     TextStyle textStyle,
     Color color,
@@ -25138,6 +28193,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gafata font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gafata
   static TextTheme gafataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25157,6 +28217,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Galada font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Galada
   static TextStyle galada({
     TextStyle textStyle,
     Color color,
@@ -25208,6 +28272,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Galada font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Galada
   static TextTheme galadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25227,6 +28296,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Galdeano font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Galdeano
   static TextStyle galdeano({
     TextStyle textStyle,
     Color color,
@@ -25278,6 +28351,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Galdeano font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Galdeano
   static TextTheme galdeanoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25297,6 +28375,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Galindo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Galindo
   static TextStyle galindo({
     TextStyle textStyle,
     Color color,
@@ -25348,6 +28430,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Galindo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Galindo
   static TextTheme galindoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25367,6 +28454,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gamja Flower font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gamja+Flower
   static TextStyle gamjaFlower({
     TextStyle textStyle,
     Color color,
@@ -25418,6 +28509,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gamja Flower font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gamja+Flower
   static TextTheme gamjaFlowerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25437,6 +28533,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gayathri font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gayathri
   static TextStyle gayathri({
     TextStyle textStyle,
     Color color,
@@ -25492,6 +28592,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gayathri font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gayathri
   static TextTheme gayathriTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25511,6 +28616,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gelasio font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gelasio
   static TextStyle gelasio({
     TextStyle textStyle,
     Color color,
@@ -25576,6 +28685,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gelasio font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gelasio
   static TextTheme gelasioTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25595,6 +28709,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gentium Basic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gentium+Basic
   static TextStyle gentiumBasic({
     TextStyle textStyle,
     Color color,
@@ -25652,6 +28770,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gentium Basic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gentium+Basic
   static TextTheme gentiumBasicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25671,6 +28794,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gentium Book Basic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gentium+Book+Basic
   static TextStyle gentiumBookBasic({
     TextStyle textStyle,
     Color color,
@@ -25728,6 +28855,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gentium Book Basic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gentium+Book+Basic
   static TextTheme gentiumBookBasicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25747,6 +28879,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Geo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Geo
   static TextStyle geo({
     TextStyle textStyle,
     Color color,
@@ -25800,6 +28936,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Geo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Geo
   static TextTheme geoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25819,6 +28960,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Geostar font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Geostar
   static TextStyle geostar({
     TextStyle textStyle,
     Color color,
@@ -25870,6 +29015,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Geostar font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Geostar
   static TextTheme geostarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25889,6 +29039,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Geostar Fill font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Geostar+Fill
   static TextStyle geostarFill({
     TextStyle textStyle,
     Color color,
@@ -25940,6 +29094,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Geostar Fill font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Geostar+Fill
   static TextTheme geostarFillTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -25959,6 +29118,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Germania One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Germania+One
   static TextStyle germaniaOne({
     TextStyle textStyle,
     Color color,
@@ -26010,6 +29173,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Germania One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Germania+One
   static TextTheme germaniaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26029,6 +29197,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gidugu font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gidugu
   static TextStyle gidugu({
     TextStyle textStyle,
     Color color,
@@ -26080,6 +29252,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gidugu font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gidugu
   static TextTheme giduguTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26099,6 +29276,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gilda Display font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gilda+Display
   static TextStyle gildaDisplay({
     TextStyle textStyle,
     Color color,
@@ -26150,6 +29331,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gilda Display font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gilda+Display
   static TextTheme gildaDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26169,6 +29355,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Girassol font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Girassol
   static TextStyle girassol({
     TextStyle textStyle,
     Color color,
@@ -26220,6 +29410,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Girassol font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Girassol
   static TextTheme girassolTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26239,6 +29434,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Give You Glory font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Give+You+Glory
   static TextStyle giveYouGlory({
     TextStyle textStyle,
     Color color,
@@ -26290,6 +29489,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Give You Glory font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Give+You+Glory
   static TextTheme giveYouGloryTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26309,6 +29513,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Glass Antiqua font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Glass+Antiqua
   static TextStyle glassAntiqua({
     TextStyle textStyle,
     Color color,
@@ -26360,6 +29568,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Glass Antiqua font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Glass+Antiqua
   static TextTheme glassAntiquaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26379,6 +29592,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Glegoo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Glegoo
   static TextStyle glegoo({
     TextStyle textStyle,
     Color color,
@@ -26432,6 +29649,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Glegoo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Glegoo
   static TextTheme glegooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26451,6 +29673,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gloria Hallelujah font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gloria+Hallelujah
   static TextStyle gloriaHallelujah({
     TextStyle textStyle,
     Color color,
@@ -26502,6 +29728,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gloria Hallelujah font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gloria+Hallelujah
   static TextTheme gloriaHallelujahTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26521,6 +29752,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Goblin One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Goblin+One
   static TextStyle goblinOne({
     TextStyle textStyle,
     Color color,
@@ -26572,6 +29807,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Goblin One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Goblin+One
   static TextTheme goblinOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26591,6 +29831,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gochi Hand font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gochi+Hand
   static TextStyle gochiHand({
     TextStyle textStyle,
     Color color,
@@ -26642,6 +29886,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gochi Hand font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gochi+Hand
   static TextTheme gochiHandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26661,6 +29910,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gorditas font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gorditas
   static TextStyle gorditas({
     TextStyle textStyle,
     Color color,
@@ -26714,6 +29967,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gorditas font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gorditas
   static TextTheme gorditasTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26733,6 +29991,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gothic A1 font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gothic+A1
   static TextStyle gothicA1({
     TextStyle textStyle,
     Color color,
@@ -26800,6 +30062,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gothic A1 font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gothic+A1
   static TextTheme gothicA1TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26819,6 +30086,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Goudy Bookletter 1911 font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Goudy+Bookletter+1911
   static TextStyle goudyBookletter1911({
     TextStyle textStyle,
     Color color,
@@ -26870,6 +30141,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Goudy Bookletter 1911 font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Goudy+Bookletter+1911
   static TextTheme goudyBookletter1911TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26889,6 +30165,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Graduate font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Graduate
   static TextStyle graduate({
     TextStyle textStyle,
     Color color,
@@ -26940,6 +30220,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Graduate font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Graduate
   static TextTheme graduateTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -26959,6 +30244,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Grand Hotel font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Grand+Hotel
   static TextStyle grandHotel({
     TextStyle textStyle,
     Color color,
@@ -27010,6 +30299,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Grand Hotel font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Grand+Hotel
   static TextTheme grandHotelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27029,6 +30323,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gravitas One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gravitas+One
   static TextStyle gravitasOne({
     TextStyle textStyle,
     Color color,
@@ -27080,6 +30378,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gravitas One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gravitas+One
   static TextTheme gravitasOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27099,6 +30402,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Great Vibes font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Great+Vibes
   static TextStyle greatVibes({
     TextStyle textStyle,
     Color color,
@@ -27150,6 +30457,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Great Vibes font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Great+Vibes
   static TextTheme greatVibesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27169,6 +30481,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Grenze font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Grenze
   static TextStyle grenze({
     TextStyle textStyle,
     Color color,
@@ -27254,6 +30570,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Grenze font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Grenze
   static TextTheme grenzeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27273,6 +30594,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Griffy font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Griffy
   static TextStyle griffy({
     TextStyle textStyle,
     Color color,
@@ -27324,6 +30649,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Griffy font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Griffy
   static TextTheme griffyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27343,6 +30673,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gruppo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gruppo
   static TextStyle gruppo({
     TextStyle textStyle,
     Color color,
@@ -27394,6 +30728,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gruppo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gruppo
   static TextTheme gruppoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27413,6 +30752,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gudea font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gudea
   static TextStyle gudea({
     TextStyle textStyle,
     Color color,
@@ -27468,6 +30811,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gudea font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gudea
   static TextTheme gudeaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27487,6 +30835,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gugi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gugi
   static TextStyle gugi({
     TextStyle textStyle,
     Color color,
@@ -27538,6 +30890,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gugi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gugi
   static TextTheme gugiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27557,6 +30914,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gupter font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gupter
   static TextStyle gupter({
     TextStyle textStyle,
     Color color,
@@ -27612,6 +30973,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gupter font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gupter
   static TextTheme gupterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27631,6 +30997,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gurajada font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gurajada
   static TextStyle gurajada({
     TextStyle textStyle,
     Color color,
@@ -27682,6 +31052,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Gurajada font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Gurajada
   static TextTheme gurajadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27701,6 +31076,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Habibi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Habibi
   static TextStyle habibi({
     TextStyle textStyle,
     Color color,
@@ -27752,6 +31131,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Habibi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Habibi
   static TextTheme habibiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27771,6 +31155,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Halant font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Halant
   static TextStyle halant({
     TextStyle textStyle,
     Color color,
@@ -27830,6 +31218,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Halant font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Halant
   static TextTheme halantTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27849,6 +31242,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hammersmith One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hammersmith+One
   static TextStyle hammersmithOne({
     TextStyle textStyle,
     Color color,
@@ -27900,6 +31297,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hammersmith One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hammersmith+One
   static TextTheme hammersmithOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27919,6 +31321,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hanalei font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hanalei
   static TextStyle hanalei({
     TextStyle textStyle,
     Color color,
@@ -27970,6 +31376,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hanalei font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hanalei
   static TextTheme hanaleiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -27989,6 +31400,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hanalei Fill font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hanalei+Fill
   static TextStyle hanaleiFill({
     TextStyle textStyle,
     Color color,
@@ -28040,6 +31455,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hanalei Fill font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hanalei+Fill
   static TextTheme hanaleiFillTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28059,6 +31479,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Handlee font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Handlee
   static TextStyle handlee({
     TextStyle textStyle,
     Color color,
@@ -28110,6 +31534,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Handlee font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Handlee
   static TextTheme handleeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28129,6 +31558,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hanuman font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hanuman
   static TextStyle hanuman({
     TextStyle textStyle,
     Color color,
@@ -28182,6 +31615,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hanuman font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hanuman
   static TextTheme hanumanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28201,6 +31639,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Happy Monkey font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Happy+Monkey
   static TextStyle happyMonkey({
     TextStyle textStyle,
     Color color,
@@ -28252,6 +31694,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Happy Monkey font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Happy+Monkey
   static TextTheme happyMonkeyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28271,6 +31718,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Harmattan font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Harmattan
   static TextStyle harmattan({
     TextStyle textStyle,
     Color color,
@@ -28322,6 +31773,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Harmattan font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Harmattan
   static TextTheme harmattanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28341,6 +31797,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Headland One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Headland+One
   static TextStyle headlandOne({
     TextStyle textStyle,
     Color color,
@@ -28392,6 +31852,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Headland One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Headland+One
   static TextTheme headlandOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28411,6 +31876,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Heebo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Heebo
   static TextStyle heebo({
     TextStyle textStyle,
     Color color,
@@ -28474,6 +31943,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Heebo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Heebo
   static TextTheme heeboTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28493,6 +31967,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Henny Penny font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Henny+Penny
   static TextStyle hennyPenny({
     TextStyle textStyle,
     Color color,
@@ -28544,6 +32022,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Henny Penny font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Henny+Penny
   static TextTheme hennyPennyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28563,6 +32046,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hepta Slab font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hepta+Slab
   static TextStyle heptaSlab({
     TextStyle textStyle,
     Color color,
@@ -28630,6 +32117,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hepta Slab font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hepta+Slab
   static TextTheme heptaSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28649,6 +32141,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Herr Von Muellerhoff font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Herr+Von+Muellerhoff
   static TextStyle herrVonMuellerhoff({
     TextStyle textStyle,
     Color color,
@@ -28700,6 +32196,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Herr Von Muellerhoff font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Herr+Von+Muellerhoff
   static TextTheme herrVonMuellerhoffTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28719,6 +32220,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hi Melody font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hi+Melody
   static TextStyle hiMelody({
     TextStyle textStyle,
     Color color,
@@ -28770,6 +32275,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hi Melody font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hi+Melody
   static TextTheme hiMelodyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28789,6 +32299,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hind font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hind
   static TextStyle hind({
     TextStyle textStyle,
     Color color,
@@ -28848,6 +32362,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hind font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hind
   static TextTheme hindTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28867,6 +32386,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hind Guntur font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hind+Guntur
   static TextStyle hindGuntur({
     TextStyle textStyle,
     Color color,
@@ -28926,6 +32449,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hind Guntur font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hind+Guntur
   static TextTheme hindGunturTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -28945,6 +32473,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hind Madurai font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hind+Madurai
   static TextStyle hindMadurai({
     TextStyle textStyle,
     Color color,
@@ -29004,6 +32536,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hind Madurai font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hind+Madurai
   static TextTheme hindMaduraiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29023,6 +32560,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hind Siliguri font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hind+Siliguri
   static TextStyle hindSiliguri({
     TextStyle textStyle,
     Color color,
@@ -29082,6 +32623,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hind Siliguri font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hind+Siliguri
   static TextTheme hindSiliguriTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29101,6 +32647,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hind Vadodara font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hind+Vadodara
   static TextStyle hindVadodara({
     TextStyle textStyle,
     Color color,
@@ -29160,6 +32710,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Hind Vadodara font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hind+Vadodara
   static TextTheme hindVadodaraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29179,6 +32734,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Holtwood One SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Holtwood+One+SC
   static TextStyle holtwoodOneSC({
     TextStyle textStyle,
     Color color,
@@ -29230,6 +32789,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Holtwood One SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Holtwood+One+SC
   static TextTheme holtwoodOneSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29249,6 +32813,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Homemade Apple font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Homemade+Apple
   static TextStyle homemadeApple({
     TextStyle textStyle,
     Color color,
@@ -29300,6 +32868,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Homemade Apple font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Homemade+Apple
   static TextTheme homemadeAppleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29319,6 +32892,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Homenaje font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Homenaje
   static TextStyle homenaje({
     TextStyle textStyle,
     Color color,
@@ -29370,6 +32947,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Homenaje font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Homenaje
   static TextTheme homenajeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29389,6 +32971,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IBM Plex Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IBM+Plex+Mono
   static TextStyle iBMPlexMono({
     TextStyle textStyle,
     Color color,
@@ -29466,6 +33052,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IBM Plex Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IBM+Plex+Mono
   static TextTheme iBMPlexMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29485,6 +33076,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IBM Plex Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IBM+Plex+Sans
   static TextStyle iBMPlexSans({
     TextStyle textStyle,
     Color color,
@@ -29562,6 +33157,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IBM Plex Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IBM+Plex+Sans
   static TextTheme iBMPlexSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29581,6 +33181,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IBM Plex Sans Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IBM+Plex+Sans+Condensed
   static TextStyle iBMPlexSansCondensed({
     TextStyle textStyle,
     Color color,
@@ -29658,6 +33262,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IBM Plex Sans Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IBM+Plex+Sans+Condensed
   static TextTheme iBMPlexSansCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29684,6 +33293,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IBM Plex Serif font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IBM+Plex+Serif
   static TextStyle iBMPlexSerif({
     TextStyle textStyle,
     Color color,
@@ -29761,6 +33374,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IBM Plex Serif font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IBM+Plex+Serif
   static TextTheme iBMPlexSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29780,6 +33398,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell DW Pica font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica
   static TextStyle iMFellDWPica({
     TextStyle textStyle,
     Color color,
@@ -29833,6 +33455,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell DW Pica font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica
   static TextTheme iMFellDWPicaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29852,6 +33479,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell DW Pica SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica+SC
   static TextStyle iMFellDWPicaSC({
     TextStyle textStyle,
     Color color,
@@ -29903,6 +33534,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell DW Pica SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica+SC
   static TextTheme iMFellDWPicaSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29922,6 +33558,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell Double Pica font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica
   static TextStyle iMFellDoublePica({
     TextStyle textStyle,
     Color color,
@@ -29975,6 +33615,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell Double Pica font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica
   static TextTheme iMFellDoublePicaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -29994,6 +33639,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell Double Pica SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica+SC
   static TextStyle iMFellDoublePicaSC({
     TextStyle textStyle,
     Color color,
@@ -30045,6 +33694,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell Double Pica SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica+SC
   static TextTheme iMFellDoublePicaSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30064,6 +33718,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell English font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+English
   static TextStyle iMFellEnglish({
     TextStyle textStyle,
     Color color,
@@ -30117,6 +33775,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell English font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+English
   static TextTheme iMFellEnglishTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30136,6 +33799,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell English SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+English+SC
   static TextStyle iMFellEnglishSC({
     TextStyle textStyle,
     Color color,
@@ -30187,6 +33854,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell English SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+English+SC
   static TextTheme iMFellEnglishSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30206,6 +33878,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell French Canon font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon
   static TextStyle iMFellFrenchCanon({
     TextStyle textStyle,
     Color color,
@@ -30259,6 +33935,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell French Canon font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon
   static TextTheme iMFellFrenchCanonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30278,6 +33959,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell French Canon SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon+SC
   static TextStyle iMFellFrenchCanonSC({
     TextStyle textStyle,
     Color color,
@@ -30329,6 +34014,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell French Canon SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon+SC
   static TextTheme iMFellFrenchCanonSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30348,6 +34038,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell Great Primer font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer
   static TextStyle iMFellGreatPrimer({
     TextStyle textStyle,
     Color color,
@@ -30401,6 +34095,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell Great Primer font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer
   static TextTheme iMFellGreatPrimerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30420,6 +34119,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell Great Primer SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer+SC
   static TextStyle iMFellGreatPrimerSC({
     TextStyle textStyle,
     Color color,
@@ -30471,6 +34174,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the IM Fell Great Primer SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer+SC
   static TextTheme iMFellGreatPrimerSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30490,6 +34198,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ibarra Real Nova font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ibarra+Real+Nova
   static TextStyle ibarraRealNova({
     TextStyle textStyle,
     Color color,
@@ -30551,6 +34263,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ibarra Real Nova font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ibarra+Real+Nova
   static TextTheme ibarraRealNovaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30570,6 +34287,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Iceberg font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Iceberg
   static TextStyle iceberg({
     TextStyle textStyle,
     Color color,
@@ -30621,6 +34342,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Iceberg font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Iceberg
   static TextTheme icebergTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30640,6 +34366,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Iceland font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Iceland
   static TextStyle iceland({
     TextStyle textStyle,
     Color color,
@@ -30691,6 +34421,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Iceland font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Iceland
   static TextTheme icelandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30710,6 +34445,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Imprima font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Imprima
   static TextStyle imprima({
     TextStyle textStyle,
     Color color,
@@ -30761,6 +34500,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Imprima font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Imprima
   static TextTheme imprimaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30780,6 +34524,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Inconsolata font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Inconsolata
   static TextStyle inconsolata({
     TextStyle textStyle,
     Color color,
@@ -30833,6 +34581,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Inconsolata font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Inconsolata
   static TextTheme inconsolataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30852,6 +34605,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Inder font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Inder
   static TextStyle inder({
     TextStyle textStyle,
     Color color,
@@ -30903,6 +34660,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Inder font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Inder
   static TextTheme inderTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30922,6 +34684,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Indie Flower font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Indie+Flower
   static TextStyle indieFlower({
     TextStyle textStyle,
     Color color,
@@ -30973,6 +34739,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Indie Flower font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Indie+Flower
   static TextTheme indieFlowerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -30992,6 +34763,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Inika font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Inika
   static TextStyle inika({
     TextStyle textStyle,
     Color color,
@@ -31045,6 +34820,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Inika font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Inika
   static TextTheme inikaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31064,6 +34844,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Inknut Antiqua font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Inknut+Antiqua
   static TextStyle inknutAntiqua({
     TextStyle textStyle,
     Color color,
@@ -31127,6 +34911,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Inknut Antiqua font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Inknut+Antiqua
   static TextTheme inknutAntiquaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31146,6 +34935,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Inria Serif font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Inria+Serif
   static TextStyle inriaSerif({
     TextStyle textStyle,
     Color color,
@@ -31207,6 +35000,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Inria Serif font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Inria+Serif
   static TextTheme inriaSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31226,6 +35024,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Irish Grover font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Irish+Grover
   static TextStyle irishGrover({
     TextStyle textStyle,
     Color color,
@@ -31277,6 +35079,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Irish Grover font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Irish+Grover
   static TextTheme irishGroverTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31296,6 +35103,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Istok Web font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Istok+Web
   static TextStyle istokWeb({
     TextStyle textStyle,
     Color color,
@@ -31353,6 +35164,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Istok Web font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Istok+Web
   static TextTheme istokWebTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31372,6 +35188,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Italiana font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Italiana
   static TextStyle italiana({
     TextStyle textStyle,
     Color color,
@@ -31423,6 +35243,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Italiana font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Italiana
   static TextTheme italianaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31442,6 +35267,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Italianno font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Italianno
   static TextStyle italianno({
     TextStyle textStyle,
     Color color,
@@ -31493,6 +35322,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Italianno font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Italianno
   static TextTheme italiannoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31512,6 +35346,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Itim font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Itim
   static TextStyle itim({
     TextStyle textStyle,
     Color color,
@@ -31563,6 +35401,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Itim font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Itim
   static TextTheme itimTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31582,6 +35425,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jacques Francois font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jacques+Francois
   static TextStyle jacquesFrancois({
     TextStyle textStyle,
     Color color,
@@ -31633,6 +35480,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jacques Francois font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jacques+Francois
   static TextTheme jacquesFrancoisTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31652,6 +35504,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jacques Francois Shadow font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jacques+Francois+Shadow
   static TextStyle jacquesFrancoisShadow({
     TextStyle textStyle,
     Color color,
@@ -31703,6 +35559,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jacques Francois Shadow font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jacques+Francois+Shadow
   static TextTheme jacquesFrancoisShadowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31729,6 +35590,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jaldi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jaldi
   static TextStyle jaldi({
     TextStyle textStyle,
     Color color,
@@ -31782,6 +35647,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jaldi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jaldi
   static TextTheme jaldiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31801,6 +35671,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jim Nightshade font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jim+Nightshade
   static TextStyle jimNightshade({
     TextStyle textStyle,
     Color color,
@@ -31852,6 +35726,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jim Nightshade font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jim+Nightshade
   static TextTheme jimNightshadeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31871,6 +35750,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jockey One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jockey+One
   static TextStyle jockeyOne({
     TextStyle textStyle,
     Color color,
@@ -31922,6 +35805,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jockey One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jockey+One
   static TextTheme jockeyOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -31941,6 +35829,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jolly Lodger font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jolly+Lodger
   static TextStyle jollyLodger({
     TextStyle textStyle,
     Color color,
@@ -31992,6 +35884,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jolly Lodger font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jolly+Lodger
   static TextTheme jollyLodgerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32011,6 +35908,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jomhuria font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jomhuria
   static TextStyle jomhuria({
     TextStyle textStyle,
     Color color,
@@ -32062,6 +35963,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jomhuria font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jomhuria
   static TextTheme jomhuriaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32081,6 +35987,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jomolhari font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jomolhari
   static TextStyle jomolhari({
     TextStyle textStyle,
     Color color,
@@ -32132,6 +36042,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jomolhari font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jomolhari
   static TextTheme jomolhariTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32151,6 +36066,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Josefin Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Josefin+Sans
   static TextStyle josefinSans({
     TextStyle textStyle,
     Color color,
@@ -32220,6 +36139,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Josefin Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Josefin+Sans
   static TextTheme josefinSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32239,6 +36163,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Josefin Slab font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Josefin+Slab
   static TextStyle josefinSlab({
     TextStyle textStyle,
     Color color,
@@ -32308,6 +36236,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Josefin Slab font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Josefin+Slab
   static TextTheme josefinSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32327,6 +36260,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Joti One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Joti+One
   static TextStyle jotiOne({
     TextStyle textStyle,
     Color color,
@@ -32378,6 +36315,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Joti One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Joti+One
   static TextTheme jotiOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32397,6 +36339,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jua font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jua
   static TextStyle jua({
     TextStyle textStyle,
     Color color,
@@ -32448,6 +36394,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jua font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jua
   static TextTheme juaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32467,6 +36418,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Judson font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Judson
   static TextStyle judson({
     TextStyle textStyle,
     Color color,
@@ -32522,6 +36477,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Judson font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Judson
   static TextTheme judsonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32541,6 +36501,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Julee font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Julee
   static TextStyle julee({
     TextStyle textStyle,
     Color color,
@@ -32592,6 +36556,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Julee font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Julee
   static TextTheme juleeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32611,6 +36580,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Julius Sans One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Julius+Sans+One
   static TextStyle juliusSansOne({
     TextStyle textStyle,
     Color color,
@@ -32662,6 +36635,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Julius Sans One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Julius+Sans+One
   static TextTheme juliusSansOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32681,6 +36659,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Junge font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Junge
   static TextStyle junge({
     TextStyle textStyle,
     Color color,
@@ -32732,6 +36714,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Junge font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Junge
   static TextTheme jungeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32751,6 +36738,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jura font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jura
   static TextStyle jura({
     TextStyle textStyle,
     Color color,
@@ -32810,6 +36801,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Jura font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jura
   static TextTheme juraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32829,6 +36825,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Just Another Hand font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Just+Another+Hand
   static TextStyle justAnotherHand({
     TextStyle textStyle,
     Color color,
@@ -32880,6 +36880,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Just Another Hand font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Just+Another+Hand
   static TextTheme justAnotherHandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32899,6 +36904,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Just Me Again Down Here font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Just+Me+Again+Down+Here
   static TextStyle justMeAgainDownHere({
     TextStyle textStyle,
     Color color,
@@ -32950,6 +36959,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Just Me Again Down Here font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Just+Me+Again+Down+Here
   static TextTheme justMeAgainDownHereTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -32969,6 +36983,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the K2D font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/K2D
   static TextStyle k2D({
     TextStyle textStyle,
     Color color,
@@ -33050,6 +37068,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the K2D font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/K2D
   static TextTheme k2DTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33069,6 +37092,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kadwa font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kadwa
   static TextStyle kadwa({
     TextStyle textStyle,
     Color color,
@@ -33122,6 +37149,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kadwa font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kadwa
   static TextTheme kadwaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33141,6 +37173,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kalam font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kalam
   static TextStyle kalam({
     TextStyle textStyle,
     Color color,
@@ -33196,6 +37232,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kalam font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kalam
   static TextTheme kalamTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33215,6 +37256,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kameron font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kameron
   static TextStyle kameron({
     TextStyle textStyle,
     Color color,
@@ -33268,6 +37313,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kameron font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kameron
   static TextTheme kameronTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33287,6 +37337,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kanit font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kanit
   static TextStyle kanit({
     TextStyle textStyle,
     Color color,
@@ -33372,6 +37426,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kanit font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kanit
   static TextTheme kanitTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33391,6 +37450,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kantumruy font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kantumruy
   static TextStyle kantumruy({
     TextStyle textStyle,
     Color color,
@@ -33446,6 +37509,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kantumruy font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kantumruy
   static TextTheme kantumruyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33465,6 +37533,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Karla font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Karla
   static TextStyle karla({
     TextStyle textStyle,
     Color color,
@@ -33522,6 +37594,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Karla font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Karla
   static TextTheme karlaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33541,6 +37618,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Karma font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Karma
   static TextStyle karma({
     TextStyle textStyle,
     Color color,
@@ -33600,6 +37681,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Karma font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Karma
   static TextTheme karmaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33619,6 +37705,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Katibeh font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Katibeh
   static TextStyle katibeh({
     TextStyle textStyle,
     Color color,
@@ -33670,6 +37760,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Katibeh font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Katibeh
   static TextTheme katibehTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33689,6 +37784,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kaushan Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kaushan+Script
   static TextStyle kaushanScript({
     TextStyle textStyle,
     Color color,
@@ -33740,6 +37839,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kaushan Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kaushan+Script
   static TextTheme kaushanScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33759,6 +37863,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kavivanar font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kavivanar
   static TextStyle kavivanar({
     TextStyle textStyle,
     Color color,
@@ -33810,6 +37918,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kavivanar font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kavivanar
   static TextTheme kavivanarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33829,6 +37942,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kavoon font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kavoon
   static TextStyle kavoon({
     TextStyle textStyle,
     Color color,
@@ -33880,6 +37997,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kavoon font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kavoon
   static TextTheme kavoonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33899,6 +38021,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kdam Thmor font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kdam+Thmor
   static TextStyle kdamThmor({
     TextStyle textStyle,
     Color color,
@@ -33950,6 +38076,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kdam Thmor font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kdam+Thmor
   static TextTheme kdamThmorTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -33969,6 +38100,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Keania One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Keania+One
   static TextStyle keaniaOne({
     TextStyle textStyle,
     Color color,
@@ -34020,6 +38155,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Keania One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Keania+One
   static TextTheme keaniaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34039,6 +38179,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kelly Slab font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kelly+Slab
   static TextStyle kellySlab({
     TextStyle textStyle,
     Color color,
@@ -34090,6 +38234,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kelly Slab font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kelly+Slab
   static TextTheme kellySlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34109,6 +38258,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kenia font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kenia
   static TextStyle kenia({
     TextStyle textStyle,
     Color color,
@@ -34160,6 +38313,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kenia font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kenia
   static TextTheme keniaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34179,6 +38337,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Khand font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Khand
   static TextStyle khand({
     TextStyle textStyle,
     Color color,
@@ -34238,6 +38400,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Khand font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Khand
   static TextTheme khandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34257,6 +38424,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Khmer font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Khmer
   static TextStyle khmer({
     TextStyle textStyle,
     Color color,
@@ -34308,6 +38479,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Khmer font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Khmer
   static TextTheme khmerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34327,6 +38503,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Khula font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Khula
   static TextStyle khula({
     TextStyle textStyle,
     Color color,
@@ -34386,6 +38566,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Khula font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Khula
   static TextTheme khulaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34405,6 +38590,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kirang Haerang font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kirang+Haerang
   static TextStyle kirangHaerang({
     TextStyle textStyle,
     Color color,
@@ -34456,6 +38645,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kirang Haerang font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kirang+Haerang
   static TextTheme kirangHaerangTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34475,6 +38669,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kite One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kite+One
   static TextStyle kiteOne({
     TextStyle textStyle,
     Color color,
@@ -34526,6 +38724,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kite One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kite+One
   static TextTheme kiteOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34545,6 +38748,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Knewave font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Knewave
   static TextStyle knewave({
     TextStyle textStyle,
     Color color,
@@ -34596,6 +38803,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Knewave font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Knewave
   static TextTheme knewaveTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34615,6 +38827,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the KoHo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/KoHo
   static TextStyle koHo({
     TextStyle textStyle,
     Color color,
@@ -34688,6 +38904,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the KoHo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/KoHo
   static TextTheme koHoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34707,6 +38928,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kodchasan font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kodchasan
   static TextStyle kodchasan({
     TextStyle textStyle,
     Color color,
@@ -34780,6 +39005,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kodchasan font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kodchasan
   static TextTheme kodchasanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34799,6 +39029,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kosugi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kosugi
   static TextStyle kosugi({
     TextStyle textStyle,
     Color color,
@@ -34850,6 +39084,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kosugi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kosugi
   static TextTheme kosugiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34869,6 +39108,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kosugi Maru font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kosugi+Maru
   static TextStyle kosugiMaru({
     TextStyle textStyle,
     Color color,
@@ -34920,6 +39163,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kosugi Maru font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kosugi+Maru
   static TextTheme kosugiMaruTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -34939,6 +39187,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kotta One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kotta+One
   static TextStyle kottaOne({
     TextStyle textStyle,
     Color color,
@@ -34990,6 +39242,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kotta One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kotta+One
   static TextTheme kottaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35009,6 +39266,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Koulen font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Koulen
   static TextStyle koulen({
     TextStyle textStyle,
     Color color,
@@ -35060,6 +39321,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Koulen font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Koulen
   static TextTheme koulenTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35079,6 +39345,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kranky font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kranky
   static TextStyle kranky({
     TextStyle textStyle,
     Color color,
@@ -35130,6 +39400,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kranky font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kranky
   static TextTheme krankyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35149,6 +39424,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kreon font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kreon
   static TextStyle kreon({
     TextStyle textStyle,
     Color color,
@@ -35208,6 +39487,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kreon font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kreon
   static TextTheme kreonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35227,6 +39511,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kristi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kristi
   static TextStyle kristi({
     TextStyle textStyle,
     Color color,
@@ -35278,6 +39566,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kristi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kristi
   static TextTheme kristiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35297,6 +39590,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Krona One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Krona+One
   static TextStyle kronaOne({
     TextStyle textStyle,
     Color color,
@@ -35348,6 +39645,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Krona One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Krona+One
   static TextTheme kronaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35367,6 +39669,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Krub font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Krub
   static TextStyle krub({
     TextStyle textStyle,
     Color color,
@@ -35440,6 +39746,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Krub font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Krub
   static TextTheme krubTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35459,6 +39770,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kulim Park font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kulim+Park
   static TextStyle kulimPark({
     TextStyle textStyle,
     Color color,
@@ -35528,6 +39843,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kulim Park font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kulim+Park
   static TextTheme kulimParkTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35547,6 +39867,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kumar One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kumar+One
   static TextStyle kumarOne({
     TextStyle textStyle,
     Color color,
@@ -35598,6 +39922,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kumar One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kumar+One
   static TextTheme kumarOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35617,6 +39946,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kumar One Outline font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kumar+One+Outline
   static TextStyle kumarOneOutline({
     TextStyle textStyle,
     Color color,
@@ -35668,6 +40001,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kumar One Outline font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kumar+One+Outline
   static TextTheme kumarOneOutlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35687,6 +40025,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kurale font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kurale
   static TextStyle kurale({
     TextStyle textStyle,
     Color color,
@@ -35738,6 +40080,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kurale font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kurale
   static TextTheme kuraleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35757,6 +40104,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the La Belle Aurore font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/La+Belle+Aurore
   static TextStyle laBelleAurore({
     TextStyle textStyle,
     Color color,
@@ -35808,6 +40159,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the La Belle Aurore font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/La+Belle+Aurore
   static TextTheme laBelleAuroreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35827,6 +40183,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lacquer font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lacquer
   static TextStyle lacquer({
     TextStyle textStyle,
     Color color,
@@ -35878,6 +40238,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lacquer font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lacquer
   static TextTheme lacquerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35897,6 +40262,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Laila font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Laila
   static TextStyle laila({
     TextStyle textStyle,
     Color color,
@@ -35956,6 +40325,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Laila font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Laila
   static TextTheme lailaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -35975,6 +40349,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lakki Reddy font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lakki+Reddy
   static TextStyle lakkiReddy({
     TextStyle textStyle,
     Color color,
@@ -36026,6 +40404,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lakki Reddy font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lakki+Reddy
   static TextTheme lakkiReddyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36045,6 +40428,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lalezar font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lalezar
   static TextStyle lalezar({
     TextStyle textStyle,
     Color color,
@@ -36096,6 +40483,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lalezar font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lalezar
   static TextTheme lalezarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36115,6 +40507,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lancelot font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lancelot
   static TextStyle lancelot({
     TextStyle textStyle,
     Color color,
@@ -36166,6 +40562,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lancelot font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lancelot
   static TextTheme lancelotTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36185,6 +40586,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lateef font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lateef
   static TextStyle lateef({
     TextStyle textStyle,
     Color color,
@@ -36236,6 +40641,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lateef font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lateef
   static TextTheme lateefTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36255,6 +40665,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lato font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lato
   static TextStyle lato({
     TextStyle textStyle,
     Color color,
@@ -36324,6 +40738,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lato font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lato
   static TextTheme latoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36343,6 +40762,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the League Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/League+Script
   static TextStyle leagueScript({
     TextStyle textStyle,
     Color color,
@@ -36394,6 +40817,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the League Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/League+Script
   static TextTheme leagueScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36413,6 +40841,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Leckerli One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Leckerli+One
   static TextStyle leckerliOne({
     TextStyle textStyle,
     Color color,
@@ -36464,6 +40896,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Leckerli One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Leckerli+One
   static TextTheme leckerliOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36483,6 +40920,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ledger font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ledger
   static TextStyle ledger({
     TextStyle textStyle,
     Color color,
@@ -36534,6 +40975,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ledger font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ledger
   static TextTheme ledgerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36553,6 +40999,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lekton font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lekton
   static TextStyle lekton({
     TextStyle textStyle,
     Color color,
@@ -36608,6 +41058,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lekton font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lekton
   static TextTheme lektonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36627,6 +41082,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lemon font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lemon
   static TextStyle lemon({
     TextStyle textStyle,
     Color color,
@@ -36678,6 +41137,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lemon font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lemon
   static TextTheme lemonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36697,6 +41161,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lemonada font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lemonada
   static TextStyle lemonada({
     TextStyle textStyle,
     Color color,
@@ -36756,6 +41224,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lemonada font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lemonada
   static TextTheme lemonadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36775,6 +41248,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Deca font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Deca
   static TextStyle lexendDeca({
     TextStyle textStyle,
     Color color,
@@ -36826,6 +41303,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Deca font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Deca
   static TextTheme lexendDecaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36845,6 +41327,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Exa font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Exa
   static TextStyle lexendExa({
     TextStyle textStyle,
     Color color,
@@ -36896,6 +41382,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Exa font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Exa
   static TextTheme lexendExaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36915,6 +41406,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Giga font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Giga
   static TextStyle lexendGiga({
     TextStyle textStyle,
     Color color,
@@ -36966,6 +41461,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Giga font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Giga
   static TextTheme lexendGigaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -36985,6 +41485,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Mega font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Mega
   static TextStyle lexendMega({
     TextStyle textStyle,
     Color color,
@@ -37036,6 +41540,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Mega font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Mega
   static TextTheme lexendMegaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37055,6 +41564,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Peta font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Peta
   static TextStyle lexendPeta({
     TextStyle textStyle,
     Color color,
@@ -37106,6 +41619,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Peta font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Peta
   static TextTheme lexendPetaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37125,6 +41643,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Tera font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Tera
   static TextStyle lexendTera({
     TextStyle textStyle,
     Color color,
@@ -37176,6 +41698,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Tera font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Tera
   static TextTheme lexendTeraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37195,6 +41722,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Zetta font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Zetta
   static TextStyle lexendZetta({
     TextStyle textStyle,
     Color color,
@@ -37246,6 +41777,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lexend Zetta font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lexend+Zetta
   static TextTheme lexendZettaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37265,6 +41801,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 128 font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+128
   static TextStyle libreBarcode128({
     TextStyle textStyle,
     Color color,
@@ -37316,6 +41856,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 128 font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+128
   static TextTheme libreBarcode128TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37335,6 +41880,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 128 Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+128+Text
   static TextStyle libreBarcode128Text({
     TextStyle textStyle,
     Color color,
@@ -37386,6 +41935,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 128 Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+128+Text
   static TextTheme libreBarcode128TextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37405,6 +41959,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 39 font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+39
   static TextStyle libreBarcode39({
     TextStyle textStyle,
     Color color,
@@ -37456,6 +42014,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 39 font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+39
   static TextTheme libreBarcode39TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37475,6 +42038,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 39 Extended font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Extended
   static TextStyle libreBarcode39Extended({
     TextStyle textStyle,
     Color color,
@@ -37526,6 +42093,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 39 Extended font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Extended
   static TextTheme libreBarcode39ExtendedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37554,6 +42126,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 39 Extended Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Extended+Text
   static TextStyle libreBarcode39ExtendedText({
     TextStyle textStyle,
     Color color,
@@ -37605,6 +42181,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 39 Extended Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Extended+Text
   static TextTheme libreBarcode39ExtendedTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37637,6 +42218,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 39 Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Text
   static TextStyle libreBarcode39Text({
     TextStyle textStyle,
     Color color,
@@ -37688,6 +42273,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Barcode 39 Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Text
   static TextTheme libreBarcode39TextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37707,6 +42297,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Baskerville font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Baskerville
   static TextStyle libreBaskerville({
     TextStyle textStyle,
     Color color,
@@ -37762,6 +42356,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Baskerville font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Baskerville
   static TextTheme libreBaskervilleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37781,6 +42380,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Caslon Display font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Caslon+Display
   static TextStyle libreCaslonDisplay({
     TextStyle textStyle,
     Color color,
@@ -37832,6 +42435,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Caslon Display font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Caslon+Display
   static TextTheme libreCaslonDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37851,6 +42459,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Caslon Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Caslon+Text
   static TextStyle libreCaslonText({
     TextStyle textStyle,
     Color color,
@@ -37906,6 +42518,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Caslon Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Caslon+Text
   static TextTheme libreCaslonTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -37925,6 +42542,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Franklin font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Franklin
   static TextStyle libreFranklin({
     TextStyle textStyle,
     Color color,
@@ -38010,6 +42631,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Libre Franklin font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Libre+Franklin
   static TextTheme libreFranklinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38029,6 +42655,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Life Savers font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Life+Savers
   static TextStyle lifeSavers({
     TextStyle textStyle,
     Color color,
@@ -38084,6 +42714,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Life Savers font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Life+Savers
   static TextTheme lifeSaversTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38103,6 +42738,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lilita One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lilita+One
   static TextStyle lilitaOne({
     TextStyle textStyle,
     Color color,
@@ -38154,6 +42793,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lilita One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lilita+One
   static TextTheme lilitaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38173,6 +42817,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lily Script One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lily+Script+One
   static TextStyle lilyScriptOne({
     TextStyle textStyle,
     Color color,
@@ -38224,6 +42872,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lily Script One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lily+Script+One
   static TextTheme lilyScriptOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38243,6 +42896,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Limelight font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Limelight
   static TextStyle limelight({
     TextStyle textStyle,
     Color color,
@@ -38294,6 +42951,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Limelight font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Limelight
   static TextTheme limelightTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38313,6 +42975,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Linden Hill font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Linden+Hill
   static TextStyle lindenHill({
     TextStyle textStyle,
     Color color,
@@ -38366,6 +43032,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Linden Hill font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Linden+Hill
   static TextTheme lindenHillTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38385,6 +43056,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Literata font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Literata
   static TextStyle literata({
     TextStyle textStyle,
     Color color,
@@ -38450,6 +43125,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Literata font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Literata
   static TextTheme literataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38469,6 +43149,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Liu Jian Mao Cao font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Liu+Jian+Mao+Cao
   static TextStyle liuJianMaoCao({
     TextStyle textStyle,
     Color color,
@@ -38520,6 +43204,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Liu Jian Mao Cao font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Liu+Jian+Mao+Cao
   static TextTheme liuJianMaoCaoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38539,6 +43228,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Livvic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Livvic
   static TextStyle livvic({
     TextStyle textStyle,
     Color color,
@@ -38620,6 +43313,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Livvic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Livvic
   static TextTheme livvicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38639,6 +43337,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lobster font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lobster
   static TextStyle lobster({
     TextStyle textStyle,
     Color color,
@@ -38690,6 +43392,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lobster font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lobster
   static TextTheme lobsterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38709,6 +43416,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lobster Two font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lobster+Two
   static TextStyle lobsterTwo({
     TextStyle textStyle,
     Color color,
@@ -38766,6 +43477,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lobster Two font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lobster+Two
   static TextTheme lobsterTwoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38785,6 +43501,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Londrina Outline font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Londrina+Outline
   static TextStyle londrinaOutline({
     TextStyle textStyle,
     Color color,
@@ -38836,6 +43556,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Londrina Outline font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Londrina+Outline
   static TextTheme londrinaOutlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38855,6 +43580,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Londrina Shadow font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Londrina+Shadow
   static TextStyle londrinaShadow({
     TextStyle textStyle,
     Color color,
@@ -38906,6 +43635,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Londrina Shadow font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Londrina+Shadow
   static TextTheme londrinaShadowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38925,6 +43659,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Londrina Sketch font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Londrina+Sketch
   static TextStyle londrinaSketch({
     TextStyle textStyle,
     Color color,
@@ -38976,6 +43714,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Londrina Sketch font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Londrina+Sketch
   static TextTheme londrinaSketchTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -38995,6 +43738,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Londrina Solid font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Londrina+Solid
   static TextStyle londrinaSolid({
     TextStyle textStyle,
     Color color,
@@ -39052,6 +43799,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Londrina Solid font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Londrina+Solid
   static TextTheme londrinaSolidTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39071,6 +43823,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Long Cang font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Long+Cang
   static TextStyle longCang({
     TextStyle textStyle,
     Color color,
@@ -39122,6 +43878,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Long Cang font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Long+Cang
   static TextTheme longCangTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39141,6 +43902,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lora font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lora
   static TextStyle lora({
     TextStyle textStyle,
     Color color,
@@ -39198,6 +43963,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lora font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lora
   static TextTheme loraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39217,6 +43987,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Love Ya Like A Sister font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Love+Ya+Like+A+Sister
   static TextStyle loveYaLikeASister({
     TextStyle textStyle,
     Color color,
@@ -39268,6 +44042,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Love Ya Like A Sister font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Love+Ya+Like+A+Sister
   static TextTheme loveYaLikeASisterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39287,6 +44066,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Loved by the King font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Loved+by+the+King
   static TextStyle lovedbytheKing({
     TextStyle textStyle,
     Color color,
@@ -39338,6 +44121,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Loved by the King font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Loved+by+the+King
   static TextTheme lovedbytheKingTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39357,6 +44145,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lovers Quarrel font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lovers+Quarrel
   static TextStyle loversQuarrel({
     TextStyle textStyle,
     Color color,
@@ -39408,6 +44200,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lovers Quarrel font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lovers+Quarrel
   static TextTheme loversQuarrelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39427,6 +44224,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Luckiest Guy font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Luckiest+Guy
   static TextStyle luckiestGuy({
     TextStyle textStyle,
     Color color,
@@ -39478,6 +44279,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Luckiest Guy font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Luckiest+Guy
   static TextTheme luckiestGuyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39497,6 +44303,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lusitana font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lusitana
   static TextStyle lusitana({
     TextStyle textStyle,
     Color color,
@@ -39550,6 +44360,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lusitana font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lusitana
   static TextTheme lusitanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39569,6 +44384,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lustria font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lustria
   static TextStyle lustria({
     TextStyle textStyle,
     Color color,
@@ -39620,6 +44439,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Lustria font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Lustria
   static TextTheme lustriaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39639,6 +44463,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the M PLUS 1p font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/M+PLUS+1p
   static TextStyle mPLUS1p({
     TextStyle textStyle,
     Color color,
@@ -39702,6 +44530,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the M PLUS 1p font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/M+PLUS+1p
   static TextTheme mPLUS1pTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39721,6 +44554,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the M PLUS Rounded 1c font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/M+PLUS+Rounded+1c
   static TextStyle mPLUSRounded1c({
     TextStyle textStyle,
     Color color,
@@ -39784,6 +44621,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the M PLUS Rounded 1c font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/M+PLUS+Rounded+1c
   static TextTheme mPLUSRounded1cTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39803,6 +44645,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ma Shan Zheng font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ma+Shan+Zheng
   static TextStyle maShanZheng({
     TextStyle textStyle,
     Color color,
@@ -39854,6 +44700,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ma Shan Zheng font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ma+Shan+Zheng
   static TextTheme maShanZhengTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39873,6 +44724,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Macondo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Macondo
   static TextStyle macondo({
     TextStyle textStyle,
     Color color,
@@ -39924,6 +44779,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Macondo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Macondo
   static TextTheme macondoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -39943,6 +44803,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Macondo Swash Caps font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Macondo+Swash+Caps
   static TextStyle macondoSwashCaps({
     TextStyle textStyle,
     Color color,
@@ -39994,6 +44858,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Macondo Swash Caps font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Macondo+Swash+Caps
   static TextTheme macondoSwashCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40013,6 +44882,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mada font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mada
   static TextStyle mada({
     TextStyle textStyle,
     Color color,
@@ -40076,6 +44949,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mada font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mada
   static TextTheme madaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40095,6 +44973,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Magra font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Magra
   static TextStyle magra({
     TextStyle textStyle,
     Color color,
@@ -40148,6 +45030,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Magra font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Magra
   static TextTheme magraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40167,6 +45054,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Maiden Orange font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Maiden+Orange
   static TextStyle maidenOrange({
     TextStyle textStyle,
     Color color,
@@ -40218,6 +45109,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Maiden Orange font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Maiden+Orange
   static TextTheme maidenOrangeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40237,6 +45133,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Maitree font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Maitree
   static TextStyle maitree({
     TextStyle textStyle,
     Color color,
@@ -40298,6 +45198,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Maitree font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Maitree
   static TextTheme maitreeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40317,6 +45222,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Major Mono Display font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Major+Mono+Display
   static TextStyle majorMonoDisplay({
     TextStyle textStyle,
     Color color,
@@ -40368,6 +45277,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Major Mono Display font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Major+Mono+Display
   static TextTheme majorMonoDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40387,6 +45301,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mako font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mako
   static TextStyle mako({
     TextStyle textStyle,
     Color color,
@@ -40438,6 +45356,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mako font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mako
   static TextTheme makoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40457,6 +45380,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mali font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mali
   static TextStyle mali({
     TextStyle textStyle,
     Color color,
@@ -40530,6 +45457,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mali font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mali
   static TextTheme maliTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40549,6 +45481,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mallanna font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mallanna
   static TextStyle mallanna({
     TextStyle textStyle,
     Color color,
@@ -40600,6 +45536,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mallanna font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mallanna
   static TextTheme mallannaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40619,6 +45560,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mandali font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mandali
   static TextStyle mandali({
     TextStyle textStyle,
     Color color,
@@ -40670,6 +45615,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mandali font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mandali
   static TextTheme mandaliTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40689,6 +45639,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Manjari font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Manjari
   static TextStyle manjari({
     TextStyle textStyle,
     Color color,
@@ -40744,6 +45698,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Manjari font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Manjari
   static TextTheme manjariTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40763,6 +45722,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mansalva font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mansalva
   static TextStyle mansalva({
     TextStyle textStyle,
     Color color,
@@ -40814,6 +45777,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mansalva font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mansalva
   static TextTheme mansalvaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40833,6 +45801,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Manuale font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Manuale
   static TextStyle manuale({
     TextStyle textStyle,
     Color color,
@@ -40898,6 +45870,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Manuale font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Manuale
   static TextTheme manualeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40917,6 +45894,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marcellus font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marcellus
   static TextStyle marcellus({
     TextStyle textStyle,
     Color color,
@@ -40968,6 +45949,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marcellus font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marcellus
   static TextTheme marcellusTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -40987,6 +45973,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marcellus SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marcellus+SC
   static TextStyle marcellusSC({
     TextStyle textStyle,
     Color color,
@@ -41038,6 +46028,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marcellus SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marcellus+SC
   static TextTheme marcellusSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41057,6 +46052,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marck Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marck+Script
   static TextStyle marckScript({
     TextStyle textStyle,
     Color color,
@@ -41108,6 +46107,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marck Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marck+Script
   static TextTheme marckScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41127,6 +46131,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Margarine font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Margarine
   static TextStyle margarine({
     TextStyle textStyle,
     Color color,
@@ -41178,6 +46186,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Margarine font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Margarine
   static TextTheme margarineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41197,6 +46210,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Markazi Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Markazi+Text
   static TextStyle markaziText({
     TextStyle textStyle,
     Color color,
@@ -41254,6 +46271,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Markazi Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Markazi+Text
   static TextTheme markaziTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41273,6 +46295,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marko One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marko+One
   static TextStyle markoOne({
     TextStyle textStyle,
     Color color,
@@ -41324,6 +46350,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marko One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marko+One
   static TextTheme markoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41343,6 +46374,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marmelad font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marmelad
   static TextStyle marmelad({
     TextStyle textStyle,
     Color color,
@@ -41394,6 +46429,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marmelad font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marmelad
   static TextTheme marmeladTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41413,6 +46453,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Martel font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Martel
   static TextStyle martel({
     TextStyle textStyle,
     Color color,
@@ -41476,6 +46520,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Martel font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Martel
   static TextTheme martelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41495,6 +46544,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Martel Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Martel+Sans
   static TextStyle martelSans({
     TextStyle textStyle,
     Color color,
@@ -41558,6 +46611,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Martel Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Martel+Sans
   static TextTheme martelSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41577,6 +46635,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marvel font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marvel
   static TextStyle marvel({
     TextStyle textStyle,
     Color color,
@@ -41634,6 +46696,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Marvel font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Marvel
   static TextTheme marvelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41653,6 +46720,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mate font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mate
   static TextStyle mate({
     TextStyle textStyle,
     Color color,
@@ -41706,6 +46777,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mate font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mate
   static TextTheme mateTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41725,6 +46801,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mate SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mate+SC
   static TextStyle mateSC({
     TextStyle textStyle,
     Color color,
@@ -41776,6 +46856,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mate SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mate+SC
   static TextTheme mateSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41795,6 +46880,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Maven Pro font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Maven+Pro
   static TextStyle mavenPro({
     TextStyle textStyle,
     Color color,
@@ -41856,6 +46945,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Maven Pro font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Maven+Pro
   static TextTheme mavenProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41875,6 +46969,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the McLaren font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/McLaren
   static TextStyle mcLaren({
     TextStyle textStyle,
     Color color,
@@ -41926,6 +47024,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the McLaren font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/McLaren
   static TextTheme mcLarenTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -41945,6 +47048,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Meddon font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Meddon
   static TextStyle meddon({
     TextStyle textStyle,
     Color color,
@@ -41996,6 +47103,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Meddon font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Meddon
   static TextTheme meddonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42015,6 +47127,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the MedievalSharp font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/MedievalSharp
   static TextStyle medievalSharp({
     TextStyle textStyle,
     Color color,
@@ -42066,6 +47182,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the MedievalSharp font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/MedievalSharp
   static TextTheme medievalSharpTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42085,6 +47206,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Medula One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Medula+One
   static TextStyle medulaOne({
     TextStyle textStyle,
     Color color,
@@ -42136,6 +47261,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Medula One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Medula+One
   static TextTheme medulaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42155,6 +47285,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Meera Inimai font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Meera+Inimai
   static TextStyle meeraInimai({
     TextStyle textStyle,
     Color color,
@@ -42206,6 +47340,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Meera Inimai font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Meera+Inimai
   static TextTheme meeraInimaiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42225,6 +47364,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Megrim font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Megrim
   static TextStyle megrim({
     TextStyle textStyle,
     Color color,
@@ -42276,6 +47419,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Megrim font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Megrim
   static TextTheme megrimTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42295,6 +47443,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Meie Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Meie+Script
   static TextStyle meieScript({
     TextStyle textStyle,
     Color color,
@@ -42346,6 +47498,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Meie Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Meie+Script
   static TextTheme meieScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42365,6 +47522,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Merienda font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Merienda
   static TextStyle merienda({
     TextStyle textStyle,
     Color color,
@@ -42418,6 +47579,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Merienda font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Merienda
   static TextTheme meriendaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42437,6 +47603,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Merienda One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Merienda+One
   static TextStyle meriendaOne({
     TextStyle textStyle,
     Color color,
@@ -42488,6 +47658,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Merienda One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Merienda+One
   static TextTheme meriendaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42507,6 +47682,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Merriweather font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Merriweather
   static TextStyle merriweather({
     TextStyle textStyle,
     Color color,
@@ -42572,6 +47751,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Merriweather font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Merriweather
   static TextTheme merriweatherTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42591,6 +47775,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Merriweather Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Merriweather+Sans
   static TextStyle merriweatherSans({
     TextStyle textStyle,
     Color color,
@@ -42656,6 +47844,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Merriweather Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Merriweather+Sans
   static TextTheme merriweatherSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42675,6 +47868,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Metal font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Metal
   static TextStyle metal({
     TextStyle textStyle,
     Color color,
@@ -42726,6 +47923,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Metal font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Metal
   static TextTheme metalTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42745,6 +47947,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Metal Mania font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Metal+Mania
   static TextStyle metalMania({
     TextStyle textStyle,
     Color color,
@@ -42796,6 +48002,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Metal Mania font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Metal+Mania
   static TextTheme metalManiaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42815,6 +48026,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Metamorphous font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Metamorphous
   static TextStyle metamorphous({
     TextStyle textStyle,
     Color color,
@@ -42866,6 +48081,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Metamorphous font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Metamorphous
   static TextTheme metamorphousTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42885,6 +48105,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Metrophobic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Metrophobic
   static TextStyle metrophobic({
     TextStyle textStyle,
     Color color,
@@ -42936,6 +48160,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Metrophobic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Metrophobic
   static TextTheme metrophobicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -42955,6 +48184,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Michroma font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Michroma
   static TextStyle michroma({
     TextStyle textStyle,
     Color color,
@@ -43006,6 +48239,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Michroma font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Michroma
   static TextTheme michromaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43025,6 +48263,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Milonga font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Milonga
   static TextStyle milonga({
     TextStyle textStyle,
     Color color,
@@ -43076,6 +48318,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Milonga font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Milonga
   static TextTheme milongaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43095,6 +48342,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Miltonian font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Miltonian
   static TextStyle miltonian({
     TextStyle textStyle,
     Color color,
@@ -43146,6 +48397,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Miltonian font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Miltonian
   static TextTheme miltonianTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43165,6 +48421,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Miltonian Tattoo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Miltonian+Tattoo
   static TextStyle miltonianTattoo({
     TextStyle textStyle,
     Color color,
@@ -43216,6 +48476,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Miltonian Tattoo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Miltonian+Tattoo
   static TextTheme miltonianTattooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43235,6 +48500,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mina font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mina
   static TextStyle mina({
     TextStyle textStyle,
     Color color,
@@ -43288,6 +48557,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mina font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mina
   static TextTheme minaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43307,6 +48581,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Miniver font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Miniver
   static TextStyle miniver({
     TextStyle textStyle,
     Color color,
@@ -43358,6 +48636,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Miniver font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Miniver
   static TextTheme miniverTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43377,6 +48660,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Miriam Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Miriam+Libre
   static TextStyle miriamLibre({
     TextStyle textStyle,
     Color color,
@@ -43430,6 +48717,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Miriam Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Miriam+Libre
   static TextTheme miriamLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43449,6 +48741,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mirza font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mirza
   static TextStyle mirza({
     TextStyle textStyle,
     Color color,
@@ -43506,6 +48802,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mirza font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mirza
   static TextTheme mirzaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43525,6 +48826,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Miss Fajardose font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Miss+Fajardose
   static TextStyle missFajardose({
     TextStyle textStyle,
     Color color,
@@ -43576,6 +48881,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Miss Fajardose font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Miss+Fajardose
   static TextTheme missFajardoseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43595,6 +48905,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mitr font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mitr
   static TextStyle mitr({
     TextStyle textStyle,
     Color color,
@@ -43656,6 +48970,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mitr font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mitr
   static TextTheme mitrTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43675,6 +48994,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Modak font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Modak
   static TextStyle modak({
     TextStyle textStyle,
     Color color,
@@ -43726,6 +49049,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Modak font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Modak
   static TextTheme modakTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43745,6 +49073,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Modern Antiqua font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Modern+Antiqua
   static TextStyle modernAntiqua({
     TextStyle textStyle,
     Color color,
@@ -43796,6 +49128,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Modern Antiqua font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Modern+Antiqua
   static TextTheme modernAntiquaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43815,6 +49152,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mogra font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mogra
   static TextStyle mogra({
     TextStyle textStyle,
     Color color,
@@ -43866,6 +49207,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mogra font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mogra
   static TextTheme mograTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43885,6 +49231,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Molengo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Molengo
   static TextStyle molengo({
     TextStyle textStyle,
     Color color,
@@ -43936,6 +49286,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Molengo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Molengo
   static TextTheme molengoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -43955,6 +49310,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Molle font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Molle
   static TextStyle molle({
     TextStyle textStyle,
     Color color,
@@ -44006,6 +49365,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Molle font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Molle
   static TextTheme molleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44025,6 +49389,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Monda font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Monda
   static TextStyle monda({
     TextStyle textStyle,
     Color color,
@@ -44078,6 +49446,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Monda font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Monda
   static TextTheme mondaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44097,6 +49470,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Monofett font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Monofett
   static TextStyle monofett({
     TextStyle textStyle,
     Color color,
@@ -44148,6 +49525,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Monofett font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Monofett
   static TextTheme monofettTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44167,6 +49549,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Monoton font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Monoton
   static TextStyle monoton({
     TextStyle textStyle,
     Color color,
@@ -44218,6 +49604,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Monoton font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Monoton
   static TextTheme monotonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44237,6 +49628,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Monsieur La Doulaise font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Monsieur+La+Doulaise
   static TextStyle monsieurLaDoulaise({
     TextStyle textStyle,
     Color color,
@@ -44288,6 +49683,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Monsieur La Doulaise font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Monsieur+La+Doulaise
   static TextTheme monsieurLaDoulaiseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44307,6 +49707,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Montaga font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Montaga
   static TextStyle montaga({
     TextStyle textStyle,
     Color color,
@@ -44358,6 +49762,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Montaga font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Montaga
   static TextTheme montagaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44377,6 +49786,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Montez font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Montez
   static TextStyle montez({
     TextStyle textStyle,
     Color color,
@@ -44428,6 +49841,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Montez font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Montez
   static TextTheme montezTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44447,6 +49865,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Montserrat font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Montserrat
   static TextStyle montserrat({
     TextStyle textStyle,
     Color color,
@@ -44532,6 +49954,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Montserrat font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Montserrat
   static TextTheme montserratTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44551,6 +49978,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Montserrat Alternates font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Montserrat+Alternates
   static TextStyle montserratAlternates({
     TextStyle textStyle,
     Color color,
@@ -44636,6 +50067,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Montserrat Alternates font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Montserrat+Alternates
   static TextTheme montserratAlternatesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44662,6 +50098,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Montserrat Subrayada font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Montserrat+Subrayada
   static TextStyle montserratSubrayada({
     TextStyle textStyle,
     Color color,
@@ -44715,6 +50155,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Montserrat Subrayada font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Montserrat+Subrayada
   static TextTheme montserratSubrayadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44734,6 +50179,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Moul font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Moul
   static TextStyle moul({
     TextStyle textStyle,
     Color color,
@@ -44785,6 +50234,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Moul font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Moul
   static TextTheme moulTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44804,6 +50258,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Moulpali font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Moulpali
   static TextStyle moulpali({
     TextStyle textStyle,
     Color color,
@@ -44855,6 +50313,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Moulpali font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Moulpali
   static TextTheme moulpaliTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44874,6 +50337,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mountains of Christmas font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mountains+of+Christmas
   static TextStyle mountainsofChristmas({
     TextStyle textStyle,
     Color color,
@@ -44927,6 +50394,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mountains of Christmas font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mountains+of+Christmas
   static TextTheme mountainsofChristmasTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -44953,6 +50425,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mouse Memoirs font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mouse+Memoirs
   static TextStyle mouseMemoirs({
     TextStyle textStyle,
     Color color,
@@ -45004,6 +50480,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mouse Memoirs font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mouse+Memoirs
   static TextTheme mouseMemoirsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45023,6 +50504,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mr Bedfort font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mr+Bedfort
   static TextStyle mrBedfort({
     TextStyle textStyle,
     Color color,
@@ -45074,6 +50559,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mr Bedfort font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mr+Bedfort
   static TextTheme mrBedfortTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45093,6 +50583,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mr Dafoe font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mr+Dafoe
   static TextStyle mrDafoe({
     TextStyle textStyle,
     Color color,
@@ -45144,6 +50638,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mr Dafoe font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mr+Dafoe
   static TextTheme mrDafoeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45163,6 +50662,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mr De Haviland font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mr+De+Haviland
   static TextStyle mrDeHaviland({
     TextStyle textStyle,
     Color color,
@@ -45214,6 +50717,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mr De Haviland font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mr+De+Haviland
   static TextTheme mrDeHavilandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45233,6 +50741,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mrs Saint Delafield font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mrs+Saint+Delafield
   static TextStyle mrsSaintDelafield({
     TextStyle textStyle,
     Color color,
@@ -45284,6 +50796,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mrs Saint Delafield font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mrs+Saint+Delafield
   static TextTheme mrsSaintDelafieldTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45303,6 +50820,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mrs Sheppards font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mrs+Sheppards
   static TextStyle mrsSheppards({
     TextStyle textStyle,
     Color color,
@@ -45354,6 +50875,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mrs Sheppards font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mrs+Sheppards
   static TextTheme mrsSheppardsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45373,6 +50899,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mukta font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mukta
   static TextStyle mukta({
     TextStyle textStyle,
     Color color,
@@ -45436,6 +50966,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mukta font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mukta
   static TextTheme muktaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45455,6 +50990,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mukta Mahee font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mukta+Mahee
   static TextStyle muktaMahee({
     TextStyle textStyle,
     Color color,
@@ -45518,6 +51057,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mukta Mahee font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mukta+Mahee
   static TextTheme muktaMaheeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45537,6 +51081,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mukta Malar font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mukta+Malar
   static TextStyle muktaMalar({
     TextStyle textStyle,
     Color color,
@@ -45600,6 +51148,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mukta Malar font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mukta+Malar
   static TextTheme muktaMalarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45619,6 +51172,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mukta Vaani font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mukta+Vaani
   static TextStyle muktaVaani({
     TextStyle textStyle,
     Color color,
@@ -45682,6 +51239,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mukta Vaani font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mukta+Vaani
   static TextTheme muktaVaaniTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45701,6 +51263,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Muli font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Muli
   static TextStyle muli({
     TextStyle textStyle,
     Color color,
@@ -45782,6 +51348,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Muli font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Muli
   static TextTheme muliTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45801,6 +51372,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mystery Quest font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mystery+Quest
   static TextStyle mysteryQuest({
     TextStyle textStyle,
     Color color,
@@ -45852,6 +51427,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Mystery Quest font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Mystery+Quest
   static TextTheme mysteryQuestTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45871,6 +51451,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the NTR font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/NTR
   static TextStyle nTR({
     TextStyle textStyle,
     Color color,
@@ -45922,6 +51506,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the NTR font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/NTR
   static TextTheme nTRTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -45941,6 +51530,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nanum Brush Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nanum+Brush+Script
   static TextStyle nanumBrushScript({
     TextStyle textStyle,
     Color color,
@@ -45992,6 +51585,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nanum Brush Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nanum+Brush+Script
   static TextTheme nanumBrushScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46011,6 +51609,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nanum Gothic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nanum+Gothic
   static TextStyle nanumGothic({
     TextStyle textStyle,
     Color color,
@@ -46066,6 +51668,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nanum Gothic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nanum+Gothic
   static TextTheme nanumGothicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46085,6 +51692,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nanum Gothic Coding font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nanum+Gothic+Coding
   static TextStyle nanumGothicCoding({
     TextStyle textStyle,
     Color color,
@@ -46138,6 +51749,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nanum Gothic Coding font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nanum+Gothic+Coding
   static TextTheme nanumGothicCodingTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46157,6 +51773,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nanum Myeongjo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nanum+Myeongjo
   static TextStyle nanumMyeongjo({
     TextStyle textStyle,
     Color color,
@@ -46212,6 +51832,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nanum Myeongjo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nanum+Myeongjo
   static TextTheme nanumMyeongjoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46231,6 +51856,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nanum Pen Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nanum+Pen+Script
   static TextStyle nanumPenScript({
     TextStyle textStyle,
     Color color,
@@ -46282,6 +51911,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nanum Pen Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nanum+Pen+Script
   static TextTheme nanumPenScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46301,6 +51935,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Neucha font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Neucha
   static TextStyle neucha({
     TextStyle textStyle,
     Color color,
@@ -46352,6 +51990,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Neucha font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Neucha
   static TextTheme neuchaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46371,6 +52014,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Neuton font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Neuton
   static TextStyle neuton({
     TextStyle textStyle,
     Color color,
@@ -46432,6 +52079,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Neuton font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Neuton
   static TextTheme neutonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46451,6 +52103,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the New Rocker font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/New+Rocker
   static TextStyle newRocker({
     TextStyle textStyle,
     Color color,
@@ -46502,6 +52158,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the New Rocker font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/New+Rocker
   static TextTheme newRockerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46521,6 +52182,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the News Cycle font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/News+Cycle
   static TextStyle newsCycle({
     TextStyle textStyle,
     Color color,
@@ -46574,6 +52239,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the News Cycle font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/News+Cycle
   static TextTheme newsCycleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46593,6 +52263,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Niconne font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Niconne
   static TextStyle niconne({
     TextStyle textStyle,
     Color color,
@@ -46644,6 +52318,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Niconne font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Niconne
   static TextTheme niconneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46663,6 +52342,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Niramit font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Niramit
   static TextStyle niramit({
     TextStyle textStyle,
     Color color,
@@ -46736,6 +52419,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Niramit font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Niramit
   static TextTheme niramitTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46755,6 +52443,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nixie One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nixie+One
   static TextStyle nixieOne({
     TextStyle textStyle,
     Color color,
@@ -46806,6 +52498,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nixie One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nixie+One
   static TextTheme nixieOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46825,6 +52522,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nobile font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nobile
   static TextStyle nobile({
     TextStyle textStyle,
     Color color,
@@ -46886,6 +52587,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nobile font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nobile
   static TextTheme nobileTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46905,6 +52611,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nokora font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nokora
   static TextStyle nokora({
     TextStyle textStyle,
     Color color,
@@ -46958,6 +52668,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nokora font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nokora
   static TextTheme nokoraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -46977,6 +52692,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Norican font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Norican
   static TextStyle norican({
     TextStyle textStyle,
     Color color,
@@ -47028,6 +52747,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Norican font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Norican
   static TextTheme noricanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47047,6 +52771,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nosifer font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nosifer
   static TextStyle nosifer({
     TextStyle textStyle,
     Color color,
@@ -47098,6 +52826,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nosifer font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nosifer
   static TextTheme nosiferTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47117,6 +52850,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Notable font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Notable
   static TextStyle notable({
     TextStyle textStyle,
     Color color,
@@ -47168,6 +52905,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Notable font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Notable
   static TextTheme notableTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47187,6 +52929,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nothing You Could Do font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nothing+You+Could+Do
   static TextStyle nothingYouCouldDo({
     TextStyle textStyle,
     Color color,
@@ -47238,6 +52984,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nothing You Could Do font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nothing+You+Could+Do
   static TextTheme nothingYouCouldDoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47257,6 +53008,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noticia Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noticia+Text
   static TextStyle noticiaText({
     TextStyle textStyle,
     Color color,
@@ -47314,6 +53069,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noticia Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noticia+Text
   static TextTheme noticiaTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47333,6 +53093,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans
   static TextStyle notoSans({
     TextStyle textStyle,
     Color color,
@@ -47390,6 +53154,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans
   static TextTheme notoSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47409,6 +53178,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans HK font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans+HK
   static TextStyle notoSansHK({
     TextStyle textStyle,
     Color color,
@@ -47470,6 +53243,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans HK font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans+HK
   static TextTheme notoSansHKTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47489,6 +53267,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans JP font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans+JP
   static TextStyle notoSansJP({
     TextStyle textStyle,
     Color color,
@@ -47550,6 +53332,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans JP font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans+JP
   static TextTheme notoSansJPTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47569,6 +53356,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans KR font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans+KR
   static TextStyle notoSansKR({
     TextStyle textStyle,
     Color color,
@@ -47630,6 +53421,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans KR font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans+KR
   static TextTheme notoSansKRTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47649,6 +53445,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans+SC
   static TextStyle notoSansSC({
     TextStyle textStyle,
     Color color,
@@ -47710,6 +53510,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans+SC
   static TextTheme notoSansSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47729,6 +53534,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans TC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans+TC
   static TextStyle notoSansTC({
     TextStyle textStyle,
     Color color,
@@ -47790,6 +53599,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Sans TC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Sans+TC
   static TextTheme notoSansTCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47809,6 +53623,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Serif font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Serif
   static TextStyle notoSerif({
     TextStyle textStyle,
     Color color,
@@ -47866,6 +53684,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Serif font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Serif
   static TextTheme notoSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47885,6 +53708,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Serif JP font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Serif+JP
   static TextStyle notoSerifJP({
     TextStyle textStyle,
     Color color,
@@ -47948,6 +53775,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Serif JP font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Serif+JP
   static TextTheme notoSerifJPTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -47967,6 +53799,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Serif KR font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Serif+KR
   static TextStyle notoSerifKR({
     TextStyle textStyle,
     Color color,
@@ -48030,6 +53866,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Serif KR font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Serif+KR
   static TextTheme notoSerifKRTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48049,6 +53890,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Serif SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Serif+SC
   static TextStyle notoSerifSC({
     TextStyle textStyle,
     Color color,
@@ -48112,6 +53957,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Serif SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Serif+SC
   static TextTheme notoSerifSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48131,6 +53981,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Serif TC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Serif+TC
   static TextStyle notoSerifTC({
     TextStyle textStyle,
     Color color,
@@ -48194,6 +54048,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Noto Serif TC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Noto+Serif+TC
   static TextTheme notoSerifTCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48213,6 +54072,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Cut font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Cut
   static TextStyle novaCut({
     TextStyle textStyle,
     Color color,
@@ -48264,6 +54127,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Cut font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Cut
   static TextTheme novaCutTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48283,6 +54151,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Flat font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Flat
   static TextStyle novaFlat({
     TextStyle textStyle,
     Color color,
@@ -48334,6 +54206,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Flat font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Flat
   static TextTheme novaFlatTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48353,6 +54230,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Mono
   static TextStyle novaMono({
     TextStyle textStyle,
     Color color,
@@ -48404,6 +54285,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Mono
   static TextTheme novaMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48423,6 +54309,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Oval font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Oval
   static TextStyle novaOval({
     TextStyle textStyle,
     Color color,
@@ -48474,6 +54364,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Oval font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Oval
   static TextTheme novaOvalTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48493,6 +54388,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Round font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Round
   static TextStyle novaRound({
     TextStyle textStyle,
     Color color,
@@ -48544,6 +54443,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Round font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Round
   static TextTheme novaRoundTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48563,6 +54467,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Script
   static TextStyle novaScript({
     TextStyle textStyle,
     Color color,
@@ -48614,6 +54522,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Script
   static TextTheme novaScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48633,6 +54546,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Slim font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Slim
   static TextStyle novaSlim({
     TextStyle textStyle,
     Color color,
@@ -48684,6 +54601,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Slim font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Slim
   static TextTheme novaSlimTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48703,6 +54625,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Square font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Square
   static TextStyle novaSquare({
     TextStyle textStyle,
     Color color,
@@ -48754,6 +54680,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nova Square font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nova+Square
   static TextTheme novaSquareTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48773,6 +54704,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Numans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Numans
   static TextStyle numans({
     TextStyle textStyle,
     Color color,
@@ -48824,6 +54759,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Numans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Numans
   static TextTheme numansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48843,6 +54783,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nunito font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nunito
   static TextStyle nunito({
     TextStyle textStyle,
     Color color,
@@ -48920,6 +54864,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nunito font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nunito
   static TextTheme nunitoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -48939,6 +54888,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nunito Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nunito+Sans
   static TextStyle nunitoSans({
     TextStyle textStyle,
     Color color,
@@ -49016,6 +54969,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Nunito Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nunito+Sans
   static TextTheme nunitoSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49035,6 +54993,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Odibee Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Odibee+Sans
   static TextStyle odibeeSans({
     TextStyle textStyle,
     Color color,
@@ -49086,6 +55048,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Odibee Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Odibee+Sans
   static TextTheme odibeeSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49105,6 +55072,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Odor Mean Chey font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Odor+Mean+Chey
   static TextStyle odorMeanChey({
     TextStyle textStyle,
     Color color,
@@ -49156,6 +55127,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Odor Mean Chey font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Odor+Mean+Chey
   static TextTheme odorMeanCheyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49175,6 +55151,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Offside font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Offside
   static TextStyle offside({
     TextStyle textStyle,
     Color color,
@@ -49226,6 +55206,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Offside font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Offside
   static TextTheme offsideTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49245,6 +55230,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Old Standard TT font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Old+Standard+TT
   static TextStyle oldStandardTT({
     TextStyle textStyle,
     Color color,
@@ -49300,6 +55289,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Old Standard TT font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Old+Standard+TT
   static TextTheme oldStandardTTTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49319,6 +55313,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oldenburg font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oldenburg
   static TextStyle oldenburg({
     TextStyle textStyle,
     Color color,
@@ -49370,6 +55368,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oldenburg font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oldenburg
   static TextTheme oldenburgTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49389,6 +55392,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oleo Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oleo+Script
   static TextStyle oleoScript({
     TextStyle textStyle,
     Color color,
@@ -49442,6 +55449,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oleo Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oleo+Script
   static TextTheme oleoScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49461,6 +55473,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oleo Script Swash Caps font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oleo+Script+Swash+Caps
   static TextStyle oleoScriptSwashCaps({
     TextStyle textStyle,
     Color color,
@@ -49514,6 +55530,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oleo Script Swash Caps font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oleo+Script+Swash+Caps
   static TextTheme oleoScriptSwashCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49533,6 +55554,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Open Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Open+Sans
   static TextStyle openSans({
     TextStyle textStyle,
     Color color,
@@ -49602,6 +55627,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Open Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Open+Sans
   static TextTheme openSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49621,6 +55651,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Open Sans Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Open+Sans+Condensed
   static TextStyle openSansCondensed({
     TextStyle textStyle,
     Color color,
@@ -49676,6 +55710,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Open Sans Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Open+Sans+Condensed
   static TextTheme openSansCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49695,6 +55734,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oranienbaum font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oranienbaum
   static TextStyle oranienbaum({
     TextStyle textStyle,
     Color color,
@@ -49746,6 +55789,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oranienbaum font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oranienbaum
   static TextTheme oranienbaumTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49765,6 +55813,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Orbitron font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Orbitron
   static TextStyle orbitron({
     TextStyle textStyle,
     Color color,
@@ -49826,6 +55878,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Orbitron font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Orbitron
   static TextTheme orbitronTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49845,6 +55902,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oregano font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oregano
   static TextStyle oregano({
     TextStyle textStyle,
     Color color,
@@ -49898,6 +55959,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oregano font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oregano
   static TextTheme oreganoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49917,6 +55983,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Orienta font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Orienta
   static TextStyle orienta({
     TextStyle textStyle,
     Color color,
@@ -49968,6 +56038,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Orienta font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Orienta
   static TextTheme orientaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -49987,6 +56062,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Original Surfer font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Original+Surfer
   static TextStyle originalSurfer({
     TextStyle textStyle,
     Color color,
@@ -50038,6 +56117,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Original Surfer font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Original+Surfer
   static TextTheme originalSurferTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50057,6 +56141,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oswald font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oswald
   static TextStyle oswald({
     TextStyle textStyle,
     Color color,
@@ -50118,6 +56206,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oswald font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oswald
   static TextTheme oswaldTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50137,6 +56230,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Over the Rainbow font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Over+the+Rainbow
   static TextStyle overtheRainbow({
     TextStyle textStyle,
     Color color,
@@ -50188,6 +56285,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Over the Rainbow font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Over+the+Rainbow
   static TextTheme overtheRainbowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50207,6 +56309,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Overlock font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Overlock
   static TextStyle overlock({
     TextStyle textStyle,
     Color color,
@@ -50268,6 +56374,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Overlock font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Overlock
   static TextTheme overlockTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50287,6 +56398,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Overlock SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Overlock+SC
   static TextStyle overlockSC({
     TextStyle textStyle,
     Color color,
@@ -50338,6 +56453,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Overlock SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Overlock+SC
   static TextTheme overlockSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50357,6 +56477,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Overpass font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Overpass
   static TextStyle overpass({
     TextStyle textStyle,
     Color color,
@@ -50438,6 +56562,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Overpass font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Overpass
   static TextTheme overpassTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50457,6 +56586,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Overpass Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Overpass+Mono
   static TextStyle overpassMono({
     TextStyle textStyle,
     Color color,
@@ -50514,6 +56647,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Overpass Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Overpass+Mono
   static TextTheme overpassMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50533,6 +56671,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ovo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ovo
   static TextStyle ovo({
     TextStyle textStyle,
     Color color,
@@ -50584,6 +56726,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ovo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ovo
   static TextTheme ovoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50603,6 +56750,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oxygen font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oxygen
   static TextStyle oxygen({
     TextStyle textStyle,
     Color color,
@@ -50658,6 +56809,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oxygen font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oxygen
   static TextTheme oxygenTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50677,6 +56833,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oxygen Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oxygen+Mono
   static TextStyle oxygenMono({
     TextStyle textStyle,
     Color color,
@@ -50728,6 +56888,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Oxygen Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Oxygen+Mono
   static TextTheme oxygenMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50747,6 +56912,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Mono
   static TextStyle pTMono({
     TextStyle textStyle,
     Color color,
@@ -50798,6 +56967,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Mono
   static TextTheme pTMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50817,6 +56991,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Sans
   static TextStyle pTSans({
     TextStyle textStyle,
     Color color,
@@ -50874,6 +57052,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Sans
   static TextTheme pTSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50893,6 +57076,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Sans Caption font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Sans+Caption
   static TextStyle pTSansCaption({
     TextStyle textStyle,
     Color color,
@@ -50946,6 +57133,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Sans Caption font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Sans+Caption
   static TextTheme pTSansCaptionTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -50965,6 +57157,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Sans Narrow font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Sans+Narrow
   static TextStyle pTSansNarrow({
     TextStyle textStyle,
     Color color,
@@ -51018,6 +57214,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Sans Narrow font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Sans+Narrow
   static TextTheme pTSansNarrowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51037,6 +57238,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Serif font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Serif
   static TextStyle pTSerif({
     TextStyle textStyle,
     Color color,
@@ -51094,6 +57299,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Serif font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Serif
   static TextTheme pTSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51113,6 +57323,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Serif Caption font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Serif+Caption
   static TextStyle pTSerifCaption({
     TextStyle textStyle,
     Color color,
@@ -51166,6 +57380,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the PT Serif Caption font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/PT+Serif+Caption
   static TextTheme pTSerifCaptionTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51185,6 +57404,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pacifico font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pacifico
   static TextStyle pacifico({
     TextStyle textStyle,
     Color color,
@@ -51236,6 +57459,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pacifico font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pacifico
   static TextTheme pacificoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51255,6 +57483,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Padauk font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Padauk
   static TextStyle padauk({
     TextStyle textStyle,
     Color color,
@@ -51308,6 +57540,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Padauk font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Padauk
   static TextTheme padaukTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51327,6 +57564,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Palanquin font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Palanquin
   static TextStyle palanquin({
     TextStyle textStyle,
     Color color,
@@ -51390,6 +57631,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Palanquin font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Palanquin
   static TextTheme palanquinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51409,6 +57655,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Palanquin Dark font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Palanquin+Dark
   static TextStyle palanquinDark({
     TextStyle textStyle,
     Color color,
@@ -51466,6 +57716,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Palanquin Dark font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Palanquin+Dark
   static TextTheme palanquinDarkTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51485,6 +57740,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pangolin font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pangolin
   static TextStyle pangolin({
     TextStyle textStyle,
     Color color,
@@ -51536,6 +57795,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pangolin font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pangolin
   static TextTheme pangolinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51555,6 +57819,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Paprika font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Paprika
   static TextStyle paprika({
     TextStyle textStyle,
     Color color,
@@ -51606,6 +57874,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Paprika font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Paprika
   static TextTheme paprikaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51625,6 +57898,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Parisienne font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Parisienne
   static TextStyle parisienne({
     TextStyle textStyle,
     Color color,
@@ -51676,6 +57953,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Parisienne font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Parisienne
   static TextTheme parisienneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51695,6 +57977,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Passero One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Passero+One
   static TextStyle passeroOne({
     TextStyle textStyle,
     Color color,
@@ -51746,6 +58032,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Passero One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Passero+One
   static TextTheme passeroOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51765,6 +58056,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Passion One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Passion+One
   static TextStyle passionOne({
     TextStyle textStyle,
     Color color,
@@ -51820,6 +58115,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Passion One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Passion+One
   static TextTheme passionOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51839,6 +58139,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pathway Gothic One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pathway+Gothic+One
   static TextStyle pathwayGothicOne({
     TextStyle textStyle,
     Color color,
@@ -51890,6 +58194,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pathway Gothic One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pathway+Gothic+One
   static TextTheme pathwayGothicOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51909,6 +58218,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Patrick Hand font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Patrick+Hand
   static TextStyle patrickHand({
     TextStyle textStyle,
     Color color,
@@ -51960,6 +58273,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Patrick Hand font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Patrick+Hand
   static TextTheme patrickHandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -51979,6 +58297,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Patrick Hand SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Patrick+Hand+SC
   static TextStyle patrickHandSC({
     TextStyle textStyle,
     Color color,
@@ -52030,6 +58352,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Patrick Hand SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Patrick+Hand+SC
   static TextTheme patrickHandSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52049,6 +58376,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pattaya font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pattaya
   static TextStyle pattaya({
     TextStyle textStyle,
     Color color,
@@ -52100,6 +58431,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pattaya font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pattaya
   static TextTheme pattayaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52119,6 +58455,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Patua One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Patua+One
   static TextStyle patuaOne({
     TextStyle textStyle,
     Color color,
@@ -52170,6 +58510,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Patua One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Patua+One
   static TextTheme patuaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52189,6 +58534,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pavanam font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pavanam
   static TextStyle pavanam({
     TextStyle textStyle,
     Color color,
@@ -52240,6 +58589,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pavanam font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pavanam
   static TextTheme pavanamTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52259,6 +58613,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Paytone One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Paytone+One
   static TextStyle paytoneOne({
     TextStyle textStyle,
     Color color,
@@ -52310,6 +58668,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Paytone One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Paytone+One
   static TextTheme paytoneOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52329,6 +58692,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Peddana font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Peddana
   static TextStyle peddana({
     TextStyle textStyle,
     Color color,
@@ -52380,6 +58747,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Peddana font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Peddana
   static TextTheme peddanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52399,6 +58771,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Peralta font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Peralta
   static TextStyle peralta({
     TextStyle textStyle,
     Color color,
@@ -52450,6 +58826,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Peralta font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Peralta
   static TextTheme peraltaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52469,6 +58850,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Permanent Marker font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Permanent+Marker
   static TextStyle permanentMarker({
     TextStyle textStyle,
     Color color,
@@ -52520,6 +58905,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Permanent Marker font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Permanent+Marker
   static TextTheme permanentMarkerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52539,6 +58929,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Petit Formal Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Petit+Formal+Script
   static TextStyle petitFormalScript({
     TextStyle textStyle,
     Color color,
@@ -52590,6 +58984,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Petit Formal Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Petit+Formal+Script
   static TextTheme petitFormalScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52609,6 +59008,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Petrona font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Petrona
   static TextStyle petrona({
     TextStyle textStyle,
     Color color,
@@ -52660,6 +59063,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Petrona font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Petrona
   static TextTheme petronaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52679,6 +59087,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Philosopher font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Philosopher
   static TextStyle philosopher({
     TextStyle textStyle,
     Color color,
@@ -52736,6 +59148,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Philosopher font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Philosopher
   static TextTheme philosopherTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52755,6 +59172,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Piedra font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Piedra
   static TextStyle piedra({
     TextStyle textStyle,
     Color color,
@@ -52806,6 +59227,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Piedra font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Piedra
   static TextTheme piedraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52825,6 +59251,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pinyon Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pinyon+Script
   static TextStyle pinyonScript({
     TextStyle textStyle,
     Color color,
@@ -52876,6 +59306,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pinyon Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pinyon+Script
   static TextTheme pinyonScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52895,6 +59330,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pirata One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pirata+One
   static TextStyle pirataOne({
     TextStyle textStyle,
     Color color,
@@ -52946,6 +59385,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pirata One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pirata+One
   static TextTheme pirataOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -52965,6 +59409,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Plaster font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Plaster
   static TextStyle plaster({
     TextStyle textStyle,
     Color color,
@@ -53016,6 +59464,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Plaster font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Plaster
   static TextTheme plasterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53035,6 +59488,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Play font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Play
   static TextStyle play({
     TextStyle textStyle,
     Color color,
@@ -53088,6 +59545,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Play font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Play
   static TextTheme playTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53107,6 +59569,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Playball font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Playball
   static TextStyle playball({
     TextStyle textStyle,
     Color color,
@@ -53158,6 +59624,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Playball font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Playball
   static TextTheme playballTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53177,6 +59648,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Playfair Display font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Playfair+Display
   static TextStyle playfairDisplay({
     TextStyle textStyle,
     Color color,
@@ -53238,6 +59713,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Playfair Display font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Playfair+Display
   static TextTheme playfairDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53257,6 +59737,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Playfair Display SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Playfair+Display+SC
   static TextStyle playfairDisplaySC({
     TextStyle textStyle,
     Color color,
@@ -53318,6 +59802,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Playfair Display SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Playfair+Display+SC
   static TextTheme playfairDisplaySCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53337,6 +59826,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Podkova font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Podkova
   static TextStyle podkova({
     TextStyle textStyle,
     Color color,
@@ -53396,6 +59889,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Podkova font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Podkova
   static TextTheme podkovaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53415,6 +59913,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Poiret One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Poiret+One
   static TextStyle poiretOne({
     TextStyle textStyle,
     Color color,
@@ -53466,6 +59968,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Poiret One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Poiret+One
   static TextTheme poiretOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53485,6 +59992,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Poller One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Poller+One
   static TextStyle pollerOne({
     TextStyle textStyle,
     Color color,
@@ -53536,6 +60047,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Poller One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Poller+One
   static TextTheme pollerOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53555,6 +60071,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Poly font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Poly
   static TextStyle poly({
     TextStyle textStyle,
     Color color,
@@ -53608,6 +60128,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Poly font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Poly
   static TextTheme polyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53627,6 +60152,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pompiere font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pompiere
   static TextStyle pompiere({
     TextStyle textStyle,
     Color color,
@@ -53678,6 +60207,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pompiere font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pompiere
   static TextTheme pompiereTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53697,6 +60231,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pontano Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pontano+Sans
   static TextStyle pontanoSans({
     TextStyle textStyle,
     Color color,
@@ -53748,6 +60286,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pontano Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pontano+Sans
   static TextTheme pontanoSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53767,6 +60310,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Poor Story font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Poor+Story
   static TextStyle poorStory({
     TextStyle textStyle,
     Color color,
@@ -53818,6 +60365,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Poor Story font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Poor+Story
   static TextTheme poorStoryTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53837,6 +60389,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Poppins font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Poppins
   static TextStyle poppins({
     TextStyle textStyle,
     Color color,
@@ -53922,6 +60478,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Poppins font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Poppins
   static TextTheme poppinsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -53941,6 +60502,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Port Lligat Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Port+Lligat+Sans
   static TextStyle portLligatSans({
     TextStyle textStyle,
     Color color,
@@ -53992,6 +60557,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Port Lligat Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Port+Lligat+Sans
   static TextTheme portLligatSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54011,6 +60581,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Port Lligat Slab font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Port+Lligat+Slab
   static TextStyle portLligatSlab({
     TextStyle textStyle,
     Color color,
@@ -54062,6 +60636,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Port Lligat Slab font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Port+Lligat+Slab
   static TextTheme portLligatSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54081,6 +60660,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pragati Narrow font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pragati+Narrow
   static TextStyle pragatiNarrow({
     TextStyle textStyle,
     Color color,
@@ -54134,6 +60717,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pragati Narrow font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pragati+Narrow
   static TextTheme pragatiNarrowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54153,6 +60741,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Prata font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Prata
   static TextStyle prata({
     TextStyle textStyle,
     Color color,
@@ -54204,6 +60796,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Prata font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Prata
   static TextTheme prataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54223,6 +60820,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Preahvihear font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Preahvihear
   static TextStyle preahvihear({
     TextStyle textStyle,
     Color color,
@@ -54274,6 +60875,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Preahvihear font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Preahvihear
   static TextTheme preahvihearTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54293,6 +60899,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Press Start 2P font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Press+Start+2P
   static TextStyle pressStart2P({
     TextStyle textStyle,
     Color color,
@@ -54344,6 +60954,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Press Start 2P font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Press+Start+2P
   static TextTheme pressStart2PTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54363,6 +60978,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pridi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pridi
   static TextStyle pridi({
     TextStyle textStyle,
     Color color,
@@ -54424,6 +61043,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Pridi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Pridi
   static TextTheme pridiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54443,6 +61067,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Princess Sofia font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Princess+Sofia
   static TextStyle princessSofia({
     TextStyle textStyle,
     Color color,
@@ -54494,6 +61122,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Princess Sofia font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Princess+Sofia
   static TextTheme princessSofiaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54513,6 +61146,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Prociono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Prociono
   static TextStyle prociono({
     TextStyle textStyle,
     Color color,
@@ -54564,6 +61201,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Prociono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Prociono
   static TextTheme procionoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54583,6 +61225,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Prompt font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Prompt
   static TextStyle prompt({
     TextStyle textStyle,
     Color color,
@@ -54668,6 +61314,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Prompt font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Prompt
   static TextTheme promptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54687,6 +61338,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Prosto One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Prosto+One
   static TextStyle prostoOne({
     TextStyle textStyle,
     Color color,
@@ -54738,6 +61393,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Prosto One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Prosto+One
   static TextTheme prostoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54757,6 +61417,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Proza Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Proza+Libre
   static TextStyle prozaLibre({
     TextStyle textStyle,
     Color color,
@@ -54826,6 +61490,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Proza Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Proza+Libre
   static TextTheme prozaLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54845,6 +61514,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Public Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Public+Sans
   static TextStyle publicSans({
     TextStyle textStyle,
     Color color,
@@ -54930,6 +61603,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Public Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Public+Sans
   static TextTheme publicSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -54949,6 +61627,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Puritan font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Puritan
   static TextStyle puritan({
     TextStyle textStyle,
     Color color,
@@ -55006,6 +61688,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Puritan font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Puritan
   static TextTheme puritanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55025,6 +61712,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Purple Purse font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Purple+Purse
   static TextStyle purplePurse({
     TextStyle textStyle,
     Color color,
@@ -55076,6 +61767,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Purple Purse font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Purple+Purse
   static TextTheme purplePurseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55095,6 +61791,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quando font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quando
   static TextStyle quando({
     TextStyle textStyle,
     Color color,
@@ -55146,6 +61846,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quando font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quando
   static TextTheme quandoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55165,6 +61870,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quantico font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quantico
   static TextStyle quantico({
     TextStyle textStyle,
     Color color,
@@ -55222,6 +61931,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quantico font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quantico
   static TextTheme quanticoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55241,6 +61955,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quattrocento font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quattrocento
   static TextStyle quattrocento({
     TextStyle textStyle,
     Color color,
@@ -55294,6 +62012,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quattrocento font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quattrocento
   static TextTheme quattrocentoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55313,6 +62036,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quattrocento Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quattrocento+Sans
   static TextStyle quattrocentoSans({
     TextStyle textStyle,
     Color color,
@@ -55370,6 +62097,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quattrocento Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quattrocento+Sans
   static TextTheme quattrocentoSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55389,6 +62121,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Questrial font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Questrial
   static TextStyle questrial({
     TextStyle textStyle,
     Color color,
@@ -55440,6 +62176,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Questrial font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Questrial
   static TextTheme questrialTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55459,6 +62200,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quicksand font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quicksand
   static TextStyle quicksand({
     TextStyle textStyle,
     Color color,
@@ -55518,6 +62263,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quicksand font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quicksand
   static TextTheme quicksandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55537,6 +62287,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quintessential font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quintessential
   static TextStyle quintessential({
     TextStyle textStyle,
     Color color,
@@ -55588,6 +62342,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Quintessential font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Quintessential
   static TextTheme quintessentialTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55607,6 +62366,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Qwigley font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Qwigley
   static TextStyle qwigley({
     TextStyle textStyle,
     Color color,
@@ -55658,6 +62421,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Qwigley font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Qwigley
   static TextTheme qwigleyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55677,6 +62445,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Racing Sans One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Racing+Sans+One
   static TextStyle racingSansOne({
     TextStyle textStyle,
     Color color,
@@ -55728,6 +62500,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Racing Sans One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Racing+Sans+One
   static TextTheme racingSansOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55747,6 +62524,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Radley font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Radley
   static TextStyle radley({
     TextStyle textStyle,
     Color color,
@@ -55800,6 +62581,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Radley font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Radley
   static TextTheme radleyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55819,6 +62605,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rajdhani font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rajdhani
   static TextStyle rajdhani({
     TextStyle textStyle,
     Color color,
@@ -55878,6 +62668,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rajdhani font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rajdhani
   static TextTheme rajdhaniTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55897,6 +62692,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rakkas font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rakkas
   static TextStyle rakkas({
     TextStyle textStyle,
     Color color,
@@ -55948,6 +62747,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rakkas font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rakkas
   static TextTheme rakkasTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -55967,6 +62771,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Raleway font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Raleway
   static TextStyle raleway({
     TextStyle textStyle,
     Color color,
@@ -56052,6 +62860,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Raleway font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Raleway
   static TextTheme ralewayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56071,6 +62884,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Raleway Dots font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Raleway+Dots
   static TextStyle ralewayDots({
     TextStyle textStyle,
     Color color,
@@ -56122,6 +62939,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Raleway Dots font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Raleway+Dots
   static TextTheme ralewayDotsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56141,6 +62963,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ramabhadra font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ramabhadra
   static TextStyle ramabhadra({
     TextStyle textStyle,
     Color color,
@@ -56192,6 +63018,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ramabhadra font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ramabhadra
   static TextTheme ramabhadraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56211,6 +63042,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ramaraja font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ramaraja
   static TextStyle ramaraja({
     TextStyle textStyle,
     Color color,
@@ -56262,6 +63097,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ramaraja font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ramaraja
   static TextTheme ramarajaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56281,6 +63121,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rambla font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rambla
   static TextStyle rambla({
     TextStyle textStyle,
     Color color,
@@ -56338,6 +63182,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rambla font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rambla
   static TextTheme ramblaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56357,6 +63206,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rammetto One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rammetto+One
   static TextStyle rammettoOne({
     TextStyle textStyle,
     Color color,
@@ -56408,6 +63261,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rammetto One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rammetto+One
   static TextTheme rammettoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56427,6 +63285,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ranchers font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ranchers
   static TextStyle ranchers({
     TextStyle textStyle,
     Color color,
@@ -56478,6 +63340,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ranchers font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ranchers
   static TextTheme ranchersTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56497,6 +63364,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rancho font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rancho
   static TextStyle rancho({
     TextStyle textStyle,
     Color color,
@@ -56548,6 +63419,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rancho font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rancho
   static TextTheme ranchoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56567,6 +63443,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ranga font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ranga
   static TextStyle ranga({
     TextStyle textStyle,
     Color color,
@@ -56620,6 +63500,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ranga font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ranga
   static TextTheme rangaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56639,6 +63524,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rasa font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rasa
   static TextStyle rasa({
     TextStyle textStyle,
     Color color,
@@ -56698,6 +63587,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rasa font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rasa
   static TextTheme rasaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56717,6 +63611,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rationale font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rationale
   static TextStyle rationale({
     TextStyle textStyle,
     Color color,
@@ -56768,6 +63666,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rationale font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rationale
   static TextTheme rationaleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56787,6 +63690,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ravi Prakash font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ravi+Prakash
   static TextStyle raviPrakash({
     TextStyle textStyle,
     Color color,
@@ -56838,6 +63745,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ravi Prakash font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ravi+Prakash
   static TextTheme raviPrakashTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56857,6 +63769,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Red Hat Display font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Red+Hat+Display
   static TextStyle redHatDisplay({
     TextStyle textStyle,
     Color color,
@@ -56922,6 +63838,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Red Hat Display font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Red+Hat+Display
   static TextTheme redHatDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -56941,6 +63862,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Red Hat Text font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Red+Hat+Text
   static TextStyle redHatText({
     TextStyle textStyle,
     Color color,
@@ -57002,6 +63927,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Red Hat Text font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Red+Hat+Text
   static TextTheme redHatTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57021,6 +63951,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Redressed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Redressed
   static TextStyle redressed({
     TextStyle textStyle,
     Color color,
@@ -57072,6 +64006,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Redressed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Redressed
   static TextTheme redressedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57091,6 +64030,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Reem Kufi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Reem+Kufi
   static TextStyle reemKufi({
     TextStyle textStyle,
     Color color,
@@ -57142,6 +64085,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Reem Kufi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Reem+Kufi
   static TextTheme reemKufiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57161,6 +64109,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Reenie Beanie font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Reenie+Beanie
   static TextStyle reenieBeanie({
     TextStyle textStyle,
     Color color,
@@ -57212,6 +64164,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Reenie Beanie font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Reenie+Beanie
   static TextTheme reenieBeanieTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57231,6 +64188,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Revalia font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Revalia
   static TextStyle revalia({
     TextStyle textStyle,
     Color color,
@@ -57282,6 +64243,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Revalia font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Revalia
   static TextTheme revaliaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57301,6 +64267,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rhodium Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rhodium+Libre
   static TextStyle rhodiumLibre({
     TextStyle textStyle,
     Color color,
@@ -57352,6 +64322,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rhodium Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rhodium+Libre
   static TextTheme rhodiumLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57371,6 +64346,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ribeye font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ribeye
   static TextStyle ribeye({
     TextStyle textStyle,
     Color color,
@@ -57422,6 +64401,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ribeye font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ribeye
   static TextTheme ribeyeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57441,6 +64425,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ribeye Marrow font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ribeye+Marrow
   static TextStyle ribeyeMarrow({
     TextStyle textStyle,
     Color color,
@@ -57492,6 +64480,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ribeye Marrow font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ribeye+Marrow
   static TextTheme ribeyeMarrowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57511,6 +64504,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Righteous font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Righteous
   static TextStyle righteous({
     TextStyle textStyle,
     Color color,
@@ -57562,6 +64559,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Righteous font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Righteous
   static TextTheme righteousTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57581,6 +64583,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Risque font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Risque
   static TextStyle risque({
     TextStyle textStyle,
     Color color,
@@ -57632,6 +64638,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Risque font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Risque
   static TextTheme risqueTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57651,6 +64662,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Roboto font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Roboto
   static TextStyle roboto({
     TextStyle textStyle,
     Color color,
@@ -57724,6 +64739,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Roboto font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Roboto
   static TextTheme robotoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57743,6 +64763,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Roboto Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Roboto+Condensed
   static TextStyle robotoCondensed({
     TextStyle textStyle,
     Color color,
@@ -57804,6 +64828,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Roboto Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Roboto+Condensed
   static TextTheme robotoCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57823,6 +64852,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Roboto Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Roboto+Mono
   static TextStyle robotoMono({
     TextStyle textStyle,
     Color color,
@@ -57892,6 +64925,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Roboto Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Roboto+Mono
   static TextTheme robotoMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57911,6 +64949,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Roboto Slab font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Roboto+Slab
   static TextStyle robotoSlab({
     TextStyle textStyle,
     Color color,
@@ -57978,6 +65020,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Roboto Slab font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Roboto+Slab
   static TextTheme robotoSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -57997,6 +65044,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rochester font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rochester
   static TextStyle rochester({
     TextStyle textStyle,
     Color color,
@@ -58048,6 +65099,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rochester font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rochester
   static TextTheme rochesterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58067,6 +65123,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rock Salt font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rock+Salt
   static TextStyle rockSalt({
     TextStyle textStyle,
     Color color,
@@ -58118,6 +65178,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rock Salt font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rock+Salt
   static TextTheme rockSaltTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58137,6 +65202,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rokkitt font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rokkitt
   static TextStyle rokkitt({
     TextStyle textStyle,
     Color color,
@@ -58204,6 +65273,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rokkitt font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rokkitt
   static TextTheme rokkittTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58223,6 +65297,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Romanesco font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Romanesco
   static TextStyle romanesco({
     TextStyle textStyle,
     Color color,
@@ -58274,6 +65352,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Romanesco font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Romanesco
   static TextTheme romanescoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58293,6 +65376,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ropa Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ropa+Sans
   static TextStyle ropaSans({
     TextStyle textStyle,
     Color color,
@@ -58346,6 +65433,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ropa Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ropa+Sans
   static TextTheme ropaSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58365,6 +65457,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rosario font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rosario
   static TextStyle rosario({
     TextStyle textStyle,
     Color color,
@@ -58434,6 +65530,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rosario font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rosario
   static TextTheme rosarioTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58453,6 +65554,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rosarivo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rosarivo
   static TextStyle rosarivo({
     TextStyle textStyle,
     Color color,
@@ -58506,6 +65611,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rosarivo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rosarivo
   static TextTheme rosarivoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58525,6 +65635,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rouge Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rouge+Script
   static TextStyle rougeScript({
     TextStyle textStyle,
     Color color,
@@ -58576,6 +65690,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rouge Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rouge+Script
   static TextTheme rougeScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58595,6 +65714,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rozha One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rozha+One
   static TextStyle rozhaOne({
     TextStyle textStyle,
     Color color,
@@ -58646,6 +65769,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rozha One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rozha+One
   static TextTheme rozhaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58665,6 +65793,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rubik font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rubik
   static TextStyle rubik({
     TextStyle textStyle,
     Color color,
@@ -58734,6 +65866,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rubik font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rubik
   static TextTheme rubikTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58753,6 +65890,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rubik Mono One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rubik+Mono+One
   static TextStyle rubikMonoOne({
     TextStyle textStyle,
     Color color,
@@ -58804,6 +65945,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rubik Mono One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rubik+Mono+One
   static TextTheme rubikMonoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58823,6 +65969,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ruda font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ruda
   static TextStyle ruda({
     TextStyle textStyle,
     Color color,
@@ -58878,6 +66028,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ruda font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ruda
   static TextTheme rudaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58897,6 +66052,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rufina font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rufina
   static TextStyle rufina({
     TextStyle textStyle,
     Color color,
@@ -58950,6 +66109,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rufina font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rufina
   static TextTheme rufinaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -58969,6 +66133,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ruge Boogie font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ruge+Boogie
   static TextStyle rugeBoogie({
     TextStyle textStyle,
     Color color,
@@ -59020,6 +66188,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ruge Boogie font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ruge+Boogie
   static TextTheme rugeBoogieTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59039,6 +66212,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ruluko font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ruluko
   static TextStyle ruluko({
     TextStyle textStyle,
     Color color,
@@ -59090,6 +66267,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ruluko font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ruluko
   static TextTheme rulukoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59109,6 +66291,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rum Raisin font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rum+Raisin
   static TextStyle rumRaisin({
     TextStyle textStyle,
     Color color,
@@ -59160,6 +66346,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rum Raisin font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rum+Raisin
   static TextTheme rumRaisinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59179,6 +66370,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ruslan Display font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ruslan+Display
   static TextStyle ruslanDisplay({
     TextStyle textStyle,
     Color color,
@@ -59230,6 +66425,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ruslan Display font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ruslan+Display
   static TextTheme ruslanDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59249,6 +66449,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Russo One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Russo+One
   static TextStyle russoOne({
     TextStyle textStyle,
     Color color,
@@ -59300,6 +66504,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Russo One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Russo+One
   static TextTheme russoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59319,6 +66528,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ruthie font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ruthie
   static TextStyle ruthie({
     TextStyle textStyle,
     Color color,
@@ -59370,6 +66583,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ruthie font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ruthie
   static TextTheme ruthieTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59389,6 +66607,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rye font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rye
   static TextStyle rye({
     TextStyle textStyle,
     Color color,
@@ -59440,6 +66662,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Rye font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rye
   static TextTheme ryeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59459,6 +66686,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sacramento font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sacramento
   static TextStyle sacramento({
     TextStyle textStyle,
     Color color,
@@ -59510,6 +66741,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sacramento font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sacramento
   static TextTheme sacramentoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59529,6 +66765,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sahitya font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sahitya
   static TextStyle sahitya({
     TextStyle textStyle,
     Color color,
@@ -59582,6 +66822,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sahitya font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sahitya
   static TextTheme sahityaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59601,6 +66846,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sail font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sail
   static TextStyle sail({
     TextStyle textStyle,
     Color color,
@@ -59652,6 +66901,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sail font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sail
   static TextTheme sailTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59671,6 +66925,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Saira font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Saira
   static TextStyle saira({
     TextStyle textStyle,
     Color color,
@@ -59738,6 +66996,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Saira font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Saira
   static TextTheme sairaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59757,6 +67020,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Saira Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Saira+Condensed
   static TextStyle sairaCondensed({
     TextStyle textStyle,
     Color color,
@@ -59824,6 +67091,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Saira Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Saira+Condensed
   static TextTheme sairaCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59843,6 +67115,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Saira Extra Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Saira+Extra+Condensed
   static TextStyle sairaExtraCondensed({
     TextStyle textStyle,
     Color color,
@@ -59910,6 +67186,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Saira Extra Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Saira+Extra+Condensed
   static TextTheme sairaExtraCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -59929,6 +67210,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Saira Semi Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Saira+Semi+Condensed
   static TextStyle sairaSemiCondensed({
     TextStyle textStyle,
     Color color,
@@ -59996,6 +67281,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Saira Semi Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Saira+Semi+Condensed
   static TextTheme sairaSemiCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60015,6 +67305,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Saira Stencil One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Saira+Stencil+One
   static TextStyle sairaStencilOne({
     TextStyle textStyle,
     Color color,
@@ -60066,6 +67360,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Saira Stencil One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Saira+Stencil+One
   static TextTheme sairaStencilOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60085,6 +67384,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Salsa font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Salsa
   static TextStyle salsa({
     TextStyle textStyle,
     Color color,
@@ -60136,6 +67439,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Salsa font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Salsa
   static TextTheme salsaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60155,6 +67463,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sanchez font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sanchez
   static TextStyle sanchez({
     TextStyle textStyle,
     Color color,
@@ -60208,6 +67520,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sanchez font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sanchez
   static TextTheme sanchezTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60227,6 +67544,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sancreek font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sancreek
   static TextStyle sancreek({
     TextStyle textStyle,
     Color color,
@@ -60278,6 +67599,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sancreek font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sancreek
   static TextTheme sancreekTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60297,6 +67623,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sansita font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sansita
   static TextStyle sansita({
     TextStyle textStyle,
     Color color,
@@ -60362,6 +67692,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sansita font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sansita
   static TextTheme sansitaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60381,6 +67716,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sarabun font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sarabun
   static TextStyle sarabun({
     TextStyle textStyle,
     Color color,
@@ -60462,6 +67801,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sarabun font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sarabun
   static TextTheme sarabunTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60481,6 +67825,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sarala font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sarala
   static TextStyle sarala({
     TextStyle textStyle,
     Color color,
@@ -60534,6 +67882,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sarala font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sarala
   static TextTheme saralaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60553,6 +67906,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sarina font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sarina
   static TextStyle sarina({
     TextStyle textStyle,
     Color color,
@@ -60604,6 +67961,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sarina font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sarina
   static TextTheme sarinaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60623,6 +67985,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sarpanch font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sarpanch
   static TextStyle sarpanch({
     TextStyle textStyle,
     Color color,
@@ -60684,6 +68050,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sarpanch font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sarpanch
   static TextTheme sarpanchTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60703,6 +68074,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Satisfy font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Satisfy
   static TextStyle satisfy({
     TextStyle textStyle,
     Color color,
@@ -60754,6 +68129,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Satisfy font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Satisfy
   static TextTheme satisfyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60773,6 +68153,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sawarabi Gothic font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sawarabi+Gothic
   static TextStyle sawarabiGothic({
     TextStyle textStyle,
     Color color,
@@ -60824,6 +68208,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sawarabi Gothic font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sawarabi+Gothic
   static TextTheme sawarabiGothicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60843,6 +68232,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sawarabi Mincho font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sawarabi+Mincho
   static TextStyle sawarabiMincho({
     TextStyle textStyle,
     Color color,
@@ -60894,6 +68287,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sawarabi Mincho font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sawarabi+Mincho
   static TextTheme sawarabiMinchoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60913,6 +68311,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Scada font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Scada
   static TextStyle scada({
     TextStyle textStyle,
     Color color,
@@ -60970,6 +68372,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Scada font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Scada
   static TextTheme scadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -60989,6 +68396,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Scheherazade font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Scheherazade
   static TextStyle scheherazade({
     TextStyle textStyle,
     Color color,
@@ -61042,6 +68453,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Scheherazade font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Scheherazade
   static TextTheme scheherazadeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61061,6 +68477,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Schoolbell font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Schoolbell
   static TextStyle schoolbell({
     TextStyle textStyle,
     Color color,
@@ -61112,6 +68532,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Schoolbell font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Schoolbell
   static TextTheme schoolbellTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61131,6 +68556,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Scope One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Scope+One
   static TextStyle scopeOne({
     TextStyle textStyle,
     Color color,
@@ -61182,6 +68611,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Scope One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Scope+One
   static TextTheme scopeOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61201,6 +68635,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Seaweed Script font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Seaweed+Script
   static TextStyle seaweedScript({
     TextStyle textStyle,
     Color color,
@@ -61252,6 +68690,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Seaweed Script font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Seaweed+Script
   static TextTheme seaweedScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61271,6 +68714,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Secular One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Secular+One
   static TextStyle secularOne({
     TextStyle textStyle,
     Color color,
@@ -61322,6 +68769,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Secular One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Secular+One
   static TextTheme secularOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61341,6 +68793,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sedgwick Ave font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sedgwick+Ave
   static TextStyle sedgwickAve({
     TextStyle textStyle,
     Color color,
@@ -61392,6 +68848,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sedgwick Ave font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sedgwick+Ave
   static TextTheme sedgwickAveTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61411,6 +68872,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sedgwick Ave Display font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sedgwick+Ave+Display
   static TextStyle sedgwickAveDisplay({
     TextStyle textStyle,
     Color color,
@@ -61462,6 +68927,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sedgwick Ave Display font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sedgwick+Ave+Display
   static TextTheme sedgwickAveDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61481,6 +68951,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sevillana font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sevillana
   static TextStyle sevillana({
     TextStyle textStyle,
     Color color,
@@ -61532,6 +69006,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sevillana font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sevillana
   static TextTheme sevillanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61551,6 +69030,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Seymour One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Seymour+One
   static TextStyle seymourOne({
     TextStyle textStyle,
     Color color,
@@ -61602,6 +69085,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Seymour One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Seymour+One
   static TextTheme seymourOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61621,6 +69109,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Shadows Into Light font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Shadows+Into+Light
   static TextStyle shadowsIntoLight({
     TextStyle textStyle,
     Color color,
@@ -61672,6 +69164,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Shadows Into Light font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Shadows+Into+Light
   static TextTheme shadowsIntoLightTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61691,6 +69188,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Shadows Into Light Two font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Shadows+Into+Light+Two
   static TextStyle shadowsIntoLightTwo({
     TextStyle textStyle,
     Color color,
@@ -61742,6 +69243,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Shadows Into Light Two font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Shadows+Into+Light+Two
   static TextTheme shadowsIntoLightTwoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61761,6 +69267,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Shanti font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Shanti
   static TextStyle shanti({
     TextStyle textStyle,
     Color color,
@@ -61812,6 +69322,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Shanti font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Shanti
   static TextTheme shantiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61831,6 +69346,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Share font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Share
   static TextStyle share({
     TextStyle textStyle,
     Color color,
@@ -61888,6 +69407,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Share font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Share
   static TextTheme shareTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61907,6 +69431,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Share Tech font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Share+Tech
   static TextStyle shareTech({
     TextStyle textStyle,
     Color color,
@@ -61958,6 +69486,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Share Tech font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Share+Tech
   static TextTheme shareTechTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -61977,6 +69510,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Share Tech Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Share+Tech+Mono
   static TextStyle shareTechMono({
     TextStyle textStyle,
     Color color,
@@ -62028,6 +69565,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Share Tech Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Share+Tech+Mono
   static TextTheme shareTechMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62047,6 +69589,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Shojumaru font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Shojumaru
   static TextStyle shojumaru({
     TextStyle textStyle,
     Color color,
@@ -62098,6 +69644,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Shojumaru font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Shojumaru
   static TextTheme shojumaruTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62117,6 +69668,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Short Stack font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Short+Stack
   static TextStyle shortStack({
     TextStyle textStyle,
     Color color,
@@ -62168,6 +69723,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Short Stack font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Short+Stack
   static TextTheme shortStackTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62187,6 +69747,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Shrikhand font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Shrikhand
   static TextStyle shrikhand({
     TextStyle textStyle,
     Color color,
@@ -62238,6 +69802,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Shrikhand font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Shrikhand
   static TextTheme shrikhandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62257,6 +69826,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Siemreap font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Siemreap
   static TextStyle siemreap({
     TextStyle textStyle,
     Color color,
@@ -62308,6 +69881,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Siemreap font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Siemreap
   static TextTheme siemreapTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62327,6 +69905,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sigmar One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sigmar+One
   static TextStyle sigmarOne({
     TextStyle textStyle,
     Color color,
@@ -62378,6 +69960,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sigmar One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sigmar+One
   static TextTheme sigmarOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62397,6 +69984,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Signika font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Signika
   static TextStyle signika({
     TextStyle textStyle,
     Color color,
@@ -62454,6 +70045,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Signika font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Signika
   static TextTheme signikaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62473,6 +70069,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Signika Negative font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Signika+Negative
   static TextStyle signikaNegative({
     TextStyle textStyle,
     Color color,
@@ -62530,6 +70130,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Signika Negative font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Signika+Negative
   static TextTheme signikaNegativeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62549,6 +70154,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Simonetta font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Simonetta
   static TextStyle simonetta({
     TextStyle textStyle,
     Color color,
@@ -62606,6 +70215,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Simonetta font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Simonetta
   static TextTheme simonettaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62625,6 +70239,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Single Day font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Single+Day
   static TextStyle singleDay({
     TextStyle textStyle,
     Color color,
@@ -62676,6 +70294,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Single Day font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Single+Day
   static TextTheme singleDayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62695,6 +70318,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sintony font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sintony
   static TextStyle sintony({
     TextStyle textStyle,
     Color color,
@@ -62748,6 +70375,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sintony font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sintony
   static TextTheme sintonyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62767,6 +70399,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sirin Stencil font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sirin+Stencil
   static TextStyle sirinStencil({
     TextStyle textStyle,
     Color color,
@@ -62818,6 +70454,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sirin Stencil font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sirin+Stencil
   static TextTheme sirinStencilTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62837,6 +70478,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Six Caps font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Six+Caps
   static TextStyle sixCaps({
     TextStyle textStyle,
     Color color,
@@ -62888,6 +70533,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Six Caps font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Six+Caps
   static TextTheme sixCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62907,6 +70557,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Skranji font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Skranji
   static TextStyle skranji({
     TextStyle textStyle,
     Color color,
@@ -62960,6 +70614,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Skranji font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Skranji
   static TextTheme skranjiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -62979,6 +70638,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Slabo 13px font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Slabo+13px
   static TextStyle slabo13px({
     TextStyle textStyle,
     Color color,
@@ -63030,6 +70693,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Slabo 13px font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Slabo+13px
   static TextTheme slabo13pxTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63049,6 +70717,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Slabo 27px font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Slabo+27px
   static TextStyle slabo27px({
     TextStyle textStyle,
     Color color,
@@ -63100,6 +70772,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Slabo 27px font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Slabo+27px
   static TextTheme slabo27pxTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63119,6 +70796,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Slackey font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Slackey
   static TextStyle slackey({
     TextStyle textStyle,
     Color color,
@@ -63170,6 +70851,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Slackey font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Slackey
   static TextTheme slackeyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63189,6 +70875,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Smokum font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Smokum
   static TextStyle smokum({
     TextStyle textStyle,
     Color color,
@@ -63240,6 +70930,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Smokum font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Smokum
   static TextTheme smokumTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63259,6 +70954,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Smythe font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Smythe
   static TextStyle smythe({
     TextStyle textStyle,
     Color color,
@@ -63310,6 +71009,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Smythe font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Smythe
   static TextTheme smytheTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63329,6 +71033,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sniglet font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sniglet
   static TextStyle sniglet({
     TextStyle textStyle,
     Color color,
@@ -63382,6 +71090,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sniglet font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sniglet
   static TextTheme snigletTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63401,6 +71114,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Snippet font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Snippet
   static TextStyle snippet({
     TextStyle textStyle,
     Color color,
@@ -63452,6 +71169,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Snippet font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Snippet
   static TextTheme snippetTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63471,6 +71193,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Snowburst One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Snowburst+One
   static TextStyle snowburstOne({
     TextStyle textStyle,
     Color color,
@@ -63522,6 +71248,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Snowburst One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Snowburst+One
   static TextTheme snowburstOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63541,6 +71272,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sofadi One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sofadi+One
   static TextStyle sofadiOne({
     TextStyle textStyle,
     Color color,
@@ -63592,6 +71327,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sofadi One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sofadi+One
   static TextTheme sofadiOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63611,6 +71351,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sofia font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sofia
   static TextStyle sofia({
     TextStyle textStyle,
     Color color,
@@ -63662,6 +71406,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sofia font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sofia
   static TextTheme sofiaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63681,6 +71430,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Solway font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Solway
   static TextStyle solway({
     TextStyle textStyle,
     Color color,
@@ -63740,6 +71493,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Solway font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Solway
   static TextTheme solwayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63759,6 +71517,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Song Myung font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Song+Myung
   static TextStyle songMyung({
     TextStyle textStyle,
     Color color,
@@ -63810,6 +71572,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Song Myung font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Song+Myung
   static TextTheme songMyungTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63829,6 +71596,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sonsie One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sonsie+One
   static TextStyle sonsieOne({
     TextStyle textStyle,
     Color color,
@@ -63880,6 +71651,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sonsie One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sonsie+One
   static TextTheme sonsieOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63899,6 +71675,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sorts Mill Goudy font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sorts+Mill+Goudy
   static TextStyle sortsMillGoudy({
     TextStyle textStyle,
     Color color,
@@ -63952,6 +71732,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sorts Mill Goudy font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sorts+Mill+Goudy
   static TextTheme sortsMillGoudyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -63971,6 +71756,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Source Code Pro font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Source+Code+Pro
   static TextStyle sourceCodePro({
     TextStyle textStyle,
     Color color,
@@ -64048,6 +71837,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Source Code Pro font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Source+Code+Pro
   static TextTheme sourceCodeProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64067,6 +71861,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Source Sans Pro font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Source+Sans+Pro
   static TextStyle sourceSansPro({
     TextStyle textStyle,
     Color color,
@@ -64140,6 +71938,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Source Sans Pro font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Source+Sans+Pro
   static TextTheme sourceSansProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64159,6 +71962,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Source Serif Pro font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Source+Serif+Pro
   static TextStyle sourceSerifPro({
     TextStyle textStyle,
     Color color,
@@ -64214,6 +72021,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Source Serif Pro font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Source+Serif+Pro
   static TextTheme sourceSerifProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64233,6 +72045,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Space Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Space+Mono
   static TextStyle spaceMono({
     TextStyle textStyle,
     Color color,
@@ -64290,6 +72106,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Space Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Space+Mono
   static TextTheme spaceMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64309,6 +72130,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Special Elite font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Special+Elite
   static TextStyle specialElite({
     TextStyle textStyle,
     Color color,
@@ -64360,6 +72185,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Special Elite font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Special+Elite
   static TextTheme specialEliteTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64379,6 +72209,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Spectral font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Spectral
   static TextStyle spectral({
     TextStyle textStyle,
     Color color,
@@ -64456,6 +72290,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Spectral font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Spectral
   static TextTheme spectralTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64475,6 +72314,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Spectral SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Spectral+SC
   static TextStyle spectralSC({
     TextStyle textStyle,
     Color color,
@@ -64552,6 +72395,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Spectral SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Spectral+SC
   static TextTheme spectralSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64571,6 +72419,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Spicy Rice font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Spicy+Rice
   static TextStyle spicyRice({
     TextStyle textStyle,
     Color color,
@@ -64622,6 +72474,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Spicy Rice font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Spicy+Rice
   static TextTheme spicyRiceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64641,6 +72498,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Spinnaker font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Spinnaker
   static TextStyle spinnaker({
     TextStyle textStyle,
     Color color,
@@ -64692,6 +72553,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Spinnaker font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Spinnaker
   static TextTheme spinnakerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64711,6 +72577,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Spirax font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Spirax
   static TextStyle spirax({
     TextStyle textStyle,
     Color color,
@@ -64762,6 +72632,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Spirax font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Spirax
   static TextTheme spiraxTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64781,6 +72656,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Squada One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Squada+One
   static TextStyle squadaOne({
     TextStyle textStyle,
     Color color,
@@ -64832,6 +72711,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Squada One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Squada+One
   static TextTheme squadaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64851,6 +72735,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sree Krushnadevaraya font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sree+Krushnadevaraya
   static TextStyle sreeKrushnadevaraya({
     TextStyle textStyle,
     Color color,
@@ -64902,6 +72790,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sree Krushnadevaraya font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sree+Krushnadevaraya
   static TextTheme sreeKrushnadevarayaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64921,6 +72814,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sriracha font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sriracha
   static TextStyle sriracha({
     TextStyle textStyle,
     Color color,
@@ -64972,6 +72869,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sriracha font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sriracha
   static TextTheme srirachaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -64991,6 +72893,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Srisakdi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Srisakdi
   static TextStyle srisakdi({
     TextStyle textStyle,
     Color color,
@@ -65044,6 +72950,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Srisakdi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Srisakdi
   static TextTheme srisakdiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65063,6 +72974,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Staatliches font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Staatliches
   static TextStyle staatliches({
     TextStyle textStyle,
     Color color,
@@ -65114,6 +73029,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Staatliches font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Staatliches
   static TextTheme staatlichesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65133,6 +73053,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stalemate font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stalemate
   static TextStyle stalemate({
     TextStyle textStyle,
     Color color,
@@ -65184,6 +73108,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stalemate font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stalemate
   static TextTheme stalemateTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65203,6 +73132,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stalinist One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stalinist+One
   static TextStyle stalinistOne({
     TextStyle textStyle,
     Color color,
@@ -65254,6 +73187,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stalinist One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stalinist+One
   static TextTheme stalinistOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65273,6 +73211,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stardos Stencil font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stardos+Stencil
   static TextStyle stardosStencil({
     TextStyle textStyle,
     Color color,
@@ -65326,6 +73268,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stardos Stencil font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stardos+Stencil
   static TextTheme stardosStencilTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65345,6 +73292,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stint Ultra Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stint+Ultra+Condensed
   static TextStyle stintUltraCondensed({
     TextStyle textStyle,
     Color color,
@@ -65396,6 +73347,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stint Ultra Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stint+Ultra+Condensed
   static TextTheme stintUltraCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65415,6 +73371,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stint Ultra Expanded font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stint+Ultra+Expanded
   static TextStyle stintUltraExpanded({
     TextStyle textStyle,
     Color color,
@@ -65466,6 +73426,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stint Ultra Expanded font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stint+Ultra+Expanded
   static TextTheme stintUltraExpandedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65485,6 +73450,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stoke font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stoke
   static TextStyle stoke({
     TextStyle textStyle,
     Color color,
@@ -65538,6 +73507,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stoke font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stoke
   static TextTheme stokeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65557,6 +73531,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Strait font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Strait
   static TextStyle strait({
     TextStyle textStyle,
     Color color,
@@ -65608,6 +73586,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Strait font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Strait
   static TextTheme straitTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65627,6 +73610,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stylish font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stylish
   static TextStyle stylish({
     TextStyle textStyle,
     Color color,
@@ -65678,6 +73665,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Stylish font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Stylish
   static TextTheme stylishTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65697,6 +73689,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sue Ellen Francisco font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sue+Ellen+Francisco
   static TextStyle sueEllenFrancisco({
     TextStyle textStyle,
     Color color,
@@ -65748,6 +73744,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sue Ellen Francisco font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sue+Ellen+Francisco
   static TextTheme sueEllenFranciscoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65767,6 +73768,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Suez One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Suez+One
   static TextStyle suezOne({
     TextStyle textStyle,
     Color color,
@@ -65818,6 +73823,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Suez One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Suez+One
   static TextTheme suezOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65837,6 +73847,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sulphur Point font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sulphur+Point
   static TextStyle sulphurPoint({
     TextStyle textStyle,
     Color color,
@@ -65892,6 +73906,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sulphur Point font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sulphur+Point
   static TextTheme sulphurPointTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65911,6 +73930,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sumana font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sumana
   static TextStyle sumana({
     TextStyle textStyle,
     Color color,
@@ -65964,6 +73987,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sumana font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sumana
   static TextTheme sumanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -65983,6 +74011,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sunflower font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sunflower
   static TextStyle sunflower({
     TextStyle textStyle,
     Color color,
@@ -66038,6 +74070,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sunflower font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sunflower
   static TextTheme sunflowerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66057,6 +74094,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sunshiney font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sunshiney
   static TextStyle sunshiney({
     TextStyle textStyle,
     Color color,
@@ -66108,6 +74149,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sunshiney font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sunshiney
   static TextTheme sunshineyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66127,6 +74173,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Supermercado One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Supermercado+One
   static TextStyle supermercadoOne({
     TextStyle textStyle,
     Color color,
@@ -66178,6 +74228,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Supermercado One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Supermercado+One
   static TextTheme supermercadoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66197,6 +74252,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sura font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sura
   static TextStyle sura({
     TextStyle textStyle,
     Color color,
@@ -66250,6 +74309,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sura font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sura
   static TextTheme suraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66269,6 +74333,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Suranna font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Suranna
   static TextStyle suranna({
     TextStyle textStyle,
     Color color,
@@ -66320,6 +74388,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Suranna font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Suranna
   static TextTheme surannaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66339,6 +74412,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Suravaram font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Suravaram
   static TextStyle suravaram({
     TextStyle textStyle,
     Color color,
@@ -66390,6 +74467,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Suravaram font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Suravaram
   static TextTheme suravaramTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66409,6 +74491,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Suwannaphum font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Suwannaphum
   static TextStyle suwannaphum({
     TextStyle textStyle,
     Color color,
@@ -66460,6 +74546,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Suwannaphum font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Suwannaphum
   static TextTheme suwannaphumTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66479,6 +74570,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Swanky and Moo Moo font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Swanky+and+Moo+Moo
   static TextStyle swankyandMooMoo({
     TextStyle textStyle,
     Color color,
@@ -66530,6 +74625,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Swanky and Moo Moo font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Swanky+and+Moo+Moo
   static TextTheme swankyandMooMooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66549,6 +74649,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Syncopate font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Syncopate
   static TextStyle syncopate({
     TextStyle textStyle,
     Color color,
@@ -66602,6 +74706,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Syncopate font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Syncopate
   static TextTheme syncopateTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66621,6 +74730,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tajawal font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tajawal
   static TextStyle tajawal({
     TextStyle textStyle,
     Color color,
@@ -66684,6 +74797,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tajawal font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tajawal
   static TextTheme tajawalTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66703,6 +74821,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tangerine font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tangerine
   static TextStyle tangerine({
     TextStyle textStyle,
     Color color,
@@ -66756,6 +74878,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tangerine font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tangerine
   static TextTheme tangerineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66775,6 +74902,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Taprom font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Taprom
   static TextStyle taprom({
     TextStyle textStyle,
     Color color,
@@ -66826,6 +74957,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Taprom font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Taprom
   static TextTheme tapromTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66845,6 +74981,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tauri font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tauri
   static TextStyle tauri({
     TextStyle textStyle,
     Color color,
@@ -66896,6 +75036,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tauri font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tauri
   static TextTheme tauriTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -66915,6 +75060,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Taviraj font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Taviraj
   static TextStyle taviraj({
     TextStyle textStyle,
     Color color,
@@ -67000,6 +75149,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Taviraj font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Taviraj
   static TextTheme tavirajTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67019,6 +75173,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Teko font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Teko
   static TextStyle teko({
     TextStyle textStyle,
     Color color,
@@ -67078,6 +75236,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Teko font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Teko
   static TextTheme tekoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67097,6 +75260,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Telex font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Telex
   static TextStyle telex({
     TextStyle textStyle,
     Color color,
@@ -67148,6 +75315,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Telex font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Telex
   static TextTheme telexTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67167,6 +75339,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tenali Ramakrishna font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tenali+Ramakrishna
   static TextStyle tenaliRamakrishna({
     TextStyle textStyle,
     Color color,
@@ -67218,6 +75394,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tenali Ramakrishna font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tenali+Ramakrishna
   static TextTheme tenaliRamakrishnaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67237,6 +75418,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tenor Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tenor+Sans
   static TextStyle tenorSans({
     TextStyle textStyle,
     Color color,
@@ -67288,6 +75473,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tenor Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tenor+Sans
   static TextTheme tenorSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67307,6 +75497,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Text Me One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Text+Me+One
   static TextStyle textMeOne({
     TextStyle textStyle,
     Color color,
@@ -67358,6 +75552,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Text Me One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Text+Me+One
   static TextTheme textMeOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67377,6 +75576,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Thasadith font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Thasadith
   static TextStyle thasadith({
     TextStyle textStyle,
     Color color,
@@ -67434,6 +75637,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Thasadith font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Thasadith
   static TextTheme thasadithTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67453,6 +75661,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the The Girl Next Door font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/The+Girl+Next+Door
   static TextStyle theGirlNextDoor({
     TextStyle textStyle,
     Color color,
@@ -67504,6 +75716,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the The Girl Next Door font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/The+Girl+Next+Door
   static TextTheme theGirlNextDoorTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67523,6 +75740,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tienne font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tienne
   static TextStyle tienne({
     TextStyle textStyle,
     Color color,
@@ -67578,6 +75799,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tienne font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tienne
   static TextTheme tienneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67597,6 +75823,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tillana font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tillana
   static TextStyle tillana({
     TextStyle textStyle,
     Color color,
@@ -67656,6 +75886,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tillana font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tillana
   static TextTheme tillanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67675,6 +75910,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Timmana font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Timmana
   static TextStyle timmana({
     TextStyle textStyle,
     Color color,
@@ -67726,6 +75965,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Timmana font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Timmana
   static TextTheme timmanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67745,6 +75989,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tinos font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tinos
   static TextStyle tinos({
     TextStyle textStyle,
     Color color,
@@ -67802,6 +76050,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tinos font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tinos
   static TextTheme tinosTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67821,6 +76074,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Titan One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Titan+One
   static TextStyle titanOne({
     TextStyle textStyle,
     Color color,
@@ -67872,6 +76129,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Titan One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Titan+One
   static TextTheme titanOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67891,6 +76153,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Titillium Web font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Titillium+Web
   static TextStyle titilliumWeb({
     TextStyle textStyle,
     Color color,
@@ -67962,6 +76228,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Titillium Web font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Titillium+Web
   static TextTheme titilliumWebTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -67981,6 +76252,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tomorrow font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tomorrow
   static TextStyle tomorrow({
     TextStyle textStyle,
     Color color,
@@ -68066,6 +76341,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tomorrow font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tomorrow
   static TextTheme tomorrowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68085,6 +76365,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trade Winds font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trade+Winds
   static TextStyle tradeWinds({
     TextStyle textStyle,
     Color color,
@@ -68136,6 +76420,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trade Winds font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trade+Winds
   static TextTheme tradeWindsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68155,6 +76444,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trirong font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trirong
   static TextStyle trirong({
     TextStyle textStyle,
     Color color,
@@ -68240,6 +76533,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trirong font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trirong
   static TextTheme trirongTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68259,6 +76557,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trocchi font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trocchi
   static TextStyle trocchi({
     TextStyle textStyle,
     Color color,
@@ -68310,6 +76612,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trocchi font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trocchi
   static TextTheme trocchiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68329,6 +76636,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trochut font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trochut
   static TextStyle trochut({
     TextStyle textStyle,
     Color color,
@@ -68384,6 +76695,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trochut font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trochut
   static TextTheme trochutTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68403,6 +76719,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trykker font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trykker
   static TextStyle trykker({
     TextStyle textStyle,
     Color color,
@@ -68454,6 +76774,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trykker font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trykker
   static TextTheme trykkerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68473,6 +76798,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tulpen One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tulpen+One
   static TextStyle tulpenOne({
     TextStyle textStyle,
     Color color,
@@ -68524,6 +76853,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Tulpen One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Tulpen+One
   static TextTheme tulpenOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68543,6 +76877,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Turret Road font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Turret+Road
   static TextStyle turretRoad({
     TextStyle textStyle,
     Color color,
@@ -68604,6 +76942,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Turret Road font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Turret+Road
   static TextTheme turretRoadTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68623,6 +76966,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ubuntu font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ubuntu
   static TextStyle ubuntu({
     TextStyle textStyle,
     Color color,
@@ -68688,6 +77035,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ubuntu font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ubuntu
   static TextTheme ubuntuTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68707,6 +77059,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ubuntu Condensed font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ubuntu+Condensed
   static TextStyle ubuntuCondensed({
     TextStyle textStyle,
     Color color,
@@ -68758,6 +77114,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ubuntu Condensed font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ubuntu+Condensed
   static TextTheme ubuntuCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68777,6 +77138,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ubuntu Mono font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ubuntu+Mono
   static TextStyle ubuntuMono({
     TextStyle textStyle,
     Color color,
@@ -68834,6 +77199,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ubuntu Mono font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ubuntu+Mono
   static TextTheme ubuntuMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68853,6 +77223,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ultra font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ultra
   static TextStyle ultra({
     TextStyle textStyle,
     Color color,
@@ -68904,6 +77278,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Ultra font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Ultra
   static TextTheme ultraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68923,6 +77302,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Uncial Antiqua font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Uncial+Antiqua
   static TextStyle uncialAntiqua({
     TextStyle textStyle,
     Color color,
@@ -68974,6 +77357,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Uncial Antiqua font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Uncial+Antiqua
   static TextTheme uncialAntiquaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -68993,6 +77381,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Underdog font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Underdog
   static TextStyle underdog({
     TextStyle textStyle,
     Color color,
@@ -69044,6 +77436,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Underdog font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Underdog
   static TextTheme underdogTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69063,6 +77460,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Unica One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Unica+One
   static TextStyle unicaOne({
     TextStyle textStyle,
     Color color,
@@ -69114,6 +77515,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Unica One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Unica+One
   static TextTheme unicaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69133,6 +77539,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the UnifrakturCook font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/UnifrakturCook
   static TextStyle unifrakturCook({
     TextStyle textStyle,
     Color color,
@@ -69184,6 +77594,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the UnifrakturCook font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/UnifrakturCook
   static TextTheme unifrakturCookTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69203,6 +77618,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the UnifrakturMaguntia font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/UnifrakturMaguntia
   static TextStyle unifrakturMaguntia({
     TextStyle textStyle,
     Color color,
@@ -69254,6 +77673,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the UnifrakturMaguntia font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/UnifrakturMaguntia
   static TextTheme unifrakturMaguntiaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69273,6 +77697,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Unkempt font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Unkempt
   static TextStyle unkempt({
     TextStyle textStyle,
     Color color,
@@ -69326,6 +77754,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Unkempt font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Unkempt
   static TextTheme unkemptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69345,6 +77778,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Unlock font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Unlock
   static TextStyle unlock({
     TextStyle textStyle,
     Color color,
@@ -69396,6 +77833,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Unlock font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Unlock
   static TextTheme unlockTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69415,6 +77857,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Unna font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Unna
   static TextStyle unna({
     TextStyle textStyle,
     Color color,
@@ -69472,6 +77918,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Unna font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Unna
   static TextTheme unnaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69491,6 +77942,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the VT323 font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/VT323
   static TextStyle vT323({
     TextStyle textStyle,
     Color color,
@@ -69542,6 +77997,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the VT323 font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/VT323
   static TextTheme vT323TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69561,6 +78021,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vampiro One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vampiro+One
   static TextStyle vampiroOne({
     TextStyle textStyle,
     Color color,
@@ -69612,6 +78076,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vampiro One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vampiro+One
   static TextTheme vampiroOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69631,6 +78100,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Varela font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Varela
   static TextStyle varela({
     TextStyle textStyle,
     Color color,
@@ -69682,6 +78155,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Varela font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Varela
   static TextTheme varelaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69701,6 +78179,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Varela Round font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Varela+Round
   static TextStyle varelaRound({
     TextStyle textStyle,
     Color color,
@@ -69752,6 +78234,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Varela Round font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Varela+Round
   static TextTheme varelaRoundTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69771,6 +78258,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vast Shadow font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vast+Shadow
   static TextStyle vastShadow({
     TextStyle textStyle,
     Color color,
@@ -69822,6 +78313,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vast Shadow font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vast+Shadow
   static TextTheme vastShadowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69841,6 +78337,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vesper Libre font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vesper+Libre
   static TextStyle vesperLibre({
     TextStyle textStyle,
     Color color,
@@ -69898,6 +78398,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vesper Libre font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vesper+Libre
   static TextTheme vesperLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69917,6 +78422,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vibes font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vibes
   static TextStyle vibes({
     TextStyle textStyle,
     Color color,
@@ -69968,6 +78477,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vibes font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vibes
   static TextTheme vibesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -69987,6 +78501,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vibur font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vibur
   static TextStyle vibur({
     TextStyle textStyle,
     Color color,
@@ -70038,6 +78556,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vibur font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vibur
   static TextTheme viburTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70057,6 +78580,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vidaloka font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vidaloka
   static TextStyle vidaloka({
     TextStyle textStyle,
     Color color,
@@ -70108,6 +78635,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vidaloka font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vidaloka
   static TextTheme vidalokaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70127,6 +78659,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Viga font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Viga
   static TextStyle viga({
     TextStyle textStyle,
     Color color,
@@ -70178,6 +78714,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Viga font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Viga
   static TextTheme vigaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70197,6 +78738,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Voces font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Voces
   static TextStyle voces({
     TextStyle textStyle,
     Color color,
@@ -70248,6 +78793,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Voces font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Voces
   static TextTheme vocesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70267,6 +78817,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Volkhov font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Volkhov
   static TextStyle volkhov({
     TextStyle textStyle,
     Color color,
@@ -70324,6 +78878,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Volkhov font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Volkhov
   static TextTheme volkhovTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70343,6 +78902,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vollkorn font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vollkorn
   static TextStyle vollkorn({
     TextStyle textStyle,
     Color color,
@@ -70408,6 +78971,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vollkorn font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vollkorn
   static TextTheme vollkornTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70427,6 +78995,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vollkorn SC font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vollkorn+SC
   static TextStyle vollkornSC({
     TextStyle textStyle,
     Color color,
@@ -70484,6 +79056,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Vollkorn SC font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Vollkorn+SC
   static TextTheme vollkornSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70503,6 +79080,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Voltaire font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Voltaire
   static TextStyle voltaire({
     TextStyle textStyle,
     Color color,
@@ -70554,6 +79135,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Voltaire font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Voltaire
   static TextTheme voltaireTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70573,6 +79159,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Waiting for the Sunrise font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Waiting+for+the+Sunrise
   static TextStyle waitingfortheSunrise({
     TextStyle textStyle,
     Color color,
@@ -70624,6 +79214,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Waiting for the Sunrise font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Waiting+for+the+Sunrise
   static TextTheme waitingfortheSunriseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70650,6 +79245,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Wallpoet font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Wallpoet
   static TextStyle wallpoet({
     TextStyle textStyle,
     Color color,
@@ -70701,6 +79300,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Wallpoet font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Wallpoet
   static TextTheme wallpoetTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70720,6 +79324,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Walter Turncoat font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Walter+Turncoat
   static TextStyle walterTurncoat({
     TextStyle textStyle,
     Color color,
@@ -70771,6 +79379,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Walter Turncoat font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Walter+Turncoat
   static TextTheme walterTurncoatTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70790,6 +79403,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Warnes font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Warnes
   static TextStyle warnes({
     TextStyle textStyle,
     Color color,
@@ -70841,6 +79458,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Warnes font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Warnes
   static TextTheme warnesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70860,6 +79482,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Wellfleet font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Wellfleet
   static TextStyle wellfleet({
     TextStyle textStyle,
     Color color,
@@ -70911,6 +79537,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Wellfleet font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Wellfleet
   static TextTheme wellfleetTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -70930,6 +79561,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Wendy One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Wendy+One
   static TextStyle wendyOne({
     TextStyle textStyle,
     Color color,
@@ -70981,6 +79616,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Wendy One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Wendy+One
   static TextTheme wendyOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71000,6 +79640,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Wire One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Wire+One
   static TextStyle wireOne({
     TextStyle textStyle,
     Color color,
@@ -71051,6 +79695,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Wire One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Wire+One
   static TextTheme wireOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71070,6 +79719,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Work Sans font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Work+Sans
   static TextStyle workSans({
     TextStyle textStyle,
     Color color,
@@ -71137,6 +79790,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Work Sans font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Work+Sans
   static TextTheme workSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71156,6 +79814,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yanone Kaffeesatz font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yanone+Kaffeesatz
   static TextStyle yanoneKaffeesatz({
     TextStyle textStyle,
     Color color,
@@ -71217,6 +79879,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yanone Kaffeesatz font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yanone+Kaffeesatz
   static TextTheme yanoneKaffeesatzTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71236,6 +79903,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yantramanav font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yantramanav
   static TextStyle yantramanav({
     TextStyle textStyle,
     Color color,
@@ -71297,6 +79968,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yantramanav font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yantramanav
   static TextTheme yantramanavTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71316,6 +79992,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yatra One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yatra+One
   static TextStyle yatraOne({
     TextStyle textStyle,
     Color color,
@@ -71367,6 +80047,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yatra One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yatra+One
   static TextTheme yatraOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71386,6 +80071,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yellowtail font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yellowtail
   static TextStyle yellowtail({
     TextStyle textStyle,
     Color color,
@@ -71437,6 +80126,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yellowtail font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yellowtail
   static TextTheme yellowtailTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71456,6 +80150,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yeon Sung font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yeon+Sung
   static TextStyle yeonSung({
     TextStyle textStyle,
     Color color,
@@ -71507,6 +80205,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yeon Sung font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yeon+Sung
   static TextTheme yeonSungTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71526,6 +80229,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yeseva One font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yeseva+One
   static TextStyle yesevaOne({
     TextStyle textStyle,
     Color color,
@@ -71577,6 +80284,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yeseva One font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yeseva+One
   static TextTheme yesevaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71596,6 +80308,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yesteryear font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yesteryear
   static TextStyle yesteryear({
     TextStyle textStyle,
     Color color,
@@ -71647,6 +80363,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yesteryear font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yesteryear
   static TextTheme yesteryearTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71666,6 +80387,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yrsa font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yrsa
   static TextStyle yrsa({
     TextStyle textStyle,
     Color color,
@@ -71725,6 +80450,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Yrsa font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yrsa
   static TextTheme yrsaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71744,6 +80474,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the ZCOOL KuaiLe font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/ZCOOL+KuaiLe
   static TextStyle zCOOLKuaiLe({
     TextStyle textStyle,
     Color color,
@@ -71795,6 +80529,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the ZCOOL KuaiLe font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/ZCOOL+KuaiLe
   static TextTheme zCOOLKuaiLeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71814,6 +80553,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the ZCOOL QingKe HuangYou font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou
   static TextStyle zCOOLQingKeHuangYou({
     TextStyle textStyle,
     Color color,
@@ -71865,6 +80608,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the ZCOOL QingKe HuangYou font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou
   static TextTheme zCOOLQingKeHuangYouTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71884,6 +80632,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the ZCOOL XiaoWei font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/ZCOOL+XiaoWei
   static TextStyle zCOOLXiaoWei({
     TextStyle textStyle,
     Color color,
@@ -71935,6 +80687,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the ZCOOL XiaoWei font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/ZCOOL+XiaoWei
   static TextTheme zCOOLXiaoWeiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -71954,6 +80711,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Zeyada font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Zeyada
   static TextStyle zeyada({
     TextStyle textStyle,
     Color color,
@@ -72005,6 +80766,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Zeyada font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Zeyada
   static TextTheme zeyadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -72024,6 +80790,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Zhi Mang Xing font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Zhi+Mang+Xing
   static TextStyle zhiMangXing({
     TextStyle textStyle,
     Color color,
@@ -72075,6 +80845,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Zhi Mang Xing font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Zhi+Mang+Xing
   static TextTheme zhiMangXingTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -72094,6 +80869,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Zilla Slab font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Zilla+Slab
   static TextStyle zillaSlab({
     TextStyle textStyle,
     Color color,
@@ -72163,6 +80942,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Zilla Slab font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Zilla+Slab
   static TextTheme zillaSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
@@ -72182,6 +80966,10 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Zilla Slab Highlight font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Zilla+Slab+Highlight
   static TextStyle zillaSlabHighlight({
     TextStyle textStyle,
     Color color,
@@ -72235,6 +81023,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Zilla Slab Highlight font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Zilla+Slab+Highlight
   static TextTheme zillaSlabHighlightTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
