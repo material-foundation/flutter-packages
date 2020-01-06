@@ -1,9 +1,6 @@
-import 'dart:ui';
-
 import 'package:flutter/foundation.dart';
 
 import 'google_fonts_family_with_variant.dart';
-import 'google_fonts_variant.dart';
 
 /// Describes a Google Fonts API font.
 ///
