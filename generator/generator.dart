@@ -17,8 +17,11 @@ void main() {
   final methods = [];
 
   for (final item in fontsJsonData['items']) {
-    final family = item['family'].toString().replaceAll(' ', '');
-    final lowerFamily = family[0].toLowerCase() + family.substring(1);
+    final family = item['family'].toString();
+    final familyNoSpaces = family.replaceAll(' ', '');
+    final familyWithPlusSigns = family.replaceAll(' ', '+');
+    final lowerFamily =
+        familyNoSpaces[0].toLowerCase() + familyNoSpaces.substring(1);
 
     final themeParams = [
       'display4',
@@ -37,8 +40,10 @@ void main() {
     ];
 
     methods.add({
-      'methodName': '$lowerFamily',
-      'fontFamily': family,
+      'methodName': lowerFamily,
+      'fontFamily': familyNoSpaces,
+      'fontFamilyDisplay': family,
+      'docsUrl': 'https://fonts.google.com/specimen/$familyWithPlusSigns',
       'fontUrls': [
         for (final variant in item['variants'])
           {'variant': variant, 'url': item['files'][variant]}
