@@ -126,7 +126,9 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final assetManifestJson = await _loadAssetManifestJson();
 
   if (_isFamilyWithVariantInManifest(
-      descriptor.familyWithVariant, assetManifestJson)) {
+    descriptor.familyWithVariant,
+    assetManifestJson,
+  )) {
     return;
   }
 
@@ -140,7 +142,9 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final localFontFound = byteData != null && await byteData != null;
   if (!localFontFound) {
     byteData = _httpFetchFontAndSaveToDevice(
-        familyWithVariantString, descriptor.fontUrl);
+      familyWithVariantString,
+      descriptor.fontUrl,
+    );
   }
   fontLoader.addFont(byteData);
   await fontLoader.load();
@@ -176,7 +180,9 @@ GoogleFontsVariant _closestMatch(
 ///
 /// This function can return null if the font fails to load from the URL.
 Future<ByteData> _httpFetchFontAndSaveToDevice(
-    String fontName, String fontUrl) async {
+  String fontName,
+  String fontUrl,
+) async {
   final uri = Uri.tryParse(fontUrl);
   if (uri == null) {
     throw Exception('Invalid fontUrl: $fontUrl');

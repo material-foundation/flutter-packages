@@ -12,11 +12,6 @@ class GoogleFontsFamilyWithVariant {
   final String family;
   final GoogleFontsVariant googleFontsVariant;
 
-  GoogleFontsFamilyWithVariant.fromApiFilenamePrefix(String apiFilename)
-      : this.family = apiFilename.split('-')[0],
-        this.googleFontsVariant =
-            GoogleFontsVariant.fromApiFilenamePart(apiFilename.split('-')[1]);
-
   String toApiFilenamePrefix() {
     return '$family-${googleFontsVariant.toApiFilenamePart()}';
   }

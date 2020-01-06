@@ -29,34 +29,6 @@ main() {
     expect(familyWithVariant.toString(), equals('Foo_100italic'));
   });
 
-  testWidgets('fromApiFilenamePrefix() works for italic w100', (tester) async {
-    final familyWithVariant =
-        GoogleFontsFamilyWithVariant.fromApiFilenamePrefix('Foo-ThinItalic');
-
-    expect(familyWithVariant.family, equals('Foo'));
-    expect(
-      familyWithVariant.googleFontsVariant,
-      equals(GoogleFontsVariant(
-        fontStyle: FontStyle.italic,
-        fontWeight: FontWeight.w100,
-      )),
-    );
-  });
-
-  testWidgets('fromApiFilenamePrefix() works for regular', (tester) async {
-    final familyWithVariant =
-        GoogleFontsFamilyWithVariant.fromApiFilenamePrefix('Foo-Regular');
-
-    expect(familyWithVariant.family, equals('Foo'));
-    expect(
-      familyWithVariant.googleFontsVariant,
-      equals(GoogleFontsVariant(
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-      )),
-    );
-  });
-
   testWidgets('toApiFilenamePrefix() works for italic w100', (tester) async {
     final familyWithVariant = GoogleFontsFamilyWithVariant(
       family: 'Foo',
