@@ -111,7 +111,6 @@ main() {
   testWidgets(
       'loadFontIfNecessary method does nothing if the font is in the '
       'Asset Manifest', (tester) async {
-
     // Add Foo-BlackItalic to mock asset bundle.
     ServicesBinding.instance.defaultBinaryMessenger
         .setMockMessageHandler('flutter/assets', (message) {
