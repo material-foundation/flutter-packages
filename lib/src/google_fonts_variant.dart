@@ -25,7 +25,7 @@ class GoogleFontsVariant {
   ///
   /// See [GoogleFontsVariant.toApiFilenamePart] for the inverse function.
   GoogleFontsVariant.fromApiFilenamePart(String filenamePart)
-  : this.fontWeight = _extractFontWeightFromApiFilenamePart(filenamePart),
+      : this.fontWeight = _extractFontWeightFromApiFilenamePart(filenamePart),
         this.fontStyle = _extractFontStyleFromApiFilenamePart(filenamePart);
 
   /// Creates a [GoogleFontsVariant] from a Google Fonts API specific
@@ -40,9 +40,9 @@ class GoogleFontsVariant {
   /// See [GoogleFontsVariant.toString] for the inverse function.
   GoogleFontsVariant.fromString(String variantString)
       : this.fontWeight = FontWeight.values[variantString == _regular ||
-      variantString == _italic
-      ? 3
-      : (int.parse(variantString.replaceAll(_italic, '')) ~/ 100) - 1],
+                variantString == _italic
+            ? 3
+            : (int.parse(variantString.replaceAll(_italic, '')) ~/ 100) - 1],
         this.fontStyle = variantString.contains(_italic)
             ? FontStyle.italic
             : FontStyle.normal;
@@ -89,9 +89,11 @@ class GoogleFontsVariant {
   ///
   /// See [GoogleFontsVariant.fromApiFilenamePart] for the inverse function.
   String toApiFilenamePart() {
-    final weightPrefix = _fontWeightToFilenameWeightParts[fontWeight] ?? 'Regular';
+    final weightPrefix = _fontWeightToFilenameWeightParts[fontWeight] ??
+        _fontWeightToFilenameWeightParts[FontWeight.w400];
     final italicSuffix = fontStyle == FontStyle.italic ? 'Italic' : '';
-    if (weightPrefix == 'Regular') return italicSuffix == '' ? weightPrefix : italicSuffix;
+    if (weightPrefix == 'Regular')
+      return italicSuffix == '' ? weightPrefix : italicSuffix;
     return '$weightPrefix$italicSuffix';
   }
 
