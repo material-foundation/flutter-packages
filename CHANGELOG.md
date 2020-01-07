@@ -1,3 +1,9 @@
+## [0.3.0] - 2019-01-07
+
+* Added dartdocs to every public method in the google fonts package.
+
+* Added the ability to include font files in pubspec assets (see README).
+
 ## [0.2.0] - 2019-12-12
 
 * Updated to include all fonts currently on fonts.google.com.
