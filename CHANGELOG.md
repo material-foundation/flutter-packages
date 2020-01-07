@@ -1,3 +1,7 @@
+## [0.3.1] - 2019-01-07
+
+* README fixes.
+
 ## [0.3.0] - 2019-01-07
 
 * Added dartdocs to every public method in the google fonts package.
@@ -7,7 +11,6 @@
 ## [0.2.0] - 2019-12-12
 
 * Updated to include all fonts currently on fonts.google.com.
-
 
 ## [0.1.1] - 2019-12-10
 
