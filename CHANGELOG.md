@@ -1,3 +1,7 @@
+## [0.3.2] - 2019-01-07
+
+* README image path fixes.
+
 ## [0.3.1] - 2019-01-07
 
 * README fixes.
