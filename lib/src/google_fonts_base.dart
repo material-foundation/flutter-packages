@@ -2,12 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
@@ -77,24 +79,25 @@ TextStyle googleFontsTextStyle({
     decorationThickness: decorationThickness,
   );
 
-  final variant = _closestMatch(
-    GoogleFontsVariant(
-      fontWeight: textStyle.fontWeight ?? FontWeight.w400,
-      fontStyle: textStyle.fontStyle ?? FontStyle.normal,
-    ),
-    fonts.keys,
+  final variant = GoogleFontsVariant(
+    fontWeight: textStyle.fontWeight ?? FontWeight.w400,
+    fontStyle: textStyle.fontStyle ?? FontStyle.normal,
   );
+  final matchedVariant = _closestMatch(variant, fonts.keys);
+  final familyWithVariant = GoogleFontsFamilyWithVariant(
+    family: fontFamily,
+    googleFontsVariant: matchedVariant,
+  );
+
   final descriptor = GoogleFontsDescriptor(
-    fontFamily: fontFamily,
-    fontWeight: variant.fontWeight,
-    fontStyle: variant.fontStyle,
-    fontUrl: fonts[variant],
+    familyWithVariant: familyWithVariant,
+    fontUrl: fonts[matchedVariant],
   );
 
   loadFontIfNecessary(descriptor);
 
   return textStyle.copyWith(
-    fontFamily: descriptor.familyWithVariant(),
+    fontFamily: familyWithVariant.toString(),
     fontFamilyFallback: [fontFamily],
   );
 }
@@ -110,23 +113,37 @@ TextStyle googleFontsTextStyle({
 /// disk, then it fetches it via the [fontUrl], stores it on disk, and loads it
 /// into the [FontLoader].
 Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
-  final familyWithVariant = descriptor.familyWithVariant();
+  final familyWithVariantString = descriptor.familyWithVariant.toString();
   // If this font has already been loaded, then there is no need to load it
   // again.
-  if (_loadedFonts.contains(familyWithVariant)) {
+  if (_loadedFonts.contains(familyWithVariantString)) {
     return;
   }
 
-  _loadedFonts.add(familyWithVariant);
-  final fontLoader = FontLoader(familyWithVariant);
+  // If this font can be loaded by the pre-bundled assets, then there is no
+  // need to load it at all.
+  final assetManifestJson = await _loadAssetManifestJson();
+
+  if (_isFamilyWithVariantInManifest(
+    descriptor.familyWithVariant,
+    assetManifestJson,
+  )) {
+    return;
+  }
+
+  _loadedFonts.add(familyWithVariantString);
+  final fontLoader = FontLoader(familyWithVariantString);
 
   Future<ByteData> byteData;
   if (!kIsWeb) {
-    byteData = _readLocalFont(familyWithVariant);
+    byteData = _loadFontFromDeviceFileSystem(familyWithVariantString);
   }
   final localFontFound = byteData != null && await byteData != null;
   if (!localFontFound) {
-    byteData = _httpFetchFont(familyWithVariant, descriptor.fontUrl);
+    byteData = _httpFetchFontAndSaveToDevice(
+      familyWithVariantString,
+      descriptor.fontUrl,
+    );
   }
   fontLoader.addFont(byteData);
   await fontLoader.load();
@@ -161,7 +178,10 @@ GoogleFontsVariant _closestMatch(
 /// it is the first time it is being loaded.
 ///
 /// This function can return null if the font fails to load from the URL.
-Future<ByteData> _httpFetchFont(String fontName, String fontUrl) async {
+Future<ByteData> _httpFetchFontAndSaveToDevice(
+  String fontName,
+  String fontUrl,
+) async {
   final uri = Uri.tryParse(fontUrl);
   if (uri == null) {
     throw Exception('Invalid fontUrl: $fontUrl');
@@ -169,7 +189,7 @@ Future<ByteData> _httpFetchFont(String fontName, String fontUrl) async {
 
   final response = await httpClient.get(uri);
   if (response.statusCode == 200) {
-    _writeLocalFont(fontName, response.bodyBytes);
+    _saveFontToDeviceFileSystem(fontName, response.bodyBytes);
     return ByteData.view(response.bodyBytes.buffer);
   } else {
     // If that call was not successful, throw an error.
@@ -184,15 +204,16 @@ Future<String> get _localPath async {
 
 Future<File> _localFile(String name) async {
   final path = await _localPath;
+  // TODO(clocksmith): what if this file is an otf?
   return File('$path/$name.ttf');
 }
 
-Future<File> _writeLocalFont(String name, List<int> bytes) async {
+Future<File> _saveFontToDeviceFileSystem(String name, List<int> bytes) async {
   final file = await _localFile(name);
   return file.writeAsBytes(bytes);
 }
 
-Future<ByteData> _readLocalFont(String name) async {
+Future<ByteData> _loadFontFromDeviceFileSystem(String name) async {
   try {
     final file = await _localFile(name);
     final fileExists = file.existsSync();
@@ -220,4 +241,44 @@ int _computeMatch(GoogleFontsVariant a, GoogleFontsVariant b) {
     score += 2;
   }
   return score;
+}
+
+Future<Map<String, dynamic>> _loadAssetManifestJson() async {
+  try {
+    final jsonString = await rootBundle.loadString('AssetManifest.json');
+    return json.decode(jsonString) as Map<String, dynamic>;
+  } catch (e) {
+    rootBundle.evict('AssetManifest.json');
+    return null;
+  }
+}
+
+bool _isFamilyWithVariantInManifest(
+  GoogleFontsFamilyWithVariant familyWithVariant,
+  Map<String, dynamic> manifestJson,
+) {
+  if (manifestJson == null) return false;
+
+  for (final assetList in manifestJson.values) {
+    for (final String asset in assetList) {
+      String matchingFontSuffix;
+      for (final suffix in ['.ttf', '.otf']) {
+        if (asset.endsWith(suffix)) {
+          matchingFontSuffix = suffix;
+          break;
+        }
+      }
+
+      if (matchingFontSuffix != null) {
+        final assetWithRemovedExtension =
+            asset.substring(0, asset.length - matchingFontSuffix.length);
+        if (assetWithRemovedExtension
+            .endsWith(familyWithVariant.toApiFilenamePrefix())) {
+          return true;
+        }
+      }
+    }
+  }
+
+  return false;
 }
