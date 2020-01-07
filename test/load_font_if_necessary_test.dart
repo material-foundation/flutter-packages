@@ -57,7 +57,7 @@ main() {
 
   testWidgets(
       'loadFontIfNecessary method does not make http get request on '
-          'subsequent calls', (tester) async {
+      'subsequent calls', (tester) async {
     final fakeUrl = Uri.http('fonts.google.com', '/Foo');
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
@@ -110,13 +110,13 @@ main() {
 
   testWidgets(
       'loadFontIfNecessary method does nothing if the font is in the '
-          'Asset Manifest', (tester) async {
+      'Asset Manifest', (tester) async {
     // Add Foo-BlackItalic to mock asset bundle.
     ServicesBinding.instance.defaultBinaryMessenger
         .setMockMessageHandler('flutter/assets', (message) {
       final Uint8List encoded =
-      utf8.encoder.convert('{"google_fonts/Foo-BlackItalic.ttf":'
-          '["google_fonts/Foo-BlackItalic.ttf"]}');
+          utf8.encoder.convert('{"google_fonts/Foo-BlackItalic.ttf":'
+              '["google_fonts/Foo-BlackItalic.ttf"]}');
       return Future.value(encoded.buffer.asByteData());
     });
 

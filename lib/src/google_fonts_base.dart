@@ -159,9 +159,9 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 // which is ultimately how flutter handles matching fonts.
 // https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L149
 GoogleFontsVariant _closestMatch(
-    GoogleFontsVariant sourceVariant,
-    Iterable<GoogleFontsVariant> variantsToCompare,
-    ) {
+  GoogleFontsVariant sourceVariant,
+  Iterable<GoogleFontsVariant> variantsToCompare,
+) {
   int bestScore;
   GoogleFontsVariant bestMatch;
   for (final variantToCompare in variantsToCompare) {
@@ -179,9 +179,9 @@ GoogleFontsVariant _closestMatch(
 ///
 /// This function can return null if the font fails to load from the URL.
 Future<ByteData> _httpFetchFontAndSaveToDevice(
-    String fontName,
-    String fontUrl,
-    ) async {
+  String fontName,
+  String fontUrl,
+) async {
   final uri = Uri.tryParse(fontUrl);
   if (uri == null) {
     throw Exception('Invalid fontUrl: $fontUrl');
@@ -254,9 +254,9 @@ Future<Map<String, dynamic>> _loadAssetManifestJson() async {
 }
 
 bool _isFamilyWithVariantInManifest(
-    GoogleFontsFamilyWithVariant familyWithVariant,
-    Map<String, dynamic> manifestJson,
-    ) {
+  GoogleFontsFamilyWithVariant familyWithVariant,
+  Map<String, dynamic> manifestJson,
+) {
   if (manifestJson == null) return false;
 
   for (final assetList in manifestJson.values) {
@@ -271,7 +271,7 @@ bool _isFamilyWithVariantInManifest(
 
       if (matchingFontSuffix != null) {
         final assetWithRemovedExtension =
-        asset.substring(0, asset.length - matchingFontSuffix.length);
+            asset.substring(0, asset.length - matchingFontSuffix.length);
         if (assetWithRemovedExtension
             .endsWith(familyWithVariant.toApiFilenamePrefix())) {
           return true;

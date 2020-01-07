@@ -40,9 +40,9 @@ class GoogleFontsVariant {
   /// See [GoogleFontsVariant.toString] for the inverse function.
   GoogleFontsVariant.fromString(String variantString)
       : this.fontWeight = FontWeight.values[variantString == _regular ||
-      variantString == _italic
-      ? 3
-      : (int.parse(variantString.replaceAll(_italic, '')) ~/ 100) - 1],
+                variantString == _italic
+            ? 3
+            : (int.parse(variantString.replaceAll(_italic, '')) ~/ 100) - 1],
         this.fontStyle = variantString.contains(_italic)
             ? FontStyle.italic
             : FontStyle.normal;
@@ -110,7 +110,7 @@ class GoogleFontsVariant {
   @override
   String toString() {
     final fontWeightString =
-    fontWeight.index == 3 ? '' : (fontWeight.index + 1) * 100;
+        fontWeight.index == 3 ? '' : (fontWeight.index + 1) * 100;
     final fontStyleString = fontStyle
         .toString()
         .replaceAll('FontStyle.', '')
