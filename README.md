@@ -11,8 +11,8 @@ The `google_fonts` package for Flutter allows you to easily use any of the 960 f
 
 With the `google_fonts` package, `.ttf` or `.otf` files do not need to be stored in your assets folder and mapped in
 the pubspec. Instead, they can be fetched once via http at runtime, and cached in the app's file system. This is ideal for development, and can be the preferred behavior for production apps that
-are looking to reduce the app bundle size. Still, the app can at any time choose to include the font file in the assets, and the Google Fonts package will prioritize pre-bundled files over http fetching. 
-Because of this, the Google Fonts package allows developers to choose between pre-bundling the fonts and loading them over http while using the same API.
+are looking to reduce the app bundle size. Still, you may at any time choose to include the font file in the assets, and the Google Fonts package will prioritize pre-bundled files over http fetching. 
+Because of this, the Google Fonts package allows developers to choose between pre-bundling the fonts and loading them over http, while using the same API.
 
 For example, say you want to use the [Lato](https://fonts.google.com/specimen/Lato) font from Google Fonts in your Flutter app.
 
@@ -93,12 +93,32 @@ MaterialApp(
 );
 ```
 
+### Choosing to include a font without having to http fetch it
+
 If you want the Google Fonts package to use font files that you have included in your pubspec's
 assets (rather than fetching at runtime via http), first download the font files from 
 [https://fonts.google.com](https://fonts.google.com). Then, create a folder at the top level of 
 your app directory named `google_fonts`, and copy the font files that you want to be used into that folder.
 
 ![](https://raw.githubusercontent.com/material-components/material-components-flutter-experimental/master/google_fonts/google_fonts_folder.png)
+
+You only need to copy the files in for the font weight and font styles that you are using for any
+given family. Italic styles will include `Italic` in the filename, and the font weights map to 
+filenames as follows:
+
+```dart
+{
+  FontWeight.w100: 'Thin',
+  FontWeight.w200: 'ExtraLight',
+  FontWeight.w300: 'Light',
+  FontWeight.w400: 'Regular',
+  FontWeight.w500: 'Medium',
+  FontWeight.w600: 'SemiBold',
+  FontWeight.w700: 'Bold',
+  FontWeight.w800: 'ExtraBold',
+  FontWeight.w900: 'Black',
+}
+```
 
 Finally, make sure you have listed the `google_fonts` folder in your `pubspec.yaml`.
 
