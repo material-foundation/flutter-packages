@@ -92,3 +92,18 @@ MaterialApp(
   ),
 );
 ```
+
+If you want the Google Fonts package to use font files that you have included in your pubspec's
+assets (rather than fetching at runtime via http), first download the font files from 
+[https://fonts.google.com](https://fonts.google.com). Then, create a folder at the top level of 
+your app directory named `google_fonts`, and copy the font files that you want to be used into that folder.
+
+![](https://raw.githubusercontent.com/material-components/material-components-flutter-experimental/master/google_fonts/google_fonts_folder.png)
+
+Finally, make sure you have listed the `google_fonts` folder in your `pubspec.yaml`.
+
+![](https://raw.githubusercontent.com/material-components/material-components-flutter-experimental/master/google_fonts/google_fonts_pubspec_assets.png)
+
+Note: Since these files are listed as assets, there is no need to list them in the fonts section
+of the `pubspec.yaml`. This can be done because the files are consistently named from the Google Fonts API
+(so be sure not to rename them!)
