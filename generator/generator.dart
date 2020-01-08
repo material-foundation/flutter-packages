@@ -4,10 +4,13 @@
 
 import 'dart:convert';
 import 'dart:io';
+import 'package:http/http.dart' as http;
 
 import 'package:mustache/mustache.dart';
 
-void main() {
+void main() async {
+  await readFontsProtoData();
+
   // TODO(clocksmith): Integrate with package:build to automate generation.
   final fontsJsonData = readFontsJsonData();
 
@@ -63,4 +66,9 @@ Map readFontsJsonData() {
   final fontsJsonFile = File('data/fonts_data.json');
   final fontsJsonString = fontsJsonFile.readAsStringSync();
   return jsonDecode(fontsJsonString);
+}
+
+Future<void> readFontsProtoData() async {
+  final fontsProtoFile = await http.get('http://fonts.gstatic.com/s/a/directory017.pb');
+  print(fontsProtoFile.bodyBytes);
 }
