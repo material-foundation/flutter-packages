@@ -17,3 +17,5 @@ dev_dependencies:
     sdk: flutter
   mockito: ^4.1.1
   mustache: ^1.1.1
+  protobuf: ^1.0.1
+  protoc_plugin: any

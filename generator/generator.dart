@@ -7,6 +7,7 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 
 import 'package:mustache/mustache.dart';
+import 'fonts.pb.dart';
 
 void main() async {
   await readFontsProtoData();
@@ -70,5 +71,6 @@ Map readFontsJsonData() {
 
 Future<void> readFontsProtoData() async {
   final fontsProtoFile = await http.get('http://fonts.gstatic.com/s/a/directory017.pb');
+  Font.fromBuffer(i);
   print(fontsProtoFile.bodyBytes);
 }
