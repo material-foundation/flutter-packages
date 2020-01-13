@@ -198,7 +198,7 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
 }
 
 Future<String> get _localPath async {
-  final directory = await getApplicationDocumentsDirectory();
+  final directory = await getApplicationSupportDirectory();
   return directory.path;
 }
 
