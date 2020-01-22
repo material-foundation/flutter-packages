@@ -1,3 +1,8 @@
+## [0.2.1] - 2020-01-22
+
+* Change font URLs to https to enable web support.
+
+
 ## [0.2.0] - 2019-12-12
 
 * Updated to include all fonts currently on fonts.google.com.
