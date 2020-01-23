@@ -1,6 +1,6 @@
 ## [0.3.3] - 2020-01-22
 
-* Update font URLs to https to properly support web
+* Update font URLs to https to properly support web.
 
 ## [0.3.2] - 2019-01-07
 
