@@ -2,30 +2,27 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 
 import 'package:mustache/mustache.dart';
 import 'fonts.pb.dart';
-import 'package:crypto/crypto.dart';
+import 'package:console/console.dart';
 
 void main() async {
-  await readFontsProtoData();
-
-  // TODO(clocksmith): Integrate with package:build to automate generation.
-  final fontsJsonData = readFontsJsonData();
+  final fontDirectory = await _readFontsProtoData();
+//  await _verifyUrls(fontDirectory);
 
   final outFile = File('lib/google_fonts.dart');
   final outFileWriteSink = outFile.openWrite();
 
   final methods = [];
 
-  for (final item in fontsJsonData['items']) {
-    final family = item['family'].toString().replaceAll(' ', '');
+  for (final item in fontDirectory.family) {
+    final family = item.name.replaceAll(' ', '');
     final lowerFamily = family[0].toLowerCase() + family.substring(1);
 
-    final themeParams = [
+    const themeParams = [
       'display4',
       'display3',
       'display2',
@@ -45,8 +42,13 @@ void main() async {
       'methodName': '$lowerFamily',
       'fontFamily': family,
       'fontUrls': [
-        for (final variant in item['variants'])
-          {'variant': variant, 'url': item['files'][variant]}
+        for (final variant in item.fonts)
+          {
+            'variantWeight': variant.weight.start,
+            'variantStyle':
+                variant.italic.start.round() == 1 ? 'italic' : 'normal',
+            'url': _hashToUrl(variant.file.hash),
+          }
       ],
       'themeParams': [
         for (final themeParam in themeParams) {'value': themeParam}
@@ -64,38 +66,44 @@ void main() async {
   outFileWriteSink.close();
 }
 
-Map readFontsJsonData() {
-  final fontsJsonFile = File('data/fonts_data.json');
-  final fontsJsonString = fontsJsonFile.readAsStringSync();
-  return jsonDecode(fontsJsonString);
+Future<Directory> _readFontsProtoData() async {
+  const protoUrl = 'http://fonts.gstatic.com/s/a/directory017.pb';
+  final fontsProtoFile = await http.get(protoUrl);
+  return Directory.fromBuffer(fontsProtoFile.bodyBytes);
 }
 
-Future<void> readFontsProtoData() async {
-  final fontsProtoFile = await http.get('http://fonts.gstatic.com/s/a/directory017.pb');
-  final directory = Directory.fromBuffer(fontsProtoFile.bodyBytes);
+Future<void> _verifyUrls(Directory fontDirectory) async {
+  final totalFonts =
+      fontDirectory.family.map((f) => f.fonts.length).reduce((a, b) => a + b);
+  final progressBar = ProgressBar(complete: totalFonts);
 
-  for (final family in directory.family) {
+  final client = http.Client();
+  print('Validating font URLs...');
+  for (final family in fontDirectory.family) {
     for (final font in family.fonts) {
-      var fileName = '';
-      for (final byte in font.file.hash) {
-        final convertedByte = byte.toRadixString(16);
-//        print('byte: $byte');
-//        print('signed: ${byte.toSigned(8)}');
-//        print('convertedByte: $convertedByte');
-        fileName += convertedByte;
-      }
-      final urlString = 'https://fonts.gstatic.com/s/a/$fileName.ttf';
-      print("${family.name} font's url is: $urlString");
+      final urlString = _hashToUrl(font.file.hash);
+      await _tryUrl(client, urlString);
+      progressBar.update(progressBar.current + 1);
     }
   }
+  print('Success!');
+  client.close();
+}
 
-//  var urlString = '';
-//  for(final byte in urlHashBytes) {
-//    final convertedByte = byte.toRadixString(16);
-//    print('byte: $byte');
-//    print('signed: ${byte.toSigned(8)}');
-//    print('convertedByte: $convertedByte');
-//    urlString += convertedByte;
-//  }
-//  print(urlString);
+Future<void> _tryUrl(http.Client client, String url) async {
+  try {
+    await client.read(url);
+  } catch (e) {
+    print('Failed to load font from url: $url');
+    rethrow;
+  }
+}
+
+String _hashToUrl(List<int> bytes) {
+  var fileName = '';
+  for (final byte in bytes) {
+    final convertedByte = byte.toRadixString(16).padLeft(2, '0');
+    fileName += convertedByte;
+  }
+  return 'https://fonts.gstatic.com/s/a/$fileName.ttf';
 }
