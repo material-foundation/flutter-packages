@@ -11,7 +11,7 @@ import 'package:console/console.dart';
 
 void main() async {
   final fontDirectory = await _readFontsProtoData();
-//  await _verifyUrls(fontDirectory);
+  await _verifyUrls(fontDirectory);
 
   final outFile = File('lib/google_fonts.dart');
   final outFileWriteSink = outFile.openWrite();
@@ -20,7 +20,10 @@ void main() async {
 
   for (final item in fontDirectory.family) {
     final family = item.name.replaceAll(' ', '');
-    final lowerFamily = family[0].toLowerCase() + family.substring(1);
+    final familyNoSpaces = family.replaceAll(' ', '');
+    final familyWithPlusSigns = family.replaceAll(' ', '+');
+    final lowerFamily =
+        familyNoSpaces[0].toLowerCase() + familyNoSpaces.substring(1);
 
     const themeParams = [
       'display4',
@@ -39,8 +42,10 @@ void main() async {
     ];
 
     methods.add({
-      'methodName': '$lowerFamily',
-      'fontFamily': family,
+      'methodName': lowerFamily,
+      'fontFamily': familyNoSpaces,
+      'fontFamilyDisplay': family,
+      'docsUrl': 'https://fonts.google.com/specimen/$familyWithPlusSigns',
       'fontUrls': [
         for (final variant in item.fonts)
           {

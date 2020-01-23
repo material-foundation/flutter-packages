@@ -1,7 +1,24 @@
+## [0.3.3] - 2020-01-22
+
+* Update font URLs to https to properly support web.
+
+## [0.3.2] - 2019-01-07
+
+* README image path fixes.
+
+## [0.3.1] - 2019-01-07
+
+* README fixes.
+
+## [0.3.0] - 2019-01-07
+
+* Added dartdocs to every public method in the google fonts package.
+
+* Added the ability to include font files in pubspec assets (see README).
+
 ## [0.2.0] - 2019-12-12
 
 * Updated to include all fonts currently on fonts.google.com.
-
 
 ## [0.1.1] - 2019-12-10
 

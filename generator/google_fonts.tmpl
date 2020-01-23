@@ -13,6 +13,10 @@ import 'src/google_fonts_variant.dart';
 
 class GoogleFonts {
   {{#method}}
+  /// Applies the {{fontFamilyDisplay}} font family from Google Fonts to the given [textStyle].
+  ///
+  /// See:
+  ///  * {{docsUrl}}
   static TextStyle {{methodName}}({
     TextStyle textStyle,
     Color color,
@@ -65,6 +69,11 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the {{fontFamilyDisplay}} font family from Google Fonts to every [TextStyle] in the
+  /// given [textTheme].
+  ///
+  /// See:
+  ///  * {{docsUrl}}
   static TextTheme {{methodName}}TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
