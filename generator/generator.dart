@@ -8,6 +8,7 @@ import 'package:http/http.dart' as http;
 
 import 'package:mustache/mustache.dart';
 import 'fonts.pb.dart';
+import 'package:crypto/crypto.dart';
 
 void main() async {
   await readFontsProtoData();
@@ -71,6 +72,30 @@ Map readFontsJsonData() {
 
 Future<void> readFontsProtoData() async {
   final fontsProtoFile = await http.get('http://fonts.gstatic.com/s/a/directory017.pb');
-  Font.fromBuffer(i);
-  print(fontsProtoFile.bodyBytes);
+  final directory = Directory.fromBuffer(fontsProtoFile.bodyBytes);
+
+  for (final family in directory.family) {
+    for (final font in family.fonts) {
+      var fileName = '';
+      for (final byte in font.file.hash) {
+        final convertedByte = byte.toRadixString(16);
+//        print('byte: $byte');
+//        print('signed: ${byte.toSigned(8)}');
+//        print('convertedByte: $convertedByte');
+        fileName += convertedByte;
+      }
+      final urlString = 'https://fonts.gstatic.com/s/a/$fileName.ttf';
+      print("${family.name} font's url is: $urlString");
+    }
+  }
+
+//  var urlString = '';
+//  for(final byte in urlHashBytes) {
+//    final convertedByte = byte.toRadixString(16);
+//    print('byte: $byte');
+//    print('signed: ${byte.toSigned(8)}');
+//    print('convertedByte: $convertedByte');
+//    urlString += convertedByte;
+//  }
+//  print(urlString);
 }
