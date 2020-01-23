@@ -1,6 +1,6 @@
 name: google_fonts
 description: A package to include fonts from fonts.google.com in your flutter app.
-version: 0.3.2
+version: 0.3.3
 homepage: https://github.com/material-foundation/google-fonts-flutter/
 
 environment:
