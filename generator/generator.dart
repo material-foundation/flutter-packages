@@ -38,7 +38,7 @@ void _generateDartFile(Directory fontDirectory) {
   final methods = [];
 
   for (final item in fontDirectory.family) {
-    final family = item.name.replaceAll(' ', '');
+    final family = item.name;
     final familyNoSpaces = family.replaceAll(' ', '');
     final familyWithPlusSigns = family.replaceAll(' ', '+');
     final lowerFamily =
