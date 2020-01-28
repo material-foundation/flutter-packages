@@ -1,3 +1,8 @@
+## [0.3.5] - 2020-01-23
+
+* Update generator to get most up-to-date urls from fonts.google.com. 
+* Add `CONTRIBUTING.md`.
+
 ## [0.3.4] - 2020-01-23
 
 * Store downloaded font files in device's support directory instead of documents directory.
