@@ -40,7 +40,7 @@ class GoogleFonts {
   }) {
     final fonts = <GoogleFontsVariant, String>{
       {{#fontUrls}}
-      GoogleFontsVariant.fromString('{{variant}}'): '{{url}}',
+      GoogleFontsVariant(fontWeight: FontWeight.w{{variantWeight}}, fontStyle: FontStyle.{{variantStyle}}): '{{url}}',
       {{/fontUrls}}
     };
 
