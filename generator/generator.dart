@@ -10,10 +10,29 @@ import 'fonts.pb.dart';
 import 'package:console/console.dart';
 
 void main() async {
-  final fontDirectory = await _readFontsProtoData();
-  await _verifyUrls(fontDirectory);
+  print('Getting latest font directory...');
+  final protoUrl = await _getProtoUrl();
+  print('Success! Using $protoUrl');
 
-  final outFile = File('lib/google_fonts.dart');
+  final fontDirectory = await _readFontsProtoData(protoUrl);
+  print('\nValidating font URLs...');
+  await _verifyUrls(fontDirectory);
+  print(_success);
+
+  print('\nGenerating $_generatedFilePath...');
+  _generateDartFile(fontDirectory);
+  print(_success);
+
+  print('\nFormatting $_generatedFilePath...');
+  await Process.run('flutter', ['format', _generatedFilePath]);
+  print(_success);
+}
+
+const _generatedFilePath = 'lib/google_fonts.dart';
+const _success = 'Success!';
+
+void _generateDartFile(Directory fontDirectory) {
+  final outFile = File(_generatedFilePath);
   final outFileWriteSink = outFile.openWrite();
 
   final methods = [];
@@ -71,8 +90,31 @@ void main() async {
   outFileWriteSink.close();
 }
 
-Future<Directory> _readFontsProtoData() async {
-  const protoUrl = 'http://fonts.gstatic.com/s/a/directory017.pb';
+Future<String> _getProtoUrl() async {
+  var directoryNumber = 3;
+
+  String url(int directoryNumber) {
+    final paddedNumber = directoryNumber.toString().padLeft(3, '0');
+    return 'http://fonts.gstatic.com/s/a/directory$paddedNumber.pb';
+  }
+
+  var didReachLatestUrl = false;
+  final httpClient = http.Client();
+  while (!didReachLatestUrl) {
+    try {
+      await httpClient.read(url(directoryNumber));
+      directoryNumber += 1;
+    } catch (e) {
+      didReachLatestUrl = true;
+      directoryNumber -= 1;
+    }
+  }
+  httpClient.close();
+
+  return url(directoryNumber);
+}
+
+Future<Directory> _readFontsProtoData(String protoUrl) async {
   final fontsProtoFile = await http.get(protoUrl);
   return Directory.fromBuffer(fontsProtoFile.bodyBytes);
 }
@@ -83,7 +125,6 @@ Future<void> _verifyUrls(Directory fontDirectory) async {
   final progressBar = ProgressBar(complete: totalFonts);
 
   final client = http.Client();
-  print('Validating font URLs...');
   for (final family in fontDirectory.family) {
     for (final font in family.fonts) {
       final urlString = _hashToUrl(font.file.hash);
@@ -91,7 +132,6 @@ Future<void> _verifyUrls(Directory fontDirectory) async {
       progressBar.update(progressBar.current + 1);
     }
   }
-  print('Success!');
   client.close();
 }
 
