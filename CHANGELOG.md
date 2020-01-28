@@ -1,3 +1,7 @@
+## [0.3.4] - 2020-01-23
+
+* Store downloaded font files in device's support directory instead of documents directory.
+
 ## [0.3.3] - 2020-01-22
 
 * Update font URLs to https to properly support web.

@@ -27,7 +27,7 @@ main() {
     final directory = await Directory.systemTemp.createTemp();
     const MethodChannel('plugins.flutter.io/path_provider')
         .setMockMethodCallHandler((methodCall) async {
-      if (methodCall.method == 'getApplicationDocumentsDirectory') {
+      if (methodCall.method == 'getApplicationSupportDirectory') {
         return directory.path;
       }
       return null;
@@ -95,11 +95,11 @@ main() {
       fontUrl: fakeUrl.toString(),
     );
 
-    var directoryContents = await getApplicationDocumentsDirectory();
+    var directoryContents = await getApplicationSupportDirectory();
     expect(directoryContents.listSync().isEmpty, isTrue);
 
     await loadFontIfNecessary(fakeDescriptor);
-    directoryContents = await getApplicationDocumentsDirectory();
+    directoryContents = await getApplicationSupportDirectory();
 
     expect(directoryContents.listSync().isNotEmpty, isTrue);
     expect(
