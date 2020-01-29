@@ -1,3 +1,8 @@
+## [0.3.6] - 2020-01-29
+
+* Fix asset font loading bug
+* Update asset font README instructions 
+
 ## [0.3.5] - 2020-01-23
 
 * Update generator to get most up-to-date urls from fonts.google.com. 
