@@ -124,7 +124,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   try {
     // Check if this font can be loaded by the pre-bundled assets.
     final assetManifestJson = await _loadAssetManifestJson();
-    final assetPath = getFamilyWithVariantManifestPath(
+    final assetPath = _findFamilyWithVariantAssetPath(
       descriptor.familyWithVariant,
       assetManifestJson,
     );
@@ -275,7 +275,9 @@ Future<Map<String, dynamic>> _loadAssetManifestJson() async {
   }
 }
 
-String getFamilyWithVariantManifestPath(
+/// Looks for a matching [familyWithVariant] font, provided the asset manifest.
+/// Returns the path of the font asset if found, otherwise an empty string.
+String _findFamilyWithVariantAssetPath(
   GoogleFontsFamilyWithVariant familyWithVariant,
   Map<String, dynamic> manifestJson,
 ) {
