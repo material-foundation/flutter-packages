@@ -153,7 +153,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     }
   } catch (e) {
     final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
-    throw Exception('google_fonts was unable to load font $fontName\n$e');
+    print('error: google_fonts was unable to load font $fontName\n$e');
   }
 }
 
