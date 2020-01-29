@@ -154,4 +154,32 @@ main() {
     await loadFontIfNecessary(descriptorNotInAssets);
     verify(httpClient.get(barUrl)).called(1);
   });
+
+  testWidgets('loadFontIfNecessary method throws if font cannot be loaded',
+      (tester) async {
+    // Mock a bad response.
+    when(httpClient.get(any)).thenAnswer((_) async {
+      return http.Response('fake response body - failure', 300);
+    });
+
+    final fooUrl = Uri.http('fonts.google.com', '/Foo');
+    final descriptorInAssets = GoogleFontsDescriptor(
+      familyWithVariant: GoogleFontsFamilyWithVariant(
+        family: 'Foo',
+        googleFontsVariant: GoogleFontsVariant(
+          fontWeight: FontWeight.w900,
+          fontStyle: FontStyle.italic,
+        ),
+      ),
+      fontUrl: fooUrl.toString(),
+    );
+
+    // Call loadFontIfNecessary and verify that it throws an exception.
+    expect(
+      loadFontIfNecessary(descriptorInAssets),
+      throwsA(predicate((e) => e.message
+          .toString()
+          .startsWith('google_fonts was unable to load font Foo'))),
+    );
+  });
 }
