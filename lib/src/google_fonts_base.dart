@@ -128,11 +128,11 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       descriptor.familyWithVariant,
       assetManifestJson,
     );
-    if (assetPath != '') {
+    if (assetPath != null) {
       byteData = rootBundle.load(assetPath);
     }
     if (await byteData != null) {
-      return loadFontByteData(familyWithVariantString, byteData);
+      return _loadFontByteData(familyWithVariantString, byteData);
     }
 
     // Check if this font can be loaded from the device file system.
@@ -140,7 +140,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       byteData = _loadFontFromDeviceFileSystem(familyWithVariantString);
     }
     if (await byteData != null) {
-      return loadFontByteData(familyWithVariantString, byteData);
+      return _loadFontByteData(familyWithVariantString, byteData);
     }
 
     // Attempt to load this font via http.
@@ -149,7 +149,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       descriptor.fontUrl,
     );
     if (await byteData != null) {
-      return loadFontByteData(familyWithVariantString, byteData);
+      return _loadFontByteData(familyWithVariantString, byteData);
     }
   } catch (e) {
     final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
@@ -159,7 +159,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 }
 
 /// Loads a font with [FontLoader], given its name and byte-representation.
-void loadFontByteData(
+void _loadFontByteData(
     String familyWithVariantString, Future<ByteData> byteData) async {
   _loadedFonts.add(familyWithVariantString);
   final fontLoader = FontLoader(familyWithVariantString);
@@ -282,7 +282,7 @@ String _findFamilyWithVariantAssetPath(
   GoogleFontsFamilyWithVariant familyWithVariant,
   Map<String, dynamic> manifestJson,
 ) {
-  if (manifestJson == null) return '';
+  if (manifestJson == null) return null;
 
   final apiFilenamePrefix = familyWithVariant.toApiFilenamePrefix();
 
@@ -306,5 +306,5 @@ String _findFamilyWithVariantAssetPath(
     }
   }
 
-  return '';
+  return null;
 }

@@ -121,7 +121,7 @@ Italic styles will include `Italic` in the filename. Font weights map to file na
 
 ![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/master/readme_images/google_fonts_folder.png)
 
-3. Ensure sure you have listed the folder (e.g. `google_fonts/`) in your `pubspec.yaml` under `assets`.
+3. Ensure that you have listed the folder (e.g. `google_fonts/`) in your `pubspec.yaml` under `assets`.
 
 ![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/master/readme_images/google_fonts_pubspec_assets.png)
 
