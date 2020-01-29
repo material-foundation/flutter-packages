@@ -94,12 +94,7 @@ TextStyle googleFontsTextStyle({
     fontUrl: fonts[matchedVariant],
   );
 
-  try {
-    loadFontIfNecessary(descriptor);
-  } catch (e) {
-    final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
-    print('error: google_fonts was unable to load font $fontName\n$e');
-  }
+  loadFontIfNecessary(descriptor);
 
   return textStyle.copyWith(
     fontFamily: familyWithVariant.toString(),
@@ -126,34 +121,40 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 
   Future<ByteData> byteData;
 
-  // Check if this font can be loaded by the pre-bundled assets.
-  final assetManifestJson = await _loadAssetManifestJson();
-  final assetPath = getFamilyWithVariantManifestPath(
-    descriptor.familyWithVariant,
-    assetManifestJson,
-  );
-  if (assetPath != '') {
-    byteData = rootBundle.load(assetPath);
-  }
-  if (await byteData != null) {
-    return loadFontByteData(familyWithVariantString, byteData);
-  }
+  try {
+    // Check if this font can be loaded by the pre-bundled assets.
+    final assetManifestJson = await _loadAssetManifestJson();
+    final assetPath = getFamilyWithVariantManifestPath(
+      descriptor.familyWithVariant,
+      assetManifestJson,
+    );
+    if (assetPath != '') {
+      byteData = rootBundle.load(assetPath);
+    }
+    if (await byteData != null) {
+      return loadFontByteData(familyWithVariantString, byteData);
+    }
 
-  // Check if this font can be loaded from the device file system.
-  if (!kIsWeb) {
-    byteData = _loadFontFromDeviceFileSystem(familyWithVariantString);
-  }
-  if (await byteData != null) {
-    return loadFontByteData(familyWithVariantString, byteData);
-  }
+    // Check if this font can be loaded from the device file system.
+    if (!kIsWeb) {
+      byteData = _loadFontFromDeviceFileSystem(familyWithVariantString);
+    }
+    if (await byteData != null) {
+      return loadFontByteData(familyWithVariantString, byteData);
+    }
 
-  // Attempt to load this font via http.
-  byteData = _httpFetchFontAndSaveToDevice(
-    familyWithVariantString,
-    descriptor.fontUrl,
-  );
-  await byteData;
-  return loadFontByteData(familyWithVariantString, byteData);
+    // Attempt to load this font via http.
+    byteData = _httpFetchFontAndSaveToDevice(
+      familyWithVariantString,
+      descriptor.fontUrl,
+    );
+    if (await byteData != null) {
+      return loadFontByteData(familyWithVariantString, byteData);
+    }
+  } catch (e) {
+    final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
+    throw Exception('google_fonts was unable to load font $fontName\n$e');
+  }
 }
 
 /// Loads a font with [FontLoader], given its name and byte-representation.
