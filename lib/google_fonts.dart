@@ -11,7 +11,14 @@ import 'package:flutter/material.dart';
 import 'src/google_fonts_base.dart';
 import 'src/google_fonts_variant.dart';
 
+class _Config {
+  var allowHttp = true;
+  var allowWritingLocalFiles = true;
+}
+
 class GoogleFonts {
+  static final config = _Config();
+
   /// Applies the ABeeZee font family from Google Fonts to the given [textStyle].
   ///
   /// See:
