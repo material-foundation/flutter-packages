@@ -20,7 +20,6 @@ main() {
   setUp(() async {
     httpClient = MockHttpClient();
     GoogleFonts.config.allowHttp = true;
-    GoogleFonts.config.allowWritingLocalFiles = true;
     when(httpClient.get(any)).thenAnswer((_) async {
       return http.Response('fake response body - success', 200);
     });
