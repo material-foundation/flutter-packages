@@ -1,3 +1,7 @@
+## [0.3.6] - 2020-01-31
+
+* Add a config to the `GoogleFonts` class with an `allowHttp` option.
+
 ## [0.3.5] - 2020-01-23
 
 * Update generator to get most up-to-date urls from fonts.google.com. 
