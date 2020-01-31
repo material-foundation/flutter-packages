@@ -13,6 +13,7 @@ import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
+import '../google_fonts.dart';
 import 'google_fonts_descriptor.dart';
 import 'google_fonts_variant.dart';
 
@@ -132,24 +133,27 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   }
 
   _loadedFonts.add(familyWithVariantString);
-  final fontLoader = FontLoader(familyWithVariantString);
 
   Future<ByteData> byteData;
   if (!kIsWeb) {
     byteData = _loadFontFromDeviceFileSystem(familyWithVariantString);
   }
   final localFontFound = byteData != null && await byteData != null;
-  if (!localFontFound) {
+  if (!localFontFound && GoogleFonts.config.allowHttp) {
     byteData = _httpFetchFontAndSaveToDevice(
       familyWithVariantString,
       descriptor.fontUrl,
     );
   }
-  fontLoader.addFont(byteData);
-  await fontLoader.load();
-  // TODO: Remove this once it is done automatically after loading a font.
-  // https://github.com/flutter/flutter/issues/44460
-  PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
+  final anyFontDataFound = byteData != null && await byteData != null;
+  if (anyFontDataFound) {
+    final fontLoader = FontLoader(familyWithVariantString);
+    fontLoader.addFont(byteData);
+    await fontLoader.load();
+    // TODO: Remove this once it is done automatically after loading a font.
+    // https://github.com/flutter/flutter/issues/44460
+    PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
+  }
 }
 
 // Returns [GoogleFontsVariant] from [variantsToCompare] that most closely

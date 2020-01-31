@@ -5,6 +5,7 @@ import 'dart:typed_data';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:google_fonts/src/google_fonts_base.dart';
 import 'package:google_fonts/src/google_fonts_descriptor.dart';
 import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
@@ -18,6 +19,7 @@ class MockHttpClient extends Mock implements http.Client {}
 main() {
   setUp(() async {
     httpClient = MockHttpClient();
+    GoogleFonts.config.allowHttp = true;
     when(httpClient.get(any)).thenAnswer((_) async {
       return http.Response('fake response body - success', 200);
     });
@@ -53,6 +55,26 @@ main() {
     await loadFontIfNecessary(fakeDescriptor);
 
     verify(httpClient.get(fakeUrl)).called(1);
+  });
+
+  testWidgets('does not call http if config is false', (tester) async {
+    final fakeUrl = Uri.http('fonts.google.com', '/Foo');
+    final fakeDescriptor = GoogleFontsDescriptor(
+      familyWithVariant: GoogleFontsFamilyWithVariant(
+        family: 'Foo',
+        googleFontsVariant: GoogleFontsVariant(
+          fontWeight: FontWeight.w400,
+          fontStyle: FontStyle.normal,
+        ),
+      ),
+      fontUrl: fakeUrl.toString(),
+    );
+
+    GoogleFonts.config.allowHttp = false;
+
+    await loadFontIfNecessary(fakeDescriptor);
+
+    verifyNever(httpClient.get(anything));
   });
 
   testWidgets(
