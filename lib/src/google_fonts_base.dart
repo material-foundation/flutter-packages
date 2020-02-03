@@ -156,7 +156,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       }
     } else {
       throw (Exception(
-          "GoogleFonts.config.allowHttp is true but font $fontName was not found "
+          "GoogleFonts.config.allowHttp is false but font $fontName was not found "
           "in the application assets. Ensure $fontName.otf exists in a folder "
           "that is included in your pubspec's assets."));
     }
