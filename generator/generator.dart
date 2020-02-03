@@ -16,7 +16,7 @@ void main() async {
 
   final fontDirectory = await _readFontsProtoData(protoUrl);
   print('\nValidating font URLs...');
-  await _verifyUrls(fontDirectory);
+//  await _verifyUrls(fontDirectory);
   print(_success);
 
   print('\nGenerating $_generatedFilePath...');
@@ -71,7 +71,8 @@ void _generateDartFile(Directory fontDirectory) {
             'variantWeight': variant.weight.start,
             'variantStyle':
                 variant.italic.start.round() == 1 ? 'italic' : 'normal',
-            'url': _hashToUrl(variant.file.hash),
+            'hash': _hashToString(variant.file.hash),
+            'length': variant.file.fileSize,
           }
       ],
       'themeParams': [
@@ -127,7 +128,8 @@ Future<void> _verifyUrls(Directory fontDirectory) async {
   final client = http.Client();
   for (final family in fontDirectory.family) {
     for (final font in family.fonts) {
-      final urlString = _hashToUrl(font.file.hash);
+      final urlString =
+          'https://fonts.gstatic.com/s/a/${_hashToString(font.file.hash)}.ttf';
       await _tryUrl(client, urlString);
       progressBar.update(progressBar.current + 1);
     }
@@ -144,11 +146,11 @@ Future<void> _tryUrl(http.Client client, String url) async {
   }
 }
 
-String _hashToUrl(List<int> bytes) {
+String _hashToString(List<int> bytes) {
   var fileName = '';
   for (final byte in bytes) {
     final convertedByte = byte.toRadixString(16).padLeft(2, '0');
     fileName += convertedByte;
   }
-  return 'https://fonts.gstatic.com/s/a/$fileName.ttf';
+  return fileName;
 }

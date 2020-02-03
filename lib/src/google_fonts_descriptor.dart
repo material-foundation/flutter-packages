@@ -9,10 +9,18 @@ import 'google_fonts_family_with_variant.dart';
 class GoogleFontsDescriptor {
   const GoogleFontsDescriptor({
     @required this.familyWithVariant,
-    @required this.fontUrl,
+    @required this.file,
   })  : assert(familyWithVariant != null),
-        assert(fontUrl != null);
+        assert(file != null);
 
   final GoogleFontsFamilyWithVariant familyWithVariant;
-  final String fontUrl;
+  final GoogleFontsFile file;
+}
+
+// TODO: Document this
+class GoogleFontsFile {
+  GoogleFontsFile(this.fontFileHash, this.expectedLength);
+
+  final String fontFileHash;
+  final int expectedLength;
 }

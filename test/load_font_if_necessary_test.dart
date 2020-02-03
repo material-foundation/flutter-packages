@@ -16,12 +16,24 @@ import 'package:path_provider/path_provider.dart';
 
 class MockHttpClient extends Mock implements http.Client {}
 
+/// TODO FIX THIS WHOLE FILE TO WORK WITH HASHING.
+const _fakeResponse = 'fake response body - success';
+// The number of bytes in _fakeResponse.
+const _fakeResponseLengthInBytes = 28;
+// Computed by converting _fakeResponse to bytes and getting sha 256 hash.
+const _fakeResponseHash =
+    '1194f6ffe4d2f05258573616a77932c38041f3102763096c19437c3db1818a04';
+final _fakeResponseFile = GoogleFontsFile(
+  _fakeResponseHash,
+  _fakeResponseLengthInBytes,
+);
+
 main() {
   setUp(() async {
     httpClient = MockHttpClient();
     GoogleFonts.config.allowHttp = true;
     when(httpClient.get(any)).thenAnswer((_) async {
-      return http.Response('fake response body - success', 200);
+      return http.Response(_fakeResponse, 200);
     });
 
     // The following snippet pulled from
@@ -41,7 +53,6 @@ main() {
   });
 
   testWidgets('loadFontIfNecessary method calls http get', (tester) async {
-    final fakeUrl = Uri.http('fonts.google.com', '/Foo');
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
           family: 'Foo',
@@ -49,16 +60,15 @@ main() {
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           )),
-      fontUrl: fakeUrl.toString(),
+      file: _fakeResponseFile,
     );
 
     await loadFontIfNecessary(fakeDescriptor);
 
-    verify(httpClient.get(fakeUrl)).called(1);
+    verify(httpClient.get(anything)).called(1);
   });
 
   testWidgets('does not call http if config is false', (tester) async {
-    final fakeUrl = Uri.http('fonts.google.com', '/Foo');
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
         family: 'Foo',
@@ -67,7 +77,7 @@ main() {
           fontStyle: FontStyle.normal,
         ),
       ),
-      fontUrl: fakeUrl.toString(),
+      file: _fakeResponseFile,
     );
 
     GoogleFonts.config.allowHttp = false;
@@ -80,7 +90,6 @@ main() {
   testWidgets(
       'loadFontIfNecessary method does not make http get request on '
       'subsequent calls', (tester) async {
-    final fakeUrl = Uri.http('fonts.google.com', '/Foo');
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
         family: 'Foo',
@@ -89,24 +98,23 @@ main() {
           fontStyle: FontStyle.normal,
         ),
       ),
-      fontUrl: fakeUrl.toString(),
+      file: _fakeResponseFile,
     );
 
     // 1st call.
     await loadFontIfNecessary(fakeDescriptor);
-    verify(httpClient.get(fakeUrl)).called(1);
+    verify(httpClient.get(anything)).called(1);
 
     // 2nd call.
     await loadFontIfNecessary(fakeDescriptor);
-    verifyNever(httpClient.get(fakeUrl));
+    verifyNever(httpClient.get(anything));
 
     // 3rd call.
     await loadFontIfNecessary(fakeDescriptor);
-    verifyNever(httpClient.get(fakeUrl));
+    verifyNever(httpClient.get(anything));
   });
 
   testWidgets('loadFontIfNecessary method writes font file', (tester) async {
-    final fakeUrl = Uri.http('fonts.google.com', '/Foo');
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
           family: 'Foo',
@@ -114,7 +122,7 @@ main() {
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           )),
-      fontUrl: fakeUrl.toString(),
+      file: _fakeResponseFile,
     );
 
     var directoryContents = await getApplicationSupportDirectory();
@@ -151,7 +159,7 @@ main() {
           fontStyle: FontStyle.italic,
         ),
       ),
-      fontUrl: fooUrl.toString(),
+      file: _fakeResponseFile,
     );
 
     // Call loadFontIfNecessary and verify no http request happens because
@@ -168,7 +176,7 @@ main() {
           fontStyle: FontStyle.italic,
         ),
       ),
-      fontUrl: barUrl.toString(),
+      file: _fakeResponseFile,
     );
 
     // Call loadFontIfNecessary and verify that an http request happens because

@@ -12,6 +12,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
+import 'package:crypto/crypto.dart';
 
 import '../google_fonts.dart';
 import 'google_fonts_descriptor.dart';
@@ -53,7 +54,7 @@ TextStyle googleFontsTextStyle({
   Color decorationColor,
   TextDecorationStyle decorationStyle,
   double decorationThickness,
-  @required Map<GoogleFontsVariant, String> fonts,
+  @required Map<GoogleFontsVariant, GoogleFontsFile> fonts,
 }) {
   assert(fontFamily != null);
   assert(fonts != null);
@@ -92,7 +93,7 @@ TextStyle googleFontsTextStyle({
 
   final descriptor = GoogleFontsDescriptor(
     familyWithVariant: familyWithVariant,
-    fontUrl: fonts[matchedVariant],
+    file: fonts[matchedVariant],
   );
 
   loadFontIfNecessary(descriptor);
@@ -104,14 +105,14 @@ TextStyle googleFontsTextStyle({
 }
 
 /// Loads a font into the [FontLoader] with [googleFontsFamilyName] for the
-/// matching [fontUrl].
+/// matching [fontFileHash].
 ///
 /// If a font with the [fontName] has already been loaded into memory, then
 /// this method does nothing as there is no need to load it a second time.
 ///
 /// Otherwise, this method will first check to see if the font is available on
 /// disk. If it is, then it loads it into the [FontLoader]. If it is not on
-/// disk, then it fetches it via the [fontUrl], stores it on disk, and loads it
+/// disk, then it fetches it via the [fontFileHash], stores it on disk, and loads it
 /// into the [FontLoader].
 Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final familyWithVariantString = descriptor.familyWithVariant.toString();
@@ -142,7 +143,8 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   if (!localFontFound && GoogleFonts.config.allowHttp) {
     byteData = _httpFetchFontAndSaveToDevice(
       familyWithVariantString,
-      descriptor.fontUrl,
+      descriptor.file.fontFileHash,
+      descriptor.file.expectedLength,
     );
   }
   final anyFontDataFound = byteData != null && await byteData != null;
@@ -184,8 +186,10 @@ GoogleFontsVariant _closestMatch(
 /// This function can return null if the font fails to load from the URL.
 Future<ByteData> _httpFetchFontAndSaveToDevice(
   String fontName,
-  String fontUrl,
+  String fontHash,
+  int expectedLength,
 ) async {
+  final fontUrl = 'https://fonts.gstatic.com/s/a/$fontHash.ttf';
   final uri = Uri.tryParse(fontUrl);
   if (uri == null) {
     throw Exception('Invalid fontUrl: $fontUrl');
@@ -193,6 +197,9 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
 
   final response = await httpClient.get(uri);
   if (response.statusCode == 200) {
+    if (!_fileIsSecure(expectedLength, fontHash, response.bodyBytes)) {
+      throw Exception('file is not secure!!!!');
+    }
     _saveFontToDeviceFileSystem(fontName, response.bodyBytes);
     return ByteData.view(response.bodyBytes.buffer);
   } else {
@@ -285,4 +292,19 @@ bool _isFamilyWithVariantInManifest(
   }
 
   return false;
+}
+
+bool _fileIsSecure(
+  int expectedFileSize,
+  String expectedFileHash,
+  Uint8List bytes,
+) {
+  print('expected bytes length: $expectedFileSize');
+  print('bytes length: ${bytes.length}');
+  print('expected file hash: $expectedFileHash');
+  print('file hash: ${sha256.convert(bytes).toString()}');
+  final actualFileLength = bytes.length;
+  final actualFileHash = sha256.convert(bytes).toString();
+  return expectedFileSize == actualFileLength &&
+      expectedFileHash == actualFileHash;
 }
