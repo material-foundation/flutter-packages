@@ -113,7 +113,21 @@ main() {
 
     GoogleFonts.config.allowHttp = false;
 
-    await loadFontIfNecessary(fakeDescriptor);
+    // Call loadFontIfNecessary and verify that it prints an error.
+    overridePrint(() async {
+      await loadFontIfNecessary(fakeDescriptor);
+      expect(printLog.length, 1);
+      expect(
+        printLog[0],
+        startsWith("google_fonts was unable to load font Foo-Regular"),
+      );
+      expect(
+        printLog[0],
+        endsWith(
+          "Ensure Foo-Regular.otf exists in a folder that is included in your pubspec's assets.",
+        ),
+      );
+    });
 
     verifyNever(httpClient.get(anything));
   });
