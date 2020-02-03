@@ -231,13 +231,13 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
   }
 }
 
-Future<String> _localPath() async {
+Future<String> get _localPath async {
   final directory = await getApplicationSupportDirectory();
   return directory.path;
 }
 
 Future<File> _localFile(String name) async {
-  final path = await _localPath();
+  final path = await _localPath;
   // TODO(clocksmith): what if this file is an otf?
   return File('$path/$name.ttf');
 }
