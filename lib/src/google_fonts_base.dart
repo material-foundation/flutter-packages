@@ -13,6 +13,7 @@ import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
+import '../google_fonts.dart';
 import 'google_fonts_descriptor.dart';
 import 'google_fonts_variant.dart';
 
@@ -113,15 +114,16 @@ TextStyle googleFontsTextStyle({
 /// and stored on disk. In all cases, the font is loaded into the [FontLoader].
 Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final familyWithVariantString = descriptor.familyWithVariant.toString();
+  final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
   // If this font has already been loaded, then there is no need to load it
   // again.
   if (_loadedFonts.contains(familyWithVariantString)) {
     return;
   }
 
-  Future<ByteData> byteData;
-
   try {
+    Future<ByteData> byteData;
+
     // Check if this font can be loaded by the pre-bundled assets.
     final assetManifestJson = await _loadAssetManifestJson();
     final assetPath = _findFamilyWithVariantAssetPath(
@@ -143,16 +145,22 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       return _loadFontByteData(familyWithVariantString, byteData);
     }
 
-    // Attempt to load this font via http.
-    byteData = _httpFetchFontAndSaveToDevice(
-      familyWithVariantString,
-      descriptor.fontUrl,
-    );
-    if (await byteData != null) {
-      return _loadFontByteData(familyWithVariantString, byteData);
+    // Attempt to load this font via http, unless disallowed.
+    if (GoogleFonts.config.allowHttp) {
+      byteData = _httpFetchFontAndSaveToDevice(
+        familyWithVariantString,
+        descriptor.fontUrl,
+      );
+      if (await byteData != null) {
+        return _loadFontByteData(familyWithVariantString, byteData);
+      }
+    } else {
+      throw (Exception(
+          "GoogleFonts.config.allowHttp is true but font $fontName was not found "
+          "in the application assets. Ensure $fontName.otf exists in a folder "
+          "that is included in your pubspec's assets."));
     }
   } catch (e) {
-    final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
     print('error: google_fonts was unable to load font $fontName because the '
         'following exception occured\n$e');
   }
@@ -161,13 +169,16 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 /// Loads a font with [FontLoader], given its name and byte-representation.
 void _loadFontByteData(
     String familyWithVariantString, Future<ByteData> byteData) async {
-  _loadedFonts.add(familyWithVariantString);
-  final fontLoader = FontLoader(familyWithVariantString);
-  fontLoader.addFont(byteData);
-  await fontLoader.load();
-  // TODO: Remove this once it is done automatically after loading a font.
-  // https://github.com/flutter/flutter/issues/44460
-  PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
+  final anyFontDataFound = byteData != null && await byteData != null;
+  if (anyFontDataFound) {
+    _loadedFonts.add(familyWithVariantString);
+    final fontLoader = FontLoader(familyWithVariantString);
+    fontLoader.addFont(byteData);
+    await fontLoader.load();
+    // TODO: Remove this once it is done automatically after loading a font.
+    // https://github.com/flutter/flutter/issues/44460
+    PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
+  }
 }
 
 // Returns [GoogleFontsVariant] from [variantsToCompare] that most closely
@@ -220,13 +231,13 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
   }
 }
 
-Future<String> get _localPath async {
+Future<String> _localPath() async {
   final directory = await getApplicationSupportDirectory();
   return directory.path;
 }
 
 Future<File> _localFile(String name) async {
-  final path = await _localPath;
+  final path = await _localPath();
   // TODO(clocksmith): what if this file is an otf?
   return File('$path/$name.ttf');
 }

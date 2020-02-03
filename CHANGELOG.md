@@ -1,7 +1,11 @@
-## [0.3.6] - 2020-01-29
+## [0.3.7] - 2020-02-03
 
 * Fix asset font loading bug
 * Update asset font README instructions 
+
+## [0.3.6] - 2020-01-31
+
+* Add a config to the `GoogleFonts` class with an `allowHttp` option.
 
 ## [0.3.5] - 2020-01-23
 
