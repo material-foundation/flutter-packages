@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
@@ -15,6 +16,15 @@ import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
 class MockHttpClient extends Mock implements http.Client {}
+
+var printLog = [];
+overridePrint(testFn()) => () {
+      var spec = new ZoneSpecification(print: (_, __, ___, String msg) {
+        // Add to log instead of printing to stdout
+        printLog.add(msg);
+      });
+      return Zone.current.fork(specification: spec).run(testFn);
+    };
 
 main() {
   setUp(() async {
@@ -37,6 +47,7 @@ main() {
   });
 
   tearDown(() {
+    printLog = [];
     clearCache();
   });
 
@@ -57,6 +68,36 @@ main() {
     verify(httpClient.get(fakeUrl)).called(1);
   });
 
+  testWidgets('loadFontIfNecessary method throws if font cannot be loaded',
+      (tester) async {
+    // Mock a bad response.
+    when(httpClient.get(any)).thenAnswer((_) async {
+      return http.Response('fake response body - failure', 300);
+    });
+
+    final fooUrl = Uri.http('fonts.google.com', '/Foo');
+    final descriptorInAssets = GoogleFontsDescriptor(
+      familyWithVariant: GoogleFontsFamilyWithVariant(
+        family: 'Foo',
+        googleFontsVariant: GoogleFontsVariant(
+          fontWeight: FontWeight.w900,
+          fontStyle: FontStyle.italic,
+        ),
+      ),
+      fontUrl: fooUrl.toString(),
+    );
+
+    // Call loadFontIfNecessary and verify that it prints an error.
+    overridePrint(() async {
+      await loadFontIfNecessary(descriptorInAssets);
+      expect(printLog.length, 1);
+      expect(
+        printLog[0],
+        startsWith('google_fonts was unable to load font Foo-BlackItalic'),
+      );
+    });
+  });
+
   testWidgets('does not call http if config is false', (tester) async {
     final fakeUrl = Uri.http('fonts.google.com', '/Foo');
     final fakeDescriptor = GoogleFontsDescriptor(
@@ -72,7 +113,21 @@ main() {
 
     GoogleFonts.config.allowHttp = false;
 
-    await loadFontIfNecessary(fakeDescriptor);
+    // Call loadFontIfNecessary and verify that it prints an error.
+    overridePrint(() async {
+      await loadFontIfNecessary(fakeDescriptor);
+      expect(printLog.length, 1);
+      expect(
+        printLog[0],
+        startsWith("google_fonts was unable to load font Foo-Regular"),
+      );
+      expect(
+        printLog[0],
+        endsWith(
+          "Ensure Foo-Regular.otf exists in a folder that is included in your pubspec's assets.",
+        ),
+      );
+    });
 
     verifyNever(httpClient.get(anything));
   });

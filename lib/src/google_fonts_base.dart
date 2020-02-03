@@ -109,44 +109,69 @@ TextStyle googleFontsTextStyle({
 /// If a font with the [fontName] has already been loaded into memory, then
 /// this method does nothing as there is no need to load it a second time.
 ///
-/// Otherwise, this method will first check to see if the font is available on
-/// disk. If it is, then it loads it into the [FontLoader]. If it is not on
-/// disk, then it fetches it via the [fontUrl], stores it on disk, and loads it
-/// into the [FontLoader].
+/// Otherwise, this method will first check to see if the font is available
+/// as an asset, then on disk. If it isn't, it is fetched via the [fontUrl]
+/// and stored on disk. In all cases, the font is loaded into the [FontLoader].
 Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final familyWithVariantString = descriptor.familyWithVariant.toString();
+  final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
   // If this font has already been loaded, then there is no need to load it
   // again.
   if (_loadedFonts.contains(familyWithVariantString)) {
     return;
   }
 
-  // If this font can be loaded by the pre-bundled assets, then there is no
-  // need to load it at all.
-  final assetManifestJson = await _loadAssetManifestJson();
+  try {
+    Future<ByteData> byteData;
 
-  if (_isFamilyWithVariantInManifest(
-    descriptor.familyWithVariant,
-    assetManifestJson,
-  )) {
-    return;
-  }
-
-  _loadedFonts.add(familyWithVariantString);
-
-  Future<ByteData> byteData;
-  if (!kIsWeb) {
-    byteData = _loadFontFromDeviceFileSystem(familyWithVariantString);
-  }
-  final localFontFound = byteData != null && await byteData != null;
-  if (!localFontFound && GoogleFonts.config.allowHttp) {
-    byteData = _httpFetchFontAndSaveToDevice(
-      familyWithVariantString,
-      descriptor.fontUrl,
+    // Check if this font can be loaded by the pre-bundled assets.
+    final assetManifestJson = await _loadAssetManifestJson();
+    final assetPath = _findFamilyWithVariantAssetPath(
+      descriptor.familyWithVariant,
+      assetManifestJson,
     );
+    if (assetPath != null) {
+      byteData = rootBundle.load(assetPath);
+    }
+    if (await byteData != null) {
+      return _loadFontByteData(familyWithVariantString, byteData);
+    }
+
+    // Check if this font can be loaded from the device file system.
+    if (!kIsWeb) {
+      byteData = _loadFontFromDeviceFileSystem(familyWithVariantString);
+    }
+    if (await byteData != null) {
+      return _loadFontByteData(familyWithVariantString, byteData);
+    }
+
+    // Attempt to load this font via http, unless disallowed.
+    if (GoogleFonts.config.allowHttp) {
+      byteData = _httpFetchFontAndSaveToDevice(
+        familyWithVariantString,
+        descriptor.fontUrl,
+      );
+      if (await byteData != null) {
+        return _loadFontByteData(familyWithVariantString, byteData);
+      }
+    } else {
+      throw (Exception(
+          "GoogleFonts.config.allowHttp is false but font $fontName was not found "
+          "in the application assets. Ensure $fontName.otf exists in a folder "
+          "that is included in your pubspec's assets."));
+    }
+  } catch (e) {
+    print('error: google_fonts was unable to load font $fontName because the '
+        'following exception occured\n$e');
   }
+}
+
+/// Loads a font with [FontLoader], given its name and byte-representation.
+void _loadFontByteData(
+    String familyWithVariantString, Future<ByteData> byteData) async {
   final anyFontDataFound = byteData != null && await byteData != null;
   if (anyFontDataFound) {
+    _loadedFonts.add(familyWithVariantString);
     final fontLoader = FontLoader(familyWithVariantString);
     fontLoader.addFont(byteData);
     await fontLoader.load();
@@ -191,7 +216,12 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
     throw Exception('Invalid fontUrl: $fontUrl');
   }
 
-  final response = await httpClient.get(uri);
+  var response;
+  try {
+    response = await httpClient.get(uri);
+  } catch (e) {
+    throw Exception('Failed to load font with url: $fontUrl');
+  }
   if (response.statusCode == 200) {
     _saveFontToDeviceFileSystem(fontName, response.bodyBytes);
     return ByteData.view(response.bodyBytes.buffer);
@@ -257,11 +287,15 @@ Future<Map<String, dynamic>> _loadAssetManifestJson() async {
   }
 }
 
-bool _isFamilyWithVariantInManifest(
+/// Looks for a matching [familyWithVariant] font, provided the asset manifest.
+/// Returns the path of the font asset if found, otherwise an empty string.
+String _findFamilyWithVariantAssetPath(
   GoogleFontsFamilyWithVariant familyWithVariant,
   Map<String, dynamic> manifestJson,
 ) {
-  if (manifestJson == null) return false;
+  if (manifestJson == null) return null;
+
+  final apiFilenamePrefix = familyWithVariant.toApiFilenamePrefix();
 
   for (final assetList in manifestJson.values) {
     for (final String asset in assetList) {
@@ -276,13 +310,12 @@ bool _isFamilyWithVariantInManifest(
       if (matchingFontSuffix != null) {
         final assetWithRemovedExtension =
             asset.substring(0, asset.length - matchingFontSuffix.length);
-        if (assetWithRemovedExtension
-            .endsWith(familyWithVariant.toApiFilenamePrefix())) {
-          return true;
+        if (assetWithRemovedExtension.endsWith(apiFilenamePrefix)) {
+          return asset;
         }
       }
     }
   }
 
-  return false;
+  return null;
 }
