@@ -41,8 +41,8 @@ main() {
     ServicesBinding.instance.defaultBinaryMessenger
         .setMockMessageHandler('flutter/assets', (message) {
       final Uint8List encoded =
-      utf8.encoder.convert('{"google_fonts/Foo-BlackItalic.ttf":'
-          '["google_fonts/Foo-BlackItalic.ttf"]}');
+          utf8.encoder.convert('{"google_fonts/Foo-BlackItalic.ttf":'
+              '["google_fonts/Foo-BlackItalic.ttf"]}');
       return Future.value(encoded.buffer.asByteData());
     });
 
@@ -60,7 +60,7 @@ main() {
 
   testWidgets(
       'loadFontIfNecessary method does nothing if the font is in the '
-          'Asset Manifest', (tester) async {
+      'Asset Manifest', (tester) async {
     final descriptorInAssets = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
         family: 'Foo',
