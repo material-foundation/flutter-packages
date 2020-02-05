@@ -19,8 +19,10 @@ class GoogleFontsDescriptor {
 
 // TODO: Document this
 class GoogleFontsFile {
-  GoogleFontsFile(this.fontFileHash, this.expectedLength);
+  GoogleFontsFile(this.expectedFileHash, this.expectedLength);
 
-  final String fontFileHash;
+  final String expectedFileHash;
   final int expectedLength;
+
+  String get url => 'https://fonts.gstatic.com/s/a/$expectedFileHash.ttf';
 }

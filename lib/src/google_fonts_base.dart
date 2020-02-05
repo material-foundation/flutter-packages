@@ -105,7 +105,7 @@ TextStyle googleFontsTextStyle({
 }
 
 /// Loads a font into the [FontLoader] with [googleFontsFamilyName] for the
-/// matching [fontFileHash].
+/// matching [expectedFileHash].
 ///
 /// If a font with the [fontName] has already been loaded into memory, then
 /// this method does nothing as there is no need to load it a second time.
@@ -150,17 +150,17 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     if (GoogleFonts.config.allowHttp) {
       byteData = _httpFetchFontAndSaveToDevice(
         familyWithVariantString,
-        descriptor.file.fontFileHash,
-        descriptor.file.expectedLength,
+        descriptor.file,
       );
       if (await byteData != null) {
         return _loadFontByteData(familyWithVariantString, byteData);
       }
     } else {
-      throw (Exception(
-          "GoogleFonts.config.allowHttp is false but font $fontName was not found "
-          "in the application assets. Ensure $fontName.otf exists in a folder "
-          "that is included in your pubspec's assets."));
+      throw Exception(
+        "GoogleFonts.config.allowHttp is false but font $fontName was not "
+        "found in the application assets. Ensure $fontName.otf exists in a "
+        "folder that is included in your pubspec's assets.",
+      );
     }
   } catch (e) {
     print('error: google_fonts was unable to load font $fontName because the '
@@ -211,30 +211,30 @@ GoogleFontsVariant _closestMatch(
 /// This function can return null if the font fails to load from the URL.
 Future<ByteData> _httpFetchFontAndSaveToDevice(
   String fontName,
-  String fontHash,
-  int expectedLength,
+  GoogleFontsFile file,
 ) async {
-  final fontUrl = 'https://fonts.gstatic.com/s/a/$fontHash.ttf';
-  final uri = Uri.tryParse(fontUrl);
+  final uri = Uri.tryParse(file.url);
   if (uri == null) {
-    throw Exception('Invalid fontUrl: $fontUrl');
+    throw Exception('Invalid fontUrl: ${file.url}');
   }
 
   var response;
   try {
     response = await httpClient.get(uri);
   } catch (e) {
-    throw Exception('Failed to load font with url: $fontUrl');
+    throw Exception('Failed to load font with url: ${file.url}');
   }
   if (response.statusCode == 200) {
-    if (!_fileIsSecure(expectedLength, fontHash, response.bodyBytes)) {
-      throw Exception('file is not secure!!!!');
+    if (!_fileIsSecure(file, response.bodyBytes)) {
+      throw Exception(
+        'File from ${file.url} did not match expected length and checksum.',
+      );
     }
     _saveFontToDeviceFileSystem(fontName, response.bodyBytes);
     return ByteData.view(response.bodyBytes.buffer);
   } else {
     // If that call was not successful, throw an error.
-    throw Exception('Failed to load font with url: $fontUrl');
+    throw Exception('Failed to load font with url: ${file.url}');
   }
 }
 
@@ -328,16 +328,11 @@ String _findFamilyWithVariantAssetPath(
 }
 
 bool _fileIsSecure(
-  int expectedFileSize,
-  String expectedFileHash,
+  GoogleFontsFile file,
   Uint8List bytes,
 ) {
-  print('expected bytes length: $expectedFileSize');
-  print('bytes length: ${bytes.length}');
-  print('expected file hash: $expectedFileHash');
-  print('file hash: ${sha256.convert(bytes).toString()}');
   final actualFileLength = bytes.length;
   final actualFileHash = sha256.convert(bytes).toString();
-  return expectedFileSize == actualFileLength &&
-      expectedFileHash == actualFileHash;
+  return file.expectedLength == actualFileLength &&
+      file.expectedFileHash == actualFileHash;
 }

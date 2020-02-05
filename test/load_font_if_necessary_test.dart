@@ -29,7 +29,7 @@ final _fakeResponseFile = GoogleFontsFile(
 );
 
 var printLog = [];
-overridePrint(testFn()) => () {
+overridePrint(Future<void> Function() testFn) => () {
       var spec = new ZoneSpecification(print: (_, __, ___, String msg) {
         // Add to log instead of printing to stdout
         printLog.add(msg);
@@ -85,7 +85,6 @@ main() {
       return http.Response('fake response body - failure', 300);
     });
 
-    final fooUrl = Uri.http('fonts.google.com', '/Foo');
     final descriptorInAssets = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
         family: 'Foo',
@@ -193,49 +192,27 @@ main() {
   });
 
   testWidgets(
-      'loadFontIfNecessary method does nothing if the font is in the '
-      'Asset Manifest', (tester) async {
-    // Add Foo-BlackItalic to mock asset bundle.
-    ServicesBinding.instance.defaultBinaryMessenger
-        .setMockMessageHandler('flutter/assets', (message) {
-      final Uint8List encoded =
-          utf8.encoder.convert('{"google_fonts/Foo-BlackItalic.ttf":'
-              '["google_fonts/Foo-BlackItalic.ttf"]}');
-      return Future.value(encoded.buffer.asByteData());
+      'loadFontIfNecessary does not save anything to disk if the file does not '
+      'match the expected hash', (tester) async {
+    when(httpClient.get(any)).thenAnswer((_) async {
+      return http.Response('malicious intercepted response', 200);
     });
-
-    final fooUrl = Uri.http('fonts.google.com', '/Foo');
-    final descriptorInAssets = GoogleFontsDescriptor(
+    final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
         family: 'Foo',
         googleFontsVariant: GoogleFontsVariant(
-          fontWeight: FontWeight.w900,
-          fontStyle: FontStyle.italic,
+          fontWeight: FontWeight.w400,
+          fontStyle: FontStyle.normal,
         ),
       ),
       file: _fakeResponseFile,
     );
 
-    // Call loadFontIfNecessary and verify no http request happens because
-    // Foo-BlackItalic is in the asset bundle.
-    await loadFontIfNecessary(descriptorInAssets);
-    verifyNever(httpClient.get(fooUrl));
+    var directoryContents = await getApplicationSupportDirectory();
+    expect(directoryContents.listSync().isEmpty, isTrue);
 
-    final barUrl = Uri.http('fonts.google.com', '/Bar');
-    final descriptorNotInAssets = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
-        family: 'Bar',
-        googleFontsVariant: GoogleFontsVariant(
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.italic,
-        ),
-      ),
-      file: _fakeResponseFile,
-    );
-
-    // Call loadFontIfNecessary and verify that an http request happens because
-    // Bar-BoldItalic is in the asset bundle.
-    await loadFontIfNecessary(descriptorNotInAssets);
-    verify(httpClient.get(barUrl)).called(1);
+    await loadFontIfNecessary(fakeDescriptor);
+    directoryContents = await getApplicationSupportDirectory();
+    expect(directoryContents.listSync().isEmpty, isTrue);
   });
 }
