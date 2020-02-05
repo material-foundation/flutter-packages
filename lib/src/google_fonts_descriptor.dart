@@ -1,3 +1,7 @@
+// Copyright 2020 The Flutter team. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
 import 'package:flutter/foundation.dart';
 
 import 'google_fonts_family_with_variant.dart';
@@ -17,7 +21,10 @@ class GoogleFontsDescriptor {
   final GoogleFontsFile file;
 }
 
-// TODO: Document this
+/// Describes a font file as it is _expected_ to be received form the server.
+///
+/// If a file is retrieved and its hash does not match [expectedFileHash], or it
+/// is not of [expectedLength] bytes length, the file will be rejected.
 class GoogleFontsFile {
   GoogleFontsFile(this.expectedFileHash, this.expectedLength);
 
