@@ -46,12 +46,12 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              '我看着暴风雨，美不胜收却也惊心动魄。',
-              style: GoogleFonts.zhiMangXing(textStyle: display1),
+              'You have pushed the button this many times:',
+              style: GoogleFonts.oswald(textStyle: display1),
             ),
             Text(
               '$_counter',
-              style: GoogleFonts.biryani(fontStyle: FontStyle.italic),
+              style: GoogleFonts.lato(fontStyle: FontStyle.italic),
             ),
           ],
         ),
