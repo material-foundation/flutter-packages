@@ -1,3 +1,7 @@
+## [0.3.8] - 2020-02-08
+
+* Fix path_provider usage for web
+
 ## [0.3.7] - 2020-02-03
 
 * Fix asset font loading bug

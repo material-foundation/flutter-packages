@@ -22,6 +22,9 @@ import 'google_fonts_variant.dart';
 final Set<String> _loadedFonts = {};
 
 @visibleForTesting
+bool isWeb = kIsWeb;
+
+@visibleForTesting
 http.Client httpClient = http.Client();
 
 @visibleForTesting
@@ -138,7 +141,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     }
 
     // Check if this font can be loaded from the device file system.
-    if (!kIsWeb) {
+    if (!isWeb) {
       byteData = _loadFontFromDeviceFileSystem(familyWithVariantString);
     }
     if (await byteData != null) {
@@ -223,7 +226,9 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
     throw Exception('Failed to load font with url: $fontUrl');
   }
   if (response.statusCode == 200) {
-    _saveFontToDeviceFileSystem(fontName, response.bodyBytes);
+    if (!isWeb) {
+      _saveFontToDeviceFileSystem(fontName, response.bodyBytes);
+    }
     return ByteData.view(response.bodyBytes.buffer);
   } else {
     // If that call was not successful, throw an error.

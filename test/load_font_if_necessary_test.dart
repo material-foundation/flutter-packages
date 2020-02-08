@@ -11,13 +11,14 @@ import 'package:google_fonts/src/google_fonts_base.dart';
 import 'package:google_fonts/src/google_fonts_descriptor.dart';
 import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:google_fonts/src/google_fonts_variant.dart';
-import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
+import 'package:mockito/mockito.dart';
 import 'package:path_provider/path_provider.dart';
 
 class MockHttpClient extends Mock implements http.Client {}
 
 var printLog = [];
+
 overridePrint(testFn()) => () {
       var spec = new ZoneSpecification(print: (_, __, ___, String msg) {
         // Add to log instead of printing to stdout
@@ -28,6 +29,7 @@ overridePrint(testFn()) => () {
 
 main() {
   setUp(() async {
+    isWeb = false;
     httpClient = MockHttpClient();
     GoogleFonts.config.allowHttp = true;
     when(httpClient.get(any)).thenAnswer((_) async {
@@ -183,6 +185,29 @@ main() {
       directoryContents.listSync().single.toString().contains('Foo'),
       isTrue,
     );
+  });
+
+  testWidgets('loadFontIfNecessary method doesn\'t write font file on web',
+      (tester) async {
+    isWeb = true;
+    final fakeUrl = Uri.http('fonts.google.com', '/Foo');
+    final fakeDescriptor = GoogleFontsDescriptor(
+      familyWithVariant: GoogleFontsFamilyWithVariant(
+          family: 'Foo',
+          googleFontsVariant: GoogleFontsVariant(
+            fontWeight: FontWeight.w400,
+            fontStyle: FontStyle.normal,
+          )),
+      fontUrl: fakeUrl.toString(),
+    );
+
+    var directoryContents = await getApplicationSupportDirectory();
+    expect(directoryContents.listSync().isEmpty, isTrue);
+
+    await loadFontIfNecessary(fakeDescriptor);
+    directoryContents = await getApplicationSupportDirectory();
+
+    expect(directoryContents.listSync().isEmpty, isTrue);
   });
 
   testWidgets(
