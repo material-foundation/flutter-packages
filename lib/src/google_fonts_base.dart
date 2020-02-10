@@ -225,7 +225,7 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
     throw Exception('Failed to load font with url: ${file.url}');
   }
   if (response.statusCode == 200) {
-    if (!_fileIsSecure(file, response.bodyBytes)) {
+    if (!_isFileSecure(file, response.bodyBytes)) {
       throw Exception(
         'File from ${file.url} did not match expected length and checksum.',
       );
@@ -327,7 +327,7 @@ String _findFamilyWithVariantAssetPath(
   return null;
 }
 
-bool _fileIsSecure(
+bool _isFileSecure(
   GoogleFontsFile file,
   Uint8List bytes,
 ) {

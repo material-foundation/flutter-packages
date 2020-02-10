@@ -26,6 +26,7 @@ final _fakeResponseFile = GoogleFontsFile(
   _fakeResponseLengthInBytes,
 );
 
+// =============================== WARNING! ====================================
 // Do not add tests to this test file. Because the set up mocks a system message
 // handler (flutter/assets), that can not be undone, no other tests should be
 // written in this file.
