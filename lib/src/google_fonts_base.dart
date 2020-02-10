@@ -12,6 +12,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
+import 'package:crypto/crypto.dart';
 
 import '../google_fonts.dart';
 import 'google_fonts_descriptor.dart';
@@ -53,7 +54,7 @@ TextStyle googleFontsTextStyle({
   Color decorationColor,
   TextDecorationStyle decorationStyle,
   double decorationThickness,
-  @required Map<GoogleFontsVariant, String> fonts,
+  @required Map<GoogleFontsVariant, GoogleFontsFile> fonts,
 }) {
   assert(fontFamily != null);
   assert(fonts != null);
@@ -92,7 +93,7 @@ TextStyle googleFontsTextStyle({
 
   final descriptor = GoogleFontsDescriptor(
     familyWithVariant: familyWithVariant,
-    fontUrl: fonts[matchedVariant],
+    file: fonts[matchedVariant],
   );
 
   loadFontIfNecessary(descriptor);
@@ -104,7 +105,7 @@ TextStyle googleFontsTextStyle({
 }
 
 /// Loads a font into the [FontLoader] with [googleFontsFamilyName] for the
-/// matching [fontUrl].
+/// matching [expectedFileHash].
 ///
 /// If a font with the [fontName] has already been loaded into memory, then
 /// this method does nothing as there is no need to load it a second time.
@@ -149,16 +150,17 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     if (GoogleFonts.config.allowHttp) {
       byteData = _httpFetchFontAndSaveToDevice(
         familyWithVariantString,
-        descriptor.fontUrl,
+        descriptor.file,
       );
       if (await byteData != null) {
         return _loadFontByteData(familyWithVariantString, byteData);
       }
     } else {
-      throw (Exception(
-          "GoogleFonts.config.allowHttp is false but font $fontName was not found "
-          "in the application assets. Ensure $fontName.otf exists in a folder "
-          "that is included in your pubspec's assets."));
+      throw Exception(
+        "GoogleFonts.config.allowHttp is false but font $fontName was not "
+        "found in the application assets. Ensure $fontName.otf exists in a "
+        "folder that is included in your pubspec's assets.",
+      );
     }
   } catch (e) {
     print('error: google_fonts was unable to load font $fontName because the '
@@ -209,25 +211,30 @@ GoogleFontsVariant _closestMatch(
 /// This function can return null if the font fails to load from the URL.
 Future<ByteData> _httpFetchFontAndSaveToDevice(
   String fontName,
-  String fontUrl,
+  GoogleFontsFile file,
 ) async {
-  final uri = Uri.tryParse(fontUrl);
+  final uri = Uri.tryParse(file.url);
   if (uri == null) {
-    throw Exception('Invalid fontUrl: $fontUrl');
+    throw Exception('Invalid fontUrl: ${file.url}');
   }
 
   var response;
   try {
     response = await httpClient.get(uri);
   } catch (e) {
-    throw Exception('Failed to load font with url: $fontUrl');
+    throw Exception('Failed to load font with url: ${file.url}');
   }
   if (response.statusCode == 200) {
+    if (!_isFileSecure(file, response.bodyBytes)) {
+      throw Exception(
+        'File from ${file.url} did not match expected length and checksum.',
+      );
+    }
     _saveFontToDeviceFileSystem(fontName, response.bodyBytes);
     return ByteData.view(response.bodyBytes.buffer);
   } else {
     // If that call was not successful, throw an error.
-    throw Exception('Failed to load font with url: $fontUrl');
+    throw Exception('Failed to load font with url: ${file.url}');
   }
 }
 
@@ -318,4 +325,14 @@ String _findFamilyWithVariantAssetPath(
   }
 
   return null;
+}
+
+bool _isFileSecure(
+  GoogleFontsFile file,
+  Uint8List bytes,
+) {
+  final actualFileLength = bytes.length;
+  final actualFileHash = sha256.convert(bytes).toString();
+  return file.expectedLength == actualFileLength &&
+      file.expectedFileHash == actualFileHash;
 }

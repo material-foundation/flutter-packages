@@ -1,3 +1,7 @@
+## [0.3.8] - 2020-02-10
+
+* Add byte length and checksum verification for font files downloaded. 
+
 ## [0.3.7] - 2020-02-03
 
 * Fix asset font loading bug
