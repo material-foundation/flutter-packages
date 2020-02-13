@@ -1,6 +1,10 @@
-## [0.3.8] - 2020-02-08
+## [0.3.9] - 2020-02-13
 
 * Fix path_provider usage for web
+
+## [0.3.8] - 2020-02-10
+
+* Add byte length and checksum verification for font files downloaded. 
 
 ## [0.3.7] - 2020-02-03
 

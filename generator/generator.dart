@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'dart:io';
+import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:mustache/mustache.dart';
@@ -15,7 +16,7 @@ void main() async {
   print('Success! Using $protoUrl');
 
   final fontDirectory = await _readFontsProtoData(protoUrl);
-  print('\nValidating font URLs...');
+  print('\nValidating font URLs and file contents...');
   await _verifyUrls(fontDirectory);
   print(_success);
 
@@ -71,7 +72,8 @@ void _generateDartFile(Directory fontDirectory) {
             'variantWeight': variant.weight.start,
             'variantStyle':
                 variant.italic.start.round() == 1 ? 'italic' : 'normal',
-            'url': _hashToUrl(variant.file.hash),
+            'hash': _hashToString(variant.file.hash),
+            'length': variant.file.fileSize,
           }
       ],
       'themeParams': [
@@ -127,28 +129,35 @@ Future<void> _verifyUrls(Directory fontDirectory) async {
   final client = http.Client();
   for (final family in fontDirectory.family) {
     for (final font in family.fonts) {
-      final urlString = _hashToUrl(font.file.hash);
-      await _tryUrl(client, urlString);
+      final urlString =
+          'https://fonts.gstatic.com/s/a/${_hashToString(font.file.hash)}.ttf';
+      await _tryUrl(client, urlString, font);
       progressBar.update(progressBar.current + 1);
     }
   }
   client.close();
 }
 
-Future<void> _tryUrl(http.Client client, String url) async {
+Future<void> _tryUrl(http.Client client, String url, Font font) async {
   try {
-    await client.read(url);
+    final fileContents = await client.get(url);
+    final actualFileLength = fileContents.bodyBytes.length;
+    final actualFileHash = sha256.convert(fileContents.bodyBytes).toString();
+    if (font.file.fileSize != actualFileLength ||
+        _hashToString(font.file.hash) != actualFileHash) {
+      throw Exception('Font from $url did not match length of or checksum.');
+    }
   } catch (e) {
     print('Failed to load font from url: $url');
     rethrow;
   }
 }
 
-String _hashToUrl(List<int> bytes) {
+String _hashToString(List<int> bytes) {
   var fileName = '';
   for (final byte in bytes) {
     final convertedByte = byte.toRadixString(16).padLeft(2, '0');
     fileName += convertedByte;
   }
-  return 'https://fonts.gstatic.com/s/a/$fileName.ttf';
+  return fileName;
 }
