@@ -4,8 +4,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// WARNING: This package is experimental and should not be used in production.
-
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'src/google_fonts_base.dart';
