@@ -1,3 +1,7 @@
+## [0.3.10] - 2020-03-18
+
+Update Fonts API url in generator to add in missing fonts. 
+
 ## [0.3.9] - 2020-02-13
 
 * Fix path_provider usage for web
