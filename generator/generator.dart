@@ -93,11 +93,11 @@ void _generateDartFile(Directory fontDirectory) {
 }
 
 Future<String> _getProtoUrl() async {
-  var directoryNumber = 3;
+  var directoryNumber = 1;
 
   String url(int directoryNumber) {
     final paddedNumber = directoryNumber.toString().padLeft(3, '0');
-    return 'http://fonts.gstatic.com/s/a/directory$paddedNumber.pb';
+    return 'http://fonts.gstatic.com/s/f/directory$paddedNumber.pb';
   }
 
   var didReachLatestUrl = false;
