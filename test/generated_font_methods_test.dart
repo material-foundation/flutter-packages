@@ -665,7 +665,7 @@ main() {
   //////////////////
 
   testWidgets('getFont returns the correct font', (tester) async {
-    final dynamicFont = GoogleFonts.getFont("Roboto Mono");
+    final dynamicFont = GoogleFonts.getFont('Roboto Mono');
     final methodFont = GoogleFonts.robotoMono();
 
     expect(dynamicFont, equals(methodFont));
