@@ -659,4 +659,15 @@ main() {
     // Style is preserved.
     expect(textTheme.subtitle.fontStyle, equals(FontStyle.italic));
   });
+
+  //////////////////
+  // Method tests //
+  //////////////////
+
+  testWidgets('getFont returns the correct font', (tester) async {
+    final dynamicFont = GoogleFonts.getFont('Roboto Mono');
+    final methodFont = GoogleFonts.robotoMono();
+
+    expect(dynamicFont, equals(methodFont));
+  });
 }

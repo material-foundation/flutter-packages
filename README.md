@@ -33,6 +33,15 @@ Text(
 ),
 ```
 
+Or, if you want to load the font dynamically:
+
+```dart
+Text(
+  'This is Google Fonts',
+  style: GoogleFonts.getFont('Lato'),
+),
+```
+
 To use `GoogleFonts` with an existing `TextStyle`:
 
 ```dart
