@@ -13,6 +13,7 @@ import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 import 'package:crypto/crypto.dart';
+import 'package:pedantic/pedantic.dart';
 
 import '../google_fonts.dart';
 import 'google_fonts_descriptor.dart';
@@ -172,7 +173,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 }
 
 /// Loads a font with [FontLoader], given its name and byte-representation.
-void _loadFontByteData(
+Future<void> _loadFontByteData(
     String familyWithVariantString, Future<ByteData> byteData) async {
   final anyFontDataFound = byteData != null && await byteData != null;
   if (anyFontDataFound) {
@@ -182,7 +183,7 @@ void _loadFontByteData(
     await fontLoader.load();
     // TODO: Remove this once it is done automatically after loading a font.
     // https://github.com/flutter/flutter/issues/44460
-    PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
+    await PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
   }
 }
 
@@ -221,7 +222,7 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
     throw Exception('Invalid fontUrl: ${file.url}');
   }
 
-  var response;
+  http.Response response;
   try {
     response = await httpClient.get(uri);
   } catch (e) {
@@ -234,7 +235,7 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
       );
     }
     if (!isWeb) {
-      _saveFontToDeviceFileSystem(fontName, response.bodyBytes);
+      unawaited(_saveFontToDeviceFileSystem(fontName, response.bodyBytes));
     }
     return ByteData.view(response.bodyBytes.buffer);
   } else {

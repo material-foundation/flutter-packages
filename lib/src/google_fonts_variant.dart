@@ -96,8 +96,9 @@ class GoogleFontsVariant {
     final weightPrefix = _fontWeightToFilenameWeightParts[fontWeight] ??
         _fontWeightToFilenameWeightParts[FontWeight.w400];
     final italicSuffix = fontStyle == FontStyle.italic ? 'Italic' : '';
-    if (weightPrefix == 'Regular')
+    if (weightPrefix == 'Regular') {
       return italicSuffix == '' ? weightPrefix : italicSuffix;
+    }
     return '$weightPrefix$italicSuffix';
   }
 
@@ -133,9 +134,8 @@ class GoogleFontsVariant {
     if (other.runtimeType != runtimeType) {
       return false;
     }
-    final GoogleFontsVariant typedOther = other;
-    return typedOther.fontWeight == fontWeight &&
-        typedOther.fontStyle == fontStyle;
+    return other.fontWeight == fontWeight &&
+        other.fontStyle == fontStyle;
   }
 }
 

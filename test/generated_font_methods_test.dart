@@ -13,7 +13,7 @@ import 'package:http/http.dart' as http;
 
 class MockHttpClient extends Mock implements http.Client {}
 
-main() {
+void main() {
   tearDown(() {
     clearCache();
   });

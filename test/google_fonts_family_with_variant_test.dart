@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:google_fonts/src/google_fonts_variant.dart';
 
-main() {
+void main() {
   testWidgets('toString() works for normal w400', (tester) async {
     final familyWithVariant = GoogleFontsFamilyWithVariant(
       family: 'Foo',

@@ -26,17 +26,17 @@ final _fakeResponseFile = GoogleFontsFile(
   _fakeResponseLengthInBytes,
 );
 
-var printLog = [];
+var printLog = <String>[];
 
-overridePrint(testFn()) => () {
-      var spec = new ZoneSpecification(print: (_, __, ___, String msg) {
+void overridePrint(Future<Null> testFn()) => () {
+      var spec = ZoneSpecification(print: (_, __, ___, msg) {
         // Add to log instead of printing to stdout
         printLog.add(msg);
       });
       return Zone.current.fork(specification: spec).run(testFn);
     };
 
-main() {
+void main() {
   setUp(() async {
     isWeb = false;
     httpClient = MockHttpClient();
@@ -58,7 +58,7 @@ main() {
   });
 
   tearDown(() {
-    printLog = [];
+    printLog.clear();
     clearCache();
   });
 
