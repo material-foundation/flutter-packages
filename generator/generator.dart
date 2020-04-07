@@ -5,12 +5,12 @@
 import 'dart:io';
 import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
-
-import 'package:mustache/mustache.dart';
-import 'fonts.pb.dart';
 import 'package:console/console.dart';
+import 'package:mustache/mustache.dart';
 
-void main() async {
+import 'fonts.pb.dart';
+
+Future<void> main() async {
   print('Getting latest font directory...');
   final protoUrl = await _getProtoUrl();
   print('Success! Using $protoUrl');
@@ -36,7 +36,7 @@ void _generateDartFile(Directory fontDirectory) {
   final outFile = File(_generatedFilePath);
   final outFileWriteSink = outFile.openWrite();
 
-  final methods = [];
+  final methods = <Map<String, dynamic>>[];
 
   for (final item in fontDirectory.family) {
     final family = item.name;
@@ -61,7 +61,7 @@ void _generateDartFile(Directory fontDirectory) {
       'overline',
     ];
 
-    methods.add({
+    methods.add(<String, dynamic>{
       'methodName': lowerFamily,
       'fontFamily': familyNoSpaces,
       'fontFamilyDisplay': family,

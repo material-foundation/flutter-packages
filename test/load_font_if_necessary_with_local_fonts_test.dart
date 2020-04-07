@@ -1,6 +1,6 @@
+import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -30,7 +30,7 @@ final _fakeResponseFile = GoogleFontsFile(
 // Do not add tests to this test file. Because the set up mocks a system message
 // handler (flutter/assets), that can not be undone, no other tests should be
 // written in this file.
-main() {
+void main() {
   setUp(() async {
     httpClient = MockHttpClient();
     GoogleFonts.config.allowHttp = true;
