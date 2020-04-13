@@ -137,3 +137,22 @@ Italic styles will include `Italic` in the filename. Font weights map to file na
 Note: Since these files are listed as assets, there is no need to list them in the `fonts` section
 of the `pubspec.yaml`. This can be done because the files are consistently named from the Google Fonts API
 (so be sure not to rename them!)
+
+### Licensing Fonts
+The fonts on [fonts.google.com](https://fonts.google.com/) include license files for each font. For
+example, the [Lato](https://fonts.google.com/specimen/Lato) font comes with an `OFL.txt` file.
+
+Once you've decided on the fonts you want in your published app, you should add the appropriate
+licenses to your flutter app's [LicenseRegistry](https://api.flutter.dev/flutter/foundation/LicenseRegistry-class.html).
+
+For example:
+```dart
+void main() {
+  LicenseRegistry.addLicense(() async* {
+    final license = await rootBundle.loadString('google_fonts/OFL.txt');
+    yield LicenseEntryWithLineBreaks(['google_fonts'], license);
+  });
+  
+  runApp(...);
+}
+```
