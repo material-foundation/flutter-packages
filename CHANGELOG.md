@@ -1,3 +1,7 @@
+## [0.4.1] - 2020-04-13
+
+* Update README to include instructions for how to include licenses for fonts. 
+
 ## [0.4.0] - 2020-03-20
 
 * Added ability to load fonts dynamically through `getFont` method.
