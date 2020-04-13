@@ -147,11 +147,12 @@ licenses to your flutter app's [LicenseRegistry](https://api.flutter.dev/flutter
 
 For example:
 ```dart
-main () {
+void main() {
   LicenseRegistry.addLicense(() async* {
     final license = await rootBundle.loadString('google_fonts/OFL.txt');
     yield LicenseEntryWithLineBreaks(['google_fonts'], license);
   });
+  
   runApp(...);
 }
 ```
