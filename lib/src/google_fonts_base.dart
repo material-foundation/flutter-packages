@@ -19,10 +19,11 @@ import '../google_fonts.dart';
 import 'google_fonts_descriptor.dart';
 import 'google_fonts_variant.dart';
 
-// Keep track of the fonts that are attempted to be loaded fonts in FontLoader
+// Keep track of the fonts that are loaded or currently loading in FontLoader
 // for the life of the app instance. Once a font is attempted to load, it does
-// not need to be attempted to load again.
-final Set<String> _fontsAttemptedToLoad = {};
+// not need to be attempted to load again, unless the attempted load resulted
+// in an error.
+final Set<String> _loadedFonts = {};
 
 @visibleForTesting
 bool isWeb = kIsWeb;
@@ -31,7 +32,7 @@ bool isWeb = kIsWeb;
 http.Client httpClient = http.Client();
 
 @visibleForTesting
-void clearCache() => _fontsAttemptedToLoad.clear();
+void clearCache() => _loadedFonts.clear();
 
 /// Creates a [TextStyle] that either uses the font family for the requested
 /// GoogleFont, or falls back to the pre-bundled font family.
@@ -121,12 +122,13 @@ TextStyle googleFontsTextStyle({
 Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final familyWithVariantString = descriptor.familyWithVariant.toString();
   final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
-  // If this font has already been attempted to be loaded, then there is no need
-  // to attempt to load it again.
-  if (_fontsAttemptedToLoad.contains(familyWithVariantString)) {
+  // If this font has already already loaded or is loading, then there is no
+  // need to attempt to load it again, unless the attempted load results in an
+  // error.
+  if (_loadedFonts.contains(familyWithVariantString)) {
     return;
   } else {
-    _fontsAttemptedToLoad.add(familyWithVariantString);
+    _loadedFonts.add(familyWithVariantString);
   }
 
   try {
@@ -170,6 +172,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       );
     }
   } catch (e) {
+    _loadedFonts.remove(familyWithVariantString);
     print('error: google_fonts was unable to load font $fontName because the '
         'following exception occured\n$e');
   }
