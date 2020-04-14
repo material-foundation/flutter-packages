@@ -1,4 +1,8 @@
-## [0.4.1] - 2020-04-14
+## [0.4.3] - 2020-04-14
+
+* Add `GoogleFonts.getTextTheme(...)` method for dynamically getting a text theme from a font name. 
+
+## [0.4.2] - 2020-04-14
 
 * Change loadFontIfNecessary to only follow through once per unique family when called in parallel.
 
