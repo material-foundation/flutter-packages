@@ -670,4 +670,11 @@ void main() {
 
     expect(dynamicFont, equals(methodFont));
   });
+
+  testWidgets('getTextTheme returns the correct text theme', (tester) async {
+    final dynamicTheme = GoogleFonts.getTextTheme('Roboto Mono');
+    final methodTheme = GoogleFonts.robotoMonoTextTheme();
+
+    expect(dynamicTheme, equals(methodTheme));
+  });
 }

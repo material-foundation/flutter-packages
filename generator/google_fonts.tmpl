@@ -59,6 +59,16 @@ class GoogleFonts {
     {{/method}}
   };
 
+  /// Get a map of all available fonts and their associated text themes.
+  ///
+  /// Returns a map where the key is the name of the font family and the value
+  /// is the corresponding [GoogleFonts] `TextTheme` method.
+  static Map<String, TextTheme Function([TextTheme])> _asMapOfTextThemes() => const {
+    {{#method}}
+    '{{fontFamilyDisplay}}': GoogleFonts.{{methodName}}TextTheme,
+    {{/method}}
+  };
+
   /// Retrieve a font by family name.
   /// 
   /// Applies the given font family from Google Fonts to the given [textStyle]
@@ -116,6 +126,24 @@ class GoogleFonts {
       decorationThickness: decorationThickness,
     );
   }
+
+    /// Retrieve a text theme by its font family name.
+    ///
+    /// Applies the given font family from Google Fonts to the given [textTheme]
+    /// and returns the resulting [textTheme].
+    ///
+    /// Note: [fontFamily] is case-sensitive.
+    ///
+    /// Parameter [fontFamily] must not be `null`. Throws if no font by name
+    /// [fontFamily] exists.
+    static TextTheme getTextTheme(String fontFamily, [TextTheme textTheme]) {
+      assert(fontFamily != null);
+      final fonts = _asMapOfTextThemes();
+      if (!fonts.containsKey(fontFamily)) {
+        throw Exception("No font family by name '$fontFamily' was found.");
+      }
+      return fonts[fontFamily](textTheme);
+    }
 
   {{#method}}
   /// Applies the {{fontFamilyDisplay}} font family from Google Fonts to the given [textStyle].
