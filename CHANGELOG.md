@@ -1,3 +1,7 @@
+## [0.4.1] - 2020-04-14
+
+* Change loadFontIfNecessary to only follow through once per unique family when called in parallel.
+
 ## [0.4.1] - 2020-04-13
 
 * Update README to include instructions for how to include licenses for fonts. 

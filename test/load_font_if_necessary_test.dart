@@ -167,6 +167,55 @@ void main() {
     verifyNever(httpClient.get(anything));
   });
 
+  testWidgets(
+      'loadFontIfNecessary does not make more than 1 http get request on '
+      'parallel calls', (tester) async {
+    final fakeDescriptor = GoogleFontsDescriptor(
+      familyWithVariant: GoogleFontsFamilyWithVariant(
+        family: 'Foo',
+        googleFontsVariant: GoogleFontsVariant(
+          fontWeight: FontWeight.w400,
+          fontStyle: FontStyle.normal,
+        ),
+      ),
+      file: _fakeResponseFile,
+    );
+
+    await Future.wait([
+      loadFontIfNecessary(fakeDescriptor),
+      loadFontIfNecessary(fakeDescriptor),
+      loadFontIfNecessary(fakeDescriptor)
+    ]);
+    verify(httpClient.get(anything)).called(1);
+  });
+
+  testWidgets(
+      'loadFontIfNecessary makes second attempt if the first attempt failed ',
+      (tester) async {
+    final fakeDescriptor = GoogleFontsDescriptor(
+      familyWithVariant: GoogleFontsFamilyWithVariant(
+        family: 'Foo',
+        googleFontsVariant: GoogleFontsVariant(
+          fontWeight: FontWeight.w400,
+          fontStyle: FontStyle.normal,
+        ),
+      ),
+      file: _fakeResponseFile,
+    );
+
+    // Have the first call throw an error.
+    when(httpClient.get(any)).thenThrow('error');
+    await loadFontIfNecessary(fakeDescriptor);
+    verify(httpClient.get(any)).called(1);
+
+    // The second call will retry the http fetch.
+    when(httpClient.get(any)).thenAnswer((_) async {
+      return http.Response(_fakeResponse, 200);
+    });
+    await loadFontIfNecessary(fakeDescriptor);
+    verify(httpClient.get(any)).called(1);
+  });
+
   testWidgets('loadFontIfNecessary method writes font file', (tester) async {
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
