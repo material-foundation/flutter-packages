@@ -167,6 +167,28 @@ void main() {
     verifyNever(httpClient.get(anything));
   });
 
+  testWidgets(
+      'loadFontIfNecessary does not make more than 1 http get request on '
+          'parallel calls', (tester) async {
+    final fakeDescriptor = GoogleFontsDescriptor(
+      familyWithVariant: GoogleFontsFamilyWithVariant(
+        family: 'Foo',
+        googleFontsVariant: GoogleFontsVariant(
+          fontWeight: FontWeight.w400,
+          fontStyle: FontStyle.normal,
+        ),
+      ),
+      file: _fakeResponseFile,
+    );
+
+    await Future.wait([
+      loadFontIfNecessary(fakeDescriptor),
+      loadFontIfNecessary(fakeDescriptor),
+      loadFontIfNecessary(fakeDescriptor)
+    ]);
+    verify(httpClient.get(anything)).called(1);
+  });
+
   testWidgets('loadFontIfNecessary method writes font file', (tester) async {
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(

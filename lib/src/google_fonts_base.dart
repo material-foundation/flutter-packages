@@ -19,9 +19,10 @@ import '../google_fonts.dart';
 import 'google_fonts_descriptor.dart';
 import 'google_fonts_variant.dart';
 
-// Keep track of the loaded fonts in FontLoader for the life of the app
-// instance.
-final Set<String> _loadedFonts = {};
+// Keep track of the fonts that are attempted to be loaded fonts in FontLoader
+// for the life of the app instance. Once a font is attempted to load, it does
+// not need to be attempted to load again.
+final Set<String> _fontsAttemptedToLoad = {};
 
 @visibleForTesting
 bool isWeb = kIsWeb;
@@ -30,7 +31,7 @@ bool isWeb = kIsWeb;
 http.Client httpClient = http.Client();
 
 @visibleForTesting
-void clearCache() => _loadedFonts.clear();
+void clearCache() => _fontsAttemptedToLoad.clear();
 
 /// Creates a [TextStyle] that either uses the font family for the requested
 /// GoogleFont, or falls back to the pre-bundled font family.
@@ -120,10 +121,12 @@ TextStyle googleFontsTextStyle({
 Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final familyWithVariantString = descriptor.familyWithVariant.toString();
   final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
-  // If this font has already been loaded, then there is no need to load it
-  // again.
-  if (_loadedFonts.contains(familyWithVariantString)) {
+  // If this font has already been attempted to be loaded, then there is no need
+  // to attempt to load it again.
+  if (_fontsAttemptedToLoad.contains(familyWithVariantString)) {
     return;
+  } else {
+    _fontsAttemptedToLoad.add(familyWithVariantString);
   }
 
   try {
@@ -177,7 +180,6 @@ Future<void> _loadFontByteData(
     String familyWithVariantString, Future<ByteData> byteData) async {
   final anyFontDataFound = byteData != null && await byteData != null;
   if (anyFontDataFound) {
-    _loadedFonts.add(familyWithVariantString);
     final fontLoader = FontLoader(familyWithVariantString);
     fontLoader.addFont(byteData);
     await fontLoader.load();
