@@ -1,3 +1,7 @@
+## [0.5.0] - 2020-04-14
+
+* Use more accurate naming algorithm for `GoogleFonts.foo` and `GoogleFonts.fooTextTheme`.
+
 ## [0.4.3] - 2020-04-14
 
 * Add `GoogleFonts.getTextTheme(...)` method for dynamically getting a text theme from a font name. 
