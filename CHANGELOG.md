@@ -1,4 +1,4 @@
-## [0.5.0] - 2020-04-14
+## [0.5.1] - 2020-04-14
 
 * Use more accurate naming algorithm for `GoogleFonts.foo` and `GoogleFonts.fooTextTheme`.
 
