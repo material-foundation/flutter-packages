@@ -95,8 +95,8 @@ String _familyToMethodName(String family) {
   final words = family.split(' ');
   for (var i = 0; i < words.length; i++) {
     final word = words[i];
-    final isFirst = (i == 0);
-    final isUpperCase = (word == word.toUpperCase());
+    final isFirst = i == 0;
+    final isUpperCase = word == word.toUpperCase();
     words[i] = (isFirst ? word[0].toLowerCase() : word[0].toUpperCase()) +
         (isUpperCase ? word.substring(1).toLowerCase() : word.substring(1));
   }
