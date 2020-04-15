@@ -42,8 +42,7 @@ void _generateDartFile(Directory fontDirectory) {
     final family = item.name;
     final familyNoSpaces = family.replaceAll(' ', '');
     final familyWithPlusSigns = family.replaceAll(' ', '+');
-    final lowerFamily =
-        familyNoSpaces[0].toLowerCase() + familyNoSpaces.substring(1);
+    final methodName = _familyToMethodName(family);
 
     const themeParams = [
       'display4',
@@ -62,7 +61,7 @@ void _generateDartFile(Directory fontDirectory) {
     ];
 
     methods.add(<String, dynamic>{
-      'methodName': lowerFamily,
+      'methodName': methodName,
       'fontFamily': familyNoSpaces,
       'fontFamilyDisplay': family,
       'docsUrl': 'https://fonts.google.com/specimen/$familyWithPlusSigns',
@@ -90,6 +89,18 @@ void _generateDartFile(Directory fontDirectory) {
 
   outFileWriteSink.write(result);
   outFileWriteSink.close();
+}
+
+String _familyToMethodName(String family) {
+  final words = family.split(' ');
+  for (var i = 0; i < words.length; i++) {
+    final word = words[i];
+    final isFirst = i == 0;
+    final isUpperCase = word == word.toUpperCase();
+    words[i] = (isFirst ? word[0].toLowerCase() : word[0].toUpperCase()) +
+        (isUpperCase ? word.substring(1).toLowerCase() : word.substring(1));
+  }
+  return words.join();
 }
 
 Future<String> _getProtoUrl() async {

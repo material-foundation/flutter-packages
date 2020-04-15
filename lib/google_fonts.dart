@@ -73,9 +73,9 @@ class GoogleFonts {
         'Aldrich': GoogleFonts.aldrich,
         'Alef': GoogleFonts.alef,
         'Alegreya': GoogleFonts.alegreya,
-        'Alegreya SC': GoogleFonts.alegreyaSC,
+        'Alegreya SC': GoogleFonts.alegreyaSc,
         'Alegreya Sans': GoogleFonts.alegreyaSans,
-        'Alegreya Sans SC': GoogleFonts.alegreyaSansSC,
+        'Alegreya Sans SC': GoogleFonts.alegreyaSansSc,
         'Aleo': GoogleFonts.aleo,
         'Alex Brush': GoogleFonts.alexBrush,
         'Alfa Slab One': GoogleFonts.alfaSlabOne,
@@ -89,11 +89,11 @@ class GoogleFonts {
         'Almarai': GoogleFonts.almarai,
         'Almendra': GoogleFonts.almendra,
         'Almendra Display': GoogleFonts.almendraDisplay,
-        'Almendra SC': GoogleFonts.almendraSC,
+        'Almendra SC': GoogleFonts.almendraSc,
         'Amarante': GoogleFonts.amarante,
         'Amaranth': GoogleFonts.amaranth,
-        'Amatic SC': GoogleFonts.amaticSC,
-        'Amatica SC': GoogleFonts.amaticaSC,
+        'Amatic SC': GoogleFonts.amaticSc,
+        'Amatica SC': GoogleFonts.amaticaSc,
         'Amethysta': GoogleFonts.amethysta,
         'Amiko': GoogleFonts.amiko,
         'Amiri': GoogleFonts.amiri,
@@ -194,7 +194,7 @@ class GoogleFonts {
         'Bonbon': GoogleFonts.bonbon,
         'Boogaloo': GoogleFonts.boogaloo,
         'Bowlby One': GoogleFonts.bowlbyOne,
-        'Bowlby One SC': GoogleFonts.bowlbyOneSC,
+        'Bowlby One SC': GoogleFonts.bowlbyOneSc,
         'Brawler': GoogleFonts.brawler,
         'Bree Serif': GoogleFonts.breeSerif,
         'Bubblegum Sans': GoogleFonts.bubblegumSans,
@@ -227,7 +227,7 @@ class GoogleFonts {
         'Cardo': GoogleFonts.cardo,
         'Carme': GoogleFonts.carme,
         'Carrois Gothic': GoogleFonts.carroisGothic,
-        'Carrois Gothic SC': GoogleFonts.carroisGothicSC,
+        'Carrois Gothic SC': GoogleFonts.carroisGothicSc,
         'Carter One': GoogleFonts.carterOne,
         'Catamaran': GoogleFonts.catamaran,
         'Caudex': GoogleFonts.caudex,
@@ -272,7 +272,7 @@ class GoogleFonts {
         'Cormorant': GoogleFonts.cormorant,
         'Cormorant Garamond': GoogleFonts.cormorantGaramond,
         'Cormorant Infant': GoogleFonts.cormorantInfant,
-        'Cormorant SC': GoogleFonts.cormorantSC,
+        'Cormorant SC': GoogleFonts.cormorantSc,
         'Cormorant Unicase': GoogleFonts.cormorantUnicase,
         'Cormorant Upright': GoogleFonts.cormorantUpright,
         'Courgette': GoogleFonts.courgette,
@@ -290,14 +290,14 @@ class GoogleFonts {
         'Cute Font': GoogleFonts.cuteFont,
         'Cutive': GoogleFonts.cutive,
         'Cutive Mono': GoogleFonts.cutiveMono,
-        'DM Sans': GoogleFonts.dMSans,
-        'DM Serif Display': GoogleFonts.dMSerifDisplay,
-        'DM Serif Text': GoogleFonts.dMSerifText,
+        'DM Sans': GoogleFonts.dmSans,
+        'DM Serif Display': GoogleFonts.dmSerifDisplay,
+        'DM Serif Text': GoogleFonts.dmSerifText,
         'Damion': GoogleFonts.damion,
         'Dancing Script': GoogleFonts.dancingScript,
         'Darker Grotesque': GoogleFonts.darkerGrotesque,
         'David Libre': GoogleFonts.davidLibre,
-        'Dawning of a New Day': GoogleFonts.dawningofaNewDay,
+        'Dawning of a New Day': GoogleFonts.dawningOfANewDay,
         'Days One': GoogleFonts.daysOne,
         'Dekko': GoogleFonts.dekko,
         'Delius': GoogleFonts.delius,
@@ -309,7 +309,7 @@ class GoogleFonts {
         'Dhurjati': GoogleFonts.dhurjati,
         'Didact Gothic': GoogleFonts.didactGothic,
         'Diplomata': GoogleFonts.diplomata,
-        'Diplomata SC': GoogleFonts.diplomataSC,
+        'Diplomata SC': GoogleFonts.diplomataSc,
         'Do Hyeon': GoogleFonts.doHyeon,
         'Dokdo': GoogleFonts.dokdo,
         'Domine': GoogleFonts.domine,
@@ -323,7 +323,7 @@ class GoogleFonts {
         'Droid Serif': GoogleFonts.droidSerif,
         'Duru Sans': GoogleFonts.duruSans,
         'Dynalight': GoogleFonts.dynalight,
-        'EB Garamond': GoogleFonts.eBGaramond,
+        'EB Garamond': GoogleFonts.ebGaramond,
         'Eagle Lake': GoogleFonts.eagleLake,
         'East Sea Dokdo': GoogleFonts.eastSeaDokdo,
         'Eater': GoogleFonts.eater,
@@ -378,14 +378,14 @@ class GoogleFonts {
         'Francois One': GoogleFonts.francoisOne,
         'Frank Ruhl Libre': GoogleFonts.frankRuhlLibre,
         'Freckle Face': GoogleFonts.freckleFace,
-        'Fredericka the Great': GoogleFonts.frederickatheGreat,
+        'Fredericka the Great': GoogleFonts.frederickaTheGreat,
         'Fredoka One': GoogleFonts.fredokaOne,
         'Fresca': GoogleFonts.fresca,
         'Frijole': GoogleFonts.frijole,
         'Fruktur': GoogleFonts.fruktur,
         'Fugaz One': GoogleFonts.fugazOne,
-        'GFS Didot': GoogleFonts.gFSDidot,
-        'GFS Neohellenic': GoogleFonts.gFSNeohellenic,
+        'GFS Didot': GoogleFonts.gfsDidot,
+        'GFS Neohellenic': GoogleFonts.gfsNeohellenic,
         'Gabriela': GoogleFonts.gabriela,
         'Gaegu': GoogleFonts.gaegu,
         'Gafata': GoogleFonts.gafata,
@@ -442,23 +442,23 @@ class GoogleFonts {
         'Hind Madurai': GoogleFonts.hindMadurai,
         'Hind Siliguri': GoogleFonts.hindSiliguri,
         'Hind Vadodara': GoogleFonts.hindVadodara,
-        'Holtwood One SC': GoogleFonts.holtwoodOneSC,
+        'Holtwood One SC': GoogleFonts.holtwoodOneSc,
         'Homemade Apple': GoogleFonts.homemadeApple,
         'Homenaje': GoogleFonts.homenaje,
-        'IBM Plex Mono': GoogleFonts.iBMPlexMono,
-        'IBM Plex Sans': GoogleFonts.iBMPlexSans,
-        'IBM Plex Sans Condensed': GoogleFonts.iBMPlexSansCondensed,
-        'IBM Plex Serif': GoogleFonts.iBMPlexSerif,
-        'IM Fell DW Pica': GoogleFonts.iMFellDWPica,
-        'IM Fell DW Pica SC': GoogleFonts.iMFellDWPicaSC,
-        'IM Fell Double Pica': GoogleFonts.iMFellDoublePica,
-        'IM Fell Double Pica SC': GoogleFonts.iMFellDoublePicaSC,
-        'IM Fell English': GoogleFonts.iMFellEnglish,
-        'IM Fell English SC': GoogleFonts.iMFellEnglishSC,
-        'IM Fell French Canon': GoogleFonts.iMFellFrenchCanon,
-        'IM Fell French Canon SC': GoogleFonts.iMFellFrenchCanonSC,
-        'IM Fell Great Primer': GoogleFonts.iMFellGreatPrimer,
-        'IM Fell Great Primer SC': GoogleFonts.iMFellGreatPrimerSC,
+        'IBM Plex Mono': GoogleFonts.ibmPlexMono,
+        'IBM Plex Sans': GoogleFonts.ibmPlexSans,
+        'IBM Plex Sans Condensed': GoogleFonts.ibmPlexSansCondensed,
+        'IBM Plex Serif': GoogleFonts.ibmPlexSerif,
+        'IM Fell DW Pica': GoogleFonts.imFellDwPica,
+        'IM Fell DW Pica SC': GoogleFonts.imFellDwPicaSc,
+        'IM Fell Double Pica': GoogleFonts.imFellDoublePica,
+        'IM Fell Double Pica SC': GoogleFonts.imFellDoublePicaSc,
+        'IM Fell English': GoogleFonts.imFellEnglish,
+        'IM Fell English SC': GoogleFonts.imFellEnglishSc,
+        'IM Fell French Canon': GoogleFonts.imFellFrenchCanon,
+        'IM Fell French Canon SC': GoogleFonts.imFellFrenchCanonSc,
+        'IM Fell Great Primer': GoogleFonts.imFellGreatPrimer,
+        'IM Fell Great Primer SC': GoogleFonts.imFellGreatPrimerSc,
         'Ibarra Real Nova': GoogleFonts.ibarraRealNova,
         'Iceberg': GoogleFonts.iceberg,
         'Iceland': GoogleFonts.iceland,
@@ -493,7 +493,7 @@ class GoogleFonts {
         'Jura': GoogleFonts.jura,
         'Just Another Hand': GoogleFonts.justAnotherHand,
         'Just Me Again Down Here': GoogleFonts.justMeAgainDownHere,
-        'K2D': GoogleFonts.k2D,
+        'K2D': GoogleFonts.k2d,
         'Kadwa': GoogleFonts.kadwa,
         'Kalam': GoogleFonts.kalam,
         'Kameron': GoogleFonts.kameron,
@@ -576,13 +576,13 @@ class GoogleFonts {
         'Long Cang': GoogleFonts.longCang,
         'Lora': GoogleFonts.lora,
         'Love Ya Like A Sister': GoogleFonts.loveYaLikeASister,
-        'Loved by the King': GoogleFonts.lovedbytheKing,
+        'Loved by the King': GoogleFonts.lovedByTheKing,
         'Lovers Quarrel': GoogleFonts.loversQuarrel,
         'Luckiest Guy': GoogleFonts.luckiestGuy,
         'Lusitana': GoogleFonts.lusitana,
         'Lustria': GoogleFonts.lustria,
-        'M PLUS 1p': GoogleFonts.mPLUS1p,
-        'M PLUS Rounded 1c': GoogleFonts.mPLUSRounded1c,
+        'M PLUS 1p': GoogleFonts.mPlus1p,
+        'M PLUS Rounded 1c': GoogleFonts.mPlusRounded1c,
         'Ma Shan Zheng': GoogleFonts.maShanZheng,
         'Macondo': GoogleFonts.macondo,
         'Macondo Swash Caps': GoogleFonts.macondoSwashCaps,
@@ -599,7 +599,7 @@ class GoogleFonts {
         'Mansalva': GoogleFonts.mansalva,
         'Manuale': GoogleFonts.manuale,
         'Marcellus': GoogleFonts.marcellus,
-        'Marcellus SC': GoogleFonts.marcellusSC,
+        'Marcellus SC': GoogleFonts.marcellusSc,
         'Marck Script': GoogleFonts.marckScript,
         'Margarine': GoogleFonts.margarine,
         'Marko One': GoogleFonts.markoOne,
@@ -608,7 +608,7 @@ class GoogleFonts {
         'Martel Sans': GoogleFonts.martelSans,
         'Marvel': GoogleFonts.marvel,
         'Mate': GoogleFonts.mate,
-        'Mate SC': GoogleFonts.mateSC,
+        'Mate SC': GoogleFonts.mateSc,
         'Maven Pro': GoogleFonts.mavenPro,
         'McLaren': GoogleFonts.mcLaren,
         'Meddon': GoogleFonts.meddon,
@@ -648,7 +648,7 @@ class GoogleFonts {
         'Montserrat': GoogleFonts.montserrat,
         'Montserrat Alternates': GoogleFonts.montserratAlternates,
         'Montserrat Subrayada': GoogleFonts.montserratSubrayada,
-        'Mountains of Christmas': GoogleFonts.mountainsofChristmas,
+        'Mountains of Christmas': GoogleFonts.mountainsOfChristmas,
         'Mouse Memoirs': GoogleFonts.mouseMemoirs,
         'Mr Bedfort': GoogleFonts.mrBedfort,
         'Mr Dafoe': GoogleFonts.mrDafoe,
@@ -661,7 +661,7 @@ class GoogleFonts {
         'Mukta Vaani': GoogleFonts.muktaVaani,
         'Muli': GoogleFonts.muli,
         'Mystery Quest': GoogleFonts.mysteryQuest,
-        'NTR': GoogleFonts.nTR,
+        'NTR': GoogleFonts.ntr,
         'Nanum Brush Script': GoogleFonts.nanumBrushScript,
         'Nanum Gothic': GoogleFonts.nanumGothic,
         'Nanum Gothic Coding': GoogleFonts.nanumGothicCoding,
@@ -697,7 +697,7 @@ class GoogleFonts {
         'Odibee Sans': GoogleFonts.odibeeSans,
         'Odor Mean Chey': GoogleFonts.odorMeanChey,
         'Offside': GoogleFonts.offside,
-        'Old Standard TT': GoogleFonts.oldStandardTT,
+        'Old Standard TT': GoogleFonts.oldStandardTt,
         'Oldenburg': GoogleFonts.oldenburg,
         'Oleo Script': GoogleFonts.oleoScript,
         'Oleo Script Swash Caps': GoogleFonts.oleoScriptSwashCaps,
@@ -709,21 +709,21 @@ class GoogleFonts {
         'Orienta': GoogleFonts.orienta,
         'Original Surfer': GoogleFonts.originalSurfer,
         'Oswald': GoogleFonts.oswald,
-        'Over the Rainbow': GoogleFonts.overtheRainbow,
+        'Over the Rainbow': GoogleFonts.overTheRainbow,
         'Overlock': GoogleFonts.overlock,
-        'Overlock SC': GoogleFonts.overlockSC,
+        'Overlock SC': GoogleFonts.overlockSc,
         'Overpass': GoogleFonts.overpass,
         'Overpass Mono': GoogleFonts.overpassMono,
         'Ovo': GoogleFonts.ovo,
         'Oxanium': GoogleFonts.oxanium,
         'Oxygen': GoogleFonts.oxygen,
         'Oxygen Mono': GoogleFonts.oxygenMono,
-        'PT Mono': GoogleFonts.pTMono,
-        'PT Sans': GoogleFonts.pTSans,
-        'PT Sans Caption': GoogleFonts.pTSansCaption,
-        'PT Sans Narrow': GoogleFonts.pTSansNarrow,
-        'PT Serif': GoogleFonts.pTSerif,
-        'PT Serif Caption': GoogleFonts.pTSerifCaption,
+        'PT Mono': GoogleFonts.ptMono,
+        'PT Sans': GoogleFonts.ptSans,
+        'PT Sans Caption': GoogleFonts.ptSansCaption,
+        'PT Sans Narrow': GoogleFonts.ptSansNarrow,
+        'PT Serif': GoogleFonts.ptSerif,
+        'PT Serif Caption': GoogleFonts.ptSerifCaption,
         'Pacifico': GoogleFonts.pacifico,
         'Padauk': GoogleFonts.padauk,
         'Palanquin': GoogleFonts.palanquin,
@@ -735,7 +735,7 @@ class GoogleFonts {
         'Passion One': GoogleFonts.passionOne,
         'Pathway Gothic One': GoogleFonts.pathwayGothicOne,
         'Patrick Hand': GoogleFonts.patrickHand,
-        'Patrick Hand SC': GoogleFonts.patrickHandSC,
+        'Patrick Hand SC': GoogleFonts.patrickHandSc,
         'Pattaya': GoogleFonts.pattaya,
         'Patua One': GoogleFonts.patuaOne,
         'Pavanam': GoogleFonts.pavanam,
@@ -753,7 +753,7 @@ class GoogleFonts {
         'Play': GoogleFonts.play,
         'Playball': GoogleFonts.playball,
         'Playfair Display': GoogleFonts.playfairDisplay,
-        'Playfair Display SC': GoogleFonts.playfairDisplaySC,
+        'Playfair Display SC': GoogleFonts.playfairDisplaySc,
         'Podkova': GoogleFonts.podkova,
         'Poiret One': GoogleFonts.poiretOne,
         'Poller One': GoogleFonts.pollerOne,
@@ -766,7 +766,7 @@ class GoogleFonts {
         'Port Lligat Slab': GoogleFonts.portLligatSlab,
         'Pragati Narrow': GoogleFonts.pragatiNarrow,
         'Prata': GoogleFonts.prata,
-        'Press Start 2P': GoogleFonts.pressStart2P,
+        'Press Start 2P': GoogleFonts.pressStart2p,
         'Pridi': GoogleFonts.pridi,
         'Princess Sofia': GoogleFonts.princessSofia,
         'Prociono': GoogleFonts.prociono,
@@ -901,7 +901,7 @@ class GoogleFonts {
         'Space Mono': GoogleFonts.spaceMono,
         'Special Elite': GoogleFonts.specialElite,
         'Spectral': GoogleFonts.spectral,
-        'Spectral SC': GoogleFonts.spectralSC,
+        'Spectral SC': GoogleFonts.spectralSc,
         'Spicy Rice': GoogleFonts.spicyRice,
         'Spinnaker': GoogleFonts.spinnaker,
         'Spirax': GoogleFonts.spirax,
@@ -928,7 +928,7 @@ class GoogleFonts {
         'Sura': GoogleFonts.sura,
         'Suranna': GoogleFonts.suranna,
         'Suravaram': GoogleFonts.suravaram,
-        'Swanky and Moo Moo': GoogleFonts.swankyandMooMoo,
+        'Swanky and Moo Moo': GoogleFonts.swankyAndMooMoo,
         'Syncopate': GoogleFonts.syncopate,
         'Tajawal': GoogleFonts.tajawal,
         'Tangerine': GoogleFonts.tangerine,
@@ -967,7 +967,7 @@ class GoogleFonts {
         'Unkempt': GoogleFonts.unkempt,
         'Unlock': GoogleFonts.unlock,
         'Unna': GoogleFonts.unna,
-        'VT323': GoogleFonts.vT323,
+        'VT323': GoogleFonts.vt323,
         'Vampiro One': GoogleFonts.vampiroOne,
         'Varela': GoogleFonts.varela,
         'Varela Round': GoogleFonts.varelaRound,
@@ -980,9 +980,9 @@ class GoogleFonts {
         'Voces': GoogleFonts.voces,
         'Volkhov': GoogleFonts.volkhov,
         'Vollkorn': GoogleFonts.vollkorn,
-        'Vollkorn SC': GoogleFonts.vollkornSC,
+        'Vollkorn SC': GoogleFonts.vollkornSc,
         'Voltaire': GoogleFonts.voltaire,
-        'Waiting for the Sunrise': GoogleFonts.waitingfortheSunrise,
+        'Waiting for the Sunrise': GoogleFonts.waitingForTheSunrise,
         'Wallpoet': GoogleFonts.wallpoet,
         'Walter Turncoat': GoogleFonts.walterTurncoat,
         'Warnes': GoogleFonts.warnes,
@@ -998,9 +998,9 @@ class GoogleFonts {
         'Yeseva One': GoogleFonts.yesevaOne,
         'Yesteryear': GoogleFonts.yesteryear,
         'Yrsa': GoogleFonts.yrsa,
-        'ZCOOL KuaiLe': GoogleFonts.zCOOLKuaiLe,
-        'ZCOOL QingKe HuangYou': GoogleFonts.zCOOLQingKeHuangYou,
-        'ZCOOL XiaoWei': GoogleFonts.zCOOLXiaoWei,
+        'ZCOOL KuaiLe': GoogleFonts.zcoolKuaiLe,
+        'ZCOOL QingKe HuangYou': GoogleFonts.zcoolQingKeHuangYou,
+        'ZCOOL XiaoWei': GoogleFonts.zcoolXiaoWei,
         'Zeyada': GoogleFonts.zeyada,
         'Zhi Mang Xing': GoogleFonts.zhiMangXing,
         'Zilla Slab': GoogleFonts.zillaSlab,
@@ -1030,9 +1030,9 @@ class GoogleFonts {
         'Aldrich': GoogleFonts.aldrichTextTheme,
         'Alef': GoogleFonts.alefTextTheme,
         'Alegreya': GoogleFonts.alegreyaTextTheme,
-        'Alegreya SC': GoogleFonts.alegreyaSCTextTheme,
+        'Alegreya SC': GoogleFonts.alegreyaScTextTheme,
         'Alegreya Sans': GoogleFonts.alegreyaSansTextTheme,
-        'Alegreya Sans SC': GoogleFonts.alegreyaSansSCTextTheme,
+        'Alegreya Sans SC': GoogleFonts.alegreyaSansScTextTheme,
         'Aleo': GoogleFonts.aleoTextTheme,
         'Alex Brush': GoogleFonts.alexBrushTextTheme,
         'Alfa Slab One': GoogleFonts.alfaSlabOneTextTheme,
@@ -1046,11 +1046,11 @@ class GoogleFonts {
         'Almarai': GoogleFonts.almaraiTextTheme,
         'Almendra': GoogleFonts.almendraTextTheme,
         'Almendra Display': GoogleFonts.almendraDisplayTextTheme,
-        'Almendra SC': GoogleFonts.almendraSCTextTheme,
+        'Almendra SC': GoogleFonts.almendraScTextTheme,
         'Amarante': GoogleFonts.amaranteTextTheme,
         'Amaranth': GoogleFonts.amaranthTextTheme,
-        'Amatic SC': GoogleFonts.amaticSCTextTheme,
-        'Amatica SC': GoogleFonts.amaticaSCTextTheme,
+        'Amatic SC': GoogleFonts.amaticScTextTheme,
+        'Amatica SC': GoogleFonts.amaticaScTextTheme,
         'Amethysta': GoogleFonts.amethystaTextTheme,
         'Amiko': GoogleFonts.amikoTextTheme,
         'Amiri': GoogleFonts.amiriTextTheme,
@@ -1151,7 +1151,7 @@ class GoogleFonts {
         'Bonbon': GoogleFonts.bonbonTextTheme,
         'Boogaloo': GoogleFonts.boogalooTextTheme,
         'Bowlby One': GoogleFonts.bowlbyOneTextTheme,
-        'Bowlby One SC': GoogleFonts.bowlbyOneSCTextTheme,
+        'Bowlby One SC': GoogleFonts.bowlbyOneScTextTheme,
         'Brawler': GoogleFonts.brawlerTextTheme,
         'Bree Serif': GoogleFonts.breeSerifTextTheme,
         'Bubblegum Sans': GoogleFonts.bubblegumSansTextTheme,
@@ -1184,7 +1184,7 @@ class GoogleFonts {
         'Cardo': GoogleFonts.cardoTextTheme,
         'Carme': GoogleFonts.carmeTextTheme,
         'Carrois Gothic': GoogleFonts.carroisGothicTextTheme,
-        'Carrois Gothic SC': GoogleFonts.carroisGothicSCTextTheme,
+        'Carrois Gothic SC': GoogleFonts.carroisGothicScTextTheme,
         'Carter One': GoogleFonts.carterOneTextTheme,
         'Catamaran': GoogleFonts.catamaranTextTheme,
         'Caudex': GoogleFonts.caudexTextTheme,
@@ -1229,7 +1229,7 @@ class GoogleFonts {
         'Cormorant': GoogleFonts.cormorantTextTheme,
         'Cormorant Garamond': GoogleFonts.cormorantGaramondTextTheme,
         'Cormorant Infant': GoogleFonts.cormorantInfantTextTheme,
-        'Cormorant SC': GoogleFonts.cormorantSCTextTheme,
+        'Cormorant SC': GoogleFonts.cormorantScTextTheme,
         'Cormorant Unicase': GoogleFonts.cormorantUnicaseTextTheme,
         'Cormorant Upright': GoogleFonts.cormorantUprightTextTheme,
         'Courgette': GoogleFonts.courgetteTextTheme,
@@ -1247,14 +1247,14 @@ class GoogleFonts {
         'Cute Font': GoogleFonts.cuteFontTextTheme,
         'Cutive': GoogleFonts.cutiveTextTheme,
         'Cutive Mono': GoogleFonts.cutiveMonoTextTheme,
-        'DM Sans': GoogleFonts.dMSansTextTheme,
-        'DM Serif Display': GoogleFonts.dMSerifDisplayTextTheme,
-        'DM Serif Text': GoogleFonts.dMSerifTextTextTheme,
+        'DM Sans': GoogleFonts.dmSansTextTheme,
+        'DM Serif Display': GoogleFonts.dmSerifDisplayTextTheme,
+        'DM Serif Text': GoogleFonts.dmSerifTextTextTheme,
         'Damion': GoogleFonts.damionTextTheme,
         'Dancing Script': GoogleFonts.dancingScriptTextTheme,
         'Darker Grotesque': GoogleFonts.darkerGrotesqueTextTheme,
         'David Libre': GoogleFonts.davidLibreTextTheme,
-        'Dawning of a New Day': GoogleFonts.dawningofaNewDayTextTheme,
+        'Dawning of a New Day': GoogleFonts.dawningOfANewDayTextTheme,
         'Days One': GoogleFonts.daysOneTextTheme,
         'Dekko': GoogleFonts.dekkoTextTheme,
         'Delius': GoogleFonts.deliusTextTheme,
@@ -1266,7 +1266,7 @@ class GoogleFonts {
         'Dhurjati': GoogleFonts.dhurjatiTextTheme,
         'Didact Gothic': GoogleFonts.didactGothicTextTheme,
         'Diplomata': GoogleFonts.diplomataTextTheme,
-        'Diplomata SC': GoogleFonts.diplomataSCTextTheme,
+        'Diplomata SC': GoogleFonts.diplomataScTextTheme,
         'Do Hyeon': GoogleFonts.doHyeonTextTheme,
         'Dokdo': GoogleFonts.dokdoTextTheme,
         'Domine': GoogleFonts.domineTextTheme,
@@ -1280,7 +1280,7 @@ class GoogleFonts {
         'Droid Serif': GoogleFonts.droidSerifTextTheme,
         'Duru Sans': GoogleFonts.duruSansTextTheme,
         'Dynalight': GoogleFonts.dynalightTextTheme,
-        'EB Garamond': GoogleFonts.eBGaramondTextTheme,
+        'EB Garamond': GoogleFonts.ebGaramondTextTheme,
         'Eagle Lake': GoogleFonts.eagleLakeTextTheme,
         'East Sea Dokdo': GoogleFonts.eastSeaDokdoTextTheme,
         'Eater': GoogleFonts.eaterTextTheme,
@@ -1338,14 +1338,14 @@ class GoogleFonts {
         'Francois One': GoogleFonts.francoisOneTextTheme,
         'Frank Ruhl Libre': GoogleFonts.frankRuhlLibreTextTheme,
         'Freckle Face': GoogleFonts.freckleFaceTextTheme,
-        'Fredericka the Great': GoogleFonts.frederickatheGreatTextTheme,
+        'Fredericka the Great': GoogleFonts.frederickaTheGreatTextTheme,
         'Fredoka One': GoogleFonts.fredokaOneTextTheme,
         'Fresca': GoogleFonts.frescaTextTheme,
         'Frijole': GoogleFonts.frijoleTextTheme,
         'Fruktur': GoogleFonts.frukturTextTheme,
         'Fugaz One': GoogleFonts.fugazOneTextTheme,
-        'GFS Didot': GoogleFonts.gFSDidotTextTheme,
-        'GFS Neohellenic': GoogleFonts.gFSNeohellenicTextTheme,
+        'GFS Didot': GoogleFonts.gfsDidotTextTheme,
+        'GFS Neohellenic': GoogleFonts.gfsNeohellenicTextTheme,
         'Gabriela': GoogleFonts.gabrielaTextTheme,
         'Gaegu': GoogleFonts.gaeguTextTheme,
         'Gafata': GoogleFonts.gafataTextTheme,
@@ -1402,23 +1402,23 @@ class GoogleFonts {
         'Hind Madurai': GoogleFonts.hindMaduraiTextTheme,
         'Hind Siliguri': GoogleFonts.hindSiliguriTextTheme,
         'Hind Vadodara': GoogleFonts.hindVadodaraTextTheme,
-        'Holtwood One SC': GoogleFonts.holtwoodOneSCTextTheme,
+        'Holtwood One SC': GoogleFonts.holtwoodOneScTextTheme,
         'Homemade Apple': GoogleFonts.homemadeAppleTextTheme,
         'Homenaje': GoogleFonts.homenajeTextTheme,
-        'IBM Plex Mono': GoogleFonts.iBMPlexMonoTextTheme,
-        'IBM Plex Sans': GoogleFonts.iBMPlexSansTextTheme,
-        'IBM Plex Sans Condensed': GoogleFonts.iBMPlexSansCondensedTextTheme,
-        'IBM Plex Serif': GoogleFonts.iBMPlexSerifTextTheme,
-        'IM Fell DW Pica': GoogleFonts.iMFellDWPicaTextTheme,
-        'IM Fell DW Pica SC': GoogleFonts.iMFellDWPicaSCTextTheme,
-        'IM Fell Double Pica': GoogleFonts.iMFellDoublePicaTextTheme,
-        'IM Fell Double Pica SC': GoogleFonts.iMFellDoublePicaSCTextTheme,
-        'IM Fell English': GoogleFonts.iMFellEnglishTextTheme,
-        'IM Fell English SC': GoogleFonts.iMFellEnglishSCTextTheme,
-        'IM Fell French Canon': GoogleFonts.iMFellFrenchCanonTextTheme,
-        'IM Fell French Canon SC': GoogleFonts.iMFellFrenchCanonSCTextTheme,
-        'IM Fell Great Primer': GoogleFonts.iMFellGreatPrimerTextTheme,
-        'IM Fell Great Primer SC': GoogleFonts.iMFellGreatPrimerSCTextTheme,
+        'IBM Plex Mono': GoogleFonts.ibmPlexMonoTextTheme,
+        'IBM Plex Sans': GoogleFonts.ibmPlexSansTextTheme,
+        'IBM Plex Sans Condensed': GoogleFonts.ibmPlexSansCondensedTextTheme,
+        'IBM Plex Serif': GoogleFonts.ibmPlexSerifTextTheme,
+        'IM Fell DW Pica': GoogleFonts.imFellDwPicaTextTheme,
+        'IM Fell DW Pica SC': GoogleFonts.imFellDwPicaScTextTheme,
+        'IM Fell Double Pica': GoogleFonts.imFellDoublePicaTextTheme,
+        'IM Fell Double Pica SC': GoogleFonts.imFellDoublePicaScTextTheme,
+        'IM Fell English': GoogleFonts.imFellEnglishTextTheme,
+        'IM Fell English SC': GoogleFonts.imFellEnglishScTextTheme,
+        'IM Fell French Canon': GoogleFonts.imFellFrenchCanonTextTheme,
+        'IM Fell French Canon SC': GoogleFonts.imFellFrenchCanonScTextTheme,
+        'IM Fell Great Primer': GoogleFonts.imFellGreatPrimerTextTheme,
+        'IM Fell Great Primer SC': GoogleFonts.imFellGreatPrimerScTextTheme,
         'Ibarra Real Nova': GoogleFonts.ibarraRealNovaTextTheme,
         'Iceberg': GoogleFonts.icebergTextTheme,
         'Iceland': GoogleFonts.icelandTextTheme,
@@ -1453,7 +1453,7 @@ class GoogleFonts {
         'Jura': GoogleFonts.juraTextTheme,
         'Just Another Hand': GoogleFonts.justAnotherHandTextTheme,
         'Just Me Again Down Here': GoogleFonts.justMeAgainDownHereTextTheme,
-        'K2D': GoogleFonts.k2DTextTheme,
+        'K2D': GoogleFonts.k2dTextTheme,
         'Kadwa': GoogleFonts.kadwaTextTheme,
         'Kalam': GoogleFonts.kalamTextTheme,
         'Kameron': GoogleFonts.kameronTextTheme,
@@ -1537,13 +1537,13 @@ class GoogleFonts {
         'Long Cang': GoogleFonts.longCangTextTheme,
         'Lora': GoogleFonts.loraTextTheme,
         'Love Ya Like A Sister': GoogleFonts.loveYaLikeASisterTextTheme,
-        'Loved by the King': GoogleFonts.lovedbytheKingTextTheme,
+        'Loved by the King': GoogleFonts.lovedByTheKingTextTheme,
         'Lovers Quarrel': GoogleFonts.loversQuarrelTextTheme,
         'Luckiest Guy': GoogleFonts.luckiestGuyTextTheme,
         'Lusitana': GoogleFonts.lusitanaTextTheme,
         'Lustria': GoogleFonts.lustriaTextTheme,
-        'M PLUS 1p': GoogleFonts.mPLUS1pTextTheme,
-        'M PLUS Rounded 1c': GoogleFonts.mPLUSRounded1cTextTheme,
+        'M PLUS 1p': GoogleFonts.mPlus1pTextTheme,
+        'M PLUS Rounded 1c': GoogleFonts.mPlusRounded1cTextTheme,
         'Ma Shan Zheng': GoogleFonts.maShanZhengTextTheme,
         'Macondo': GoogleFonts.macondoTextTheme,
         'Macondo Swash Caps': GoogleFonts.macondoSwashCapsTextTheme,
@@ -1560,7 +1560,7 @@ class GoogleFonts {
         'Mansalva': GoogleFonts.mansalvaTextTheme,
         'Manuale': GoogleFonts.manualeTextTheme,
         'Marcellus': GoogleFonts.marcellusTextTheme,
-        'Marcellus SC': GoogleFonts.marcellusSCTextTheme,
+        'Marcellus SC': GoogleFonts.marcellusScTextTheme,
         'Marck Script': GoogleFonts.marckScriptTextTheme,
         'Margarine': GoogleFonts.margarineTextTheme,
         'Marko One': GoogleFonts.markoOneTextTheme,
@@ -1569,7 +1569,7 @@ class GoogleFonts {
         'Martel Sans': GoogleFonts.martelSansTextTheme,
         'Marvel': GoogleFonts.marvelTextTheme,
         'Mate': GoogleFonts.mateTextTheme,
-        'Mate SC': GoogleFonts.mateSCTextTheme,
+        'Mate SC': GoogleFonts.mateScTextTheme,
         'Maven Pro': GoogleFonts.mavenProTextTheme,
         'McLaren': GoogleFonts.mcLarenTextTheme,
         'Meddon': GoogleFonts.meddonTextTheme,
@@ -1609,7 +1609,7 @@ class GoogleFonts {
         'Montserrat': GoogleFonts.montserratTextTheme,
         'Montserrat Alternates': GoogleFonts.montserratAlternatesTextTheme,
         'Montserrat Subrayada': GoogleFonts.montserratSubrayadaTextTheme,
-        'Mountains of Christmas': GoogleFonts.mountainsofChristmasTextTheme,
+        'Mountains of Christmas': GoogleFonts.mountainsOfChristmasTextTheme,
         'Mouse Memoirs': GoogleFonts.mouseMemoirsTextTheme,
         'Mr Bedfort': GoogleFonts.mrBedfortTextTheme,
         'Mr Dafoe': GoogleFonts.mrDafoeTextTheme,
@@ -1622,7 +1622,7 @@ class GoogleFonts {
         'Mukta Vaani': GoogleFonts.muktaVaaniTextTheme,
         'Muli': GoogleFonts.muliTextTheme,
         'Mystery Quest': GoogleFonts.mysteryQuestTextTheme,
-        'NTR': GoogleFonts.nTRTextTheme,
+        'NTR': GoogleFonts.ntrTextTheme,
         'Nanum Brush Script': GoogleFonts.nanumBrushScriptTextTheme,
         'Nanum Gothic': GoogleFonts.nanumGothicTextTheme,
         'Nanum Gothic Coding': GoogleFonts.nanumGothicCodingTextTheme,
@@ -1658,7 +1658,7 @@ class GoogleFonts {
         'Odibee Sans': GoogleFonts.odibeeSansTextTheme,
         'Odor Mean Chey': GoogleFonts.odorMeanCheyTextTheme,
         'Offside': GoogleFonts.offsideTextTheme,
-        'Old Standard TT': GoogleFonts.oldStandardTTTextTheme,
+        'Old Standard TT': GoogleFonts.oldStandardTtTextTheme,
         'Oldenburg': GoogleFonts.oldenburgTextTheme,
         'Oleo Script': GoogleFonts.oleoScriptTextTheme,
         'Oleo Script Swash Caps': GoogleFonts.oleoScriptSwashCapsTextTheme,
@@ -1670,21 +1670,21 @@ class GoogleFonts {
         'Orienta': GoogleFonts.orientaTextTheme,
         'Original Surfer': GoogleFonts.originalSurferTextTheme,
         'Oswald': GoogleFonts.oswaldTextTheme,
-        'Over the Rainbow': GoogleFonts.overtheRainbowTextTheme,
+        'Over the Rainbow': GoogleFonts.overTheRainbowTextTheme,
         'Overlock': GoogleFonts.overlockTextTheme,
-        'Overlock SC': GoogleFonts.overlockSCTextTheme,
+        'Overlock SC': GoogleFonts.overlockScTextTheme,
         'Overpass': GoogleFonts.overpassTextTheme,
         'Overpass Mono': GoogleFonts.overpassMonoTextTheme,
         'Ovo': GoogleFonts.ovoTextTheme,
         'Oxanium': GoogleFonts.oxaniumTextTheme,
         'Oxygen': GoogleFonts.oxygenTextTheme,
         'Oxygen Mono': GoogleFonts.oxygenMonoTextTheme,
-        'PT Mono': GoogleFonts.pTMonoTextTheme,
-        'PT Sans': GoogleFonts.pTSansTextTheme,
-        'PT Sans Caption': GoogleFonts.pTSansCaptionTextTheme,
-        'PT Sans Narrow': GoogleFonts.pTSansNarrowTextTheme,
-        'PT Serif': GoogleFonts.pTSerifTextTheme,
-        'PT Serif Caption': GoogleFonts.pTSerifCaptionTextTheme,
+        'PT Mono': GoogleFonts.ptMonoTextTheme,
+        'PT Sans': GoogleFonts.ptSansTextTheme,
+        'PT Sans Caption': GoogleFonts.ptSansCaptionTextTheme,
+        'PT Sans Narrow': GoogleFonts.ptSansNarrowTextTheme,
+        'PT Serif': GoogleFonts.ptSerifTextTheme,
+        'PT Serif Caption': GoogleFonts.ptSerifCaptionTextTheme,
         'Pacifico': GoogleFonts.pacificoTextTheme,
         'Padauk': GoogleFonts.padaukTextTheme,
         'Palanquin': GoogleFonts.palanquinTextTheme,
@@ -1696,7 +1696,7 @@ class GoogleFonts {
         'Passion One': GoogleFonts.passionOneTextTheme,
         'Pathway Gothic One': GoogleFonts.pathwayGothicOneTextTheme,
         'Patrick Hand': GoogleFonts.patrickHandTextTheme,
-        'Patrick Hand SC': GoogleFonts.patrickHandSCTextTheme,
+        'Patrick Hand SC': GoogleFonts.patrickHandScTextTheme,
         'Pattaya': GoogleFonts.pattayaTextTheme,
         'Patua One': GoogleFonts.patuaOneTextTheme,
         'Pavanam': GoogleFonts.pavanamTextTheme,
@@ -1714,7 +1714,7 @@ class GoogleFonts {
         'Play': GoogleFonts.playTextTheme,
         'Playball': GoogleFonts.playballTextTheme,
         'Playfair Display': GoogleFonts.playfairDisplayTextTheme,
-        'Playfair Display SC': GoogleFonts.playfairDisplaySCTextTheme,
+        'Playfair Display SC': GoogleFonts.playfairDisplayScTextTheme,
         'Podkova': GoogleFonts.podkovaTextTheme,
         'Poiret One': GoogleFonts.poiretOneTextTheme,
         'Poller One': GoogleFonts.pollerOneTextTheme,
@@ -1727,7 +1727,7 @@ class GoogleFonts {
         'Port Lligat Slab': GoogleFonts.portLligatSlabTextTheme,
         'Pragati Narrow': GoogleFonts.pragatiNarrowTextTheme,
         'Prata': GoogleFonts.prataTextTheme,
-        'Press Start 2P': GoogleFonts.pressStart2PTextTheme,
+        'Press Start 2P': GoogleFonts.pressStart2pTextTheme,
         'Pridi': GoogleFonts.pridiTextTheme,
         'Princess Sofia': GoogleFonts.princessSofiaTextTheme,
         'Prociono': GoogleFonts.procionoTextTheme,
@@ -1862,7 +1862,7 @@ class GoogleFonts {
         'Space Mono': GoogleFonts.spaceMonoTextTheme,
         'Special Elite': GoogleFonts.specialEliteTextTheme,
         'Spectral': GoogleFonts.spectralTextTheme,
-        'Spectral SC': GoogleFonts.spectralSCTextTheme,
+        'Spectral SC': GoogleFonts.spectralScTextTheme,
         'Spicy Rice': GoogleFonts.spicyRiceTextTheme,
         'Spinnaker': GoogleFonts.spinnakerTextTheme,
         'Spirax': GoogleFonts.spiraxTextTheme,
@@ -1889,7 +1889,7 @@ class GoogleFonts {
         'Sura': GoogleFonts.suraTextTheme,
         'Suranna': GoogleFonts.surannaTextTheme,
         'Suravaram': GoogleFonts.suravaramTextTheme,
-        'Swanky and Moo Moo': GoogleFonts.swankyandMooMooTextTheme,
+        'Swanky and Moo Moo': GoogleFonts.swankyAndMooMooTextTheme,
         'Syncopate': GoogleFonts.syncopateTextTheme,
         'Tajawal': GoogleFonts.tajawalTextTheme,
         'Tangerine': GoogleFonts.tangerineTextTheme,
@@ -1928,7 +1928,7 @@ class GoogleFonts {
         'Unkempt': GoogleFonts.unkemptTextTheme,
         'Unlock': GoogleFonts.unlockTextTheme,
         'Unna': GoogleFonts.unnaTextTheme,
-        'VT323': GoogleFonts.vT323TextTheme,
+        'VT323': GoogleFonts.vt323TextTheme,
         'Vampiro One': GoogleFonts.vampiroOneTextTheme,
         'Varela': GoogleFonts.varelaTextTheme,
         'Varela Round': GoogleFonts.varelaRoundTextTheme,
@@ -1941,9 +1941,9 @@ class GoogleFonts {
         'Voces': GoogleFonts.vocesTextTheme,
         'Volkhov': GoogleFonts.volkhovTextTheme,
         'Vollkorn': GoogleFonts.vollkornTextTheme,
-        'Vollkorn SC': GoogleFonts.vollkornSCTextTheme,
+        'Vollkorn SC': GoogleFonts.vollkornScTextTheme,
         'Voltaire': GoogleFonts.voltaireTextTheme,
-        'Waiting for the Sunrise': GoogleFonts.waitingfortheSunriseTextTheme,
+        'Waiting for the Sunrise': GoogleFonts.waitingForTheSunriseTextTheme,
         'Wallpoet': GoogleFonts.wallpoetTextTheme,
         'Walter Turncoat': GoogleFonts.walterTurncoatTextTheme,
         'Warnes': GoogleFonts.warnesTextTheme,
@@ -1959,9 +1959,9 @@ class GoogleFonts {
         'Yeseva One': GoogleFonts.yesevaOneTextTheme,
         'Yesteryear': GoogleFonts.yesteryearTextTheme,
         'Yrsa': GoogleFonts.yrsaTextTheme,
-        'ZCOOL KuaiLe': GoogleFonts.zCOOLKuaiLeTextTheme,
-        'ZCOOL QingKe HuangYou': GoogleFonts.zCOOLQingKeHuangYouTextTheme,
-        'ZCOOL XiaoWei': GoogleFonts.zCOOLXiaoWeiTextTheme,
+        'ZCOOL KuaiLe': GoogleFonts.zcoolKuaiLeTextTheme,
+        'ZCOOL QingKe HuangYou': GoogleFonts.zcoolQingKeHuangYouTextTheme,
+        'ZCOOL XiaoWei': GoogleFonts.zcoolXiaoWeiTextTheme,
         'Zeyada': GoogleFonts.zeyadaTextTheme,
         'Zhi Mang Xing': GoogleFonts.zhiMangXingTextTheme,
         'Zilla Slab': GoogleFonts.zillaSlabTextTheme,
@@ -3596,7 +3596,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya+SC
-  static TextStyle alegreyaSC({
+  static TextStyle alegreyaSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -3692,22 +3692,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya+SC
-  static TextTheme alegreyaSCTextTheme([TextTheme textTheme]) {
+  static TextTheme alegreyaScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.alegreyaSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.alegreyaSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.alegreyaSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.alegreyaSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.alegreyaSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.alegreyaSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.alegreyaSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.alegreyaSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.alegreyaSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.alegreyaSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.alegreyaSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.alegreyaSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.alegreyaSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.alegreyaSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.alegreyaSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.alegreyaSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.alegreyaSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.alegreyaSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.alegreyaSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.alegreyaSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.alegreyaSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.alegreyaSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.alegreyaSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.alegreyaSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.alegreyaSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.alegreyaSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -3890,7 +3890,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya+Sans+SC
-  static TextStyle alegreyaSansSC({
+  static TextStyle alegreyaSansSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -4042,22 +4042,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya+Sans+SC
-  static TextTheme alegreyaSansSCTextTheme([TextTheme textTheme]) {
+  static TextTheme alegreyaSansScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.alegreyaSansSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.alegreyaSansSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -5241,7 +5241,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Almendra+SC
-  static TextStyle almendraSC({
+  static TextStyle almendraSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -5302,22 +5302,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Almendra+SC
-  static TextTheme almendraSCTextTheme([TextTheme textTheme]) {
+  static TextTheme almendraScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.almendraSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.almendraSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.almendraSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.almendraSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.almendraSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.almendraSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.almendraSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.almendraSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.almendraSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.almendraSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.almendraSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.almendraSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.almendraSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.almendraSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.almendraSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.almendraSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.almendraSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.almendraSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.almendraSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.almendraSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.almendraSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.almendraSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.almendraSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.almendraSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.almendraSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.almendraSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -5514,7 +5514,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amatic+SC
-  static TextStyle amaticSC({
+  static TextStyle amaticSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -5582,22 +5582,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amatic+SC
-  static TextTheme amaticSCTextTheme([TextTheme textTheme]) {
+  static TextTheme amaticScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.amaticSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.amaticSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.amaticSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.amaticSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.amaticSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.amaticSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.amaticSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.amaticSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.amaticSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.amaticSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.amaticSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.amaticSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.amaticSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.amaticSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.amaticSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.amaticSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.amaticSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.amaticSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.amaticSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.amaticSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.amaticSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.amaticSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.amaticSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.amaticSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.amaticSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.amaticSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -5605,7 +5605,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amatica+SC
-  static TextStyle amaticaSC({
+  static TextStyle amaticaSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -5673,22 +5673,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amatica+SC
-  static TextTheme amaticaSCTextTheme([TextTheme textTheme]) {
+  static TextTheme amaticaScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.amaticaSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.amaticaSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.amaticaSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.amaticaSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.amaticaSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.amaticaSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.amaticaSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.amaticaSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.amaticaSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.amaticaSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.amaticaSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.amaticaSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.amaticaSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.amaticaSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.amaticaSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.amaticaSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.amaticaSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.amaticaSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.amaticaSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.amaticaSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.amaticaSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.amaticaSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.amaticaSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.amaticaSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.amaticaSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.amaticaSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -15475,7 +15475,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bowlby+One+SC
-  static TextStyle bowlbyOneSC({
+  static TextStyle bowlbyOneSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -15536,22 +15536,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bowlby+One+SC
-  static TextTheme bowlbyOneSCTextTheme([TextTheme textTheme]) {
+  static TextTheme bowlbyOneScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.bowlbyOneSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.bowlbyOneSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -18443,7 +18443,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Carrois+Gothic+SC
-  static TextStyle carroisGothicSC({
+  static TextStyle carroisGothicSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -18504,22 +18504,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Carrois+Gothic+SC
-  static TextTheme carroisGothicSCTextTheme([TextTheme textTheme]) {
+  static TextTheme carroisGothicScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.carroisGothicSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.carroisGothicSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.carroisGothicSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.carroisGothicSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.carroisGothicSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.carroisGothicSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.carroisGothicSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.carroisGothicSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.carroisGothicSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.carroisGothicSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.carroisGothicSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.carroisGothicSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.carroisGothicSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.carroisGothicSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.carroisGothicSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.carroisGothicSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.carroisGothicSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.carroisGothicSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.carroisGothicSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.carroisGothicSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.carroisGothicSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.carroisGothicSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.carroisGothicSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.carroisGothicSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.carroisGothicSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.carroisGothicSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -22776,7 +22776,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+SC
-  static TextStyle cormorantSC({
+  static TextStyle cormorantSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -22865,22 +22865,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+SC
-  static TextTheme cormorantSCTextTheme([TextTheme textTheme]) {
+  static TextTheme cormorantScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.cormorantSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.cormorantSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.cormorantSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.cormorantSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.cormorantSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.cormorantSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.cormorantSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.cormorantSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.cormorantSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.cormorantSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.cormorantSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.cormorantSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.cormorantSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.cormorantSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.cormorantSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.cormorantSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.cormorantSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.cormorantSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.cormorantSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.cormorantSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.cormorantSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.cormorantSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.cormorantSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.cormorantSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.cormorantSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.cormorantSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -24484,7 +24484,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Sans
-  static TextStyle dMSans({
+  static TextStyle dmSans({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -24580,22 +24580,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Sans
-  static TextTheme dMSansTextTheme([TextTheme textTheme]) {
+  static TextTheme dmSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.dMSans(textStyle: textTheme?.display4),
-      display3: GoogleFonts.dMSans(textStyle: textTheme?.display3),
-      display2: GoogleFonts.dMSans(textStyle: textTheme?.display2),
-      display1: GoogleFonts.dMSans(textStyle: textTheme?.display1),
-      headline: GoogleFonts.dMSans(textStyle: textTheme?.headline),
-      title: GoogleFonts.dMSans(textStyle: textTheme?.title),
-      subhead: GoogleFonts.dMSans(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.dMSans(textStyle: textTheme?.body2),
-      body1: GoogleFonts.dMSans(textStyle: textTheme?.body1),
-      caption: GoogleFonts.dMSans(textStyle: textTheme?.caption),
-      button: GoogleFonts.dMSans(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.dMSans(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.dMSans(textStyle: textTheme?.overline),
+      display4: GoogleFonts.dmSans(textStyle: textTheme?.display4),
+      display3: GoogleFonts.dmSans(textStyle: textTheme?.display3),
+      display2: GoogleFonts.dmSans(textStyle: textTheme?.display2),
+      display1: GoogleFonts.dmSans(textStyle: textTheme?.display1),
+      headline: GoogleFonts.dmSans(textStyle: textTheme?.headline),
+      title: GoogleFonts.dmSans(textStyle: textTheme?.title),
+      subhead: GoogleFonts.dmSans(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.dmSans(textStyle: textTheme?.body2),
+      body1: GoogleFonts.dmSans(textStyle: textTheme?.body1),
+      caption: GoogleFonts.dmSans(textStyle: textTheme?.caption),
+      button: GoogleFonts.dmSans(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.dmSans(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.dmSans(textStyle: textTheme?.overline),
     );
   }
 
@@ -24603,7 +24603,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Serif+Display
-  static TextStyle dMSerifDisplay({
+  static TextStyle dmSerifDisplay({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -24671,22 +24671,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Serif+Display
-  static TextTheme dMSerifDisplayTextTheme([TextTheme textTheme]) {
+  static TextTheme dmSerifDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.display4),
-      display3: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.display3),
-      display2: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.display2),
-      display1: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.display1),
-      headline: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.headline),
-      title: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.title),
-      subhead: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.body2),
-      body1: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.body1),
-      caption: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.caption),
-      button: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.dMSerifDisplay(textStyle: textTheme?.overline),
+      display4: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.display4),
+      display3: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.display3),
+      display2: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.display2),
+      display1: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.display1),
+      headline: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.headline),
+      title: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.title),
+      subhead: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.body2),
+      body1: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.body1),
+      caption: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.caption),
+      button: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.dmSerifDisplay(textStyle: textTheme?.overline),
     );
   }
 
@@ -24694,7 +24694,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Serif+Text
-  static TextStyle dMSerifText({
+  static TextStyle dmSerifText({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -24762,22 +24762,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Serif+Text
-  static TextTheme dMSerifTextTextTheme([TextTheme textTheme]) {
+  static TextTheme dmSerifTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.dMSerifText(textStyle: textTheme?.display4),
-      display3: GoogleFonts.dMSerifText(textStyle: textTheme?.display3),
-      display2: GoogleFonts.dMSerifText(textStyle: textTheme?.display2),
-      display1: GoogleFonts.dMSerifText(textStyle: textTheme?.display1),
-      headline: GoogleFonts.dMSerifText(textStyle: textTheme?.headline),
-      title: GoogleFonts.dMSerifText(textStyle: textTheme?.title),
-      subhead: GoogleFonts.dMSerifText(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.dMSerifText(textStyle: textTheme?.body2),
-      body1: GoogleFonts.dMSerifText(textStyle: textTheme?.body1),
-      caption: GoogleFonts.dMSerifText(textStyle: textTheme?.caption),
-      button: GoogleFonts.dMSerifText(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.dMSerifText(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.dMSerifText(textStyle: textTheme?.overline),
+      display4: GoogleFonts.dmSerifText(textStyle: textTheme?.display4),
+      display3: GoogleFonts.dmSerifText(textStyle: textTheme?.display3),
+      display2: GoogleFonts.dmSerifText(textStyle: textTheme?.display2),
+      display1: GoogleFonts.dmSerifText(textStyle: textTheme?.display1),
+      headline: GoogleFonts.dmSerifText(textStyle: textTheme?.headline),
+      title: GoogleFonts.dmSerifText(textStyle: textTheme?.title),
+      subhead: GoogleFonts.dmSerifText(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.dmSerifText(textStyle: textTheme?.body2),
+      body1: GoogleFonts.dmSerifText(textStyle: textTheme?.body1),
+      caption: GoogleFonts.dmSerifText(textStyle: textTheme?.caption),
+      button: GoogleFonts.dmSerifText(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.dmSerifText(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.dmSerifText(textStyle: textTheme?.overline),
     );
   }
 
@@ -25184,7 +25184,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dawning+of+a+New+Day
-  static TextStyle dawningofaNewDay({
+  static TextStyle dawningOfANewDay({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -25245,22 +25245,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dawning+of+a+New+Day
-  static TextTheme dawningofaNewDayTextTheme([TextTheme textTheme]) {
+  static TextTheme dawningOfANewDayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.display4),
-      display3: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.display3),
-      display2: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.display2),
-      display1: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.display1),
-      headline: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.headline),
-      title: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.title),
-      subhead: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.body2),
-      body1: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.body1),
-      caption: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.caption),
-      button: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.dawningofaNewDay(textStyle: textTheme?.overline),
+      display4: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.display4),
+      display3: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.display3),
+      display2: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.display2),
+      display1: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.display1),
+      headline: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.headline),
+      title: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.title),
+      subhead: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.body2),
+      body1: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.body1),
+      caption: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.caption),
+      button: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.dawningOfANewDay(textStyle: textTheme?.overline),
     );
   }
 
@@ -26199,7 +26199,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Diplomata+SC
-  static TextStyle diplomataSC({
+  static TextStyle diplomataSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -26260,22 +26260,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Diplomata+SC
-  static TextTheme diplomataSCTextTheme([TextTheme textTheme]) {
+  static TextTheme diplomataScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.diplomataSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.diplomataSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.diplomataSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.diplomataSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.diplomataSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.diplomataSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.diplomataSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.diplomataSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.diplomataSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.diplomataSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.diplomataSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.diplomataSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.diplomataSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.diplomataSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.diplomataSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.diplomataSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.diplomataSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.diplomataSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.diplomataSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.diplomataSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.diplomataSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.diplomataSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.diplomataSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.diplomataSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.diplomataSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.diplomataSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -27452,7 +27452,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/EB+Garamond
-  static TextStyle eBGaramond({
+  static TextStyle ebGaramond({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -27513,22 +27513,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/EB+Garamond
-  static TextTheme eBGaramondTextTheme([TextTheme textTheme]) {
+  static TextTheme ebGaramondTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.eBGaramond(textStyle: textTheme?.display4),
-      display3: GoogleFonts.eBGaramond(textStyle: textTheme?.display3),
-      display2: GoogleFonts.eBGaramond(textStyle: textTheme?.display2),
-      display1: GoogleFonts.eBGaramond(textStyle: textTheme?.display1),
-      headline: GoogleFonts.eBGaramond(textStyle: textTheme?.headline),
-      title: GoogleFonts.eBGaramond(textStyle: textTheme?.title),
-      subhead: GoogleFonts.eBGaramond(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.eBGaramond(textStyle: textTheme?.body2),
-      body1: GoogleFonts.eBGaramond(textStyle: textTheme?.body1),
-      caption: GoogleFonts.eBGaramond(textStyle: textTheme?.caption),
-      button: GoogleFonts.eBGaramond(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.eBGaramond(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.eBGaramond(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ebGaramond(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ebGaramond(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ebGaramond(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ebGaramond(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ebGaramond(textStyle: textTheme?.headline),
+      title: GoogleFonts.ebGaramond(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ebGaramond(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ebGaramond(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ebGaramond(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ebGaramond(textStyle: textTheme?.caption),
+      button: GoogleFonts.ebGaramond(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ebGaramond(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ebGaramond(textStyle: textTheme?.overline),
     );
   }
 
@@ -33324,7 +33324,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fredericka+the+Great
-  static TextStyle frederickatheGreat({
+  static TextStyle frederickaTheGreat({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -33385,22 +33385,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fredericka+the+Great
-  static TextTheme frederickatheGreatTextTheme([TextTheme textTheme]) {
+  static TextTheme frederickaTheGreatTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.frederickatheGreat(textStyle: textTheme?.display4),
-      display3: GoogleFonts.frederickatheGreat(textStyle: textTheme?.display3),
-      display2: GoogleFonts.frederickatheGreat(textStyle: textTheme?.display2),
-      display1: GoogleFonts.frederickatheGreat(textStyle: textTheme?.display1),
-      headline: GoogleFonts.frederickatheGreat(textStyle: textTheme?.headline),
-      title: GoogleFonts.frederickatheGreat(textStyle: textTheme?.title),
-      subhead: GoogleFonts.frederickatheGreat(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.frederickatheGreat(textStyle: textTheme?.body2),
-      body1: GoogleFonts.frederickatheGreat(textStyle: textTheme?.body1),
-      caption: GoogleFonts.frederickatheGreat(textStyle: textTheme?.caption),
-      button: GoogleFonts.frederickatheGreat(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.frederickatheGreat(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.frederickatheGreat(textStyle: textTheme?.overline),
+      display4: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.display4),
+      display3: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.display3),
+      display2: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.display2),
+      display1: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.display1),
+      headline: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.headline),
+      title: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.title),
+      subhead: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.body2),
+      body1: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.body1),
+      caption: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.caption),
+      button: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.frederickaTheGreat(textStyle: textTheme?.overline),
     );
   }
 
@@ -33828,7 +33828,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/GFS+Didot
-  static TextStyle gFSDidot({
+  static TextStyle gfsDidot({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -33889,22 +33889,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/GFS+Didot
-  static TextTheme gFSDidotTextTheme([TextTheme textTheme]) {
+  static TextTheme gfsDidotTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.gFSDidot(textStyle: textTheme?.display4),
-      display3: GoogleFonts.gFSDidot(textStyle: textTheme?.display3),
-      display2: GoogleFonts.gFSDidot(textStyle: textTheme?.display2),
-      display1: GoogleFonts.gFSDidot(textStyle: textTheme?.display1),
-      headline: GoogleFonts.gFSDidot(textStyle: textTheme?.headline),
-      title: GoogleFonts.gFSDidot(textStyle: textTheme?.title),
-      subhead: GoogleFonts.gFSDidot(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.gFSDidot(textStyle: textTheme?.body2),
-      body1: GoogleFonts.gFSDidot(textStyle: textTheme?.body1),
-      caption: GoogleFonts.gFSDidot(textStyle: textTheme?.caption),
-      button: GoogleFonts.gFSDidot(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.gFSDidot(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.gFSDidot(textStyle: textTheme?.overline),
+      display4: GoogleFonts.gfsDidot(textStyle: textTheme?.display4),
+      display3: GoogleFonts.gfsDidot(textStyle: textTheme?.display3),
+      display2: GoogleFonts.gfsDidot(textStyle: textTheme?.display2),
+      display1: GoogleFonts.gfsDidot(textStyle: textTheme?.display1),
+      headline: GoogleFonts.gfsDidot(textStyle: textTheme?.headline),
+      title: GoogleFonts.gfsDidot(textStyle: textTheme?.title),
+      subhead: GoogleFonts.gfsDidot(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.gfsDidot(textStyle: textTheme?.body2),
+      body1: GoogleFonts.gfsDidot(textStyle: textTheme?.body1),
+      caption: GoogleFonts.gfsDidot(textStyle: textTheme?.caption),
+      button: GoogleFonts.gfsDidot(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.gfsDidot(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.gfsDidot(textStyle: textTheme?.overline),
     );
   }
 
@@ -33912,7 +33912,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/GFS+Neohellenic
-  static TextStyle gFSNeohellenic({
+  static TextStyle gfsNeohellenic({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -33994,22 +33994,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/GFS+Neohellenic
-  static TextTheme gFSNeohellenicTextTheme([TextTheme textTheme]) {
+  static TextTheme gfsNeohellenicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.display4),
-      display3: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.display3),
-      display2: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.display2),
-      display1: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.display1),
-      headline: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.headline),
-      title: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.title),
-      subhead: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.body2),
-      body1: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.body1),
-      caption: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.caption),
-      button: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.gFSNeohellenic(textStyle: textTheme?.overline),
+      display4: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.display4),
+      display3: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.display3),
+      display2: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.display2),
+      display1: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.display1),
+      headline: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.headline),
+      title: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.title),
+      subhead: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.body2),
+      body1: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.body1),
+      caption: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.caption),
+      button: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.gfsNeohellenic(textStyle: textTheme?.overline),
     );
   }
 
@@ -39274,7 +39274,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Holtwood+One+SC
-  static TextStyle holtwoodOneSC({
+  static TextStyle holtwoodOneSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -39335,22 +39335,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Holtwood+One+SC
-  static TextTheme holtwoodOneSCTextTheme([TextTheme textTheme]) {
+  static TextTheme holtwoodOneScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.holtwoodOneSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.holtwoodOneSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -39526,7 +39526,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Mono
-  static TextStyle iBMPlexMono({
+  static TextStyle ibmPlexMono({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -39678,22 +39678,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Mono
-  static TextTheme iBMPlexMonoTextTheme([TextTheme textTheme]) {
+  static TextTheme ibmPlexMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iBMPlexMono(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iBMPlexMono(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iBMPlexMono(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iBMPlexMono(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iBMPlexMono(textStyle: textTheme?.headline),
-      title: GoogleFonts.iBMPlexMono(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iBMPlexMono(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iBMPlexMono(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iBMPlexMono(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iBMPlexMono(textStyle: textTheme?.caption),
-      button: GoogleFonts.iBMPlexMono(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iBMPlexMono(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iBMPlexMono(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ibmPlexMono(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ibmPlexMono(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ibmPlexMono(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ibmPlexMono(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ibmPlexMono(textStyle: textTheme?.headline),
+      title: GoogleFonts.ibmPlexMono(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ibmPlexMono(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ibmPlexMono(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ibmPlexMono(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ibmPlexMono(textStyle: textTheme?.caption),
+      button: GoogleFonts.ibmPlexMono(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ibmPlexMono(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ibmPlexMono(textStyle: textTheme?.overline),
     );
   }
 
@@ -39701,7 +39701,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Sans
-  static TextStyle iBMPlexSans({
+  static TextStyle ibmPlexSans({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -39853,22 +39853,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Sans
-  static TextTheme iBMPlexSansTextTheme([TextTheme textTheme]) {
+  static TextTheme ibmPlexSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iBMPlexSans(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iBMPlexSans(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iBMPlexSans(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iBMPlexSans(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iBMPlexSans(textStyle: textTheme?.headline),
-      title: GoogleFonts.iBMPlexSans(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iBMPlexSans(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iBMPlexSans(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iBMPlexSans(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iBMPlexSans(textStyle: textTheme?.caption),
-      button: GoogleFonts.iBMPlexSans(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iBMPlexSans(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iBMPlexSans(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ibmPlexSans(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ibmPlexSans(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ibmPlexSans(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ibmPlexSans(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ibmPlexSans(textStyle: textTheme?.headline),
+      title: GoogleFonts.ibmPlexSans(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ibmPlexSans(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ibmPlexSans(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ibmPlexSans(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ibmPlexSans(textStyle: textTheme?.caption),
+      button: GoogleFonts.ibmPlexSans(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ibmPlexSans(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ibmPlexSans(textStyle: textTheme?.overline),
     );
   }
 
@@ -39876,7 +39876,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Sans+Condensed
-  static TextStyle iBMPlexSansCondensed({
+  static TextStyle ibmPlexSansCondensed({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -40028,29 +40028,29 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Sans+Condensed
-  static TextTheme iBMPlexSansCondensedTextTheme([TextTheme textTheme]) {
+  static TextTheme ibmPlexSansCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4:
-          GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.display4),
+          GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.display4),
       display3:
-          GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.display3),
+          GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.display3),
       display2:
-          GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.display2),
+          GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.display2),
       display1:
-          GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.display1),
+          GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.display1),
       headline:
-          GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.headline),
-      title: GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.caption),
-      button: GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.button),
+          GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.headline),
+      title: GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.caption),
+      button: GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.button),
       subtitle:
-          GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.subtitle),
+          GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.subtitle),
       overline:
-          GoogleFonts.iBMPlexSansCondensed(textStyle: textTheme?.overline),
+          GoogleFonts.ibmPlexSansCondensed(textStyle: textTheme?.overline),
     );
   }
 
@@ -40058,7 +40058,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Serif
-  static TextStyle iBMPlexSerif({
+  static TextStyle ibmPlexSerif({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -40210,22 +40210,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Serif
-  static TextTheme iBMPlexSerifTextTheme([TextTheme textTheme]) {
+  static TextTheme ibmPlexSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.headline),
-      title: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.caption),
-      button: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iBMPlexSerif(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.headline),
+      title: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.caption),
+      button: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ibmPlexSerif(textStyle: textTheme?.overline),
     );
   }
 
@@ -40233,7 +40233,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica
-  static TextStyle iMFellDWPica({
+  static TextStyle imFellDwPica({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -40301,22 +40301,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica
-  static TextTheme iMFellDWPicaTextTheme([TextTheme textTheme]) {
+  static TextTheme imFellDwPicaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iMFellDWPica(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iMFellDWPica(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iMFellDWPica(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iMFellDWPica(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iMFellDWPica(textStyle: textTheme?.headline),
-      title: GoogleFonts.iMFellDWPica(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iMFellDWPica(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iMFellDWPica(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iMFellDWPica(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iMFellDWPica(textStyle: textTheme?.caption),
-      button: GoogleFonts.iMFellDWPica(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iMFellDWPica(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iMFellDWPica(textStyle: textTheme?.overline),
+      display4: GoogleFonts.imFellDwPica(textStyle: textTheme?.display4),
+      display3: GoogleFonts.imFellDwPica(textStyle: textTheme?.display3),
+      display2: GoogleFonts.imFellDwPica(textStyle: textTheme?.display2),
+      display1: GoogleFonts.imFellDwPica(textStyle: textTheme?.display1),
+      headline: GoogleFonts.imFellDwPica(textStyle: textTheme?.headline),
+      title: GoogleFonts.imFellDwPica(textStyle: textTheme?.title),
+      subhead: GoogleFonts.imFellDwPica(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.imFellDwPica(textStyle: textTheme?.body2),
+      body1: GoogleFonts.imFellDwPica(textStyle: textTheme?.body1),
+      caption: GoogleFonts.imFellDwPica(textStyle: textTheme?.caption),
+      button: GoogleFonts.imFellDwPica(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.imFellDwPica(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.imFellDwPica(textStyle: textTheme?.overline),
     );
   }
 
@@ -40324,7 +40324,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica+SC
-  static TextStyle iMFellDWPicaSC({
+  static TextStyle imFellDwPicaSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -40385,22 +40385,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica+SC
-  static TextTheme iMFellDWPicaSCTextTheme([TextTheme textTheme]) {
+  static TextTheme imFellDwPicaScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iMFellDWPicaSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.imFellDwPicaSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -40408,7 +40408,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica
-  static TextStyle iMFellDoublePica({
+  static TextStyle imFellDoublePica({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -40476,22 +40476,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica
-  static TextTheme iMFellDoublePicaTextTheme([TextTheme textTheme]) {
+  static TextTheme imFellDoublePicaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.headline),
-      title: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.caption),
-      button: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iMFellDoublePica(textStyle: textTheme?.overline),
+      display4: GoogleFonts.imFellDoublePica(textStyle: textTheme?.display4),
+      display3: GoogleFonts.imFellDoublePica(textStyle: textTheme?.display3),
+      display2: GoogleFonts.imFellDoublePica(textStyle: textTheme?.display2),
+      display1: GoogleFonts.imFellDoublePica(textStyle: textTheme?.display1),
+      headline: GoogleFonts.imFellDoublePica(textStyle: textTheme?.headline),
+      title: GoogleFonts.imFellDoublePica(textStyle: textTheme?.title),
+      subhead: GoogleFonts.imFellDoublePica(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.imFellDoublePica(textStyle: textTheme?.body2),
+      body1: GoogleFonts.imFellDoublePica(textStyle: textTheme?.body1),
+      caption: GoogleFonts.imFellDoublePica(textStyle: textTheme?.caption),
+      button: GoogleFonts.imFellDoublePica(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.imFellDoublePica(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.imFellDoublePica(textStyle: textTheme?.overline),
     );
   }
 
@@ -40499,7 +40499,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica+SC
-  static TextStyle iMFellDoublePicaSC({
+  static TextStyle imFellDoublePicaSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -40560,22 +40560,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica+SC
-  static TextTheme iMFellDoublePicaSCTextTheme([TextTheme textTheme]) {
+  static TextTheme imFellDoublePicaScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iMFellDoublePicaSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.imFellDoublePicaSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -40583,7 +40583,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+English
-  static TextStyle iMFellEnglish({
+  static TextStyle imFellEnglish({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -40651,22 +40651,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+English
-  static TextTheme iMFellEnglishTextTheme([TextTheme textTheme]) {
+  static TextTheme imFellEnglishTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iMFellEnglish(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iMFellEnglish(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iMFellEnglish(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iMFellEnglish(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iMFellEnglish(textStyle: textTheme?.headline),
-      title: GoogleFonts.iMFellEnglish(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iMFellEnglish(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iMFellEnglish(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iMFellEnglish(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iMFellEnglish(textStyle: textTheme?.caption),
-      button: GoogleFonts.iMFellEnglish(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iMFellEnglish(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iMFellEnglish(textStyle: textTheme?.overline),
+      display4: GoogleFonts.imFellEnglish(textStyle: textTheme?.display4),
+      display3: GoogleFonts.imFellEnglish(textStyle: textTheme?.display3),
+      display2: GoogleFonts.imFellEnglish(textStyle: textTheme?.display2),
+      display1: GoogleFonts.imFellEnglish(textStyle: textTheme?.display1),
+      headline: GoogleFonts.imFellEnglish(textStyle: textTheme?.headline),
+      title: GoogleFonts.imFellEnglish(textStyle: textTheme?.title),
+      subhead: GoogleFonts.imFellEnglish(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.imFellEnglish(textStyle: textTheme?.body2),
+      body1: GoogleFonts.imFellEnglish(textStyle: textTheme?.body1),
+      caption: GoogleFonts.imFellEnglish(textStyle: textTheme?.caption),
+      button: GoogleFonts.imFellEnglish(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.imFellEnglish(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.imFellEnglish(textStyle: textTheme?.overline),
     );
   }
 
@@ -40674,7 +40674,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+English+SC
-  static TextStyle iMFellEnglishSC({
+  static TextStyle imFellEnglishSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -40735,22 +40735,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+English+SC
-  static TextTheme iMFellEnglishSCTextTheme([TextTheme textTheme]) {
+  static TextTheme imFellEnglishScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iMFellEnglishSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.imFellEnglishSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -40758,7 +40758,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon
-  static TextStyle iMFellFrenchCanon({
+  static TextStyle imFellFrenchCanon({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -40826,22 +40826,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon
-  static TextTheme iMFellFrenchCanonTextTheme([TextTheme textTheme]) {
+  static TextTheme imFellFrenchCanonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.headline),
-      title: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.caption),
-      button: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iMFellFrenchCanon(textStyle: textTheme?.overline),
+      display4: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.display4),
+      display3: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.display3),
+      display2: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.display2),
+      display1: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.display1),
+      headline: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.headline),
+      title: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.title),
+      subhead: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.body2),
+      body1: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.body1),
+      caption: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.caption),
+      button: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.imFellFrenchCanon(textStyle: textTheme?.overline),
     );
   }
 
@@ -40849,7 +40849,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon+SC
-  static TextStyle iMFellFrenchCanonSC({
+  static TextStyle imFellFrenchCanonSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -40910,22 +40910,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon+SC
-  static TextTheme iMFellFrenchCanonSCTextTheme([TextTheme textTheme]) {
+  static TextTheme imFellFrenchCanonScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iMFellFrenchCanonSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.imFellFrenchCanonSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -40933,7 +40933,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer
-  static TextStyle iMFellGreatPrimer({
+  static TextStyle imFellGreatPrimer({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -41001,22 +41001,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer
-  static TextTheme iMFellGreatPrimerTextTheme([TextTheme textTheme]) {
+  static TextTheme imFellGreatPrimerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.headline),
-      title: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.caption),
-      button: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iMFellGreatPrimer(textStyle: textTheme?.overline),
+      display4: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.display4),
+      display3: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.display3),
+      display2: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.display2),
+      display1: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.display1),
+      headline: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.headline),
+      title: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.title),
+      subhead: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.body2),
+      body1: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.body1),
+      caption: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.caption),
+      button: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.imFellGreatPrimer(textStyle: textTheme?.overline),
     );
   }
 
@@ -41024,7 +41024,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer+SC
-  static TextStyle iMFellGreatPrimerSC({
+  static TextStyle imFellGreatPrimerSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -41085,22 +41085,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer+SC
-  static TextTheme iMFellGreatPrimerSCTextTheme([TextTheme textTheme]) {
+  static TextTheme imFellGreatPrimerScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.iMFellGreatPrimerSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.imFellGreatPrimerSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -44293,7 +44293,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/K2D
-  static TextStyle k2D({
+  static TextStyle k2d({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -44459,22 +44459,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/K2D
-  static TextTheme k2DTextTheme([TextTheme textTheme]) {
+  static TextTheme k2dTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.k2D(textStyle: textTheme?.display4),
-      display3: GoogleFonts.k2D(textStyle: textTheme?.display3),
-      display2: GoogleFonts.k2D(textStyle: textTheme?.display2),
-      display1: GoogleFonts.k2D(textStyle: textTheme?.display1),
-      headline: GoogleFonts.k2D(textStyle: textTheme?.headline),
-      title: GoogleFonts.k2D(textStyle: textTheme?.title),
-      subhead: GoogleFonts.k2D(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.k2D(textStyle: textTheme?.body2),
-      body1: GoogleFonts.k2D(textStyle: textTheme?.body1),
-      caption: GoogleFonts.k2D(textStyle: textTheme?.caption),
-      button: GoogleFonts.k2D(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.k2D(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.k2D(textStyle: textTheme?.overline),
+      display4: GoogleFonts.k2d(textStyle: textTheme?.display4),
+      display3: GoogleFonts.k2d(textStyle: textTheme?.display3),
+      display2: GoogleFonts.k2d(textStyle: textTheme?.display2),
+      display1: GoogleFonts.k2d(textStyle: textTheme?.display1),
+      headline: GoogleFonts.k2d(textStyle: textTheme?.headline),
+      title: GoogleFonts.k2d(textStyle: textTheme?.title),
+      subhead: GoogleFonts.k2d(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.k2d(textStyle: textTheme?.body2),
+      body1: GoogleFonts.k2d(textStyle: textTheme?.body1),
+      caption: GoogleFonts.k2d(textStyle: textTheme?.caption),
+      button: GoogleFonts.k2d(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.k2d(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.k2d(textStyle: textTheme?.overline),
     );
   }
 
@@ -52316,7 +52316,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Loved+by+the+King
-  static TextStyle lovedbytheKing({
+  static TextStyle lovedByTheKing({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -52377,22 +52377,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Loved+by+the+King
-  static TextTheme lovedbytheKingTextTheme([TextTheme textTheme]) {
+  static TextTheme lovedByTheKingTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.lovedbytheKing(textStyle: textTheme?.display4),
-      display3: GoogleFonts.lovedbytheKing(textStyle: textTheme?.display3),
-      display2: GoogleFonts.lovedbytheKing(textStyle: textTheme?.display2),
-      display1: GoogleFonts.lovedbytheKing(textStyle: textTheme?.display1),
-      headline: GoogleFonts.lovedbytheKing(textStyle: textTheme?.headline),
-      title: GoogleFonts.lovedbytheKing(textStyle: textTheme?.title),
-      subhead: GoogleFonts.lovedbytheKing(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.lovedbytheKing(textStyle: textTheme?.body2),
-      body1: GoogleFonts.lovedbytheKing(textStyle: textTheme?.body1),
-      caption: GoogleFonts.lovedbytheKing(textStyle: textTheme?.caption),
-      button: GoogleFonts.lovedbytheKing(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.lovedbytheKing(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.lovedbytheKing(textStyle: textTheme?.overline),
+      display4: GoogleFonts.lovedByTheKing(textStyle: textTheme?.display4),
+      display3: GoogleFonts.lovedByTheKing(textStyle: textTheme?.display3),
+      display2: GoogleFonts.lovedByTheKing(textStyle: textTheme?.display2),
+      display1: GoogleFonts.lovedByTheKing(textStyle: textTheme?.display1),
+      headline: GoogleFonts.lovedByTheKing(textStyle: textTheme?.headline),
+      title: GoogleFonts.lovedByTheKing(textStyle: textTheme?.title),
+      subhead: GoogleFonts.lovedByTheKing(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.lovedByTheKing(textStyle: textTheme?.body2),
+      body1: GoogleFonts.lovedByTheKing(textStyle: textTheme?.body1),
+      caption: GoogleFonts.lovedByTheKing(textStyle: textTheme?.caption),
+      button: GoogleFonts.lovedByTheKing(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.lovedByTheKing(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.lovedByTheKing(textStyle: textTheme?.overline),
     );
   }
 
@@ -52743,7 +52743,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/M+PLUS+1p
-  static TextStyle mPLUS1p({
+  static TextStyle mPlus1p({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -52846,22 +52846,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/M+PLUS+1p
-  static TextTheme mPLUS1pTextTheme([TextTheme textTheme]) {
+  static TextTheme mPlus1pTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.mPLUS1p(textStyle: textTheme?.display4),
-      display3: GoogleFonts.mPLUS1p(textStyle: textTheme?.display3),
-      display2: GoogleFonts.mPLUS1p(textStyle: textTheme?.display2),
-      display1: GoogleFonts.mPLUS1p(textStyle: textTheme?.display1),
-      headline: GoogleFonts.mPLUS1p(textStyle: textTheme?.headline),
-      title: GoogleFonts.mPLUS1p(textStyle: textTheme?.title),
-      subhead: GoogleFonts.mPLUS1p(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.mPLUS1p(textStyle: textTheme?.body2),
-      body1: GoogleFonts.mPLUS1p(textStyle: textTheme?.body1),
-      caption: GoogleFonts.mPLUS1p(textStyle: textTheme?.caption),
-      button: GoogleFonts.mPLUS1p(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.mPLUS1p(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.mPLUS1p(textStyle: textTheme?.overline),
+      display4: GoogleFonts.mPlus1p(textStyle: textTheme?.display4),
+      display3: GoogleFonts.mPlus1p(textStyle: textTheme?.display3),
+      display2: GoogleFonts.mPlus1p(textStyle: textTheme?.display2),
+      display1: GoogleFonts.mPlus1p(textStyle: textTheme?.display1),
+      headline: GoogleFonts.mPlus1p(textStyle: textTheme?.headline),
+      title: GoogleFonts.mPlus1p(textStyle: textTheme?.title),
+      subhead: GoogleFonts.mPlus1p(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.mPlus1p(textStyle: textTheme?.body2),
+      body1: GoogleFonts.mPlus1p(textStyle: textTheme?.body1),
+      caption: GoogleFonts.mPlus1p(textStyle: textTheme?.caption),
+      button: GoogleFonts.mPlus1p(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.mPlus1p(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.mPlus1p(textStyle: textTheme?.overline),
     );
   }
 
@@ -52869,7 +52869,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/M+PLUS+Rounded+1c
-  static TextStyle mPLUSRounded1c({
+  static TextStyle mPlusRounded1c({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -52972,22 +52972,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/M+PLUS+Rounded+1c
-  static TextTheme mPLUSRounded1cTextTheme([TextTheme textTheme]) {
+  static TextTheme mPlusRounded1cTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.display4),
-      display3: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.display3),
-      display2: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.display2),
-      display1: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.display1),
-      headline: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.headline),
-      title: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.title),
-      subhead: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.body2),
-      body1: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.body1),
-      caption: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.caption),
-      button: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.mPLUSRounded1c(textStyle: textTheme?.overline),
+      display4: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.display4),
+      display3: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.display3),
+      display2: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.display2),
+      display1: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.display1),
+      headline: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.headline),
+      title: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.title),
+      subhead: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.body2),
+      body1: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.body1),
+      caption: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.caption),
+      button: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.mPlusRounded1c(textStyle: textTheme?.overline),
     );
   }
 
@@ -54563,7 +54563,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marcellus+SC
-  static TextStyle marcellusSC({
+  static TextStyle marcellusSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -54624,22 +54624,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marcellus+SC
-  static TextTheme marcellusSCTextTheme([TextTheme textTheme]) {
+  static TextTheme marcellusScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.marcellusSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.marcellusSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.marcellusSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.marcellusSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.marcellusSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.marcellusSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.marcellusSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.marcellusSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.marcellusSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.marcellusSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.marcellusSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.marcellusSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.marcellusSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.marcellusSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.marcellusSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.marcellusSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.marcellusSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.marcellusSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.marcellusSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.marcellusSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.marcellusSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.marcellusSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.marcellusSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.marcellusSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.marcellusSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.marcellusSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -55431,7 +55431,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mate+SC
-  static TextStyle mateSC({
+  static TextStyle mateSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -55492,22 +55492,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mate+SC
-  static TextTheme mateSCTextTheme([TextTheme textTheme]) {
+  static TextTheme mateScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.mateSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.mateSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.mateSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.mateSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.mateSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.mateSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.mateSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.mateSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.mateSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.mateSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.mateSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.mateSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.mateSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.mateSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.mateSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.mateSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.mateSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.mateSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.mateSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.mateSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.mateSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.mateSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.mateSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.mateSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.mateSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.mateSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -59246,7 +59246,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mountains+of+Christmas
-  static TextStyle mountainsofChristmas({
+  static TextStyle mountainsOfChristmas({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -59314,29 +59314,29 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mountains+of+Christmas
-  static TextTheme mountainsofChristmasTextTheme([TextTheme textTheme]) {
+  static TextTheme mountainsOfChristmasTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4:
-          GoogleFonts.mountainsofChristmas(textStyle: textTheme?.display4),
+          GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.display4),
       display3:
-          GoogleFonts.mountainsofChristmas(textStyle: textTheme?.display3),
+          GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.display3),
       display2:
-          GoogleFonts.mountainsofChristmas(textStyle: textTheme?.display2),
+          GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.display2),
       display1:
-          GoogleFonts.mountainsofChristmas(textStyle: textTheme?.display1),
+          GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.display1),
       headline:
-          GoogleFonts.mountainsofChristmas(textStyle: textTheme?.headline),
-      title: GoogleFonts.mountainsofChristmas(textStyle: textTheme?.title),
-      subhead: GoogleFonts.mountainsofChristmas(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.mountainsofChristmas(textStyle: textTheme?.body2),
-      body1: GoogleFonts.mountainsofChristmas(textStyle: textTheme?.body1),
-      caption: GoogleFonts.mountainsofChristmas(textStyle: textTheme?.caption),
-      button: GoogleFonts.mountainsofChristmas(textStyle: textTheme?.button),
+          GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.headline),
+      title: GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.title),
+      subhead: GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.body2),
+      body1: GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.body1),
+      caption: GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.caption),
+      button: GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.button),
       subtitle:
-          GoogleFonts.mountainsofChristmas(textStyle: textTheme?.subtitle),
+          GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.subtitle),
       overline:
-          GoogleFonts.mountainsofChristmas(textStyle: textTheme?.overline),
+          GoogleFonts.mountainsOfChristmas(textStyle: textTheme?.overline),
     );
   }
 
@@ -60611,7 +60611,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/NTR
-  static TextStyle nTR({
+  static TextStyle ntr({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -60672,22 +60672,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/NTR
-  static TextTheme nTRTextTheme([TextTheme textTheme]) {
+  static TextTheme ntrTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.nTR(textStyle: textTheme?.display4),
-      display3: GoogleFonts.nTR(textStyle: textTheme?.display3),
-      display2: GoogleFonts.nTR(textStyle: textTheme?.display2),
-      display1: GoogleFonts.nTR(textStyle: textTheme?.display1),
-      headline: GoogleFonts.nTR(textStyle: textTheme?.headline),
-      title: GoogleFonts.nTR(textStyle: textTheme?.title),
-      subhead: GoogleFonts.nTR(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.nTR(textStyle: textTheme?.body2),
-      body1: GoogleFonts.nTR(textStyle: textTheme?.body1),
-      caption: GoogleFonts.nTR(textStyle: textTheme?.caption),
-      button: GoogleFonts.nTR(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.nTR(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.nTR(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ntr(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ntr(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ntr(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ntr(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ntr(textStyle: textTheme?.headline),
+      title: GoogleFonts.ntr(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ntr(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ntr(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ntr(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ntr(textStyle: textTheme?.caption),
+      button: GoogleFonts.ntr(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ntr(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ntr(textStyle: textTheme?.overline),
     );
   }
 
@@ -64062,7 +64062,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Old+Standard+TT
-  static TextStyle oldStandardTT({
+  static TextStyle oldStandardTt({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -64137,22 +64137,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Old+Standard+TT
-  static TextTheme oldStandardTTTextTheme([TextTheme textTheme]) {
+  static TextTheme oldStandardTtTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.oldStandardTT(textStyle: textTheme?.display4),
-      display3: GoogleFonts.oldStandardTT(textStyle: textTheme?.display3),
-      display2: GoogleFonts.oldStandardTT(textStyle: textTheme?.display2),
-      display1: GoogleFonts.oldStandardTT(textStyle: textTheme?.display1),
-      headline: GoogleFonts.oldStandardTT(textStyle: textTheme?.headline),
-      title: GoogleFonts.oldStandardTT(textStyle: textTheme?.title),
-      subhead: GoogleFonts.oldStandardTT(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.oldStandardTT(textStyle: textTheme?.body2),
-      body1: GoogleFonts.oldStandardTT(textStyle: textTheme?.body1),
-      caption: GoogleFonts.oldStandardTT(textStyle: textTheme?.caption),
-      button: GoogleFonts.oldStandardTT(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.oldStandardTT(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.oldStandardTT(textStyle: textTheme?.overline),
+      display4: GoogleFonts.oldStandardTt(textStyle: textTheme?.display4),
+      display3: GoogleFonts.oldStandardTt(textStyle: textTheme?.display3),
+      display2: GoogleFonts.oldStandardTt(textStyle: textTheme?.display2),
+      display1: GoogleFonts.oldStandardTt(textStyle: textTheme?.display1),
+      headline: GoogleFonts.oldStandardTt(textStyle: textTheme?.headline),
+      title: GoogleFonts.oldStandardTt(textStyle: textTheme?.title),
+      subhead: GoogleFonts.oldStandardTt(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.oldStandardTt(textStyle: textTheme?.body2),
+      body1: GoogleFonts.oldStandardTt(textStyle: textTheme?.body1),
+      caption: GoogleFonts.oldStandardTt(textStyle: textTheme?.caption),
+      button: GoogleFonts.oldStandardTt(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.oldStandardTt(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.oldStandardTt(textStyle: textTheme?.overline),
     );
   }
 
@@ -65238,7 +65238,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Over+the+Rainbow
-  static TextStyle overtheRainbow({
+  static TextStyle overTheRainbow({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -65299,22 +65299,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Over+the+Rainbow
-  static TextTheme overtheRainbowTextTheme([TextTheme textTheme]) {
+  static TextTheme overTheRainbowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.overtheRainbow(textStyle: textTheme?.display4),
-      display3: GoogleFonts.overtheRainbow(textStyle: textTheme?.display3),
-      display2: GoogleFonts.overtheRainbow(textStyle: textTheme?.display2),
-      display1: GoogleFonts.overtheRainbow(textStyle: textTheme?.display1),
-      headline: GoogleFonts.overtheRainbow(textStyle: textTheme?.headline),
-      title: GoogleFonts.overtheRainbow(textStyle: textTheme?.title),
-      subhead: GoogleFonts.overtheRainbow(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.overtheRainbow(textStyle: textTheme?.body2),
-      body1: GoogleFonts.overtheRainbow(textStyle: textTheme?.body1),
-      caption: GoogleFonts.overtheRainbow(textStyle: textTheme?.caption),
-      button: GoogleFonts.overtheRainbow(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.overtheRainbow(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.overtheRainbow(textStyle: textTheme?.overline),
+      display4: GoogleFonts.overTheRainbow(textStyle: textTheme?.display4),
+      display3: GoogleFonts.overTheRainbow(textStyle: textTheme?.display3),
+      display2: GoogleFonts.overTheRainbow(textStyle: textTheme?.display2),
+      display1: GoogleFonts.overTheRainbow(textStyle: textTheme?.display1),
+      headline: GoogleFonts.overTheRainbow(textStyle: textTheme?.headline),
+      title: GoogleFonts.overTheRainbow(textStyle: textTheme?.title),
+      subhead: GoogleFonts.overTheRainbow(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.overTheRainbow(textStyle: textTheme?.body2),
+      body1: GoogleFonts.overTheRainbow(textStyle: textTheme?.body1),
+      caption: GoogleFonts.overTheRainbow(textStyle: textTheme?.caption),
+      button: GoogleFonts.overTheRainbow(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.overTheRainbow(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.overTheRainbow(textStyle: textTheme?.overline),
     );
   }
 
@@ -65441,7 +65441,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Overlock+SC
-  static TextStyle overlockSC({
+  static TextStyle overlockSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -65502,22 +65502,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Overlock+SC
-  static TextTheme overlockSCTextTheme([TextTheme textTheme]) {
+  static TextTheme overlockScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.overlockSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.overlockSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.overlockSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.overlockSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.overlockSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.overlockSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.overlockSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.overlockSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.overlockSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.overlockSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.overlockSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.overlockSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.overlockSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.overlockSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.overlockSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.overlockSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.overlockSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.overlockSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.overlockSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.overlockSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.overlockSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.overlockSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.overlockSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.overlockSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.overlockSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.overlockSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -66211,7 +66211,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Mono
-  static TextStyle pTMono({
+  static TextStyle ptMono({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -66272,22 +66272,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Mono
-  static TextTheme pTMonoTextTheme([TextTheme textTheme]) {
+  static TextTheme ptMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.pTMono(textStyle: textTheme?.display4),
-      display3: GoogleFonts.pTMono(textStyle: textTheme?.display3),
-      display2: GoogleFonts.pTMono(textStyle: textTheme?.display2),
-      display1: GoogleFonts.pTMono(textStyle: textTheme?.display1),
-      headline: GoogleFonts.pTMono(textStyle: textTheme?.headline),
-      title: GoogleFonts.pTMono(textStyle: textTheme?.title),
-      subhead: GoogleFonts.pTMono(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.pTMono(textStyle: textTheme?.body2),
-      body1: GoogleFonts.pTMono(textStyle: textTheme?.body1),
-      caption: GoogleFonts.pTMono(textStyle: textTheme?.caption),
-      button: GoogleFonts.pTMono(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.pTMono(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.pTMono(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ptMono(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ptMono(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ptMono(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ptMono(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ptMono(textStyle: textTheme?.headline),
+      title: GoogleFonts.ptMono(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ptMono(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ptMono(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ptMono(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ptMono(textStyle: textTheme?.caption),
+      button: GoogleFonts.ptMono(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ptMono(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ptMono(textStyle: textTheme?.overline),
     );
   }
 
@@ -66295,7 +66295,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans
-  static TextStyle pTSans({
+  static TextStyle ptSans({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -66377,22 +66377,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans
-  static TextTheme pTSansTextTheme([TextTheme textTheme]) {
+  static TextTheme ptSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.pTSans(textStyle: textTheme?.display4),
-      display3: GoogleFonts.pTSans(textStyle: textTheme?.display3),
-      display2: GoogleFonts.pTSans(textStyle: textTheme?.display2),
-      display1: GoogleFonts.pTSans(textStyle: textTheme?.display1),
-      headline: GoogleFonts.pTSans(textStyle: textTheme?.headline),
-      title: GoogleFonts.pTSans(textStyle: textTheme?.title),
-      subhead: GoogleFonts.pTSans(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.pTSans(textStyle: textTheme?.body2),
-      body1: GoogleFonts.pTSans(textStyle: textTheme?.body1),
-      caption: GoogleFonts.pTSans(textStyle: textTheme?.caption),
-      button: GoogleFonts.pTSans(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.pTSans(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.pTSans(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ptSans(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ptSans(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ptSans(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ptSans(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ptSans(textStyle: textTheme?.headline),
+      title: GoogleFonts.ptSans(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ptSans(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ptSans(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ptSans(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ptSans(textStyle: textTheme?.caption),
+      button: GoogleFonts.ptSans(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ptSans(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ptSans(textStyle: textTheme?.overline),
     );
   }
 
@@ -66400,7 +66400,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans+Caption
-  static TextStyle pTSansCaption({
+  static TextStyle ptSansCaption({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -66468,22 +66468,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans+Caption
-  static TextTheme pTSansCaptionTextTheme([TextTheme textTheme]) {
+  static TextTheme ptSansCaptionTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.pTSansCaption(textStyle: textTheme?.display4),
-      display3: GoogleFonts.pTSansCaption(textStyle: textTheme?.display3),
-      display2: GoogleFonts.pTSansCaption(textStyle: textTheme?.display2),
-      display1: GoogleFonts.pTSansCaption(textStyle: textTheme?.display1),
-      headline: GoogleFonts.pTSansCaption(textStyle: textTheme?.headline),
-      title: GoogleFonts.pTSansCaption(textStyle: textTheme?.title),
-      subhead: GoogleFonts.pTSansCaption(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.pTSansCaption(textStyle: textTheme?.body2),
-      body1: GoogleFonts.pTSansCaption(textStyle: textTheme?.body1),
-      caption: GoogleFonts.pTSansCaption(textStyle: textTheme?.caption),
-      button: GoogleFonts.pTSansCaption(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.pTSansCaption(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.pTSansCaption(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ptSansCaption(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ptSansCaption(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ptSansCaption(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ptSansCaption(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ptSansCaption(textStyle: textTheme?.headline),
+      title: GoogleFonts.ptSansCaption(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ptSansCaption(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ptSansCaption(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ptSansCaption(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ptSansCaption(textStyle: textTheme?.caption),
+      button: GoogleFonts.ptSansCaption(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ptSansCaption(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ptSansCaption(textStyle: textTheme?.overline),
     );
   }
 
@@ -66491,7 +66491,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans+Narrow
-  static TextStyle pTSansNarrow({
+  static TextStyle ptSansNarrow({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -66559,22 +66559,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans+Narrow
-  static TextTheme pTSansNarrowTextTheme([TextTheme textTheme]) {
+  static TextTheme ptSansNarrowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.pTSansNarrow(textStyle: textTheme?.display4),
-      display3: GoogleFonts.pTSansNarrow(textStyle: textTheme?.display3),
-      display2: GoogleFonts.pTSansNarrow(textStyle: textTheme?.display2),
-      display1: GoogleFonts.pTSansNarrow(textStyle: textTheme?.display1),
-      headline: GoogleFonts.pTSansNarrow(textStyle: textTheme?.headline),
-      title: GoogleFonts.pTSansNarrow(textStyle: textTheme?.title),
-      subhead: GoogleFonts.pTSansNarrow(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.pTSansNarrow(textStyle: textTheme?.body2),
-      body1: GoogleFonts.pTSansNarrow(textStyle: textTheme?.body1),
-      caption: GoogleFonts.pTSansNarrow(textStyle: textTheme?.caption),
-      button: GoogleFonts.pTSansNarrow(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.pTSansNarrow(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.pTSansNarrow(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ptSansNarrow(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ptSansNarrow(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ptSansNarrow(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ptSansNarrow(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ptSansNarrow(textStyle: textTheme?.headline),
+      title: GoogleFonts.ptSansNarrow(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ptSansNarrow(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ptSansNarrow(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ptSansNarrow(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ptSansNarrow(textStyle: textTheme?.caption),
+      button: GoogleFonts.ptSansNarrow(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ptSansNarrow(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ptSansNarrow(textStyle: textTheme?.overline),
     );
   }
 
@@ -66582,7 +66582,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Serif
-  static TextStyle pTSerif({
+  static TextStyle ptSerif({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -66664,22 +66664,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Serif
-  static TextTheme pTSerifTextTheme([TextTheme textTheme]) {
+  static TextTheme ptSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.pTSerif(textStyle: textTheme?.display4),
-      display3: GoogleFonts.pTSerif(textStyle: textTheme?.display3),
-      display2: GoogleFonts.pTSerif(textStyle: textTheme?.display2),
-      display1: GoogleFonts.pTSerif(textStyle: textTheme?.display1),
-      headline: GoogleFonts.pTSerif(textStyle: textTheme?.headline),
-      title: GoogleFonts.pTSerif(textStyle: textTheme?.title),
-      subhead: GoogleFonts.pTSerif(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.pTSerif(textStyle: textTheme?.body2),
-      body1: GoogleFonts.pTSerif(textStyle: textTheme?.body1),
-      caption: GoogleFonts.pTSerif(textStyle: textTheme?.caption),
-      button: GoogleFonts.pTSerif(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.pTSerif(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.pTSerif(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ptSerif(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ptSerif(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ptSerif(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ptSerif(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ptSerif(textStyle: textTheme?.headline),
+      title: GoogleFonts.ptSerif(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ptSerif(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ptSerif(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ptSerif(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ptSerif(textStyle: textTheme?.caption),
+      button: GoogleFonts.ptSerif(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ptSerif(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ptSerif(textStyle: textTheme?.overline),
     );
   }
 
@@ -66687,7 +66687,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Serif+Caption
-  static TextStyle pTSerifCaption({
+  static TextStyle ptSerifCaption({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -66755,22 +66755,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Serif+Caption
-  static TextTheme pTSerifCaptionTextTheme([TextTheme textTheme]) {
+  static TextTheme ptSerifCaptionTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.pTSerifCaption(textStyle: textTheme?.display4),
-      display3: GoogleFonts.pTSerifCaption(textStyle: textTheme?.display3),
-      display2: GoogleFonts.pTSerifCaption(textStyle: textTheme?.display2),
-      display1: GoogleFonts.pTSerifCaption(textStyle: textTheme?.display1),
-      headline: GoogleFonts.pTSerifCaption(textStyle: textTheme?.headline),
-      title: GoogleFonts.pTSerifCaption(textStyle: textTheme?.title),
-      subhead: GoogleFonts.pTSerifCaption(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.pTSerifCaption(textStyle: textTheme?.body2),
-      body1: GoogleFonts.pTSerifCaption(textStyle: textTheme?.body1),
-      caption: GoogleFonts.pTSerifCaption(textStyle: textTheme?.caption),
-      button: GoogleFonts.pTSerifCaption(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.pTSerifCaption(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.pTSerifCaption(textStyle: textTheme?.overline),
+      display4: GoogleFonts.ptSerifCaption(textStyle: textTheme?.display4),
+      display3: GoogleFonts.ptSerifCaption(textStyle: textTheme?.display3),
+      display2: GoogleFonts.ptSerifCaption(textStyle: textTheme?.display2),
+      display1: GoogleFonts.ptSerifCaption(textStyle: textTheme?.display1),
+      headline: GoogleFonts.ptSerifCaption(textStyle: textTheme?.headline),
+      title: GoogleFonts.ptSerifCaption(textStyle: textTheme?.title),
+      subhead: GoogleFonts.ptSerifCaption(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.ptSerifCaption(textStyle: textTheme?.body2),
+      body1: GoogleFonts.ptSerifCaption(textStyle: textTheme?.body1),
+      caption: GoogleFonts.ptSerifCaption(textStyle: textTheme?.caption),
+      button: GoogleFonts.ptSerifCaption(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.ptSerifCaption(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.ptSerifCaption(textStyle: textTheme?.overline),
     );
   }
 
@@ -67786,7 +67786,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Patrick+Hand+SC
-  static TextStyle patrickHandSC({
+  static TextStyle patrickHandSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -67847,22 +67847,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Patrick+Hand+SC
-  static TextTheme patrickHandSCTextTheme([TextTheme textTheme]) {
+  static TextTheme patrickHandScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.patrickHandSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.patrickHandSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.patrickHandSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.patrickHandSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.patrickHandSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.patrickHandSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.patrickHandSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.patrickHandSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.patrickHandSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.patrickHandSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.patrickHandSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.patrickHandSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.patrickHandSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.patrickHandSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.patrickHandSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.patrickHandSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.patrickHandSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.patrickHandSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.patrickHandSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.patrickHandSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.patrickHandSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.patrickHandSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.patrickHandSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.patrickHandSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.patrickHandSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.patrickHandSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -69361,7 +69361,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Playfair+Display+SC
-  static TextStyle playfairDisplaySC({
+  static TextStyle playfairDisplaySc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -69457,22 +69457,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Playfair+Display+SC
-  static TextTheme playfairDisplaySCTextTheme([TextTheme textTheme]) {
+  static TextTheme playfairDisplayScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.headline),
-      title: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.caption),
-      button: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.playfairDisplaySC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.headline),
+      title: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.caption),
+      button: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.playfairDisplaySc(textStyle: textTheme?.overline),
     );
   }
 
@@ -70649,7 +70649,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Press+Start+2P
-  static TextStyle pressStart2P({
+  static TextStyle pressStart2p({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -70710,22 +70710,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Press+Start+2P
-  static TextTheme pressStart2PTextTheme([TextTheme textTheme]) {
+  static TextTheme pressStart2pTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.pressStart2P(textStyle: textTheme?.display4),
-      display3: GoogleFonts.pressStart2P(textStyle: textTheme?.display3),
-      display2: GoogleFonts.pressStart2P(textStyle: textTheme?.display2),
-      display1: GoogleFonts.pressStart2P(textStyle: textTheme?.display1),
-      headline: GoogleFonts.pressStart2P(textStyle: textTheme?.headline),
-      title: GoogleFonts.pressStart2P(textStyle: textTheme?.title),
-      subhead: GoogleFonts.pressStart2P(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.pressStart2P(textStyle: textTheme?.body2),
-      body1: GoogleFonts.pressStart2P(textStyle: textTheme?.body1),
-      caption: GoogleFonts.pressStart2P(textStyle: textTheme?.caption),
-      button: GoogleFonts.pressStart2P(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.pressStart2P(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.pressStart2P(textStyle: textTheme?.overline),
+      display4: GoogleFonts.pressStart2p(textStyle: textTheme?.display4),
+      display3: GoogleFonts.pressStart2p(textStyle: textTheme?.display3),
+      display2: GoogleFonts.pressStart2p(textStyle: textTheme?.display2),
+      display1: GoogleFonts.pressStart2p(textStyle: textTheme?.display1),
+      headline: GoogleFonts.pressStart2p(textStyle: textTheme?.headline),
+      title: GoogleFonts.pressStart2p(textStyle: textTheme?.title),
+      subhead: GoogleFonts.pressStart2p(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.pressStart2p(textStyle: textTheme?.body2),
+      body1: GoogleFonts.pressStart2p(textStyle: textTheme?.body1),
+      caption: GoogleFonts.pressStart2p(textStyle: textTheme?.caption),
+      button: GoogleFonts.pressStart2p(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.pressStart2p(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.pressStart2p(textStyle: textTheme?.overline),
     );
   }
 
@@ -83809,7 +83809,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spectral+SC
-  static TextStyle spectralSC({
+  static TextStyle spectralSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -83961,22 +83961,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spectral+SC
-  static TextTheme spectralSCTextTheme([TextTheme textTheme]) {
+  static TextTheme spectralScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.spectralSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.spectralSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.spectralSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.spectralSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.spectralSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.spectralSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.spectralSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.spectralSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.spectralSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.spectralSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.spectralSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.spectralSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.spectralSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.spectralSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.spectralSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.spectralSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.spectralSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.spectralSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.spectralSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.spectralSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.spectralSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.spectralSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.spectralSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.spectralSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.spectralSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.spectralSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -86231,7 +86231,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Swanky+and+Moo+Moo
-  static TextStyle swankyandMooMoo({
+  static TextStyle swankyAndMooMoo({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -86292,22 +86292,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Swanky+and+Moo+Moo
-  static TextTheme swankyandMooMooTextTheme([TextTheme textTheme]) {
+  static TextTheme swankyAndMooMooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.display4),
-      display3: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.display3),
-      display2: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.display2),
-      display1: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.display1),
-      headline: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.headline),
-      title: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.title),
-      subhead: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.body2),
-      body1: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.body1),
-      caption: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.caption),
-      button: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.swankyandMooMoo(textStyle: textTheme?.overline),
+      display4: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.display4),
+      display3: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.display3),
+      display2: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.display2),
+      display1: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.display1),
+      headline: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.headline),
+      title: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.title),
+      subhead: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.body2),
+      body1: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.body1),
+      caption: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.caption),
+      button: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.swankyAndMooMoo(textStyle: textTheme?.overline),
     );
   }
 
@@ -90249,7 +90249,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/VT323
-  static TextStyle vT323({
+  static TextStyle vt323({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -90310,22 +90310,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/VT323
-  static TextTheme vT323TextTheme([TextTheme textTheme]) {
+  static TextTheme vt323TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.vT323(textStyle: textTheme?.display4),
-      display3: GoogleFonts.vT323(textStyle: textTheme?.display3),
-      display2: GoogleFonts.vT323(textStyle: textTheme?.display2),
-      display1: GoogleFonts.vT323(textStyle: textTheme?.display1),
-      headline: GoogleFonts.vT323(textStyle: textTheme?.headline),
-      title: GoogleFonts.vT323(textStyle: textTheme?.title),
-      subhead: GoogleFonts.vT323(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.vT323(textStyle: textTheme?.body2),
-      body1: GoogleFonts.vT323(textStyle: textTheme?.body1),
-      caption: GoogleFonts.vT323(textStyle: textTheme?.caption),
-      button: GoogleFonts.vT323(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.vT323(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.vT323(textStyle: textTheme?.overline),
+      display4: GoogleFonts.vt323(textStyle: textTheme?.display4),
+      display3: GoogleFonts.vt323(textStyle: textTheme?.display3),
+      display2: GoogleFonts.vt323(textStyle: textTheme?.display2),
+      display1: GoogleFonts.vt323(textStyle: textTheme?.display1),
+      headline: GoogleFonts.vt323(textStyle: textTheme?.headline),
+      title: GoogleFonts.vt323(textStyle: textTheme?.title),
+      subhead: GoogleFonts.vt323(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.vt323(textStyle: textTheme?.body2),
+      body1: GoogleFonts.vt323(textStyle: textTheme?.body1),
+      caption: GoogleFonts.vt323(textStyle: textTheme?.caption),
+      button: GoogleFonts.vt323(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.vt323(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.vt323(textStyle: textTheme?.overline),
     );
   }
 
@@ -91432,7 +91432,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vollkorn+SC
-  static TextStyle vollkornSC({
+  static TextStyle vollkornSc({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -91514,22 +91514,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vollkorn+SC
-  static TextTheme vollkornSCTextTheme([TextTheme textTheme]) {
+  static TextTheme vollkornScTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.vollkornSC(textStyle: textTheme?.display4),
-      display3: GoogleFonts.vollkornSC(textStyle: textTheme?.display3),
-      display2: GoogleFonts.vollkornSC(textStyle: textTheme?.display2),
-      display1: GoogleFonts.vollkornSC(textStyle: textTheme?.display1),
-      headline: GoogleFonts.vollkornSC(textStyle: textTheme?.headline),
-      title: GoogleFonts.vollkornSC(textStyle: textTheme?.title),
-      subhead: GoogleFonts.vollkornSC(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.vollkornSC(textStyle: textTheme?.body2),
-      body1: GoogleFonts.vollkornSC(textStyle: textTheme?.body1),
-      caption: GoogleFonts.vollkornSC(textStyle: textTheme?.caption),
-      button: GoogleFonts.vollkornSC(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.vollkornSC(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.vollkornSC(textStyle: textTheme?.overline),
+      display4: GoogleFonts.vollkornSc(textStyle: textTheme?.display4),
+      display3: GoogleFonts.vollkornSc(textStyle: textTheme?.display3),
+      display2: GoogleFonts.vollkornSc(textStyle: textTheme?.display2),
+      display1: GoogleFonts.vollkornSc(textStyle: textTheme?.display1),
+      headline: GoogleFonts.vollkornSc(textStyle: textTheme?.headline),
+      title: GoogleFonts.vollkornSc(textStyle: textTheme?.title),
+      subhead: GoogleFonts.vollkornSc(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.vollkornSc(textStyle: textTheme?.body2),
+      body1: GoogleFonts.vollkornSc(textStyle: textTheme?.body1),
+      caption: GoogleFonts.vollkornSc(textStyle: textTheme?.caption),
+      button: GoogleFonts.vollkornSc(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.vollkornSc(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.vollkornSc(textStyle: textTheme?.overline),
     );
   }
 
@@ -91621,7 +91621,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Waiting+for+the+Sunrise
-  static TextStyle waitingfortheSunrise({
+  static TextStyle waitingForTheSunrise({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -91682,29 +91682,29 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Waiting+for+the+Sunrise
-  static TextTheme waitingfortheSunriseTextTheme([TextTheme textTheme]) {
+  static TextTheme waitingForTheSunriseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4:
-          GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.display4),
+          GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.display4),
       display3:
-          GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.display3),
+          GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.display3),
       display2:
-          GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.display2),
+          GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.display2),
       display1:
-          GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.display1),
+          GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.display1),
       headline:
-          GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.headline),
-      title: GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.title),
-      subhead: GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.body2),
-      body1: GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.body1),
-      caption: GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.caption),
-      button: GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.button),
+          GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.headline),
+      title: GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.title),
+      subhead: GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.body2),
+      body1: GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.body1),
+      caption: GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.caption),
+      button: GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.button),
       subtitle:
-          GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.subtitle),
+          GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.subtitle),
       overline:
-          GoogleFonts.waitingfortheSunrise(textStyle: textTheme?.overline),
+          GoogleFonts.waitingForTheSunrise(textStyle: textTheme?.overline),
     );
   }
 
@@ -93112,7 +93112,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+KuaiLe
-  static TextStyle zCOOLKuaiLe({
+  static TextStyle zcoolKuaiLe({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -93173,22 +93173,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+KuaiLe
-  static TextTheme zCOOLKuaiLeTextTheme([TextTheme textTheme]) {
+  static TextTheme zcoolKuaiLeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.display4),
-      display3: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.display3),
-      display2: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.display2),
-      display1: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.display1),
-      headline: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.headline),
-      title: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.title),
-      subhead: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.body2),
-      body1: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.body1),
-      caption: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.caption),
-      button: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.zCOOLKuaiLe(textStyle: textTheme?.overline),
+      display4: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.display4),
+      display3: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.display3),
+      display2: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.display2),
+      display1: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.display1),
+      headline: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.headline),
+      title: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.title),
+      subhead: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.body2),
+      body1: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.body1),
+      caption: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.caption),
+      button: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.zcoolKuaiLe(textStyle: textTheme?.overline),
     );
   }
 
@@ -93196,7 +93196,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou
-  static TextStyle zCOOLQingKeHuangYou({
+  static TextStyle zcoolQingKeHuangYou({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -93257,22 +93257,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou
-  static TextTheme zCOOLQingKeHuangYouTextTheme([TextTheme textTheme]) {
+  static TextTheme zcoolQingKeHuangYouTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.display4),
-      display3: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.display3),
-      display2: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.display2),
-      display1: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.display1),
-      headline: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.headline),
-      title: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.title),
-      subhead: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.body2),
-      body1: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.body1),
-      caption: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.caption),
-      button: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.zCOOLQingKeHuangYou(textStyle: textTheme?.overline),
+      display4: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.display4),
+      display3: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.display3),
+      display2: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.display2),
+      display1: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.display1),
+      headline: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.headline),
+      title: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.title),
+      subhead: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.body2),
+      body1: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.body1),
+      caption: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.caption),
+      button: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.zcoolQingKeHuangYou(textStyle: textTheme?.overline),
     );
   }
 
@@ -93280,7 +93280,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+XiaoWei
-  static TextStyle zCOOLXiaoWei({
+  static TextStyle zcoolXiaoWei({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -93341,22 +93341,22 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+XiaoWei
-  static TextTheme zCOOLXiaoWeiTextTheme([TextTheme textTheme]) {
+  static TextTheme zcoolXiaoWeiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      display4: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.display4),
-      display3: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.display3),
-      display2: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.display2),
-      display1: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.display1),
-      headline: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.headline),
-      title: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.title),
-      subhead: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.body2),
-      body1: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.body1),
-      caption: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.caption),
-      button: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.zCOOLXiaoWei(textStyle: textTheme?.overline),
+      display4: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.display4),
+      display3: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.display3),
+      display2: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.display2),
+      display1: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.display1),
+      headline: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.headline),
+      title: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.title),
+      subhead: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.subhead),
+      body2: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.body2),
+      body1: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.body1),
+      caption: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.caption),
+      button: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.button),
+      subtitle: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.subtitle),
+      overline: GoogleFonts.zcoolXiaoWei(textStyle: textTheme?.overline),
     );
   }
 
