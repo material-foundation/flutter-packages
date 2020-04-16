@@ -1,3 +1,7 @@
+## [0.6.0] - 2020-04-16
+
+* Rename `config.allowHttp` to `config.allowRuntimeFetching`.
+
 ## [0.5.0] - 2020-04-14
 
 * Use more accurate naming algorithm for `GoogleFonts.foo` and `GoogleFonts.fooTextTheme`.

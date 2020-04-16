@@ -156,7 +156,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     }
 
     // Attempt to load this font via http, unless disallowed.
-    if (GoogleFonts.config.allowHttp) {
+    if (GoogleFonts.config.allowRuntimeFetching) {
       byteData = _httpFetchFontAndSaveToDevice(
         familyWithVariantString,
         descriptor.file,
@@ -166,7 +166,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       }
     } else {
       throw Exception(
-        "GoogleFonts.config.allowHttp is false but font $fontName was not "
+        "GoogleFonts.config.allowRuntimeFetching is false but font $fontName was not "
         "found in the application assets. Ensure $fontName.otf exists in a "
         "folder that is included in your pubspec's assets.",
       );

@@ -12,9 +12,9 @@ import 'src/google_fonts_variant.dart';
 
 /// A collection of properties used to specify custom behavior of the GoogleFonts library.
 class _Config {
-  /// Whether or not the GoogleFonts library can make requests to fonts.google.com to retrieve font
-  /// files.
-  var allowHttp = true;
+  /// Whether or not the GoogleFonts library can make requests to fonts.google.com
+  /// at runtime to retrieve font files.
+  var allowRuntimeFetching = true;
 }
 
 class GoogleFonts {

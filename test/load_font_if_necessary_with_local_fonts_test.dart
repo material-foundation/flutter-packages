@@ -33,7 +33,7 @@ final _fakeResponseFile = GoogleFontsFile(
 void main() {
   setUp(() async {
     httpClient = MockHttpClient();
-    GoogleFonts.config.allowHttp = true;
+    GoogleFonts.config.allowRuntimeFetching = true;
     when(httpClient.get(any)).thenAnswer((_) async {
       return http.Response(_fakeResponse, 200);
     });
