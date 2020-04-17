@@ -10,8 +10,8 @@ class AssetManifest {
   AssetManifest({this.enableCache = true});
 
   static Future<Map<String, List<String>>> _jsonFuture;
-  // Whether the rootBundle should cache AssetManifest.json. Should only be
-  // disabled during tests.
+  // Whether the rootBundle should cache AssetManifest.json. Enabled by default.
+  // Should only be disabled during tests.
   final bool enableCache;
 
   Future<Map<String, List<String>>> json() {
