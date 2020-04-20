@@ -260,7 +260,9 @@ Future<String> get _localPath async {
 
 Future<File> _localFile(String name) async {
   final path = await _localPath;
-  // TODO(clocksmith): What if this file is an otf?
+  // We expect only ttf files to be provided to us by the Google Fonts API.
+  // That's why we can be sure a previously saved Google Font is in the ttf
+  // format instead of, for example, otf.
   return File('$path/$name.ttf');
 }
 

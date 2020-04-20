@@ -35,21 +35,17 @@ Future<void> main() async {
 
 const _success = 'Success!';
 
-/// Gets the latest font directory. Versioned directories are hosted on the
-/// Google Fonts server. We try to fetch each directory one by one until we hit
-/// the last one. We know we reached the end if requesting the next version
-/// results in a 404 response.
+/// Gets the latest font directory.
+///
+/// Versioned directories are hosted on the Google Fonts server. We try to fetch
+/// each directory one by one until we hit the last one. We know we reached the
+/// end if requesting the next version results in a 404 response.
 /// Other types of failure should not occur. For example, if the internet
 /// connection gets lost while downloading the directories, we just crash. But
 /// that's okay for now, because the generator is only executed in trusted
 /// environments by individual developers.
-// TODO(marcelgarus): Exponential search would make a search in O(log n) instead
-// of O(1) possible, but would either force us to depend on another package
-// (affecting all users of google_fonts) or make the code here less readable. We
-// should probably revisit this decision if the directory versions go into the
-// hundreds.
-Future<String> _getProtoUrl() async {
-  var directoryVersion = 1;
+Future<String> _getProtoUrl({int initialVersion = 1}) async {
+  var directoryVersion = initialVersion;
 
   String url(int directoryVersion) {
     final paddedVersion = directoryVersion.toString().padLeft(3, '0');

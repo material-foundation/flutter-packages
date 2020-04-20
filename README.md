@@ -1,3 +1,5 @@
+# google_fonts
+
 *NOTE:* This package is in Beta. The API is subject to change.
 
 The `google_fonts` package for Flutter allows you to easily use any of the 977 fonts
