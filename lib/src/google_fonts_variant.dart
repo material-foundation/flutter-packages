@@ -17,8 +17,8 @@ class GoogleFontsVariant {
   /// Creates a [GoogleFontsVariant] from a Google Fonts API specific
   /// filename part.
   ///
-  /// A Filename part is the part of the filename that does not include the
-  /// font family. For example: for the filename "Lato-Regular.ttf", the
+  /// A filename part is the part of the filename that does not include the
+  /// font family. For example, for the filename "Lato-Regular.ttf", the
   /// filename part is "Regular".
   ///
   /// The following table shows how these filename parts convert:
@@ -134,21 +134,22 @@ class GoogleFontsVariant {
     if (other.runtimeType != runtimeType) {
       return false;
     }
-    return other.fontWeight == fontWeight &&
-        other.fontStyle == fontStyle;
+    return other.fontWeight == fontWeight && other.fontStyle == fontStyle;
   }
 }
 
-// What the Flutter API calls a font style of normal/regular.
+/// What the Flutter API calls a font style of normal/regular.
 const _normal = 'normal';
-// What the Google Fonts API calls a font style of normal/regular.
+
+/// What the Google Fonts API calls a font style of normal/regular.
 const _regular = 'regular';
-// Both the Flutter API and the Google API have the same name for a font style
-// of italic.
+
+/// Both the Flutter API and the Google API have the same name for a font style
+/// of italic.
 const _italic = 'italic';
 
-// Mapping from font weight types to the 'weight' part of the Google Fonts API
-// specific filename.
+/// Mapping from font weight types to the 'weight' part of the Google Fonts API
+/// specific filename.
 const _fontWeightToFilenameWeightParts = {
   FontWeight.w100: 'Thin',
   FontWeight.w200: 'ExtraLight',

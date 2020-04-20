@@ -1,3 +1,7 @@
+## [0.6.2] - 2020-04-17
+
+* Clean up code.
+
 ## [0.6.1] - 2020-04-17
 
 * Memoize asset manifest.

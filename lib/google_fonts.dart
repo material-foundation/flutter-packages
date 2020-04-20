@@ -10,19 +10,20 @@ import 'src/google_fonts_base.dart';
 import 'src/google_fonts_descriptor.dart';
 import 'src/google_fonts_variant.dart';
 
-/// A collection of properties used to specify custom behavior of the GoogleFonts library.
+/// A collection of properties used to specify custom behavior of the
+/// GoogleFonts library.
 class _Config {
-  /// Whether or not the GoogleFonts library can make requests to fonts.google.com
-  /// at runtime to retrieve font files.
+  /// Whether or not the GoogleFonts library can make requests to
+  /// [fonts.google.com](https://fonts.google.com/) to retrieve font files.
   var allowRuntimeFetching = true;
 }
 
 class GoogleFonts {
   /// Configuration for the [GoogleFonts] library.
   ///
-  /// Use this to define custom behavior of the GoogleFonts library in your app. For example, if you
-  /// do not want the GoogleFonts library to make any http requests for fonts, add the following
-  /// snippet to your app's `main` method.
+  /// Use this to define custom behavior of the GoogleFonts library in your app.
+  /// For example, if you do not want the GoogleFonts library to make any http
+  /// requests for fonts, add the following snippet to your app's `main` method.
   ///
   /// ```dart
   /// GoogleFonts.config.allowHttp = false;
@@ -2045,7 +2046,8 @@ class GoogleFonts {
     return fonts[fontFamily](textTheme);
   }
 
-  /// Applies the ABeeZee font family from Google Fonts to the given [textStyle].
+  /// Applies the ABeeZee font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ABeeZee
@@ -2112,8 +2114,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the ABeeZee font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the ABeeZee font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ABeeZee
@@ -2136,7 +2138,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Abel font family from Google Fonts to the given [textStyle].
+  /// Applies the Abel font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Abel
@@ -2196,8 +2199,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Abel font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Abel font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Abel
@@ -2220,7 +2223,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Abhaya Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the Abhaya Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Abhaya+Libre
@@ -2308,8 +2312,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Abhaya Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Abhaya Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Abhaya+Libre
@@ -2332,7 +2336,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Abril Fatface font family from Google Fonts to the given [textStyle].
+  /// Applies the Abril Fatface font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Abril+Fatface
@@ -2392,8 +2397,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Abril Fatface font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Abril Fatface font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Abril+Fatface
@@ -2416,7 +2421,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aclonica font family from Google Fonts to the given [textStyle].
+  /// Applies the Aclonica font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aclonica
@@ -2476,8 +2482,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aclonica font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Aclonica font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aclonica
@@ -2500,7 +2506,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Acme font family from Google Fonts to the given [textStyle].
+  /// Applies the Acme font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Acme
@@ -2560,8 +2567,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Acme font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Acme font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Acme
@@ -2584,7 +2591,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Actor font family from Google Fonts to the given [textStyle].
+  /// Applies the Actor font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Actor
@@ -2644,8 +2652,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Actor font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Actor font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Actor
@@ -2668,7 +2676,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Adamina font family from Google Fonts to the given [textStyle].
+  /// Applies the Adamina font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Adamina
@@ -2728,8 +2737,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Adamina font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Adamina font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Adamina
@@ -2752,7 +2761,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Advent Pro font family from Google Fonts to the given [textStyle].
+  /// Applies the Advent Pro font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Advent+Pro
@@ -2854,8 +2864,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Advent Pro font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Advent Pro font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Advent+Pro
@@ -2878,7 +2888,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aguafina Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Aguafina Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aguafina+Script
@@ -2938,8 +2949,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aguafina Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Aguafina Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aguafina+Script
@@ -2962,7 +2973,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Akronim font family from Google Fonts to the given [textStyle].
+  /// Applies the Akronim font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Akronim
@@ -3022,8 +3034,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Akronim font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Akronim font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Akronim
@@ -3046,7 +3058,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aladin font family from Google Fonts to the given [textStyle].
+  /// Applies the Aladin font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aladin
@@ -3106,8 +3119,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aladin font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Aladin font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aladin
@@ -3130,7 +3143,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alata font family from Google Fonts to the given [textStyle].
+  /// Applies the Alata font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alata
@@ -3190,8 +3204,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alata font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alata font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alata
@@ -3214,7 +3228,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alatsi font family from Google Fonts to the given [textStyle].
+  /// Applies the Alatsi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alatsi
@@ -3274,8 +3289,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alatsi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alatsi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alatsi
@@ -3298,7 +3313,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aldrich font family from Google Fonts to the given [textStyle].
+  /// Applies the Aldrich font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aldrich
@@ -3358,8 +3374,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aldrich font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Aldrich font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aldrich
@@ -3382,7 +3398,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alef font family from Google Fonts to the given [textStyle].
+  /// Applies the Alef font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alef
@@ -3449,8 +3466,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alef font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alef font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alef
@@ -3473,7 +3490,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alegreya font family from Google Fonts to the given [textStyle].
+  /// Applies the Alegreya font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya
@@ -3568,8 +3586,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alegreya font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alegreya font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya
@@ -3592,7 +3610,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alegreya SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Alegreya SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya+SC
@@ -3687,8 +3706,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alegreya SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alegreya SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya+SC
@@ -3711,7 +3730,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alegreya Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Alegreya Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya+Sans
@@ -3862,8 +3882,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alegreya Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alegreya Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya+Sans
@@ -3886,7 +3906,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alegreya Sans SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Alegreya Sans SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya+Sans+SC
@@ -4037,8 +4058,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alegreya Sans SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alegreya Sans SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alegreya+Sans+SC
@@ -4061,7 +4082,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aleo font family from Google Fonts to the given [textStyle].
+  /// Applies the Aleo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aleo
@@ -4156,8 +4178,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aleo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Aleo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aleo
@@ -4180,7 +4202,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alex Brush font family from Google Fonts to the given [textStyle].
+  /// Applies the Alex Brush font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alex+Brush
@@ -4240,8 +4263,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alex Brush font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alex Brush font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alex+Brush
@@ -4264,7 +4287,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alfa Slab One font family from Google Fonts to the given [textStyle].
+  /// Applies the Alfa Slab One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alfa+Slab+One
@@ -4324,8 +4348,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alfa Slab One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alfa Slab One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alfa+Slab+One
@@ -4348,7 +4372,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alice font family from Google Fonts to the given [textStyle].
+  /// Applies the Alice font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alice
@@ -4408,8 +4433,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alice font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alice font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alice
@@ -4432,7 +4457,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alike font family from Google Fonts to the given [textStyle].
+  /// Applies the Alike font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alike
@@ -4492,8 +4518,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alike font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alike font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alike
@@ -4516,7 +4542,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alike Angular font family from Google Fonts to the given [textStyle].
+  /// Applies the Alike Angular font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alike+Angular
@@ -4576,8 +4603,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Alike Angular font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Alike Angular font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Alike+Angular
@@ -4600,7 +4627,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Allan font family from Google Fonts to the given [textStyle].
+  /// Applies the Allan font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Allan
@@ -4667,8 +4695,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Allan font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Allan font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Allan
@@ -4691,7 +4719,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Allerta font family from Google Fonts to the given [textStyle].
+  /// Applies the Allerta font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Allerta
@@ -4751,8 +4780,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Allerta font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Allerta font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Allerta
@@ -4775,7 +4804,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Allerta Stencil font family from Google Fonts to the given [textStyle].
+  /// Applies the Allerta Stencil font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Allerta+Stencil
@@ -4835,8 +4865,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Allerta Stencil font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Allerta Stencil font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Allerta+Stencil
@@ -4859,7 +4889,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Allura font family from Google Fonts to the given [textStyle].
+  /// Applies the Allura font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Allura
@@ -4919,8 +4950,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Allura font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Allura font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Allura
@@ -4943,7 +4974,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Almarai font family from Google Fonts to the given [textStyle].
+  /// Applies the Almarai font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Almarai
@@ -5024,8 +5056,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Almarai font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Almarai font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Almarai
@@ -5048,7 +5080,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Almendra font family from Google Fonts to the given [textStyle].
+  /// Applies the Almendra font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Almendra
@@ -5129,8 +5162,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Almendra font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Almendra font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Almendra
@@ -5153,7 +5186,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Almendra Display font family from Google Fonts to the given [textStyle].
+  /// Applies the Almendra Display font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Almendra+Display
@@ -5213,8 +5247,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Almendra Display font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Almendra Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Almendra+Display
@@ -5237,7 +5271,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Almendra SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Almendra SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Almendra+SC
@@ -5297,8 +5332,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Almendra SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Almendra SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Almendra+SC
@@ -5321,7 +5356,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amarante font family from Google Fonts to the given [textStyle].
+  /// Applies the Amarante font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amarante
@@ -5381,8 +5417,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amarante font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Amarante font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amarante
@@ -5405,7 +5441,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amaranth font family from Google Fonts to the given [textStyle].
+  /// Applies the Amaranth font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amaranth
@@ -5486,8 +5523,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amaranth font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Amaranth font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amaranth
@@ -5510,7 +5547,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amatic SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Amatic SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amatic+SC
@@ -5577,8 +5615,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amatic SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Amatic SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amatic+SC
@@ -5601,7 +5639,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amatica SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Amatica SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amatica+SC
@@ -5668,8 +5707,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amatica SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Amatica SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amatica+SC
@@ -5692,7 +5731,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amethysta font family from Google Fonts to the given [textStyle].
+  /// Applies the Amethysta font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amethysta
@@ -5752,8 +5792,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amethysta font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Amethysta font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amethysta
@@ -5776,7 +5816,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amiko font family from Google Fonts to the given [textStyle].
+  /// Applies the Amiko font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amiko
@@ -5850,8 +5891,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amiko font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Amiko font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amiko
@@ -5874,7 +5915,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amiri font family from Google Fonts to the given [textStyle].
+  /// Applies the Amiri font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amiri
@@ -5955,8 +5997,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amiri font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Amiri font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amiri
@@ -5979,7 +6021,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amita font family from Google Fonts to the given [textStyle].
+  /// Applies the Amita font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amita
@@ -6046,8 +6089,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Amita font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Amita font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Amita
@@ -6070,7 +6113,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Anaheim font family from Google Fonts to the given [textStyle].
+  /// Applies the Anaheim font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Anaheim
@@ -6130,8 +6174,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Anaheim font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Anaheim font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Anaheim
@@ -6154,7 +6198,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Andada font family from Google Fonts to the given [textStyle].
+  /// Applies the Andada font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Andada
@@ -6214,8 +6259,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Andada font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Andada font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Andada
@@ -6238,7 +6283,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Andika font family from Google Fonts to the given [textStyle].
+  /// Applies the Andika font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Andika
@@ -6298,8 +6344,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Andika font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Andika font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Andika
@@ -6322,7 +6368,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Annie Use Your Telescope font family from Google Fonts to the given [textStyle].
+  /// Applies the Annie Use Your Telescope font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Annie+Use+Your+Telescope
@@ -6382,8 +6429,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Annie Use Your Telescope font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Annie Use Your Telescope font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Annie+Use+Your+Telescope
@@ -6413,7 +6460,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Anonymous Pro font family from Google Fonts to the given [textStyle].
+  /// Applies the Anonymous Pro font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Anonymous+Pro
@@ -6494,8 +6542,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Anonymous Pro font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Anonymous Pro font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Anonymous+Pro
@@ -6518,7 +6566,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Antic font family from Google Fonts to the given [textStyle].
+  /// Applies the Antic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Antic
@@ -6578,8 +6627,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Antic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Antic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Antic
@@ -6602,7 +6651,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Antic Didone font family from Google Fonts to the given [textStyle].
+  /// Applies the Antic Didone font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Antic+Didone
@@ -6662,8 +6712,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Antic Didone font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Antic Didone font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Antic+Didone
@@ -6686,7 +6736,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Antic Slab font family from Google Fonts to the given [textStyle].
+  /// Applies the Antic Slab font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Antic+Slab
@@ -6746,8 +6797,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Antic Slab font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Antic Slab font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Antic+Slab
@@ -6770,7 +6821,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Anton font family from Google Fonts to the given [textStyle].
+  /// Applies the Anton font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Anton
@@ -6830,8 +6882,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Anton font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Anton font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Anton
@@ -6854,7 +6906,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arapey font family from Google Fonts to the given [textStyle].
+  /// Applies the Arapey font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arapey
@@ -6921,8 +6974,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arapey font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Arapey font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arapey
@@ -6945,7 +6998,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arbutus font family from Google Fonts to the given [textStyle].
+  /// Applies the Arbutus font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arbutus
@@ -7005,8 +7059,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arbutus font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Arbutus font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arbutus
@@ -7029,7 +7083,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arbutus Slab font family from Google Fonts to the given [textStyle].
+  /// Applies the Arbutus Slab font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arbutus+Slab
@@ -7089,8 +7144,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arbutus Slab font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Arbutus Slab font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arbutus+Slab
@@ -7113,7 +7168,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Architects Daughter font family from Google Fonts to the given [textStyle].
+  /// Applies the Architects Daughter font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Architects+Daughter
@@ -7173,8 +7229,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Architects Daughter font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Architects Daughter font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Architects+Daughter
@@ -7197,7 +7253,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Archivo font family from Google Fonts to the given [textStyle].
+  /// Applies the Archivo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Archivo
@@ -7306,8 +7363,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Archivo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Archivo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Archivo
@@ -7330,7 +7387,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Archivo Black font family from Google Fonts to the given [textStyle].
+  /// Applies the Archivo Black font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Archivo+Black
@@ -7390,8 +7448,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Archivo Black font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Archivo Black font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Archivo+Black
@@ -7414,7 +7472,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Archivo Narrow font family from Google Fonts to the given [textStyle].
+  /// Applies the Archivo Narrow font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Archivo+Narrow
@@ -7495,8 +7554,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Archivo Narrow font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Archivo Narrow font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Archivo+Narrow
@@ -7519,7 +7578,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aref Ruqaa font family from Google Fonts to the given [textStyle].
+  /// Applies the Aref Ruqaa font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aref+Ruqaa
@@ -7586,8 +7646,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aref Ruqaa font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Aref Ruqaa font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aref+Ruqaa
@@ -7610,7 +7670,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arima Madurai font family from Google Fonts to the given [textStyle].
+  /// Applies the Arima Madurai font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arima+Madurai
@@ -7719,8 +7780,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arima Madurai font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Arima Madurai font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arima+Madurai
@@ -7743,7 +7804,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arimo font family from Google Fonts to the given [textStyle].
+  /// Applies the Arimo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arimo
@@ -7824,8 +7886,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arimo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Arimo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arimo
@@ -7848,7 +7910,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arizonia font family from Google Fonts to the given [textStyle].
+  /// Applies the Arizonia font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arizonia
@@ -7908,8 +7971,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arizonia font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Arizonia font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arizonia
@@ -7932,7 +7995,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Armata font family from Google Fonts to the given [textStyle].
+  /// Applies the Armata font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Armata
@@ -7992,8 +8056,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Armata font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Armata font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Armata
@@ -8016,7 +8080,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arsenal font family from Google Fonts to the given [textStyle].
+  /// Applies the Arsenal font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arsenal
@@ -8097,8 +8162,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arsenal font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Arsenal font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arsenal
@@ -8121,7 +8186,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Artifika font family from Google Fonts to the given [textStyle].
+  /// Applies the Artifika font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Artifika
@@ -8181,8 +8247,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Artifika font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Artifika font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Artifika
@@ -8205,7 +8271,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arvo font family from Google Fonts to the given [textStyle].
+  /// Applies the Arvo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arvo
@@ -8286,8 +8353,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arvo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Arvo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arvo
@@ -8310,7 +8377,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arya font family from Google Fonts to the given [textStyle].
+  /// Applies the Arya font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arya
@@ -8377,8 +8445,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Arya font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Arya font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Arya
@@ -8401,7 +8469,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Asap font family from Google Fonts to the given [textStyle].
+  /// Applies the Asap font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Asap
@@ -8496,8 +8565,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Asap font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Asap font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Asap
@@ -8520,7 +8589,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Asar font family from Google Fonts to the given [textStyle].
+  /// Applies the Asar font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Asar
@@ -8580,8 +8650,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Asar font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Asar font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Asar
@@ -8604,7 +8674,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Asset font family from Google Fonts to the given [textStyle].
+  /// Applies the Asset font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Asset
@@ -8664,8 +8735,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Asset font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Asset font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Asset
@@ -8688,7 +8759,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Assistant font family from Google Fonts to the given [textStyle].
+  /// Applies the Assistant font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Assistant
@@ -8783,8 +8855,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Assistant font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Assistant font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Assistant
@@ -8807,7 +8879,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Astloch font family from Google Fonts to the given [textStyle].
+  /// Applies the Astloch font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Astloch
@@ -8874,8 +8947,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Astloch font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Astloch font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Astloch
@@ -8898,7 +8971,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Asul font family from Google Fonts to the given [textStyle].
+  /// Applies the Asul font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Asul
@@ -8965,8 +9039,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Asul font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Asul font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Asul
@@ -8989,7 +9063,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Athiti font family from Google Fonts to the given [textStyle].
+  /// Applies the Athiti font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Athiti
@@ -9084,8 +9159,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Athiti font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Athiti font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Athiti
@@ -9108,7 +9183,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Atma font family from Google Fonts to the given [textStyle].
+  /// Applies the Atma font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Atma
@@ -9196,8 +9272,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Atma font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Atma font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Atma
@@ -9220,7 +9296,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Atomic Age font family from Google Fonts to the given [textStyle].
+  /// Applies the Atomic Age font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Atomic+Age
@@ -9280,8 +9357,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Atomic Age font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Atomic Age font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Atomic+Age
@@ -9304,7 +9381,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aubrey font family from Google Fonts to the given [textStyle].
+  /// Applies the Aubrey font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aubrey
@@ -9364,8 +9442,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Aubrey font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Aubrey font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Aubrey
@@ -9388,7 +9466,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Audiowide font family from Google Fonts to the given [textStyle].
+  /// Applies the Audiowide font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Audiowide
@@ -9448,8 +9527,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Audiowide font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Audiowide font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Audiowide
@@ -9472,7 +9551,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Autour One font family from Google Fonts to the given [textStyle].
+  /// Applies the Autour One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Autour+One
@@ -9532,8 +9612,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Autour One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Autour One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Autour+One
@@ -9556,7 +9636,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Average font family from Google Fonts to the given [textStyle].
+  /// Applies the Average font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Average
@@ -9616,8 +9697,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Average font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Average font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Average
@@ -9640,7 +9721,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Average Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Average Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Average+Sans
@@ -9700,8 +9782,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Average Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Average Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Average+Sans
@@ -9724,7 +9806,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Averia Gruesa Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the Averia Gruesa Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Averia+Gruesa+Libre
@@ -9784,8 +9867,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Averia Gruesa Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Averia Gruesa Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Averia+Gruesa+Libre
@@ -9808,7 +9891,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Averia Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the Averia Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Averia+Libre
@@ -9903,8 +9987,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Averia Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Averia Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Averia+Libre
@@ -9927,7 +10011,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Averia Sans Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the Averia Sans Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Averia+Sans+Libre
@@ -10022,8 +10107,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Averia Sans Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Averia Sans Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Averia+Sans+Libre
@@ -10046,7 +10131,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Averia Serif Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the Averia Serif Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Averia+Serif+Libre
@@ -10141,8 +10227,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Averia Serif Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Averia Serif Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Averia+Serif+Libre
@@ -10165,7 +10251,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the B612 font family from Google Fonts to the given [textStyle].
+  /// Applies the B612 font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/B612
@@ -10246,8 +10333,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the B612 font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the B612 font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/B612
@@ -10270,7 +10357,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the B612 Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the B612 Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/B612+Mono
@@ -10351,8 +10439,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the B612 Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the B612 Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/B612+Mono
@@ -10375,7 +10463,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bad Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Bad Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bad+Script
@@ -10435,8 +10524,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bad Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bad Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bad+Script
@@ -10459,7 +10548,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bahiana font family from Google Fonts to the given [textStyle].
+  /// Applies the Bahiana font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bahiana
@@ -10519,8 +10609,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bahiana font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bahiana font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bahiana
@@ -10543,7 +10633,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bahianita font family from Google Fonts to the given [textStyle].
+  /// Applies the Bahianita font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bahianita
@@ -10603,8 +10694,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bahianita font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bahianita font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bahianita
@@ -10627,7 +10718,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bai Jamjuree font family from Google Fonts to the given [textStyle].
+  /// Applies the Bai Jamjuree font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bai+Jamjuree
@@ -10764,8 +10856,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bai Jamjuree font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bai Jamjuree font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bai+Jamjuree
@@ -10788,7 +10880,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo font family from Google Fonts to the given [textStyle].
+  /// Applies the Baloo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo
@@ -10848,8 +10941,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baloo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo
@@ -10872,7 +10965,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Bhai font family from Google Fonts to the given [textStyle].
+  /// Applies the Baloo Bhai font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Bhai
@@ -10932,8 +11026,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Bhai font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baloo Bhai font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Bhai
@@ -10956,7 +11050,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Bhaijaan font family from Google Fonts to the given [textStyle].
+  /// Applies the Baloo Bhaijaan font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Bhaijaan
@@ -11016,8 +11111,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Bhaijaan font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baloo Bhaijaan font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Bhaijaan
@@ -11040,7 +11135,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Bhaina font family from Google Fonts to the given [textStyle].
+  /// Applies the Baloo Bhaina font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Bhaina
@@ -11100,8 +11196,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Bhaina font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baloo Bhaina font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Bhaina
@@ -11124,7 +11220,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Chettan font family from Google Fonts to the given [textStyle].
+  /// Applies the Baloo Chettan font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Chettan
@@ -11184,8 +11281,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Chettan font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baloo Chettan font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Chettan
@@ -11208,7 +11305,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Da font family from Google Fonts to the given [textStyle].
+  /// Applies the Baloo Da font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Da
@@ -11268,8 +11366,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Da font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baloo Da font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Da
@@ -11292,7 +11390,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Paaji font family from Google Fonts to the given [textStyle].
+  /// Applies the Baloo Paaji font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Paaji
@@ -11352,8 +11451,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Paaji font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baloo Paaji font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Paaji
@@ -11376,7 +11475,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Tamma font family from Google Fonts to the given [textStyle].
+  /// Applies the Baloo Tamma font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Tamma
@@ -11436,8 +11536,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Tamma font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baloo Tamma font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Tamma
@@ -11460,7 +11560,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Tammudu font family from Google Fonts to the given [textStyle].
+  /// Applies the Baloo Tammudu font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Tammudu
@@ -11520,8 +11621,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Tammudu font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baloo Tammudu font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Tammudu
@@ -11544,7 +11645,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Thambi font family from Google Fonts to the given [textStyle].
+  /// Applies the Baloo Thambi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Thambi
@@ -11604,8 +11706,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baloo Thambi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baloo Thambi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baloo+Thambi
@@ -11628,7 +11730,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Balthazar font family from Google Fonts to the given [textStyle].
+  /// Applies the Balthazar font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Balthazar
@@ -11688,8 +11791,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Balthazar font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Balthazar font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Balthazar
@@ -11712,7 +11815,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bangers font family from Google Fonts to the given [textStyle].
+  /// Applies the Bangers font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bangers
@@ -11772,8 +11876,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bangers font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bangers font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bangers
@@ -11796,7 +11900,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Barlow font family from Google Fonts to the given [textStyle].
+  /// Applies the Barlow font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Barlow
@@ -11975,8 +12080,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Barlow font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Barlow font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Barlow
@@ -11999,7 +12104,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Barlow Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Barlow Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Barlow+Condensed
@@ -12178,8 +12284,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Barlow Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Barlow Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Barlow+Condensed
@@ -12202,7 +12308,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Barlow Semi Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Barlow Semi Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Barlow+Semi+Condensed
@@ -12381,8 +12488,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Barlow Semi Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Barlow Semi Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Barlow+Semi+Condensed
@@ -12405,7 +12512,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Barriecito font family from Google Fonts to the given [textStyle].
+  /// Applies the Barriecito font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Barriecito
@@ -12465,8 +12573,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Barriecito font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Barriecito font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Barriecito
@@ -12489,7 +12597,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Barrio font family from Google Fonts to the given [textStyle].
+  /// Applies the Barrio font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Barrio
@@ -12549,8 +12658,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Barrio font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Barrio font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Barrio
@@ -12573,7 +12682,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Basic font family from Google Fonts to the given [textStyle].
+  /// Applies the Basic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Basic
@@ -12633,8 +12743,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Basic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Basic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Basic
@@ -12657,7 +12767,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baskervville font family from Google Fonts to the given [textStyle].
+  /// Applies the Baskervville font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baskervville
@@ -12724,8 +12835,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baskervville font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baskervville font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baskervville
@@ -12748,7 +12859,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baumans font family from Google Fonts to the given [textStyle].
+  /// Applies the Baumans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baumans
@@ -12808,8 +12920,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Baumans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Baumans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Baumans
@@ -12832,7 +12944,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Be Vietnam font family from Google Fonts to the given [textStyle].
+  /// Applies the Be Vietnam font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Be+Vietnam
@@ -12983,8 +13096,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Be Vietnam font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Be Vietnam font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Be+Vietnam
@@ -13007,7 +13120,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bebas Neue font family from Google Fonts to the given [textStyle].
+  /// Applies the Bebas Neue font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bebas+Neue
@@ -13067,8 +13181,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bebas Neue font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bebas Neue font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bebas+Neue
@@ -13091,7 +13205,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Belgrano font family from Google Fonts to the given [textStyle].
+  /// Applies the Belgrano font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Belgrano
@@ -13151,8 +13266,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Belgrano font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Belgrano font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Belgrano
@@ -13175,7 +13290,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bellefair font family from Google Fonts to the given [textStyle].
+  /// Applies the Bellefair font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bellefair
@@ -13235,8 +13351,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bellefair font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bellefair font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bellefair
@@ -13259,7 +13375,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Belleza font family from Google Fonts to the given [textStyle].
+  /// Applies the Belleza font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Belleza
@@ -13319,8 +13436,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Belleza font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Belleza font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Belleza
@@ -13343,7 +13460,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the BenchNine font family from Google Fonts to the given [textStyle].
+  /// Applies the BenchNine font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/BenchNine
@@ -13417,8 +13535,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the BenchNine font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the BenchNine font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/BenchNine
@@ -13441,7 +13559,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bentham font family from Google Fonts to the given [textStyle].
+  /// Applies the Bentham font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bentham
@@ -13501,8 +13620,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bentham font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bentham font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bentham
@@ -13525,7 +13644,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Berkshire Swash font family from Google Fonts to the given [textStyle].
+  /// Applies the Berkshire Swash font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Berkshire+Swash
@@ -13585,8 +13705,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Berkshire Swash font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Berkshire Swash font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Berkshire+Swash
@@ -13609,7 +13729,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Beth Ellen font family from Google Fonts to the given [textStyle].
+  /// Applies the Beth Ellen font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Beth+Ellen
@@ -13669,8 +13790,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Beth Ellen font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Beth Ellen font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Beth+Ellen
@@ -13693,7 +13814,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bevan font family from Google Fonts to the given [textStyle].
+  /// Applies the Bevan font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bevan
@@ -13753,8 +13875,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bevan font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bevan font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bevan
@@ -13777,7 +13899,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Big Shoulders Display font family from Google Fonts to the given [textStyle].
+  /// Applies the Big Shoulders Display font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Big+Shoulders+Display
@@ -13886,8 +14009,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Big Shoulders Display font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Big Shoulders Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Big+Shoulders+Display
@@ -13910,7 +14033,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Big Shoulders Text font family from Google Fonts to the given [textStyle].
+  /// Applies the Big Shoulders Text font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Big+Shoulders+Text
@@ -14019,8 +14143,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Big Shoulders Text font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Big Shoulders Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Big+Shoulders+Text
@@ -14043,7 +14167,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bigelow Rules font family from Google Fonts to the given [textStyle].
+  /// Applies the Bigelow Rules font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bigelow+Rules
@@ -14103,8 +14228,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bigelow Rules font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bigelow Rules font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bigelow+Rules
@@ -14127,7 +14252,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bigshot One font family from Google Fonts to the given [textStyle].
+  /// Applies the Bigshot One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bigshot+One
@@ -14187,8 +14313,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bigshot One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bigshot One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bigshot+One
@@ -14211,7 +14337,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bilbo font family from Google Fonts to the given [textStyle].
+  /// Applies the Bilbo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bilbo
@@ -14271,8 +14398,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bilbo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bilbo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bilbo
@@ -14295,7 +14422,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bilbo Swash Caps font family from Google Fonts to the given [textStyle].
+  /// Applies the Bilbo Swash Caps font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bilbo+Swash+Caps
@@ -14355,8 +14483,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bilbo Swash Caps font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bilbo Swash Caps font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bilbo+Swash+Caps
@@ -14379,7 +14507,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the BioRhyme font family from Google Fonts to the given [textStyle].
+  /// Applies the BioRhyme font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/BioRhyme
@@ -14467,8 +14596,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the BioRhyme font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the BioRhyme font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/BioRhyme
@@ -14491,7 +14620,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the BioRhyme Expanded font family from Google Fonts to the given [textStyle].
+  /// Applies the BioRhyme Expanded font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/BioRhyme+Expanded
@@ -14579,8 +14709,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the BioRhyme Expanded font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the BioRhyme Expanded font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/BioRhyme+Expanded
@@ -14603,7 +14733,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Biryani font family from Google Fonts to the given [textStyle].
+  /// Applies the Biryani font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Biryani
@@ -14705,8 +14836,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Biryani font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Biryani font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Biryani
@@ -14729,7 +14860,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bitter font family from Google Fonts to the given [textStyle].
+  /// Applies the Bitter font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bitter
@@ -14803,8 +14935,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bitter font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bitter font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bitter
@@ -14827,7 +14959,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Black And White Picture font family from Google Fonts to the given [textStyle].
+  /// Applies the Black And White Picture font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Black+And+White+Picture
@@ -14887,8 +15020,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Black And White Picture font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Black And White Picture font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Black+And+White+Picture
@@ -14918,7 +15051,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Black Han Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Black Han Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Black+Han+Sans
@@ -14978,8 +15112,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Black Han Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Black Han Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Black+Han+Sans
@@ -15002,7 +15136,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Black Ops One font family from Google Fonts to the given [textStyle].
+  /// Applies the Black Ops One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Black+Ops+One
@@ -15062,8 +15197,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Black Ops One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Black Ops One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Black+Ops+One
@@ -15086,7 +15221,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Blinker font family from Google Fonts to the given [textStyle].
+  /// Applies the Blinker font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Blinker
@@ -15195,8 +15331,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Blinker font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Blinker font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Blinker
@@ -15219,7 +15355,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bonbon font family from Google Fonts to the given [textStyle].
+  /// Applies the Bonbon font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bonbon
@@ -15279,8 +15416,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bonbon font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bonbon font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bonbon
@@ -15303,7 +15440,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Boogaloo font family from Google Fonts to the given [textStyle].
+  /// Applies the Boogaloo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Boogaloo
@@ -15363,8 +15501,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Boogaloo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Boogaloo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Boogaloo
@@ -15387,7 +15525,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bowlby One font family from Google Fonts to the given [textStyle].
+  /// Applies the Bowlby One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bowlby+One
@@ -15447,8 +15586,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bowlby One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bowlby One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bowlby+One
@@ -15471,7 +15610,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bowlby One SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Bowlby One SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bowlby+One+SC
@@ -15531,8 +15671,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bowlby One SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bowlby One SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bowlby+One+SC
@@ -15555,7 +15695,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Brawler font family from Google Fonts to the given [textStyle].
+  /// Applies the Brawler font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Brawler
@@ -15615,8 +15756,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Brawler font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Brawler font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Brawler
@@ -15639,7 +15780,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bree Serif font family from Google Fonts to the given [textStyle].
+  /// Applies the Bree Serif font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bree+Serif
@@ -15699,8 +15841,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bree Serif font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bree Serif font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bree+Serif
@@ -15723,7 +15865,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bubblegum Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Bubblegum Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bubblegum+Sans
@@ -15783,8 +15926,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bubblegum Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bubblegum Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bubblegum+Sans
@@ -15807,7 +15950,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bubbler One font family from Google Fonts to the given [textStyle].
+  /// Applies the Bubbler One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bubbler+One
@@ -15867,8 +16011,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bubbler One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bubbler One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bubbler+One
@@ -15891,7 +16035,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Buda font family from Google Fonts to the given [textStyle].
+  /// Applies the Buda font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Buda
@@ -15951,8 +16096,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Buda font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Buda font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Buda
@@ -15975,7 +16120,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Buenard font family from Google Fonts to the given [textStyle].
+  /// Applies the Buenard font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Buenard
@@ -16042,8 +16188,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Buenard font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Buenard font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Buenard
@@ -16066,7 +16212,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bungee font family from Google Fonts to the given [textStyle].
+  /// Applies the Bungee font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bungee
@@ -16126,8 +16273,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bungee font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bungee font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bungee
@@ -16150,7 +16297,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bungee Hairline font family from Google Fonts to the given [textStyle].
+  /// Applies the Bungee Hairline font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bungee+Hairline
@@ -16210,8 +16358,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bungee Hairline font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bungee Hairline font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bungee+Hairline
@@ -16234,7 +16382,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bungee Inline font family from Google Fonts to the given [textStyle].
+  /// Applies the Bungee Inline font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bungee+Inline
@@ -16294,8 +16443,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bungee Inline font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bungee Inline font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bungee+Inline
@@ -16318,7 +16467,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bungee Outline font family from Google Fonts to the given [textStyle].
+  /// Applies the Bungee Outline font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bungee+Outline
@@ -16378,8 +16528,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bungee Outline font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bungee Outline font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bungee+Outline
@@ -16402,7 +16552,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bungee Shade font family from Google Fonts to the given [textStyle].
+  /// Applies the Bungee Shade font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bungee+Shade
@@ -16462,8 +16613,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Bungee Shade font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Bungee Shade font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Bungee+Shade
@@ -16486,7 +16637,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Butcherman font family from Google Fonts to the given [textStyle].
+  /// Applies the Butcherman font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Butcherman
@@ -16546,8 +16698,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Butcherman font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Butcherman font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Butcherman
@@ -16570,7 +16722,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Butterfly Kids font family from Google Fonts to the given [textStyle].
+  /// Applies the Butterfly Kids font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Butterfly+Kids
@@ -16630,8 +16783,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Butterfly Kids font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Butterfly Kids font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Butterfly+Kids
@@ -16654,7 +16807,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cabin font family from Google Fonts to the given [textStyle].
+  /// Applies the Cabin font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cabin
@@ -16763,8 +16917,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cabin font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cabin font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cabin
@@ -16787,7 +16941,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cabin Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Cabin Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cabin+Condensed
@@ -16868,8 +17023,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cabin Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cabin Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cabin+Condensed
@@ -16892,7 +17047,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cabin Sketch font family from Google Fonts to the given [textStyle].
+  /// Applies the Cabin Sketch font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cabin+Sketch
@@ -16959,8 +17115,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cabin Sketch font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cabin Sketch font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cabin+Sketch
@@ -16983,7 +17139,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Caesar Dressing font family from Google Fonts to the given [textStyle].
+  /// Applies the Caesar Dressing font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Caesar+Dressing
@@ -17043,8 +17200,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Caesar Dressing font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Caesar Dressing font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Caesar+Dressing
@@ -17067,7 +17224,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cagliostro font family from Google Fonts to the given [textStyle].
+  /// Applies the Cagliostro font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cagliostro
@@ -17127,8 +17285,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cagliostro font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cagliostro font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cagliostro
@@ -17151,7 +17309,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cairo font family from Google Fonts to the given [textStyle].
+  /// Applies the Cairo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cairo
@@ -17246,8 +17405,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cairo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cairo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cairo
@@ -17270,7 +17429,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Caladea font family from Google Fonts to the given [textStyle].
+  /// Applies the Caladea font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Caladea
@@ -17351,8 +17511,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Caladea font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Caladea font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Caladea
@@ -17375,7 +17535,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Calistoga font family from Google Fonts to the given [textStyle].
+  /// Applies the Calistoga font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Calistoga
@@ -17435,8 +17596,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Calistoga font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Calistoga font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Calistoga
@@ -17459,7 +17620,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Calligraffitti font family from Google Fonts to the given [textStyle].
+  /// Applies the Calligraffitti font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Calligraffitti
@@ -17519,8 +17681,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Calligraffitti font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Calligraffitti font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Calligraffitti
@@ -17543,7 +17705,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cambay font family from Google Fonts to the given [textStyle].
+  /// Applies the Cambay font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cambay
@@ -17624,8 +17787,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cambay font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cambay font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cambay
@@ -17648,7 +17811,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cambo font family from Google Fonts to the given [textStyle].
+  /// Applies the Cambo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cambo
@@ -17708,8 +17872,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cambo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cambo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cambo
@@ -17732,7 +17896,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Candal font family from Google Fonts to the given [textStyle].
+  /// Applies the Candal font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Candal
@@ -17792,8 +17957,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Candal font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Candal font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Candal
@@ -17816,7 +17981,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cantarell font family from Google Fonts to the given [textStyle].
+  /// Applies the Cantarell font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cantarell
@@ -17897,8 +18063,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cantarell font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cantarell font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cantarell
@@ -17921,7 +18087,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cantata One font family from Google Fonts to the given [textStyle].
+  /// Applies the Cantata One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cantata+One
@@ -17981,8 +18148,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cantata One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cantata One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cantata+One
@@ -18005,7 +18172,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cantora One font family from Google Fonts to the given [textStyle].
+  /// Applies the Cantora One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cantora+One
@@ -18065,8 +18233,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cantora One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cantora One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cantora+One
@@ -18089,7 +18257,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Capriola font family from Google Fonts to the given [textStyle].
+  /// Applies the Capriola font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Capriola
@@ -18149,8 +18318,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Capriola font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Capriola font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Capriola
@@ -18173,7 +18342,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cardo font family from Google Fonts to the given [textStyle].
+  /// Applies the Cardo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cardo
@@ -18247,8 +18417,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cardo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cardo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cardo
@@ -18271,7 +18441,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Carme font family from Google Fonts to the given [textStyle].
+  /// Applies the Carme font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Carme
@@ -18331,8 +18502,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Carme font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Carme font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Carme
@@ -18355,7 +18526,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Carrois Gothic font family from Google Fonts to the given [textStyle].
+  /// Applies the Carrois Gothic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Carrois+Gothic
@@ -18415,8 +18587,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Carrois Gothic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Carrois Gothic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Carrois+Gothic
@@ -18439,7 +18611,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Carrois Gothic SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Carrois Gothic SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Carrois+Gothic+SC
@@ -18499,8 +18672,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Carrois Gothic SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Carrois Gothic SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Carrois+Gothic+SC
@@ -18523,7 +18696,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Carter One font family from Google Fonts to the given [textStyle].
+  /// Applies the Carter One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Carter+One
@@ -18583,8 +18757,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Carter One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Carter One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Carter+One
@@ -18607,7 +18781,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Catamaran font family from Google Fonts to the given [textStyle].
+  /// Applies the Catamaran font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Catamaran
@@ -18723,8 +18898,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Catamaran font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Catamaran font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Catamaran
@@ -18747,7 +18922,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Caudex font family from Google Fonts to the given [textStyle].
+  /// Applies the Caudex font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Caudex
@@ -18828,8 +19004,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Caudex font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Caudex font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Caudex
@@ -18852,7 +19028,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Caveat font family from Google Fonts to the given [textStyle].
+  /// Applies the Caveat font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Caveat
@@ -18919,8 +19096,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Caveat font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Caveat font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Caveat
@@ -18943,7 +19120,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Caveat Brush font family from Google Fonts to the given [textStyle].
+  /// Applies the Caveat Brush font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Caveat+Brush
@@ -19003,8 +19181,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Caveat Brush font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Caveat Brush font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Caveat+Brush
@@ -19027,7 +19205,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cedarville Cursive font family from Google Fonts to the given [textStyle].
+  /// Applies the Cedarville Cursive font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cedarville+Cursive
@@ -19087,8 +19266,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cedarville Cursive font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cedarville Cursive font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cedarville+Cursive
@@ -19111,7 +19290,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ceviche One font family from Google Fonts to the given [textStyle].
+  /// Applies the Ceviche One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ceviche+One
@@ -19171,8 +19351,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ceviche One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ceviche One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ceviche+One
@@ -19195,7 +19375,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chakra Petch font family from Google Fonts to the given [textStyle].
+  /// Applies the Chakra Petch font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chakra+Petch
@@ -19318,8 +19499,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chakra Petch font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chakra Petch font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chakra+Petch
@@ -19342,7 +19523,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Changa font family from Google Fonts to the given [textStyle].
+  /// Applies the Changa font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Changa
@@ -19444,8 +19626,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Changa font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Changa font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Changa
@@ -19468,7 +19650,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Changa One font family from Google Fonts to the given [textStyle].
+  /// Applies the Changa One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Changa+One
@@ -19535,8 +19718,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Changa One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Changa One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Changa+One
@@ -19559,7 +19742,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chango font family from Google Fonts to the given [textStyle].
+  /// Applies the Chango font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chango
@@ -19619,8 +19803,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chango font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chango font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chango
@@ -19643,7 +19827,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Charm font family from Google Fonts to the given [textStyle].
+  /// Applies the Charm font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Charm
@@ -19710,8 +19895,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Charm font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Charm font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Charm
@@ -19734,7 +19919,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Charmonman font family from Google Fonts to the given [textStyle].
+  /// Applies the Charmonman font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Charmonman
@@ -19801,8 +19987,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Charmonman font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Charmonman font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Charmonman
@@ -19825,7 +20011,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chathura font family from Google Fonts to the given [textStyle].
+  /// Applies the Chathura font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chathura
@@ -19913,8 +20100,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chathura font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chathura font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chathura
@@ -19937,7 +20124,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chau Philomene One font family from Google Fonts to the given [textStyle].
+  /// Applies the Chau Philomene One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chau+Philomene+One
@@ -20004,8 +20192,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chau Philomene One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chau Philomene One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chau+Philomene+One
@@ -20028,7 +20216,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chela One font family from Google Fonts to the given [textStyle].
+  /// Applies the Chela One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chela+One
@@ -20088,8 +20277,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chela One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chela One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chela+One
@@ -20112,7 +20301,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chelsea Market font family from Google Fonts to the given [textStyle].
+  /// Applies the Chelsea Market font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chelsea+Market
@@ -20172,8 +20362,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chelsea Market font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chelsea Market font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chelsea+Market
@@ -20196,7 +20386,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cherry Cream Soda font family from Google Fonts to the given [textStyle].
+  /// Applies the Cherry Cream Soda font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cherry+Cream+Soda
@@ -20256,8 +20447,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cherry Cream Soda font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cherry Cream Soda font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cherry+Cream+Soda
@@ -20280,7 +20471,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cherry Swash font family from Google Fonts to the given [textStyle].
+  /// Applies the Cherry Swash font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cherry+Swash
@@ -20347,8 +20539,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cherry Swash font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cherry Swash font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cherry+Swash
@@ -20371,7 +20563,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chewy font family from Google Fonts to the given [textStyle].
+  /// Applies the Chewy font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chewy
@@ -20431,8 +20624,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chewy font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chewy font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chewy
@@ -20455,7 +20648,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chicle font family from Google Fonts to the given [textStyle].
+  /// Applies the Chicle font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chicle
@@ -20515,8 +20709,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chicle font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chicle font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chicle
@@ -20539,7 +20733,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chilanka font family from Google Fonts to the given [textStyle].
+  /// Applies the Chilanka font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chilanka
@@ -20599,8 +20794,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chilanka font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chilanka font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chilanka
@@ -20623,7 +20818,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chivo font family from Google Fonts to the given [textStyle].
+  /// Applies the Chivo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chivo
@@ -20732,8 +20928,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chivo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chivo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chivo
@@ -20756,7 +20952,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chonburi font family from Google Fonts to the given [textStyle].
+  /// Applies the Chonburi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chonburi
@@ -20816,8 +21013,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Chonburi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Chonburi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Chonburi
@@ -20840,7 +21037,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cinzel font family from Google Fonts to the given [textStyle].
+  /// Applies the Cinzel font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cinzel
@@ -20914,8 +21112,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cinzel font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cinzel font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cinzel
@@ -20938,7 +21136,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cinzel Decorative font family from Google Fonts to the given [textStyle].
+  /// Applies the Cinzel Decorative font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cinzel+Decorative
@@ -21012,8 +21211,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cinzel Decorative font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cinzel Decorative font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cinzel+Decorative
@@ -21036,7 +21235,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Clicker Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Clicker Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Clicker+Script
@@ -21096,8 +21296,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Clicker Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Clicker Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Clicker+Script
@@ -21120,7 +21320,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Coda font family from Google Fonts to the given [textStyle].
+  /// Applies the Coda font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Coda
@@ -21187,8 +21388,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Coda font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Coda font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Coda
@@ -21211,7 +21412,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Coda Caption font family from Google Fonts to the given [textStyle].
+  /// Applies the Coda Caption font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Coda+Caption
@@ -21271,8 +21473,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Coda Caption font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Coda Caption font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Coda+Caption
@@ -21295,7 +21497,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Codystar font family from Google Fonts to the given [textStyle].
+  /// Applies the Codystar font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Codystar
@@ -21362,8 +21565,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Codystar font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Codystar font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Codystar
@@ -21386,7 +21589,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Coiny font family from Google Fonts to the given [textStyle].
+  /// Applies the Coiny font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Coiny
@@ -21446,8 +21650,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Coiny font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Coiny font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Coiny
@@ -21470,7 +21674,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Combo font family from Google Fonts to the given [textStyle].
+  /// Applies the Combo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Combo
@@ -21530,8 +21735,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Combo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Combo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Combo
@@ -21554,7 +21759,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Comfortaa font family from Google Fonts to the given [textStyle].
+  /// Applies the Comfortaa font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Comfortaa
@@ -21628,8 +21834,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Comfortaa font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Comfortaa font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Comfortaa
@@ -21652,7 +21858,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Coming Soon font family from Google Fonts to the given [textStyle].
+  /// Applies the Coming Soon font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Coming+Soon
@@ -21712,8 +21919,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Coming Soon font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Coming Soon font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Coming+Soon
@@ -21736,7 +21943,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Concert One font family from Google Fonts to the given [textStyle].
+  /// Applies the Concert One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Concert+One
@@ -21796,8 +22004,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Concert One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Concert One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Concert+One
@@ -21820,7 +22028,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Condiment font family from Google Fonts to the given [textStyle].
+  /// Applies the Condiment font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Condiment
@@ -21880,8 +22089,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Condiment font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Condiment font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Condiment
@@ -21904,7 +22113,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Contrail One font family from Google Fonts to the given [textStyle].
+  /// Applies the Contrail One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Contrail+One
@@ -21964,8 +22174,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Contrail One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Contrail One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Contrail+One
@@ -21988,7 +22198,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Convergence font family from Google Fonts to the given [textStyle].
+  /// Applies the Convergence font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Convergence
@@ -22048,8 +22259,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Convergence font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Convergence font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Convergence
@@ -22072,7 +22283,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cookie font family from Google Fonts to the given [textStyle].
+  /// Applies the Cookie font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cookie
@@ -22132,8 +22344,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cookie font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cookie font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cookie
@@ -22156,7 +22368,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Copse font family from Google Fonts to the given [textStyle].
+  /// Applies the Copse font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Copse
@@ -22216,8 +22429,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Copse font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Copse font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Copse
@@ -22240,7 +22453,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Corben font family from Google Fonts to the given [textStyle].
+  /// Applies the Corben font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Corben
@@ -22307,8 +22521,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Corben font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Corben font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Corben
@@ -22331,7 +22545,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant font family from Google Fonts to the given [textStyle].
+  /// Applies the Cormorant font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant
@@ -22454,8 +22669,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cormorant font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant
@@ -22478,7 +22693,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant Garamond font family from Google Fonts to the given [textStyle].
+  /// Applies the Cormorant Garamond font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+Garamond
@@ -22601,8 +22817,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant Garamond font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cormorant Garamond font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+Garamond
@@ -22625,7 +22841,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant Infant font family from Google Fonts to the given [textStyle].
+  /// Applies the Cormorant Infant font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+Infant
@@ -22748,8 +22965,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant Infant font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cormorant Infant font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+Infant
@@ -22772,7 +22989,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Cormorant SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+SC
@@ -22860,8 +23078,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cormorant SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+SC
@@ -22884,7 +23102,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant Unicase font family from Google Fonts to the given [textStyle].
+  /// Applies the Cormorant Unicase font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+Unicase
@@ -22972,8 +23191,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant Unicase font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cormorant Unicase font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+Unicase
@@ -22996,7 +23215,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant Upright font family from Google Fonts to the given [textStyle].
+  /// Applies the Cormorant Upright font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+Upright
@@ -23084,8 +23304,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cormorant Upright font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cormorant Upright font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cormorant+Upright
@@ -23108,7 +23328,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Courgette font family from Google Fonts to the given [textStyle].
+  /// Applies the Courgette font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Courgette
@@ -23168,8 +23389,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Courgette font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Courgette font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Courgette
@@ -23192,7 +23413,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Courier Prime font family from Google Fonts to the given [textStyle].
+  /// Applies the Courier Prime font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Courier+Prime
@@ -23273,8 +23495,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Courier Prime font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Courier Prime font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Courier+Prime
@@ -23297,7 +23519,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cousine font family from Google Fonts to the given [textStyle].
+  /// Applies the Cousine font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cousine
@@ -23378,8 +23601,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cousine font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cousine font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cousine
@@ -23402,7 +23625,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Coustard font family from Google Fonts to the given [textStyle].
+  /// Applies the Coustard font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Coustard
@@ -23469,8 +23693,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Coustard font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Coustard font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Coustard
@@ -23493,7 +23717,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Covered By Your Grace font family from Google Fonts to the given [textStyle].
+  /// Applies the Covered By Your Grace font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Covered+By+Your+Grace
@@ -23553,8 +23778,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Covered By Your Grace font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Covered By Your Grace font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Covered+By+Your+Grace
@@ -23577,7 +23802,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Crafty Girls font family from Google Fonts to the given [textStyle].
+  /// Applies the Crafty Girls font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Crafty+Girls
@@ -23637,8 +23863,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Crafty Girls font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Crafty Girls font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Crafty+Girls
@@ -23661,7 +23887,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Creepster font family from Google Fonts to the given [textStyle].
+  /// Applies the Creepster font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Creepster
@@ -23721,8 +23948,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Creepster font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Creepster font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Creepster
@@ -23745,7 +23972,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Crete Round font family from Google Fonts to the given [textStyle].
+  /// Applies the Crete Round font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Crete+Round
@@ -23812,8 +24040,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Crete Round font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Crete Round font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Crete+Round
@@ -23836,7 +24064,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Crimson Text font family from Google Fonts to the given [textStyle].
+  /// Applies the Crimson Text font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Crimson+Text
@@ -23931,8 +24160,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Crimson Text font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Crimson Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Crimson+Text
@@ -23955,7 +24184,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Croissant One font family from Google Fonts to the given [textStyle].
+  /// Applies the Croissant One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Croissant+One
@@ -24015,8 +24245,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Croissant One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Croissant One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Croissant+One
@@ -24039,7 +24269,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Crushed font family from Google Fonts to the given [textStyle].
+  /// Applies the Crushed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Crushed
@@ -24099,8 +24330,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Crushed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Crushed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Crushed
@@ -24123,7 +24354,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cuprum font family from Google Fonts to the given [textStyle].
+  /// Applies the Cuprum font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cuprum
@@ -24204,8 +24436,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cuprum font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cuprum font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cuprum
@@ -24228,7 +24460,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cute Font font family from Google Fonts to the given [textStyle].
+  /// Applies the Cute Font font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cute+Font
@@ -24288,8 +24521,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cute Font font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cute Font font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cute+Font
@@ -24312,7 +24545,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cutive font family from Google Fonts to the given [textStyle].
+  /// Applies the Cutive font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cutive
@@ -24372,8 +24606,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cutive font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cutive font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cutive
@@ -24396,7 +24630,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cutive Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the Cutive Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cutive+Mono
@@ -24456,8 +24691,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Cutive Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Cutive Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Cutive+Mono
@@ -24480,7 +24715,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the DM Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the DM Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Sans
@@ -24575,8 +24811,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the DM Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the DM Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Sans
@@ -24599,7 +24835,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the DM Serif Display font family from Google Fonts to the given [textStyle].
+  /// Applies the DM Serif Display font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Serif+Display
@@ -24666,8 +24903,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the DM Serif Display font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the DM Serif Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Serif+Display
@@ -24690,7 +24927,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the DM Serif Text font family from Google Fonts to the given [textStyle].
+  /// Applies the DM Serif Text font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Serif+Text
@@ -24757,8 +24995,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the DM Serif Text font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the DM Serif Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/DM+Serif+Text
@@ -24781,7 +25019,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Damion font family from Google Fonts to the given [textStyle].
+  /// Applies the Damion font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Damion
@@ -24841,8 +25080,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Damion font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Damion font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Damion
@@ -24865,7 +25104,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dancing Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Dancing Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dancing+Script
@@ -24932,8 +25172,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dancing Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Dancing Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dancing+Script
@@ -24956,7 +25196,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Darker Grotesque font family from Google Fonts to the given [textStyle].
+  /// Applies the Darker Grotesque font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Darker+Grotesque
@@ -25058,8 +25299,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Darker Grotesque font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Darker Grotesque font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Darker+Grotesque
@@ -25082,7 +25323,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the David Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the David Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/David+Libre
@@ -25156,8 +25398,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the David Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the David Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/David+Libre
@@ -25180,7 +25422,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dawning of a New Day font family from Google Fonts to the given [textStyle].
+  /// Applies the Dawning of a New Day font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dawning+of+a+New+Day
@@ -25240,8 +25483,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dawning of a New Day font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Dawning of a New Day font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dawning+of+a+New+Day
@@ -25264,7 +25507,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Days One font family from Google Fonts to the given [textStyle].
+  /// Applies the Days One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Days+One
@@ -25324,8 +25568,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Days One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Days One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Days+One
@@ -25348,7 +25592,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dekko font family from Google Fonts to the given [textStyle].
+  /// Applies the Dekko font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dekko
@@ -25408,8 +25653,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dekko font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Dekko font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dekko
@@ -25432,7 +25677,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Delius font family from Google Fonts to the given [textStyle].
+  /// Applies the Delius font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Delius
@@ -25492,8 +25738,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Delius font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Delius font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Delius
@@ -25516,7 +25762,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Delius Swash Caps font family from Google Fonts to the given [textStyle].
+  /// Applies the Delius Swash Caps font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Delius+Swash+Caps
@@ -25576,8 +25823,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Delius Swash Caps font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Delius Swash Caps font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Delius+Swash+Caps
@@ -25600,7 +25847,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Delius Unicase font family from Google Fonts to the given [textStyle].
+  /// Applies the Delius Unicase font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Delius+Unicase
@@ -25667,8 +25915,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Delius Unicase font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Delius Unicase font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Delius+Unicase
@@ -25691,7 +25939,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Della Respira font family from Google Fonts to the given [textStyle].
+  /// Applies the Della Respira font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Della+Respira
@@ -25751,8 +26000,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Della Respira font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Della Respira font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Della+Respira
@@ -25775,7 +26024,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Denk One font family from Google Fonts to the given [textStyle].
+  /// Applies the Denk One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Denk+One
@@ -25835,8 +26085,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Denk One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Denk One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Denk+One
@@ -25859,7 +26109,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Devonshire font family from Google Fonts to the given [textStyle].
+  /// Applies the Devonshire font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Devonshire
@@ -25919,8 +26170,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Devonshire font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Devonshire font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Devonshire
@@ -25943,7 +26194,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dhurjati font family from Google Fonts to the given [textStyle].
+  /// Applies the Dhurjati font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dhurjati
@@ -26003,8 +26255,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dhurjati font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Dhurjati font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dhurjati
@@ -26027,7 +26279,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Didact Gothic font family from Google Fonts to the given [textStyle].
+  /// Applies the Didact Gothic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Didact+Gothic
@@ -26087,8 +26340,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Didact Gothic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Didact Gothic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Didact+Gothic
@@ -26111,7 +26364,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Diplomata font family from Google Fonts to the given [textStyle].
+  /// Applies the Diplomata font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Diplomata
@@ -26171,8 +26425,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Diplomata font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Diplomata font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Diplomata
@@ -26195,7 +26449,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Diplomata SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Diplomata SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Diplomata+SC
@@ -26255,8 +26510,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Diplomata SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Diplomata SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Diplomata+SC
@@ -26279,7 +26534,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Do Hyeon font family from Google Fonts to the given [textStyle].
+  /// Applies the Do Hyeon font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Do+Hyeon
@@ -26339,8 +26595,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Do Hyeon font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Do Hyeon font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Do+Hyeon
@@ -26363,7 +26619,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dokdo font family from Google Fonts to the given [textStyle].
+  /// Applies the Dokdo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dokdo
@@ -26423,8 +26680,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dokdo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Dokdo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dokdo
@@ -26447,7 +26704,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Domine font family from Google Fonts to the given [textStyle].
+  /// Applies the Domine font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Domine
@@ -26514,8 +26772,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Domine font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Domine font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Domine
@@ -26538,7 +26796,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Donegal One font family from Google Fonts to the given [textStyle].
+  /// Applies the Donegal One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Donegal+One
@@ -26598,8 +26857,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Donegal One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Donegal One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Donegal+One
@@ -26622,7 +26881,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Doppio One font family from Google Fonts to the given [textStyle].
+  /// Applies the Doppio One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Doppio+One
@@ -26682,8 +26942,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Doppio One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Doppio One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Doppio+One
@@ -26706,7 +26966,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dorsa font family from Google Fonts to the given [textStyle].
+  /// Applies the Dorsa font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dorsa
@@ -26766,8 +27027,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dorsa font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Dorsa font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dorsa
@@ -26790,7 +27051,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dosis font family from Google Fonts to the given [textStyle].
+  /// Applies the Dosis font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dosis
@@ -26892,8 +27154,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dosis font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Dosis font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dosis
@@ -26916,7 +27178,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dr Sugiyama font family from Google Fonts to the given [textStyle].
+  /// Applies the Dr Sugiyama font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dr+Sugiyama
@@ -26976,8 +27239,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dr Sugiyama font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Dr Sugiyama font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dr+Sugiyama
@@ -27000,7 +27263,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Droid Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Droid Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Droid+Sans
@@ -27067,8 +27331,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Droid Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Droid Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Droid+Sans
@@ -27091,7 +27355,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Droid Sans Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the Droid Sans Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Droid+Sans+Mono
@@ -27151,8 +27416,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Droid Sans Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Droid Sans Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Droid+Sans+Mono
@@ -27175,7 +27440,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Droid Serif font family from Google Fonts to the given [textStyle].
+  /// Applies the Droid Serif font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Droid+Serif
@@ -27256,8 +27522,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Droid Serif font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Droid Serif font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Droid+Serif
@@ -27280,7 +27546,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Duru Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Duru Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Duru+Sans
@@ -27340,8 +27607,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Duru Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Duru Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Duru+Sans
@@ -27364,7 +27631,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dynalight font family from Google Fonts to the given [textStyle].
+  /// Applies the Dynalight font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dynalight
@@ -27424,8 +27692,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Dynalight font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Dynalight font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Dynalight
@@ -27448,7 +27716,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the EB Garamond font family from Google Fonts to the given [textStyle].
+  /// Applies the EB Garamond font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/EB+Garamond
@@ -27508,8 +27777,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the EB Garamond font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the EB Garamond font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/EB+Garamond
@@ -27532,7 +27801,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Eagle Lake font family from Google Fonts to the given [textStyle].
+  /// Applies the Eagle Lake font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Eagle+Lake
@@ -27592,8 +27862,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Eagle Lake font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Eagle Lake font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Eagle+Lake
@@ -27616,7 +27886,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the East Sea Dokdo font family from Google Fonts to the given [textStyle].
+  /// Applies the East Sea Dokdo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/East+Sea+Dokdo
@@ -27676,8 +27947,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the East Sea Dokdo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the East Sea Dokdo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/East+Sea+Dokdo
@@ -27700,7 +27971,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Eater font family from Google Fonts to the given [textStyle].
+  /// Applies the Eater font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Eater
@@ -27760,8 +28032,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Eater font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Eater font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Eater
@@ -27784,7 +28056,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Economica font family from Google Fonts to the given [textStyle].
+  /// Applies the Economica font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Economica
@@ -27865,8 +28138,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Economica font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Economica font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Economica
@@ -27889,7 +28162,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Eczar font family from Google Fonts to the given [textStyle].
+  /// Applies the Eczar font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Eczar
@@ -27977,8 +28251,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Eczar font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Eczar font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Eczar
@@ -28001,7 +28275,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the El Messiri font family from Google Fonts to the given [textStyle].
+  /// Applies the El Messiri font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/El+Messiri
@@ -28082,8 +28357,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the El Messiri font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the El Messiri font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/El+Messiri
@@ -28106,7 +28381,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Electrolize font family from Google Fonts to the given [textStyle].
+  /// Applies the Electrolize font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Electrolize
@@ -28166,8 +28442,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Electrolize font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Electrolize font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Electrolize
@@ -28190,7 +28466,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Elsie font family from Google Fonts to the given [textStyle].
+  /// Applies the Elsie font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Elsie
@@ -28257,8 +28534,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Elsie font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Elsie font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Elsie
@@ -28281,7 +28558,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Elsie Swash Caps font family from Google Fonts to the given [textStyle].
+  /// Applies the Elsie Swash Caps font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Elsie+Swash+Caps
@@ -28348,8 +28626,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Elsie Swash Caps font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Elsie Swash Caps font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Elsie+Swash+Caps
@@ -28372,7 +28650,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Emblema One font family from Google Fonts to the given [textStyle].
+  /// Applies the Emblema One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Emblema+One
@@ -28432,8 +28711,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Emblema One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Emblema One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Emblema+One
@@ -28456,7 +28735,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Emilys Candy font family from Google Fonts to the given [textStyle].
+  /// Applies the Emilys Candy font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Emilys+Candy
@@ -28516,8 +28796,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Emilys Candy font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Emilys Candy font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Emilys+Candy
@@ -28540,7 +28820,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Encode Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Encode Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Encode+Sans
@@ -28656,8 +28937,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Encode Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Encode Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Encode+Sans
@@ -28680,7 +28961,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Encode Sans Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Encode Sans Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Encode+Sans+Condensed
@@ -28796,8 +29078,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Encode Sans Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Encode Sans Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Encode+Sans+Condensed
@@ -28820,7 +29102,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Encode Sans Expanded font family from Google Fonts to the given [textStyle].
+  /// Applies the Encode Sans Expanded font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Encode+Sans+Expanded
@@ -28936,8 +29219,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Encode Sans Expanded font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Encode Sans Expanded font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Encode+Sans+Expanded
@@ -28960,7 +29243,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Encode Sans Semi Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Encode Sans Semi Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Encode+Sans+Semi+Condensed
@@ -29076,8 +29360,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Encode Sans Semi Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Encode Sans Semi Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Encode+Sans+Semi+Condensed
@@ -29109,7 +29393,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Encode Sans Semi Expanded font family from Google Fonts to the given [textStyle].
+  /// Applies the Encode Sans Semi Expanded font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Encode+Sans+Semi+Expanded
@@ -29225,8 +29510,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Encode Sans Semi Expanded font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Encode Sans Semi Expanded font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Encode+Sans+Semi+Expanded
@@ -29258,7 +29543,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Engagement font family from Google Fonts to the given [textStyle].
+  /// Applies the Engagement font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Engagement
@@ -29318,8 +29604,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Engagement font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Engagement font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Engagement
@@ -29342,7 +29628,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Englebert font family from Google Fonts to the given [textStyle].
+  /// Applies the Englebert font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Englebert
@@ -29402,8 +29689,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Englebert font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Englebert font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Englebert
@@ -29426,7 +29713,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Enriqueta font family from Google Fonts to the given [textStyle].
+  /// Applies the Enriqueta font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Enriqueta
@@ -29493,8 +29781,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Enriqueta font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Enriqueta font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Enriqueta
@@ -29517,7 +29805,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Erica One font family from Google Fonts to the given [textStyle].
+  /// Applies the Erica One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Erica+One
@@ -29577,8 +29866,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Erica One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Erica One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Erica+One
@@ -29601,7 +29890,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Esteban font family from Google Fonts to the given [textStyle].
+  /// Applies the Esteban font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Esteban
@@ -29661,8 +29951,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Esteban font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Esteban font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Esteban
@@ -29685,7 +29975,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Euphoria Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Euphoria Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Euphoria+Script
@@ -29745,8 +30036,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Euphoria Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Euphoria Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Euphoria+Script
@@ -29769,7 +30060,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ewert font family from Google Fonts to the given [textStyle].
+  /// Applies the Ewert font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ewert
@@ -29829,8 +30121,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ewert font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ewert font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ewert
@@ -29853,7 +30145,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Exo font family from Google Fonts to the given [textStyle].
+  /// Applies the Exo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Exo
@@ -30032,8 +30325,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Exo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Exo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Exo
@@ -30056,7 +30349,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Exo 2 font family from Google Fonts to the given [textStyle].
+  /// Applies the Exo 2 font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Exo+2
@@ -30235,8 +30529,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Exo 2 font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Exo 2 font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Exo+2
@@ -30259,7 +30553,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Expletus Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Expletus Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Expletus+Sans
@@ -30368,8 +30663,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Expletus Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Expletus Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Expletus+Sans
@@ -30392,7 +30687,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fahkwang font family from Google Fonts to the given [textStyle].
+  /// Applies the Fahkwang font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fahkwang
@@ -30529,8 +30825,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fahkwang font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fahkwang font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fahkwang
@@ -30553,7 +30849,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fanwood Text font family from Google Fonts to the given [textStyle].
+  /// Applies the Fanwood Text font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fanwood+Text
@@ -30620,8 +30917,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fanwood Text font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fanwood Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fanwood+Text
@@ -30644,7 +30941,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Farro font family from Google Fonts to the given [textStyle].
+  /// Applies the Farro font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Farro
@@ -30725,8 +31023,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Farro font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Farro font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Farro
@@ -30749,7 +31047,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Farsan font family from Google Fonts to the given [textStyle].
+  /// Applies the Farsan font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Farsan
@@ -30809,8 +31108,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Farsan font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Farsan font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Farsan
@@ -30833,7 +31132,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fascinate font family from Google Fonts to the given [textStyle].
+  /// Applies the Fascinate font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fascinate
@@ -30893,8 +31193,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fascinate font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fascinate font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fascinate
@@ -30917,7 +31217,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fascinate Inline font family from Google Fonts to the given [textStyle].
+  /// Applies the Fascinate Inline font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fascinate+Inline
@@ -30977,8 +31278,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fascinate Inline font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fascinate Inline font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fascinate+Inline
@@ -31001,7 +31302,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Faster One font family from Google Fonts to the given [textStyle].
+  /// Applies the Faster One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Faster+One
@@ -31061,8 +31363,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Faster One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Faster One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Faster+One
@@ -31085,7 +31387,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fauna One font family from Google Fonts to the given [textStyle].
+  /// Applies the Fauna One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fauna+One
@@ -31145,8 +31448,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fauna One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fauna One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fauna+One
@@ -31169,7 +31472,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Faustina font family from Google Fonts to the given [textStyle].
+  /// Applies the Faustina font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Faustina
@@ -31278,8 +31582,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Faustina font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Faustina font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Faustina
@@ -31302,7 +31606,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Federant font family from Google Fonts to the given [textStyle].
+  /// Applies the Federant font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Federant
@@ -31362,8 +31667,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Federant font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Federant font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Federant
@@ -31386,7 +31691,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Federo font family from Google Fonts to the given [textStyle].
+  /// Applies the Federo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Federo
@@ -31446,8 +31752,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Federo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Federo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Federo
@@ -31470,7 +31776,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Felipa font family from Google Fonts to the given [textStyle].
+  /// Applies the Felipa font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Felipa
@@ -31530,8 +31837,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Felipa font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Felipa font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Felipa
@@ -31554,7 +31861,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fenix font family from Google Fonts to the given [textStyle].
+  /// Applies the Fenix font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fenix
@@ -31614,8 +31922,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fenix font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fenix font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fenix
@@ -31638,7 +31946,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Finger Paint font family from Google Fonts to the given [textStyle].
+  /// Applies the Finger Paint font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Finger+Paint
@@ -31698,8 +32007,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Finger Paint font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Finger Paint font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Finger+Paint
@@ -31722,7 +32031,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fira Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the Fira Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fira+Mono
@@ -31796,8 +32106,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fira Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fira Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fira+Mono
@@ -31820,7 +32130,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fira Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Fira Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fira+Sans
@@ -31999,8 +32310,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fira Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fira Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fira+Sans
@@ -32023,7 +32334,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fira Sans Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Fira Sans Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fira+Sans+Condensed
@@ -32202,8 +32514,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fira Sans Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fira Sans Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fira+Sans+Condensed
@@ -32226,7 +32538,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fira Sans Extra Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Fira Sans Extra Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed
@@ -32405,8 +32718,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fira Sans Extra Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fira Sans Extra Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed
@@ -32438,7 +32751,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fjalla One font family from Google Fonts to the given [textStyle].
+  /// Applies the Fjalla One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fjalla+One
@@ -32498,8 +32812,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fjalla One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fjalla One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fjalla+One
@@ -32522,7 +32836,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fjord One font family from Google Fonts to the given [textStyle].
+  /// Applies the Fjord One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fjord+One
@@ -32582,8 +32897,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fjord One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fjord One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fjord+One
@@ -32606,7 +32921,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Flamenco font family from Google Fonts to the given [textStyle].
+  /// Applies the Flamenco font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Flamenco
@@ -32673,8 +32989,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Flamenco font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Flamenco font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Flamenco
@@ -32697,7 +33013,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Flavors font family from Google Fonts to the given [textStyle].
+  /// Applies the Flavors font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Flavors
@@ -32757,8 +33074,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Flavors font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Flavors font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Flavors
@@ -32781,7 +33098,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fondamento font family from Google Fonts to the given [textStyle].
+  /// Applies the Fondamento font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fondamento
@@ -32848,8 +33166,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fondamento font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fondamento font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fondamento
@@ -32872,7 +33190,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fontdiner Swanky font family from Google Fonts to the given [textStyle].
+  /// Applies the Fontdiner Swanky font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fontdiner+Swanky
@@ -32932,8 +33251,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fontdiner Swanky font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fontdiner Swanky font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fontdiner+Swanky
@@ -32956,7 +33275,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Forum font family from Google Fonts to the given [textStyle].
+  /// Applies the Forum font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Forum
@@ -33016,8 +33336,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Forum font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Forum font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Forum
@@ -33040,7 +33360,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Francois One font family from Google Fonts to the given [textStyle].
+  /// Applies the Francois One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Francois+One
@@ -33100,8 +33421,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Francois One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Francois One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Francois+One
@@ -33124,7 +33445,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Frank Ruhl Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the Frank Ruhl Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Frank+Ruhl+Libre
@@ -33212,8 +33534,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Frank Ruhl Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Frank Ruhl Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Frank+Ruhl+Libre
@@ -33236,7 +33558,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Freckle Face font family from Google Fonts to the given [textStyle].
+  /// Applies the Freckle Face font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Freckle+Face
@@ -33296,8 +33619,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Freckle Face font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Freckle Face font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Freckle+Face
@@ -33320,7 +33643,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fredericka the Great font family from Google Fonts to the given [textStyle].
+  /// Applies the Fredericka the Great font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fredericka+the+Great
@@ -33380,8 +33704,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fredericka the Great font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fredericka the Great font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fredericka+the+Great
@@ -33404,7 +33728,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fredoka One font family from Google Fonts to the given [textStyle].
+  /// Applies the Fredoka One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fredoka+One
@@ -33464,8 +33789,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fredoka One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fredoka One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fredoka+One
@@ -33488,7 +33813,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fresca font family from Google Fonts to the given [textStyle].
+  /// Applies the Fresca font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fresca
@@ -33548,8 +33874,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fresca font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fresca font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fresca
@@ -33572,7 +33898,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Frijole font family from Google Fonts to the given [textStyle].
+  /// Applies the Frijole font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Frijole
@@ -33632,8 +33959,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Frijole font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Frijole font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Frijole
@@ -33656,7 +33983,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fruktur font family from Google Fonts to the given [textStyle].
+  /// Applies the Fruktur font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fruktur
@@ -33716,8 +34044,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fruktur font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fruktur font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fruktur
@@ -33740,7 +34068,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fugaz One font family from Google Fonts to the given [textStyle].
+  /// Applies the Fugaz One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fugaz+One
@@ -33800,8 +34129,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Fugaz One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Fugaz One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Fugaz+One
@@ -33824,7 +34153,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the GFS Didot font family from Google Fonts to the given [textStyle].
+  /// Applies the GFS Didot font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/GFS+Didot
@@ -33884,8 +34214,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the GFS Didot font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the GFS Didot font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/GFS+Didot
@@ -33908,7 +34238,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the GFS Neohellenic font family from Google Fonts to the given [textStyle].
+  /// Applies the GFS Neohellenic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/GFS+Neohellenic
@@ -33989,8 +34320,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the GFS Neohellenic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the GFS Neohellenic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/GFS+Neohellenic
@@ -34013,7 +34344,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gabriela font family from Google Fonts to the given [textStyle].
+  /// Applies the Gabriela font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gabriela
@@ -34073,8 +34405,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gabriela font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gabriela font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gabriela
@@ -34097,7 +34429,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gaegu font family from Google Fonts to the given [textStyle].
+  /// Applies the Gaegu font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gaegu
@@ -34171,8 +34504,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gaegu font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gaegu font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gaegu
@@ -34195,7 +34528,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gafata font family from Google Fonts to the given [textStyle].
+  /// Applies the Gafata font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gafata
@@ -34255,8 +34589,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gafata font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gafata font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gafata
@@ -34279,7 +34613,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Galada font family from Google Fonts to the given [textStyle].
+  /// Applies the Galada font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Galada
@@ -34339,8 +34674,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Galada font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Galada font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Galada
@@ -34363,7 +34698,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Galdeano font family from Google Fonts to the given [textStyle].
+  /// Applies the Galdeano font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Galdeano
@@ -34423,8 +34759,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Galdeano font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Galdeano font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Galdeano
@@ -34447,7 +34783,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Galindo font family from Google Fonts to the given [textStyle].
+  /// Applies the Galindo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Galindo
@@ -34507,8 +34844,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Galindo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Galindo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Galindo
@@ -34531,7 +34868,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gamja Flower font family from Google Fonts to the given [textStyle].
+  /// Applies the Gamja Flower font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gamja+Flower
@@ -34591,8 +34929,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gamja Flower font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gamja Flower font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gamja+Flower
@@ -34615,7 +34953,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gayathri font family from Google Fonts to the given [textStyle].
+  /// Applies the Gayathri font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gayathri
@@ -34689,8 +35028,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gayathri font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gayathri font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gayathri
@@ -34713,7 +35052,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gelasio font family from Google Fonts to the given [textStyle].
+  /// Applies the Gelasio font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gelasio
@@ -34822,8 +35162,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gelasio font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gelasio font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gelasio
@@ -34846,7 +35186,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gentium Basic font family from Google Fonts to the given [textStyle].
+  /// Applies the Gentium Basic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gentium+Basic
@@ -34927,8 +35268,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gentium Basic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gentium Basic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gentium+Basic
@@ -34951,7 +35292,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gentium Book Basic font family from Google Fonts to the given [textStyle].
+  /// Applies the Gentium Book Basic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gentium+Book+Basic
@@ -35032,8 +35374,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gentium Book Basic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gentium Book Basic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gentium+Book+Basic
@@ -35056,7 +35398,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Geo font family from Google Fonts to the given [textStyle].
+  /// Applies the Geo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Geo
@@ -35123,8 +35466,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Geo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Geo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Geo
@@ -35147,7 +35490,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Geostar font family from Google Fonts to the given [textStyle].
+  /// Applies the Geostar font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Geostar
@@ -35207,8 +35551,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Geostar font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Geostar font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Geostar
@@ -35231,7 +35575,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Geostar Fill font family from Google Fonts to the given [textStyle].
+  /// Applies the Geostar Fill font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Geostar+Fill
@@ -35291,8 +35636,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Geostar Fill font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Geostar Fill font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Geostar+Fill
@@ -35315,7 +35660,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Germania One font family from Google Fonts to the given [textStyle].
+  /// Applies the Germania One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Germania+One
@@ -35375,8 +35721,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Germania One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Germania One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Germania+One
@@ -35399,7 +35745,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gidugu font family from Google Fonts to the given [textStyle].
+  /// Applies the Gidugu font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gidugu
@@ -35459,8 +35806,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gidugu font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gidugu font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gidugu
@@ -35483,7 +35830,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gilda Display font family from Google Fonts to the given [textStyle].
+  /// Applies the Gilda Display font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gilda+Display
@@ -35543,8 +35891,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gilda Display font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gilda Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gilda+Display
@@ -35567,7 +35915,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Girassol font family from Google Fonts to the given [textStyle].
+  /// Applies the Girassol font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Girassol
@@ -35627,8 +35976,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Girassol font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Girassol font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Girassol
@@ -35651,7 +36000,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Give You Glory font family from Google Fonts to the given [textStyle].
+  /// Applies the Give You Glory font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Give+You+Glory
@@ -35711,8 +36061,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Give You Glory font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Give You Glory font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Give+You+Glory
@@ -35735,7 +36085,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Glass Antiqua font family from Google Fonts to the given [textStyle].
+  /// Applies the Glass Antiqua font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Glass+Antiqua
@@ -35795,8 +36146,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Glass Antiqua font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Glass Antiqua font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Glass+Antiqua
@@ -35819,7 +36170,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Glegoo font family from Google Fonts to the given [textStyle].
+  /// Applies the Glegoo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Glegoo
@@ -35886,8 +36238,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Glegoo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Glegoo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Glegoo
@@ -35910,7 +36262,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gloria Hallelujah font family from Google Fonts to the given [textStyle].
+  /// Applies the Gloria Hallelujah font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gloria+Hallelujah
@@ -35970,8 +36323,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gloria Hallelujah font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gloria Hallelujah font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gloria+Hallelujah
@@ -35994,7 +36347,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Goblin One font family from Google Fonts to the given [textStyle].
+  /// Applies the Goblin One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Goblin+One
@@ -36054,8 +36408,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Goblin One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Goblin One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Goblin+One
@@ -36078,7 +36432,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gochi Hand font family from Google Fonts to the given [textStyle].
+  /// Applies the Gochi Hand font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gochi+Hand
@@ -36138,8 +36493,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gochi Hand font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gochi Hand font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gochi+Hand
@@ -36162,7 +36517,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gorditas font family from Google Fonts to the given [textStyle].
+  /// Applies the Gorditas font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gorditas
@@ -36229,8 +36585,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gorditas font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gorditas font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gorditas
@@ -36253,7 +36609,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gothic A1 font family from Google Fonts to the given [textStyle].
+  /// Applies the Gothic A1 font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gothic+A1
@@ -36369,8 +36726,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gothic A1 font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gothic A1 font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gothic+A1
@@ -36393,7 +36750,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Goudy Bookletter 1911 font family from Google Fonts to the given [textStyle].
+  /// Applies the Goudy Bookletter 1911 font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Goudy+Bookletter+1911
@@ -36453,8 +36811,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Goudy Bookletter 1911 font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Goudy Bookletter 1911 font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Goudy+Bookletter+1911
@@ -36477,7 +36835,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Graduate font family from Google Fonts to the given [textStyle].
+  /// Applies the Graduate font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Graduate
@@ -36537,8 +36896,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Graduate font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Graduate font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Graduate
@@ -36561,7 +36920,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Grand Hotel font family from Google Fonts to the given [textStyle].
+  /// Applies the Grand Hotel font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Grand+Hotel
@@ -36621,8 +36981,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Grand Hotel font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Grand Hotel font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Grand+Hotel
@@ -36645,7 +37005,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gravitas One font family from Google Fonts to the given [textStyle].
+  /// Applies the Gravitas One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gravitas+One
@@ -36705,8 +37066,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gravitas One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gravitas One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gravitas+One
@@ -36729,7 +37090,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Great Vibes font family from Google Fonts to the given [textStyle].
+  /// Applies the Great Vibes font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Great+Vibes
@@ -36789,8 +37151,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Great Vibes font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Great Vibes font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Great+Vibes
@@ -36813,7 +37175,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Grenze font family from Google Fonts to the given [textStyle].
+  /// Applies the Grenze font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Grenze
@@ -36992,8 +37355,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Grenze font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Grenze font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Grenze
@@ -37016,7 +37379,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Griffy font family from Google Fonts to the given [textStyle].
+  /// Applies the Griffy font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Griffy
@@ -37076,8 +37440,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Griffy font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Griffy font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Griffy
@@ -37100,7 +37464,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gruppo font family from Google Fonts to the given [textStyle].
+  /// Applies the Gruppo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gruppo
@@ -37160,8 +37525,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gruppo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gruppo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gruppo
@@ -37184,7 +37549,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gudea font family from Google Fonts to the given [textStyle].
+  /// Applies the Gudea font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gudea
@@ -37258,8 +37624,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gudea font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gudea font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gudea
@@ -37282,7 +37648,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gugi font family from Google Fonts to the given [textStyle].
+  /// Applies the Gugi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gugi
@@ -37342,8 +37709,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gugi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gugi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gugi
@@ -37366,7 +37733,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gupter font family from Google Fonts to the given [textStyle].
+  /// Applies the Gupter font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gupter
@@ -37440,8 +37808,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gupter font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gupter font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gupter
@@ -37464,7 +37832,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gurajada font family from Google Fonts to the given [textStyle].
+  /// Applies the Gurajada font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gurajada
@@ -37524,8 +37893,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Gurajada font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Gurajada font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Gurajada
@@ -37548,7 +37917,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Habibi font family from Google Fonts to the given [textStyle].
+  /// Applies the Habibi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Habibi
@@ -37608,8 +37978,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Habibi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Habibi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Habibi
@@ -37632,7 +38002,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Halant font family from Google Fonts to the given [textStyle].
+  /// Applies the Halant font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Halant
@@ -37720,8 +38091,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Halant font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Halant font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Halant
@@ -37744,7 +38115,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hammersmith One font family from Google Fonts to the given [textStyle].
+  /// Applies the Hammersmith One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hammersmith+One
@@ -37804,8 +38176,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hammersmith One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Hammersmith One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hammersmith+One
@@ -37828,7 +38200,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hanalei font family from Google Fonts to the given [textStyle].
+  /// Applies the Hanalei font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hanalei
@@ -37888,8 +38261,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hanalei font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Hanalei font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hanalei
@@ -37912,7 +38285,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hanalei Fill font family from Google Fonts to the given [textStyle].
+  /// Applies the Hanalei Fill font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hanalei+Fill
@@ -37972,8 +38346,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hanalei Fill font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Hanalei Fill font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hanalei+Fill
@@ -37996,7 +38370,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Handlee font family from Google Fonts to the given [textStyle].
+  /// Applies the Handlee font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Handlee
@@ -38056,8 +38431,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Handlee font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Handlee font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Handlee
@@ -38080,7 +38455,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Happy Monkey font family from Google Fonts to the given [textStyle].
+  /// Applies the Happy Monkey font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Happy+Monkey
@@ -38140,8 +38516,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Happy Monkey font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Happy Monkey font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Happy+Monkey
@@ -38164,7 +38540,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Harmattan font family from Google Fonts to the given [textStyle].
+  /// Applies the Harmattan font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Harmattan
@@ -38224,8 +38601,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Harmattan font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Harmattan font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Harmattan
@@ -38248,7 +38625,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Headland One font family from Google Fonts to the given [textStyle].
+  /// Applies the Headland One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Headland+One
@@ -38308,8 +38686,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Headland One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Headland One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Headland+One
@@ -38332,7 +38710,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Heebo font family from Google Fonts to the given [textStyle].
+  /// Applies the Heebo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Heebo
@@ -38434,8 +38813,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Heebo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Heebo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Heebo
@@ -38458,7 +38837,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Henny Penny font family from Google Fonts to the given [textStyle].
+  /// Applies the Henny Penny font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Henny+Penny
@@ -38518,8 +38898,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Henny Penny font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Henny Penny font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Henny+Penny
@@ -38542,7 +38922,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Herr Von Muellerhoff font family from Google Fonts to the given [textStyle].
+  /// Applies the Herr Von Muellerhoff font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Herr+Von+Muellerhoff
@@ -38602,8 +38983,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Herr Von Muellerhoff font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Herr Von Muellerhoff font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Herr+Von+Muellerhoff
@@ -38626,7 +39007,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hi Melody font family from Google Fonts to the given [textStyle].
+  /// Applies the Hi Melody font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hi+Melody
@@ -38686,8 +39068,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hi Melody font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Hi Melody font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hi+Melody
@@ -38710,7 +39092,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hind font family from Google Fonts to the given [textStyle].
+  /// Applies the Hind font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hind
@@ -38798,8 +39181,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hind font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Hind font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hind
@@ -38822,7 +39205,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hind Guntur font family from Google Fonts to the given [textStyle].
+  /// Applies the Hind Guntur font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hind+Guntur
@@ -38910,8 +39294,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hind Guntur font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Hind Guntur font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hind+Guntur
@@ -38934,7 +39318,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hind Madurai font family from Google Fonts to the given [textStyle].
+  /// Applies the Hind Madurai font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hind+Madurai
@@ -39022,8 +39407,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hind Madurai font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Hind Madurai font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hind+Madurai
@@ -39046,7 +39431,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hind Siliguri font family from Google Fonts to the given [textStyle].
+  /// Applies the Hind Siliguri font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hind+Siliguri
@@ -39134,8 +39520,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hind Siliguri font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Hind Siliguri font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hind+Siliguri
@@ -39158,7 +39544,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hind Vadodara font family from Google Fonts to the given [textStyle].
+  /// Applies the Hind Vadodara font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hind+Vadodara
@@ -39246,8 +39633,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Hind Vadodara font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Hind Vadodara font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Hind+Vadodara
@@ -39270,7 +39657,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Holtwood One SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Holtwood One SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Holtwood+One+SC
@@ -39330,8 +39718,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Holtwood One SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Holtwood One SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Holtwood+One+SC
@@ -39354,7 +39742,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Homemade Apple font family from Google Fonts to the given [textStyle].
+  /// Applies the Homemade Apple font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Homemade+Apple
@@ -39414,8 +39803,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Homemade Apple font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Homemade Apple font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Homemade+Apple
@@ -39438,7 +39827,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Homenaje font family from Google Fonts to the given [textStyle].
+  /// Applies the Homenaje font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Homenaje
@@ -39498,8 +39888,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Homenaje font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Homenaje font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Homenaje
@@ -39522,7 +39912,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IBM Plex Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the IBM Plex Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Mono
@@ -39673,8 +40064,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IBM Plex Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IBM Plex Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Mono
@@ -39697,7 +40088,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IBM Plex Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the IBM Plex Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Sans
@@ -39848,8 +40240,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IBM Plex Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IBM Plex Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Sans
@@ -39872,7 +40264,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IBM Plex Sans Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the IBM Plex Sans Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Sans+Condensed
@@ -40023,8 +40416,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IBM Plex Sans Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IBM Plex Sans Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Sans+Condensed
@@ -40054,7 +40447,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IBM Plex Serif font family from Google Fonts to the given [textStyle].
+  /// Applies the IBM Plex Serif font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Serif
@@ -40205,8 +40599,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IBM Plex Serif font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IBM Plex Serif font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IBM+Plex+Serif
@@ -40229,7 +40623,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell DW Pica font family from Google Fonts to the given [textStyle].
+  /// Applies the IM Fell DW Pica font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica
@@ -40296,8 +40691,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell DW Pica font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IM Fell DW Pica font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica
@@ -40320,7 +40715,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell DW Pica SC font family from Google Fonts to the given [textStyle].
+  /// Applies the IM Fell DW Pica SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica+SC
@@ -40380,8 +40776,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell DW Pica SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IM Fell DW Pica SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+DW+Pica+SC
@@ -40404,7 +40800,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell Double Pica font family from Google Fonts to the given [textStyle].
+  /// Applies the IM Fell Double Pica font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica
@@ -40471,8 +40868,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell Double Pica font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IM Fell Double Pica font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica
@@ -40495,7 +40892,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell Double Pica SC font family from Google Fonts to the given [textStyle].
+  /// Applies the IM Fell Double Pica SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica+SC
@@ -40555,8 +40953,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell Double Pica SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IM Fell Double Pica SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Double+Pica+SC
@@ -40579,7 +40977,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell English font family from Google Fonts to the given [textStyle].
+  /// Applies the IM Fell English font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+English
@@ -40646,8 +41045,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell English font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IM Fell English font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+English
@@ -40670,7 +41069,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell English SC font family from Google Fonts to the given [textStyle].
+  /// Applies the IM Fell English SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+English+SC
@@ -40730,8 +41130,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell English SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IM Fell English SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+English+SC
@@ -40754,7 +41154,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell French Canon font family from Google Fonts to the given [textStyle].
+  /// Applies the IM Fell French Canon font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon
@@ -40821,8 +41222,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell French Canon font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IM Fell French Canon font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon
@@ -40845,7 +41246,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell French Canon SC font family from Google Fonts to the given [textStyle].
+  /// Applies the IM Fell French Canon SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon+SC
@@ -40905,8 +41307,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell French Canon SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IM Fell French Canon SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+French+Canon+SC
@@ -40929,7 +41331,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell Great Primer font family from Google Fonts to the given [textStyle].
+  /// Applies the IM Fell Great Primer font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer
@@ -40996,8 +41399,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell Great Primer font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IM Fell Great Primer font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer
@@ -41020,7 +41423,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell Great Primer SC font family from Google Fonts to the given [textStyle].
+  /// Applies the IM Fell Great Primer SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer+SC
@@ -41080,8 +41484,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the IM Fell Great Primer SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the IM Fell Great Primer SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/IM+Fell+Great+Primer+SC
@@ -41104,7 +41508,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ibarra Real Nova font family from Google Fonts to the given [textStyle].
+  /// Applies the Ibarra Real Nova font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ibarra+Real+Nova
@@ -41199,8 +41604,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ibarra Real Nova font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ibarra Real Nova font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ibarra+Real+Nova
@@ -41223,7 +41628,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Iceberg font family from Google Fonts to the given [textStyle].
+  /// Applies the Iceberg font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Iceberg
@@ -41283,8 +41689,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Iceberg font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Iceberg font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Iceberg
@@ -41307,7 +41713,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Iceland font family from Google Fonts to the given [textStyle].
+  /// Applies the Iceland font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Iceland
@@ -41367,8 +41774,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Iceland font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Iceland font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Iceland
@@ -41391,7 +41798,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Imprima font family from Google Fonts to the given [textStyle].
+  /// Applies the Imprima font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Imprima
@@ -41451,8 +41859,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Imprima font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Imprima font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Imprima
@@ -41475,7 +41883,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Inconsolata font family from Google Fonts to the given [textStyle].
+  /// Applies the Inconsolata font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Inconsolata
@@ -41542,8 +41951,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Inconsolata font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Inconsolata font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Inconsolata
@@ -41566,7 +41975,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Inder font family from Google Fonts to the given [textStyle].
+  /// Applies the Inder font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Inder
@@ -41626,8 +42036,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Inder font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Inder font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Inder
@@ -41650,7 +42060,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Indie Flower font family from Google Fonts to the given [textStyle].
+  /// Applies the Indie Flower font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Indie+Flower
@@ -41710,8 +42121,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Indie Flower font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Indie Flower font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Indie+Flower
@@ -41734,7 +42145,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Inika font family from Google Fonts to the given [textStyle].
+  /// Applies the Inika font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Inika
@@ -41801,8 +42213,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Inika font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Inika font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Inika
@@ -41825,7 +42237,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Inknut Antiqua font family from Google Fonts to the given [textStyle].
+  /// Applies the Inknut Antiqua font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Inknut+Antiqua
@@ -41927,8 +42340,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Inknut Antiqua font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Inknut Antiqua font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Inknut+Antiqua
@@ -41951,7 +42364,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Inria Serif font family from Google Fonts to the given [textStyle].
+  /// Applies the Inria Serif font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Inria+Serif
@@ -42046,8 +42460,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Inria Serif font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Inria Serif font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Inria+Serif
@@ -42070,7 +42484,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Irish Grover font family from Google Fonts to the given [textStyle].
+  /// Applies the Irish Grover font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Irish+Grover
@@ -42130,8 +42545,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Irish Grover font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Irish Grover font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Irish+Grover
@@ -42154,7 +42569,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Istok Web font family from Google Fonts to the given [textStyle].
+  /// Applies the Istok Web font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Istok+Web
@@ -42235,8 +42651,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Istok Web font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Istok Web font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Istok+Web
@@ -42259,7 +42675,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Italiana font family from Google Fonts to the given [textStyle].
+  /// Applies the Italiana font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Italiana
@@ -42319,8 +42736,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Italiana font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Italiana font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Italiana
@@ -42343,7 +42760,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Italianno font family from Google Fonts to the given [textStyle].
+  /// Applies the Italianno font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Italianno
@@ -42403,8 +42821,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Italianno font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Italianno font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Italianno
@@ -42427,7 +42845,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Itim font family from Google Fonts to the given [textStyle].
+  /// Applies the Itim font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Itim
@@ -42487,8 +42906,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Itim font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Itim font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Itim
@@ -42511,7 +42930,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jacques Francois font family from Google Fonts to the given [textStyle].
+  /// Applies the Jacques Francois font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jacques+Francois
@@ -42571,8 +42991,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jacques Francois font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Jacques Francois font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jacques+Francois
@@ -42595,7 +43015,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jacques Francois Shadow font family from Google Fonts to the given [textStyle].
+  /// Applies the Jacques Francois Shadow font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jacques+Francois+Shadow
@@ -42655,8 +43076,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jacques Francois Shadow font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Jacques Francois Shadow font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jacques+Francois+Shadow
@@ -42686,7 +43107,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jaldi font family from Google Fonts to the given [textStyle].
+  /// Applies the Jaldi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jaldi
@@ -42753,8 +43175,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jaldi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Jaldi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jaldi
@@ -42777,7 +43199,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jim Nightshade font family from Google Fonts to the given [textStyle].
+  /// Applies the Jim Nightshade font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jim+Nightshade
@@ -42837,8 +43260,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jim Nightshade font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Jim Nightshade font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jim+Nightshade
@@ -42861,7 +43284,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jockey One font family from Google Fonts to the given [textStyle].
+  /// Applies the Jockey One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jockey+One
@@ -42921,8 +43345,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jockey One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Jockey One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jockey+One
@@ -42945,7 +43369,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jolly Lodger font family from Google Fonts to the given [textStyle].
+  /// Applies the Jolly Lodger font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jolly+Lodger
@@ -43005,8 +43430,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jolly Lodger font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Jolly Lodger font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jolly+Lodger
@@ -43029,7 +43454,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jomhuria font family from Google Fonts to the given [textStyle].
+  /// Applies the Jomhuria font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jomhuria
@@ -43089,8 +43515,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jomhuria font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Jomhuria font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jomhuria
@@ -43113,7 +43539,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jomolhari font family from Google Fonts to the given [textStyle].
+  /// Applies the Jomolhari font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jomolhari
@@ -43173,8 +43600,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jomolhari font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Jomolhari font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jomolhari
@@ -43197,7 +43624,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Josefin Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Josefin Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Josefin+Sans
@@ -43320,8 +43748,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Josefin Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Josefin Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Josefin+Sans
@@ -43344,7 +43772,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Josefin Slab font family from Google Fonts to the given [textStyle].
+  /// Applies the Josefin Slab font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Josefin+Slab
@@ -43467,8 +43896,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Josefin Slab font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Josefin Slab font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Josefin+Slab
@@ -43491,7 +43920,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Joti One font family from Google Fonts to the given [textStyle].
+  /// Applies the Joti One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Joti+One
@@ -43551,8 +43981,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Joti One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Joti One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Joti+One
@@ -43575,7 +44005,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jua font family from Google Fonts to the given [textStyle].
+  /// Applies the Jua font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jua
@@ -43635,8 +44066,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jua font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Jua font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jua
@@ -43659,7 +44090,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Judson font family from Google Fonts to the given [textStyle].
+  /// Applies the Judson font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Judson
@@ -43733,8 +44165,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Judson font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Judson font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Judson
@@ -43757,7 +44189,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Julee font family from Google Fonts to the given [textStyle].
+  /// Applies the Julee font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Julee
@@ -43817,8 +44250,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Julee font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Julee font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Julee
@@ -43841,7 +44274,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Julius Sans One font family from Google Fonts to the given [textStyle].
+  /// Applies the Julius Sans One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Julius+Sans+One
@@ -43901,8 +44335,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Julius Sans One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Julius Sans One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Julius+Sans+One
@@ -43925,7 +44359,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Junge font family from Google Fonts to the given [textStyle].
+  /// Applies the Junge font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Junge
@@ -43985,8 +44420,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Junge font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Junge font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Junge
@@ -44009,7 +44444,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jura font family from Google Fonts to the given [textStyle].
+  /// Applies the Jura font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jura
@@ -44097,8 +44533,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Jura font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Jura font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Jura
@@ -44121,7 +44557,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Just Another Hand font family from Google Fonts to the given [textStyle].
+  /// Applies the Just Another Hand font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Just+Another+Hand
@@ -44181,8 +44618,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Just Another Hand font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Just Another Hand font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Just+Another+Hand
@@ -44205,7 +44642,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Just Me Again Down Here font family from Google Fonts to the given [textStyle].
+  /// Applies the Just Me Again Down Here font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Just+Me+Again+Down+Here
@@ -44265,8 +44703,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Just Me Again Down Here font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Just Me Again Down Here font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Just+Me+Again+Down+Here
@@ -44289,7 +44727,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the K2D font family from Google Fonts to the given [textStyle].
+  /// Applies the K2D font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/K2D
@@ -44454,8 +44893,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the K2D font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the K2D font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/K2D
@@ -44478,7 +44917,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kadwa font family from Google Fonts to the given [textStyle].
+  /// Applies the Kadwa font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kadwa
@@ -44545,8 +44985,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kadwa font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kadwa font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kadwa
@@ -44569,7 +45009,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kalam font family from Google Fonts to the given [textStyle].
+  /// Applies the Kalam font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kalam
@@ -44643,8 +45084,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kalam font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kalam font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kalam
@@ -44667,7 +45108,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kameron font family from Google Fonts to the given [textStyle].
+  /// Applies the Kameron font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kameron
@@ -44734,8 +45176,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kameron font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kameron font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kameron
@@ -44758,7 +45200,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kanit font family from Google Fonts to the given [textStyle].
+  /// Applies the Kanit font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kanit
@@ -44937,8 +45380,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kanit font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kanit font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kanit
@@ -44961,7 +45404,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kantumruy font family from Google Fonts to the given [textStyle].
+  /// Applies the Kantumruy font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kantumruy
@@ -45035,8 +45479,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kantumruy font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kantumruy font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kantumruy
@@ -45059,7 +45503,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Karla font family from Google Fonts to the given [textStyle].
+  /// Applies the Karla font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Karla
@@ -45140,8 +45585,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Karla font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Karla font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Karla
@@ -45164,7 +45609,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Karma font family from Google Fonts to the given [textStyle].
+  /// Applies the Karma font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Karma
@@ -45252,8 +45698,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Karma font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Karma font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Karma
@@ -45276,7 +45722,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Katibeh font family from Google Fonts to the given [textStyle].
+  /// Applies the Katibeh font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Katibeh
@@ -45336,8 +45783,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Katibeh font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Katibeh font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Katibeh
@@ -45360,7 +45807,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kaushan Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Kaushan Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kaushan+Script
@@ -45420,8 +45868,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kaushan Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kaushan Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kaushan+Script
@@ -45444,7 +45892,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kavivanar font family from Google Fonts to the given [textStyle].
+  /// Applies the Kavivanar font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kavivanar
@@ -45504,8 +45953,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kavivanar font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kavivanar font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kavivanar
@@ -45528,7 +45977,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kavoon font family from Google Fonts to the given [textStyle].
+  /// Applies the Kavoon font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kavoon
@@ -45588,8 +46038,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kavoon font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kavoon font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kavoon
@@ -45612,7 +46062,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kdam Thmor font family from Google Fonts to the given [textStyle].
+  /// Applies the Kdam Thmor font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kdam+Thmor
@@ -45672,8 +46123,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kdam Thmor font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kdam Thmor font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kdam+Thmor
@@ -45696,7 +46147,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Keania One font family from Google Fonts to the given [textStyle].
+  /// Applies the Keania One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Keania+One
@@ -45756,8 +46208,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Keania One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Keania One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Keania+One
@@ -45780,7 +46232,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kelly Slab font family from Google Fonts to the given [textStyle].
+  /// Applies the Kelly Slab font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kelly+Slab
@@ -45840,8 +46293,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kelly Slab font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kelly Slab font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kelly+Slab
@@ -45864,7 +46317,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kenia font family from Google Fonts to the given [textStyle].
+  /// Applies the Kenia font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kenia
@@ -45924,8 +46378,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kenia font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kenia font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kenia
@@ -45948,7 +46402,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Khand font family from Google Fonts to the given [textStyle].
+  /// Applies the Khand font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Khand
@@ -46036,8 +46491,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Khand font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Khand font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Khand
@@ -46060,7 +46515,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Khula font family from Google Fonts to the given [textStyle].
+  /// Applies the Khula font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Khula
@@ -46148,8 +46604,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Khula font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Khula font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Khula
@@ -46172,7 +46628,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kirang Haerang font family from Google Fonts to the given [textStyle].
+  /// Applies the Kirang Haerang font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kirang+Haerang
@@ -46232,8 +46689,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kirang Haerang font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kirang Haerang font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kirang+Haerang
@@ -46256,7 +46713,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kite One font family from Google Fonts to the given [textStyle].
+  /// Applies the Kite One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kite+One
@@ -46316,8 +46774,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kite One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kite One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kite+One
@@ -46340,7 +46798,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Knewave font family from Google Fonts to the given [textStyle].
+  /// Applies the Knewave font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Knewave
@@ -46400,8 +46859,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Knewave font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Knewave font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Knewave
@@ -46424,7 +46883,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the KoHo font family from Google Fonts to the given [textStyle].
+  /// Applies the KoHo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/KoHo
@@ -46561,8 +47021,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the KoHo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the KoHo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/KoHo
@@ -46585,7 +47045,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kodchasan font family from Google Fonts to the given [textStyle].
+  /// Applies the Kodchasan font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kodchasan
@@ -46722,8 +47183,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kodchasan font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kodchasan font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kodchasan
@@ -46746,7 +47207,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kosugi font family from Google Fonts to the given [textStyle].
+  /// Applies the Kosugi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kosugi
@@ -46806,8 +47268,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kosugi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kosugi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kosugi
@@ -46830,7 +47292,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kosugi Maru font family from Google Fonts to the given [textStyle].
+  /// Applies the Kosugi Maru font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kosugi+Maru
@@ -46890,8 +47353,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kosugi Maru font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kosugi Maru font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kosugi+Maru
@@ -46914,7 +47377,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kotta One font family from Google Fonts to the given [textStyle].
+  /// Applies the Kotta One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kotta+One
@@ -46974,8 +47438,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kotta One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kotta One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kotta+One
@@ -46998,7 +47462,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kranky font family from Google Fonts to the given [textStyle].
+  /// Applies the Kranky font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kranky
@@ -47058,8 +47523,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kranky font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kranky font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kranky
@@ -47082,7 +47547,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kreon font family from Google Fonts to the given [textStyle].
+  /// Applies the Kreon font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kreon
@@ -47156,8 +47622,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kreon font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kreon font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kreon
@@ -47180,7 +47646,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kristi font family from Google Fonts to the given [textStyle].
+  /// Applies the Kristi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kristi
@@ -47240,8 +47707,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kristi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kristi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kristi
@@ -47264,7 +47731,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Krona One font family from Google Fonts to the given [textStyle].
+  /// Applies the Krona One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Krona+One
@@ -47324,8 +47792,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Krona One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Krona One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Krona+One
@@ -47348,7 +47816,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Krub font family from Google Fonts to the given [textStyle].
+  /// Applies the Krub font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Krub
@@ -47485,8 +47954,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Krub font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Krub font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Krub
@@ -47509,7 +47978,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kulim Park font family from Google Fonts to the given [textStyle].
+  /// Applies the Kulim Park font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kulim+Park
@@ -47632,8 +48102,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kulim Park font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kulim Park font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kulim+Park
@@ -47656,7 +48126,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kumar One font family from Google Fonts to the given [textStyle].
+  /// Applies the Kumar One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kumar+One
@@ -47716,8 +48187,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kumar One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kumar One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kumar+One
@@ -47740,7 +48211,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kumar One Outline font family from Google Fonts to the given [textStyle].
+  /// Applies the Kumar One Outline font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kumar+One+Outline
@@ -47800,8 +48272,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kumar One Outline font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kumar One Outline font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kumar+One+Outline
@@ -47824,7 +48296,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kurale font family from Google Fonts to the given [textStyle].
+  /// Applies the Kurale font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kurale
@@ -47884,8 +48357,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Kurale font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Kurale font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Kurale
@@ -47908,7 +48381,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the La Belle Aurore font family from Google Fonts to the given [textStyle].
+  /// Applies the La Belle Aurore font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/La+Belle+Aurore
@@ -47968,8 +48442,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the La Belle Aurore font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the La Belle Aurore font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/La+Belle+Aurore
@@ -47992,7 +48466,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lacquer font family from Google Fonts to the given [textStyle].
+  /// Applies the Lacquer font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lacquer
@@ -48052,8 +48527,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lacquer font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lacquer font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lacquer
@@ -48076,7 +48551,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Laila font family from Google Fonts to the given [textStyle].
+  /// Applies the Laila font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Laila
@@ -48164,8 +48640,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Laila font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Laila font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Laila
@@ -48188,7 +48664,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lakki Reddy font family from Google Fonts to the given [textStyle].
+  /// Applies the Lakki Reddy font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lakki+Reddy
@@ -48248,8 +48725,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lakki Reddy font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lakki Reddy font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lakki+Reddy
@@ -48272,7 +48749,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lalezar font family from Google Fonts to the given [textStyle].
+  /// Applies the Lalezar font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lalezar
@@ -48332,8 +48810,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lalezar font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lalezar font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lalezar
@@ -48356,7 +48834,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lancelot font family from Google Fonts to the given [textStyle].
+  /// Applies the Lancelot font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lancelot
@@ -48416,8 +48895,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lancelot font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lancelot font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lancelot
@@ -48440,7 +48919,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lateef font family from Google Fonts to the given [textStyle].
+  /// Applies the Lateef font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lateef
@@ -48500,8 +48980,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lateef font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lateef font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lateef
@@ -48524,7 +49004,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lato font family from Google Fonts to the given [textStyle].
+  /// Applies the Lato font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lato
@@ -48647,8 +49128,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lato font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lato font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lato
@@ -48671,7 +49152,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the League Script font family from Google Fonts to the given [textStyle].
+  /// Applies the League Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/League+Script
@@ -48731,8 +49213,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the League Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the League Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/League+Script
@@ -48755,7 +49237,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Leckerli One font family from Google Fonts to the given [textStyle].
+  /// Applies the Leckerli One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Leckerli+One
@@ -48815,8 +49298,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Leckerli One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Leckerli One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Leckerli+One
@@ -48839,7 +49322,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ledger font family from Google Fonts to the given [textStyle].
+  /// Applies the Ledger font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ledger
@@ -48899,8 +49383,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ledger font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ledger font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ledger
@@ -48923,7 +49407,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lekton font family from Google Fonts to the given [textStyle].
+  /// Applies the Lekton font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lekton
@@ -48997,8 +49482,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lekton font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lekton font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lekton
@@ -49021,7 +49506,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lemon font family from Google Fonts to the given [textStyle].
+  /// Applies the Lemon font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lemon
@@ -49081,8 +49567,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lemon font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lemon font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lemon
@@ -49105,7 +49591,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lemonada font family from Google Fonts to the given [textStyle].
+  /// Applies the Lemonada font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lemonada
@@ -49186,8 +49673,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lemonada font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lemonada font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lemonada
@@ -49210,7 +49697,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Deca font family from Google Fonts to the given [textStyle].
+  /// Applies the Lexend Deca font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Deca
@@ -49270,8 +49758,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Deca font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lexend Deca font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Deca
@@ -49294,7 +49782,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Exa font family from Google Fonts to the given [textStyle].
+  /// Applies the Lexend Exa font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Exa
@@ -49354,8 +49843,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Exa font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lexend Exa font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Exa
@@ -49378,7 +49867,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Giga font family from Google Fonts to the given [textStyle].
+  /// Applies the Lexend Giga font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Giga
@@ -49438,8 +49928,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Giga font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lexend Giga font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Giga
@@ -49462,7 +49952,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Mega font family from Google Fonts to the given [textStyle].
+  /// Applies the Lexend Mega font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Mega
@@ -49522,8 +50013,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Mega font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lexend Mega font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Mega
@@ -49546,7 +50037,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Peta font family from Google Fonts to the given [textStyle].
+  /// Applies the Lexend Peta font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Peta
@@ -49606,8 +50098,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Peta font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lexend Peta font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Peta
@@ -49630,7 +50122,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Tera font family from Google Fonts to the given [textStyle].
+  /// Applies the Lexend Tera font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Tera
@@ -49690,8 +50183,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Tera font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lexend Tera font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Tera
@@ -49714,7 +50207,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Zetta font family from Google Fonts to the given [textStyle].
+  /// Applies the Lexend Zetta font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Zetta
@@ -49774,8 +50268,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lexend Zetta font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lexend Zetta font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lexend+Zetta
@@ -49798,7 +50292,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 128 font family from Google Fonts to the given [textStyle].
+  /// Applies the Libre Barcode 128 font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+128
@@ -49858,8 +50353,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 128 font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Libre Barcode 128 font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+128
@@ -49882,7 +50377,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 128 Text font family from Google Fonts to the given [textStyle].
+  /// Applies the Libre Barcode 128 Text font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+128+Text
@@ -49942,8 +50438,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 128 Text font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Libre Barcode 128 Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+128+Text
@@ -49966,7 +50462,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 39 font family from Google Fonts to the given [textStyle].
+  /// Applies the Libre Barcode 39 font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+39
@@ -50026,8 +50523,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 39 font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Libre Barcode 39 font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+39
@@ -50050,7 +50547,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 39 Extended font family from Google Fonts to the given [textStyle].
+  /// Applies the Libre Barcode 39 Extended font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Extended
@@ -50110,8 +50608,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 39 Extended font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Libre Barcode 39 Extended font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Extended
@@ -50143,7 +50641,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 39 Extended Text font family from Google Fonts to the given [textStyle].
+  /// Applies the Libre Barcode 39 Extended Text font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Extended+Text
@@ -50203,8 +50702,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 39 Extended Text font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Libre Barcode 39 Extended Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Extended+Text
@@ -50240,7 +50739,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 39 Text font family from Google Fonts to the given [textStyle].
+  /// Applies the Libre Barcode 39 Text font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Text
@@ -50300,8 +50800,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Barcode 39 Text font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Libre Barcode 39 Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Barcode+39+Text
@@ -50324,7 +50824,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Baskerville font family from Google Fonts to the given [textStyle].
+  /// Applies the Libre Baskerville font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Baskerville
@@ -50398,8 +50899,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Baskerville font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Libre Baskerville font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Baskerville
@@ -50422,7 +50923,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Caslon Display font family from Google Fonts to the given [textStyle].
+  /// Applies the Libre Caslon Display font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Caslon+Display
@@ -50482,8 +50984,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Caslon Display font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Libre Caslon Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Caslon+Display
@@ -50506,7 +51008,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Caslon Text font family from Google Fonts to the given [textStyle].
+  /// Applies the Libre Caslon Text font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Caslon+Text
@@ -50580,8 +51083,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Caslon Text font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Libre Caslon Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Caslon+Text
@@ -50604,7 +51107,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Franklin font family from Google Fonts to the given [textStyle].
+  /// Applies the Libre Franklin font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Franklin
@@ -50783,8 +51287,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Libre Franklin font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Libre Franklin font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Libre+Franklin
@@ -50807,7 +51311,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Life Savers font family from Google Fonts to the given [textStyle].
+  /// Applies the Life Savers font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Life+Savers
@@ -50874,8 +51379,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Life Savers font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Life Savers font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Life+Savers
@@ -50898,7 +51403,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lilita One font family from Google Fonts to the given [textStyle].
+  /// Applies the Lilita One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lilita+One
@@ -50958,8 +51464,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lilita One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lilita One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lilita+One
@@ -50982,7 +51488,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lily Script One font family from Google Fonts to the given [textStyle].
+  /// Applies the Lily Script One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lily+Script+One
@@ -51042,8 +51549,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lily Script One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lily Script One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lily+Script+One
@@ -51066,7 +51573,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Limelight font family from Google Fonts to the given [textStyle].
+  /// Applies the Limelight font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Limelight
@@ -51126,8 +51634,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Limelight font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Limelight font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Limelight
@@ -51150,7 +51658,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Linden Hill font family from Google Fonts to the given [textStyle].
+  /// Applies the Linden Hill font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Linden+Hill
@@ -51217,8 +51726,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Linden Hill font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Linden Hill font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Linden+Hill
@@ -51241,7 +51750,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Liu Jian Mao Cao font family from Google Fonts to the given [textStyle].
+  /// Applies the Liu Jian Mao Cao font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Liu+Jian+Mao+Cao
@@ -51301,8 +51811,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Liu Jian Mao Cao font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Liu Jian Mao Cao font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Liu+Jian+Mao+Cao
@@ -51325,7 +51835,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Livvic font family from Google Fonts to the given [textStyle].
+  /// Applies the Livvic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Livvic
@@ -51490,8 +52001,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Livvic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Livvic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Livvic
@@ -51514,7 +52025,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lobster font family from Google Fonts to the given [textStyle].
+  /// Applies the Lobster font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lobster
@@ -51574,8 +52086,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lobster font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lobster font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lobster
@@ -51598,7 +52110,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lobster Two font family from Google Fonts to the given [textStyle].
+  /// Applies the Lobster Two font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lobster+Two
@@ -51679,8 +52192,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lobster Two font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lobster Two font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lobster+Two
@@ -51703,7 +52216,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Londrina Outline font family from Google Fonts to the given [textStyle].
+  /// Applies the Londrina Outline font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Londrina+Outline
@@ -51763,8 +52277,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Londrina Outline font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Londrina Outline font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Londrina+Outline
@@ -51787,7 +52301,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Londrina Shadow font family from Google Fonts to the given [textStyle].
+  /// Applies the Londrina Shadow font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Londrina+Shadow
@@ -51847,8 +52362,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Londrina Shadow font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Londrina Shadow font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Londrina+Shadow
@@ -51871,7 +52386,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Londrina Sketch font family from Google Fonts to the given [textStyle].
+  /// Applies the Londrina Sketch font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Londrina+Sketch
@@ -51931,8 +52447,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Londrina Sketch font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Londrina Sketch font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Londrina+Sketch
@@ -51955,7 +52471,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Londrina Solid font family from Google Fonts to the given [textStyle].
+  /// Applies the Londrina Solid font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Londrina+Solid
@@ -52015,8 +52532,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Londrina Solid font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Londrina Solid font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Londrina+Solid
@@ -52039,7 +52556,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Long Cang font family from Google Fonts to the given [textStyle].
+  /// Applies the Long Cang font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Long+Cang
@@ -52099,8 +52617,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Long Cang font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Long Cang font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Long+Cang
@@ -52123,7 +52641,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lora font family from Google Fonts to the given [textStyle].
+  /// Applies the Lora font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lora
@@ -52204,8 +52723,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lora font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lora font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lora
@@ -52228,7 +52747,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Love Ya Like A Sister font family from Google Fonts to the given [textStyle].
+  /// Applies the Love Ya Like A Sister font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Love+Ya+Like+A+Sister
@@ -52288,8 +52808,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Love Ya Like A Sister font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Love Ya Like A Sister font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Love+Ya+Like+A+Sister
@@ -52312,7 +52832,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Loved by the King font family from Google Fonts to the given [textStyle].
+  /// Applies the Loved by the King font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Loved+by+the+King
@@ -52372,8 +52893,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Loved by the King font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Loved by the King font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Loved+by+the+King
@@ -52396,7 +52917,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lovers Quarrel font family from Google Fonts to the given [textStyle].
+  /// Applies the Lovers Quarrel font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lovers+Quarrel
@@ -52456,8 +52978,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lovers Quarrel font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lovers Quarrel font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lovers+Quarrel
@@ -52480,7 +53002,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Luckiest Guy font family from Google Fonts to the given [textStyle].
+  /// Applies the Luckiest Guy font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Luckiest+Guy
@@ -52540,8 +53063,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Luckiest Guy font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Luckiest Guy font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Luckiest+Guy
@@ -52564,7 +53087,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lusitana font family from Google Fonts to the given [textStyle].
+  /// Applies the Lusitana font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lusitana
@@ -52631,8 +53155,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lusitana font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lusitana font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lusitana
@@ -52655,7 +53179,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lustria font family from Google Fonts to the given [textStyle].
+  /// Applies the Lustria font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lustria
@@ -52715,8 +53240,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Lustria font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Lustria font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Lustria
@@ -52739,7 +53264,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the M PLUS 1p font family from Google Fonts to the given [textStyle].
+  /// Applies the M PLUS 1p font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/M+PLUS+1p
@@ -52841,8 +53367,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the M PLUS 1p font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the M PLUS 1p font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/M+PLUS+1p
@@ -52865,7 +53391,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the M PLUS Rounded 1c font family from Google Fonts to the given [textStyle].
+  /// Applies the M PLUS Rounded 1c font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/M+PLUS+Rounded+1c
@@ -52967,8 +53494,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the M PLUS Rounded 1c font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the M PLUS Rounded 1c font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/M+PLUS+Rounded+1c
@@ -52991,7 +53518,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ma Shan Zheng font family from Google Fonts to the given [textStyle].
+  /// Applies the Ma Shan Zheng font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ma+Shan+Zheng
@@ -53051,8 +53579,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ma Shan Zheng font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ma Shan Zheng font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ma+Shan+Zheng
@@ -53075,7 +53603,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Macondo font family from Google Fonts to the given [textStyle].
+  /// Applies the Macondo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Macondo
@@ -53135,8 +53664,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Macondo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Macondo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Macondo
@@ -53159,7 +53688,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Macondo Swash Caps font family from Google Fonts to the given [textStyle].
+  /// Applies the Macondo Swash Caps font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Macondo+Swash+Caps
@@ -53219,8 +53749,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Macondo Swash Caps font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Macondo Swash Caps font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Macondo+Swash+Caps
@@ -53243,7 +53773,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mada font family from Google Fonts to the given [textStyle].
+  /// Applies the Mada font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mada
@@ -53345,8 +53876,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mada font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mada font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mada
@@ -53369,7 +53900,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Magra font family from Google Fonts to the given [textStyle].
+  /// Applies the Magra font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Magra
@@ -53436,8 +53968,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Magra font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Magra font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Magra
@@ -53460,7 +53992,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Maiden Orange font family from Google Fonts to the given [textStyle].
+  /// Applies the Maiden Orange font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Maiden+Orange
@@ -53520,8 +54053,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Maiden Orange font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Maiden Orange font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Maiden+Orange
@@ -53544,7 +54077,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Maitree font family from Google Fonts to the given [textStyle].
+  /// Applies the Maitree font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Maitree
@@ -53639,8 +54173,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Maitree font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Maitree font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Maitree
@@ -53663,7 +54197,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Major Mono Display font family from Google Fonts to the given [textStyle].
+  /// Applies the Major Mono Display font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Major+Mono+Display
@@ -53723,8 +54258,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Major Mono Display font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Major Mono Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Major+Mono+Display
@@ -53747,7 +54282,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mako font family from Google Fonts to the given [textStyle].
+  /// Applies the Mako font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mako
@@ -53807,8 +54343,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mako font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mako font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mako
@@ -53831,7 +54367,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mali font family from Google Fonts to the given [textStyle].
+  /// Applies the Mali font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mali
@@ -53968,8 +54505,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mali font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mali font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mali
@@ -53992,7 +54529,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mallanna font family from Google Fonts to the given [textStyle].
+  /// Applies the Mallanna font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mallanna
@@ -54052,8 +54590,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mallanna font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mallanna font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mallanna
@@ -54076,7 +54614,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mandali font family from Google Fonts to the given [textStyle].
+  /// Applies the Mandali font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mandali
@@ -54136,8 +54675,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mandali font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mandali font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mandali
@@ -54160,7 +54699,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Manjari font family from Google Fonts to the given [textStyle].
+  /// Applies the Manjari font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Manjari
@@ -54234,8 +54774,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Manjari font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Manjari font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Manjari
@@ -54258,7 +54798,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mansalva font family from Google Fonts to the given [textStyle].
+  /// Applies the Mansalva font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mansalva
@@ -54318,8 +54859,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mansalva font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mansalva font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mansalva
@@ -54342,7 +54883,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Manuale font family from Google Fonts to the given [textStyle].
+  /// Applies the Manuale font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Manuale
@@ -54451,8 +54993,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Manuale font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Manuale font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Manuale
@@ -54475,7 +55017,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marcellus font family from Google Fonts to the given [textStyle].
+  /// Applies the Marcellus font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marcellus
@@ -54535,8 +55078,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marcellus font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Marcellus font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marcellus
@@ -54559,7 +55102,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marcellus SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Marcellus SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marcellus+SC
@@ -54619,8 +55163,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marcellus SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Marcellus SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marcellus+SC
@@ -54643,7 +55187,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marck Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Marck Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marck+Script
@@ -54703,8 +55248,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marck Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Marck Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marck+Script
@@ -54727,7 +55272,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Margarine font family from Google Fonts to the given [textStyle].
+  /// Applies the Margarine font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Margarine
@@ -54787,8 +55333,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Margarine font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Margarine font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Margarine
@@ -54811,7 +55357,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marko One font family from Google Fonts to the given [textStyle].
+  /// Applies the Marko One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marko+One
@@ -54871,8 +55418,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marko One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Marko One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marko+One
@@ -54895,7 +55442,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marmelad font family from Google Fonts to the given [textStyle].
+  /// Applies the Marmelad font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marmelad
@@ -54955,8 +55503,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marmelad font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Marmelad font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marmelad
@@ -54979,7 +55527,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Martel font family from Google Fonts to the given [textStyle].
+  /// Applies the Martel font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Martel
@@ -55081,8 +55630,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Martel font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Martel font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Martel
@@ -55105,7 +55654,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Martel Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Martel Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Martel+Sans
@@ -55207,8 +55757,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Martel Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Martel Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Martel+Sans
@@ -55231,7 +55781,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marvel font family from Google Fonts to the given [textStyle].
+  /// Applies the Marvel font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marvel
@@ -55312,8 +55863,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Marvel font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Marvel font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Marvel
@@ -55336,7 +55887,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mate font family from Google Fonts to the given [textStyle].
+  /// Applies the Mate font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mate
@@ -55403,8 +55955,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mate font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mate font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mate
@@ -55427,7 +55979,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mate SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Mate SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mate+SC
@@ -55487,8 +56040,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mate SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mate SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mate+SC
@@ -55511,7 +56064,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Maven Pro font family from Google Fonts to the given [textStyle].
+  /// Applies the Maven Pro font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Maven+Pro
@@ -55592,8 +56146,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Maven Pro font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Maven Pro font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Maven+Pro
@@ -55616,7 +56170,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the McLaren font family from Google Fonts to the given [textStyle].
+  /// Applies the McLaren font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/McLaren
@@ -55676,8 +56231,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the McLaren font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the McLaren font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/McLaren
@@ -55700,7 +56255,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Meddon font family from Google Fonts to the given [textStyle].
+  /// Applies the Meddon font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Meddon
@@ -55760,8 +56316,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Meddon font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Meddon font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Meddon
@@ -55784,7 +56340,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the MedievalSharp font family from Google Fonts to the given [textStyle].
+  /// Applies the MedievalSharp font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/MedievalSharp
@@ -55844,8 +56401,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the MedievalSharp font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the MedievalSharp font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/MedievalSharp
@@ -55868,7 +56425,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Medula One font family from Google Fonts to the given [textStyle].
+  /// Applies the Medula One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Medula+One
@@ -55928,8 +56486,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Medula One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Medula One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Medula+One
@@ -55952,7 +56510,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Meera Inimai font family from Google Fonts to the given [textStyle].
+  /// Applies the Meera Inimai font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Meera+Inimai
@@ -56012,8 +56571,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Meera Inimai font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Meera Inimai font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Meera+Inimai
@@ -56036,7 +56595,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Megrim font family from Google Fonts to the given [textStyle].
+  /// Applies the Megrim font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Megrim
@@ -56096,8 +56656,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Megrim font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Megrim font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Megrim
@@ -56120,7 +56680,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Meie Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Meie Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Meie+Script
@@ -56180,8 +56741,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Meie Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Meie Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Meie+Script
@@ -56204,7 +56765,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Merienda font family from Google Fonts to the given [textStyle].
+  /// Applies the Merienda font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Merienda
@@ -56271,8 +56833,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Merienda font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Merienda font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Merienda
@@ -56295,7 +56857,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Merienda One font family from Google Fonts to the given [textStyle].
+  /// Applies the Merienda One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Merienda+One
@@ -56355,8 +56918,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Merienda One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Merienda One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Merienda+One
@@ -56379,7 +56942,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Merriweather font family from Google Fonts to the given [textStyle].
+  /// Applies the Merriweather font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Merriweather
@@ -56488,8 +57052,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Merriweather font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Merriweather font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Merriweather
@@ -56512,7 +57076,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Merriweather Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Merriweather Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Merriweather+Sans
@@ -56621,8 +57186,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Merriweather Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Merriweather Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Merriweather+Sans
@@ -56645,7 +57210,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Metal Mania font family from Google Fonts to the given [textStyle].
+  /// Applies the Metal Mania font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Metal+Mania
@@ -56705,8 +57271,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Metal Mania font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Metal Mania font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Metal+Mania
@@ -56729,7 +57295,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Metamorphous font family from Google Fonts to the given [textStyle].
+  /// Applies the Metamorphous font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Metamorphous
@@ -56789,8 +57356,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Metamorphous font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Metamorphous font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Metamorphous
@@ -56813,7 +57380,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Metrophobic font family from Google Fonts to the given [textStyle].
+  /// Applies the Metrophobic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Metrophobic
@@ -56873,8 +57441,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Metrophobic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Metrophobic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Metrophobic
@@ -56897,7 +57465,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Michroma font family from Google Fonts to the given [textStyle].
+  /// Applies the Michroma font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Michroma
@@ -56957,8 +57526,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Michroma font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Michroma font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Michroma
@@ -56981,7 +57550,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Milonga font family from Google Fonts to the given [textStyle].
+  /// Applies the Milonga font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Milonga
@@ -57041,8 +57611,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Milonga font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Milonga font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Milonga
@@ -57065,7 +57635,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Miltonian font family from Google Fonts to the given [textStyle].
+  /// Applies the Miltonian font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Miltonian
@@ -57125,8 +57696,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Miltonian font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Miltonian font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Miltonian
@@ -57149,7 +57720,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Miltonian Tattoo font family from Google Fonts to the given [textStyle].
+  /// Applies the Miltonian Tattoo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Miltonian+Tattoo
@@ -57209,8 +57781,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Miltonian Tattoo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Miltonian Tattoo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Miltonian+Tattoo
@@ -57233,7 +57805,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mina font family from Google Fonts to the given [textStyle].
+  /// Applies the Mina font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mina
@@ -57300,8 +57873,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mina font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mina font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mina
@@ -57324,7 +57897,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Miniver font family from Google Fonts to the given [textStyle].
+  /// Applies the Miniver font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Miniver
@@ -57384,8 +57958,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Miniver font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Miniver font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Miniver
@@ -57408,7 +57982,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Miriam Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the Miriam Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Miriam+Libre
@@ -57475,8 +58050,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Miriam Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Miriam Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Miriam+Libre
@@ -57499,7 +58074,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mirza font family from Google Fonts to the given [textStyle].
+  /// Applies the Mirza font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mirza
@@ -57580,8 +58156,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mirza font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mirza font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mirza
@@ -57604,7 +58180,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Miss Fajardose font family from Google Fonts to the given [textStyle].
+  /// Applies the Miss Fajardose font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Miss+Fajardose
@@ -57664,8 +58241,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Miss Fajardose font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Miss Fajardose font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Miss+Fajardose
@@ -57688,7 +58265,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mitr font family from Google Fonts to the given [textStyle].
+  /// Applies the Mitr font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mitr
@@ -57783,8 +58361,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mitr font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mitr font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mitr
@@ -57807,7 +58385,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Modak font family from Google Fonts to the given [textStyle].
+  /// Applies the Modak font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Modak
@@ -57867,8 +58446,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Modak font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Modak font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Modak
@@ -57891,7 +58470,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Modern Antiqua font family from Google Fonts to the given [textStyle].
+  /// Applies the Modern Antiqua font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Modern+Antiqua
@@ -57951,8 +58531,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Modern Antiqua font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Modern Antiqua font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Modern+Antiqua
@@ -57975,7 +58555,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mogra font family from Google Fonts to the given [textStyle].
+  /// Applies the Mogra font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mogra
@@ -58035,8 +58616,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mogra font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mogra font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mogra
@@ -58059,7 +58640,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Molengo font family from Google Fonts to the given [textStyle].
+  /// Applies the Molengo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Molengo
@@ -58119,8 +58701,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Molengo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Molengo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Molengo
@@ -58143,7 +58725,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Molle font family from Google Fonts to the given [textStyle].
+  /// Applies the Molle font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Molle
@@ -58203,8 +58786,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Molle font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Molle font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Molle
@@ -58227,7 +58810,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Monda font family from Google Fonts to the given [textStyle].
+  /// Applies the Monda font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Monda
@@ -58294,8 +58878,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Monda font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Monda font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Monda
@@ -58318,7 +58902,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Monofett font family from Google Fonts to the given [textStyle].
+  /// Applies the Monofett font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Monofett
@@ -58378,8 +58963,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Monofett font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Monofett font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Monofett
@@ -58402,7 +58987,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Monoton font family from Google Fonts to the given [textStyle].
+  /// Applies the Monoton font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Monoton
@@ -58462,8 +59048,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Monoton font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Monoton font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Monoton
@@ -58486,7 +59072,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Monsieur La Doulaise font family from Google Fonts to the given [textStyle].
+  /// Applies the Monsieur La Doulaise font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Monsieur+La+Doulaise
@@ -58546,8 +59133,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Monsieur La Doulaise font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Monsieur La Doulaise font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Monsieur+La+Doulaise
@@ -58570,7 +59157,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Montaga font family from Google Fonts to the given [textStyle].
+  /// Applies the Montaga font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Montaga
@@ -58630,8 +59218,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Montaga font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Montaga font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Montaga
@@ -58654,7 +59242,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Montez font family from Google Fonts to the given [textStyle].
+  /// Applies the Montez font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Montez
@@ -58714,8 +59303,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Montez font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Montez font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Montez
@@ -58738,7 +59327,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Montserrat font family from Google Fonts to the given [textStyle].
+  /// Applies the Montserrat font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Montserrat
@@ -58917,8 +59507,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Montserrat font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Montserrat font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Montserrat
@@ -58941,7 +59531,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Montserrat Alternates font family from Google Fonts to the given [textStyle].
+  /// Applies the Montserrat Alternates font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Montserrat+Alternates
@@ -59120,8 +59711,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Montserrat Alternates font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Montserrat Alternates font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Montserrat+Alternates
@@ -59151,7 +59742,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Montserrat Subrayada font family from Google Fonts to the given [textStyle].
+  /// Applies the Montserrat Subrayada font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Montserrat+Subrayada
@@ -59218,8 +59810,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Montserrat Subrayada font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Montserrat Subrayada font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Montserrat+Subrayada
@@ -59242,7 +59834,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mountains of Christmas font family from Google Fonts to the given [textStyle].
+  /// Applies the Mountains of Christmas font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mountains+of+Christmas
@@ -59309,8 +59902,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mountains of Christmas font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mountains of Christmas font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mountains+of+Christmas
@@ -59340,7 +59933,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mouse Memoirs font family from Google Fonts to the given [textStyle].
+  /// Applies the Mouse Memoirs font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mouse+Memoirs
@@ -59400,8 +59994,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mouse Memoirs font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mouse Memoirs font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mouse+Memoirs
@@ -59424,7 +60018,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mr Bedfort font family from Google Fonts to the given [textStyle].
+  /// Applies the Mr Bedfort font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mr+Bedfort
@@ -59484,8 +60079,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mr Bedfort font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mr Bedfort font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mr+Bedfort
@@ -59508,7 +60103,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mr Dafoe font family from Google Fonts to the given [textStyle].
+  /// Applies the Mr Dafoe font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mr+Dafoe
@@ -59568,8 +60164,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mr Dafoe font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mr Dafoe font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mr+Dafoe
@@ -59592,7 +60188,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mr De Haviland font family from Google Fonts to the given [textStyle].
+  /// Applies the Mr De Haviland font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mr+De+Haviland
@@ -59652,8 +60249,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mr De Haviland font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mr De Haviland font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mr+De+Haviland
@@ -59676,7 +60273,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mrs Saint Delafield font family from Google Fonts to the given [textStyle].
+  /// Applies the Mrs Saint Delafield font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mrs+Saint+Delafield
@@ -59736,8 +60334,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mrs Saint Delafield font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mrs Saint Delafield font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mrs+Saint+Delafield
@@ -59760,7 +60358,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mrs Sheppards font family from Google Fonts to the given [textStyle].
+  /// Applies the Mrs Sheppards font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mrs+Sheppards
@@ -59820,8 +60419,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mrs Sheppards font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mrs Sheppards font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mrs+Sheppards
@@ -59844,7 +60443,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mukta font family from Google Fonts to the given [textStyle].
+  /// Applies the Mukta font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mukta
@@ -59946,8 +60546,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mukta font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mukta font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mukta
@@ -59970,7 +60570,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mukta Mahee font family from Google Fonts to the given [textStyle].
+  /// Applies the Mukta Mahee font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mukta+Mahee
@@ -60072,8 +60673,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mukta Mahee font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mukta Mahee font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mukta+Mahee
@@ -60096,7 +60697,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mukta Malar font family from Google Fonts to the given [textStyle].
+  /// Applies the Mukta Malar font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mukta+Malar
@@ -60198,8 +60800,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mukta Malar font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mukta Malar font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mukta+Malar
@@ -60222,7 +60824,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mukta Vaani font family from Google Fonts to the given [textStyle].
+  /// Applies the Mukta Vaani font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mukta+Vaani
@@ -60324,8 +60927,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mukta Vaani font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mukta Vaani font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mukta+Vaani
@@ -60348,7 +60951,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Muli font family from Google Fonts to the given [textStyle].
+  /// Applies the Muli font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Muli
@@ -60499,8 +61103,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Muli font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Muli font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Muli
@@ -60523,7 +61127,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mystery Quest font family from Google Fonts to the given [textStyle].
+  /// Applies the Mystery Quest font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mystery+Quest
@@ -60583,8 +61188,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Mystery Quest font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Mystery Quest font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Mystery+Quest
@@ -60607,7 +61212,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the NTR font family from Google Fonts to the given [textStyle].
+  /// Applies the NTR font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/NTR
@@ -60667,8 +61273,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the NTR font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the NTR font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/NTR
@@ -60691,7 +61297,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nanum Brush Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Nanum Brush Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nanum+Brush+Script
@@ -60751,8 +61358,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nanum Brush Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nanum Brush Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nanum+Brush+Script
@@ -60775,7 +61382,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nanum Gothic font family from Google Fonts to the given [textStyle].
+  /// Applies the Nanum Gothic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nanum+Gothic
@@ -60849,8 +61457,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nanum Gothic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nanum Gothic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nanum+Gothic
@@ -60873,7 +61481,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nanum Gothic Coding font family from Google Fonts to the given [textStyle].
+  /// Applies the Nanum Gothic Coding font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nanum+Gothic+Coding
@@ -60940,8 +61549,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nanum Gothic Coding font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nanum Gothic Coding font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nanum+Gothic+Coding
@@ -60964,7 +61573,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nanum Myeongjo font family from Google Fonts to the given [textStyle].
+  /// Applies the Nanum Myeongjo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nanum+Myeongjo
@@ -61038,8 +61648,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nanum Myeongjo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nanum Myeongjo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nanum+Myeongjo
@@ -61062,7 +61672,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nanum Pen Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Nanum Pen Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nanum+Pen+Script
@@ -61122,8 +61733,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nanum Pen Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nanum Pen Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nanum+Pen+Script
@@ -61146,7 +61757,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Neucha font family from Google Fonts to the given [textStyle].
+  /// Applies the Neucha font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Neucha
@@ -61206,8 +61818,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Neucha font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Neucha font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Neucha
@@ -61230,7 +61842,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Neuton font family from Google Fonts to the given [textStyle].
+  /// Applies the Neuton font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Neuton
@@ -61325,8 +61938,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Neuton font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Neuton font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Neuton
@@ -61349,7 +61962,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the New Rocker font family from Google Fonts to the given [textStyle].
+  /// Applies the New Rocker font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/New+Rocker
@@ -61409,8 +62023,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the New Rocker font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the New Rocker font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/New+Rocker
@@ -61433,7 +62047,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the News Cycle font family from Google Fonts to the given [textStyle].
+  /// Applies the News Cycle font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/News+Cycle
@@ -61500,8 +62115,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the News Cycle font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the News Cycle font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/News+Cycle
@@ -61524,7 +62139,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Niconne font family from Google Fonts to the given [textStyle].
+  /// Applies the Niconne font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Niconne
@@ -61584,8 +62200,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Niconne font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Niconne font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Niconne
@@ -61608,7 +62224,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Niramit font family from Google Fonts to the given [textStyle].
+  /// Applies the Niramit font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Niramit
@@ -61745,8 +62362,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Niramit font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Niramit font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Niramit
@@ -61769,7 +62386,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nixie One font family from Google Fonts to the given [textStyle].
+  /// Applies the Nixie One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nixie+One
@@ -61829,8 +62447,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nixie One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nixie One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nixie+One
@@ -61853,7 +62471,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nobile font family from Google Fonts to the given [textStyle].
+  /// Applies the Nobile font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nobile
@@ -61934,8 +62553,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nobile font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nobile font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nobile
@@ -61958,7 +62577,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Norican font family from Google Fonts to the given [textStyle].
+  /// Applies the Norican font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Norican
@@ -62018,8 +62638,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Norican font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Norican font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Norican
@@ -62042,7 +62662,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nosifer font family from Google Fonts to the given [textStyle].
+  /// Applies the Nosifer font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nosifer
@@ -62102,8 +62723,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nosifer font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nosifer font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nosifer
@@ -62126,7 +62747,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Notable font family from Google Fonts to the given [textStyle].
+  /// Applies the Notable font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Notable
@@ -62186,8 +62808,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Notable font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Notable font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Notable
@@ -62210,7 +62832,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nothing You Could Do font family from Google Fonts to the given [textStyle].
+  /// Applies the Nothing You Could Do font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nothing+You+Could+Do
@@ -62270,8 +62893,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nothing You Could Do font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nothing You Could Do font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nothing+You+Could+Do
@@ -62294,7 +62917,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Noticia Text font family from Google Fonts to the given [textStyle].
+  /// Applies the Noticia Text font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Noticia+Text
@@ -62375,8 +62999,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Noticia Text font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Noticia Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Noticia+Text
@@ -62399,7 +63023,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Noto Color Emoji Compat font family from Google Fonts to the given [textStyle].
+  /// Applies the Noto Color Emoji Compat font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Noto+Color+Emoji+Compat
@@ -62459,8 +63084,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Noto Color Emoji Compat font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Noto Color Emoji Compat font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Noto+Color+Emoji+Compat
@@ -62490,7 +63115,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Noto Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Noto Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Noto+Sans
@@ -62571,8 +63197,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Noto Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Noto Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Noto+Sans
@@ -62595,7 +63221,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Noto Serif font family from Google Fonts to the given [textStyle].
+  /// Applies the Noto Serif font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Noto+Serif
@@ -62676,8 +63303,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Noto Serif font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Noto Serif font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Noto+Serif
@@ -62700,7 +63327,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Cut font family from Google Fonts to the given [textStyle].
+  /// Applies the Nova Cut font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Cut
@@ -62760,8 +63388,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Cut font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nova Cut font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Cut
@@ -62784,7 +63412,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Flat font family from Google Fonts to the given [textStyle].
+  /// Applies the Nova Flat font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Flat
@@ -62844,8 +63473,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Flat font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nova Flat font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Flat
@@ -62868,7 +63497,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the Nova Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Mono
@@ -62928,8 +63558,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nova Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Mono
@@ -62952,7 +63582,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Oval font family from Google Fonts to the given [textStyle].
+  /// Applies the Nova Oval font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Oval
@@ -63012,8 +63643,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Oval font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nova Oval font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Oval
@@ -63036,7 +63667,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Round font family from Google Fonts to the given [textStyle].
+  /// Applies the Nova Round font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Round
@@ -63096,8 +63728,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Round font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nova Round font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Round
@@ -63120,7 +63752,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Nova Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Script
@@ -63180,8 +63813,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nova Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Script
@@ -63204,7 +63837,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Slim font family from Google Fonts to the given [textStyle].
+  /// Applies the Nova Slim font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Slim
@@ -63264,8 +63898,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Slim font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nova Slim font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Slim
@@ -63288,7 +63922,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Square font family from Google Fonts to the given [textStyle].
+  /// Applies the Nova Square font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Square
@@ -63348,8 +63983,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nova Square font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nova Square font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nova+Square
@@ -63372,7 +64007,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Numans font family from Google Fonts to the given [textStyle].
+  /// Applies the Numans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Numans
@@ -63432,8 +64068,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Numans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Numans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Numans
@@ -63456,7 +64092,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nunito font family from Google Fonts to the given [textStyle].
+  /// Applies the Nunito font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nunito
@@ -63607,8 +64244,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nunito font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nunito font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nunito
@@ -63631,7 +64268,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nunito Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Nunito Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nunito+Sans
@@ -63782,8 +64420,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Nunito Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Nunito Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Nunito+Sans
@@ -63806,7 +64444,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Odibee Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Odibee Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Odibee+Sans
@@ -63866,8 +64505,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Odibee Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Odibee Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Odibee+Sans
@@ -63890,7 +64529,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Odor Mean Chey font family from Google Fonts to the given [textStyle].
+  /// Applies the Odor Mean Chey font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Odor+Mean+Chey
@@ -63950,8 +64590,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Odor Mean Chey font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Odor Mean Chey font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Odor+Mean+Chey
@@ -63974,7 +64614,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Offside font family from Google Fonts to the given [textStyle].
+  /// Applies the Offside font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Offside
@@ -64034,8 +64675,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Offside font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Offside font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Offside
@@ -64058,7 +64699,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Old Standard TT font family from Google Fonts to the given [textStyle].
+  /// Applies the Old Standard TT font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Old+Standard+TT
@@ -64132,8 +64774,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Old Standard TT font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Old Standard TT font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Old+Standard+TT
@@ -64156,7 +64798,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oldenburg font family from Google Fonts to the given [textStyle].
+  /// Applies the Oldenburg font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oldenburg
@@ -64216,8 +64859,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oldenburg font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Oldenburg font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oldenburg
@@ -64240,7 +64883,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oleo Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Oleo Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oleo+Script
@@ -64307,8 +64951,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oleo Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Oleo Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oleo+Script
@@ -64331,7 +64975,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oleo Script Swash Caps font family from Google Fonts to the given [textStyle].
+  /// Applies the Oleo Script Swash Caps font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oleo+Script+Swash+Caps
@@ -64398,8 +65043,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oleo Script Swash Caps font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Oleo Script Swash Caps font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oleo+Script+Swash+Caps
@@ -64422,7 +65067,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Open Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Open Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Open+Sans
@@ -64545,8 +65191,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Open Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Open Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Open+Sans
@@ -64569,7 +65215,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Open Sans Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Open Sans Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Open+Sans+Condensed
@@ -64643,8 +65290,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Open Sans Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Open Sans Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Open+Sans+Condensed
@@ -64667,7 +65314,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oranienbaum font family from Google Fonts to the given [textStyle].
+  /// Applies the Oranienbaum font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oranienbaum
@@ -64727,8 +65375,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oranienbaum font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Oranienbaum font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oranienbaum
@@ -64751,7 +65399,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Orbitron font family from Google Fonts to the given [textStyle].
+  /// Applies the Orbitron font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Orbitron
@@ -64832,8 +65481,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Orbitron font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Orbitron font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Orbitron
@@ -64856,7 +65505,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oregano font family from Google Fonts to the given [textStyle].
+  /// Applies the Oregano font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oregano
@@ -64923,8 +65573,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oregano font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Oregano font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oregano
@@ -64947,7 +65597,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Orienta font family from Google Fonts to the given [textStyle].
+  /// Applies the Orienta font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Orienta
@@ -65007,8 +65658,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Orienta font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Orienta font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Orienta
@@ -65031,7 +65682,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Original Surfer font family from Google Fonts to the given [textStyle].
+  /// Applies the Original Surfer font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Original+Surfer
@@ -65091,8 +65743,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Original Surfer font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Original Surfer font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Original+Surfer
@@ -65115,7 +65767,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oswald font family from Google Fonts to the given [textStyle].
+  /// Applies the Oswald font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oswald
@@ -65210,8 +65863,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oswald font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Oswald font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oswald
@@ -65234,7 +65887,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Over the Rainbow font family from Google Fonts to the given [textStyle].
+  /// Applies the Over the Rainbow font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Over+the+Rainbow
@@ -65294,8 +65948,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Over the Rainbow font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Over the Rainbow font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Over+the+Rainbow
@@ -65318,7 +65972,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Overlock font family from Google Fonts to the given [textStyle].
+  /// Applies the Overlock font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Overlock
@@ -65413,8 +66068,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Overlock font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Overlock font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Overlock
@@ -65437,7 +66092,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Overlock SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Overlock SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Overlock+SC
@@ -65497,8 +66153,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Overlock SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Overlock SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Overlock+SC
@@ -65521,7 +66177,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Overpass font family from Google Fonts to the given [textStyle].
+  /// Applies the Overpass font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Overpass
@@ -65686,8 +66343,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Overpass font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Overpass font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Overpass
@@ -65710,7 +66367,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Overpass Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the Overpass Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Overpass+Mono
@@ -65791,8 +66449,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Overpass Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Overpass Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Overpass+Mono
@@ -65815,7 +66473,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ovo font family from Google Fonts to the given [textStyle].
+  /// Applies the Ovo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ovo
@@ -65875,8 +66534,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ovo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ovo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ovo
@@ -65899,7 +66558,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oxanium font family from Google Fonts to the given [textStyle].
+  /// Applies the Oxanium font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oxanium
@@ -66001,8 +66661,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oxanium font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Oxanium font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oxanium
@@ -66025,7 +66685,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oxygen font family from Google Fonts to the given [textStyle].
+  /// Applies the Oxygen font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oxygen
@@ -66099,8 +66760,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oxygen font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Oxygen font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oxygen
@@ -66123,7 +66784,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oxygen Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the Oxygen Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oxygen+Mono
@@ -66183,8 +66845,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Oxygen Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Oxygen Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Oxygen+Mono
@@ -66207,7 +66869,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the PT Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Mono
@@ -66267,8 +66930,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the PT Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Mono
@@ -66291,7 +66954,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the PT Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans
@@ -66372,8 +67036,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the PT Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans
@@ -66396,7 +67060,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Sans Caption font family from Google Fonts to the given [textStyle].
+  /// Applies the PT Sans Caption font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans+Caption
@@ -66463,8 +67128,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Sans Caption font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the PT Sans Caption font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans+Caption
@@ -66487,7 +67152,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Sans Narrow font family from Google Fonts to the given [textStyle].
+  /// Applies the PT Sans Narrow font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans+Narrow
@@ -66554,8 +67220,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Sans Narrow font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the PT Sans Narrow font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Sans+Narrow
@@ -66578,7 +67244,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Serif font family from Google Fonts to the given [textStyle].
+  /// Applies the PT Serif font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Serif
@@ -66659,8 +67326,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Serif font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the PT Serif font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Serif
@@ -66683,7 +67350,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Serif Caption font family from Google Fonts to the given [textStyle].
+  /// Applies the PT Serif Caption font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Serif+Caption
@@ -66750,8 +67418,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the PT Serif Caption font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the PT Serif Caption font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/PT+Serif+Caption
@@ -66774,7 +67442,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pacifico font family from Google Fonts to the given [textStyle].
+  /// Applies the Pacifico font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pacifico
@@ -66834,8 +67503,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pacifico font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pacifico font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pacifico
@@ -66858,7 +67527,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Padauk font family from Google Fonts to the given [textStyle].
+  /// Applies the Padauk font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Padauk
@@ -66925,8 +67595,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Padauk font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Padauk font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Padauk
@@ -66949,7 +67619,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Palanquin font family from Google Fonts to the given [textStyle].
+  /// Applies the Palanquin font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Palanquin
@@ -67051,8 +67722,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Palanquin font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Palanquin font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Palanquin
@@ -67075,7 +67746,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Palanquin Dark font family from Google Fonts to the given [textStyle].
+  /// Applies the Palanquin Dark font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Palanquin+Dark
@@ -67156,8 +67828,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Palanquin Dark font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Palanquin Dark font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Palanquin+Dark
@@ -67180,7 +67852,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pangolin font family from Google Fonts to the given [textStyle].
+  /// Applies the Pangolin font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pangolin
@@ -67240,8 +67913,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pangolin font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pangolin font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pangolin
@@ -67264,7 +67937,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Paprika font family from Google Fonts to the given [textStyle].
+  /// Applies the Paprika font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Paprika
@@ -67324,8 +67998,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Paprika font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Paprika font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Paprika
@@ -67348,7 +68022,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Parisienne font family from Google Fonts to the given [textStyle].
+  /// Applies the Parisienne font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Parisienne
@@ -67408,8 +68083,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Parisienne font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Parisienne font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Parisienne
@@ -67432,7 +68107,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Passero One font family from Google Fonts to the given [textStyle].
+  /// Applies the Passero One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Passero+One
@@ -67492,8 +68168,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Passero One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Passero One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Passero+One
@@ -67516,7 +68192,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Passion One font family from Google Fonts to the given [textStyle].
+  /// Applies the Passion One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Passion+One
@@ -67590,8 +68267,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Passion One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Passion One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Passion+One
@@ -67614,7 +68291,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pathway Gothic One font family from Google Fonts to the given [textStyle].
+  /// Applies the Pathway Gothic One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pathway+Gothic+One
@@ -67674,8 +68352,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pathway Gothic One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pathway Gothic One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pathway+Gothic+One
@@ -67698,7 +68376,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Patrick Hand font family from Google Fonts to the given [textStyle].
+  /// Applies the Patrick Hand font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Patrick+Hand
@@ -67758,8 +68437,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Patrick Hand font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Patrick Hand font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Patrick+Hand
@@ -67782,7 +68461,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Patrick Hand SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Patrick Hand SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Patrick+Hand+SC
@@ -67842,8 +68522,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Patrick Hand SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Patrick Hand SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Patrick+Hand+SC
@@ -67866,7 +68546,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pattaya font family from Google Fonts to the given [textStyle].
+  /// Applies the Pattaya font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pattaya
@@ -67926,8 +68607,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pattaya font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pattaya font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pattaya
@@ -67950,7 +68631,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Patua One font family from Google Fonts to the given [textStyle].
+  /// Applies the Patua One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Patua+One
@@ -68010,8 +68692,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Patua One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Patua One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Patua+One
@@ -68034,7 +68716,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pavanam font family from Google Fonts to the given [textStyle].
+  /// Applies the Pavanam font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pavanam
@@ -68094,8 +68777,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pavanam font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pavanam font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pavanam
@@ -68118,7 +68801,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Paytone One font family from Google Fonts to the given [textStyle].
+  /// Applies the Paytone One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Paytone+One
@@ -68178,8 +68862,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Paytone One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Paytone One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Paytone+One
@@ -68202,7 +68886,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Peddana font family from Google Fonts to the given [textStyle].
+  /// Applies the Peddana font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Peddana
@@ -68262,8 +68947,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Peddana font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Peddana font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Peddana
@@ -68286,7 +68971,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Peralta font family from Google Fonts to the given [textStyle].
+  /// Applies the Peralta font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Peralta
@@ -68346,8 +69032,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Peralta font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Peralta font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Peralta
@@ -68370,7 +69056,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Permanent Marker font family from Google Fonts to the given [textStyle].
+  /// Applies the Permanent Marker font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Permanent+Marker
@@ -68430,8 +69117,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Permanent Marker font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Permanent Marker font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Permanent+Marker
@@ -68454,7 +69141,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Petit Formal Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Petit Formal Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Petit+Formal+Script
@@ -68514,8 +69202,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Petit Formal Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Petit Formal Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Petit+Formal+Script
@@ -68538,7 +69226,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Petrona font family from Google Fonts to the given [textStyle].
+  /// Applies the Petrona font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Petrona
@@ -68598,8 +69287,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Petrona font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Petrona font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Petrona
@@ -68622,7 +69311,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Philosopher font family from Google Fonts to the given [textStyle].
+  /// Applies the Philosopher font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Philosopher
@@ -68703,8 +69393,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Philosopher font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Philosopher font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Philosopher
@@ -68727,7 +69417,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Piedra font family from Google Fonts to the given [textStyle].
+  /// Applies the Piedra font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Piedra
@@ -68787,8 +69478,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Piedra font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Piedra font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Piedra
@@ -68811,7 +69502,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pinyon Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Pinyon Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pinyon+Script
@@ -68871,8 +69563,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pinyon Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pinyon Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pinyon+Script
@@ -68895,7 +69587,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pirata One font family from Google Fonts to the given [textStyle].
+  /// Applies the Pirata One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pirata+One
@@ -68955,8 +69648,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pirata One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pirata One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pirata+One
@@ -68979,7 +69672,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Plaster font family from Google Fonts to the given [textStyle].
+  /// Applies the Plaster font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Plaster
@@ -69039,8 +69733,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Plaster font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Plaster font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Plaster
@@ -69063,7 +69757,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Play font family from Google Fonts to the given [textStyle].
+  /// Applies the Play font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Play
@@ -69130,8 +69825,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Play font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Play font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Play
@@ -69154,7 +69849,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Playball font family from Google Fonts to the given [textStyle].
+  /// Applies the Playball font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Playball
@@ -69214,8 +69910,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Playball font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Playball font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Playball
@@ -69238,7 +69934,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Playfair Display font family from Google Fonts to the given [textStyle].
+  /// Applies the Playfair Display font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Playfair+Display
@@ -69333,8 +70030,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Playfair Display font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Playfair Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Playfair+Display
@@ -69357,7 +70054,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Playfair Display SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Playfair Display SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Playfair+Display+SC
@@ -69452,8 +70150,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Playfair Display SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Playfair Display SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Playfair+Display+SC
@@ -69476,7 +70174,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Podkova font family from Google Fonts to the given [textStyle].
+  /// Applies the Podkova font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Podkova
@@ -69564,8 +70263,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Podkova font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Podkova font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Podkova
@@ -69588,7 +70287,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Poiret One font family from Google Fonts to the given [textStyle].
+  /// Applies the Poiret One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Poiret+One
@@ -69648,8 +70348,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Poiret One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Poiret One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Poiret+One
@@ -69672,7 +70372,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Poller One font family from Google Fonts to the given [textStyle].
+  /// Applies the Poller One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Poller+One
@@ -69732,8 +70433,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Poller One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Poller One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Poller+One
@@ -69756,7 +70457,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Poly font family from Google Fonts to the given [textStyle].
+  /// Applies the Poly font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Poly
@@ -69823,8 +70525,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Poly font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Poly font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Poly
@@ -69847,7 +70549,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pompiere font family from Google Fonts to the given [textStyle].
+  /// Applies the Pompiere font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pompiere
@@ -69907,8 +70610,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pompiere font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pompiere font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pompiere
@@ -69931,7 +70634,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pontano Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Pontano Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pontano+Sans
@@ -69991,8 +70695,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pontano Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pontano Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pontano+Sans
@@ -70015,7 +70719,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Poor Story font family from Google Fonts to the given [textStyle].
+  /// Applies the Poor Story font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Poor+Story
@@ -70075,8 +70780,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Poor Story font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Poor Story font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Poor+Story
@@ -70099,7 +70804,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Poppins font family from Google Fonts to the given [textStyle].
+  /// Applies the Poppins font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Poppins
@@ -70278,8 +70984,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Poppins font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Poppins font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Poppins
@@ -70302,7 +71008,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Port Lligat Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Port Lligat Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Port+Lligat+Sans
@@ -70362,8 +71069,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Port Lligat Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Port Lligat Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Port+Lligat+Sans
@@ -70386,7 +71093,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Port Lligat Slab font family from Google Fonts to the given [textStyle].
+  /// Applies the Port Lligat Slab font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Port+Lligat+Slab
@@ -70446,8 +71154,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Port Lligat Slab font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Port Lligat Slab font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Port+Lligat+Slab
@@ -70470,7 +71178,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pragati Narrow font family from Google Fonts to the given [textStyle].
+  /// Applies the Pragati Narrow font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pragati+Narrow
@@ -70537,8 +71246,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pragati Narrow font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pragati Narrow font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pragati+Narrow
@@ -70561,7 +71270,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Prata font family from Google Fonts to the given [textStyle].
+  /// Applies the Prata font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Prata
@@ -70621,8 +71331,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Prata font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Prata font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Prata
@@ -70645,7 +71355,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Press Start 2P font family from Google Fonts to the given [textStyle].
+  /// Applies the Press Start 2P font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Press+Start+2P
@@ -70705,8 +71416,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Press Start 2P font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Press Start 2P font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Press+Start+2P
@@ -70729,7 +71440,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pridi font family from Google Fonts to the given [textStyle].
+  /// Applies the Pridi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pridi
@@ -70824,8 +71536,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Pridi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Pridi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Pridi
@@ -70848,7 +71560,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Princess Sofia font family from Google Fonts to the given [textStyle].
+  /// Applies the Princess Sofia font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Princess+Sofia
@@ -70908,8 +71621,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Princess Sofia font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Princess Sofia font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Princess+Sofia
@@ -70932,7 +71645,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Prociono font family from Google Fonts to the given [textStyle].
+  /// Applies the Prociono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Prociono
@@ -70992,8 +71706,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Prociono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Prociono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Prociono
@@ -71016,7 +71730,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Prompt font family from Google Fonts to the given [textStyle].
+  /// Applies the Prompt font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Prompt
@@ -71195,8 +71910,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Prompt font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Prompt font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Prompt
@@ -71219,7 +71934,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Prosto One font family from Google Fonts to the given [textStyle].
+  /// Applies the Prosto One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Prosto+One
@@ -71279,8 +71995,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Prosto One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Prosto One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Prosto+One
@@ -71303,7 +72019,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Proza Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the Proza Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Proza+Libre
@@ -71426,8 +72143,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Proza Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Proza Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Proza+Libre
@@ -71450,7 +72167,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Puritan font family from Google Fonts to the given [textStyle].
+  /// Applies the Puritan font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Puritan
@@ -71531,8 +72249,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Puritan font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Puritan font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Puritan
@@ -71555,7 +72273,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Purple Purse font family from Google Fonts to the given [textStyle].
+  /// Applies the Purple Purse font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Purple+Purse
@@ -71615,8 +72334,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Purple Purse font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Purple Purse font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Purple+Purse
@@ -71639,7 +72358,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quando font family from Google Fonts to the given [textStyle].
+  /// Applies the Quando font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quando
@@ -71699,8 +72419,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quando font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Quando font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quando
@@ -71723,7 +72443,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quantico font family from Google Fonts to the given [textStyle].
+  /// Applies the Quantico font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quantico
@@ -71804,8 +72525,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quantico font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Quantico font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quantico
@@ -71828,7 +72549,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quattrocento font family from Google Fonts to the given [textStyle].
+  /// Applies the Quattrocento font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quattrocento
@@ -71895,8 +72617,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quattrocento font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Quattrocento font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quattrocento
@@ -71919,7 +72641,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quattrocento Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Quattrocento Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quattrocento+Sans
@@ -72000,8 +72723,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quattrocento Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Quattrocento Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quattrocento+Sans
@@ -72024,7 +72747,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Questrial font family from Google Fonts to the given [textStyle].
+  /// Applies the Questrial font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Questrial
@@ -72084,8 +72808,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Questrial font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Questrial font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Questrial
@@ -72108,7 +72832,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quicksand font family from Google Fonts to the given [textStyle].
+  /// Applies the Quicksand font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quicksand
@@ -72189,8 +72914,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quicksand font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Quicksand font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quicksand
@@ -72213,7 +72938,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quintessential font family from Google Fonts to the given [textStyle].
+  /// Applies the Quintessential font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quintessential
@@ -72273,8 +72999,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Quintessential font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Quintessential font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Quintessential
@@ -72297,7 +73023,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Qwigley font family from Google Fonts to the given [textStyle].
+  /// Applies the Qwigley font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Qwigley
@@ -72357,8 +73084,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Qwigley font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Qwigley font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Qwigley
@@ -72381,7 +73108,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Racing Sans One font family from Google Fonts to the given [textStyle].
+  /// Applies the Racing Sans One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Racing+Sans+One
@@ -72441,8 +73169,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Racing Sans One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Racing Sans One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Racing+Sans+One
@@ -72465,7 +73193,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Radley font family from Google Fonts to the given [textStyle].
+  /// Applies the Radley font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Radley
@@ -72532,8 +73261,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Radley font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Radley font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Radley
@@ -72556,7 +73285,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rajdhani font family from Google Fonts to the given [textStyle].
+  /// Applies the Rajdhani font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rajdhani
@@ -72644,8 +73374,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rajdhani font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rajdhani font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rajdhani
@@ -72668,7 +73398,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rakkas font family from Google Fonts to the given [textStyle].
+  /// Applies the Rakkas font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rakkas
@@ -72728,8 +73459,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rakkas font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rakkas font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rakkas
@@ -72752,7 +73483,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Raleway font family from Google Fonts to the given [textStyle].
+  /// Applies the Raleway font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Raleway
@@ -72931,8 +73663,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Raleway font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Raleway font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Raleway
@@ -72955,7 +73687,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Raleway Dots font family from Google Fonts to the given [textStyle].
+  /// Applies the Raleway Dots font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Raleway+Dots
@@ -73015,8 +73748,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Raleway Dots font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Raleway Dots font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Raleway+Dots
@@ -73039,7 +73772,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ramabhadra font family from Google Fonts to the given [textStyle].
+  /// Applies the Ramabhadra font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ramabhadra
@@ -73099,8 +73833,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ramabhadra font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ramabhadra font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ramabhadra
@@ -73123,7 +73857,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ramaraja font family from Google Fonts to the given [textStyle].
+  /// Applies the Ramaraja font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ramaraja
@@ -73183,8 +73918,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ramaraja font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ramaraja font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ramaraja
@@ -73207,7 +73942,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rambla font family from Google Fonts to the given [textStyle].
+  /// Applies the Rambla font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rambla
@@ -73288,8 +74024,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rambla font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rambla font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rambla
@@ -73312,7 +74048,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rammetto One font family from Google Fonts to the given [textStyle].
+  /// Applies the Rammetto One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rammetto+One
@@ -73372,8 +74109,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rammetto One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rammetto One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rammetto+One
@@ -73396,7 +74133,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ranchers font family from Google Fonts to the given [textStyle].
+  /// Applies the Ranchers font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ranchers
@@ -73456,8 +74194,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ranchers font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ranchers font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ranchers
@@ -73480,7 +74218,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rancho font family from Google Fonts to the given [textStyle].
+  /// Applies the Rancho font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rancho
@@ -73540,8 +74279,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rancho font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rancho font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rancho
@@ -73564,7 +74303,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ranga font family from Google Fonts to the given [textStyle].
+  /// Applies the Ranga font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ranga
@@ -73631,8 +74371,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ranga font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ranga font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ranga
@@ -73655,7 +74395,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rasa font family from Google Fonts to the given [textStyle].
+  /// Applies the Rasa font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rasa
@@ -73743,8 +74484,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rasa font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rasa font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rasa
@@ -73767,7 +74508,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rationale font family from Google Fonts to the given [textStyle].
+  /// Applies the Rationale font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rationale
@@ -73827,8 +74569,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rationale font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rationale font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rationale
@@ -73851,7 +74593,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ravi Prakash font family from Google Fonts to the given [textStyle].
+  /// Applies the Ravi Prakash font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ravi+Prakash
@@ -73911,8 +74654,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ravi Prakash font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ravi Prakash font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ravi+Prakash
@@ -73935,7 +74678,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Red Hat Display font family from Google Fonts to the given [textStyle].
+  /// Applies the Red Hat Display font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Red+Hat+Display
@@ -74044,8 +74788,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Red Hat Display font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Red Hat Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Red+Hat+Display
@@ -74068,7 +74812,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Red Hat Text font family from Google Fonts to the given [textStyle].
+  /// Applies the Red Hat Text font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Red+Hat+Text
@@ -74163,8 +74908,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Red Hat Text font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Red Hat Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Red+Hat+Text
@@ -74187,7 +74932,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Redressed font family from Google Fonts to the given [textStyle].
+  /// Applies the Redressed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Redressed
@@ -74247,8 +74993,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Redressed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Redressed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Redressed
@@ -74271,7 +75017,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Reem Kufi font family from Google Fonts to the given [textStyle].
+  /// Applies the Reem Kufi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Reem+Kufi
@@ -74331,8 +75078,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Reem Kufi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Reem Kufi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Reem+Kufi
@@ -74355,7 +75102,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Reenie Beanie font family from Google Fonts to the given [textStyle].
+  /// Applies the Reenie Beanie font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Reenie+Beanie
@@ -74415,8 +75163,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Reenie Beanie font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Reenie Beanie font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Reenie+Beanie
@@ -74439,7 +75187,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Revalia font family from Google Fonts to the given [textStyle].
+  /// Applies the Revalia font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Revalia
@@ -74499,8 +75248,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Revalia font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Revalia font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Revalia
@@ -74523,7 +75272,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rhodium Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the Rhodium Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rhodium+Libre
@@ -74583,8 +75333,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rhodium Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rhodium Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rhodium+Libre
@@ -74607,7 +75357,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ribeye font family from Google Fonts to the given [textStyle].
+  /// Applies the Ribeye font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ribeye
@@ -74667,8 +75418,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ribeye font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ribeye font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ribeye
@@ -74691,7 +75442,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ribeye Marrow font family from Google Fonts to the given [textStyle].
+  /// Applies the Ribeye Marrow font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ribeye+Marrow
@@ -74751,8 +75503,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ribeye Marrow font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ribeye Marrow font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ribeye+Marrow
@@ -74775,7 +75527,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Righteous font family from Google Fonts to the given [textStyle].
+  /// Applies the Righteous font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Righteous
@@ -74835,8 +75588,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Righteous font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Righteous font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Righteous
@@ -74859,7 +75612,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Risque font family from Google Fonts to the given [textStyle].
+  /// Applies the Risque font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Risque
@@ -74919,8 +75673,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Risque font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Risque font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Risque
@@ -74943,7 +75697,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Roboto font family from Google Fonts to the given [textStyle].
+  /// Applies the Roboto font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Roboto
@@ -75080,8 +75835,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Roboto font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Roboto font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Roboto
@@ -75104,7 +75859,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Roboto Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Roboto Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Roboto+Condensed
@@ -75199,8 +75955,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Roboto Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Roboto Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Roboto+Condensed
@@ -75223,7 +75979,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Roboto Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the Roboto Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Roboto+Mono
@@ -75346,8 +76103,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Roboto Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Roboto Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Roboto+Mono
@@ -75370,7 +76127,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Roboto Slab font family from Google Fonts to the given [textStyle].
+  /// Applies the Roboto Slab font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Roboto+Slab
@@ -75451,8 +76209,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Roboto Slab font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Roboto Slab font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Roboto+Slab
@@ -75475,7 +76233,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rochester font family from Google Fonts to the given [textStyle].
+  /// Applies the Rochester font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rochester
@@ -75535,8 +76294,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rochester font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rochester font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rochester
@@ -75559,7 +76318,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rock Salt font family from Google Fonts to the given [textStyle].
+  /// Applies the Rock Salt font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rock+Salt
@@ -75619,8 +76379,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rock Salt font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rock Salt font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rock+Salt
@@ -75643,7 +76403,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rokkitt font family from Google Fonts to the given [textStyle].
+  /// Applies the Rokkitt font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rokkitt
@@ -75759,8 +76520,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rokkitt font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rokkitt font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rokkitt
@@ -75783,7 +76544,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Romanesco font family from Google Fonts to the given [textStyle].
+  /// Applies the Romanesco font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Romanesco
@@ -75843,8 +76605,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Romanesco font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Romanesco font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Romanesco
@@ -75867,7 +76629,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ropa Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Ropa Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ropa+Sans
@@ -75934,8 +76697,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ropa Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ropa Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ropa+Sans
@@ -75958,7 +76721,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rosario font family from Google Fonts to the given [textStyle].
+  /// Applies the Rosario font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rosario
@@ -76039,8 +76803,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rosario font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rosario font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rosario
@@ -76063,7 +76827,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rosarivo font family from Google Fonts to the given [textStyle].
+  /// Applies the Rosarivo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rosarivo
@@ -76130,8 +76895,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rosarivo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rosarivo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rosarivo
@@ -76154,7 +76919,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rouge Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Rouge Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rouge+Script
@@ -76214,8 +76980,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rouge Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rouge Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rouge+Script
@@ -76238,7 +77004,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rozha One font family from Google Fonts to the given [textStyle].
+  /// Applies the Rozha One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rozha+One
@@ -76298,8 +77065,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rozha One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rozha One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rozha+One
@@ -76322,7 +77089,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rubik font family from Google Fonts to the given [textStyle].
+  /// Applies the Rubik font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rubik
@@ -76445,8 +77213,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rubik font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rubik font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rubik
@@ -76469,7 +77237,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rubik Mono One font family from Google Fonts to the given [textStyle].
+  /// Applies the Rubik Mono One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rubik+Mono+One
@@ -76529,8 +77298,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rubik Mono One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rubik Mono One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rubik+Mono+One
@@ -76553,7 +77322,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ruda font family from Google Fonts to the given [textStyle].
+  /// Applies the Ruda font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ruda
@@ -76627,8 +77397,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ruda font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ruda font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ruda
@@ -76651,7 +77421,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rufina font family from Google Fonts to the given [textStyle].
+  /// Applies the Rufina font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rufina
@@ -76718,8 +77489,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rufina font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rufina font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rufina
@@ -76742,7 +77513,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ruge Boogie font family from Google Fonts to the given [textStyle].
+  /// Applies the Ruge Boogie font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ruge+Boogie
@@ -76802,8 +77574,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ruge Boogie font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ruge Boogie font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ruge+Boogie
@@ -76826,7 +77598,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ruluko font family from Google Fonts to the given [textStyle].
+  /// Applies the Ruluko font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ruluko
@@ -76886,8 +77659,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ruluko font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ruluko font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ruluko
@@ -76910,7 +77683,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rum Raisin font family from Google Fonts to the given [textStyle].
+  /// Applies the Rum Raisin font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rum+Raisin
@@ -76970,8 +77744,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rum Raisin font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rum Raisin font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rum+Raisin
@@ -76994,7 +77768,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ruslan Display font family from Google Fonts to the given [textStyle].
+  /// Applies the Ruslan Display font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ruslan+Display
@@ -77054,8 +77829,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ruslan Display font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ruslan Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ruslan+Display
@@ -77078,7 +77853,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Russo One font family from Google Fonts to the given [textStyle].
+  /// Applies the Russo One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Russo+One
@@ -77138,8 +77914,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Russo One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Russo One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Russo+One
@@ -77162,7 +77938,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ruthie font family from Google Fonts to the given [textStyle].
+  /// Applies the Ruthie font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ruthie
@@ -77222,8 +77999,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ruthie font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ruthie font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ruthie
@@ -77246,7 +78023,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rye font family from Google Fonts to the given [textStyle].
+  /// Applies the Rye font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rye
@@ -77306,8 +78084,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Rye font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Rye font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Rye
@@ -77330,7 +78108,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sacramento font family from Google Fonts to the given [textStyle].
+  /// Applies the Sacramento font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sacramento
@@ -77390,8 +78169,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sacramento font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sacramento font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sacramento
@@ -77414,7 +78193,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sahitya font family from Google Fonts to the given [textStyle].
+  /// Applies the Sahitya font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sahitya
@@ -77481,8 +78261,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sahitya font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sahitya font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sahitya
@@ -77505,7 +78285,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sail font family from Google Fonts to the given [textStyle].
+  /// Applies the Sail font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sail
@@ -77565,8 +78346,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sail font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sail font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sail
@@ -77589,7 +78370,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Saira font family from Google Fonts to the given [textStyle].
+  /// Applies the Saira font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Saira
@@ -77705,8 +78487,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Saira font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Saira font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Saira
@@ -77729,7 +78511,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Saira Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Saira Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Saira+Condensed
@@ -77845,8 +78628,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Saira Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Saira Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Saira+Condensed
@@ -77869,7 +78652,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Saira Extra Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Saira Extra Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Saira+Extra+Condensed
@@ -77985,8 +78769,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Saira Extra Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Saira Extra Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Saira+Extra+Condensed
@@ -78009,7 +78793,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Saira Semi Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Saira Semi Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Saira+Semi+Condensed
@@ -78125,8 +78910,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Saira Semi Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Saira Semi Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Saira+Semi+Condensed
@@ -78149,7 +78934,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Saira Stencil One font family from Google Fonts to the given [textStyle].
+  /// Applies the Saira Stencil One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Saira+Stencil+One
@@ -78209,8 +78995,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Saira Stencil One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Saira Stencil One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Saira+Stencil+One
@@ -78233,7 +79019,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Salsa font family from Google Fonts to the given [textStyle].
+  /// Applies the Salsa font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Salsa
@@ -78293,8 +79080,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Salsa font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Salsa font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Salsa
@@ -78317,7 +79104,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sanchez font family from Google Fonts to the given [textStyle].
+  /// Applies the Sanchez font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sanchez
@@ -78384,8 +79172,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sanchez font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sanchez font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sanchez
@@ -78408,7 +79196,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sancreek font family from Google Fonts to the given [textStyle].
+  /// Applies the Sancreek font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sancreek
@@ -78468,8 +79257,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sancreek font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sancreek font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sancreek
@@ -78492,7 +79281,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sansita font family from Google Fonts to the given [textStyle].
+  /// Applies the Sansita font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sansita
@@ -78601,8 +79391,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sansita font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sansita font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sansita
@@ -78625,7 +79415,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sarabun font family from Google Fonts to the given [textStyle].
+  /// Applies the Sarabun font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sarabun
@@ -78790,8 +79581,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sarabun font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sarabun font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sarabun
@@ -78814,7 +79605,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sarala font family from Google Fonts to the given [textStyle].
+  /// Applies the Sarala font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sarala
@@ -78881,8 +79673,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sarala font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sarala font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sarala
@@ -78905,7 +79697,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sarina font family from Google Fonts to the given [textStyle].
+  /// Applies the Sarina font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sarina
@@ -78965,8 +79758,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sarina font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sarina font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sarina
@@ -78989,7 +79782,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sarpanch font family from Google Fonts to the given [textStyle].
+  /// Applies the Sarpanch font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sarpanch
@@ -79084,8 +79878,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sarpanch font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sarpanch font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sarpanch
@@ -79108,7 +79902,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Satisfy font family from Google Fonts to the given [textStyle].
+  /// Applies the Satisfy font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Satisfy
@@ -79168,8 +79963,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Satisfy font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Satisfy font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Satisfy
@@ -79192,7 +79987,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sawarabi Gothic font family from Google Fonts to the given [textStyle].
+  /// Applies the Sawarabi Gothic font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sawarabi+Gothic
@@ -79252,8 +80048,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sawarabi Gothic font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sawarabi Gothic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sawarabi+Gothic
@@ -79276,7 +80072,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sawarabi Mincho font family from Google Fonts to the given [textStyle].
+  /// Applies the Sawarabi Mincho font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sawarabi+Mincho
@@ -79336,8 +80133,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sawarabi Mincho font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sawarabi Mincho font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sawarabi+Mincho
@@ -79360,7 +80157,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Scada font family from Google Fonts to the given [textStyle].
+  /// Applies the Scada font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Scada
@@ -79441,8 +80239,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Scada font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Scada font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Scada
@@ -79465,7 +80263,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Scheherazade font family from Google Fonts to the given [textStyle].
+  /// Applies the Scheherazade font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Scheherazade
@@ -79532,8 +80331,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Scheherazade font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Scheherazade font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Scheherazade
@@ -79556,7 +80355,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Schoolbell font family from Google Fonts to the given [textStyle].
+  /// Applies the Schoolbell font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Schoolbell
@@ -79616,8 +80416,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Schoolbell font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Schoolbell font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Schoolbell
@@ -79640,7 +80440,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Scope One font family from Google Fonts to the given [textStyle].
+  /// Applies the Scope One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Scope+One
@@ -79700,8 +80501,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Scope One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Scope One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Scope+One
@@ -79724,7 +80525,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Seaweed Script font family from Google Fonts to the given [textStyle].
+  /// Applies the Seaweed Script font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Seaweed+Script
@@ -79784,8 +80586,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Seaweed Script font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Seaweed Script font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Seaweed+Script
@@ -79808,7 +80610,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Secular One font family from Google Fonts to the given [textStyle].
+  /// Applies the Secular One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Secular+One
@@ -79868,8 +80671,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Secular One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Secular One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Secular+One
@@ -79892,7 +80695,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sedgwick Ave font family from Google Fonts to the given [textStyle].
+  /// Applies the Sedgwick Ave font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sedgwick+Ave
@@ -79952,8 +80756,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sedgwick Ave font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sedgwick Ave font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sedgwick+Ave
@@ -79976,7 +80780,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sedgwick Ave Display font family from Google Fonts to the given [textStyle].
+  /// Applies the Sedgwick Ave Display font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sedgwick+Ave+Display
@@ -80036,8 +80841,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sedgwick Ave Display font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sedgwick Ave Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sedgwick+Ave+Display
@@ -80060,7 +80865,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sevillana font family from Google Fonts to the given [textStyle].
+  /// Applies the Sevillana font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sevillana
@@ -80120,8 +80926,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sevillana font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sevillana font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sevillana
@@ -80144,7 +80950,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Seymour One font family from Google Fonts to the given [textStyle].
+  /// Applies the Seymour One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Seymour+One
@@ -80204,8 +81011,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Seymour One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Seymour One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Seymour+One
@@ -80228,7 +81035,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Shadows Into Light font family from Google Fonts to the given [textStyle].
+  /// Applies the Shadows Into Light font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Shadows+Into+Light
@@ -80288,8 +81096,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Shadows Into Light font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Shadows Into Light font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Shadows+Into+Light
@@ -80312,7 +81120,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Shadows Into Light Two font family from Google Fonts to the given [textStyle].
+  /// Applies the Shadows Into Light Two font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Shadows+Into+Light+Two
@@ -80372,8 +81181,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Shadows Into Light Two font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Shadows Into Light Two font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Shadows+Into+Light+Two
@@ -80396,7 +81205,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Shanti font family from Google Fonts to the given [textStyle].
+  /// Applies the Shanti font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Shanti
@@ -80456,8 +81266,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Shanti font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Shanti font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Shanti
@@ -80480,7 +81290,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Share font family from Google Fonts to the given [textStyle].
+  /// Applies the Share font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Share
@@ -80561,8 +81372,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Share font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Share font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Share
@@ -80585,7 +81396,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Share Tech font family from Google Fonts to the given [textStyle].
+  /// Applies the Share Tech font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Share+Tech
@@ -80645,8 +81457,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Share Tech font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Share Tech font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Share+Tech
@@ -80669,7 +81481,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Share Tech Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the Share Tech Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Share+Tech+Mono
@@ -80729,8 +81542,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Share Tech Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Share Tech Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Share+Tech+Mono
@@ -80753,7 +81566,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Shojumaru font family from Google Fonts to the given [textStyle].
+  /// Applies the Shojumaru font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Shojumaru
@@ -80813,8 +81627,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Shojumaru font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Shojumaru font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Shojumaru
@@ -80837,7 +81651,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Short Stack font family from Google Fonts to the given [textStyle].
+  /// Applies the Short Stack font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Short+Stack
@@ -80897,8 +81712,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Short Stack font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Short Stack font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Short+Stack
@@ -80921,7 +81736,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Shrikhand font family from Google Fonts to the given [textStyle].
+  /// Applies the Shrikhand font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Shrikhand
@@ -80981,8 +81797,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Shrikhand font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Shrikhand font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Shrikhand
@@ -81005,7 +81821,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sigmar One font family from Google Fonts to the given [textStyle].
+  /// Applies the Sigmar One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sigmar+One
@@ -81065,8 +81882,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sigmar One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sigmar One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sigmar+One
@@ -81089,7 +81906,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Signika font family from Google Fonts to the given [textStyle].
+  /// Applies the Signika font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Signika
@@ -81170,8 +81988,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Signika font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Signika font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Signika
@@ -81194,7 +82012,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Signika Negative font family from Google Fonts to the given [textStyle].
+  /// Applies the Signika Negative font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Signika+Negative
@@ -81275,8 +82094,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Signika Negative font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Signika Negative font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Signika+Negative
@@ -81299,7 +82118,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Simonetta font family from Google Fonts to the given [textStyle].
+  /// Applies the Simonetta font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Simonetta
@@ -81380,8 +82200,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Simonetta font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Simonetta font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Simonetta
@@ -81404,7 +82224,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Single Day font family from Google Fonts to the given [textStyle].
+  /// Applies the Single Day font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Single+Day
@@ -81464,8 +82285,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Single Day font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Single Day font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Single+Day
@@ -81488,7 +82309,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sintony font family from Google Fonts to the given [textStyle].
+  /// Applies the Sintony font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sintony
@@ -81555,8 +82377,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sintony font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sintony font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sintony
@@ -81579,7 +82401,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sirin Stencil font family from Google Fonts to the given [textStyle].
+  /// Applies the Sirin Stencil font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sirin+Stencil
@@ -81639,8 +82462,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sirin Stencil font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sirin Stencil font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sirin+Stencil
@@ -81663,7 +82486,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Six Caps font family from Google Fonts to the given [textStyle].
+  /// Applies the Six Caps font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Six+Caps
@@ -81723,8 +82547,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Six Caps font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Six Caps font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Six+Caps
@@ -81747,7 +82571,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Skranji font family from Google Fonts to the given [textStyle].
+  /// Applies the Skranji font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Skranji
@@ -81814,8 +82639,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Skranji font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Skranji font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Skranji
@@ -81838,7 +82663,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Slabo 13px font family from Google Fonts to the given [textStyle].
+  /// Applies the Slabo 13px font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Slabo+13px
@@ -81898,8 +82724,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Slabo 13px font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Slabo 13px font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Slabo+13px
@@ -81922,7 +82748,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Slabo 27px font family from Google Fonts to the given [textStyle].
+  /// Applies the Slabo 27px font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Slabo+27px
@@ -81982,8 +82809,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Slabo 27px font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Slabo 27px font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Slabo+27px
@@ -82006,7 +82833,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Slackey font family from Google Fonts to the given [textStyle].
+  /// Applies the Slackey font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Slackey
@@ -82066,8 +82894,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Slackey font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Slackey font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Slackey
@@ -82090,7 +82918,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Smokum font family from Google Fonts to the given [textStyle].
+  /// Applies the Smokum font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Smokum
@@ -82150,8 +82979,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Smokum font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Smokum font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Smokum
@@ -82174,7 +83003,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Smythe font family from Google Fonts to the given [textStyle].
+  /// Applies the Smythe font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Smythe
@@ -82234,8 +83064,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Smythe font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Smythe font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Smythe
@@ -82258,7 +83088,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sniglet font family from Google Fonts to the given [textStyle].
+  /// Applies the Sniglet font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sniglet
@@ -82325,8 +83156,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sniglet font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sniglet font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sniglet
@@ -82349,7 +83180,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Snippet font family from Google Fonts to the given [textStyle].
+  /// Applies the Snippet font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Snippet
@@ -82409,8 +83241,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Snippet font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Snippet font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Snippet
@@ -82433,7 +83265,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Snowburst One font family from Google Fonts to the given [textStyle].
+  /// Applies the Snowburst One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Snowburst+One
@@ -82493,8 +83326,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Snowburst One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Snowburst One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Snowburst+One
@@ -82517,7 +83350,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sofadi One font family from Google Fonts to the given [textStyle].
+  /// Applies the Sofadi One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sofadi+One
@@ -82577,8 +83411,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sofadi One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sofadi One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sofadi+One
@@ -82601,7 +83435,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sofia font family from Google Fonts to the given [textStyle].
+  /// Applies the Sofia font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sofia
@@ -82661,8 +83496,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sofia font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sofia font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sofia
@@ -82685,7 +83520,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Solway font family from Google Fonts to the given [textStyle].
+  /// Applies the Solway font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Solway
@@ -82773,8 +83609,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Solway font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Solway font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Solway
@@ -82797,7 +83633,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Song Myung font family from Google Fonts to the given [textStyle].
+  /// Applies the Song Myung font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Song+Myung
@@ -82857,8 +83694,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Song Myung font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Song Myung font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Song+Myung
@@ -82881,7 +83718,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sonsie One font family from Google Fonts to the given [textStyle].
+  /// Applies the Sonsie One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sonsie+One
@@ -82941,8 +83779,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sonsie One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sonsie One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sonsie+One
@@ -82965,7 +83803,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sorts Mill Goudy font family from Google Fonts to the given [textStyle].
+  /// Applies the Sorts Mill Goudy font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sorts+Mill+Goudy
@@ -83032,8 +83871,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sorts Mill Goudy font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sorts Mill Goudy font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sorts+Mill+Goudy
@@ -83056,7 +83895,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Source Code Pro font family from Google Fonts to the given [textStyle].
+  /// Applies the Source Code Pro font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Source+Code+Pro
@@ -83158,8 +83998,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Source Code Pro font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Source Code Pro font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Source+Code+Pro
@@ -83182,7 +84022,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Source Sans Pro font family from Google Fonts to the given [textStyle].
+  /// Applies the Source Sans Pro font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Source+Sans+Pro
@@ -83319,8 +84160,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Source Sans Pro font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Source Sans Pro font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Source+Sans+Pro
@@ -83343,7 +84184,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Source Serif Pro font family from Google Fonts to the given [textStyle].
+  /// Applies the Source Serif Pro font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Source+Serif+Pro
@@ -83417,8 +84259,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Source Serif Pro font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Source Serif Pro font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Source+Serif+Pro
@@ -83441,7 +84283,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Space Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the Space Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Space+Mono
@@ -83522,8 +84365,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Space Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Space Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Space+Mono
@@ -83546,7 +84389,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Special Elite font family from Google Fonts to the given [textStyle].
+  /// Applies the Special Elite font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Special+Elite
@@ -83606,8 +84450,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Special Elite font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Special Elite font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Special+Elite
@@ -83630,7 +84474,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Spectral font family from Google Fonts to the given [textStyle].
+  /// Applies the Spectral font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spectral
@@ -83781,8 +84626,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Spectral font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Spectral font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spectral
@@ -83805,7 +84650,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Spectral SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Spectral SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spectral+SC
@@ -83956,8 +84802,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Spectral SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Spectral SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spectral+SC
@@ -83980,7 +84826,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Spicy Rice font family from Google Fonts to the given [textStyle].
+  /// Applies the Spicy Rice font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spicy+Rice
@@ -84040,8 +84887,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Spicy Rice font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Spicy Rice font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spicy+Rice
@@ -84064,7 +84911,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Spinnaker font family from Google Fonts to the given [textStyle].
+  /// Applies the Spinnaker font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spinnaker
@@ -84124,8 +84972,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Spinnaker font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Spinnaker font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spinnaker
@@ -84148,7 +84996,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Spirax font family from Google Fonts to the given [textStyle].
+  /// Applies the Spirax font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spirax
@@ -84208,8 +85057,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Spirax font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Spirax font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Spirax
@@ -84232,7 +85081,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Squada One font family from Google Fonts to the given [textStyle].
+  /// Applies the Squada One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Squada+One
@@ -84292,8 +85142,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Squada One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Squada One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Squada+One
@@ -84316,7 +85166,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sree Krushnadevaraya font family from Google Fonts to the given [textStyle].
+  /// Applies the Sree Krushnadevaraya font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sree+Krushnadevaraya
@@ -84376,8 +85227,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sree Krushnadevaraya font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sree Krushnadevaraya font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sree+Krushnadevaraya
@@ -84400,7 +85251,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sriracha font family from Google Fonts to the given [textStyle].
+  /// Applies the Sriracha font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sriracha
@@ -84460,8 +85312,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sriracha font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sriracha font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sriracha
@@ -84484,7 +85336,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Srisakdi font family from Google Fonts to the given [textStyle].
+  /// Applies the Srisakdi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Srisakdi
@@ -84551,8 +85404,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Srisakdi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Srisakdi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Srisakdi
@@ -84575,7 +85428,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Staatliches font family from Google Fonts to the given [textStyle].
+  /// Applies the Staatliches font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Staatliches
@@ -84635,8 +85489,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Staatliches font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Staatliches font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Staatliches
@@ -84659,7 +85513,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stalemate font family from Google Fonts to the given [textStyle].
+  /// Applies the Stalemate font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stalemate
@@ -84719,8 +85574,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stalemate font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Stalemate font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stalemate
@@ -84743,7 +85598,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stalinist One font family from Google Fonts to the given [textStyle].
+  /// Applies the Stalinist One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stalinist+One
@@ -84803,8 +85659,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stalinist One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Stalinist One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stalinist+One
@@ -84827,7 +85683,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stardos Stencil font family from Google Fonts to the given [textStyle].
+  /// Applies the Stardos Stencil font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stardos+Stencil
@@ -84894,8 +85751,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stardos Stencil font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Stardos Stencil font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stardos+Stencil
@@ -84918,7 +85775,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stint Ultra Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Stint Ultra Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stint+Ultra+Condensed
@@ -84978,8 +85836,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stint Ultra Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Stint Ultra Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stint+Ultra+Condensed
@@ -85002,7 +85860,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stint Ultra Expanded font family from Google Fonts to the given [textStyle].
+  /// Applies the Stint Ultra Expanded font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stint+Ultra+Expanded
@@ -85062,8 +85921,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stint Ultra Expanded font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Stint Ultra Expanded font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stint+Ultra+Expanded
@@ -85086,7 +85945,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stoke font family from Google Fonts to the given [textStyle].
+  /// Applies the Stoke font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stoke
@@ -85153,8 +86013,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stoke font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Stoke font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stoke
@@ -85177,7 +86037,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Strait font family from Google Fonts to the given [textStyle].
+  /// Applies the Strait font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Strait
@@ -85237,8 +86098,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Strait font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Strait font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Strait
@@ -85261,7 +86122,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stylish font family from Google Fonts to the given [textStyle].
+  /// Applies the Stylish font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stylish
@@ -85321,8 +86183,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Stylish font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Stylish font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Stylish
@@ -85345,7 +86207,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sue Ellen Francisco font family from Google Fonts to the given [textStyle].
+  /// Applies the Sue Ellen Francisco font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sue+Ellen+Francisco
@@ -85405,8 +86268,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sue Ellen Francisco font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sue Ellen Francisco font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sue+Ellen+Francisco
@@ -85429,7 +86292,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Suez One font family from Google Fonts to the given [textStyle].
+  /// Applies the Suez One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Suez+One
@@ -85489,8 +86353,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Suez One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Suez One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Suez+One
@@ -85513,7 +86377,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sulphur Point font family from Google Fonts to the given [textStyle].
+  /// Applies the Sulphur Point font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sulphur+Point
@@ -85587,8 +86452,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sulphur Point font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sulphur Point font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sulphur+Point
@@ -85611,7 +86476,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sumana font family from Google Fonts to the given [textStyle].
+  /// Applies the Sumana font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sumana
@@ -85678,8 +86544,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sumana font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sumana font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sumana
@@ -85702,7 +86568,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sunflower font family from Google Fonts to the given [textStyle].
+  /// Applies the Sunflower font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sunflower
@@ -85776,8 +86643,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sunflower font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sunflower font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sunflower
@@ -85800,7 +86667,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sunshiney font family from Google Fonts to the given [textStyle].
+  /// Applies the Sunshiney font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sunshiney
@@ -85860,8 +86728,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sunshiney font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sunshiney font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sunshiney
@@ -85884,7 +86752,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Supermercado One font family from Google Fonts to the given [textStyle].
+  /// Applies the Supermercado One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Supermercado+One
@@ -85944,8 +86813,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Supermercado One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Supermercado One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Supermercado+One
@@ -85968,7 +86837,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sura font family from Google Fonts to the given [textStyle].
+  /// Applies the Sura font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sura
@@ -86035,8 +86905,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Sura font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Sura font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Sura
@@ -86059,7 +86929,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Suranna font family from Google Fonts to the given [textStyle].
+  /// Applies the Suranna font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Suranna
@@ -86119,8 +86990,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Suranna font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Suranna font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Suranna
@@ -86143,7 +87014,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Suravaram font family from Google Fonts to the given [textStyle].
+  /// Applies the Suravaram font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Suravaram
@@ -86203,8 +87075,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Suravaram font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Suravaram font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Suravaram
@@ -86227,7 +87099,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Swanky and Moo Moo font family from Google Fonts to the given [textStyle].
+  /// Applies the Swanky and Moo Moo font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Swanky+and+Moo+Moo
@@ -86287,8 +87160,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Swanky and Moo Moo font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Swanky and Moo Moo font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Swanky+and+Moo+Moo
@@ -86311,7 +87184,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Syncopate font family from Google Fonts to the given [textStyle].
+  /// Applies the Syncopate font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Syncopate
@@ -86378,8 +87252,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Syncopate font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Syncopate font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Syncopate
@@ -86402,7 +87276,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tajawal font family from Google Fonts to the given [textStyle].
+  /// Applies the Tajawal font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tajawal
@@ -86504,8 +87379,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tajawal font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Tajawal font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tajawal
@@ -86528,7 +87403,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tangerine font family from Google Fonts to the given [textStyle].
+  /// Applies the Tangerine font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tangerine
@@ -86595,8 +87471,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tangerine font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Tangerine font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tangerine
@@ -86619,7 +87495,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tauri font family from Google Fonts to the given [textStyle].
+  /// Applies the Tauri font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tauri
@@ -86679,8 +87556,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tauri font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Tauri font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tauri
@@ -86703,7 +87580,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Taviraj font family from Google Fonts to the given [textStyle].
+  /// Applies the Taviraj font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Taviraj
@@ -86882,8 +87760,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Taviraj font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Taviraj font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Taviraj
@@ -86906,7 +87784,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Teko font family from Google Fonts to the given [textStyle].
+  /// Applies the Teko font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Teko
@@ -86994,8 +87873,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Teko font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Teko font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Teko
@@ -87018,7 +87897,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Telex font family from Google Fonts to the given [textStyle].
+  /// Applies the Telex font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Telex
@@ -87078,8 +87958,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Telex font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Telex font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Telex
@@ -87102,7 +87982,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tenali Ramakrishna font family from Google Fonts to the given [textStyle].
+  /// Applies the Tenali Ramakrishna font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tenali+Ramakrishna
@@ -87162,8 +88043,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tenali Ramakrishna font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Tenali Ramakrishna font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tenali+Ramakrishna
@@ -87186,7 +88067,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tenor Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Tenor Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tenor+Sans
@@ -87246,8 +88128,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tenor Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Tenor Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tenor+Sans
@@ -87270,7 +88152,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Text Me One font family from Google Fonts to the given [textStyle].
+  /// Applies the Text Me One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Text+Me+One
@@ -87330,8 +88213,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Text Me One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Text Me One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Text+Me+One
@@ -87354,7 +88237,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Thasadith font family from Google Fonts to the given [textStyle].
+  /// Applies the Thasadith font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Thasadith
@@ -87435,8 +88319,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Thasadith font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Thasadith font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Thasadith
@@ -87459,7 +88343,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the The Girl Next Door font family from Google Fonts to the given [textStyle].
+  /// Applies the The Girl Next Door font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/The+Girl+Next+Door
@@ -87519,8 +88404,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the The Girl Next Door font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the The Girl Next Door font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/The+Girl+Next+Door
@@ -87543,7 +88428,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tienne font family from Google Fonts to the given [textStyle].
+  /// Applies the Tienne font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tienne
@@ -87617,8 +88503,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tienne font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Tienne font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tienne
@@ -87641,7 +88527,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tillana font family from Google Fonts to the given [textStyle].
+  /// Applies the Tillana font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tillana
@@ -87729,8 +88616,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tillana font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Tillana font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tillana
@@ -87753,7 +88640,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Timmana font family from Google Fonts to the given [textStyle].
+  /// Applies the Timmana font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Timmana
@@ -87813,8 +88701,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Timmana font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Timmana font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Timmana
@@ -87837,7 +88725,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tinos font family from Google Fonts to the given [textStyle].
+  /// Applies the Tinos font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tinos
@@ -87918,8 +88807,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tinos font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Tinos font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tinos
@@ -87942,7 +88831,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Titan One font family from Google Fonts to the given [textStyle].
+  /// Applies the Titan One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Titan+One
@@ -88002,8 +88892,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Titan One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Titan One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Titan+One
@@ -88026,7 +88916,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Titillium Web font family from Google Fonts to the given [textStyle].
+  /// Applies the Titillium Web font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Titillium+Web
@@ -88156,8 +89047,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Titillium Web font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Titillium Web font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Titillium+Web
@@ -88180,7 +89071,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tomorrow font family from Google Fonts to the given [textStyle].
+  /// Applies the Tomorrow font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tomorrow
@@ -88359,8 +89251,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tomorrow font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Tomorrow font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tomorrow
@@ -88383,7 +89275,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Trade Winds font family from Google Fonts to the given [textStyle].
+  /// Applies the Trade Winds font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Trade+Winds
@@ -88443,8 +89336,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Trade Winds font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Trade Winds font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Trade+Winds
@@ -88467,7 +89360,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Trirong font family from Google Fonts to the given [textStyle].
+  /// Applies the Trirong font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Trirong
@@ -88646,8 +89540,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Trirong font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Trirong font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Trirong
@@ -88670,7 +89564,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Trocchi font family from Google Fonts to the given [textStyle].
+  /// Applies the Trocchi font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Trocchi
@@ -88730,8 +89625,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Trocchi font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Trocchi font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Trocchi
@@ -88754,7 +89649,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Trochut font family from Google Fonts to the given [textStyle].
+  /// Applies the Trochut font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Trochut
@@ -88828,8 +89724,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Trochut font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Trochut font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Trochut
@@ -88852,7 +89748,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Trykker font family from Google Fonts to the given [textStyle].
+  /// Applies the Trykker font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Trykker
@@ -88912,8 +89809,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Trykker font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Trykker font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Trykker
@@ -88936,7 +89833,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tulpen One font family from Google Fonts to the given [textStyle].
+  /// Applies the Tulpen One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tulpen+One
@@ -88996,8 +89894,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Tulpen One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Tulpen One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Tulpen+One
@@ -89020,7 +89918,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Turret Road font family from Google Fonts to the given [textStyle].
+  /// Applies the Turret Road font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Turret+Road
@@ -89115,8 +90014,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Turret Road font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Turret Road font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Turret+Road
@@ -89139,7 +90038,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ubuntu font family from Google Fonts to the given [textStyle].
+  /// Applies the Ubuntu font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ubuntu
@@ -89248,8 +90148,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ubuntu font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ubuntu font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ubuntu
@@ -89272,7 +90172,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ubuntu Condensed font family from Google Fonts to the given [textStyle].
+  /// Applies the Ubuntu Condensed font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ubuntu+Condensed
@@ -89332,8 +90233,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ubuntu Condensed font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ubuntu Condensed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ubuntu+Condensed
@@ -89356,7 +90257,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ubuntu Mono font family from Google Fonts to the given [textStyle].
+  /// Applies the Ubuntu Mono font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ubuntu+Mono
@@ -89437,8 +90339,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ubuntu Mono font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ubuntu Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ubuntu+Mono
@@ -89461,7 +90363,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ultra font family from Google Fonts to the given [textStyle].
+  /// Applies the Ultra font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ultra
@@ -89521,8 +90424,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Ultra font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Ultra font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Ultra
@@ -89545,7 +90448,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Uncial Antiqua font family from Google Fonts to the given [textStyle].
+  /// Applies the Uncial Antiqua font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Uncial+Antiqua
@@ -89605,8 +90509,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Uncial Antiqua font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Uncial Antiqua font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Uncial+Antiqua
@@ -89629,7 +90533,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Underdog font family from Google Fonts to the given [textStyle].
+  /// Applies the Underdog font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Underdog
@@ -89689,8 +90594,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Underdog font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Underdog font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Underdog
@@ -89713,7 +90618,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Unica One font family from Google Fonts to the given [textStyle].
+  /// Applies the Unica One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Unica+One
@@ -89773,8 +90679,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Unica One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Unica One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Unica+One
@@ -89797,7 +90703,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the UnifrakturCook font family from Google Fonts to the given [textStyle].
+  /// Applies the UnifrakturCook font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/UnifrakturCook
@@ -89857,8 +90764,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the UnifrakturCook font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the UnifrakturCook font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/UnifrakturCook
@@ -89881,7 +90788,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the UnifrakturMaguntia font family from Google Fonts to the given [textStyle].
+  /// Applies the UnifrakturMaguntia font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/UnifrakturMaguntia
@@ -89941,8 +90849,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the UnifrakturMaguntia font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the UnifrakturMaguntia font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/UnifrakturMaguntia
@@ -89965,7 +90873,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Unkempt font family from Google Fonts to the given [textStyle].
+  /// Applies the Unkempt font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Unkempt
@@ -90032,8 +90941,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Unkempt font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Unkempt font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Unkempt
@@ -90056,7 +90965,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Unlock font family from Google Fonts to the given [textStyle].
+  /// Applies the Unlock font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Unlock
@@ -90116,8 +91026,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Unlock font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Unlock font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Unlock
@@ -90140,7 +91050,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Unna font family from Google Fonts to the given [textStyle].
+  /// Applies the Unna font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Unna
@@ -90221,8 +91132,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Unna font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Unna font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Unna
@@ -90245,7 +91156,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the VT323 font family from Google Fonts to the given [textStyle].
+  /// Applies the VT323 font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/VT323
@@ -90305,8 +91217,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the VT323 font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the VT323 font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/VT323
@@ -90329,7 +91241,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vampiro One font family from Google Fonts to the given [textStyle].
+  /// Applies the Vampiro One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vampiro+One
@@ -90389,8 +91302,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vampiro One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Vampiro One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vampiro+One
@@ -90413,7 +91326,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Varela font family from Google Fonts to the given [textStyle].
+  /// Applies the Varela font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Varela
@@ -90473,8 +91387,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Varela font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Varela font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Varela
@@ -90497,7 +91411,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Varela Round font family from Google Fonts to the given [textStyle].
+  /// Applies the Varela Round font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Varela+Round
@@ -90557,8 +91472,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Varela Round font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Varela Round font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Varela+Round
@@ -90581,7 +91496,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vast Shadow font family from Google Fonts to the given [textStyle].
+  /// Applies the Vast Shadow font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vast+Shadow
@@ -90641,8 +91557,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vast Shadow font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Vast Shadow font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vast+Shadow
@@ -90665,7 +91581,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vesper Libre font family from Google Fonts to the given [textStyle].
+  /// Applies the Vesper Libre font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vesper+Libre
@@ -90746,8 +91663,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vesper Libre font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Vesper Libre font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vesper+Libre
@@ -90770,7 +91687,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vibes font family from Google Fonts to the given [textStyle].
+  /// Applies the Vibes font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vibes
@@ -90830,8 +91748,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vibes font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Vibes font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vibes
@@ -90854,7 +91772,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vibur font family from Google Fonts to the given [textStyle].
+  /// Applies the Vibur font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vibur
@@ -90914,8 +91833,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vibur font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Vibur font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vibur
@@ -90938,7 +91857,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vidaloka font family from Google Fonts to the given [textStyle].
+  /// Applies the Vidaloka font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vidaloka
@@ -90998,8 +91918,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vidaloka font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Vidaloka font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vidaloka
@@ -91022,7 +91942,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Viga font family from Google Fonts to the given [textStyle].
+  /// Applies the Viga font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Viga
@@ -91082,8 +92003,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Viga font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Viga font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Viga
@@ -91106,7 +92027,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Voces font family from Google Fonts to the given [textStyle].
+  /// Applies the Voces font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Voces
@@ -91166,8 +92088,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Voces font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Voces font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Voces
@@ -91190,7 +92112,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Volkhov font family from Google Fonts to the given [textStyle].
+  /// Applies the Volkhov font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Volkhov
@@ -91271,8 +92194,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Volkhov font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Volkhov font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Volkhov
@@ -91295,7 +92218,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vollkorn font family from Google Fonts to the given [textStyle].
+  /// Applies the Vollkorn font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vollkorn
@@ -91404,8 +92328,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vollkorn font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Vollkorn font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vollkorn
@@ -91428,7 +92352,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vollkorn SC font family from Google Fonts to the given [textStyle].
+  /// Applies the Vollkorn SC font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vollkorn+SC
@@ -91509,8 +92434,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Vollkorn SC font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Vollkorn SC font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Vollkorn+SC
@@ -91533,7 +92458,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Voltaire font family from Google Fonts to the given [textStyle].
+  /// Applies the Voltaire font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Voltaire
@@ -91593,8 +92519,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Voltaire font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Voltaire font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Voltaire
@@ -91617,7 +92543,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Waiting for the Sunrise font family from Google Fonts to the given [textStyle].
+  /// Applies the Waiting for the Sunrise font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Waiting+for+the+Sunrise
@@ -91677,8 +92604,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Waiting for the Sunrise font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Waiting for the Sunrise font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Waiting+for+the+Sunrise
@@ -91708,7 +92635,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Wallpoet font family from Google Fonts to the given [textStyle].
+  /// Applies the Wallpoet font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Wallpoet
@@ -91768,8 +92696,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Wallpoet font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Wallpoet font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Wallpoet
@@ -91792,7 +92720,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Walter Turncoat font family from Google Fonts to the given [textStyle].
+  /// Applies the Walter Turncoat font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Walter+Turncoat
@@ -91852,8 +92781,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Walter Turncoat font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Walter Turncoat font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Walter+Turncoat
@@ -91876,7 +92805,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Warnes font family from Google Fonts to the given [textStyle].
+  /// Applies the Warnes font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Warnes
@@ -91936,8 +92866,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Warnes font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Warnes font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Warnes
@@ -91960,7 +92890,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Wellfleet font family from Google Fonts to the given [textStyle].
+  /// Applies the Wellfleet font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Wellfleet
@@ -92020,8 +92951,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Wellfleet font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Wellfleet font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Wellfleet
@@ -92044,7 +92975,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Wendy One font family from Google Fonts to the given [textStyle].
+  /// Applies the Wendy One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Wendy+One
@@ -92104,8 +93036,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Wendy One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Wendy One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Wendy+One
@@ -92128,7 +93060,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Wire One font family from Google Fonts to the given [textStyle].
+  /// Applies the Wire One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Wire+One
@@ -92188,8 +93121,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Wire One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Wire One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Wire+One
@@ -92212,7 +93145,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Work Sans font family from Google Fonts to the given [textStyle].
+  /// Applies the Work Sans font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Work+Sans
@@ -92328,8 +93262,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Work Sans font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Work Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Work+Sans
@@ -92352,7 +93286,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yanone Kaffeesatz font family from Google Fonts to the given [textStyle].
+  /// Applies the Yanone Kaffeesatz font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yanone+Kaffeesatz
@@ -92433,8 +93368,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yanone Kaffeesatz font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Yanone Kaffeesatz font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yanone+Kaffeesatz
@@ -92457,7 +93392,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yantramanav font family from Google Fonts to the given [textStyle].
+  /// Applies the Yantramanav font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yantramanav
@@ -92552,8 +93488,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yantramanav font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Yantramanav font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yantramanav
@@ -92576,7 +93512,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yatra One font family from Google Fonts to the given [textStyle].
+  /// Applies the Yatra One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yatra+One
@@ -92636,8 +93573,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yatra One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Yatra One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yatra+One
@@ -92660,7 +93597,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yellowtail font family from Google Fonts to the given [textStyle].
+  /// Applies the Yellowtail font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yellowtail
@@ -92720,8 +93658,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yellowtail font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Yellowtail font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yellowtail
@@ -92744,7 +93682,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yeon Sung font family from Google Fonts to the given [textStyle].
+  /// Applies the Yeon Sung font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yeon+Sung
@@ -92804,8 +93743,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yeon Sung font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Yeon Sung font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yeon+Sung
@@ -92828,7 +93767,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yeseva One font family from Google Fonts to the given [textStyle].
+  /// Applies the Yeseva One font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yeseva+One
@@ -92888,8 +93828,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yeseva One font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Yeseva One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yeseva+One
@@ -92912,7 +93852,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yesteryear font family from Google Fonts to the given [textStyle].
+  /// Applies the Yesteryear font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yesteryear
@@ -92972,8 +93913,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yesteryear font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Yesteryear font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yesteryear
@@ -92996,7 +93937,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yrsa font family from Google Fonts to the given [textStyle].
+  /// Applies the Yrsa font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yrsa
@@ -93084,8 +94026,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Yrsa font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Yrsa font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Yrsa
@@ -93108,7 +94050,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the ZCOOL KuaiLe font family from Google Fonts to the given [textStyle].
+  /// Applies the ZCOOL KuaiLe font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+KuaiLe
@@ -93168,8 +94111,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the ZCOOL KuaiLe font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the ZCOOL KuaiLe font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+KuaiLe
@@ -93192,7 +94135,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the ZCOOL QingKe HuangYou font family from Google Fonts to the given [textStyle].
+  /// Applies the ZCOOL QingKe HuangYou font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou
@@ -93252,8 +94196,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the ZCOOL QingKe HuangYou font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the ZCOOL QingKe HuangYou font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou
@@ -93276,7 +94220,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the ZCOOL XiaoWei font family from Google Fonts to the given [textStyle].
+  /// Applies the ZCOOL XiaoWei font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+XiaoWei
@@ -93336,8 +94281,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the ZCOOL XiaoWei font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the ZCOOL XiaoWei font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ZCOOL+XiaoWei
@@ -93360,7 +94305,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Zeyada font family from Google Fonts to the given [textStyle].
+  /// Applies the Zeyada font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Zeyada
@@ -93420,8 +94366,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Zeyada font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Zeyada font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Zeyada
@@ -93444,7 +94390,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Zhi Mang Xing font family from Google Fonts to the given [textStyle].
+  /// Applies the Zhi Mang Xing font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Zhi+Mang+Xing
@@ -93504,8 +94451,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Zhi Mang Xing font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Zhi Mang Xing font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Zhi+Mang+Xing
@@ -93528,7 +94475,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Zilla Slab font family from Google Fonts to the given [textStyle].
+  /// Applies the Zilla Slab font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Zilla+Slab
@@ -93651,8 +94599,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Zilla Slab font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Zilla Slab font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Zilla+Slab
@@ -93675,7 +94623,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Zilla Slab Highlight font family from Google Fonts to the given [textStyle].
+  /// Applies the Zilla Slab Highlight font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Zilla+Slab+Highlight
@@ -93742,8 +94691,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Zilla Slab Highlight font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the Zilla Slab Highlight font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Zilla+Slab+Highlight

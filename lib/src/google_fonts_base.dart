@@ -5,18 +5,19 @@
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
+
+import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
-import 'package:crypto/crypto.dart';
 import 'package:pedantic/pedantic.dart';
 
 import '../google_fonts.dart';
 import 'asset_manifest.dart';
 import 'google_fonts_descriptor.dart';
+import 'google_fonts_family_with_variant.dart';
 import 'google_fonts_variant.dart';
 
 // Keep track of the fonts that are loaded or currently loading in FontLoader
@@ -37,11 +38,11 @@ AssetManifest assetManifest = AssetManifest();
 @visibleForTesting
 void clearCache() => _loadedFonts.clear();
 
-/// Creates a [TextStyle] that either uses the font family for the requested
-/// GoogleFont, or falls back to the pre-bundled font family.
+/// Creates a [TextStyle] that either uses the [fontFamily] for the requested
+/// GoogleFont, or falls back to the pre-bundled [fontFamily].
 ///
 /// This function has a side effect of loading the font into the [FontLoader],
-/// either by network or from the file system.
+/// either by network or from the device file system.
 TextStyle googleFontsTextStyle({
   @required String fontFamily,
   TextStyle textStyle,
@@ -120,8 +121,9 @@ TextStyle googleFontsTextStyle({
 /// this method does nothing as there is no need to load it a second time.
 ///
 /// Otherwise, this method will first check to see if the font is available
-/// as an asset, then on disk. If it isn't, it is fetched via the [fontUrl]
-/// and stored on disk. In all cases, the font is loaded into the [FontLoader].
+/// as an asset, then on the device file system. If it isn't, it is fetched via
+/// the [fontUrl] and stored on device. In all cases, the font is loaded into
+/// the [FontLoader].
 Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final familyWithVariantString = descriptor.familyWithVariant.toString();
   final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
@@ -176,14 +178,16 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     }
   } catch (e) {
     _loadedFonts.remove(familyWithVariantString);
-    print('error: google_fonts was unable to load font $fontName because the '
-        'following exception occured\n$e');
+    print('Error: google_fonts was unable to load font $fontName because the '
+        'following exception occured:\n$e');
   }
 }
 
 /// Loads a font with [FontLoader], given its name and byte-representation.
 Future<void> _loadFontByteData(
-    String familyWithVariantString, Future<ByteData> byteData) async {
+  String familyWithVariantString,
+  Future<ByteData> byteData,
+) async {
   final anyFontDataFound = byteData != null && await byteData != null;
   if (anyFontDataFound) {
     final fontLoader = FontLoader(familyWithVariantString);
@@ -195,12 +199,12 @@ Future<void> _loadFontByteData(
   }
 }
 
-// Returns [GoogleFontsVariant] from [variantsToCompare] that most closely
-// matches [sourceVariant] according to the [_computeMatch] scoring function.
-//
-// This logic is derived from the following section of the minikin library,
-// which is ultimately how flutter handles matching fonts.
-// https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L149
+/// Returns [GoogleFontsVariant] from [variantsToCompare] that most closely
+/// matches [sourceVariant] according to the [_computeMatch] scoring function.
+///
+/// This logic is derived from the following section of the minikin library,
+/// which is ultimately how flutter handles matching fonts.
+/// https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L149
 GoogleFontsVariant _closestMatch(
   GoogleFontsVariant sourceVariant,
   Iterable<GoogleFontsVariant> variantsToCompare,
@@ -220,7 +224,7 @@ GoogleFontsVariant _closestMatch(
 /// Fetches a font with [fontName] from the [fontUrl] and saves it locally if
 /// it is the first time it is being loaded.
 ///
-/// This function can return null if the font fails to load from the URL.
+/// This function can return `null` if the font fails to load from the URL.
 Future<ByteData> _httpFetchFontAndSaveToDevice(
   String fontName,
   GoogleFontsFile file,
@@ -259,7 +263,9 @@ Future<String> get _localPath async {
 
 Future<File> _localFile(String name) async {
   final path = await _localPath;
-  // TODO(clocksmith): what if this file is an otf?
+  // We expect only ttf files to be provided to us by the Google Fonts API.
+  // That's why we can be sure a previously saved Google Font is in the ttf
+  // format instead of, for example, otf.
   return File('$path/$name.ttf');
 }
 
@@ -310,18 +316,10 @@ String _findFamilyWithVariantAssetPath(
 
   for (final assetList in manifestJson.values) {
     for (final String asset in assetList) {
-      String matchingFontSuffix;
-      for (final suffix in ['.ttf', '.otf']) {
-        if (asset.endsWith(suffix)) {
-          matchingFontSuffix = suffix;
-          break;
-        }
-      }
-
-      if (matchingFontSuffix != null) {
-        final assetWithRemovedExtension =
-            asset.substring(0, asset.length - matchingFontSuffix.length);
-        if (assetWithRemovedExtension.endsWith(apiFilenamePrefix)) {
+      for (final matchingSuffix in ['.ttf', '.otf'].where(asset.endsWith)) {
+        final assetWithoutExtension =
+            asset.substring(0, asset.length - matchingSuffix.length);
+        if (assetWithoutExtension.endsWith(apiFilenamePrefix)) {
           return asset;
         }
       }
@@ -331,10 +329,7 @@ String _findFamilyWithVariantAssetPath(
   return null;
 }
 
-bool _isFileSecure(
-  GoogleFontsFile file,
-  Uint8List bytes,
-) {
+bool _isFileSecure(GoogleFontsFile file, Uint8List bytes) {
   final actualFileLength = bytes.length;
   final actualFileHash = sha256.convert(bytes).toString();
   return file.expectedLength == actualFileLength &&

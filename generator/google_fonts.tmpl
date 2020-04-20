@@ -10,22 +10,23 @@ import 'src/google_fonts_base.dart';
 import 'src/google_fonts_descriptor.dart';
 import 'src/google_fonts_variant.dart';
 
-/// A collection of properties used to specify custom behavior of the GoogleFonts library.
+/// A collection of properties used to specify custom behavior of the
+/// GoogleFonts library.
 class _Config {
-  /// Whether or not the GoogleFonts library can make requests to fonts.google.com to retrieve font
-  /// files.
-  var allowHttp = true;
+  /// Whether or not the GoogleFonts library can make requests to
+  /// [fonts.google.com](https://fonts.google.com/) to retrieve font files.
+  var allowRuntimeFetching = true;
 }
 
 class GoogleFonts {
   /// Configuration for the [GoogleFonts] library.
   ///
-  /// Use this to define custom behavior of the GoogleFonts library in your app. For example, if you
-  /// do not want the GoogleFonts library to make any http requests for fonts, add the following
-  /// snippet to your app's `main` method.
+  /// Use this to define custom behavior of the GoogleFonts library in your app.
+  /// For example, if you do not want the GoogleFonts library to make any http
+  /// requests for fonts, add the following snippet to your app's `main` method.
   ///
   /// ```dart
-  /// GoogleFonts.config.allowHttp = false;
+  /// GoogleFonts.config.allowRuntimeFetching = false;
   /// ```
   static final config = _Config();
 
@@ -127,26 +128,27 @@ class GoogleFonts {
     );
   }
 
-    /// Retrieve a text theme by its font family name.
-    ///
-    /// Applies the given font family from Google Fonts to the given [textTheme]
-    /// and returns the resulting [textTheme].
-    ///
-    /// Note: [fontFamily] is case-sensitive.
-    ///
-    /// Parameter [fontFamily] must not be `null`. Throws if no font by name
-    /// [fontFamily] exists.
-    static TextTheme getTextTheme(String fontFamily, [TextTheme textTheme]) {
-      assert(fontFamily != null);
-      final fonts = _asMapOfTextThemes();
-      if (!fonts.containsKey(fontFamily)) {
-        throw Exception("No font family by name '$fontFamily' was found.");
-      }
-      return fonts[fontFamily](textTheme);
+  /// Retrieve a text theme by its font family name.
+  ///
+  /// Applies the given font family from Google Fonts to the given [textTheme]
+  /// and returns the resulting [textTheme].
+  ///
+  /// Note: [fontFamily] is case-sensitive.
+  ///
+  /// Parameter [fontFamily] must not be `null`. Throws if no font by name
+  /// [fontFamily] exists.
+  static TextTheme getTextTheme(String fontFamily, [TextTheme textTheme]) {
+    assert(fontFamily != null);
+    final fonts = _asMapOfTextThemes();
+    if (!fonts.containsKey(fontFamily)) {
+      throw Exception("No font family by name '$fontFamily' was found.");
     }
+    return fonts[fontFamily](textTheme);
+  }
 
   {{#method}}
-  /// Applies the {{fontFamilyDisplay}} font family from Google Fonts to the given [textStyle].
+  /// Applies the {{fontFamilyDisplay}} font family from Google Fonts to the
+  /// given [textStyle].
   ///
   /// See:
   ///  * {{docsUrl}}
@@ -202,8 +204,8 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the {{fontFamilyDisplay}} font family from Google Fonts to every [TextStyle] in the
-  /// given [textTheme].
+  /// Applies the {{fontFamilyDisplay}} font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
   ///
   /// See:
   ///  * {{docsUrl}}

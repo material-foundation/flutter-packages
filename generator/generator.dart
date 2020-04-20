@@ -3,13 +3,17 @@
 // found in the LICENSE file.
 
 import 'dart:io';
+
+import 'package:console/console.dart';
 import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
-import 'package:console/console.dart';
 import 'package:mustache/mustache.dart';
 
 import 'fonts.pb.dart';
 
+const _generatedFilePath = 'lib/google_fonts.dart';
+
+/// Generates the `GoogleFonts` class.
 Future<void> main() async {
   print('Getting latest font directory...');
   final protoUrl = await _getProtoUrl();
@@ -21,7 +25,7 @@ Future<void> main() async {
   print(_success);
 
   print('\nGenerating $_generatedFilePath...');
-  _generateDartFile(fontDirectory);
+  await _writeDartFile(_generateDartCode(fontDirectory));
   print(_success);
 
   print('\nFormatting $_generatedFilePath...');
@@ -29,107 +33,41 @@ Future<void> main() async {
   print(_success);
 }
 
-const _generatedFilePath = 'lib/google_fonts.dart';
 const _success = 'Success!';
 
-void _generateDartFile(Directory fontDirectory) {
-  final outFile = File(_generatedFilePath);
-  final outFileWriteSink = outFile.openWrite();
+/// Gets the latest font directory.
+///
+/// Versioned directories are hosted on the Google Fonts server. We try to fetch
+/// each directory one by one until we hit the last one. We know we reached the
+/// end if requesting the next version results in a 404 response.
+/// Other types of failure should not occur. For example, if the internet
+/// connection gets lost while downloading the directories, we just crash. But
+/// that's okay for now, because the generator is only executed in trusted
+/// environments by individual developers.
+Future<String> _getProtoUrl({int initialVersion = 1}) async {
+  var directoryVersion = initialVersion;
 
-  final methods = <Map<String, dynamic>>[];
-
-  for (final item in fontDirectory.family) {
-    final family = item.name;
-    final familyNoSpaces = family.replaceAll(' ', '');
-    final familyWithPlusSigns = family.replaceAll(' ', '+');
-    final methodName = _familyToMethodName(family);
-
-    const themeParams = [
-      'display4',
-      'display3',
-      'display2',
-      'display1',
-      'headline',
-      'title',
-      'subhead',
-      'body2',
-      'body1',
-      'caption',
-      'button',
-      'subtitle',
-      'overline',
-    ];
-
-    methods.add(<String, dynamic>{
-      'methodName': methodName,
-      'fontFamily': familyNoSpaces,
-      'fontFamilyDisplay': family,
-      'docsUrl': 'https://fonts.google.com/specimen/$familyWithPlusSigns',
-      'fontUrls': [
-        for (final variant in item.fonts)
-          {
-            'variantWeight': variant.weight.start,
-            'variantStyle':
-                variant.italic.start.round() == 1 ? 'italic' : 'normal',
-            'hash': _hashToString(variant.file.hash),
-            'length': variant.file.fileSize,
-          }
-      ],
-      'themeParams': [
-        for (final themeParam in themeParams) {'value': themeParam}
-      ]
-    });
-  }
-
-  final template = Template(
-    File('generator/google_fonts.tmpl').readAsStringSync(),
-    htmlEscapeValues: false,
-  );
-  final result = template.renderString({'method': methods});
-
-  outFileWriteSink.write(result);
-  outFileWriteSink.close();
-}
-
-String _familyToMethodName(String family) {
-  final words = family.split(' ');
-  for (var i = 0; i < words.length; i++) {
-    final word = words[i];
-    final isFirst = i == 0;
-    final isUpperCase = word == word.toUpperCase();
-    words[i] = (isFirst ? word[0].toLowerCase() : word[0].toUpperCase()) +
-        (isUpperCase ? word.substring(1).toLowerCase() : word.substring(1));
-  }
-  return words.join();
-}
-
-Future<String> _getProtoUrl() async {
-  var directoryNumber = 1;
-
-  String url(int directoryNumber) {
-    final paddedNumber = directoryNumber.toString().padLeft(3, '0');
-    return 'http://fonts.gstatic.com/s/f/directory$paddedNumber.pb';
+  String url(int directoryVersion) {
+    final paddedVersion = directoryVersion.toString().padLeft(3, '0');
+    return 'http://fonts.gstatic.com/s/f/directory$paddedVersion.pb';
   }
 
   var didReachLatestUrl = false;
   final httpClient = http.Client();
   while (!didReachLatestUrl) {
-    try {
-      await httpClient.read(url(directoryNumber));
-      directoryNumber += 1;
-    } catch (e) {
+    final response = await httpClient.get(url(directoryVersion));
+    if (response.statusCode == 200) {
+      directoryVersion += 1;
+    } else if (response.statusCode == 404) {
       didReachLatestUrl = true;
-      directoryNumber -= 1;
+      directoryVersion -= 1;
+    } else {
+      throw Exception('Request failed: $response');
     }
   }
   httpClient.close();
 
-  return url(directoryNumber);
-}
-
-Future<Directory> _readFontsProtoData(String protoUrl) async {
-  final fontsProtoFile = await http.get(protoUrl);
-  return Directory.fromBuffer(fontsProtoFile.bodyBytes);
+  return url(directoryVersion);
 }
 
 Future<void> _verifyUrls(Directory fontDirectory) async {
@@ -171,4 +109,78 @@ String _hashToString(List<int> bytes) {
     fileName += convertedByte;
   }
   return fileName;
+}
+
+String _generateDartCode(Directory fontDirectory) {
+  final methods = <Map<String, dynamic>>[];
+
+  for (final item in fontDirectory.family) {
+    final family = item.name;
+    final familyNoSpaces = family.replaceAll(' ', '');
+    final familyWithPlusSigns = family.replaceAll(' ', '+');
+    final methodName = _familyToMethodName(family);
+
+    const themeParams = [
+      'display4',
+      'display3',
+      'display2',
+      'display1',
+      'headline',
+      'title',
+      'subhead',
+      'body2',
+      'body1',
+      'caption',
+      'button',
+      'subtitle',
+      'overline',
+    ];
+
+    methods.add(<String, dynamic>{
+      'methodName': methodName,
+      'fontFamily': familyNoSpaces,
+      'fontFamilyDisplay': family,
+      'docsUrl': 'https://fonts.google.com/specimen/$familyWithPlusSigns',
+      'fontUrls': [
+        for (final variant in item.fonts)
+          {
+            'variantWeight': variant.weight.start,
+            'variantStyle':
+                variant.italic.start.round() == 1 ? 'italic' : 'normal',
+            'hash': _hashToString(variant.file.hash),
+            'length': variant.file.fileSize,
+          },
+      ],
+      'themeParams': [
+        for (final themeParam in themeParams) {'value': themeParam},
+      ],
+    });
+  }
+
+  final template = Template(
+    File('generator/google_fonts.tmpl').readAsStringSync(),
+    htmlEscapeValues: false,
+  );
+  return template.renderString({'method': methods});
+}
+
+Future<void> _writeDartFile(String content) async {
+  await File(_generatedFilePath).writeAsString(content);
+}
+
+String _familyToMethodName(String family) {
+  final words = family.split(' ');
+  for (var i = 0; i < words.length; i++) {
+    final word = words[i];
+    final isFirst = i == 0;
+    final isUpperCase = word == word.toUpperCase();
+    words[i] = (isFirst ? word[0].toLowerCase() : word[0].toUpperCase()) +
+        (isUpperCase ? word.substring(1).toLowerCase() : word.substring(1));
+  }
+  return words.join();
+}
+
+Future<Directory> _readFontsProtoData(String protoUrl) async {
+  final fontsProtoFile = await http.get(protoUrl);
+  return Directory.fromBuffer(fontsProtoFile.bodyBytes);
 }
