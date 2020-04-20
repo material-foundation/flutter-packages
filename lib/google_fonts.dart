@@ -10,19 +10,20 @@ import 'src/google_fonts_base.dart';
 import 'src/google_fonts_descriptor.dart';
 import 'src/google_fonts_variant.dart';
 
-/// A collection of properties used to specify custom behavior of the GoogleFonts library.
+/// A collection of properties used to specify custom behavior of the
+/// GoogleFonts library.
 class _Config {
-  /// Whether or not the GoogleFonts library can make requests to fonts.google.com to retrieve font
-  /// files.
+  /// Whether or not the GoogleFonts library can make requests to
+  /// [fonts.google.com](https://fonts.google.com/) to retrieve font files.
   var allowHttp = true;
 }
 
 class GoogleFonts {
   /// Configuration for the [GoogleFonts] library.
   ///
-  /// Use this to define custom behavior of the GoogleFonts library in your app. For example, if you
-  /// do not want the GoogleFonts library to make any http requests for fonts, add the following
-  /// snippet to your app's `main` method.
+  /// Use this to define custom behavior of the GoogleFonts library in your app.
+  /// For example, if you do not want the GoogleFonts library to make any http
+  /// requests for fonts, add the following snippet to your app's `main` method.
   ///
   /// ```dart
   /// GoogleFonts.config.allowHttp = false;
