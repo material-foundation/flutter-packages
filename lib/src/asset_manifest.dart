@@ -6,6 +6,8 @@ import 'dart:convert' as convert;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+// A class to obtain and memoize the app's asset manifest. Used to check whether
+// a font is provided as an asset.
 class AssetManifest {
   AssetManifest({this.enableCache = true});
 
