@@ -1,3 +1,7 @@
+## [0.6.1] - 2020-04-17
+
+* Memoize asset manifest.
+
 ## [0.6.0] - 2020-04-16
 
 * Rename `config.allowHttp` to `config.allowRuntimeFetching`.
