@@ -178,7 +178,7 @@ String _familyToMethodName(String family) {
     final word = words[i];
     final isFirst = i == 0;
     final isUpperCase = word == word.toUpperCase();
-    words[i] = (isFirst ? word.toLowerCase() : word.toUpperCase()) +
+    words[i] = (isFirst ? word[0].toLowerCase() : word[0].toUpperCase()) +
         (isUpperCase ? word.substring(1).toLowerCase() : word.substring(1));
   }
   return words.join();
