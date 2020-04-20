@@ -260,7 +260,7 @@ Future<String> get _localPath async {
 
 Future<File> _localFile(String name) async {
   final path = await _localPath;
-  // TODO(clocksmith): what if this file is an otf?
+  // TODO(clocksmith): What if this file is an otf?
   return File('$path/$name.ttf');
 }
 
