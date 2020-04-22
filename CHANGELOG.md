@@ -1,6 +1,22 @@
-## [0.7.0] - 2020-04-22
+## [1.0.0] - 2020-04-22
 
-* Add variable fonts like `Inter` and `Fira Code`.
+* Added the following variable fonts:
+  * Bellota
+  * Bellota Text
+  * Comic Neue
+  * Crimson Pro
+  * Fira Code
+  * Gotu
+  * Hepta Slab
+  * Inria Sans
+  * Inter
+  * Literata
+  * Manrope
+  * Markazi Text
+  * Public Sans
+  * Sen
+  * Spartan
+  * Viaoda Libre
 
 ## [0.6.2] - 2020-04-17
 
