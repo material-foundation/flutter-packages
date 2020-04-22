@@ -679,7 +679,7 @@ void main() {
       expect(dynamicFont.fontFamily, isNotNull);
     }
 
-    expect(allFonts.length, greaterThan(900));
+    expect(allFonts, isNotEmpty);
   });
 
   testWidgets('getFont returns the correct font', (tester) async {
@@ -698,7 +698,7 @@ void main() {
       expect(dynamicFont.bodyText1.fontFamily, isNotNull);
     }
 
-    expect(allFonts.length, greaterThan(900));
+    expect(allFonts, isNotEmpty);
   });
 
   testWidgets('getTextTheme returns the correct text theme', (tester) async {
