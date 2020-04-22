@@ -1,3 +1,7 @@
+## [0.7.0] - 2020-04-22
+
+* Add variable fonts like `Inter` and `Fira Code`.
+
 ## [0.6.2] - 2020-04-17
 
 * Clean up code.
