@@ -1,4 +1,4 @@
-## [1.0.0] - 2020-04-22
+## [0.7.0] - 2020-04-22
 
 * Added the following variable fonts:
   * Bellota
