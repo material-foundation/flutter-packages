@@ -670,11 +670,35 @@ void main() {
   // Method tests //
   //////////////////
 
+  testWidgets('getFont works with all fonts in GoogleFonts.asMap',
+      (tester) async {
+    final allFonts = GoogleFonts.asMap().keys;
+
+    for (var fontFamily in allFonts) {
+      final dynamicFont = GoogleFonts.getFont(fontFamily);
+      expect(dynamicFont.fontFamily, isNotNull);
+    }
+
+    expect(allFonts, isNotEmpty);
+  });
+
   testWidgets('getFont returns the correct font', (tester) async {
     final dynamicFont = GoogleFonts.getFont('Roboto Mono');
     final methodFont = GoogleFonts.robotoMono();
 
     expect(dynamicFont, equals(methodFont));
+  });
+
+  testWidgets('getTextTheme works with all fonts in GoogleFonts.asMap',
+      (tester) async {
+    final allFonts = GoogleFonts.asMap().keys;
+
+    for (var fontFamily in allFonts) {
+      final dynamicFont = GoogleFonts.getTextTheme(fontFamily);
+      expect(dynamicFont.bodyText1.fontFamily, isNotNull);
+    }
+
+    expect(allFonts, isNotEmpty);
   });
 
   testWidgets('getTextTheme returns the correct text theme', (tester) async {
