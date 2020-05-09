@@ -121,18 +121,18 @@ String _generateDartCode(Directory fontDirectory) {
     final methodName = _familyToMethodName(family);
 
     const themeParams = [
-      'display4',
-      'display3',
-      'display2',
-      'display1',
-      'headline',
-      'title',
-      'subhead',
-      'body2',
-      'body1',
+      'headline1',
+      'headline2',
+      'headline3',
+      'headline4',
+      'headline5',
+      'headline6',
+      'subtitle1',
+      'subtitle2',
+      'bodyText1',
+      'bodyText2',
       'caption',
       'button',
-      'subtitle',
       'overline',
     ];
 
