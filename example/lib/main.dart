@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle display1 = Theme.of(context).textTheme.display1;
+    final TextStyle display1 = Theme.of(context).textTheme.headline4;
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),

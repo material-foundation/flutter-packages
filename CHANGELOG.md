@@ -1,3 +1,9 @@
+## [1.1.0] - 2020-05-11
+
+* Increase the flutter SDK dependency to version `1.17` (latest stable). This is needed for updated 
+  text theme names and a fix in the engine.
+* Update text theme names. 
+
 ## [1.0.0] - 2020-04-22
 
 * Removed beta notice from README.

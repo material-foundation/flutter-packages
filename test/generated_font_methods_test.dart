@@ -630,40 +630,40 @@ void main() {
     final textTheme = GoogleFonts.oswaldTextTheme();
     final expectedFamilyWithVariant = 'Oswald_regular';
 
-    expect(textTheme.display4.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.display3.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.display2.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.display1.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.headline.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.title.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.subhead.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.body2.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.body1.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headline1.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headline2.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headline3.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headline4.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headline5.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headline6.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.subtitle1.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.subtitle2.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.bodyText1.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.bodyText2.fontFamily, equals(expectedFamilyWithVariant));
     expect(textTheme.caption.fontFamily, equals(expectedFamilyWithVariant));
     expect(textTheme.button.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.subtitle.fontFamily, equals(expectedFamilyWithVariant));
     expect(textTheme.overline.fontFamily, equals(expectedFamilyWithVariant));
   });
 
   testWidgets('TextTheme method works with a base textTheme', (tester) async {
     // In app this is usually obtained by Theme.of(context).textTheme.
     final baseTextTheme = TextTheme(
-      display2: TextStyle(fontWeight: FontWeight.w700),
-      body1: GoogleFonts.acme(),
-      subtitle: TextStyle(fontStyle: FontStyle.italic),
+      headline3: TextStyle(fontWeight: FontWeight.w700),
+      bodyText2: GoogleFonts.acme(),
+      subtitle2: TextStyle(fontStyle: FontStyle.italic),
     );
 
     final textTheme = GoogleFonts.oswaldTextTheme(baseTextTheme);
     final expectedFamilyWithVariant = 'Oswald_regular';
 
     // Default is preserved.
-    expect(textTheme.display1.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headline4.fontFamily, equals(expectedFamilyWithVariant));
     // Different font family gets overridden by oswald.
-    expect(textTheme.body1.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.bodyText2.fontFamily, equals(expectedFamilyWithVariant));
     // Weight is preserved.
-    expect(textTheme.display2.fontWeight, equals(FontWeight.w700));
+    expect(textTheme.headline3.fontWeight, equals(FontWeight.w700));
     // Style is preserved.
-    expect(textTheme.subtitle.fontStyle, equals(FontStyle.italic));
+    expect(textTheme.subtitle2.fontStyle, equals(FontStyle.italic));
   });
 
   //////////////////
