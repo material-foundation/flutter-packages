@@ -4,12 +4,13 @@
 
 import 'package:flutter/material.dart';
 
-bool _isLargeScreen(BuildContext context) {
-  return MediaQuery.of(context).size.width > 960.0;
-}
+typedef NavigationType NavigationTypeResolver(BuildContext context);
 
-bool _isMediumScreen(BuildContext context) {
-  return MediaQuery.of(context).size.width > 640.0;
+// The type of navigation to configure to.
+enum NavigationType {
+  bottomNavigation,
+  navigationRail,
+  drawer,
 }
 
 /// See bottomNavigationBarItem or NavigationRailDestination
@@ -34,6 +35,7 @@ class AdaptiveNavigationScaffold extends StatefulWidget {
   final List<AdaptiveScaffoldDestination> destinations;
   final ValueChanged<int> onNavigationIndexChange;
   final FloatingActionButton floatingActionButton;
+  final NavigationTypeResolver navigationTypeResolver;
 
   AdaptiveNavigationScaffold({
     this.title,
@@ -42,6 +44,7 @@ class AdaptiveNavigationScaffold extends StatefulWidget {
     @required this.destinations,
     this.onNavigationIndexChange,
     this.floatingActionButton,
+    this.navigationTypeResolver,
   })  : assert(currentIndex != null),
         assert(destinations != null);
 
@@ -52,105 +55,120 @@ class AdaptiveNavigationScaffold extends StatefulWidget {
 
 class _AdaptiveNavigationScaffoldState
     extends State<AdaptiveNavigationScaffold> {
+  NavigationType _defaultNavigationTypeResolver(BuildContext context) {
+    if (_isLargeScreen(context)) {
+      return NavigationType.drawer;
+    } else if (_isMediumScreen(context)) {
+      return NavigationType.navigationRail;
+    } else {
+      return NavigationType.bottomNavigation;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    // Show a Drawer
-    if (_isLargeScreen(context)) {
-      return Row(
-        children: [
-          Drawer(
-            child: Column(
-              children: [
-                DrawerHeader(
-                  child: Center(
-                    child: widget.title,
-                  ),
+    final NavigationTypeResolver navigationTypeResolver =
+        widget.navigationTypeResolver ?? _defaultNavigationTypeResolver;
+    switch (navigationTypeResolver(context)) {
+      case NavigationType.bottomNavigation:
+        // Show a Scaffold with a BottomNavigationBar.
+        return Scaffold(
+          body: widget.body,
+          appBar: AppBar(title: widget.title),
+          bottomNavigationBar: BottomNavigationBar(
+            items: [
+              for (final destination in widget.destinations)
+                BottomNavigationBarItem(
+                  icon: Icon(destination.icon),
+                  title: Text(destination.title),
                 ),
-                for (var d in widget.destinations)
-                  ListTile(
-                    leading: Icon(d.icon),
-                    title: Text(d.title),
-                    selected:
-                        widget.destinations.indexOf(d) == widget.currentIndex,
-                    onTap: () => _destinationTapped(d),
-                  ),
-              ],
-            ),
+            ],
+            currentIndex: widget.currentIndex,
+            onTap: widget.onNavigationIndexChange,
           ),
-          VerticalDivider(
-            width: 1,
-            thickness: 1,
-            color: Colors.grey[300],
+          floatingActionButton: widget.floatingActionButton,
+        );
+      case NavigationType.navigationRail:
+        // Show a Scaffold with a body containing a NavigationRail.
+        return Scaffold(
+          appBar: AppBar(
+            title: widget.title,
           ),
-          Expanded(
-            child: Scaffold(
-              appBar: AppBar(),
-              body: widget.body,
-              floatingActionButton: widget.floatingActionButton,
-            ),
+          body: Row(
+            children: [
+              NavigationRail(
+                leading: widget.floatingActionButton,
+                destinations: [
+                  for (final destination in widget.destinations)
+                    NavigationRailDestination(
+                      icon: Icon(destination.icon),
+                      label: Text(destination.title),
+                    ),
+                ],
+                selectedIndex: widget.currentIndex,
+                onDestinationSelected: widget.onNavigationIndexChange ?? (_) {},
+              ),
+              VerticalDivider(
+                width: 1,
+                thickness: 1,
+              ),
+              Expanded(
+                child: widget.body,
+              ),
+            ],
           ),
-        ],
-      );
-    }
-
-    // Show a navigation rail
-    if (_isMediumScreen(context)) {
-      return Scaffold(
-        appBar: AppBar(
-          title: widget.title,
-        ),
-        body: Row(
+        );
+      case NavigationType.drawer:
+        // Show a Row containing a Drawer and Scaffold.
+        return Row(
           children: [
-            NavigationRail(
-              leading: widget.floatingActionButton,
-              destinations: [
-                ...widget.destinations.map(
-                  (d) => NavigationRailDestination(
-                    icon: Icon(d.icon),
-                    label: Text(d.title),
+            Drawer(
+              child: Column(
+                children: [
+                  DrawerHeader(
+                    child: Center(
+                      child: widget.title,
+                    ),
                   ),
-                ),
-              ],
-              selectedIndex: widget.currentIndex,
-              onDestinationSelected: widget.onNavigationIndexChange ?? (_) {},
+                  for (final destination in widget.destinations)
+                    ListTile(
+                      leading: Icon(destination.icon),
+                      title: Text(destination.title),
+                      selected: widget.destinations.indexOf(destination) ==
+                          widget.currentIndex,
+                      onTap: () => _destinationTapped(destination),
+                    ),
+                ],
+              ),
             ),
             VerticalDivider(
               width: 1,
               thickness: 1,
-              color: Colors.grey[300],
             ),
             Expanded(
-              child: widget.body,
+              child: Scaffold(
+                appBar: AppBar(),
+                body: widget.body,
+                floatingActionButton: widget.floatingActionButton,
+              ),
             ),
           ],
-        ),
-      );
+        );
     }
-
-    // Show a bottom app bar
-    return Scaffold(
-      body: widget.body,
-      appBar: AppBar(title: widget.title),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          ...widget.destinations.map(
-            (d) => BottomNavigationBarItem(
-              icon: Icon(d.icon),
-              title: Text(d.title),
-            ),
-          ),
-        ],
-        currentIndex: widget.currentIndex,
-        onTap: widget.onNavigationIndexChange,
-      ),
-      floatingActionButton: widget.floatingActionButton,
-    );
   }
 
   void _destinationTapped(AdaptiveScaffoldDestination destination) {
-    var idx = widget.destinations.indexOf(destination);
-    if (idx != widget.currentIndex) {
-      widget.onNavigationIndexChange(idx);
+    final index = widget.destinations.indexOf(destination);
+    if (index != widget.currentIndex) {
+      widget.onNavigationIndexChange(index);
     }
   }
+}
+
+bool _isLargeScreen(BuildContext context) {
+  return MediaQuery.of(context).size.width > 960.0;
+}
+
+bool _isMediumScreen(BuildContext context) {
+  return MediaQuery.of(context).size.width > 640.0;
 }
