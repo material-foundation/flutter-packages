@@ -28,7 +28,7 @@ class AdaptiveScaffoldDestination {
 /// A widget that adapts to the current display size, displaying a [Drawer],
 /// [NavigationRail], or [BottomNavigationBar]. Navigation destinations are
 /// defined in the [destinations] parameter.
-class AdaptiveNavigationScaffold extends StatefulWidget {
+class AdaptiveNavigationScaffold extends StatelessWidget {
   final Widget title;
   final Widget body;
   final int currentIndex;
@@ -37,7 +37,8 @@ class AdaptiveNavigationScaffold extends StatefulWidget {
   final FloatingActionButton floatingActionButton;
   final NavigationTypeResolver navigationTypeResolver;
 
-  AdaptiveNavigationScaffold({
+  const AdaptiveNavigationScaffold({
+    Key key,
     this.title,
     this.body,
     @required this.currentIndex,
@@ -46,15 +47,9 @@ class AdaptiveNavigationScaffold extends StatefulWidget {
     this.floatingActionButton,
     this.navigationTypeResolver,
   })  : assert(currentIndex != null),
-        assert(destinations != null);
+        assert(destinations != null),
+        super(key: key);
 
-  @override
-  _AdaptiveNavigationScaffoldState createState() =>
-      _AdaptiveNavigationScaffoldState();
-}
-
-class _AdaptiveNavigationScaffoldState
-    extends State<AdaptiveNavigationScaffold> {
   NavigationType _defaultNavigationTypeResolver(BuildContext context) {
     if (_isLargeScreen(context)) {
       return NavigationType.drawer;
@@ -68,52 +63,52 @@ class _AdaptiveNavigationScaffoldState
   @override
   Widget build(BuildContext context) {
     final NavigationTypeResolver navigationTypeResolver =
-        widget.navigationTypeResolver ?? _defaultNavigationTypeResolver;
+        this.navigationTypeResolver ?? _defaultNavigationTypeResolver;
     switch (navigationTypeResolver(context)) {
       case NavigationType.bottomNavigation:
         // Show a Scaffold with a BottomNavigationBar.
         return Scaffold(
-          body: widget.body,
-          appBar: AppBar(title: widget.title),
+          body: body,
+          appBar: AppBar(title: title),
           bottomNavigationBar: BottomNavigationBar(
             items: [
-              for (final destination in widget.destinations)
+              for (final destination in destinations)
                 BottomNavigationBarItem(
                   icon: Icon(destination.icon),
                   title: Text(destination.title),
                 ),
             ],
-            currentIndex: widget.currentIndex,
-            onTap: widget.onNavigationIndexChange,
+            currentIndex: currentIndex,
+            onTap: onNavigationIndexChange,
           ),
-          floatingActionButton: widget.floatingActionButton,
+          floatingActionButton: floatingActionButton,
         );
       case NavigationType.navigationRail:
         // Show a Scaffold with a body containing a NavigationRail.
         return Scaffold(
           appBar: AppBar(
-            title: widget.title,
+            title: title,
           ),
           body: Row(
             children: [
               NavigationRail(
-                leading: widget.floatingActionButton,
+                leading: floatingActionButton,
                 destinations: [
-                  for (final destination in widget.destinations)
+                  for (final destination in destinations)
                     NavigationRailDestination(
                       icon: Icon(destination.icon),
                       label: Text(destination.title),
                     ),
                 ],
-                selectedIndex: widget.currentIndex,
-                onDestinationSelected: widget.onNavigationIndexChange ?? (_) {},
+                selectedIndex: currentIndex,
+                onDestinationSelected: onNavigationIndexChange ?? (_) {},
               ),
               VerticalDivider(
                 width: 1,
                 thickness: 1,
               ),
               Expanded(
-                child: widget.body,
+                child: body,
               ),
             ],
           ),
@@ -127,15 +122,15 @@ class _AdaptiveNavigationScaffoldState
                 children: [
                   DrawerHeader(
                     child: Center(
-                      child: widget.title,
+                      child: title,
                     ),
                   ),
-                  for (final destination in widget.destinations)
+                  for (final destination in destinations)
                     ListTile(
                       leading: Icon(destination.icon),
                       title: Text(destination.title),
-                      selected: widget.destinations.indexOf(destination) ==
-                          widget.currentIndex,
+                      selected:
+                          destinations.indexOf(destination) == currentIndex,
                       onTap: () => _destinationTapped(destination),
                     ),
                 ],
@@ -148,8 +143,8 @@ class _AdaptiveNavigationScaffoldState
             Expanded(
               child: Scaffold(
                 appBar: AppBar(),
-                body: widget.body,
-                floatingActionButton: widget.floatingActionButton,
+                body: body,
+                floatingActionButton: floatingActionButton,
               ),
             ),
           ],
@@ -158,9 +153,9 @@ class _AdaptiveNavigationScaffoldState
   }
 
   void _destinationTapped(AdaptiveScaffoldDestination destination) {
-    final index = widget.destinations.indexOf(destination);
-    if (index != widget.currentIndex) {
-      widget.onNavigationIndexChange(index);
+    final index = destinations.indexOf(destination);
+    if (index != currentIndex) {
+      onNavigationIndexChange(index);
     }
   }
 }
