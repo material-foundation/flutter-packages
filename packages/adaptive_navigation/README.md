@@ -1,6 +1,6 @@
-# adaptive_navigation_scaffold
+# adaptive_navigation
 
-A package that contains a component for adaptive switching between the Navigation Rail and Bottom Navigation Bar.
+A package that contains a component for adaptive switching between the Bottom Navigation Bar, Navigation Rail, and Drawer.
 
 NOTE: This is an opinionated implementation of adaptive navigation in Material. While there are some
 basic options for switching the adaptive behavior, it is not meant to support advanced or custom
