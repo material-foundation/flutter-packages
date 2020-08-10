@@ -3,12 +3,10 @@ import 'package:flutter/material.dart';
 
 class CustomScaffoldDemo extends StatefulWidget {
   @override
-  _CustomScaffoldDemoState createState() =>
-      _CustomScaffoldDemoState();
+  _CustomScaffoldDemoState createState() => _CustomScaffoldDemoState();
 }
 
-class _CustomScaffoldDemoState
-    extends State<CustomScaffoldDemo> {
+class _CustomScaffoldDemoState extends State<CustomScaffoldDemo> {
   int _destinationCount = 5;
 
   @override
@@ -16,11 +14,11 @@ class _CustomScaffoldDemoState
     return AdaptiveNavigationScaffold(
       selectedIndex: 0,
       destinations: _allDestinations.sublist(0, _destinationCount),
-      appBar: AppBar(title: Text('Custom Demo')),
+      appBar: AppBar(title: const Text('Custom Demo')),
       body: _body(),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: () { },
+        onPressed: () {},
       ),
       navigationTypeResolver: (context) {
         if (MediaQuery.of(context).size.width > 600) {
@@ -37,12 +35,12 @@ class _CustomScaffoldDemoState
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('''
+          const Text('''
           This is a custom behavior of the AdaptiveNavigationScaffold.
           It switches between bottom navigation and a drawer.
           Resize the window to switch between the navigation types.
           '''),
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
           Slider(
             min: 2,
             max: _allDestinations.length.toDouble(),
@@ -55,10 +53,10 @@ class _CustomScaffoldDemoState
               });
             },
           ),
-          Text('Destination Count'),
-          SizedBox(height: 40),
+          const Text('Destination Count'),
+          const SizedBox(height: 40),
           RaisedButton(
-            child: Text('BACK'),
+            child: const Text('BACK'),
             onPressed: () {
               Navigator.of(context).pushReplacementNamed('/');
             },

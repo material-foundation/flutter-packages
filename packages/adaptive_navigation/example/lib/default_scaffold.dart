@@ -3,12 +3,10 @@ import 'package:flutter/material.dart';
 
 class DefaultScaffoldDemo extends StatefulWidget {
   @override
-  _DefaultScaffoldDemoState createState() =>
-      _DefaultScaffoldDemoState();
+  _DefaultScaffoldDemoState createState() => _DefaultScaffoldDemoState();
 }
 
-class _DefaultScaffoldDemoState
-    extends State<DefaultScaffoldDemo> {
+class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
   int _destinationCount = 5;
   bool _fabInRail = false;
 
@@ -21,7 +19,7 @@ class _DefaultScaffoldDemoState
       body: _body(),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: () {  },
+        onPressed: () {},
       ),
       fabInRail: _fabInRail,
     );
@@ -32,12 +30,12 @@ class _DefaultScaffoldDemoState
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('''
+          const Text('''
           This is the default behavior of the AdaptiveNavigationScaffold.
           It switches between bottom navigation, navigation rail, and a permanent drawer.
           Resize the window to switch between the navigation types.
           '''),
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
           Slider(
             min: 2,
             max: _allDestinations.length.toDouble(),
@@ -50,8 +48,8 @@ class _DefaultScaffoldDemoState
               });
             },
           ),
-          Text('Destination Count'),
-          SizedBox(height: 40),
+          const Text('Destination Count'),
+          const SizedBox(height: 40),
           Switch(
             value: _fabInRail,
             onChanged: (value) {
@@ -60,10 +58,10 @@ class _DefaultScaffoldDemoState
               });
             },
           ),
-          Text('fabInRail'),
-          SizedBox(height: 40),
+          const Text('fabInRail'),
+          const SizedBox(height: 40),
           RaisedButton(
-            child: Text('BACK'),
+            child: const Text('BACK'),
             onPressed: () {
               Navigator.of(context).pushReplacementNamed('/');
             },
