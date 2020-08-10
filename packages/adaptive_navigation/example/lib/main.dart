@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:adaptive_navigation/scaffold.dart';
+
+import 'custom_scaffold.dart';
+import 'default_scaffold.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,24 +11,47 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Adaptive Navigation Scaffold',
-      home: AdaptiveNavigationScaffoldDemo(),
+      title: 'Adaptive Navigation Scaffold Demo',
+      home: DemoSelector(),
     );
   }
 }
 
-class AdaptiveNavigationScaffoldDemo extends StatelessWidget {
+class DemoSelector extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return AdaptiveNavigationScaffold(
-      currentIndex: 0,
-      destinations: [
-        AdaptiveScaffoldDestination(title: 'Home', icon: Icons.home),
-        AdaptiveScaffoldDestination(title: 'Settings', icon: Icons.settings),
-      ],
+    return Scaffold(
       body: Center(
-        child: Text(
-            'Resize the window to switch between the Navigation Rail and Bottom Navigation'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            RaisedButton(
+              child: Text('Default Scaffold'),
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return DefaultScaffoldDemo();
+                    },
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: 16),
+            RaisedButton(
+              child: Text('Custom Scaffold'),
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return CustomScaffoldDemo();
+                    },
+                  ),
+                );
+              },
+            )
+          ],
+        ),
       ),
     );
   }
