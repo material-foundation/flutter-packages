@@ -1,6 +1,6 @@
-import 'package:adaptive_navigation_example/custom_scaffold.dart';
 import 'package:flutter/material.dart';
 
+import 'custom_scaffold.dart';
 import 'default_scaffold.dart';
 
 void main() {
