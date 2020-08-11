@@ -2,6 +2,8 @@
 
 A package that contains a component for adaptive switching between the Bottom Navigation Bar, Navigation Rail, and Drawer.
 
+Demo: https://adaptive-navigation.web.app/#/
+
 NOTE: This is an opinionated implementation of adaptive navigation in Material. While there are some
 basic options for switching the adaptive behavior, it is not meant to support advanced or custom
 configurations. For example, if you need an extended Navigation Rail or a Drawer with custom
