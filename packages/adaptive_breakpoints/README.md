@@ -1,16 +1,79 @@
 # adaptive_breakpoints
 
-A new Flutter project.
+The `adaptive_breakpoints` package for Flutter allows you to use the adaptive [breakpoints entries](https://material.io/design/layout/responsive-layout-grid.html#breakpoints) from the [Material Design System](https://material.io/).
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This package provides the material breakpoint entries for adaptive/responsive development in Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+Firs, add the `adaptive_breakpoints` package to your pubspec dependencies.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+To import `adaptive_breakpoints`:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+import 'package:adaptive_breakpoints/adaptive_breakpoints.dart
+```
+
+Here is an example of how to implement the Adaptive Breakpoint entries in Flutter Development.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: AdaptiveContainer(
+          windowLimit: AdaptiveWindow.m,
+          child: SizedBox(
+            height: 300,
+            child: Text('Adaptive Container'),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class AdaptiveContainer extends StatelessWidget {
+  final AdaptiveWindow windowLimit;
+  final Widget child;
+
+  const AdaptiveContainer({
+    @required this.windowLimit,
+    @required this.child,
+  })  : assert(windowLimit != null),
+        assert(child != null);
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        BreakpointSystemEntry entry =
+            getBreakpointEntry(MediaQuery.of(context).size);
+        if (entry.window == windowLimit) {
+          return Container(
+            constraints: BoxConstraints(
+              maxWidth: entry.window.longestWidth,
+              minWidth: entry.window.shortestWidth,
+            ),
+            width: MediaQuery.of(context).size.width - (entry.margins * 2),
+            margin: EdgeInsets.symmetric(horizontal: entry.margins),
+            color: Colors.pink,
+            child: child,
+          );
+        } else {
+          return SizedBox();
+        }
+      },
+    );
+  }
+}
+
+```

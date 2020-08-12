@@ -25,4 +25,4 @@ repo.
 
 1. Make sure all the existing tests are passing by using the following command (from the root of the project): `$ flutter test test/`.
 1. Create a PR to merge the branch on your fork into `dart-code-viewer/master`.
-1. Add `JoseAlba` as reviewers on the PR. We will take a look and add any comments. When the PR is ready to be merged, we will merge it and update the package.
+1. Add `JoseAlba` as reviewer on the PR. I will take a look and add any comments. When the PR is ready to be merged, we will merge it and update the package.

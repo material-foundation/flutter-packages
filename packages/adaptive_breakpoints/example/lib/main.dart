@@ -6,56 +6,53 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      home: Scaffold(
+        body: AdaptiveContainer(
+          windowLimit: AdaptiveWindow.m,
+          child: SizedBox(
+            height: 300,
+            child: Text('Adaptive Container'),
+          ),
+        ),
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
+class AdaptiveContainer extends StatelessWidget {
+  final AdaptiveWindow windowLimit;
+  final Widget child;
 
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  const AdaptiveContainer({
+    @required this.windowLimit,
+    @required this.child,
+  })  : assert(windowLimit != null),
+        assert(child != null);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Row(),
-            Wrap(),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        BreakpointSystemEntry entry =
+            getBreakpointEntry(MediaQuery.of(context).size);
+        if (entry.window == windowLimit) {
+          return Container(
+            constraints: BoxConstraints(
+              maxWidth: entry.window.longestWidth,
+              minWidth: entry.window.shortestWidth,
+            ),
+            width: MediaQuery.of(context).size.width - (entry.margins * 2),
+            margin: EdgeInsets.symmetric(horizontal: entry.margins),
+            color: Colors.pink,
+            child: child,
+          );
+        } else {
+          return SizedBox();
+        }
+      },
     );
   }
 }
