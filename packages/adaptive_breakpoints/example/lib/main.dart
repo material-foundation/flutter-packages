@@ -68,7 +68,6 @@ class AdaptiveContainer extends StatelessWidget {
             ),
             width: MediaQuery.of(context).size.width - (entry.margins * 2),
             margin: EdgeInsets.symmetric(horizontal: entry.margins),
-            color: Colors.pink,
             child: child,
           );
         } else {
