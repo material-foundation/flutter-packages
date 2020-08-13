@@ -16,11 +16,11 @@ class AdaptiveContainer extends StatelessWidget {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         BreakpointSystemEntry entry = getBreakpointEntry(context);
-        if (entry.window == windowLimit) {
+        if (entry.adaptiveWindowType == windowLimit) {
           return Container(
             constraints: BoxConstraints(
-              minWidth: entry.window.widthRangeValues.start,
-              maxWidth: entry.window.widthRangeValues.end,
+              minWidth: entry.adaptiveWindowType.widthRangeValues.start,
+              maxWidth: entry.adaptiveWindowType.widthRangeValues.end,
             ),
             width: MediaQuery.of(context).size.width - (entry.margins * 2),
             margin: EdgeInsets.symmetric(horizontal: entry.margins),

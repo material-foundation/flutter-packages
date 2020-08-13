@@ -25,6 +25,10 @@ Try it yourself with this [dartpad](https://dartpad.dev/be6d3b390933220daf14bd4a
 import 'package:flutter/material.dart';
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 
+void main() {
+  runApp(MyApp());
+}
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -34,11 +38,11 @@ class MyApp extends StatelessWidget {
           children: [
             AdaptiveContainer(
               windowLimit: AdaptiveWindowType.xs,
-              child: Text('This is a extra small window'),
+              child: Text('This is an extra small window'),
             ),
             AdaptiveContainer(
               windowLimit: AdaptiveWindowType.s,
-              child: Text('This is a small screen'),
+              child: Text('This is a small window'),
             ),
             AdaptiveContainer(
               windowLimit: AdaptiveWindowType.m,
@@ -50,7 +54,7 @@ class MyApp extends StatelessWidget {
             ),
             AdaptiveContainer(
               windowLimit: AdaptiveWindowType.xl,
-              child: Text('This is a extra large window'),
+              child: Text('This is an extra large window'),
             ),
           ],
         ),
@@ -76,11 +80,11 @@ class AdaptiveContainer extends StatelessWidget {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         BreakpointSystemEntry entry = getBreakpointEntry(context);
-        if (entry.window == windowLimit) {
+        if (entry.adaptiveWindowType == windowLimit) {
           return Container(
             constraints: BoxConstraints(
-              minWidth: entry.window.widthRangeValues.start,
-              maxWidth: entry.window.widthRangeValues.end,
+              minWidth: entry.adaptiveWindowType.widthRangeValues.start,
+              maxWidth: entry.adaptiveWindowType.widthRangeValues.end,
             ),
             width: MediaQuery.of(context).size.width - (entry.margins * 2),
             margin: EdgeInsets.symmetric(horizontal: entry.margins),
@@ -93,5 +97,6 @@ class AdaptiveContainer extends StatelessWidget {
     );
   }
 }
+
 
 ```
