@@ -6,7 +6,7 @@ The `adaptive_breakpoints` package for Flutter allows you to use the adaptive [b
 
 This package provides the material breakpoint entries for adaptive/responsive development in Flutter.
 
-Firs, add the `adaptive_breakpoints` package to your pubspec dependencies.
+First, add the `adaptive_breakpoints` package to your pubspec dependencies.
 
 To import `adaptive_breakpoints`:
 

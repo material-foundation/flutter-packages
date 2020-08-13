@@ -1,5 +1,5 @@
 name: adaptive_breakpoints
-description: A package for adaptive breakpoints for Flutter following the Material guide.
+description: A Flutter package for adaptive breakpoints following the Material guide.
 version: 0.0.1
 homepage: https://github.com/material-components/material-components-flutter-adaptive
 

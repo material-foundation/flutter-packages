@@ -196,8 +196,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   Widget _buildBottomNavigationScaffold() {
     final bottomDestinations =
         destinations.sublist(0, math.min(destinations.length, 5));
-    final drawerDestinations =
-        destinations.length > 5 ? destinations : [];
+    final drawerDestinations = destinations.length > 5 ? destinations : [];
     return Scaffold(
       body: body,
       appBar: appBar,
@@ -223,8 +222,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   Widget _buildNavigationRailScaffold() {
     final railDestinations =
         destinations.sublist(0, math.min(destinations.length, 7));
-    final drawerDestinations =
-        destinations.length > 7 ? destinations : [];
+    final drawerDestinations = destinations.length > 7 ? destinations : [];
     return Scaffold(
       appBar: appBar,
       drawer: drawerDestinations.isEmpty
