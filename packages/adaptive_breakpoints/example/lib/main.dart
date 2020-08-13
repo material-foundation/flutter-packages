@@ -53,7 +53,7 @@ class AdaptiveContainer extends StatelessWidget {
   const AdaptiveContainer({
     @required this.windowLimit,
     this.child,
-  })  : assert(windowLimit != null);
+  }) : assert(windowLimit != null);
 
   @override
   Widget build(BuildContext context) {

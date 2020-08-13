@@ -70,7 +70,8 @@ void main() {
     expect((box as Container).color, Colors.green);
   });
 
-  testWidgets('Adaptive Breakpoint test on the edge of adaptive window', (WidgetTester tester) async {
+  testWidgets('Adaptive Breakpoint test on the edge of adaptive window',
+      (WidgetTester tester) async {
     tester.binding.window.physicalSizeTestValue = const Size(399.5, 600);
     tester.binding.window.devicePixelRatioTestValue = 1.0;
 
