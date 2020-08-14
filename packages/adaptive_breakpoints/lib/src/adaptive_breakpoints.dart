@@ -101,13 +101,13 @@ class BreakpointSystemEntry {
     this.landscape,
     @required this.adaptiveWindowType,
     @required this.columns,
-    @required this.margins,
-    @required this.gutters,
+    @required this.margin,
+    @required this.gutter,
   })  : assert(range != null),
         assert(adaptiveWindowType != null),
         assert(columns != null),
-        assert(margins != null),
-        assert(gutters != null);
+        assert(margin != null),
+        assert(gutter != null);
 
   /// The breakpoint range values represents a width range.
   final RangeValues range;
@@ -135,7 +135,7 @@ class BreakpointSystemEntry {
   /// The size of margins in pixels in this breakpoint system entry.
   /// Typically the same as gutters.
   /// https://material.io/design/layout/responsive-layout-grid.html#columns-gutters-and-margins
-  final double margins;
+  final double margin;
 
   /// The size of gutters in pixels in this breakpoint system entry. Typically
   /// the same as margins.
@@ -143,7 +143,7 @@ class BreakpointSystemEntry {
   /// Gutters represents the space between the columns.
   ///
   /// https://material.io/design/layout/responsive-layout-grid.html#columns-gutters-and-margins
-  final double gutters;
+  final double gutter;
 }
 
 /// This list represents the material breakpoint system.
@@ -156,24 +156,24 @@ List<BreakpointSystemEntry> breakpointSystem = [
     portrait: 'small handset',
     adaptiveWindowType: AdaptiveWindowType.xs,
     columns: 4,
-    margins: 16.0,
-    gutters: 16.0,
+    margin: 16.0,
+    gutter: 16.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(360, 399),
     portrait: 'medium handset',
     adaptiveWindowType: AdaptiveWindowType.xs,
     columns: 4,
-    margins: 16.0,
-    gutters: 16.0,
+    margin: 16.0,
+    gutter: 16.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(400, 479),
     portrait: 'large handset',
     adaptiveWindowType: AdaptiveWindowType.xs,
     columns: 4,
-    margins: 16.0,
-    gutters: 16.0,
+    margin: 16.0,
+    gutter: 16.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(480, 599),
@@ -181,8 +181,8 @@ List<BreakpointSystemEntry> breakpointSystem = [
     landscape: 'small handset',
     adaptiveWindowType: AdaptiveWindowType.xs,
     columns: 4,
-    margins: 16.0,
-    gutters: 16.0,
+    margin: 16.0,
+    gutter: 16.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(600, 719),
@@ -190,8 +190,8 @@ List<BreakpointSystemEntry> breakpointSystem = [
     landscape: 'medium handset',
     adaptiveWindowType: AdaptiveWindowType.s,
     columns: 8,
-    margins: 16.0,
-    gutters: 16.0,
+    margin: 16.0,
+    gutter: 16.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(720, 839),
@@ -199,8 +199,8 @@ List<BreakpointSystemEntry> breakpointSystem = [
     landscape: 'large handset',
     adaptiveWindowType: AdaptiveWindowType.s,
     columns: 8,
-    margins: 24.0,
-    gutters: 24.0,
+    margin: 24.0,
+    gutter: 24.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(840, 959),
@@ -208,56 +208,56 @@ List<BreakpointSystemEntry> breakpointSystem = [
     landscape: 'large handset',
     adaptiveWindowType: AdaptiveWindowType.s,
     columns: 12,
-    margins: 24.0,
-    gutters: 24.0,
+    margin: 24.0,
+    gutter: 24.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(960, 1023),
     landscape: 'small tablet',
     adaptiveWindowType: AdaptiveWindowType.s,
     columns: 12,
-    margins: 24.0,
-    gutters: 24.0,
+    margin: 24.0,
+    gutter: 24.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(1024, 1279),
     landscape: 'large tablet',
     adaptiveWindowType: AdaptiveWindowType.m,
     columns: 12,
-    margins: 24.0,
-    gutters: 24.0,
+    margin: 24.0,
+    gutter: 24.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(1280, 1439),
     landscape: 'large tablet',
     adaptiveWindowType: AdaptiveWindowType.m,
     columns: 12,
-    margins: 24.0,
-    gutters: 24.0,
+    margin: 24.0,
+    gutter: 24.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(1440, 1599),
     portrait: 'small handset',
     adaptiveWindowType: AdaptiveWindowType.l,
     columns: 12,
-    margins: 24.0,
-    gutters: 24.0,
+    margin: 24.0,
+    gutter: 24.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(1600, 1919),
     portrait: 'small handset',
     adaptiveWindowType: AdaptiveWindowType.l,
     columns: 12,
-    margins: 24.0,
-    gutters: 24.0,
+    margin: 24.0,
+    gutter: 24.0,
   ),
   BreakpointSystemEntry(
     range: RangeValues(1920, double.infinity),
     portrait: 'small handset',
     adaptiveWindowType: AdaptiveWindowType.xl,
     columns: 12,
-    margins: 24.0,
-    gutters: 24.0,
+    margin: 24.0,
+    gutter: 24.0,
   ),
 ];
 

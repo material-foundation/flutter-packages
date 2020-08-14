@@ -125,17 +125,18 @@ class AdaptiveContainer extends StatelessWidget {
       builder: (BuildContext context, BoxConstraints constraints) {
         if (adaptiveConstraints.withinAdaptiveConstraint(context)) {
           BreakpointSystemEntry entry = getBreakpointEntry(context);
+          final double _margin =  margin ?? entry.margin;
           return Container(
             alignment: alignment,
             padding: padding,
             color: color,
             decoration: decoration,
             foregroundDecoration: foregroundDecoration,
-            width: MediaQuery.of(context).size.width - (entry.margins * 2),
-            height: height,
-            margin: EdgeInsets.symmetric(horizontal: entry.margins),
             transform: transform,
             clipBehavior: clipBehavior,
+            width: MediaQuery.of(context).size.width - (_margin * 2),
+            height: height,
+            margin: EdgeInsets.symmetric(horizontal: _margin),
             constraints: BoxConstraints(
               minWidth: entry.adaptiveWindowType.widthRangeValues.start,
               maxWidth: entry.adaptiveWindowType.widthRangeValues.end,
