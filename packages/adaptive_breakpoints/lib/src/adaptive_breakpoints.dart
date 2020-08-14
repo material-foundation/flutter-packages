@@ -283,38 +283,3 @@ BreakpointSystemEntry getBreakpointEntry(BuildContext context) {
   }
   throw AssertionError('Something unexpected happened');
 }
-
-class AdaptiveWindowTypeConstraints {
-  const AdaptiveWindowTypeConstraints({
-    this.xs = false,
-    this.s = false,
-    this.m = false,
-    this.l = false,
-    this.xl = false,
-  });
-
-  final bool xs;
-  final bool s;
-  final bool m;
-  final bool l;
-  final bool xl;
-
-  bool withinAdaptiveConstraint(BuildContext context) {
-    AdaptiveWindowType currentEntry = getWindowType(context);
-
-    switch (currentEntry) {
-      case AdaptiveWindowType.xs:
-        return xs;
-      case AdaptiveWindowType.s:
-        return s;
-      case AdaptiveWindowType.m:
-        return m;
-      case AdaptiveWindowType.l:
-        return l;
-      case AdaptiveWindowType.xl:
-        return xl;
-      default:
-        throw AssertionError('Unsupported AdaptiveWindowType');
-    }
-  }
-}
