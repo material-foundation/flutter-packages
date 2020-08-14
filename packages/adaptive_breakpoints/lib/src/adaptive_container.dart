@@ -125,7 +125,7 @@ class AdaptiveContainer extends StatelessWidget {
       builder: (BuildContext context, BoxConstraints constraints) {
         if (adaptiveConstraints.withinAdaptiveConstraint(context)) {
           BreakpointSystemEntry entry = getBreakpointEntry(context);
-          final double _margin =  margin ?? entry.margin;
+          final double _margin = margin ?? entry.margin;
           return Container(
             alignment: alignment,
             padding: padding,
@@ -159,7 +159,7 @@ class AdaptiveContainer extends StatelessWidget {
 /// If the user sets one of the variables below to true than that window type
 /// should be shown within the [AdaptiveContainer].
 class AdaptiveConstraints {
-  const AdaptiveConstraints ({
+  const AdaptiveConstraints({
     this.xs = false,
     this.s = false,
     this.m = false,

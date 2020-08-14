@@ -17,32 +17,27 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
         body: Column(
           children: [
             AdaptiveContainer(
-              adaptiveConstraints:
-                  AdaptiveConstraints(xs: true),
+              adaptiveConstraints: AdaptiveConstraints(xs: true),
               color: Colors.red,
               child: Text('This is an extra small window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints:
-                  AdaptiveConstraints(s: true),
+              adaptiveConstraints: AdaptiveConstraints(s: true),
               color: Colors.orange,
               child: Text('This is a small window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints:
-                  AdaptiveConstraints(m: true),
+              adaptiveConstraints: AdaptiveConstraints(m: true),
               color: Colors.yellow,
               child: Text('This is a medium window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints:
-                  AdaptiveConstraints(l: true),
+              adaptiveConstraints: AdaptiveConstraints(l: true),
               color: Colors.green,
               child: Text('This is a large window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints:
-                  AdaptiveConstraints(xl: true),
+              adaptiveConstraints: AdaptiveConstraints(xl: true),
               color: Colors.blue,
               child: Text('This is an extra large window'),
             ),
