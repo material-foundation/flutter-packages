@@ -2,42 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 
-class AdaptiveContainer extends StatelessWidget {
-  final AdaptiveWindowType windowLimit;
-  final Widget child;
-
-  const AdaptiveContainer({
-    @required this.windowLimit,
-    this.child,
-  }) : assert(windowLimit != null);
-
-  @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (BuildContext context, BoxConstraints constraints) {
-        BreakpointSystemEntry entry = getBreakpointEntry(context);
-        if (entry.adaptiveWindowType == windowLimit) {
-          return Container(
-            constraints: BoxConstraints(
-              minWidth: entry.adaptiveWindowType.widthRangeValues.start,
-              maxWidth: entry.adaptiveWindowType.widthRangeValues.end,
-            ),
-            width: MediaQuery.of(context).size.width - (entry.margins * 2),
-            margin: EdgeInsets.symmetric(horizontal: entry.margins),
-            color: Colors.pink,
-            child: child,
-          );
-        } else {
-          return Container(
-            color: Colors.green,
-          );
-        }
-      },
-    );
-  }
-}
-
 void main() {
+  Color adaptiveContainerColor = Colors.pink;
   testWidgets('Adaptive Breakpoint test', (WidgetTester tester) async {
     tester.binding.window.physicalSizeTestValue = const Size(800, 600);
     tester.binding.window.devicePixelRatioTestValue = 1.0;
@@ -45,7 +11,8 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         home: AdaptiveContainer(
-          windowLimit: AdaptiveWindowType.s,
+          color: adaptiveContainerColor,
+          adaptiveWindowTypeConstraints: AdaptiveWindowTypeConstraints(s: true),
         ),
       ),
     );
@@ -60,14 +27,13 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         home: AdaptiveContainer(
-          windowLimit: AdaptiveWindowType.s,
+          color: adaptiveContainerColor,
+          adaptiveWindowTypeConstraints: AdaptiveWindowTypeConstraints(s: true),
         ),
       ),
     );
 
-    box = tester.widget(find.byType(Container));
-    expect(find.byType(Container), findsOneWidget);
-    expect((box as Container).color, Colors.green);
+    expect(find.byType(Container), findsNothing);
   });
 
   testWidgets('Adaptive Breakpoint test on the edge of adaptive window',
@@ -78,14 +44,15 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         home: AdaptiveContainer(
-          windowLimit: AdaptiveWindowType.xs,
+          color: adaptiveContainerColor,
+          adaptiveWindowTypeConstraints: AdaptiveWindowTypeConstraints(xs: true),
         ),
       ),
     );
 
     var box = tester.widget(find.byType(Container));
     expect(find.byType(Container), findsOneWidget);
-    expect((box as Container).color, Colors.pink);
+    expect((box as Container).color, adaptiveContainerColor);
 
     tester.binding.window.physicalSizeTestValue = const Size(1919.99999, 600);
     tester.binding.window.devicePixelRatioTestValue = 1.0;
@@ -93,13 +60,14 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         home: AdaptiveContainer(
-          windowLimit: AdaptiveWindowType.l,
+          color: adaptiveContainerColor,
+          adaptiveWindowTypeConstraints: AdaptiveWindowTypeConstraints(l: true),
         ),
       ),
     );
 
     box = tester.widget(find.byType(Container));
     expect(find.byType(Container), findsOneWidget);
-    expect((box as Container).color, Colors.pink);
+    expect((box as Container).color, adaptiveContainerColor);
   });
 }

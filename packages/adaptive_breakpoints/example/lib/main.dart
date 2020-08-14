@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(AdaptiveBreakpointsExample());
 }
 
-class MyApp extends StatelessWidget {
+class AdaptiveBreakpointsExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,63 +17,55 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             AdaptiveContainer(
-              windowLimit: AdaptiveWindowType.xs,
+              adaptiveWindowTypeConstraints:
+                  AdaptiveWindowTypeConstraints(xs: true),
+              color: Colors.red,
               child: Text('This is an extra small window'),
             ),
             AdaptiveContainer(
-              windowLimit: AdaptiveWindowType.s,
+              adaptiveWindowTypeConstraints:
+                  AdaptiveWindowTypeConstraints(s: true),
+              color: Colors.orange,
               child: Text('This is a small window'),
             ),
             AdaptiveContainer(
-              windowLimit: AdaptiveWindowType.m,
+              adaptiveWindowTypeConstraints:
+                  AdaptiveWindowTypeConstraints(m: true),
+              color: Colors.yellow,
               child: Text('This is a medium window'),
             ),
             AdaptiveContainer(
-              windowLimit: AdaptiveWindowType.l,
+              adaptiveWindowTypeConstraints:
+                  AdaptiveWindowTypeConstraints(l: true),
+              color: Colors.green,
               child: Text('This is a large window'),
             ),
             AdaptiveContainer(
-              windowLimit: AdaptiveWindowType.xl,
+              adaptiveWindowTypeConstraints:
+                  AdaptiveWindowTypeConstraints(xl: true),
+              color: Colors.blue,
               child: Text('This is an extra large window'),
+            ),
+            AdaptiveContainer(
+              adaptiveWindowTypeConstraints: AdaptiveWindowTypeConstraints(
+                xs: true,
+                s: true,
+              ),
+              color: Colors.indigo,
+              child: Text('This is a small or extra small window'),
+            ),
+            AdaptiveContainer(
+              adaptiveWindowTypeConstraints: AdaptiveWindowTypeConstraints(
+                m: true,
+                l: true,
+                xl: true,
+              ),
+              color: Colors.pink,
+              child: Text('This is a medium, large, or extra large window'),
             ),
           ],
         ),
       ),
-    );
-  }
-}
-
-/// This example application demonstrates how to use
-/// [`adaptive_breakpoints`](https://pub.dev/packages/adaptive_breakpoints)
-/// within a simple Flutter app.
-class AdaptiveContainer extends StatelessWidget {
-  final AdaptiveWindowType windowLimit;
-  final Widget child;
-
-  const AdaptiveContainer({
-    @required this.windowLimit,
-    this.child,
-  }) : assert(windowLimit != null);
-
-  @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (BuildContext context, BoxConstraints constraints) {
-        BreakpointSystemEntry entry = getBreakpointEntry(context);
-        if (entry.adaptiveWindowType == windowLimit) {
-          return Container(
-            constraints: BoxConstraints(
-              minWidth: entry.adaptiveWindowType.widthRangeValues.start,
-              maxWidth: entry.adaptiveWindowType.widthRangeValues.end,
-            ),
-            width: MediaQuery.of(context).size.width - (entry.margins * 2),
-            margin: EdgeInsets.symmetric(horizontal: entry.margins),
-            child: child,
-          );
-        } else {
-          return SizedBox();
-        }
-      },
     );
   }
 }

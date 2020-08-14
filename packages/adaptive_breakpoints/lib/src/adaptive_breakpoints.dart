@@ -36,7 +36,7 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
       case AdaptiveWindowType.xl:
         return 'xlarge';
       default:
-        throw AssertionError('Error');
+        throw AssertionError('Unsupported AdaptiveWindowType');
     }
   }
 
@@ -53,7 +53,7 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
       case AdaptiveWindowType.xl:
         return RangeValues(1920, double.infinity);
       default:
-        throw AssertionError('Error');
+        throw AssertionError('Unsupported AdaptiveWindowType');
     }
   }
 
@@ -70,7 +70,7 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
       case AdaptiveWindowType.xl:
         return RangeValues(1280, double.infinity);
       default:
-        throw AssertionError('Error');
+        throw AssertionError('Unsupported AdaptiveWindowType');
     }
   }
 
@@ -87,7 +87,7 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
       case AdaptiveWindowType.xl:
         return RangeValues(1920, double.infinity);
       default:
-        throw AssertionError('Error');
+        throw AssertionError('Unsupported AdaptiveWindowType');
     }
   }
 }
@@ -282,4 +282,39 @@ BreakpointSystemEntry getBreakpointEntry(BuildContext context) {
     }
   }
   throw AssertionError('Something unexpected happened');
+}
+
+class AdaptiveWindowTypeConstraints {
+  const AdaptiveWindowTypeConstraints({
+    this.xs = false,
+    this.s = false,
+    this.m = false,
+    this.l = false,
+    this.xl = false,
+  });
+
+  final bool xs;
+  final bool s;
+  final bool m;
+  final bool l;
+  final bool xl;
+
+  bool withinAdaptiveConstraint(BuildContext context) {
+    AdaptiveWindowType currentEntry = getWindowType(context);
+
+    switch (currentEntry) {
+      case AdaptiveWindowType.xs:
+        return xs;
+      case AdaptiveWindowType.s:
+        return s;
+      case AdaptiveWindowType.m:
+        return m;
+      case AdaptiveWindowType.l:
+        return l;
+      case AdaptiveWindowType.xl:
+        return xl;
+      default:
+        throw AssertionError('Unsupported AdaptiveWindowType');
+    }
+  }
 }
