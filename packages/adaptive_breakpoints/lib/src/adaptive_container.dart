@@ -34,8 +34,8 @@ class AdaptiveContainer extends StatelessWidget {
     this.height,
     this.child,
     this.clipBehavior = Clip.none,
-    @required this.adaptiveWindowTypeConstraints,
-  })  : assert(adaptiveWindowTypeConstraints != null),
+    @required this.adaptiveConstraints,
+  })  : assert(adaptiveConstraints != null),
         assert(margin == null || margin.isNonNegative),
         assert(padding == null || padding.isNonNegative),
         assert(decoration == null || decoration.debugAssertIsValid()),
@@ -61,7 +61,7 @@ class AdaptiveContainer extends StatelessWidget {
   ///
   /// This is used by the builder to see what type of screen the user wants this
   /// [AdaptiveContainer] to fit within.
-  final AdaptiveWindowTypeConstraints adaptiveWindowTypeConstraints;
+  final AdaptiveConstraints adaptiveConstraints;
 
   /// Align the [child] within the container.
   ///
@@ -123,7 +123,7 @@ class AdaptiveContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
-        if (adaptiveWindowTypeConstraints.withinAdaptiveConstraint(context)) {
+        if (adaptiveConstraints.withinAdaptiveConstraint(context)) {
           BreakpointSystemEntry entry = getBreakpointEntry(context);
           return Container(
             alignment: alignment,
@@ -157,8 +157,8 @@ class AdaptiveContainer extends StatelessWidget {
 /// Used to see if a range of [AdaptiveWindowType] should be shown in the window.
 /// If the user sets one of the variables below to true than that window type
 /// should be shown within the [AdaptiveContainer].
-class AdaptiveWindowTypeConstraints {
-  const AdaptiveWindowTypeConstraints({
+class AdaptiveConstraints {
+  const AdaptiveConstraints ({
     this.xs = false,
     this.s = false,
     this.m = false,

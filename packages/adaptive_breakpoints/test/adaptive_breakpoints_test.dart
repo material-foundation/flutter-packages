@@ -12,7 +12,7 @@ void main() {
       MaterialApp(
         home: AdaptiveContainer(
           color: adaptiveContainerColor,
-          adaptiveWindowTypeConstraints: AdaptiveWindowTypeConstraints(s: true),
+          adaptiveConstraints: AdaptiveConstraints(s: true),
         ),
       ),
     );
@@ -28,7 +28,7 @@ void main() {
       MaterialApp(
         home: AdaptiveContainer(
           color: adaptiveContainerColor,
-          adaptiveWindowTypeConstraints: AdaptiveWindowTypeConstraints(s: true),
+          adaptiveConstraints: AdaptiveConstraints(s: true),
         ),
       ),
     );
@@ -45,7 +45,7 @@ void main() {
       MaterialApp(
         home: AdaptiveContainer(
           color: adaptiveContainerColor,
-          adaptiveWindowTypeConstraints: AdaptiveWindowTypeConstraints(xs: true),
+          adaptiveConstraints: AdaptiveConstraints(xs: true),
         ),
       ),
     );
@@ -61,7 +61,7 @@ void main() {
       MaterialApp(
         home: AdaptiveContainer(
           color: adaptiveContainerColor,
-          adaptiveWindowTypeConstraints: AdaptiveWindowTypeConstraints(l: true),
+          adaptiveConstraints: AdaptiveConstraints(l: true),
         ),
       ),
     );
