@@ -19,7 +19,7 @@ void main() {
 
     var box = tester.widget(find.byType(Container));
     expect(find.byType(Container), findsOneWidget);
-    expect((box as Container).color, Colors.pink);
+    expect((box as Container).color, adaptiveContainerColor);
 
     tester.binding.window.physicalSizeTestValue = const Size(2000, 600);
     tester.binding.window.devicePixelRatioTestValue = 1.0;
