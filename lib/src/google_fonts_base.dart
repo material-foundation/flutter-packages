@@ -193,9 +193,6 @@ Future<void> _loadFontByteData(
     final fontLoader = FontLoader(familyWithVariantString);
     fontLoader.addFont(byteData);
     await fontLoader.load();
-    // TODO: Remove this once it is done automatically after loading a font.
-    // https://github.com/flutter/flutter/issues/44460
-    await PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
   }
 }
 
