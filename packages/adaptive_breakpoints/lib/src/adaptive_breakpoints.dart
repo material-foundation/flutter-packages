@@ -1,6 +1,7 @@
 // Copyright 2020, the Flutter project authors. Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
+import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 import 'package:flutter/material.dart';
 
 /// Adaptive Window in Material has five different window sizes. Each window size
@@ -20,6 +21,15 @@ enum AdaptiveWindowType {
   l,
   xl,
 }
+
+/// Used to set custom operators for the [AdaptiveWindowType] enum.
+final Map<AdaptiveWindowType, int> _operatorMap = {
+  AdaptiveWindowType.xs: 0,
+  AdaptiveWindowType.s: 1,
+  AdaptiveWindowType.m: 2,
+  AdaptiveWindowType.l: 3,
+  AdaptiveWindowType.xl: 4,
+};
 
 /// This extension lets you access variables associated with each window type.
 extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
@@ -91,96 +101,21 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
     }
   }
 
+
   bool operator <=(Object other) {
-    if (other is AdaptiveWindowType) {
-      switch (this) {
-        case AdaptiveWindowType.xs:
-          return true;
-        case AdaptiveWindowType.s:
-          return (other != AdaptiveWindowType.xs);
-        case AdaptiveWindowType.m:
-          return (other != AdaptiveWindowType.xs &&
-              other != AdaptiveWindowType.s);
-        case AdaptiveWindowType.l:
-          return (other == AdaptiveWindowType.l ||
-              other == AdaptiveWindowType.xl);
-        case AdaptiveWindowType.xl:
-          return (other == AdaptiveWindowType.xl);
-        default:
-          throw AssertionError('Unsupported AdaptiveWindowType');
-      }
-    } else {
-      return false;
-    }
+    return _operatorMap[this] <= _operatorMap[other];
   }
 
   bool operator <(Object other) {
-    if (other is AdaptiveWindowType) {
-      switch (this) {
-        case AdaptiveWindowType.xs:
-          return (other != AdaptiveWindowType.xs);
-        case AdaptiveWindowType.s:
-          return (other != AdaptiveWindowType.xs &&
-              other != AdaptiveWindowType.s);
-        case AdaptiveWindowType.m:
-          return (other == AdaptiveWindowType.l ||
-              other == AdaptiveWindowType.xl);
-        case AdaptiveWindowType.l:
-          return (other == AdaptiveWindowType.xl);
-        case AdaptiveWindowType.xl:
-          return false;
-        default:
-          throw AssertionError('Unsupported AdaptiveWindowType');
-      }
-    } else {
-      return false;
-    }
+    return _operatorMap[this] < _operatorMap[other];
   }
 
   bool operator >=(Object other) {
-    if (other is AdaptiveWindowType) {
-      switch (this) {
-        case AdaptiveWindowType.xs:
-          return (other == AdaptiveWindowType.xs);
-        case AdaptiveWindowType.s:
-          return (other == AdaptiveWindowType.xs ||
-              other == AdaptiveWindowType.s);
-        case AdaptiveWindowType.m:
-          return (other != AdaptiveWindowType.l &&
-              other != AdaptiveWindowType.xl);
-        case AdaptiveWindowType.l:
-          return (other != AdaptiveWindowType.xl);
-        case AdaptiveWindowType.xl:
-          return true;
-        default:
-          throw AssertionError('Unsupported AdaptiveWindowType');
-      }
-    } else {
-      return false;
-    }
+    return _operatorMap[this] >= _operatorMap[other];
   }
 
   bool operator >(Object other) {
-    if (other is AdaptiveWindowType) {
-      switch (this) {
-        case AdaptiveWindowType.xs:
-          return false;
-        case AdaptiveWindowType.s:
-          return (other == AdaptiveWindowType.xs);
-        case AdaptiveWindowType.m:
-          return (other == AdaptiveWindowType.xs ||
-              other == AdaptiveWindowType.s);
-        case AdaptiveWindowType.l:
-          return (other != AdaptiveWindowType.l &&
-              other != AdaptiveWindowType.xl);
-        case AdaptiveWindowType.xl:
-          return (other != AdaptiveWindowType.xl);
-        default:
-          throw AssertionError('Unsupported AdaptiveWindowType');
-      }
-    } else {
-      return false;
-    }
+    return _operatorMap[this] > _operatorMap[other];
   }
 }
 
