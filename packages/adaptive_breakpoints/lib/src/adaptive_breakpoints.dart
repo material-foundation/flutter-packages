@@ -21,7 +21,7 @@ enum AdaptiveWindowType {
   xl,
 }
 
-/// Used to set custom operators for the [AdaptiveWindowType] enum.
+/// Used to set custom comparison operators for the [AdaptiveWindowType] enum.
 final Map<AdaptiveWindowType, int> _operatorMap = {
   AdaptiveWindowType.xs: 0,
   AdaptiveWindowType.s: 1,
