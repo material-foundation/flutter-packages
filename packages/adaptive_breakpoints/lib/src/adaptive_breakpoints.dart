@@ -21,6 +21,15 @@ enum AdaptiveWindowType {
   xl,
 }
 
+/// Used to set custom comparison operators for the [AdaptiveWindowType] enum.
+final Map<AdaptiveWindowType, int> _operatorMap = {
+  AdaptiveWindowType.xs: 0,
+  AdaptiveWindowType.s: 1,
+  AdaptiveWindowType.m: 2,
+  AdaptiveWindowType.l: 3,
+  AdaptiveWindowType.xl: 4,
+};
+
 /// This extension lets you access variables associated with each window type.
 extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
   String get name {
@@ -90,6 +99,15 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
         throw AssertionError('Unsupported AdaptiveWindowType');
     }
   }
+
+
+  bool operator <=(Object other) => _operatorMap[this] <= _operatorMap[other];
+
+  bool operator <(Object other) => _operatorMap[this] < _operatorMap[other];
+
+  bool operator >=(Object other) => _operatorMap[this] >= _operatorMap[other];
+
+  bool operator >(Object other) => _operatorMap[this] > _operatorMap[other];
 }
 
 /// This class represents the Material breakpoint system entry.
