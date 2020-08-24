@@ -1,7 +1,6 @@
 // Copyright 2020, the Flutter project authors. Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
-import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 import 'package:flutter/material.dart';
 
 /// Adaptive Window in Material has five different window sizes. Each window size
@@ -102,21 +101,13 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
   }
 
 
-  bool operator <=(Object other) {
-    return _operatorMap[this] <= _operatorMap[other];
-  }
+  bool operator <=(Object other) => _operatorMap[this] <= _operatorMap[other];
 
-  bool operator <(Object other) {
-    return _operatorMap[this] < _operatorMap[other];
-  }
+  bool operator <(Object other) => _operatorMap[this] < _operatorMap[other];
 
-  bool operator >=(Object other) {
-    return _operatorMap[this] >= _operatorMap[other];
-  }
+  bool operator >=(Object other) => _operatorMap[this] >= _operatorMap[other];
 
-  bool operator >(Object other) {
-    return _operatorMap[this] > _operatorMap[other];
-  }
+  bool operator >(Object other) => _operatorMap[this] > _operatorMap[other];
 }
 
 /// This class represents the Material breakpoint system entry.
