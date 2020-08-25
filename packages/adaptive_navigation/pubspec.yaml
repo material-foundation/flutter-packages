@@ -13,4 +13,5 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  adaptive_breakpoints:
+    path: ../adaptive_breakpoints

@@ -4,6 +4,7 @@
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 import 'dart:math' as math;
 
 typedef NavigationType NavigationTypeResolver(BuildContext context);
@@ -380,10 +381,6 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   }
 }
 
-bool _isLargeScreen(BuildContext context) {
-  return MediaQuery.of(context).size.width > 960.0;
-}
+bool _isLargeScreen(BuildContext context) => getWindowType(context) >= AdaptiveWindowType.l;
 
-bool _isMediumScreen(BuildContext context) {
-  return MediaQuery.of(context).size.width > 640.0;
-}
+bool _isMediumScreen(BuildContext context) => getWindowType(context) == AdaptiveWindowType.m;
