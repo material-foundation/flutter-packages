@@ -1,6 +1,10 @@
 import 'package:adaptive_navigation/scaffold.dart';
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(MaterialApp(home: DefaultScaffoldDemo()));
+}
+
 class DefaultScaffoldDemo extends StatefulWidget {
   @override
   _DefaultScaffoldDemoState createState() => _DefaultScaffoldDemoState();
@@ -9,6 +13,7 @@ class DefaultScaffoldDemo extends StatefulWidget {
 class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
   int _destinationCount = 5;
   bool _fabInRail = false;
+  bool _overflowDestinationAddedToMenu = false;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +27,7 @@ class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
         onPressed: () {},
       ),
       fabInRail: _fabInRail,
+      overflowDestinationAddedToMenu: _overflowDestinationAddedToMenu,
     );
   }
 
@@ -60,12 +66,22 @@ class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
           ),
           const Text('fabInRail'),
           const SizedBox(height: 40),
+          Switch(
+            value: _overflowDestinationAddedToMenu,
+            onChanged: (value) {
+              setState(() {
+                _overflowDestinationAddedToMenu = value;
+              });
+            },
+          ),
+          const Text('overflowDestinationAddedToMenu'),
+          const SizedBox(height: 40),
           RaisedButton(
             child: const Text('BACK'),
             onPressed: () {
               Navigator.of(context).pushReplacementNamed('/');
             },
-          )
+          ),
         ],
       ),
     );
