@@ -13,7 +13,7 @@ class DefaultScaffoldDemo extends StatefulWidget {
 class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
   int _destinationCount = 5;
   bool _fabInRail = false;
-  bool _overflowDestinationAddedToMenu = false;
+  bool _overflowDestinationAddedToMenu = true;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
         onPressed: () {},
       ),
       fabInRail: _fabInRail,
-      overflowDestinationAddedToMenu: _overflowDestinationAddedToMenu,
+      includeBaseDestinationInMenu: _overflowDestinationAddedToMenu,
     );
   }
 
@@ -74,7 +74,7 @@ class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
               });
             },
           ),
-          const Text('overflowDestinationAddedToMenu'),
+          const Text('includeBaseDestinationInMenu'),
           const SizedBox(height: 40),
           RaisedButton(
             child: const Text('BACK'),

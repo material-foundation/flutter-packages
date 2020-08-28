@@ -69,7 +69,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     this.navigationTypeResolver,
     this.drawerHeader,
     this.fabInRail = true,
-    this.overflowDestinationAddedToMenu = false,
+    this.includeBaseDestinationInMenu = true,
   })  : assert(selectedIndex != null),
         assert(destinations != null),
         super(key: key);
@@ -167,7 +167,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
 
   /// Weather the overflow menu defaults to include overflow destinations and
   /// the overflow destinations.
-  final bool overflowDestinationAddedToMenu;
+  final bool includeBaseDestinationInMenu;
 
   NavigationType _defaultNavigationTypeResolver(BuildContext context) {
     if (_isLargeScreen(context)) {
@@ -207,7 +207,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     );
     final drawerDestinations = destinations.length > bottomNavigationOverflow
         ? destinations.sublist(
-            overflowDestinationAddedToMenu ? bottomNavigationOverflow : 0)
+            includeBaseDestinationInMenu ? 0 : bottomNavigationOverflow)
         : [];
     return Scaffold(
       body: body,
@@ -239,7 +239,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     );
     final drawerDestinations = destinations.length > railDestinationsOverflow
         ? destinations.sublist(
-            overflowDestinationAddedToMenu ? railDestinationsOverflow : 0)
+            includeBaseDestinationInMenu ? 0 : railDestinationsOverflow)
         : [];
     return Scaffold(
       appBar: appBar,
@@ -330,8 +330,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     return Row(
       children: [
         Drawer(
-          child: ListView(
-            padding: EdgeInsets.zero,
+          child: Column(
             children: [
               if (drawerHeader != null) drawerHeader,
               for (final destination in destinations)
