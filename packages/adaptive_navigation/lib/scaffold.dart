@@ -250,7 +250,6 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
         children: [
           NavigationRail(
             leading: fabInRail ? floatingActionButton : null,
-            minWidth: 56,
             destinations: [
               for (final destination in railDestinations)
                 NavigationRailDestination(
