@@ -1,3 +1,3 @@
-# [0.0.1] - TODO: Add release date.
+# [0.0.1] - August 12, 2020
 
-* TODO: Describe initial release.
+The initial release adds [adaptive navigation](https://material.io/design/layout/responsive-layout-grid.html#ui-regions)
