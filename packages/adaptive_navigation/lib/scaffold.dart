@@ -69,6 +69,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     this.navigationTypeResolver,
     this.drawerHeader,
     this.fabInRail = true,
+    this.includeBaseDestinationsInMenu = true,
   })  : assert(selectedIndex != null),
         assert(destinations != null),
         super(key: key);
@@ -164,6 +165,10 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   /// [floatingActionButtonAnimation] are ignored.
   final bool fabInRail;
 
+  /// Weather the overflow menu defaults to include overflow destinations and
+  /// the overflow destinations.
+  final bool includeBaseDestinationsInMenu;
+
   NavigationType _defaultNavigationTypeResolver(BuildContext context) {
     if (_isLargeScreen(context)) {
       return NavigationType.permanentDrawer;
@@ -195,9 +200,15 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   }
 
   Widget _buildBottomNavigationScaffold() {
-    final bottomDestinations =
-        destinations.sublist(0, math.min(destinations.length, 5));
-    final drawerDestinations = destinations.length > 5 ? destinations : [];
+    final int bottomNavigationOverflow = 5;
+    final bottomDestinations = destinations.sublist(
+      0,
+      math.min(destinations.length, bottomNavigationOverflow),
+    );
+    final drawerDestinations = destinations.length > bottomNavigationOverflow
+        ? destinations.sublist(
+            includeBaseDestinationsInMenu ? 0 : bottomNavigationOverflow)
+        : [];
     return Scaffold(
       body: body,
       appBar: appBar,
@@ -209,7 +220,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
           for (final destination in bottomDestinations)
             BottomNavigationBarItem(
               icon: Icon(destination.icon),
-              title: Text(destination.title),
+              label: destination.title,
             ),
         ],
         currentIndex: selectedIndex,
@@ -221,9 +232,15 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   }
 
   Widget _buildNavigationRailScaffold() {
-    final railDestinations =
-        destinations.sublist(0, math.min(destinations.length, 7));
-    final drawerDestinations = destinations.length > 7 ? destinations : [];
+    final int railDestinationsOverflow = 7;
+    final railDestinations = destinations.sublist(
+      0,
+      math.min(destinations.length, railDestinationsOverflow),
+    );
+    final drawerDestinations = destinations.length > railDestinationsOverflow
+        ? destinations.sublist(
+            includeBaseDestinationsInMenu ? 0 : railDestinationsOverflow)
+        : [];
     return Scaffold(
       appBar: appBar,
       drawer: drawerDestinations.isEmpty
@@ -415,32 +432,33 @@ class AdaptiveAppBar extends AppBar {
         assert(toolbarOpacity != null),
         assert(bottomOpacity != null),
         super(
-        key: key,
-        leading: leading,
-        automaticallyImplyLeading: automaticallyImplyLeading,
-        title: title,
-        actions: actions,
-        flexibleSpace: flexibleSpace,
-        bottom: bottom,
-        elevation: elevation,
-        shadowColor: shadowColor,
-        shape: shape,
-        backgroundColor: backgroundColor,
-        brightness: brightness,
-        iconTheme: iconThemeData,
-        actionsIconTheme: actionsIconThemeData,
-        textTheme: textTheme,
-        primary: primary,
-        centerTitle: centerTitle,
-        excludeHeaderSemantics: excludeHeaderSemantics,
-        titleSpacing: titleSpacing,
-        toolbarOpacity: toolbarOpacity,
-        bottomOpacity: bottomOpacity,
-        toolbarHeight: toolbarHeight,
-        leadingWidth: leadingWidth,
-      );
+          key: key,
+          leading: leading,
+          automaticallyImplyLeading: automaticallyImplyLeading,
+          title: title,
+          actions: actions,
+          flexibleSpace: flexibleSpace,
+          bottom: bottom,
+          elevation: elevation,
+          shadowColor: shadowColor,
+          shape: shape,
+          backgroundColor: backgroundColor,
+          brightness: brightness,
+          iconTheme: iconThemeData,
+          actionsIconTheme: actionsIconThemeData,
+          textTheme: textTheme,
+          primary: primary,
+          centerTitle: centerTitle,
+          excludeHeaderSemantics: excludeHeaderSemantics,
+          titleSpacing: titleSpacing,
+          toolbarOpacity: toolbarOpacity,
+          bottomOpacity: bottomOpacity,
+          toolbarHeight: toolbarHeight,
+          leadingWidth: leadingWidth,
+        );
 }
 
-bool _isLargeScreen(BuildContext context) => getWindowType(context) >= AdaptiveWindowType.l;
-
-bool _isMediumScreen(BuildContext context) => getWindowType(context) == AdaptiveWindowType.m;
+bool _isLargeScreen(BuildContext context) =>
+    getWindowType(context) >= AdaptiveWindowType.l;
+bool _isMediumScreen(BuildContext context) =>
+    getWindowType(context) == AdaptiveWindowType.m;

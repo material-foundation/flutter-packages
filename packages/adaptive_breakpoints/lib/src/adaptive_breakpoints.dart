@@ -100,7 +100,6 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
     }
   }
 
-
   bool operator <=(Object other) => _operatorMap[this] <= _operatorMap[other];
 
   bool operator <(Object other) => _operatorMap[this] < _operatorMap[other];
