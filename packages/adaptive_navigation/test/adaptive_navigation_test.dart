@@ -30,7 +30,9 @@ void main() {
             child: Icon(Icons.add),
             onPressed: () {},
           ),
-          body: Container(color: Colors.green,),
+          body: Container(
+            color: Colors.green,
+          ),
         ),
       ),
     );

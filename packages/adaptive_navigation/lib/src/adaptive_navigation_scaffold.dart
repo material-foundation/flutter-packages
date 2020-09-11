@@ -207,7 +207,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     );
     final drawerDestinations = destinations.length > bottomNavigationOverflow
         ? destinations.sublist(
-        includeBaseDestinationsInMenu ? 0 : bottomNavigationOverflow)
+            includeBaseDestinationsInMenu ? 0 : bottomNavigationOverflow)
         : [];
     return Scaffold(
       body: body,
@@ -239,7 +239,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     );
     final drawerDestinations = destinations.length > railDestinationsOverflow
         ? destinations.sublist(
-        includeBaseDestinationsInMenu ? 0 : railDestinationsOverflow)
+            includeBaseDestinationsInMenu ? 0 : railDestinationsOverflow)
         : [];
     return Scaffold(
       appBar: appBar,
