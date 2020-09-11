@@ -1,4 +1,4 @@
-import 'package:adaptive_navigation/scaffold.dart';
+import 'package:adaptive_navigation/adaptive_navigation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +20,7 @@ class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
     return AdaptiveNavigationScaffold(
       selectedIndex: 0,
       destinations: _allDestinations.sublist(0, _destinationCount),
-      appBar: AppBar(title: Text('Default Demo')),
+      appBar: AdaptiveAppBar(title: Text('Default Demo')),
       body: _body(),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),

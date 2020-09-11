@@ -180,108 +180,108 @@ void main() {
   });
 
   testWidgets('Adaptive Breakpoint window operators >=',
-          (WidgetTester tester) async {
-        tester.binding.window.physicalSizeTestValue = const Size(399.5, 600);
-        tester.binding.window.devicePixelRatioTestValue = 1.0;
+      (WidgetTester tester) async {
+    tester.binding.window.physicalSizeTestValue = const Size(399.5, 600);
+    tester.binding.window.devicePixelRatioTestValue = 1.0;
 
-        await tester.pumpWidget(
-          MaterialApp(
-              home: Container(
-                color: AdaptiveWindowType.xs >= AdaptiveWindowType.xl
-                    ? trueColor
-                    : falseColor,
-              )),
-        );
-        var box = tester.widget(find.byType(Container));
-        expect((box as Container).color, falseColor);
+    await tester.pumpWidget(
+      MaterialApp(
+          home: Container(
+        color: AdaptiveWindowType.xs >= AdaptiveWindowType.xl
+            ? trueColor
+            : falseColor,
+      )),
+    );
+    var box = tester.widget(find.byType(Container));
+    expect((box as Container).color, falseColor);
 
-        await tester.pumpWidget(
-          MaterialApp(
-              home: Container(
-                color: AdaptiveWindowType.m >= AdaptiveWindowType.xl
-                    ? trueColor
-                    : falseColor,
-              )),
-        );
+    await tester.pumpWidget(
+      MaterialApp(
+          home: Container(
+        color: AdaptiveWindowType.m >= AdaptiveWindowType.xl
+            ? trueColor
+            : falseColor,
+      )),
+    );
 
-        box = tester.widget(find.byType(Container));
-        expect((box as Container).color, falseColor);
+    box = tester.widget(find.byType(Container));
+    expect((box as Container).color, falseColor);
 
-        await tester.pumpWidget(
-          MaterialApp(
-              home: Container(
-                color: AdaptiveWindowType.xl >= AdaptiveWindowType.xl
-                    ? trueColor
-                    : falseColor,
-              )),
-        );
+    await tester.pumpWidget(
+      MaterialApp(
+          home: Container(
+        color: AdaptiveWindowType.xl >= AdaptiveWindowType.xl
+            ? trueColor
+            : falseColor,
+      )),
+    );
 
-        box = tester.widget(find.byType(Container));
-        expect((box as Container).color, trueColor);
+    box = tester.widget(find.byType(Container));
+    expect((box as Container).color, trueColor);
 
-        await tester.pumpWidget(
-          MaterialApp(
-              home: Container(
-                color: AdaptiveWindowType.l >= AdaptiveWindowType.s
-                    ? trueColor
-                    : falseColor,
-              )),
-        );
+    await tester.pumpWidget(
+      MaterialApp(
+          home: Container(
+        color: AdaptiveWindowType.l >= AdaptiveWindowType.s
+            ? trueColor
+            : falseColor,
+      )),
+    );
 
-        box = tester.widget(find.byType(Container));
-        expect((box as Container).color, trueColor);
-      });
+    box = tester.widget(find.byType(Container));
+    expect((box as Container).color, trueColor);
+  });
 
   testWidgets('Adaptive Breakpoint window operators >',
-          (WidgetTester tester) async {
-        tester.binding.window.physicalSizeTestValue = const Size(399.5, 600);
-        tester.binding.window.devicePixelRatioTestValue = 1.0;
+      (WidgetTester tester) async {
+    tester.binding.window.physicalSizeTestValue = const Size(399.5, 600);
+    tester.binding.window.devicePixelRatioTestValue = 1.0;
 
-        await tester.pumpWidget(
-          MaterialApp(
-              home: Container(
-                color: AdaptiveWindowType.xs > AdaptiveWindowType.xl
-                    ? trueColor
-                    : falseColor,
-              )),
-        );
-        var box = tester.widget(find.byType(Container));
-        expect((box as Container).color, falseColor);
+    await tester.pumpWidget(
+      MaterialApp(
+          home: Container(
+        color: AdaptiveWindowType.xs > AdaptiveWindowType.xl
+            ? trueColor
+            : falseColor,
+      )),
+    );
+    var box = tester.widget(find.byType(Container));
+    expect((box as Container).color, falseColor);
 
-        await tester.pumpWidget(
-          MaterialApp(
-              home: Container(
-                color: AdaptiveWindowType.m > AdaptiveWindowType.xl
-                    ? trueColor
-                    : falseColor,
-              )),
-        );
+    await tester.pumpWidget(
+      MaterialApp(
+          home: Container(
+        color: AdaptiveWindowType.m > AdaptiveWindowType.xl
+            ? trueColor
+            : falseColor,
+      )),
+    );
 
-        box = tester.widget(find.byType(Container));
-        expect((box as Container).color, falseColor);
+    box = tester.widget(find.byType(Container));
+    expect((box as Container).color, falseColor);
 
-        await tester.pumpWidget(
-          MaterialApp(
-              home: Container(
-                color: AdaptiveWindowType.xl > AdaptiveWindowType.xl
-                    ? trueColor
-                    : falseColor,
-              )),
-        );
+    await tester.pumpWidget(
+      MaterialApp(
+          home: Container(
+        color: AdaptiveWindowType.xl > AdaptiveWindowType.xl
+            ? trueColor
+            : falseColor,
+      )),
+    );
 
-        box = tester.widget(find.byType(Container));
-        expect((box as Container).color, falseColor);
+    box = tester.widget(find.byType(Container));
+    expect((box as Container).color, falseColor);
 
-        await tester.pumpWidget(
-          MaterialApp(
-              home: Container(
-                color: AdaptiveWindowType.l > AdaptiveWindowType.s
-                    ? trueColor
-                    : falseColor,
-              )),
-        );
+    await tester.pumpWidget(
+      MaterialApp(
+          home: Container(
+        color: AdaptiveWindowType.l > AdaptiveWindowType.s
+            ? trueColor
+            : falseColor,
+      )),
+    );
 
-        box = tester.widget(find.byType(Container));
-        expect((box as Container).color, trueColor);
-      });
+    box = tester.widget(find.byType(Container));
+    expect((box as Container).color, trueColor);
+  });
 }
