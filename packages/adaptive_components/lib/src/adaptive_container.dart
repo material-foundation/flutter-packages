@@ -15,14 +15,14 @@ import 'package:flutter/material.dart';
 ///
 /// This class is useful whenever you want a container to only be active in
 /// certain [AdaptiveWindowType].
-class AdaptiveContainer extends StatelessWidget {
+class AdaptiveContaine extends StatelessWidget {
   /// Creates a widget that combines common painting, positioning, and sizing widgets.
   ///
   /// The `color` and `decoration` arguments cannot both be supplied, since
   /// it would potentially result in the decoration drawing over the background
   /// color. To supply a decoration with a color, use `decoration:
   /// BoxDecoration(color: color)`.
-  AdaptiveContainer({
+  AdaptiveContaine({
     Key key,
     this.alignment,
     this.padding,
@@ -35,14 +35,15 @@ class AdaptiveContainer extends StatelessWidget {
     this.child,
     this.clipBehavior = Clip.none,
     @required this.adaptiveConstraints,
+    this.adaptiveColumn = 1,
   })  : assert(adaptiveConstraints != null),
         assert(margin == null || margin.isNonNegative),
         assert(padding == null || padding.isNonNegative),
         assert(decoration == null || decoration.debugAssertIsValid()),
         assert(clipBehavior != null),
         assert(
-        color == null || decoration == null,
-        'Cannot provide both a color and a decoration\n'
+            color == null || decoration == null,
+            'Cannot provide both a color and a decoration\n'
             'To provide both, use "decoration: BoxDecoration(color: color)".'),
         super(key: key);
 
@@ -62,6 +63,18 @@ class AdaptiveContainer extends StatelessWidget {
   /// This is used by the builder to see what type of screen the user wants this
   /// [AdaptiveContainer] to fit within.
   final AdaptiveConstraints adaptiveConstraints;
+
+  /// AdaptiveColumn is used with [AdaptiveColumn] and [AdaptiveRow] to represent
+  /// the amount of columns that this widget will fill up within a certain [Flex]
+  /// range.
+  ///
+  /// By default the columns will only represent one column space. If you want
+  /// this content of this widget to be shown increase it. There can be at most
+  /// 12 columns per flex range.
+  ///
+  /// Learn more by visiting the Material website:
+  /// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+  final int adaptiveColumn;
 
   /// Align the [child] within the container.
   ///

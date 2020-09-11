@@ -7,4 +7,3 @@ library adaptive_breakpoints;
 export 'src/adaptive_column.dart';
 export 'src/adaptive_container.dart';
 export 'src/adaptive_row.dart';
-export 'src/adaptive_widget.dart';
