@@ -8,7 +8,7 @@ import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 /// AdaptiveAppBar has a leading width of 72.0. Everything else is the same as
 /// [AppBar].
 class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const AdaptiveAppBar({
+  AdaptiveAppBar({
     Key key,
     this.leading,
     this.automaticallyImplyLeading = true,
@@ -38,6 +38,8 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
         assert(titleSpacing != null),
         assert(toolbarOpacity != null),
         assert(bottomOpacity != null),
+        preferredSize = Size.fromHeight(toolbarHeight ??
+            kToolbarHeight + (bottom?.preferredSize?.height ?? 0.0)),
         super(key: key);
 
   final Widget leading;
@@ -60,7 +62,7 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double titleSpacing;
   final double toolbarOpacity;
   final double bottomOpacity;
-  final Size preferredSize = Size.zero;
+  final Size preferredSize;
   final double toolbarHeight;
   final double leadingWidth;
 
