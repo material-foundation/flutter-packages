@@ -34,10 +34,9 @@ class AdaptiveContaine extends StatelessWidget {
     this.height,
     this.child,
     this.clipBehavior = Clip.none,
-    @required this.adaptiveConstraints,
+    this.adaptiveConstraints,
     this.adaptiveColumn = 1,
-  })  : assert(adaptiveConstraints != null),
-        assert(margin == null || margin.isNonNegative),
+  })  : assert(margin == null || margin.isNonNegative),
         assert(padding == null || padding.isNonNegative),
         assert(decoration == null || decoration.debugAssertIsValid()),
         assert(clipBehavior != null),
@@ -138,7 +137,7 @@ class AdaptiveContaine extends StatelessWidget {
       builder: (BuildContext context, BoxConstraints constraints) {
         if (adaptiveConstraints.withinAdaptiveConstraint(context)) {
           BreakpointSystemEntry entry = getBreakpointEntry(context);
-          final double _margin = margin ?? entry.margin;
+          final double _margin = margin ?? 0.0;
           return Container(
             alignment: alignment,
             padding: padding,
@@ -147,13 +146,13 @@ class AdaptiveContaine extends StatelessWidget {
             foregroundDecoration: foregroundDecoration,
             transform: transform,
             clipBehavior: clipBehavior,
-            width: MediaQuery.of(context).size.width - (_margin * 2),
+//            width: (MediaQuery.of(context).size.width - (_margin * 2)) / (entry.columns * adaptiveColumn),
             height: height,
             margin: EdgeInsets.symmetric(horizontal: _margin),
-            constraints: BoxConstraints(
-              minWidth: entry.adaptiveWindowType.widthRangeValues.start,
-              maxWidth: entry.adaptiveWindowType.widthRangeValues.end,
-            ),
+//            constraints: BoxConstraints(
+//              minWidth: entry.adaptiveWindowType.widthRangeValues.start / (entry.columns * adaptiveColumn),
+//              maxWidth: entry.adaptiveWindowType.widthRangeValues.end / (entry.columns * adaptiveColumn),
+//            ),
             child: child,
           );
         } else {
@@ -173,11 +172,44 @@ class AdaptiveContaine extends StatelessWidget {
 /// should be shown within the [AdaptiveContainer].
 class AdaptiveConstraints {
   const AdaptiveConstraints({
+    this.xs = true,
+    this.s = true,
+    this.m = true,
+    this.l = true,
+    this.xl = true,
+  });
+
+  const AdaptiveConstraints.xs(
+      {this.xs = true,
+      this.s = false,
+      this.m = false,
+      this.l = false,
+      this.xl = false});
+
+  const AdaptiveConstraints.s(
+      {this.xs = false,
+      this.s = true,
+      this.m = false,
+      this.l = false,
+      this.xl = false});
+  const AdaptiveConstraints.m(
+      {this.xs = false,
+      this.s = false,
+      this.m = true,
+      this.l = false,
+      this.xl = false});
+  const AdaptiveConstraints.l(
+      {this.xs = false,
+      this.s = false,
+      this.m = false,
+      this.l = true,
+      this.xl = false});
+  const AdaptiveConstraints.xl({
     this.xs = false,
     this.s = false,
     this.m = false,
     this.l = false,
-    this.xl = false,
+    this.xl = true,
   });
 
   final bool xs;

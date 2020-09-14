@@ -17,37 +17,37 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
         body: AdaptiveColumn(
           children: [
             AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(xs: true),
-              adaptiveColumn: 4,
+              adaptiveConstraints: AdaptiveConstraints.xs(),
+              adaptiveColumn: 2,
               color: Colors.red,
               child: Text('This is an extra small window'),
             ),
             AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(s: true),
-              adaptiveColumn: 4,
+              adaptiveConstraints: AdaptiveConstraints.s(),
+              adaptiveColumn: 2,
               color: Colors.orange,
               child: Text('This is a small window'),
             ),
             AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(m: true),
+              adaptiveConstraints: AdaptiveConstraints.m(),
               adaptiveColumn: 2,
               color: Colors.yellow,
               child: Text('This is a medium window'),
             ),
             AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(l: true),
+              adaptiveConstraints: AdaptiveConstraints.l(),
               adaptiveColumn: 2,
               color: Colors.green,
               child: Text('This is a large window'),
             ),
             AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(xl: true),
+              adaptiveConstraints: AdaptiveConstraints.xl(),
               adaptiveColumn: 2,
               color: Colors.blue,
               child: Text('This is an extra large window'),
             ),
             AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(
+              adaptiveConstraints: AdaptiveConstraints.xs(
                 xs: true,
                 s: true,
               ),
@@ -56,14 +56,86 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
               child: Text('This is a small or extra small window'),
             ),
             AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(
+              adaptiveConstraints: AdaptiveConstraints.m(
                 m: true,
                 l: true,
                 xl: true,
               ),
-              adaptiveColumn: 8,
+              adaptiveColumn: 2,
               color: Colors.pink,
               child: Text('This is a medium, large, or extra large window'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
+            ),
+            AdaptiveContaine(
+              adaptiveConstraints: AdaptiveConstraints(),
+              adaptiveColumn: 2,
+              color: Colors.black,
+              child: Text('This is for every screen size'),
             ),
           ],
         ),
