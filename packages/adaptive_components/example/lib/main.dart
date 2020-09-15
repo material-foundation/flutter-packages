@@ -3,140 +3,58 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:adaptive_components/adaptive_components.dart';
+
+import 'adaptive_column_example.dart';
+import 'adaptive_container_example.dart';
 
 void main() {
-  runApp(AdaptiveBreakpointsExample());
+  runApp(MyApp());
 }
 
-class AdaptiveBreakpointsExample extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: AdaptiveColumn(
+      title: 'Adaptive Navigation Scaffold Demo',
+      home: DemoSelector(),
+    );
+  }
+}
+
+class DemoSelector extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints.xs(),
-              adaptiveColumn: 2,
-              color: Colors.red,
-              child: Text('This is an extra small window'),
+            RaisedButton(
+              child: Text('Adaptive Column'),
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return AdaptiveColumnsExample();
+                    },
+                  ),
+                );
+              },
             ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints.s(),
-              adaptiveColumn: 2,
-              color: Colors.orange,
-              child: Text('This is a small window'),
+            SizedBox(height: 16),
+            RaisedButton(
+              child: Text('Adaptive Container'),
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return AdaptiveContainerExample();
+                    },
+                  ),
+                );
+              },
             ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints.m(),
-              adaptiveColumn: 2,
-              color: Colors.yellow,
-              child: Text('This is a medium window'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints.l(),
-              adaptiveColumn: 6,
-              color: Colors.green,
-              child: Text('This is a large window'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints.xl(),
-              adaptiveColumn: 2,
-              color: Colors.blue,
-              child: Text('This is an extra large window'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints.xs(
-                xs: true,
-                sm: true,
-              ),
-              adaptiveColumn: 2,
-              color: Colors.indigo,
-              child: Text('This is a small or extra small window'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints.m(
-                md: true,
-                lg: true,
-                xl: true,
-              ),
-              adaptiveColumn: 6,
-              color: Colors.pink,
-              child: Text('This is a medium, large, or extra large window'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 12,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
-            AdaptiveContaine(
-              adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
-              color: Colors.black,
-              child: Text('This is for every screen size'),
-            ),
+            SizedBox(height: 16),
           ],
         ),
       ),

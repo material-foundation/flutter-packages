@@ -44,7 +44,9 @@ class AdaptiveContaine extends StatelessWidget {
             color == null || decoration == null,
             'Cannot provide both a color and a decoration\n'
             'To provide both, use "decoration: BoxDecoration(color: color)".'),
-        super(key: key);
+        super(key: key) {
+    adaptiveConstraints ??= AdaptiveConstraints();
+  }
 
   /// The [child] contained by the container.
   ///
@@ -61,7 +63,7 @@ class AdaptiveContaine extends StatelessWidget {
   ///
   /// This is used by the builder to see what type of screen the user wants this
   /// [AdaptiveContainer] to fit within.
-  final AdaptiveConstraints adaptiveConstraints;
+  AdaptiveConstraints adaptiveConstraints;
 
   /// AdaptiveColumn is used with [AdaptiveColumn] and [AdaptiveRow] to represent
   /// the amount of columns that this widget will fill up within a certain [Flex]
