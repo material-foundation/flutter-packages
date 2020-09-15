@@ -26,9 +26,10 @@ class AdaptiveColumn extends StatelessWidget {
         BreakpointSystemEntry _entry = getBreakpointEntry(context);
         final double _margin = margin ?? _entry.margin;
         final double _gutter = gutter ?? _entry.gutter;
-        final int _columns = columns?.getAdaptiveConstraintsColumn(context) == 0
-            ? columns.getAdaptiveConstraintsColumn(context)
-            : _entry.columns;
+        final int _totalColumns =
+            columns?.getAdaptiveConstraintsColumn(context) == 0
+                ? columns.getAdaptiveConstraintsColumn(context)
+                : _entry.columns;
 
         return Container(
           color: Colors.grey,
@@ -39,46 +40,63 @@ class AdaptiveColumn extends StatelessWidget {
             maxWidth: _entry.adaptiveWindowType.widthRangeValues.end,
           ),
           child: Wrap(
-//            spacing: _gutter,
             runSpacing: 8.0,
             children: () {
-              int totalColumns = 0;
+              int currentColumns = 0;
+              int totalGutters = 0;
+              bool isEmpty = true;
               List<Widget> childs = [];
-                print(_columns);
+              List<Widget> row = [];
+              print(_totalColumns);
+
               for (int counter = 0; counter < children.length; counter++) {
+                // The if statement checks if the adaptiveContainer child fits
+                // within the adaptive constraints.
                 if (children[counter]
                     .adaptiveConstraints
                     .withinAdaptiveConstraint(context)) {
-                  double maxWidth = MediaQuery.of(context).size.width /
-                      _columns *
-                      children[counter].adaptiveColumn;
-                  childs.add(
-                    ConstrainedBox(
-                      constraints: BoxConstraints(
-                        minWidth: maxWidth,
-                        maxWidth: maxWidth,
-                      ),
-                      child: children[counter],
-                    ),
-                  );
-                  if (totalColumns < _columns) {
-                    print(totalColumns);
-                    childs.add(
-                      SizedBox(
-                        width: _gutter,
-                        child: Container(
-                          color: Colors.grey,
+                  row.add(children[counter]);
+                  currentColumns += children[counter].adaptiveColumn;
+
+                  if (currentColumns < _totalColumns) {
+                    totalGutters++;
+                    isEmpty = false;
+                  } else {
+                    // maxWidth = Column width without margin divided by the total
+                    // adaptive container width and gutter.
+                    double maxWidth =
+                        (MediaQuery.of(context).size.width - _margin * 2 -
+                                _gutter * totalGutters) /
+                            _totalColumns *
+                            children[counter].adaptiveColumn;
+                    for (Widget r in row) {
+                      childs.add(
+                        ConstrainedBox(
+                          constraints: BoxConstraints(
+                            minWidth: maxWidth,
+                            maxWidth: maxWidth,
+                          ),
+                          child: r,
                         ),
-                      ),
-                    );
-                    totalColumns += _columns;
-                  }
-                  else {
-                    totalColumns = 0;
+                      );
+
+                      if (0 < totalGutters) {
+                        childs.add(
+                          SizedBox(
+                            width: _gutter,
+                            child: Container(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        );
+                        totalGutters--;
+                      }
+                    }
+                    currentColumns = 0;
+                    row = [];
                   }
                 }
               }
-
               return childs;
             }(),
           ),
