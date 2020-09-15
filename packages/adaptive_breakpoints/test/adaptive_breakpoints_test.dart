@@ -12,10 +12,10 @@ void main() {
 
     await tester.pumpWidget(
       MaterialApp(
-        home: AdaptiveContainer(
-          color: adaptiveContainerColor,
-          adaptiveConstraints: AdaptiveConstraints(s: true),
-        ),
+//        home: AdaptiveContainer(
+//          color: adaptiveContainerColor,
+//          adaptiveConstraints: AdaptiveConstraints(s: true),
+//        ),
       ),
     );
 
@@ -28,10 +28,10 @@ void main() {
 
     await tester.pumpWidget(
       MaterialApp(
-        home: AdaptiveContainer(
-          color: adaptiveContainerColor,
-          adaptiveConstraints: AdaptiveConstraints(s: true),
-        ),
+//        home: AdaptiveContainer(
+//          color: adaptiveContainerColor,
+//          adaptiveConstraints: AdaptiveConstraints(s: true),
+//        ),
       ),
     );
 
@@ -45,10 +45,10 @@ void main() {
 
     await tester.pumpWidget(
       MaterialApp(
-        home: AdaptiveContainer(
-          color: adaptiveContainerColor,
-          adaptiveConstraints: AdaptiveConstraints(xs: true),
-        ),
+//        home: AdaptiveContainer(
+//          color: adaptiveContainerColor,
+//          adaptiveConstraints: AdaptiveConstraints(xs: true),
+//        ),
       ),
     );
 
@@ -61,10 +61,10 @@ void main() {
 
     await tester.pumpWidget(
       MaterialApp(
-        home: AdaptiveContainer(
-          color: adaptiveContainerColor,
-          adaptiveConstraints: AdaptiveConstraints(l: true),
-        ),
+//        home: AdaptiveContainer(
+//          color: adaptiveContainerColor,
+//          adaptiveConstraints: AdaptiveConstraints(l: true),
+//        ),
       ),
     );
 
