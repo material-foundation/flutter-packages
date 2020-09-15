@@ -36,7 +36,7 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
             ),
             AdaptiveContaine(
               adaptiveConstraints: AdaptiveConstraints.l(),
-              adaptiveColumn: 2,
+              adaptiveColumn: 6,
               color: Colors.green,
               child: Text('This is a large window'),
             ),
@@ -49,7 +49,7 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
             AdaptiveContaine(
               adaptiveConstraints: AdaptiveConstraints.xs(
                 xs: true,
-                s: true,
+                sm: true,
               ),
               adaptiveColumn: 2,
               color: Colors.indigo,
@@ -57,17 +57,17 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
             ),
             AdaptiveContaine(
               adaptiveConstraints: AdaptiveConstraints.m(
-                m: true,
-                l: true,
+                md: true,
+                lg: true,
                 xl: true,
               ),
-              adaptiveColumn: 2,
+              adaptiveColumn: 6,
               color: Colors.pink,
               child: Text('This is a medium, large, or extra large window'),
             ),
             AdaptiveContaine(
               adaptiveConstraints: AdaptiveConstraints(),
-              adaptiveColumn: 2,
+              adaptiveColumn: 12,
               color: Colors.black,
               child: Text('This is for every screen size'),
             ),

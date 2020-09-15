@@ -136,7 +136,6 @@ class AdaptiveContaine extends StatelessWidget {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         if (adaptiveConstraints.withinAdaptiveConstraint(context)) {
-//          BreakpointSystemEntry entry = getBreakpointEntry(context);
           final double _margin = margin ?? 0.0;
           return Container(
             alignment: alignment,
@@ -168,49 +167,56 @@ class AdaptiveContaine extends StatelessWidget {
 class AdaptiveConstraints {
   const AdaptiveConstraints({
     this.xs = true,
-    this.s = true,
-    this.m = true,
-    this.l = true,
+    this.sm = true,
+    this.md = true,
+    this.lg = true,
     this.xl = true,
   });
 
-  const AdaptiveConstraints.xs(
-      {this.xs = true,
-      this.s = false,
-      this.m = false,
-      this.l = false,
-      this.xl = false});
+  const AdaptiveConstraints.xs({
+    this.xs = true,
+    this.sm = false,
+    this.md = false,
+    this.lg = false,
+    this.xl = false,
+  });
 
-  const AdaptiveConstraints.s(
-      {this.xs = false,
-      this.s = true,
-      this.m = false,
-      this.l = false,
-      this.xl = false});
-  const AdaptiveConstraints.m(
-      {this.xs = false,
-      this.s = false,
-      this.m = true,
-      this.l = false,
-      this.xl = false});
-  const AdaptiveConstraints.l(
-      {this.xs = false,
-      this.s = false,
-      this.m = false,
-      this.l = true,
-      this.xl = false});
+  const AdaptiveConstraints.s({
+    this.xs = false,
+    this.sm = true,
+    this.md = false,
+    this.lg = false,
+    this.xl = false,
+  });
+
+  const AdaptiveConstraints.m({
+    this.xs = false,
+    this.sm = false,
+    this.md = true,
+    this.lg = false,
+    this.xl = false,
+  });
+
+  const AdaptiveConstraints.l({
+    this.xs = false,
+    this.sm = false,
+    this.md = false,
+    this.lg = true,
+    this.xl = false,
+  });
+
   const AdaptiveConstraints.xl({
     this.xs = false,
-    this.s = false,
-    this.m = false,
-    this.l = false,
+    this.sm = false,
+    this.md = false,
+    this.lg = false,
     this.xl = true,
   });
 
   final bool xs;
-  final bool s;
-  final bool m;
-  final bool l;
+  final bool sm;
+  final bool md;
+  final bool lg;
   final bool xl;
 
   bool withinAdaptiveConstraint(BuildContext context) {
@@ -220,11 +226,11 @@ class AdaptiveConstraints {
       case AdaptiveWindowType.xs:
         return xs;
       case AdaptiveWindowType.s:
-        return s;
+        return sm;
       case AdaptiveWindowType.m:
-        return m;
+        return md;
       case AdaptiveWindowType.l:
-        return l;
+        return lg;
       case AdaptiveWindowType.xl:
         return xl;
       default:

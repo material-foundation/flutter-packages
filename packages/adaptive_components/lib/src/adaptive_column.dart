@@ -63,10 +63,10 @@ class AdaptiveColumn extends StatelessWidget {
                       // maxWidth equals column width without margin and gutters
                       // divided by the total number of adaptive containers.
                       double maxWidth = (MediaQuery.of(context).size.width -
-                                _margin * 2 -
-                                _gutter * totalGutters) /
-                            _totalColumns *
-                            r.adaptiveColumn;
+                              _margin * 2 -
+                              _gutter * totalGutters) /
+                          _totalColumns *
+                          r.adaptiveColumn;
 
                       childs.add(
                         ConstrainedBox(
@@ -95,24 +95,18 @@ class AdaptiveColumn extends StatelessWidget {
                     row = [];
                   } else {
                     int gutters = 0;
+                    totalGutters--;
                     for (AdaptiveContaine r in row) {
                       // maxWidth equals column width without margin and gutters
                       // divided by the total number of adaptive containers.
-                      double maxWidth;
-                      if (currentColumns == _totalColumns) {
-                        maxWidth = (MediaQuery.of(context).size.width -
-                            _margin * 2 -
-                            _gutter * totalGutters) /
-                            _totalColumns *
-                            r.adaptiveColumn;
-                      } else {
-                        totalGutters--;
-                        maxWidth = (MediaQuery.of(context).size.width -
-                            _margin * 2 -
-                            _gutter * gutters == totalGutters ? 0 : totalGutters) /
-                            _totalColumns *
-                            r.adaptiveColumn;
-                      }
+                      double maxWidth = (MediaQuery.of(context).size.width -
+                                      _margin * 2 -
+                                      _gutter *
+                                          (gutters == totalGutters ? 0 : totalGutters)) /
+                          _totalColumns *
+                          r.adaptiveColumn;
+
+                      print(maxWidth);
                       childs.add(
                         ConstrainedBox(
                           constraints: BoxConstraints(
@@ -138,7 +132,7 @@ class AdaptiveColumn extends StatelessWidget {
                     totalGutters = 0;
                     currentColumns = 0;
                     row = [];
-                }
+                  }
                 }
               }
               return childs;
