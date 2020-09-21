@@ -322,8 +322,8 @@ class _AdaptiveContainer extends StatelessWidget {
         assert(decoration == null || decoration.debugAssertIsValid()),
         assert(clipBehavior != null),
         assert(
-        color == null || decoration == null,
-        'Cannot provide both a color and a decoration\n'
+            color == null || decoration == null,
+            'Cannot provide both a color and a decoration\n'
             'To provide both, use "decoration: BoxDecoration(color: color)".'),
         super(key: key);
 
@@ -439,7 +439,7 @@ class _AdaptiveContainer extends StatelessWidget {
 /// If the user sets one of the variables below to true than that window type
 /// should be shown within the [AdaptiveContainer].
 class _AdaptiveConstraints {
-  const _AdaptiveConstraints ({
+  const _AdaptiveConstraints({
     this.xs = false,
     this.sm = false,
     this.md = false,

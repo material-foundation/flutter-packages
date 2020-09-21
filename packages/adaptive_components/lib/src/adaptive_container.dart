@@ -65,7 +65,7 @@ class AdaptiveContaine extends StatelessWidget {
   /// [AdaptiveContainer] to fit within.
   AdaptiveConstraints adaptiveConstraints;
 
-  /// AdaptiveColumn is used with [AdaptiveColumn] and [AdaptiveRow] to represent
+  /// AdaptiveColumn is used with [AdaptiveColumn] to represent
   /// the amount of columns that this widget will fill up within a certain [Flex]
   /// range.
   ///

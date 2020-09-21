@@ -15,6 +15,7 @@ class AdaptiveColumnsExample extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: AdaptiveColumn(
+          columns: AdaptiveConstraintsColumn.adaptive(10),
           children: [
             AdaptiveContaine(
               adaptiveConstraints: AdaptiveConstraints.xs(),

@@ -26,13 +26,13 @@ class AdaptiveColumn extends StatelessWidget {
         BreakpointSystemEntry _entry = getBreakpointEntry(context);
         final double _margin = margin ?? _entry.margin;
         final double _gutter = gutter ?? _entry.gutter;
+        final int _adaptiveConstraintsColumn = columns?.getAdaptiveConstraintsColumn(context);
         final int _totalColumns =
-            columns?.getAdaptiveConstraintsColumn(context) == 0
-                ? columns.getAdaptiveConstraintsColumn(context)
+            _adaptiveConstraintsColumn != null
+                ? _adaptiveConstraintsColumn != 0 ? _adaptiveConstraintsColumn : _entry.columns
                 : _entry.columns;
 
         return Container(
-          color: Colors.grey,
           width: MediaQuery.of(context).size.width - (_margin * 2),
           margin: EdgeInsets.symmetric(horizontal: _margin),
           constraints: BoxConstraints(
@@ -44,10 +44,10 @@ class AdaptiveColumn extends StatelessWidget {
             children: () {
               int currentColumns = 0;
               int totalGutters = 0;
-              List<Widget> childs = [];
+              List<Widget> children = [];
               List<AdaptiveContaine> row = [];
 
-              for (AdaptiveContaine child in children) {
+              for (AdaptiveContaine child in this.children) {
                 // The if statement checks if the adaptiveContainer child fits
                 // within the adaptive constraints.
                 if (child.adaptiveConstraints
@@ -63,27 +63,30 @@ class AdaptiveColumn extends StatelessWidget {
                       totalGutters--;
                     }
 
-                    for (AdaptiveContaine r in row) {
+                    for (AdaptiveContaine rowItem in row) {
                       // maxWidth equals column width without margin and gutters
                       // divided by the total number of adaptive containers.
                       double maxWidth = (MediaQuery.of(context).size.width -
-                          _margin * 2 -
-                          _gutter *
-                              (gutters == totalGutters && currentColumns > _totalColumns ? 0 : totalGutters)) /
+                              _margin * 2 -
+                              _gutter *
+                                  (gutters == totalGutters &&
+                                          currentColumns > _totalColumns
+                                      ? 0
+                                      : totalGutters)) /
                           _totalColumns *
-                          r.adaptiveColumn;
-                      childs.add(
+                          rowItem.adaptiveColumn;
+                      children.add(
                         ConstrainedBox(
                           constraints: BoxConstraints(
                             minWidth: maxWidth,
                             maxWidth: maxWidth,
                           ),
-                          child: r,
+                          child: rowItem,
                         ),
                       );
 
                       if (gutters < totalGutters && 1 < row.length) {
-                        childs.add(
+                        children.add(
                           SizedBox(
                             width: _gutter,
                             child: Container(
@@ -100,7 +103,7 @@ class AdaptiveColumn extends StatelessWidget {
                   }
                 }
               }
-              return childs;
+              return children;
             }(),
           ),
         );
@@ -110,7 +113,7 @@ class AdaptiveColumn extends StatelessWidget {
 }
 
 /// Used to see if a range of [AdaptiveWindowType] should be shown in the window.
-/// If the user sets one of the variables below to true than that window type
+/// If the user sets one of the variables below to true then that window type
 /// should be shown within the [AdaptiveContainer].
 class AdaptiveConstraintsColumn {
   AdaptiveConstraintsColumn({

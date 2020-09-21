@@ -17,32 +17,27 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
         body: Column(
           children: [
             _AdaptiveContainer(
-              adaptiveConstraints:
-              _AdaptiveConstraints(xs: true),
+              adaptiveConstraints: _AdaptiveConstraints(xs: true),
               color: Colors.red,
               child: Text('This is an extra small window'),
             ),
             _AdaptiveContainer(
-              adaptiveConstraints:
-              _AdaptiveConstraints(sm: true),
+              adaptiveConstraints: _AdaptiveConstraints(sm: true),
               color: Colors.orange,
               child: Text('This is a small window'),
             ),
             _AdaptiveContainer(
-              adaptiveConstraints:
-              _AdaptiveConstraints(md: true),
+              adaptiveConstraints: _AdaptiveConstraints(md: true),
               color: Colors.yellow,
               child: Text('This is a medium window'),
             ),
             _AdaptiveContainer(
-              adaptiveConstraints:
-              _AdaptiveConstraints(lg: true),
+              adaptiveConstraints: _AdaptiveConstraints(lg: true),
               color: Colors.green,
               child: Text('This is a large window'),
             ),
             _AdaptiveContainer(
-              adaptiveConstraints:
-              _AdaptiveConstraints(xl: true),
+              adaptiveConstraints: _AdaptiveConstraints(xl: true),
               color: Colors.blue,
               child: Text('This is an extra large window'),
             ),
@@ -106,8 +101,8 @@ class _AdaptiveContainer extends StatelessWidget {
         assert(decoration == null || decoration.debugAssertIsValid()),
         assert(clipBehavior != null),
         assert(
-        color == null || decoration == null,
-        'Cannot provide both a color and a decoration\n'
+            color == null || decoration == null,
+            'Cannot provide both a color and a decoration\n'
             'To provide both, use "decoration: BoxDecoration(color: color)".'),
         super(key: key);
 
@@ -223,7 +218,7 @@ class _AdaptiveContainer extends StatelessWidget {
 /// If the user sets one of the variables below to true than that window type
 /// should be shown within the [AdaptiveContainer].
 class _AdaptiveConstraints {
-  const _AdaptiveConstraints ({
+  const _AdaptiveConstraints({
     this.xs = false,
     this.sm = false,
     this.md = false,
