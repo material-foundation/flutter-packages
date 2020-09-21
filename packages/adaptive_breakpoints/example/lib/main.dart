@@ -101,8 +101,8 @@ class _AdaptiveContainer extends StatelessWidget {
         assert(decoration == null || decoration.debugAssertIsValid()),
         assert(clipBehavior != null),
         assert(
-            color == null || decoration == null,
-            'Cannot provide both a color and a decoration\n'
+        color == null || decoration == null,
+        'Cannot provide both a color and a decoration\n'
             'To provide both, use "decoration: BoxDecoration(color: color)".'),
         super(key: key);
 
@@ -236,15 +236,15 @@ class _AdaptiveConstraints {
     AdaptiveWindowType currentEntry = getWindowType(context);
 
     switch (currentEntry) {
-      case AdaptiveWindowType.xs:
+      case AdaptiveWindowType.xsmall:
         return xs;
-      case AdaptiveWindowType.sm:
+      case AdaptiveWindowType.small:
         return sm;
-      case AdaptiveWindowType.md:
+      case AdaptiveWindowType.medium:
         return md;
-      case AdaptiveWindowType.lg:
+      case AdaptiveWindowType.large:
         return lg;
-      case AdaptiveWindowType.xl:
+      case AdaptiveWindowType.xlarge:
         return xl;
       default:
         throw AssertionError('Unsupported AdaptiveWindowType');
