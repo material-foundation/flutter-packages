@@ -14,35 +14,35 @@ import 'package:flutter/material.dart';
 ///
 /// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
 enum AdaptiveWindowType {
-  xs,
-  sm,
-  md,
-  lg,
-  xl,
+  xsmall,
+  small,
+  medium,
+  large,
+  xlarge,
 }
 
 /// Used to set custom comparison operators for the [AdaptiveWindowType] enum.
 final Map<AdaptiveWindowType, int> _operatorMap = {
-  AdaptiveWindowType.xs: 0,
-  AdaptiveWindowType.sm: 1,
-  AdaptiveWindowType.md: 2,
-  AdaptiveWindowType.lg: 3,
-  AdaptiveWindowType.xl: 4,
+  AdaptiveWindowType.xsmall: 0,
+  AdaptiveWindowType.small: 1,
+  AdaptiveWindowType.medium: 2,
+  AdaptiveWindowType.large: 3,
+  AdaptiveWindowType.xlarge: 4,
 };
 
 /// This extension lets you access variables associated with each window type.
 extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
   String get name {
     switch (this) {
-      case AdaptiveWindowType.xs:
+      case AdaptiveWindowType.xsmall:
         return 'xsmall';
-      case AdaptiveWindowType.sm:
+      case AdaptiveWindowType.small:
         return 'small';
-      case AdaptiveWindowType.md:
+      case AdaptiveWindowType.medium:
         return 'medium';
-      case AdaptiveWindowType.lg:
+      case AdaptiveWindowType.large:
         return 'large';
-      case AdaptiveWindowType.xl:
+      case AdaptiveWindowType.xlarge:
         return 'xlarge';
       default:
         throw AssertionError('Unsupported AdaptiveWindowType');
@@ -51,15 +51,15 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
 
   RangeValues get widthRangeValues {
     switch (this) {
-      case AdaptiveWindowType.xs:
+      case AdaptiveWindowType.xsmall:
         return RangeValues(0, 599);
-      case AdaptiveWindowType.sm:
+      case AdaptiveWindowType.small:
         return RangeValues(600, 1023);
-      case AdaptiveWindowType.md:
+      case AdaptiveWindowType.medium:
         return RangeValues(1024, 1439);
-      case AdaptiveWindowType.lg:
+      case AdaptiveWindowType.large:
         return RangeValues(1440, 1919);
-      case AdaptiveWindowType.xl:
+      case AdaptiveWindowType.xlarge:
         return RangeValues(1920, double.infinity);
       default:
         throw AssertionError('Unsupported AdaptiveWindowType');
@@ -68,15 +68,15 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
 
   RangeValues get heightLandscapeRangeValues {
     switch (this) {
-      case AdaptiveWindowType.xs:
+      case AdaptiveWindowType.xsmall:
         return RangeValues(0, 359);
-      case AdaptiveWindowType.sm:
+      case AdaptiveWindowType.small:
         return RangeValues(360, 719);
-      case AdaptiveWindowType.md:
+      case AdaptiveWindowType.medium:
         return RangeValues(720, 959);
-      case AdaptiveWindowType.lg:
+      case AdaptiveWindowType.large:
         return RangeValues(960, 1279);
-      case AdaptiveWindowType.xl:
+      case AdaptiveWindowType.xlarge:
         return RangeValues(1280, double.infinity);
       default:
         throw AssertionError('Unsupported AdaptiveWindowType');
@@ -85,15 +85,15 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
 
   RangeValues get heightPortraitRangeValues {
     switch (this) {
-      case AdaptiveWindowType.xs:
+      case AdaptiveWindowType.xsmall:
         return RangeValues(0, 959);
-      case AdaptiveWindowType.sm:
+      case AdaptiveWindowType.small:
         return RangeValues(360, 1599);
-      case AdaptiveWindowType.md:
+      case AdaptiveWindowType.medium:
         return RangeValues(720, 1919);
-      case AdaptiveWindowType.lg:
+      case AdaptiveWindowType.large:
         return RangeValues(1920, double.infinity);
-      case AdaptiveWindowType.xl:
+      case AdaptiveWindowType.xlarge:
         return RangeValues(1920, double.infinity);
       default:
         throw AssertionError('Unsupported AdaptiveWindowType');
@@ -140,7 +140,7 @@ class BreakpointSystemEntry {
   ///
   /// The adaptive window represents a set of similar devices. For example, if
   /// you want to create an adaptive layout for phones and small tablets you
-  /// would check if your window width is within the range of xs and s. If your
+  /// would check if your window width is within the range of xsmall and s. If your
   /// user has a bigger window size than you would create a different layout for
   /// larger screens.
   final AdaptiveWindowType adaptiveWindowType;
@@ -171,7 +171,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
   BreakpointSystemEntry(
     range: RangeValues(0, 359),
     portrait: 'small handset',
-    adaptiveWindowType: AdaptiveWindowType.xs,
+    adaptiveWindowType: AdaptiveWindowType.xsmall,
     columns: 4,
     margin: 16.0,
     gutter: 16.0,
@@ -179,7 +179,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
   BreakpointSystemEntry(
     range: RangeValues(360, 399),
     portrait: 'medium handset',
-    adaptiveWindowType: AdaptiveWindowType.xs,
+    adaptiveWindowType: AdaptiveWindowType.xsmall,
     columns: 4,
     margin: 16.0,
     gutter: 16.0,
@@ -187,7 +187,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
   BreakpointSystemEntry(
     range: RangeValues(400, 479),
     portrait: 'large handset',
-    adaptiveWindowType: AdaptiveWindowType.xs,
+    adaptiveWindowType: AdaptiveWindowType.xsmall,
     columns: 4,
     margin: 16.0,
     gutter: 16.0,
@@ -196,7 +196,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     range: RangeValues(480, 599),
     portrait: 'large handset',
     landscape: 'small handset',
-    adaptiveWindowType: AdaptiveWindowType.xs,
+    adaptiveWindowType: AdaptiveWindowType.xsmall,
     columns: 4,
     margin: 16.0,
     gutter: 16.0,
@@ -205,7 +205,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     range: RangeValues(600, 719),
     portrait: 'small tablet',
     landscape: 'medium handset',
-    adaptiveWindowType: AdaptiveWindowType.sm,
+    adaptiveWindowType: AdaptiveWindowType.small,
     columns: 8,
     margin: 16.0,
     gutter: 16.0,
@@ -214,7 +214,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     range: RangeValues(720, 839),
     portrait: 'large tablet',
     landscape: 'large handset',
-    adaptiveWindowType: AdaptiveWindowType.sm,
+    adaptiveWindowType: AdaptiveWindowType.small,
     columns: 8,
     margin: 24.0,
     gutter: 24.0,
@@ -223,7 +223,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     range: RangeValues(840, 959),
     portrait: 'large tablet',
     landscape: 'large handset',
-    adaptiveWindowType: AdaptiveWindowType.sm,
+    adaptiveWindowType: AdaptiveWindowType.small,
     columns: 12,
     margin: 24.0,
     gutter: 24.0,
@@ -231,7 +231,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
   BreakpointSystemEntry(
     range: RangeValues(960, 1023),
     landscape: 'small tablet',
-    adaptiveWindowType: AdaptiveWindowType.sm,
+    adaptiveWindowType: AdaptiveWindowType.small,
     columns: 12,
     margin: 24.0,
     gutter: 24.0,
@@ -239,7 +239,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
   BreakpointSystemEntry(
     range: RangeValues(1024, 1279),
     landscape: 'large tablet',
-    adaptiveWindowType: AdaptiveWindowType.md,
+    adaptiveWindowType: AdaptiveWindowType.medium,
     columns: 12,
     margin: 24.0,
     gutter: 24.0,
@@ -247,7 +247,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
   BreakpointSystemEntry(
     range: RangeValues(1280, 1439),
     landscape: 'large tablet',
-    adaptiveWindowType: AdaptiveWindowType.md,
+    adaptiveWindowType: AdaptiveWindowType.medium,
     columns: 12,
     margin: 24.0,
     gutter: 24.0,
@@ -255,7 +255,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
   BreakpointSystemEntry(
     range: RangeValues(1440, 1599),
     portrait: 'small handset',
-    adaptiveWindowType: AdaptiveWindowType.lg,
+    adaptiveWindowType: AdaptiveWindowType.large,
     columns: 12,
     margin: 24.0,
     gutter: 24.0,
@@ -263,7 +263,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
   BreakpointSystemEntry(
     range: RangeValues(1600, 1919),
     portrait: 'small handset',
-    adaptiveWindowType: AdaptiveWindowType.lg,
+    adaptiveWindowType: AdaptiveWindowType.large,
     columns: 12,
     margin: 24.0,
     gutter: 24.0,
@@ -271,7 +271,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
   BreakpointSystemEntry(
     range: RangeValues(1920, double.infinity),
     portrait: 'small handset',
-    adaptiveWindowType: AdaptiveWindowType.xl,
+    adaptiveWindowType: AdaptiveWindowType.xlarge,
     columns: 12,
     margin: 24.0,
     gutter: 24.0,

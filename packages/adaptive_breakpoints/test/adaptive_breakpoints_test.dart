@@ -14,7 +14,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.xs <= AdaptiveWindowType.xl
+                color: AdaptiveWindowType.xsmall <= AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -25,7 +25,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.md <= AdaptiveWindowType.xl
+                color: AdaptiveWindowType.medium <= AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -37,7 +37,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.xl <= AdaptiveWindowType.xl
+                color: AdaptiveWindowType.xlarge <= AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -49,7 +49,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.lg <= AdaptiveWindowType.sm
+                color: AdaptiveWindowType.large <= AdaptiveWindowType.small
                     ? trueColor
                     : falseColor,
               )),
@@ -67,7 +67,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.xs < AdaptiveWindowType.xl
+                color: AdaptiveWindowType.xsmall < AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -78,7 +78,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.md < AdaptiveWindowType.xl
+                color: AdaptiveWindowType.medium < AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -90,7 +90,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.xl < AdaptiveWindowType.xl
+                color: AdaptiveWindowType.xlarge < AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -102,7 +102,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.lg < AdaptiveWindowType.sm
+                color: AdaptiveWindowType.large < AdaptiveWindowType.small
                     ? trueColor
                     : falseColor,
               )),
@@ -120,7 +120,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.xs >= AdaptiveWindowType.xl
+                color: AdaptiveWindowType.xsmall >= AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -131,7 +131,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.md >= AdaptiveWindowType.xl
+                color: AdaptiveWindowType.medium >= AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -143,7 +143,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.xl >= AdaptiveWindowType.xl
+                color: AdaptiveWindowType.xlarge >= AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -155,7 +155,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.lg >= AdaptiveWindowType.sm
+                color: AdaptiveWindowType.large >= AdaptiveWindowType.small
                     ? trueColor
                     : falseColor,
               )),
@@ -173,7 +173,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.xs > AdaptiveWindowType.xl
+                color: AdaptiveWindowType.xsmall > AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -184,7 +184,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.md > AdaptiveWindowType.xl
+                color: AdaptiveWindowType.medium > AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -196,7 +196,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.xl > AdaptiveWindowType.xl
+                color: AdaptiveWindowType.xlarge > AdaptiveWindowType.xlarge
                     ? trueColor
                     : falseColor,
               )),
@@ -208,7 +208,7 @@ void main() {
         await tester.pumpWidget(
           MaterialApp(
               home: Container(
-                color: AdaptiveWindowType.lg > AdaptiveWindowType.sm
+                color: AdaptiveWindowType.large > AdaptiveWindowType.small
                     ? trueColor
                     : falseColor,
               )),
