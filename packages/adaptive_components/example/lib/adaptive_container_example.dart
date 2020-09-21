@@ -16,39 +16,39 @@ class AdaptiveContainerExample extends StatelessWidget {
       home: Scaffold(
         body: Column(
           children: [
-            AdaptiveContaine(
+            AdaptiveContainer(
               color: Colors.red,
               child: Text('This is an extra small window'),
             ),
-            AdaptiveContaine(
+            AdaptiveContainer(
               color: Colors.orange,
               child: Text('This is a small window'),
             ),
-            AdaptiveContaine(
+            AdaptiveContainer(
               color: Colors.yellow,
               child: Text('This is a medium window'),
             ),
-            AdaptiveContaine(
+            AdaptiveContainer(
               color: Colors.green,
               child: Text('This is a large window'),
             ),
-            AdaptiveContaine(
+            AdaptiveContainer(
               color: Colors.blue,
               child: Text('This is an extra large window'),
             ),
-            AdaptiveContaine(
+            AdaptiveContainer(
               adaptiveConstraints: AdaptiveConstraints(
-                xs: true,
-                sm: true,
+                xsmall: true,
+                small: true,
               ),
               color: Colors.indigo,
               child: Text('This is a small or extra small window'),
             ),
-            AdaptiveContaine(
+            AdaptiveContainer(
               adaptiveConstraints: AdaptiveConstraints(
-                md: true,
-                lg: true,
-                xl: true,
+                medium: true,
+                large: true,
+                xlarge: true,
               ),
               color: Colors.pink,
               child: Text('This is a medium, large, or extra large window'),

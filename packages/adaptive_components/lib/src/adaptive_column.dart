@@ -17,7 +17,7 @@ class AdaptiveColumn extends StatelessWidget {
   final double margin;
   final double gutter;
   final AdaptiveConstraintsColumn columns;
-  final List<AdaptiveContaine> children;
+  final List<AdaptiveContainer> children;
 
   @override
   Widget build(BuildContext context) {
@@ -26,11 +26,13 @@ class AdaptiveColumn extends StatelessWidget {
         BreakpointSystemEntry _entry = getBreakpointEntry(context);
         final double _margin = margin ?? _entry.margin;
         final double _gutter = gutter ?? _entry.gutter;
-        final int _adaptiveConstraintsColumn = columns?.getAdaptiveConstraintsColumn(context);
-        final int _totalColumns =
-            _adaptiveConstraintsColumn != null
-                ? _adaptiveConstraintsColumn != 0 ? _adaptiveConstraintsColumn : _entry.columns
-                : _entry.columns;
+        final int _adaptiveConstraintsColumn =
+            columns?.getAdaptiveConstraintsColumn(context);
+        final int _totalColumns = _adaptiveConstraintsColumn != null
+            ? _adaptiveConstraintsColumn != 0
+                ? _adaptiveConstraintsColumn
+                : _entry.columns
+            : _entry.columns;
 
         return Container(
           width: MediaQuery.of(context).size.width - (_margin * 2),
@@ -45,9 +47,9 @@ class AdaptiveColumn extends StatelessWidget {
               int currentColumns = 0;
               int totalGutters = 0;
               List<Widget> children = [];
-              List<AdaptiveContaine> row = [];
+              List<AdaptiveContainer> row = [];
 
-              for (AdaptiveContaine child in this.children) {
+              for (AdaptiveContainer child in this.children) {
                 // The if statement checks if the adaptiveContainer child fits
                 // within the adaptive constraints.
                 if (child.adaptiveConstraints
@@ -63,7 +65,7 @@ class AdaptiveColumn extends StatelessWidget {
                       totalGutters--;
                     }
 
-                    for (AdaptiveContaine rowItem in row) {
+                    for (AdaptiveContainer rowItem in row) {
                       // maxWidth equals column width without margin and gutters
                       // divided by the total number of adaptive containers.
                       double maxWidth = (MediaQuery.of(context).size.width -
@@ -117,41 +119,41 @@ class AdaptiveColumn extends StatelessWidget {
 /// should be shown within the [AdaptiveContainer].
 class AdaptiveConstraintsColumn {
   AdaptiveConstraintsColumn({
-    this.xs = 0,
-    this.sm = 0,
-    this.md = 0,
-    this.lg = 0,
-    this.xl = 0,
+    this.xsmall = 0,
+    this.small = 0,
+    this.medium = 0,
+    this.large = 0,
+    this.xlarge = 0,
   });
 
   AdaptiveConstraintsColumn.adaptive(int column) {
-    xs = column;
-    sm = column;
-    md = column;
-    lg = column;
-    xl = column;
+    xsmall = column;
+    small = column;
+    medium = column;
+    large = column;
+    xlarge = column;
   }
 
-  int xs;
-  int sm;
-  int md;
-  int lg;
-  int xl;
+  int xsmall;
+  int small;
+  int medium;
+  int large;
+  int xlarge;
 
   int getAdaptiveConstraintsColumn(BuildContext context) {
     AdaptiveWindowType currentEntry = getWindowType(context);
 
     switch (currentEntry) {
-      case AdaptiveWindowType.xs:
-        return xs;
-      case AdaptiveWindowType.s:
-        return sm;
-      case AdaptiveWindowType.m:
-        return md;
-      case AdaptiveWindowType.l:
-        return lg;
-      case AdaptiveWindowType.xl:
-        return xl;
+      case AdaptiveWindowType.xsmall:
+        return xsmall;
+      case AdaptiveWindowType.small:
+        return small;
+      case AdaptiveWindowType.medium:
+        return medium;
+      case AdaptiveWindowType.large:
+        return large;
+      case AdaptiveWindowType.xlarge:
+        return xlarge;
       default:
         throw AssertionError('Unsupported AdaptiveWindowType');
     }
