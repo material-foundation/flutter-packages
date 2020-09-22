@@ -128,4 +128,3 @@ class AdaptiveColumn extends StatelessWidget {
     );
   }
 }
-
