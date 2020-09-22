@@ -138,7 +138,6 @@ class AdaptiveContainer extends StatelessWidget {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         if (adaptiveConstraints.withinAdaptiveConstraint(context)) {
-          final double _margin = margin ?? 0.0;
           return Container(
             alignment: alignment,
             padding: padding,
@@ -148,7 +147,7 @@ class AdaptiveContainer extends StatelessWidget {
             transform: transform,
             clipBehavior: clipBehavior,
             height: height,
-            margin: EdgeInsets.symmetric(horizontal: _margin),
+            margin: margin,
             child: child,
           );
         } else {

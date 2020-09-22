@@ -25,19 +25,46 @@ class AdaptiveColumn extends StatelessWidget {
   /// Creates a vertical array of children. Going from left to right and then
   /// top to bottom.
   ///
+  /// This class has a responsive layout that is based of the adaptive breakpoints
+  /// package. The user puts in [AdaptiveContainer] widgets as children and each
+  /// child has a columm parameter. This represents the amount of columns it takes
+  /// up in its current row. So if the child has three [AdaptiveContainer] widgets
+  /// with each column set to 4 than on an extra-small screen each container would use up
+  /// the entire width of the device. On an extra-large screen the three containers
+  /// would fit across the row. This is because extra large devices allow up to
+  /// 12 columns to fit within the space.
+  ///
   /// To see an example visit:
   /// https://adaptive-components.web.app/#/
   const AdaptiveColumn({
     this.gutter,
     this.margin,
     @required this.children,
-  }) : assert(children != null);
+  }) : assert(margin == null || margin >= 0),
+        assert(gutter == null || gutter >= 0),
+        assert(children != null);
 
   /// Empty space at the left and right of this widget.
+  ///
+  /// By default the margins will be set differently on different devices. This
+  /// double value will be dependent of the breakpoint entry of the current screen.
+  ///
+  /// Learn more at https://material.io/design/layout/responsive-layout-grid.html#breakpoints
   final double margin;
 
   /// Represents the space between children.
+  ///
+  /// By default the gutter will be set differently on different devices. This
+  /// double value will be dependent of the breakpoint entry of the current screen.
+  ///
+  /// Learn more at https://material.io/design/layout/responsive-layout-grid.html#breakpoints
   final double gutter;
+
+  /// The List of [AdaptiveContainer]. Adaptive container neeeds to be used
+  /// because the widget has a column parameter. This parameter represents the
+  /// amount of columns this widget should incompass.
+  ///
+  /// By default it is set to 1.
   final List<AdaptiveContainer> children;
 
   @override
@@ -47,10 +74,8 @@ class AdaptiveColumn extends StatelessWidget {
         BreakpointSystemEntry _entry = getBreakpointEntry(context);
         final double _margin = margin ?? _entry.margin;
         final double _gutter = gutter ?? _entry.gutter;
-        final int _totalColumns = _entry.columns;
 
         return Container(
-          width: MediaQuery.of(context).size.width - (_margin * 2),
           margin: EdgeInsets.symmetric(horizontal: _margin),
           constraints: BoxConstraints(
             minWidth: _entry.adaptiveWindowType.widthRangeValues.start,
@@ -62,7 +87,7 @@ class AdaptiveColumn extends StatelessWidget {
               int currentColumns = 0;
               int totalGutters = 0;
               List<Widget> children = [];
-              List<AdaptiveContainer> row = [];
+              final List<AdaptiveContainer> row = [];
 
               for (AdaptiveContainer child in this.children) {
                 // The if statement checks if the adaptiveContainer child fits
@@ -72,11 +97,11 @@ class AdaptiveColumn extends StatelessWidget {
                   row.add(child);
                   currentColumns += child.adaptiveColumn;
 
-                  if (currentColumns < _totalColumns) {
+                  if (currentColumns < _entry.columns) {
                     totalGutters++;
                   } else {
-                    int gutters = 0;
-                    if (currentColumns > _totalColumns) {
+                    int rowGutters = 0;
+                    if (currentColumns > _entry.columns) {
                       totalGutters--;
                     }
 
@@ -86,11 +111,11 @@ class AdaptiveColumn extends StatelessWidget {
                       double maxWidth = (MediaQuery.of(context).size.width -
                               _margin * 2 -
                               _gutter *
-                                  (gutters == totalGutters &&
-                                          currentColumns > _totalColumns
+                                  (rowGutters == totalGutters &&
+                                          currentColumns > _entry.columns
                                       ? 0
                                       : totalGutters)) /
-                          _totalColumns *
+                          _entry.columns *
                           rowItem.adaptiveColumn;
                       children.add(
                         ConstrainedBox(
@@ -102,21 +127,19 @@ class AdaptiveColumn extends StatelessWidget {
                         ),
                       );
 
-                      if (gutters < totalGutters && 1 < row.length) {
+                      if (rowGutters < totalGutters && 1 < row.length) {
                         children.add(
                           SizedBox(
                             width: _gutter,
-                            child: Container(
-                              color: Colors.grey,
-                            ),
+                            child: Container(),
                           ),
                         );
-                        gutters++;
+                        rowGutters++;
                       }
                     }
                     totalGutters = 0;
                     currentColumns = 0;
-                    row = [];
+                    row.clear();
                   }
                 }
               }

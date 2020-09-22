@@ -41,7 +41,7 @@ class DemoSelector extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             RaisedButton(
               child: Text('Adaptive Container'),
               onPressed: () {
