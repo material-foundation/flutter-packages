@@ -15,40 +15,39 @@ class AdaptiveColumnsExample extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: AdaptiveColumn(
-          columns: AdaptiveConstraintsColumn.adaptive(10),
           children: [
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.xs(),
+              adaptiveConstraints: AdaptiveConstraints.xsmall(),
               adaptiveColumn: 2,
               color: Colors.red,
               child: Text('This is an extra small window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.s(),
+              adaptiveConstraints: AdaptiveConstraints.small(),
               adaptiveColumn: 2,
               color: Colors.orange,
               child: Text('This is a small window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.m(),
+              adaptiveConstraints: AdaptiveConstraints.medium(),
               adaptiveColumn: 2,
               color: Colors.yellow,
               child: Text('This is a medium window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.l(),
+              adaptiveConstraints: AdaptiveConstraints.large(),
               adaptiveColumn: 2,
               color: Colors.green,
               child: Text('This is a large window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.xl(),
+              adaptiveConstraints: AdaptiveConstraints.xlarge(),
               adaptiveColumn: 2,
               color: Colors.blue,
               child: Text('This is an extra large window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.xs(
+              adaptiveConstraints: AdaptiveConstraints.xsmall(
                 xsmall: true,
                 small: true,
               ),
@@ -57,7 +56,7 @@ class AdaptiveColumnsExample extends StatelessWidget {
               child: Text('This is a small or extra small window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.m(
+              adaptiveConstraints: AdaptiveConstraints.medium(
                 medium: true,
                 large: true,
                 xlarge: true,

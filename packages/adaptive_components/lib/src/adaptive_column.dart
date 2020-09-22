@@ -6,17 +6,38 @@ import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 import 'package:flutter/material.dart';
 import 'adaptive_container.dart';
 
+/// The [AdaptiveColumn] follows the Material guideline for responsive grids.
+///
+/// https://material.io/design/layout/responsive-layout-grid.html#columns-gutters-and-margins
+///
+/// This widget intigrates with the [AdaptiveContainer] widget.
+/// The [AdaptiveContainer] widget has a parameter called columns which represents
+/// the amount of columns it should take according to the breakpoints package.
+///
+/// So if the user has 6 adaptive container and each container represents two columns
+/// then the 6 adaptive container would all fit within one Row on a extra large screen
+/// because extra large screens have 12 columns per row.
+///
+/// Learn more about the breakpoint system:
+///
+/// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
 class AdaptiveColumn extends StatelessWidget {
+  /// Creates a vertical array of children. Going from left to right and then
+  /// top to bottom.
+  ///
+  /// To see an example visit:
+  /// https://adaptive-components.web.app/#/
   const AdaptiveColumn({
     this.gutter,
     this.margin,
-    this.columns,
     @required this.children,
   }) : assert(children != null);
 
+  /// Empty space at the left and right of this widget.
   final double margin;
+
+  /// Represents the space between children.
   final double gutter;
-  final AdaptiveConstraintsColumn columns;
   final List<AdaptiveContainer> children;
 
   @override
@@ -26,13 +47,7 @@ class AdaptiveColumn extends StatelessWidget {
         BreakpointSystemEntry _entry = getBreakpointEntry(context);
         final double _margin = margin ?? _entry.margin;
         final double _gutter = gutter ?? _entry.gutter;
-        final int _adaptiveConstraintsColumn =
-            columns?.getAdaptiveConstraintsColumn(context);
-        final int _totalColumns = _adaptiveConstraintsColumn != null
-            ? _adaptiveConstraintsColumn != 0
-                ? _adaptiveConstraintsColumn
-                : _entry.columns
-            : _entry.columns;
+        final int _totalColumns = _entry.columns;
 
         return Container(
           width: MediaQuery.of(context).size.width - (_margin * 2),
@@ -114,48 +129,3 @@ class AdaptiveColumn extends StatelessWidget {
   }
 }
 
-/// Used to see if a range of [AdaptiveWindowType] should be shown in the window.
-/// If the user sets one of the variables below to true then that window type
-/// should be shown within the [AdaptiveContainer].
-class AdaptiveConstraintsColumn {
-  AdaptiveConstraintsColumn({
-    this.xsmall = 0,
-    this.small = 0,
-    this.medium = 0,
-    this.large = 0,
-    this.xlarge = 0,
-  });
-
-  AdaptiveConstraintsColumn.adaptive(int column) {
-    xsmall = column;
-    small = column;
-    medium = column;
-    large = column;
-    xlarge = column;
-  }
-
-  int xsmall;
-  int small;
-  int medium;
-  int large;
-  int xlarge;
-
-  int getAdaptiveConstraintsColumn(BuildContext context) {
-    AdaptiveWindowType currentEntry = getWindowType(context);
-
-    switch (currentEntry) {
-      case AdaptiveWindowType.xsmall:
-        return xsmall;
-      case AdaptiveWindowType.small:
-        return small;
-      case AdaptiveWindowType.medium:
-        return medium;
-      case AdaptiveWindowType.large:
-        return large;
-      case AdaptiveWindowType.xlarge:
-        return xlarge;
-      default:
-        throw AssertionError('Unsupported AdaptiveWindowType');
-    }
-  }
-}

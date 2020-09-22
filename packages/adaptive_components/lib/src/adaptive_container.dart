@@ -175,7 +175,7 @@ class AdaptiveConstraints {
     this.xlarge = true,
   });
 
-  const AdaptiveConstraints.xs({
+  const AdaptiveConstraints.xsmall({
     this.xsmall = true,
     this.small = false,
     this.medium = false,
@@ -183,7 +183,7 @@ class AdaptiveConstraints {
     this.xlarge = false,
   });
 
-  const AdaptiveConstraints.s({
+  const AdaptiveConstraints.small({
     this.xsmall = false,
     this.small = true,
     this.medium = false,
@@ -191,7 +191,7 @@ class AdaptiveConstraints {
     this.xlarge = false,
   });
 
-  const AdaptiveConstraints.m({
+  const AdaptiveConstraints.medium({
     this.xsmall = false,
     this.small = false,
     this.medium = true,
@@ -199,7 +199,7 @@ class AdaptiveConstraints {
     this.xlarge = false,
   });
 
-  const AdaptiveConstraints.l({
+  const AdaptiveConstraints.large({
     this.xsmall = false,
     this.small = false,
     this.medium = false,
@@ -207,7 +207,7 @@ class AdaptiveConstraints {
     this.xlarge = false,
   });
 
-  const AdaptiveConstraints.xl({
+  const AdaptiveConstraints.xlarge({
     this.xsmall = false,
     this.small = false,
     this.medium = false,
