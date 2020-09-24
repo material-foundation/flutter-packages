@@ -17,32 +17,32 @@ class AdaptiveContainerExample extends StatelessWidget {
         body: Column(
           children: [
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.xsmall(),
+              constraints: AdaptiveConstraints.xsmall(),
               color: Colors.red,
               child: Text('This is an extra small window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.small(),
+              constraints: AdaptiveConstraints.small(),
               color: Colors.orange,
               child: Text('This is a small window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.medium(),
+              constraints: AdaptiveConstraints.medium(),
               color: Colors.yellow,
               child: Text('This is a medium window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.large(),
+              constraints: AdaptiveConstraints.large(),
               color: Colors.green,
               child: Text('This is a large window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints.xlarge(),
+              constraints: AdaptiveConstraints.xlarge(),
               color: Colors.blue,
               child: Text('This is an extra large window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints(
+              constraints: AdaptiveConstraints(
                 xsmall: true,
                 small: true,
                 medium: false,
@@ -53,7 +53,7 @@ class AdaptiveContainerExample extends StatelessWidget {
               child: Text('This is a small or extra small window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints: AdaptiveConstraints(
+              constraints: AdaptiveConstraints(
                 xsmall: false,
                 small: false,
                 medium: true,

@@ -92,19 +92,18 @@ class AdaptiveColumn extends StatelessWidget {
               for (AdaptiveContainer child in this.children) {
                 // The if statement checks if the adaptiveContainer child fits
                 // within the adaptive constraints.
-                if (child.adaptiveConstraints
+                if (child.constraints
                     .withinAdaptiveConstraint(context)) {
                   row.add(child);
-                  currentColumns += child.adaptiveColumn;
+                  currentColumns += child.columnSpan;
 
                   if (currentColumns < _entry.columns) {
                     totalGutters++;
                   } else {
-                    int rowGutters = 0;
                     if (currentColumns > _entry.columns) {
                       totalGutters--;
                     }
-
+                    int rowGutters = 0;
                     for (AdaptiveContainer rowItem in row) {
                       // maxWidth equals column width without margin and gutters
                       // divided by the total number of adaptive containers.
@@ -116,7 +115,7 @@ class AdaptiveColumn extends StatelessWidget {
                                       ? 0
                                       : totalGutters)) /
                           _entry.columns *
-                          rowItem.adaptiveColumn;
+                          rowItem.columnSpan;
                       children.add(
                         ConstrainedBox(
                           constraints: BoxConstraints(

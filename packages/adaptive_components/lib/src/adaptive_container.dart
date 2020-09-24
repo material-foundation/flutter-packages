@@ -34,8 +34,8 @@ class AdaptiveContainer extends StatelessWidget {
     this.height,
     this.child,
     this.clipBehavior = Clip.none,
-    this.adaptiveConstraints,
-    this.adaptiveColumn = 1,
+    this.constraints,
+    this.columnSpan = 1,
   })  : assert(margin == null || margin.isNonNegative),
         assert(padding == null || padding.isNonNegative),
         assert(decoration == null || decoration.debugAssertIsValid()),
@@ -45,7 +45,7 @@ class AdaptiveContainer extends StatelessWidget {
             'Cannot provide both a color and a decoration\n'
             'To provide both, use "decoration: BoxDecoration(color: color)".'),
         super(key: key) {
-    adaptiveConstraints ??= AdaptiveConstraints();
+    constraints ??= AdaptiveConstraints();
   }
 
   /// The [child] contained by the container.
@@ -63,7 +63,7 @@ class AdaptiveContainer extends StatelessWidget {
   ///
   /// This is used by the builder to see what type of screen the user wants this
   /// [AdaptiveContainer] to fit within.
-  AdaptiveConstraints adaptiveConstraints;
+  AdaptiveConstraints constraints;
 
   /// AdaptiveColumn is used with [AdaptiveColumn] to represent
   /// the amount of columns that this widget will fill up within a certain [Flex]
@@ -75,7 +75,7 @@ class AdaptiveContainer extends StatelessWidget {
   ///
   /// Learn more by visiting the Material website:
   /// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
-  final int adaptiveColumn;
+  final int columnSpan;
 
   /// Align the [child] within the container.
   ///
@@ -136,8 +136,8 @@ class AdaptiveContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      builder: (BuildContext context, BoxConstraints constraints) {
-        if (adaptiveConstraints.withinAdaptiveConstraint(context)) {
+      builder: (BuildContext context, BoxConstraints boxConstraints) {
+        if (constraints.withinAdaptiveConstraint(context)) {
           return Container(
             alignment: alignment,
             padding: padding,
