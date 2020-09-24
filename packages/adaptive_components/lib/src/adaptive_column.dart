@@ -61,7 +61,7 @@ class AdaptiveColumn extends StatelessWidget {
   final double gutter;
 
   /// The List of [AdaptiveContainer]. Adaptive container neeeds to be used
-  /// because the widget has a column parameter. This parameter represents the
+  /// because the widget has a columnSpan parameter. This parameter represents the
   /// amount of columns this widget should incompass.
   ///
   /// By default it is set to 1.

@@ -65,7 +65,7 @@ class AdaptiveContainer extends StatelessWidget {
   /// [AdaptiveContainer] to fit within.
   AdaptiveConstraints constraints;
 
-  /// AdaptiveColumn is used with [AdaptiveColumn] to represent
+  /// columnSpan is used with [AdaptiveColumn] to represent
   /// the amount of columns that this widget will fill up within a certain [Flex]
   /// range.
   ///
@@ -151,6 +151,9 @@ class AdaptiveContainer extends StatelessWidget {
             child: child,
           );
         } else {
+          /// Since this container is not within the adaptive constraints.
+          /// No widget must be returned but since you can't return no widget we
+          /// are returning a [LimitedBox] which is a very efficent widget.
           return LimitedBox(
             maxWidth: 0.0,
             maxHeight: 0.0,
