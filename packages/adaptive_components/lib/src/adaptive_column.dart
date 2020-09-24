@@ -40,7 +40,7 @@ class AdaptiveColumn extends StatelessWidget {
     this.gutter,
     this.margin,
     @required this.children,
-  }) : assert(margin == null || margin >= 0),
+  })  : assert(margin == null || margin >= 0),
         assert(gutter == null || gutter >= 0),
         assert(children != null);
 
@@ -150,4 +150,3 @@ class AdaptiveColumn extends StatelessWidget {
     );
   }
 }
-
