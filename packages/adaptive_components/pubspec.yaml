@@ -1,0 +1,17 @@
+name: adaptive_components
+description: Implements Material Adaptive Components.
+version: 0.0.1
+homepage: https://github.com/material-components/material-components-flutter-adaptive
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  adaptive_breakpoints: ^0.0.3
+  adaptive_navigation: ^0.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

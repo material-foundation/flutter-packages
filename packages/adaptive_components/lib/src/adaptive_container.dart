@@ -2,68 +2,8 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-import 'package:flutter/material.dart';
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
-
-void main() {
-  runApp(AdaptiveBreakpointsExample());
-}
-
-class AdaptiveBreakpointsExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Column(
-          children: [
-            _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(xs: true),
-              color: Colors.red,
-              child: Text('This is an extra small window'),
-            ),
-            _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(sm: true),
-              color: Colors.orange,
-              child: Text('This is a small window'),
-            ),
-            _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(md: true),
-              color: Colors.yellow,
-              child: Text('This is a medium window'),
-            ),
-            _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(lg: true),
-              color: Colors.green,
-              child: Text('This is a large window'),
-            ),
-            _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(xl: true),
-              color: Colors.blue,
-              child: Text('This is an extra large window'),
-            ),
-            _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(
-                xs: true,
-                sm: true,
-              ),
-              color: Colors.indigo,
-              child: Text('This is a small or extra small window'),
-            ),
-            _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(
-                md: true,
-                lg: true,
-                xl: true,
-              ),
-              color: Colors.pink,
-              child: Text('This is a medium, large, or extra large window'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+import 'package:flutter/material.dart';
 
 /// [AdaptiveContainer] lets you create a [Container] with adaptive constraints.
 ///
@@ -75,14 +15,14 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
 ///
 /// This class is useful whenever you want a container to only be active in
 /// certain [AdaptiveWindowType].
-class _AdaptiveContainer extends StatelessWidget {
+class AdaptiveContainer extends StatelessWidget {
   /// Creates a widget that combines common painting, positioning, and sizing widgets.
   ///
   /// The `color` and `decoration` arguments cannot both be supplied, since
   /// it would potentially result in the decoration drawing over the background
   /// color. To supply a decoration with a color, use `decoration:
   /// BoxDecoration(color: color)`.
-  _AdaptiveContainer({
+  AdaptiveContainer({
     Key key,
     this.alignment,
     this.padding,
@@ -94,9 +34,9 @@ class _AdaptiveContainer extends StatelessWidget {
     this.height,
     this.child,
     this.clipBehavior = Clip.none,
-    @required this.adaptiveConstraints,
-  })  : assert(adaptiveConstraints != null),
-        assert(margin == null || margin.isNonNegative),
+    this.constraints,
+    this.columnSpan = 1,
+  })  : assert(margin == null || margin.isNonNegative),
         assert(padding == null || padding.isNonNegative),
         assert(decoration == null || decoration.debugAssertIsValid()),
         assert(clipBehavior != null),
@@ -104,7 +44,9 @@ class _AdaptiveContainer extends StatelessWidget {
             color == null || decoration == null,
             'Cannot provide both a color and a decoration\n'
             'To provide both, use "decoration: BoxDecoration(color: color)".'),
-        super(key: key);
+        super(key: key) {
+    constraints ??= AdaptiveConstraints();
+  }
 
   /// The [child] contained by the container.
   ///
@@ -121,7 +63,19 @@ class _AdaptiveContainer extends StatelessWidget {
   ///
   /// This is used by the builder to see what type of screen the user wants this
   /// [AdaptiveContainer] to fit within.
-  final _AdaptiveConstraints adaptiveConstraints;
+  AdaptiveConstraints constraints;
+
+  /// columnSpan is used with [AdaptiveColumn] to represent
+  /// the amount of columns that this widget will fill up within a certain [Flex]
+  /// range.
+  ///
+  /// By default the columns will only represent one column space. If you want
+  /// this content of this widget to be shown increase it. There can be at most
+  /// 12 columns per flex range.
+  ///
+  /// Learn more by visiting the Material website:
+  /// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+  final int columnSpan;
 
   /// Align the [child] within the container.
   ///
@@ -182,27 +136,24 @@ class _AdaptiveContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      builder: (BuildContext context, BoxConstraints constraints) {
-        if (adaptiveConstraints.withinAdaptiveConstraint(context)) {
-          BreakpointSystemEntry entry = getBreakpointEntry(context);
+      builder: (BuildContext context, BoxConstraints boxConstraints) {
+        if (constraints.withinAdaptiveConstraint(context)) {
           return Container(
             alignment: alignment,
             padding: padding,
             color: color,
             decoration: decoration,
             foregroundDecoration: foregroundDecoration,
-            width: MediaQuery.of(context).size.width - (entry.margin * 2),
-            height: height,
-            margin: EdgeInsets.symmetric(horizontal: entry.margin),
             transform: transform,
             clipBehavior: clipBehavior,
-            constraints: BoxConstraints(
-              minWidth: entry.adaptiveWindowType.widthRangeValues.start,
-              maxWidth: entry.adaptiveWindowType.widthRangeValues.end,
-            ),
+            height: height,
+            margin: margin,
             child: child,
           );
         } else {
+          /// Since this container is not within the adaptive constraints.
+          /// No widget must be returned but since you can't return no widget we
+          /// are returning a [LimitedBox] which is a very efficent widget.
           return LimitedBox(
             maxWidth: 0.0,
             maxHeight: 0.0,
@@ -217,35 +168,75 @@ class _AdaptiveContainer extends StatelessWidget {
 /// Used to see if a range of [AdaptiveWindowType] should be shown in the window.
 /// If the user sets one of the variables below to true than that window type
 /// should be shown within the [AdaptiveContainer].
-class _AdaptiveConstraints {
-  const _AdaptiveConstraints({
-    this.xs = false,
-    this.sm = false,
-    this.md = false,
-    this.lg = false,
-    this.xl = false,
+class AdaptiveConstraints {
+  const AdaptiveConstraints({
+    this.xsmall = true,
+    this.small = true,
+    this.medium = true,
+    this.large = true,
+    this.xlarge = true,
   });
 
-  final bool xs;
-  final bool sm;
-  final bool md;
-  final bool lg;
-  final bool xl;
+  const AdaptiveConstraints.xsmall({
+    this.xsmall = true,
+    this.small = false,
+    this.medium = false,
+    this.large = false,
+    this.xlarge = false,
+  });
+
+  const AdaptiveConstraints.small({
+    this.xsmall = false,
+    this.small = true,
+    this.medium = false,
+    this.large = false,
+    this.xlarge = false,
+  });
+
+  const AdaptiveConstraints.medium({
+    this.xsmall = false,
+    this.small = false,
+    this.medium = true,
+    this.large = false,
+    this.xlarge = false,
+  });
+
+  const AdaptiveConstraints.large({
+    this.xsmall = false,
+    this.small = false,
+    this.medium = false,
+    this.large = true,
+    this.xlarge = false,
+  });
+
+  const AdaptiveConstraints.xlarge({
+    this.xsmall = false,
+    this.small = false,
+    this.medium = false,
+    this.large = false,
+    this.xlarge = true,
+  });
+
+  final bool xsmall;
+  final bool small;
+  final bool medium;
+  final bool large;
+  final bool xlarge;
 
   bool withinAdaptiveConstraint(BuildContext context) {
     AdaptiveWindowType currentEntry = getWindowType(context);
 
     switch (currentEntry) {
       case AdaptiveWindowType.xsmall:
-        return xs;
+        return xsmall;
       case AdaptiveWindowType.small:
-        return sm;
+        return small;
       case AdaptiveWindowType.medium:
-        return md;
+        return medium;
       case AdaptiveWindowType.large:
-        return lg;
+        return large;
       case AdaptiveWindowType.xlarge:
-        return xl;
+        return xlarge;
       default:
         throw AssertionError('Unsupported AdaptiveWindowType');
     }
