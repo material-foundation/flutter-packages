@@ -105,17 +105,13 @@ class AdaptiveColumn extends StatelessWidget {
                     }
                     int rowGutters = 0;
                     for (AdaptiveContainer rowItem in row) {
+                      double periodicWidth = (MediaQuery.of(context).size.width -
+                          _margin * 2 + _gutter) / _entry.columns;
+
                       // maxWidth equals column width without margin and gutters
                       // divided by the total number of adaptive containers.
-                      double maxWidth = (MediaQuery.of(context).size.width -
-                              _margin * 2 -
-                              _gutter *
-                                  (rowGutters == totalGutters &&
-                                          currentColumns > _entry.columns
-                                      ? 0
-                                      : totalGutters)) /
-                          _entry.columns *
-                          rowItem.columnSpan;
+                      double maxWidth = periodicWidth * rowItem.columnSpan -
+                          _gutter;
                       children.add(
                         ConstrainedBox(
                           constraints: BoxConstraints(
