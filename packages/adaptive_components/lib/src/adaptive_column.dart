@@ -105,12 +105,14 @@ class AdaptiveColumn extends StatelessWidget {
                     }
                     int rowGutters = 0;
                     for (AdaptiveContainer rowItem in row) {
-                      // Calculates the periodic width of 1 column + 1 gutter.
+                      // Periodic width is the width of 1 column + 1 gutter.
                       double periodicWidth = (MediaQuery.of(context).size.width -
                           _margin * 2 + _gutter) / _entry.columns;
 
-                      // maxWidth equals column width without margin and gutters
-                      // divided by the total number of adaptive containers.
+                      // For a row item with a column span of k, its width is
+                      // k * column + (k - 1) * gutter, which equals
+                      // k * (column + gutter) - gutter, which is
+                      // k * periodicWidth - gutter.
                       double maxWidth = periodicWidth * rowItem.columnSpan -
                           _gutter;
                       children.add(
