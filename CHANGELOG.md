@@ -1,3 +1,7 @@
+## [1.1.1] - 2020-10-02
+
+* Use conditional imports to separate out web from destkop + mobile file_io implementations. 
+
 ## [1.1.0] - 2020-05-11
 
 * Increase the flutter SDK dependency to version `1.17` (latest stable). This is needed for updated 
