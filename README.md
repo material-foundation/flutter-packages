@@ -5,7 +5,7 @@ The `google_fonts` package for Flutter allows you to easily use any of the 977 f
 
 ## Getting Started
 
-![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/master/readme_images/main.gif)
+![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/develop/readme_images/main.gif)
 
 With the `google_fonts` package, `.ttf` or `.otf` files do not need to be stored in your assets folder and mapped in
 the pubspec. Instead, they can be fetched once via http at runtime, and cached in the app's file system. This is ideal for development, and can be the preferred behavior for production apps that
@@ -126,11 +126,11 @@ Italic styles will include `Italic` in the filename. Font weights map to file na
 
 2. Move those fonts to a top-level app directory (e.g. `google_fonts`).
 
-![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/master/readme_images/google_fonts_folder.png)
+![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/develop/readme_images/google_fonts_folder.png)
 
 3. Ensure that you have listed the folder (e.g. `google_fonts/`) in your `pubspec.yaml` under `assets`.
 
-![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/master/readme_images/google_fonts_pubspec_assets.png)
+![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/develop/readme_images/google_fonts_pubspec_assets.png)
 
 Note: Since these files are listed as assets, there is no need to list them in the `fonts` section
 of the `pubspec.yaml`. This can be done because the files are consistently named from the Google Fonts API
