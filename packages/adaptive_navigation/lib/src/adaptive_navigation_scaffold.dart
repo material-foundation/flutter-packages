@@ -106,7 +106,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   final Widget? bottomSheet;
 
   /// See [Scaffold.resizeToAvoidBottomInset].
-  final bool resizeToAvoidBottomInset;
+  final bool? resizeToAvoidBottomInset;
 
   /// See [Scaffold.primary].
   final bool primary;
@@ -145,7 +145,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   /// The stateful widget that creates the adaptive scaffold needs to keep
   /// track of the index of the selected [AdaptiveScaffoldDestination] and call
   /// `setState` to rebuild the adaptive scaffold with the new [selectedIndex].
-  final ValueChanged<int> onDestinationSelected;
+  final ValueChanged<int>? onDestinationSelected;
 
   /// Determines the navigation type that the scaffold uses.
   final NavigationTypeResolver navigationTypeResolver;
