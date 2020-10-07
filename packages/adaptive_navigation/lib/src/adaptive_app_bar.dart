@@ -92,7 +92,7 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
       bottomOpacity: bottomOpacity,
       toolbarHeight: toolbarHeight,
       leadingWidth:
-          getWindowType(context) == AdaptiveWindowType.m ? 72.0 : 56.0,
+          getWindowType(context) == AdaptiveWindowType.medium ? 72.0 : 56.0,
     );
   }
 }
