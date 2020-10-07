@@ -117,18 +117,14 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
 /// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
 class BreakpointSystemEntry {
   const BreakpointSystemEntry({
-    @required this.range,
+    required this.range,
     this.portrait,
     this.landscape,
-    @required this.adaptiveWindowType,
-    @required this.columns,
-    @required this.margin,
-    @required this.gutter,
-  })  : assert(range != null),
-        assert(adaptiveWindowType != null),
-        assert(columns != null),
-        assert(margin != null),
-        assert(gutter != null);
+    required this.adaptiveWindowType,
+    required this.columns,
+    required this.margin,
+    required this.gutter,
+  });
 
   /// The breakpoint range values represents a width range.
   final RangeValues range;
