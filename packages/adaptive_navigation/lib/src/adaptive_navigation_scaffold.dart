@@ -72,7 +72,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   })  : super(key: key);
 
   /// See [Scaffold.appBar].
-  final Widget appBar;
+  final PreferredSizeWidget? appBar;
 
   /// See [Scaffold.body].
   final Widget? body;
