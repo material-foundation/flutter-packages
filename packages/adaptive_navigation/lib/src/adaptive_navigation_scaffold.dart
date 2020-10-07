@@ -383,7 +383,6 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
       case NavigationType.permanentDrawer:
         return _buildPermanentDrawerScaffold();
     }
-    throw Exception('Invalid navigation type: $navigationType');
   }
 
   void _destinationTapped(AdaptiveScaffoldDestination destination) {
