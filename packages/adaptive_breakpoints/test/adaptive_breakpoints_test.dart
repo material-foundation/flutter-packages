@@ -19,7 +19,7 @@ void main() {
             : falseColor,
       )),
     );
-    var box = tester.widget(find.byType(Container));
+    var box = tester.widget<Container>(find.byType(Container));
     expect((box as Container).color, trueColor);
 
     await tester.pumpWidget(
@@ -72,7 +72,7 @@ void main() {
             : falseColor,
       )),
     );
-    var box = tester.widget(find.byType(Container));
+    var box = tester.widget<Container>(find.byType(Container));
     expect((box as Container).color, trueColor);
 
     await tester.pumpWidget(
@@ -125,7 +125,7 @@ void main() {
             : falseColor,
       )),
     );
-    var box = tester.widget(find.byType(Container));
+    var box = tester.widget<Container>(find.byType(Container));
     expect((box as Container).color, falseColor);
 
     await tester.pumpWidget(
@@ -178,7 +178,7 @@ void main() {
             : falseColor,
       )),
     );
-    var box = tester.widget(find.byType(Container));
+    var box = tester.widget<Container>(find.byType(Container));
     expect((box as Container).color, falseColor);
 
     await tester.pumpWidget(
