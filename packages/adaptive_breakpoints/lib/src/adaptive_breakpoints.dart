@@ -130,10 +130,10 @@ class BreakpointSystemEntry {
   final RangeValues range;
 
   /// Type of device which uses this breakpoint range in portrait view.
-  final String portrait;
+  final String? portrait;
 
   /// Type of device which uses this breakpoint range in landscape view.
-  final String landscape;
+  final String? landscape;
 
   /// Material generalizes the device size into five different windows: extra
   /// small, small, medium, large, and extra large.
