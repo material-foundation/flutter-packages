@@ -43,7 +43,7 @@ class AdaptiveScaffoldDestination {
 /// defined in the [destinations] parameter.
 class AdaptiveNavigationScaffold extends StatelessWidget {
   const AdaptiveNavigationScaffold({
-    Key key,
+    Key? key,
     this.appBar,
     this.body,
     this.floatingActionButton,
