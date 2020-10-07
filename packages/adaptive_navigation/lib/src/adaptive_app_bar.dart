@@ -57,7 +57,7 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
   final IconThemeData? actionsIconThemeData;
   final TextTheme? textTheme;
   final bool primary;
-  final bool centerTitle;
+  final bool? centerTitle;
   final bool excludeHeaderSemantics;
   final double titleSpacing;
   final double toolbarOpacity;
