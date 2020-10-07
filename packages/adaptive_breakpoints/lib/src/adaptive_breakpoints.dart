@@ -30,6 +30,10 @@ final Map<AdaptiveWindowType, int> _operatorMap = {
   AdaptiveWindowType.xlarge: 4,
 };
 
+int _relativeSize(AdaptiveWindowType adaptiveWindowType) {
+  return _operatorMap[adaptiveWindowType]!;
+}
+
 /// This extension lets you access variables associated with each window type.
 extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
   String get name {
@@ -100,13 +104,13 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
     }
   }
 
-  bool operator <=(Object other) => _operatorMap[this] <= _operatorMap[other];
+  bool operator <=(AdaptiveWindowType other) => _relativeSize(this) <= _relativeSize(other);
 
-  bool operator <(Object other) => _operatorMap[this] < _operatorMap[other];
+  bool operator <(AdaptiveWindowType other) => _relativeSize(this) < _relativeSize(other);
 
-  bool operator >=(Object other) => _operatorMap[this] >= _operatorMap[other];
+  bool operator >=(AdaptiveWindowType other) => _relativeSize(this) >= _relativeSize(other);
 
-  bool operator >(Object other) => _operatorMap[this] > _operatorMap[other];
+  bool operator >(AdaptiveWindowType other) => _relativeSize(this) > _relativeSize(other);
 }
 
 /// This class represents the Material breakpoint system entry.
