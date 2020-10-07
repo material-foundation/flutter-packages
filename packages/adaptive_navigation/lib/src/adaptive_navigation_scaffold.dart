@@ -180,7 +180,8 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: [
-          if (drawerHeader != null) drawerHeader,
+          // TODO: remove `!` annotation.
+          if (drawerHeader != null) drawerHeader!,
           for (int i = 0; i < destinations.length; i++)
             ListTile(
               leading: Icon(destinations[i].icon),
@@ -261,7 +262,8 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
           ),
           if (body != null)
             Expanded(
-              child: body,
+              // TODO: remove `!` annotation.
+              child: body!,
             ),
         ],
       ),
@@ -291,7 +293,8 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
       drawer: Drawer(
         child: Column(
           children: [
-            if (drawerHeader != null) drawerHeader,
+            // TODO: remove `!` annotation.
+            if (drawerHeader != null) drawerHeader!,
             for (final destination in destinations)
               ListTile(
                 leading: Icon(destination.icon),
@@ -327,7 +330,8 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
         Drawer(
           child: Column(
             children: [
-              if (drawerHeader != null) drawerHeader,
+              // TODO: remove `!` annotation.
+              if (drawerHeader != null) drawerHeader!,
               for (final destination in destinations)
                 ListTile(
                   leading: Icon(destination.icon),
