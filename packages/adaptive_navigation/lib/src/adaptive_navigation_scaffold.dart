@@ -69,9 +69,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     this.drawerHeader,
     this.fabInRail = true,
     this.includeBaseDestinationsInMenu = true,
-  })  : assert(selectedIndex != null),
-        assert(destinations != null),
-        super(key: key);
+  })  : super(key: key);
 
   /// See [Scaffold.appBar].
   final Widget appBar;
