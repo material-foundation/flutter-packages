@@ -153,7 +153,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   /// The leading item in the drawer when the navigation has a drawer.
   ///
   /// If null, then there is no header.
-  final Widget drawerHeader;
+  final Widget? drawerHeader;
 
   /// Whether the [floatingActionButton] is inside or the rail or in the regular
   /// spot.
