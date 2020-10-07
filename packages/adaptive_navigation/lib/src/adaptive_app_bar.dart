@@ -9,7 +9,7 @@ import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 /// [AppBar].
 class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
   AdaptiveAppBar({
-    Key key,
+    Key? key,
     this.leading,
     this.automaticallyImplyLeading = true,
     this.title,
@@ -42,20 +42,20 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
             kToolbarHeight + (bottom?.preferredSize?.height ?? 0.0)),
         super(key: key);
 
-  final Widget leading;
+  final Widget? leading;
   final bool automaticallyImplyLeading;
-  final Widget title;
-  final List<Widget> actions;
-  final Widget flexibleSpace;
-  final PreferredSizeWidget bottom;
-  final double elevation;
-  final Color shadowColor;
-  final ShapeBorder shape;
-  final Color backgroundColor;
-  final Brightness brightness;
-  final IconThemeData iconThemeData;
-  final IconThemeData actionsIconThemeData;
-  final TextTheme textTheme;
+  final Widget? title;
+  final List<Widget>? actions;
+  final Widget? flexibleSpace;
+  final PreferredSizeWidget? bottom;
+  final double? elevation;
+  final Color? shadowColor;
+  final ShapeBorder? shape;
+  final Color? backgroundColor;
+  final Brightness? brightness;
+  final IconThemeData? iconThemeData;
+  final IconThemeData? actionsIconThemeData;
+  final TextTheme? textTheme;
   final bool primary;
   final bool centerTitle;
   final bool excludeHeaderSemantics;
