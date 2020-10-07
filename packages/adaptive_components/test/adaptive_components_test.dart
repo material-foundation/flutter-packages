@@ -24,9 +24,9 @@ void main() {
         ),
       );
 
-      var box = tester.widget(find.byType(Container));
+      var box = tester.widget<Container>(find.byType(Container));
       expect(find.byType(Container), findsOneWidget);
-      expect((box as Container).color, adaptiveContainerColor);
+      expect(box.color, adaptiveContainerColor);
 
       tester.binding.window.physicalSizeTestValue = const Size(2000, 600);
       tester.binding.window.devicePixelRatioTestValue = 1.0;
@@ -59,9 +59,9 @@ void main() {
         ),
       );
 
-      var box = tester.widget(find.byType(Container));
+      var box = tester.widget<Container>(find.byType(Container));
       expect(find.byType(Container), findsOneWidget);
-      expect((box as Container).color, adaptiveContainerColor);
+      expect(box.color, adaptiveContainerColor);
 
       tester.binding.window.physicalSizeTestValue = const Size(1919.99999, 600);
       tester.binding.window.devicePixelRatioTestValue = 1.0;
@@ -75,9 +75,9 @@ void main() {
         ),
       );
 
-      box = tester.widget(find.byType(Container));
+      box = tester.widget<Container>(find.byType(Container));
       expect(find.byType(Container), findsOneWidget);
-      expect((box as Container).color, adaptiveContainerColor);
+      expect(box.color, adaptiveContainerColor);
     },
   );
 }
