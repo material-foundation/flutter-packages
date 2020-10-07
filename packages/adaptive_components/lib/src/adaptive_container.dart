@@ -34,7 +34,7 @@ class AdaptiveContainer extends StatelessWidget {
     this.height,
     this.child,
     this.clipBehavior = Clip.none,
-    this.constraints,
+    constraints,
     this.columnSpan = 1,
   })  : assert(margin == null || margin.isNonNegative),
         assert(padding == null || padding.isNonNegative),
@@ -45,7 +45,7 @@ class AdaptiveContainer extends StatelessWidget {
             'Cannot provide both a color and a decoration\n'
             'To provide both, use "decoration: BoxDecoration(color: color)".'),
         super(key: key) {
-    constraints ??= AdaptiveConstraints();
+    this.constraints = constraints ?? AdaptiveConstraints();
   }
 
   /// The [child] contained by the container.
@@ -63,7 +63,7 @@ class AdaptiveContainer extends StatelessWidget {
   ///
   /// This is used by the builder to see what type of screen the user wants this
   /// [AdaptiveContainer] to fit within.
-  AdaptiveConstraints constraints;
+  late AdaptiveConstraints constraints;
 
   /// columnSpan is used with [AdaptiveColumn] to represent
   /// the amount of columns that this widget will fill up within a certain [Flex]
