@@ -39,7 +39,6 @@ class AdaptiveContainer extends StatelessWidget {
   })  : assert(margin == null || margin.isNonNegative),
         assert(padding == null || padding.isNonNegative),
         assert(decoration == null || decoration.debugAssertIsValid()),
-        assert(clipBehavior != null),
         assert(
             color == null || decoration == null,
             'Cannot provide both a color and a decoration\n'
