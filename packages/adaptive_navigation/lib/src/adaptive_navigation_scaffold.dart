@@ -148,7 +148,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   final ValueChanged<int>? onDestinationSelected;
 
   /// Determines the navigation type that the scaffold uses.
-  final NavigationTypeResolver navigationTypeResolver;
+  final NavigationTypeResolver? navigationTypeResolver;
 
   /// The leading item in the drawer when the navigation has a drawer.
   ///
