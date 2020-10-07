@@ -24,6 +24,12 @@ class MyApp extends StatelessWidget {
 class DemoSelector extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final navigator = Navigator.of(context);
+
+    if (navigator == null) {
+      throw AssertionError('This context has no Navigator ancestor.');
+    }
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -32,7 +38,7 @@ class DemoSelector extends StatelessWidget {
             RaisedButton(
               child: Text('Adaptive Column'),
               onPressed: () {
-                Navigator.of(context).pushReplacement(
+                navigator.pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
                       return AdaptiveColumnsExample();
@@ -44,7 +50,7 @@ class DemoSelector extends StatelessWidget {
             RaisedButton(
               child: Text('Adaptive Container'),
               onPressed: () {
-                Navigator.of(context).pushReplacement(
+                navigator.pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
                       return AdaptiveContainerExample();
