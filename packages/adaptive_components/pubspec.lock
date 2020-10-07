@@ -4,16 +4,16 @@ packages:
   adaptive_breakpoints:
     dependency: "direct main"
     description:
-      name: adaptive_breakpoints
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "../adaptive_breakpoints"
+      relative: true
+    source: path
     version: "0.0.3"
   adaptive_navigation:
     dependency: "direct main"
     description:
-      name: adaptive_navigation
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "../adaptive_navigation"
+      relative: true
+    source: path
     version: "0.0.1"
   async:
     dependency: transitive
