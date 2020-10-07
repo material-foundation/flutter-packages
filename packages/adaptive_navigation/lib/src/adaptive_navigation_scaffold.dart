@@ -77,35 +77,35 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   final Widget appBar;
 
   /// See [Scaffold.body].
-  final Widget body;
+  final Widget? body;
 
   /// See [Scaffold.floatingActionButton].
-  final FloatingActionButton floatingActionButton;
+  final FloatingActionButton? floatingActionButton;
 
   /// See [Scaffold.floatingActionButtonLocation].
   ///
   /// Ignored if [fabInRail] is true.
-  final FloatingActionButtonLocation floatingActionButtonLocation;
+  final FloatingActionButtonLocation? floatingActionButtonLocation;
 
   /// See [Scaffold.floatingActionButtonAnimator].
   ///
   /// Ignored if [fabInRail] is true.
-  final FloatingActionButtonAnimator floatingActionButtonAnimator;
+  final FloatingActionButtonAnimator? floatingActionButtonAnimator;
 
   /// See [Scaffold.persistentFooterButtons].
-  final List<Widget> persistentFooterButtons;
+  final List<Widget>? persistentFooterButtons;
 
   /// See [Scaffold.endDrawer].
-  final Widget endDrawer;
+  final Widget? endDrawer;
 
   /// See [Scaffold.drawerScrimColor].
-  final Color drawerScrimColor;
+  final Color? drawerScrimColor;
 
   /// See [Scaffold.backgroundColor].
-  final Color backgroundColor;
+  final Color? backgroundColor;
 
   /// See [Scaffold.bottomSheet].
-  final Widget bottomSheet;
+  final Widget? bottomSheet;
 
   /// See [Scaffold.resizeToAvoidBottomInset].
   final bool resizeToAvoidBottomInset;
@@ -123,7 +123,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   final bool extendBodyBehindAppBar;
 
   /// See [Scaffold.drawerEdgeDragWidth].
-  final double drawerEdgeDragWidth;
+  final double? drawerEdgeDragWidth;
 
   /// See [Scaffold.drawerEnableOpenDragGesture].
   final bool drawerEnableOpenDragGesture;
