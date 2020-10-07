@@ -33,10 +33,9 @@ class AdaptiveScaffoldDestination {
   final IconData icon;
 
   const AdaptiveScaffoldDestination({
-    @required this.title,
-    @required this.icon,
-  })  : assert(title != null),
-        assert(icon != null);
+    required this.title,
+    required this.icon,
+  });
 }
 
 /// A widget that adapts to the current display size, displaying a [Drawer],
