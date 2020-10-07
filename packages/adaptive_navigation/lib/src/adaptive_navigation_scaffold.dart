@@ -259,9 +259,10 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
             width: 1,
             thickness: 1,
           ),
-          Expanded(
-            child: body,
-          ),
+          if (body != null)
+            Expanded(
+              child: body,
+            ),
         ],
       ),
       floatingActionButton: fabInRail ? null : floatingActionButton,
