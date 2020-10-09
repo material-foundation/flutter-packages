@@ -399,6 +399,6 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
 }
 
 bool _isLargeScreen(BuildContext context) =>
-    getWindowType(context) >= AdaptiveWindowType.l;
+    getWindowType(context) >= AdaptiveWindowType.large;
 bool _isMediumScreen(BuildContext context) =>
-    getWindowType(context) == AdaptiveWindowType.m;
+    getWindowType(context) == AdaptiveWindowType.medium;
