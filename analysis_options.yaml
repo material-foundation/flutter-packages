@@ -1,6 +1,7 @@
 include: package:pedantic/analysis_options.1.8.0.yaml
 
 analyzer:
+  exclude: [generator/fonts.pb.dart]
   strong-mode:
     implicit-casts: false
     implicit-dynamic: false
