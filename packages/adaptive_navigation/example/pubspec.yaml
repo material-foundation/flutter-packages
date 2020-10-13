@@ -13,7 +13,8 @@ dependencies:
     sdk: flutter
   adaptive_navigation:
     path: ../
-  adaptive_breakpoints: ^0.0.2
+  adaptive_breakpoints:
+    path: ../../adaptive_breakpoints/
 
 dev_dependencies:
   flutter_test:
