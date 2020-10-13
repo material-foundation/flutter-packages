@@ -34,7 +34,7 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.leadingWidth,
   })  : assert(elevation == null || elevation >= 0.0),
         preferredSize = Size.fromHeight(toolbarHeight ??
-            kToolbarHeight + (bottom?.preferredSize.height ?? 0.0)),
+            kToolbarHeight + (bottom?.preferredSize?.height ?? 0.0)),
         super(key: key);
 
   final Widget? leading;

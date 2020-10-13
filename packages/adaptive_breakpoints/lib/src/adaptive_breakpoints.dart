@@ -292,13 +292,7 @@ AdaptiveWindowType getWindowType(BuildContext context) {
 /// function gives the developer access to the specific breakpoint entry and
 /// it's variables.
 BreakpointSystemEntry getBreakpointEntry(BuildContext context) {
-  final mediaQuery = MediaQuery.of(context);
-
-  if (mediaQuery == null) {
-    throw AssertionError('This context has no MediaQuery ancestor.');
-  }
-
-  double width = mediaQuery.size.width;
+  double width = MediaQuery.of(context)!.size.width;
   for (BreakpointSystemEntry entry in breakpointSystem) {
     if (entry.range.start <= width && width < entry.range.end + 1) {
       return entry;

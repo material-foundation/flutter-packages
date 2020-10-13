@@ -45,7 +45,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   const AdaptiveNavigationScaffold({
     Key? key,
     this.appBar,
-    this.body,
+    required this.body,
     this.floatingActionButton,
     this.floatingActionButtonLocation,
     this.floatingActionButtonAnimator,
@@ -75,7 +75,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   final PreferredSizeWidget? appBar;
 
   /// See [Scaffold.body].
-  final Widget? body;
+  final Widget body;
 
   /// See [Scaffold.floatingActionButton].
   final FloatingActionButton? floatingActionButton;
@@ -260,11 +260,9 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
             width: 1,
             thickness: 1,
           ),
-          if (body != null)
-            Expanded(
-              // TODO: Find a better way to write `drawerHeader!`
-              child: body!,
-            ),
+          Expanded(
+            child: body,
+          ),
         ],
       ),
       floatingActionButton: fabInRail ? null : floatingActionButton,
