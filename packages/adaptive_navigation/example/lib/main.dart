@@ -28,7 +28,7 @@ class DemoSelector extends StatelessWidget {
             RaisedButton(
               child: Text('Default Scaffold'),
               onPressed: () {
-                Navigator.of(context).pushReplacement(
+                Navigator.of(context)!.pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
                       return DefaultScaffoldDemo();
@@ -41,7 +41,7 @@ class DemoSelector extends StatelessWidget {
             RaisedButton(
               child: Text('Custom Scaffold'),
               onPressed: () {
-                Navigator.of(context).pushReplacement(
+                Navigator.of(context)!.pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
                       return CustomScaffoldDemo();
