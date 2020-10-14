@@ -10,10 +10,10 @@ dependencies:
   flutter:
     sdk: flutter
   adaptive_breakpoints:
-    # TODO: Return to normal.
+    # TODO: Use pub dependency once NNBD beta is released.
     path: ../adaptive_breakpoints
   adaptive_navigation:
-    # TODO: Return to normal.
+    # TODO: Use pub dependency once NNBD beta is released.
     path: ../adaptive_navigation
 
 dev_dependencies:
