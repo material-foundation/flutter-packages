@@ -4,13 +4,17 @@ version: 0.0.1
 homepage: https://github.com/material-components/material-components-flutter-adaptive
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.10.0-0.0.dev <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  adaptive_breakpoints: ^0.0.3
-  adaptive_navigation: ^0.0.1
+  adaptive_breakpoints:
+    # TODO: Use pub dependency once NNBD beta is released.
+    path: ../adaptive_breakpoints
+  adaptive_navigation:
+    # TODO: Use pub dependency once NNBD beta is released.
+    path: ../adaptive_navigation
 
 dev_dependencies:
   flutter_test:

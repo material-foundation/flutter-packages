@@ -19,8 +19,8 @@ void main() {
             : falseColor,
       )),
     );
-    var box = tester.widget(find.byType(Container));
-    expect((box as Container).color, trueColor);
+    var box = tester.widget<Container>(find.byType(Container));
+    expect(box.color, trueColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -32,7 +32,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, trueColor);
+    expect(box.color, trueColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -44,7 +44,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, trueColor);
+    expect(box.color, trueColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -56,7 +56,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, falseColor);
+    expect(box.color, falseColor);
   });
 
   testWidgets('Adaptive Breakpoint window operators <',
@@ -72,8 +72,8 @@ void main() {
             : falseColor,
       )),
     );
-    var box = tester.widget(find.byType(Container));
-    expect((box as Container).color, trueColor);
+    var box = tester.widget<Container>(find.byType(Container));
+    expect(box.color, trueColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -85,7 +85,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, trueColor);
+    expect(box.color, trueColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -97,7 +97,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, falseColor);
+    expect(box.color, falseColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -109,7 +109,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, falseColor);
+    expect(box.color, falseColor);
   });
 
   testWidgets('Adaptive Breakpoint window operators >=',
@@ -125,8 +125,8 @@ void main() {
             : falseColor,
       )),
     );
-    var box = tester.widget(find.byType(Container));
-    expect((box as Container).color, falseColor);
+    var box = tester.widget<Container>(find.byType(Container));
+    expect(box.color, falseColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -138,7 +138,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, falseColor);
+    expect(box.color, falseColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -150,7 +150,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, trueColor);
+    expect(box.color, trueColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -162,7 +162,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, trueColor);
+    expect(box.color, trueColor);
   });
 
   testWidgets('Adaptive Breakpoint window operators >',
@@ -178,8 +178,8 @@ void main() {
             : falseColor,
       )),
     );
-    var box = tester.widget(find.byType(Container));
-    expect((box as Container).color, falseColor);
+    var box = tester.widget<Container>(find.byType(Container));
+    expect(box.color, falseColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -191,7 +191,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, falseColor);
+    expect(box.color, falseColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -203,7 +203,7 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, falseColor);
+    expect(box.color, falseColor);
 
     await tester.pumpWidget(
       MaterialApp(
@@ -215,6 +215,6 @@ void main() {
     );
 
     box = tester.widget(find.byType(Container));
-    expect((box as Container).color, trueColor);
+    expect(box.color, trueColor);
   });
 }

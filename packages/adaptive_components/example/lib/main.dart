@@ -32,7 +32,7 @@ class DemoSelector extends StatelessWidget {
             RaisedButton(
               child: Text('Adaptive Column'),
               onPressed: () {
-                Navigator.of(context).pushReplacement(
+                Navigator.of(context)!.pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
                       return AdaptiveColumnsExample();
@@ -44,7 +44,7 @@ class DemoSelector extends StatelessWidget {
             RaisedButton(
               child: Text('Adaptive Container'),
               onPressed: () {
-                Navigator.of(context).pushReplacement(
+                Navigator.of(context)!.pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
                       return AdaptiveContainerExample();
