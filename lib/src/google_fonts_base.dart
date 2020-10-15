@@ -2,7 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 
@@ -11,11 +10,13 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
-import 'package:path_provider/path_provider.dart';
 import 'package:pedantic/pedantic.dart';
 
 import '../google_fonts.dart';
 import 'asset_manifest.dart';
+import 'file_io.dart' // Stubbed implementation by default.
+    // Concrete implementation if File IO is available.
+    if (dart.library.io) 'file_io_desktop_and_mobile.dart' as file_io;
 import 'google_fonts_descriptor.dart';
 import 'google_fonts_family_with_variant.dart';
 import 'google_fonts_variant.dart';
@@ -25,9 +26,6 @@ import 'google_fonts_variant.dart';
 // not need to be attempted to load again, unless the attempted load resulted
 // in an error.
 final Set<String> _loadedFonts = {};
-
-@visibleForTesting
-bool isWeb = kIsWeb;
 
 @visibleForTesting
 http.Client httpClient = http.Client();
@@ -153,9 +151,8 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     }
 
     // Check if this font can be loaded from the device file system.
-    if (!isWeb) {
-      byteData = _loadFontFromDeviceFileSystem(familyWithVariantString);
-    }
+    byteData = file_io.loadFontFromDeviceFileSystem(familyWithVariantString);
+
     if (await byteData != null) {
       return _loadFontByteData(familyWithVariantString, byteData);
     }
@@ -243,48 +240,14 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
         'File from ${file.url} did not match expected length and checksum.',
       );
     }
-    if (!isWeb) {
-      unawaited(_saveFontToDeviceFileSystem(fontName, response.bodyBytes));
-    }
+
+    unawaited(file_io.saveFontToDeviceFileSystem(fontName, response.bodyBytes));
+
     return ByteData.view(response.bodyBytes.buffer);
   } else {
     // If that call was not successful, throw an error.
     throw Exception('Failed to load font with url: ${file.url}');
   }
-}
-
-Future<String> get _localPath async {
-  final directory = await getApplicationSupportDirectory();
-  return directory.path;
-}
-
-Future<File> _localFile(String name) async {
-  final path = await _localPath;
-  // We expect only ttf files to be provided to us by the Google Fonts API.
-  // That's why we can be sure a previously saved Google Font is in the ttf
-  // format instead of, for example, otf.
-  return File('$path/$name.ttf');
-}
-
-Future<File> _saveFontToDeviceFileSystem(String name, List<int> bytes) async {
-  final file = await _localFile(name);
-  return file.writeAsBytes(bytes);
-}
-
-Future<ByteData> _loadFontFromDeviceFileSystem(String name) async {
-  try {
-    final file = await _localFile(name);
-    final fileExists = file.existsSync();
-    if (fileExists) {
-      List<int> contents = await file.readAsBytes();
-      if (contents != null && contents.isNotEmpty) {
-        return ByteData.view(Uint8List.fromList(contents).buffer);
-      }
-    }
-  } catch (e) {
-    return null;
-  }
-  return null;
 }
 
 // This logic is taken from the following section of the minikin library, which

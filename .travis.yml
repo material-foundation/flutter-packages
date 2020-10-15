@@ -25,6 +25,6 @@ notifications:
   email:
     johnsonmh+github@gmail.com
 
-# Only building master means that we don't run two builds for each pull request.
+# Only building develop means that we don't run two builds for each pull request.
 branches:
-  only: [master]
+  only: [develop]

@@ -41,7 +41,6 @@ void overridePrint(Future<Null> testFn()) => () {
 
 void main() {
   setUp(() async {
-    isWeb = false;
     httpClient = MockHttpClient();
     assetManifest = MockAssetManifest();
     GoogleFonts.config.allowRuntimeFetching = true;
@@ -242,28 +241,6 @@ void main() {
       directoryContents.listSync().single.toString().contains('Foo'),
       isTrue,
     );
-  });
-
-  testWidgets('loadFontIfNecessary method doesn\'t write font file on web',
-      (tester) async {
-    isWeb = true;
-    final fakeDescriptor = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
-          family: 'Foo',
-          googleFontsVariant: GoogleFontsVariant(
-            fontWeight: FontWeight.w400,
-            fontStyle: FontStyle.normal,
-          )),
-      file: _fakeResponseFile,
-    );
-
-    var directoryContents = await getApplicationSupportDirectory();
-    expect(directoryContents.listSync().isEmpty, isTrue);
-
-    await loadFontIfNecessary(fakeDescriptor);
-    directoryContents = await getApplicationSupportDirectory();
-
-    expect(directoryContents.listSync().isEmpty, isTrue);
   });
 
   testWidgets(
