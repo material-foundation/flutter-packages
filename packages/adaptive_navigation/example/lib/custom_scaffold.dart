@@ -63,7 +63,7 @@ class _CustomScaffoldDemoState extends State<CustomScaffoldDemo> {
             value: _fabInRail,
             onChanged: (value) {
               setState(() {
-                _fabInRail = value!;
+                _fabInRail = value;
               });
             },
           ),
@@ -73,7 +73,7 @@ class _CustomScaffoldDemoState extends State<CustomScaffoldDemo> {
             value: _includeBaseDestinationsInMenu,
             onChanged: (value) {
               setState(() {
-                _includeBaseDestinationsInMenu = value!;
+                _includeBaseDestinationsInMenu = value;
               });
             },
           ),
