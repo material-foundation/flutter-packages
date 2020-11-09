@@ -672,7 +672,7 @@ class GoogleFonts {
         'Mukta Mahee': GoogleFonts.muktaMahee,
         'Mukta Malar': GoogleFonts.muktaMalar,
         'Mukta Vaani': GoogleFonts.muktaVaani,
-        'Muli': GoogleFonts.muli,
+        'Mulish': GoogleFonts.mulish,
         'Mystery Quest': GoogleFonts.mysteryQuest,
         'NTR': GoogleFonts.ntr,
         'Nanum Brush Script': GoogleFonts.nanumBrushScript,
@@ -1649,7 +1649,7 @@ class GoogleFonts {
         'Mukta Mahee': GoogleFonts.muktaMaheeTextTheme,
         'Mukta Malar': GoogleFonts.muktaMalarTextTheme,
         'Mukta Vaani': GoogleFonts.muktaVaaniTextTheme,
-        'Muli': GoogleFonts.muliTextTheme,
+        'Mulish': GoogleFonts.mulishTextTheme,
         'Mystery Quest': GoogleFonts.mysteryQuestTextTheme,
         'NTR': GoogleFonts.ntrTextTheme,
         'Nanum Brush Script': GoogleFonts.nanumBrushScriptTextTheme,
@@ -62716,12 +62716,12 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Muli font family from Google Fonts to the
+  /// Applies the Mulish font family from Google Fonts to the
   /// given [textStyle].
   ///
   /// See:
-  ///  * https://fonts.google.com/specimen/Muli
-  static TextStyle muli({
+  ///  * https://fonts.google.com/specimen/Mulish
+  static TextStyle mulish({
     TextStyle textStyle,
     Color color,
     Color backgroundColor,
@@ -62845,7 +62845,7 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       textStyle: textStyle,
-      fontFamily: 'Muli',
+      fontFamily: 'Mulish',
       color: color,
       backgroundColor: backgroundColor,
       fontSize: fontSize,
@@ -62868,27 +62868,27 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Muli font family from Google Fonts to every
+  /// Applies the Mulish font family from Google Fonts to every
   /// [TextStyle] in the given [textTheme].
   ///
   /// See:
-  ///  * https://fonts.google.com/specimen/Muli
-  static TextTheme muliTextTheme([TextTheme textTheme]) {
+  ///  * https://fonts.google.com/specimen/Mulish
+  static TextTheme mulishTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      headline1: GoogleFonts.muli(textStyle: textTheme?.headline1),
-      headline2: GoogleFonts.muli(textStyle: textTheme?.headline2),
-      headline3: GoogleFonts.muli(textStyle: textTheme?.headline3),
-      headline4: GoogleFonts.muli(textStyle: textTheme?.headline4),
-      headline5: GoogleFonts.muli(textStyle: textTheme?.headline5),
-      headline6: GoogleFonts.muli(textStyle: textTheme?.headline6),
-      subtitle1: GoogleFonts.muli(textStyle: textTheme?.subtitle1),
-      subtitle2: GoogleFonts.muli(textStyle: textTheme?.subtitle2),
-      bodyText1: GoogleFonts.muli(textStyle: textTheme?.bodyText1),
-      bodyText2: GoogleFonts.muli(textStyle: textTheme?.bodyText2),
-      caption: GoogleFonts.muli(textStyle: textTheme?.caption),
-      button: GoogleFonts.muli(textStyle: textTheme?.button),
-      overline: GoogleFonts.muli(textStyle: textTheme?.overline),
+      headline1: GoogleFonts.mulish(textStyle: textTheme?.headline1),
+      headline2: GoogleFonts.mulish(textStyle: textTheme?.headline2),
+      headline3: GoogleFonts.mulish(textStyle: textTheme?.headline3),
+      headline4: GoogleFonts.mulish(textStyle: textTheme?.headline4),
+      headline5: GoogleFonts.mulish(textStyle: textTheme?.headline5),
+      headline6: GoogleFonts.mulish(textStyle: textTheme?.headline6),
+      subtitle1: GoogleFonts.mulish(textStyle: textTheme?.subtitle1),
+      subtitle2: GoogleFonts.mulish(textStyle: textTheme?.subtitle2),
+      bodyText1: GoogleFonts.mulish(textStyle: textTheme?.bodyText1),
+      bodyText2: GoogleFonts.mulish(textStyle: textTheme?.bodyText2),
+      caption: GoogleFonts.mulish(textStyle: textTheme?.caption),
+      button: GoogleFonts.mulish(textStyle: textTheme?.button),
+      overline: GoogleFonts.mulish(textStyle: textTheme?.overline),
     );
   }
 
