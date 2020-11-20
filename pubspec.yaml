@@ -18,8 +18,8 @@ dependencies:
   path_provider: ^1.4.0
   crypto:
     git:
-      url: https://github.com/dart-lang/crypto.git
-      ref: a2ac9a1a89dcc2d37d9fc0867a31708cbc1693b9
+      url: https://github.com/pennzht/crypto.git
+      ref: 54de637e9bf5b3b47fb95037e17c4a121d8dc9ff
   pedantic: ">=1.10.0-nullsafety.3 <2.0.0"
 
 dev_dependencies:
