@@ -35,7 +35,7 @@ jobs:
         with:
           path: 'code'
 
-      # Run the tests for the repository.
+      # Analyze, check format, and run tests for the repository.
       - name: Get packages for the Flutter project
         run: flutter pub get
         working-directory: code
