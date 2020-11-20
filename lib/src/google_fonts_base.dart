@@ -98,7 +98,7 @@ TextStyle googleFontsTextStyle({
 
   final descriptor = GoogleFontsDescriptor(
     familyWithVariant: familyWithVariant,
-    file: fonts[matchedVariant],
+    file: fonts[matchedVariant]!,
   );
 
   loadFontIfNecessary(descriptor);
@@ -200,8 +200,8 @@ GoogleFontsVariant _closestMatch(
   GoogleFontsVariant sourceVariant,
   Iterable<GoogleFontsVariant> variantsToCompare,
 ) {
-  int bestScore;
-  GoogleFontsVariant bestMatch;
+  int? bestScore;
+  late GoogleFontsVariant bestMatch;
   for (final variantToCompare in variantsToCompare) {
     final score = _computeMatch(sourceVariant, variantToCompare);
     if (bestScore == null || score < bestScore) {
