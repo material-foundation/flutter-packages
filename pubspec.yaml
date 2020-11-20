@@ -19,7 +19,7 @@ dependencies:
   crypto:
     git:
       url: https://github.com/dart-lang/crypto.git
-      ref: 2ce42a010fafe25b5b28f885d1db9522b808ff01
+      ref: a2ac9a1a89dcc2d37d9fc0867a31708cbc1693b9
   pedantic: ">=1.10.0-nullsafety.3 <2.0.0"
 
 dev_dependencies:
