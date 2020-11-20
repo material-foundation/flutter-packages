@@ -9,10 +9,9 @@ import 'google_fonts_variant.dart';
 /// Represents a Google Fonts API variant in Flutter-specific types.
 class GoogleFontsFamilyWithVariant {
   const GoogleFontsFamilyWithVariant({
-    @required this.family,
-    @required this.googleFontsVariant,
-  })  : assert(family != null),
-        assert(googleFontsVariant != null);
+    required this.family,
+    required this.googleFontsVariant,
+  });
 
   final String family;
   final GoogleFontsVariant googleFontsVariant;

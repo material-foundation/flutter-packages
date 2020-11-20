@@ -9,10 +9,9 @@ import 'package:flutter/foundation.dart';
 /// Represents a Google Fonts API variant in Flutter-specific types.
 class GoogleFontsVariant {
   const GoogleFontsVariant({
-    @required this.fontWeight,
-    @required this.fontStyle,
-  })  : assert(fontWeight != null),
-        assert(fontStyle != null);
+    required this.fontWeight,
+    required this.fontStyle,
+  });
 
   /// Creates a [GoogleFontsVariant] from a Google Fonts API specific
   /// filename part.

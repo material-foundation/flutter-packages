@@ -12,10 +12,9 @@ import 'google_fonts_family_with_variant.dart';
 /// information together.
 class GoogleFontsDescriptor {
   const GoogleFontsDescriptor({
-    @required this.familyWithVariant,
-    @required this.file,
-  })  : assert(familyWithVariant != null),
-        assert(file != null);
+    required this.familyWithVariant,
+    required this.file,
+  });
 
   final GoogleFontsFamilyWithVariant familyWithVariant;
   final GoogleFontsFile file;
