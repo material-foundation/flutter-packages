@@ -7,22 +7,7 @@ way to make a change and have it submitted to the `google_fonts` package.
 
 Developer workflow
 ------------------
-
-The easiest workflow for adding a feature/fixing a bug is to test it out on the example app in this 
-repo.
-
-### Environment 
- 1. Fork the [google-fonts-flutter](https://github.com/material-foundation/google-fonts-flutter) 
- repo on github. 
- 1. Clone your fork of the `google-fonts-flutter` repo. 
- 1. Build and run the example app in `example/lib/main.dart` (from the `example/` directory, use 
- `$ flutter run`).
- 
-### Development
- 1. Make the changes to your local copy of the `google-fonts-flutter` package, testing the changes 
- in the example app.
- 1. Write a unit test for your change, if possible, in one of the files in `test/`.
- 1. Update the `CHANGELOG.md` with a new version number, and a description of the change you're 
+sdjfkalfjklsadfaversion number, and a description of the change you're 
  making.
  1. Update the `version:` in the `pubspec.yaml` file to your new version.
  
