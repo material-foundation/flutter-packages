@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:path_provider/path_provider.dart' as path_provider;
+import 'application_support_directory.dart';
 
 Future<void> saveFontToDeviceFileSystem(String name, List<int> bytes) async {
   final file = await _localFile(name);
@@ -25,7 +25,7 @@ Future<ByteData> loadFontFromDeviceFileSystem(String name) async {
 }
 
 Future<String> get _localPath async {
-  final directory = await path_provider.getApplicationSupportDirectory();
+  final directory = await getApplicationSupportDirectory();
   return directory.path;
 }
 
