@@ -1,5 +1,6 @@
 name: google_fonts_tester
 description: A Flutter application showcasing how to use the google_fonts package.
+publish_to: none
 
 version: 1.0.0+1
 
