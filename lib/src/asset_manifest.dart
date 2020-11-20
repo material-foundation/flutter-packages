@@ -11,21 +11,21 @@ import 'package:flutter/services.dart';
 ///
 /// Used to check whether a font is provided as an asset.
 class AssetManifest {
-  AssetManifest({this.enableCache = true}) : assert(enableCache != null);
+  AssetManifest({this.enableCache = true});
 
-  static Future<Map<String, List<String>>> _jsonFuture;
+  static Future<Map<String, List<String>>?>? _jsonFuture;
 
   /// Whether the rootBundle should cache AssetManifest.json.
   ///
   /// Enabled by default. Should only be disabled during tests.
   final bool enableCache;
 
-  Future<Map<String, List<String>>> json() {
+  Future<Map<String, List<String>>?>? json() {
     _jsonFuture ??= _loadAssetManifestJson();
     return _jsonFuture;
   }
 
-  Future<Map<String, List<String>>> _loadAssetManifestJson() async {
+  Future<Map<String, List<String>>?> _loadAssetManifestJson() async {
     try {
       final jsonString =
           await rootBundle.loadString('AssetManifest.json', cache: enableCache);
@@ -37,7 +37,7 @@ class AssetManifest {
     return null;
   }
 
-  static Future<Map<String, List<String>>> _manifestParser(String jsonData) {
+  static Future<Map<String, List<String>>?> _manifestParser(String? jsonData) {
     if (jsonData == null) {
       return SynchronousFuture(null);
     }
