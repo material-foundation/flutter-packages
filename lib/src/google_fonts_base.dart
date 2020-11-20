@@ -132,7 +132,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   }
 
   try {
-    Future<ByteData> byteData;
+    late Future<ByteData> byteData;
 
     // Check if this font can be loaded by the pre-bundled assets.
     final assetManifestJson = await assetManifest.json();
