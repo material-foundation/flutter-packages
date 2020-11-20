@@ -64,9 +64,6 @@ TextStyle googleFontsTextStyle({
   double? decorationThickness,
   required Map<GoogleFontsVariant, GoogleFontsFile> fonts,
 }) {
-  assert(fontFamily != null);
-  assert(fonts != null);
-
   textStyle ??= TextStyle();
   textStyle = textStyle.copyWith(
     color: color,
