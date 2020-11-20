@@ -263,9 +263,9 @@ int _computeMatch(GoogleFontsVariant a, GoogleFontsVariant b) {
 
 /// Looks for a matching [familyWithVariant] font, provided the asset manifest.
 /// Returns the path of the font asset if found, otherwise an empty string.
-String _findFamilyWithVariantAssetPath(
+String? _findFamilyWithVariantAssetPath(
   GoogleFontsFamilyWithVariant familyWithVariant,
-  Map<String, List<String>> manifestJson,
+  Map<String, List<String>>? manifestJson,
 ) {
   if (manifestJson == null) return null;
 
