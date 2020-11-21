@@ -2032,7 +2032,6 @@ class GoogleFonts {
     TextDecorationStyle? decorationStyle,
     double? decorationThickness,
   }) {
-    assert(fontFamily != null);
     final fonts = GoogleFonts.asMap();
     if (!fonts.containsKey(fontFamily)) {
       throw Exception("No font family by name '$fontFamily' was found.");
@@ -2070,7 +2069,6 @@ class GoogleFonts {
   /// Parameter [fontFamily] must not be `null`. Throws if no font by name
   /// [fontFamily] exists.
   static TextTheme getTextTheme(String fontFamily, [TextTheme? textTheme]) {
-    assert(fontFamily != null);
     final fonts = _asMapOfTextThemes();
     if (!fonts.containsKey(fontFamily)) {
       throw Exception("No font family by name '$fontFamily' was found.");
