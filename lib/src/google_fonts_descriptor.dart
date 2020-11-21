@@ -2,8 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-
 import 'google_fonts_family_with_variant.dart';
 
 /// Describes a Google Fonts API font.
