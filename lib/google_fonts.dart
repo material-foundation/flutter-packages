@@ -37,25 +37,25 @@ class GoogleFonts {
   static Map<
       String,
       TextStyle Function({
-    TextStyle textStyle,
-    Color color,
-    Color backgroundColor,
-    double fontSize,
-    FontWeight fontWeight,
-    FontStyle fontStyle,
-    double letterSpacing,
-    double wordSpacing,
-    TextBaseline textBaseline,
-    double height,
-    Locale locale,
-    Paint foreground,
-    Paint background,
-    List<ui.Shadow> shadows,
-    List<ui.FontFeature> fontFeatures,
-    TextDecoration decoration,
-    Color decorationColor,
-    TextDecorationStyle decorationStyle,
-    double decorationThickness,
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
   })> asMap() => const {
         'ABeeZee': GoogleFonts.aBeeZee,
         'Abel': GoogleFonts.abel,
@@ -1028,7 +1028,7 @@ class GoogleFonts {
   ///
   /// Returns a map where the key is the name of the font family and the value
   /// is the corresponding [GoogleFonts] `TextTheme` method.
-  static Map<String, TextTheme Function([TextTheme])> _asMapOfTextThemes() =>
+  static Map<String, TextTheme Function([TextTheme?])> _asMapOfTextThemes() =>
       const {
         'ABeeZee': GoogleFonts.aBeeZeeTextTheme,
         'Abel': GoogleFonts.abelTextTheme,
@@ -2012,32 +2012,32 @@ class GoogleFonts {
   /// [fontFamily] exists.
   static TextStyle getFont(
     String fontFamily, {
-    TextStyle textStyle,
-    Color color,
-    Color backgroundColor,
-    double fontSize,
-    FontWeight fontWeight,
-    FontStyle fontStyle,
-    double letterSpacing,
-    double wordSpacing,
-    TextBaseline textBaseline,
-    double height,
-    Locale locale,
-    Paint foreground,
-    Paint background,
-    List<ui.Shadow> shadows,
-    List<ui.FontFeature> fontFeatures,
-    TextDecoration decoration,
-    Color decorationColor,
-    TextDecorationStyle decorationStyle,
-    double decorationThickness,
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
   }) {
     assert(fontFamily != null);
     final fonts = GoogleFonts.asMap();
     if (!fonts.containsKey(fontFamily)) {
       throw Exception("No font family by name '$fontFamily' was found.");
     }
-    return fonts[fontFamily](
+    return fonts[fontFamily]!(
       textStyle: textStyle,
       color: color,
       backgroundColor: backgroundColor,
@@ -2069,7 +2069,7 @@ class GoogleFonts {
   ///
   /// Parameter [fontFamily] must not be `null`. Throws if no font by name
   /// [fontFamily] exists.
-  static TextTheme getTextTheme(String fontFamily, [TextTheme textTheme]) {
+  static TextTheme getTextTheme(String fontFamily, [TextTheme? textTheme]) {
     assert(fontFamily != null);
     final fonts = _asMapOfTextThemes();
     if (!fonts.containsKey(fontFamily)) {
@@ -2084,25 +2084,25 @@ class GoogleFonts {
   /// See:
   ///  * https://fonts.google.com/specimen/ABeeZee
   static TextStyle aBeeZee({
-    TextStyle textStyle,
-    Color color,
-    Color backgroundColor,
-    double fontSize,
-    FontWeight fontWeight,
-    FontStyle fontStyle,
-    double letterSpacing,
-    double wordSpacing,
-    TextBaseline textBaseline,
-    double height,
-    Locale locale,
-    Paint foreground,
-    Paint background,
-    List<ui.Shadow> shadows,
-    List<ui.FontFeature> fontFeatures,
-    TextDecoration decoration,
-    Color decorationColor,
-    TextDecorationStyle decorationStyle,
-    double decorationThickness,
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
   }) {
     final fonts = <GoogleFontsVariant, GoogleFontsFile>{
       GoogleFontsVariant(
@@ -2151,7 +2151,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/ABeeZee
-  static TextTheme aBeeZeeTextTheme([TextTheme textTheme]) {
+  static TextTheme aBeeZeeTextTheme([TextTheme? textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       headline1: GoogleFonts.aBeeZee(textStyle: textTheme?.headline1),
@@ -2176,25 +2176,25 @@ class GoogleFonts {
   /// See:
   ///  * https://fonts.google.com/specimen/Abel
   static TextStyle abel({
-    TextStyle textStyle,
-    Color color,
-    Color backgroundColor,
-    double fontSize,
-    FontWeight fontWeight,
-    FontStyle fontStyle,
-    double letterSpacing,
-    double wordSpacing,
-    TextBaseline textBaseline,
-    double height,
-    Locale locale,
-    Paint foreground,
-    Paint background,
-    List<ui.Shadow> shadows,
-    List<ui.FontFeature> fontFeatures,
-    TextDecoration decoration,
-    Color decorationColor,
-    TextDecorationStyle decorationStyle,
-    double decorationThickness,
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
   }) {
     final fonts = <GoogleFontsVariant, GoogleFontsFile>{
       GoogleFontsVariant(
@@ -2236,7 +2236,7 @@ class GoogleFonts {
   ///
   /// See:
   ///  * https://fonts.google.com/specimen/Abel
-  static TextTheme abelTextTheme([TextTheme textTheme]) {
+  static TextTheme abelTextTheme([TextTheme? textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       headline1: GoogleFonts.abel(textStyle: textTheme?.headline1),
