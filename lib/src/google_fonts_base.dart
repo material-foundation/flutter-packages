@@ -132,7 +132,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   }
 
   try {
-    late Future<ByteData> byteData;
+    late Future<ByteData?> byteData;
 
     // Check if this font can be loaded by the pre-bundled assets.
     final assetManifestJson = await assetManifest.json();
@@ -180,12 +180,12 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 /// Loads a font with [FontLoader], given its name and byte-representation.
 Future<void> _loadFontByteData(
   String familyWithVariantString,
-  Future<ByteData> byteData,
+  Future<ByteData?> byteData,
 ) async {
   final anyFontDataFound = byteData != null && await byteData != null;
   if (anyFontDataFound) {
     final fontLoader = FontLoader(familyWithVariantString);
-    fontLoader.addFont(byteData);
+    fontLoader.addFont(byteData as Future<ByteData>);
     await fontLoader.load();
   }
 }
