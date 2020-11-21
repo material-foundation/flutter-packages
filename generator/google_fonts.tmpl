@@ -213,7 +213,7 @@ class GoogleFonts {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       {{#themeParams}}
-      {{value}}: GoogleFonts.{{methodName}}(textStyle: textTheme?.{{value}}),
+      {{value}}: GoogleFonts.{{methodName}}(textStyle: textTheme.{{value}}),
       {{/themeParams}}
     );
   }
