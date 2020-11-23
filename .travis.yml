@@ -11,7 +11,7 @@ addons:
 git:
   depth: 3
 env:
-  - FLUTTER_VERSION=stable
+  - FLUTTER_VERSION=beta
 before_script:
   - git clone https://github.com/flutter/flutter.git ../flutter -b $FLUTTER_VERSION
   - ../flutter/bin/flutter doctor
