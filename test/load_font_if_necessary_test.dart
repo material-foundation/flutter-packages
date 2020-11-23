@@ -42,6 +42,8 @@ void overridePrint(Future<Null> testFn()) => () {
     };
 
 void main() {
+  Directory directory;
+
   setUp(() async {
     httpClient = MockHttpClient();
     assetManifest = MockAssetManifest();
@@ -52,7 +54,7 @@ void main() {
 
     // The following snippet pulled from
     //  * https://flutter.dev/docs/cookbook/persistence/reading-writing-files#testing
-    final directory = await Directory.systemTemp.createTemp();
+    directory = await Directory.systemTemp.createTemp();
     const MethodChannel('plugins.flutter.io/path_provider')
         .setMockMethodCallHandler((methodCall) async {
       if (methodCall.method == 'getApplicationSupportDirectory') {
@@ -63,6 +65,7 @@ void main() {
   });
 
   tearDown(() {
+    directory.deleteSync(recursive: true);
     printLog.clear();
     clearCache();
   });
