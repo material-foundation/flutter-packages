@@ -9,6 +9,11 @@ environment:
   flutter: ^1.17.0
 
 dependencies:
+  # The dependencies `http` and `crypto` are migrated to NNBD, but not
+  # published yet.
+  # Once the NNBD versions for these packages are published on pub.dev,
+  # we need to update the dependencies.
+
   flutter:
     sdk: flutter
   http:
