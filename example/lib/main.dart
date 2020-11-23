@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle display1 = Theme.of(context).textTheme.headline4!;
+    final TextStyle headline4 = Theme.of(context).textTheme.headline4!;
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               'You have pushed the button this many times:',
-              style: GoogleFonts.oswald(textStyle: display1),
+              style: GoogleFonts.oswald(textStyle: headline4),
             ),
             Text(
               '$_counter',
