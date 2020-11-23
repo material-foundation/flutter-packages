@@ -1,3 +1,5 @@
+// Remove this annotation once `path_provider` is migrated.
+// See: https://github.com/material-foundation/google-fonts-flutter/issues/135
 // ignore_for_file: import_of_legacy_library_into_null_safe
 
 import 'dart:io';
