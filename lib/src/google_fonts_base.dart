@@ -144,7 +144,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       byteData = rootBundle.load(assetPath);
     }
     if (await byteData != null) {
-      return _loadFontByteData(familyWithVariantString, byteData!);
+      return _loadFontByteData(familyWithVariantString, byteData);
     }
 
     // Check if this font can be loaded from the device file system.
@@ -180,7 +180,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 /// Loads a font with [FontLoader], given its name and byte-representation.
 Future<void> _loadFontByteData(
   String familyWithVariantString,
-  Future<ByteData?> byteData,
+  Future<ByteData?>? byteData,
 ) async {
   final anyFontDataFound = byteData != null && await byteData != null;
   if (anyFontDataFound) {
