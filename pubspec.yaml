@@ -13,6 +13,8 @@ dependencies:
   # published yet.
   # Once the NNBD versions for these packages are published on pub.dev,
   # we need to update the dependencies.
+  # https://github.com/material-foundation/google-fonts-flutter/issues/135
+  # https://github.com/material-foundation/google-fonts-flutter/issues/136
 
   flutter:
     sdk: flutter
