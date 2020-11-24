@@ -1,3 +1,11 @@
+## [2.0.0-nullsafety.0] - 2020-11-24
+
+* Migrated the main library to null safety.
+  * One method (`getApplicationSupportDirectory`, from `path_provider`), has not been migrated yet.
+  * Most tests are not migrated yet, but all tests are passing.
+  * Generator is not migrated yet, but generated code is null-safe.
+* Migrated example to null safety.
+
 ## [1.1.1] - 2020-10-02
 
 * Use conditional imports to separate out web from destkop + mobile file_io implementations. 
