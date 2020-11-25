@@ -4,15 +4,12 @@
 
 import 'dart:ui';
 
-import 'package:flutter/foundation.dart';
-
 /// Represents a Google Fonts API variant in Flutter-specific types.
 class GoogleFontsVariant {
   const GoogleFontsVariant({
-    @required this.fontWeight,
-    @required this.fontStyle,
-  })  : assert(fontWeight != null),
-        assert(fontStyle != null);
+    required this.fontWeight,
+    required this.fontStyle,
+  });
 
   /// Creates a [GoogleFontsVariant] from a Google Fonts API specific
   /// filename part.
@@ -94,7 +91,7 @@ class GoogleFontsVariant {
   /// See [GoogleFontsVariant.fromApiFilenamePart] for the inverse function.
   String toApiFilenamePart() {
     final weightPrefix = _fontWeightToFilenameWeightParts[fontWeight] ??
-        _fontWeightToFilenameWeightParts[FontWeight.w400];
+        _fontWeightToFilenameWeightParts[FontWeight.w400]!;
     final italicSuffix = fontStyle == FontStyle.italic ? 'Italic' : '';
     if (weightPrefix == 'Regular') {
       return italicSuffix == '' ? weightPrefix : italicSuffix;
