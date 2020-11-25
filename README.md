@@ -56,7 +56,7 @@ or
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.lato(textStyle: Theme.of(context).textTheme.display1),
+  style: GoogleFonts.lato(textStyle: Theme.of(context).textTheme.headline4),
 ),
 ```
 
@@ -66,7 +66,7 @@ To override the `fontSize`, `fontWeight`, or `fontStyle`:
 Text(
   'This is Google Fonts',
   style: GoogleFonts.lato(
-    textStyle: Theme.of(context).textTheme.display1,
+    textStyle: Theme.of(context).textTheme.headline4,
     fontSize: 48,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.italic,
