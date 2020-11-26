@@ -23,7 +23,7 @@ class _CustomScaffoldDemoState extends State<CustomScaffoldDemo> {
         onPressed: () {},
       ),
       navigationTypeResolver: (context) {
-        if (MediaQuery.of(context)!.size.width > 600) {
+        if (MediaQuery.of(context).size.width > 600) {
           return NavigationType.drawer;
         } else {
           return NavigationType.bottom;
@@ -82,7 +82,7 @@ class _CustomScaffoldDemoState extends State<CustomScaffoldDemo> {
           RaisedButton(
             child: const Text('BACK'),
             onPressed: () {
-              Navigator.of(context)!.pushReplacementNamed('/');
+              Navigator.of(context).pushReplacementNamed('/');
             },
           )
         ],
