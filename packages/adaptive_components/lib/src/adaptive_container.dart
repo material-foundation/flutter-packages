@@ -62,7 +62,7 @@ class AdaptiveContainer extends StatelessWidget {
   ///
   /// This is used by the builder to see what type of screen the user wants this
   /// [AdaptiveContainer] to fit within.
-  late AdaptiveConstraints constraints;
+  late final AdaptiveConstraints constraints;
 
   /// columnSpan is used with [AdaptiveColumn] to represent
   /// the amount of columns that this widget will fill up within a certain [Flex]

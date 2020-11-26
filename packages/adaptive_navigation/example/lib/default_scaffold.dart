@@ -79,7 +79,7 @@ class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
           RaisedButton(
             child: const Text('BACK'),
             onPressed: () {
-              Navigator.of(context)!.pushReplacementNamed('/');
+              Navigator.of(context).pushReplacementNamed('/');
             },
           ),
         ],
