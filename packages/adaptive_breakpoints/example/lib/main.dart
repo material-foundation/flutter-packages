@@ -189,7 +189,7 @@ class _AdaptiveContainer extends StatelessWidget {
             color: color,
             decoration: decoration,
             foregroundDecoration: foregroundDecoration,
-            width: MediaQuery.of(context)!.size.width - (entry.margin * 2),
+            width: MediaQuery.of(context).size.width - (entry.margin * 2),
             height: height,
             margin: EdgeInsets.symmetric(horizontal: entry.margin),
             transform: transform,
