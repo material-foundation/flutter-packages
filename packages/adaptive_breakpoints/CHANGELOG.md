@@ -1,6 +1,6 @@
 # [0.0.4] - December 14, 2020
 
-Migrate to NNBD
+Migrated to NNBD
 
 # [0.0.3] - September 21, 2020
 
