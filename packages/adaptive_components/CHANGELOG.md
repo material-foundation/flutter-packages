@@ -1,3 +1,4 @@
-## [0.0.1] - TODO: Add release date.
+# [0.0.1] - December 14, 2020
 
-* TODO: Describe initial release.
+* Create AdaptiveColumn and AdaptiveContainer
+* Migrate to NNBD
