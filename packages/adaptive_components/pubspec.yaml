@@ -9,12 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  adaptive_breakpoints:
-    # TODO: Use pub dependency once NNBD beta is released.
-    path: ../adaptive_breakpoints
-  adaptive_navigation:
-    # TODO: Use pub dependency once NNBD beta is released.
-    path: ../adaptive_navigation
+  adaptive_breakpoints: ^0.0.4
+  adaptive_navigation: ^0.0.3
 
 dev_dependencies:
   flutter_test:
