@@ -39,10 +39,9 @@ class AdaptiveColumn extends StatelessWidget {
   const AdaptiveColumn({
     this.gutter,
     this.margin,
-    @required this.children,
+    required this.children,
   })  : assert(margin == null || margin >= 0),
-        assert(gutter == null || gutter >= 0),
-        assert(children != null);
+        assert(gutter == null || gutter >= 0);
 
   /// Empty space at the left and right of this widget.
   ///
@@ -50,7 +49,7 @@ class AdaptiveColumn extends StatelessWidget {
   /// double value will be dependent of the breakpoint entry of the current screen.
   ///
   /// Learn more at https://material.io/design/layout/responsive-layout-grid.html#breakpoints
-  final double margin;
+  final double? margin;
 
   /// Represents the space between children.
   ///
@@ -58,7 +57,7 @@ class AdaptiveColumn extends StatelessWidget {
   /// double value will be dependent of the breakpoint entry of the current screen.
   ///
   /// Learn more at https://material.io/design/layout/responsive-layout-grid.html#breakpoints
-  final double gutter;
+  final double? gutter;
 
   /// The List of [AdaptiveContainer]. Adaptive container neeeds to be used
   /// because the widget has a columnSpan parameter. This parameter represents the

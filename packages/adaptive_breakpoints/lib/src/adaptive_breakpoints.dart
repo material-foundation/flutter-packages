@@ -30,6 +30,10 @@ final Map<AdaptiveWindowType, int> _operatorMap = {
   AdaptiveWindowType.xlarge: 4,
 };
 
+int _relativeSize(AdaptiveWindowType adaptiveWindowType) {
+  return _operatorMap[adaptiveWindowType]!;
+}
+
 /// This extension lets you access variables associated with each window type.
 extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
   String get name {
@@ -100,40 +104,36 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
     }
   }
 
-  bool operator <=(Object other) => _operatorMap[this] <= _operatorMap[other];
+  bool operator <=(AdaptiveWindowType other) => _relativeSize(this) <= _relativeSize(other);
 
-  bool operator <(Object other) => _operatorMap[this] < _operatorMap[other];
+  bool operator <(AdaptiveWindowType other) => _relativeSize(this) < _relativeSize(other);
 
-  bool operator >=(Object other) => _operatorMap[this] >= _operatorMap[other];
+  bool operator >=(AdaptiveWindowType other) => _relativeSize(this) >= _relativeSize(other);
 
-  bool operator >(Object other) => _operatorMap[this] > _operatorMap[other];
+  bool operator >(AdaptiveWindowType other) => _relativeSize(this) > _relativeSize(other);
 }
 
 /// This class represents the Material breakpoint system entry.
 /// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
 class BreakpointSystemEntry {
   const BreakpointSystemEntry({
-    @required this.range,
+    required this.range,
     this.portrait,
     this.landscape,
-    @required this.adaptiveWindowType,
-    @required this.columns,
-    @required this.margin,
-    @required this.gutter,
-  })  : assert(range != null),
-        assert(adaptiveWindowType != null),
-        assert(columns != null),
-        assert(margin != null),
-        assert(gutter != null);
+    required this.adaptiveWindowType,
+    required this.columns,
+    required this.margin,
+    required this.gutter,
+  });
 
   /// The breakpoint range values represents a width range.
   final RangeValues range;
 
   /// Type of device which uses this breakpoint range in portrait view.
-  final String portrait;
+  final String? portrait;
 
   /// Type of device which uses this breakpoint range in landscape view.
-  final String landscape;
+  final String? landscape;
 
   /// Material generalizes the device size into five different windows: extra
   /// small, small, medium, large, and extra large.

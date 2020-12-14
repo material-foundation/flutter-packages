@@ -23,7 +23,7 @@ class AdaptiveContainer extends StatelessWidget {
   /// color. To supply a decoration with a color, use `decoration:
   /// BoxDecoration(color: color)`.
   AdaptiveContainer({
-    Key key,
+    Key? key,
     this.alignment,
     this.padding,
     this.color,
@@ -34,18 +34,17 @@ class AdaptiveContainer extends StatelessWidget {
     this.height,
     this.child,
     this.clipBehavior = Clip.none,
-    this.constraints,
+    constraints,
     this.columnSpan = 1,
   })  : assert(margin == null || margin.isNonNegative),
         assert(padding == null || padding.isNonNegative),
         assert(decoration == null || decoration.debugAssertIsValid()),
-        assert(clipBehavior != null),
         assert(
             color == null || decoration == null,
             'Cannot provide both a color and a decoration\n'
             'To provide both, use "decoration: BoxDecoration(color: color)".'),
         super(key: key) {
-    constraints ??= AdaptiveConstraints();
+    this.constraints = constraints ?? AdaptiveConstraints();
   }
 
   /// The [child] contained by the container.
@@ -54,16 +53,16 @@ class AdaptiveContainer extends StatelessWidget {
   /// container will expand to fill all available space in its parent, unless
   /// the parent provides unbounded constraints, in which case the container
   /// will attempt to be as small as possible.
-  final Widget child;
+  final Widget? child;
 
   /// Represents how height the container should be.
-  final double height;
+  final double? height;
 
   /// Creates constraints for adaptive windows.
   ///
   /// This is used by the builder to see what type of screen the user wants this
   /// [AdaptiveContainer] to fit within.
-  AdaptiveConstraints constraints;
+  late final AdaptiveConstraints constraints;
 
   /// columnSpan is used with [AdaptiveColumn] to represent
   /// the amount of columns that this widget will fill up within a certain [Flex]
@@ -91,14 +90,14 @@ class AdaptiveContainer extends StatelessWidget {
   ///    specify an [AlignmentGeometry].
   ///  * [AlignmentDirectional], like [Alignment] for specifying alignments
   ///    relative to text direction.
-  final AlignmentGeometry alignment;
+  final AlignmentGeometry? alignment;
 
   /// Empty space to inscribe inside the [decoration]. The [child], if any, is
   /// placed inside this padding.
   ///
   /// This padding is in addition to any padding inherent in the [decoration];
   /// see [Decoration.padding].
-  final EdgeInsetsGeometry padding;
+  final EdgeInsetsGeometry? padding;
 
   /// The color to paint behind the [child].
   ///
@@ -109,7 +108,7 @@ class AdaptiveContainer extends StatelessWidget {
   /// If the [decoration] is used, this property must be null. A background
   /// color may still be painted by the [decoration] even if this property is
   /// null.
-  final Color color;
+  final Color? color;
 
   /// The decoration to paint behind the [child].
   ///
@@ -117,16 +116,16 @@ class AdaptiveContainer extends StatelessWidget {
   ///
   /// The [child] is not clipped to the decoration. To clip a child to the shape
   /// of a particular [ShapeDecoration], consider using a [ClipPath] widget.
-  final Decoration decoration;
+  final Decoration? decoration;
 
   /// The decoration to paint in front of the [child].
-  final Decoration foregroundDecoration;
+  final Decoration? foregroundDecoration;
 
   /// Empty space to surround the [decoration] and [child].
-  final EdgeInsetsGeometry margin;
+  final EdgeInsetsGeometry? margin;
 
   /// The transformation matrix to apply before painting the container.
-  final Matrix4 transform;
+  final Matrix4? transform;
 
   /// The clip behavior when [Container.decoration] has a clipPath.
   ///
