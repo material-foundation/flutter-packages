@@ -80,7 +80,7 @@ You can also use `GoogleFonts.latoTextTheme()` to make or modify an entire text 
 MaterialApp(
   theme: ThemeData(
     textTheme: GoogleFonts.latoTextTheme(
-      Theme.of(context).textTheme,
+      Theme.of(context).textTheme, // If this is not set, then ThemeData.light().textTheme is used.
     ),
   ),
 );
@@ -150,7 +150,7 @@ void main() {
     final license = await rootBundle.loadString('google_fonts/OFL.txt');
     yield LicenseEntryWithLineBreaks(['google_fonts'], license);
   });
-  
+
   runApp(...);
 }
 ```
