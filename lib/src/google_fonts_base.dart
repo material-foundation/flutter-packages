@@ -240,7 +240,8 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
       );
     }
 
-    _unawaited(file_io.saveFontToDeviceFileSystem(fontName, response.bodyBytes));
+    _unawaited(
+        file_io.saveFontToDeviceFileSystem(fontName, response.bodyBytes));
 
     return ByteData.view(response.bodyBytes.buffer);
   } else {
