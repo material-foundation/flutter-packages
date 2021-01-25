@@ -10,7 +10,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
-import 'package:pedantic/pedantic.dart';
 
 import '../google_fonts.dart';
 import 'asset_manifest.dart';
@@ -241,7 +240,8 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
       );
     }
 
-    unawaited(file_io.saveFontToDeviceFileSystem(fontName, response.bodyBytes));
+    _unawaited(
+        file_io.saveFontToDeviceFileSystem(fontName, response.bodyBytes));
 
     return ByteData.view(response.bodyBytes.buffer);
   } else {
@@ -295,3 +295,5 @@ bool _isFileSecure(GoogleFontsFile file, Uint8List bytes) {
   return file.expectedLength == actualFileLength &&
       file.expectedFileHash == actualFileHash;
 }
+
+void _unawaited(Future<void> future) {}
