@@ -18,16 +18,10 @@ dependencies:
 
   flutter:
     sdk: flutter
-  http:
-    git:
-      url: https://github.com/dart-lang/http.git
-      ref: 86fdb20b37c368a77ec861f825ca5eb9e21b4c6d
-  path_provider: ^1.4.0
-  crypto:
-    git:
-      url: https://github.com/dart-lang/crypto.git
-      ref: 415e4f5dce0fbe2fb5381c64898db3ae0bffc143
-  pedantic: ">=1.10.0-nullsafety.3 <2.0.0"
+  http: ^0.13.0
+  path_provider: ">=2.0.0-0 <3.0.0"
+  crypto: ^3.0.0
+  pedantic: ^1.10.0
 
 dev_dependencies:
   flutter_test:
