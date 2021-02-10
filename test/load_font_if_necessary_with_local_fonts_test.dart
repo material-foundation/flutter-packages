@@ -16,7 +16,6 @@ import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
 
 class MockHttpClient extends Mock implements http.Client {
-  @override
   Future<http.Response> gets(dynamic uri, {dynamic headers}) {
     super.noSuchMethod(Invocation.method(#get, [uri], {#headers: headers}));
     return Future.value(http.Response('', 200));
