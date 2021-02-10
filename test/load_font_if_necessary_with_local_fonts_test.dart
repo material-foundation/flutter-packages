@@ -15,7 +15,13 @@ import 'package:google_fonts/src/google_fonts_variant.dart';
 import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
 
-class MockHttpClient extends Mock implements http.Client {}
+class MockHttpClient extends Mock implements http.Client {
+  @override
+  Future<http.Response> get(dynamic uri, {dynamic headers}) {
+    super.noSuchMethod(Invocation.method(#get, [uri], {#headers: headers}));
+    return Future.value(http.Response('', 200));
+  }
+}
 
 const _fakeResponse = 'fake response body - success';
 // The number of bytes in _fakeResponse.
@@ -33,10 +39,13 @@ final _fakeResponseFile = GoogleFontsFile(
 // handler (flutter/assets), that can not be undone, no other tests should be
 // written in this file.
 void main() {
+  MockHttpClient _httpClient;
+
   setUp(() async {
-    httpClient = MockHttpClient();
+    _httpClient = MockHttpClient();
+    httpClient = _httpClient;
     GoogleFonts.config.allowRuntimeFetching = true;
-    when(httpClient.get(any)).thenAnswer((_) async {
+    when(_httpClient.get(any)).thenAnswer((_) async {
       return http.Response(_fakeResponse, 200);
     });
 
@@ -78,7 +87,7 @@ void main() {
     // Call loadFontIfNecessary and verify no http request happens because
     // Foo-BlackItalic is in the asset bundle.
     await loadFontIfNecessary(descriptorInAssets);
-    verifyNever(httpClient.get(anything));
+    verifyNever(_httpClient.get(anything));
 
     final descriptorNotInAssets = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
@@ -94,6 +103,6 @@ void main() {
     // Call loadFontIfNecessary and verify that an http request happens because
     // Bar-BoldItalic is not in the asset bundle.
     await loadFontIfNecessary(descriptorNotInAssets);
-    verify(httpClient.get(anything)).called(1);
+    verify(_httpClient.get(anything)).called(1);
   });
 }
