@@ -57,7 +57,7 @@ Future<String> _getProtoUrl({int initialVersion = 1}) async {
   var didReachLatestUrl = false;
   final httpClient = http.Client();
   while (!didReachLatestUrl) {
-    final response = await httpClient.get(url(directoryVersion));
+    final response = await httpClient.get(Uri.parse(url(directoryVersion)));
     if (response.statusCode == 200) {
       directoryVersion += 1;
     } else if (response.statusCode == 404) {
@@ -91,7 +91,7 @@ Future<void> _verifyUrls(Directory fontDirectory) async {
 
 Future<void> _tryUrl(http.Client client, String url, Font font) async {
   try {
-    final fileContents = await client.get(url);
+    final fileContents = await client.get(Uri.parse(url));
     final actualFileLength = fileContents.bodyBytes.length;
     final actualFileHash = sha256.convert(fileContents.bodyBytes).toString();
     if (font.file.fileSize != actualFileLength ||
@@ -183,6 +183,6 @@ String _familyToMethodName(String family) {
 }
 
 Future<Directory> _readFontsProtoData(String protoUrl) async {
-  final fontsProtoFile = await http.get(protoUrl);
+  final fontsProtoFile = await http.get(Uri.parse(protoUrl));
   return Directory.fromBuffer(fontsProtoFile.bodyBytes);
 }
