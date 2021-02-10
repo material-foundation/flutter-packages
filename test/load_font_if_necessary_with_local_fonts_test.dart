@@ -17,7 +17,7 @@ import 'package:http/http.dart' as http;
 
 class MockHttpClient extends Mock implements http.Client {
   @override
-  Future<http.Response> get(dynamic uri, {dynamic headers}) {
+  Future<http.Response> gets(dynamic uri, {dynamic headers}) {
     super.noSuchMethod(Invocation.method(#get, [uri], {#headers: headers}));
     return Future.value(http.Response('', 200));
   }
@@ -45,7 +45,7 @@ void main() {
     _httpClient = MockHttpClient();
     httpClient = _httpClient;
     GoogleFonts.config.allowRuntimeFetching = true;
-    when(_httpClient.get(any)).thenAnswer((_) async {
+    when(_httpClient.gets(any)).thenAnswer((_) async {
       return http.Response(_fakeResponse, 200);
     });
 
@@ -87,7 +87,7 @@ void main() {
     // Call loadFontIfNecessary and verify no http request happens because
     // Foo-BlackItalic is in the asset bundle.
     await loadFontIfNecessary(descriptorInAssets);
-    verifyNever(_httpClient.get(anything));
+    verifyNever(_httpClient.gets(anything));
 
     final descriptorNotInAssets = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
@@ -103,6 +103,6 @@ void main() {
     // Call loadFontIfNecessary and verify that an http request happens because
     // Bar-BoldItalic is not in the asset bundle.
     await loadFontIfNecessary(descriptorNotInAssets);
-    verify(_httpClient.get(anything)).called(1);
+    verify(_httpClient.gets(anything)).called(1);
   });
 }
