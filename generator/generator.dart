@@ -80,9 +80,9 @@ Future<void> _verifyUrls(Directory fontDirectory) async {
   final client = http.Client();
   for (final family in fontDirectory.family) {
     for (final font in family.fonts) {
-      final urlString =
+      final url =
           Uri.parse('https://fonts.gstatic.com/s/a/${_hashToString(font.file.hash)}.ttf');
-      await _tryUrl(client, urlString, font);
+      await _tryUrl(client, url, font);
       progressBar.update(progressBar.current + 1);
     }
   }
