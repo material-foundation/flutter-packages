@@ -12,5 +12,5 @@ Future<void> saveFontToDeviceFileSystem(String name, List<int> bytes) =>
 
 /// Stubbed out version of loadFontFromDeviceFileSystem from
 /// `file_io_desktop_and_mobile.dart`.
-Future<ByteData> loadFontFromDeviceFileSystem(String name) =>
+Future<ByteData?> loadFontFromDeviceFileSystem(String name) =>
     Future.value(null);

@@ -41,31 +41,28 @@ void clearCache() => _loadedFonts.clear();
 /// This function has a side effect of loading the font into the [FontLoader],
 /// either by network or from the device file system.
 TextStyle googleFontsTextStyle({
-  @required String fontFamily,
-  TextStyle textStyle,
-  Color color,
-  Color backgroundColor,
-  double fontSize,
-  FontWeight fontWeight,
-  FontStyle fontStyle,
-  double letterSpacing,
-  double wordSpacing,
-  TextBaseline textBaseline,
-  double height,
-  Locale locale,
-  Paint foreground,
-  Paint background,
-  List<Shadow> shadows,
-  List<FontFeature> fontFeatures,
-  TextDecoration decoration,
-  Color decorationColor,
-  TextDecorationStyle decorationStyle,
-  double decorationThickness,
-  @required Map<GoogleFontsVariant, GoogleFontsFile> fonts,
+  required String fontFamily,
+  TextStyle? textStyle,
+  Color? color,
+  Color? backgroundColor,
+  double? fontSize,
+  FontWeight? fontWeight,
+  FontStyle? fontStyle,
+  double? letterSpacing,
+  double? wordSpacing,
+  TextBaseline? textBaseline,
+  double? height,
+  Locale? locale,
+  Paint? foreground,
+  Paint? background,
+  List<Shadow>? shadows,
+  List<FontFeature>? fontFeatures,
+  TextDecoration? decoration,
+  Color? decorationColor,
+  TextDecorationStyle? decorationStyle,
+  double? decorationThickness,
+  required Map<GoogleFontsVariant, GoogleFontsFile> fonts,
 }) {
-  assert(fontFamily != null);
-  assert(fonts != null);
-
   textStyle ??= TextStyle();
   textStyle = textStyle.copyWith(
     color: color,
@@ -100,7 +97,7 @@ TextStyle googleFontsTextStyle({
 
   final descriptor = GoogleFontsDescriptor(
     familyWithVariant: familyWithVariant,
-    file: fonts[matchedVariant],
+    file: fonts[matchedVariant]!,
   );
 
   loadFontIfNecessary(descriptor);
@@ -134,7 +131,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   }
 
   try {
-    Future<ByteData> byteData;
+    Future<ByteData?>? byteData;
 
     // Check if this font can be loaded by the pre-bundled assets.
     final assetManifestJson = await assetManifest.json();
@@ -182,12 +179,12 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 /// Loads a font with [FontLoader], given its name and byte-representation.
 Future<void> _loadFontByteData(
   String familyWithVariantString,
-  Future<ByteData> byteData,
+  Future<ByteData?>? byteData,
 ) async {
   final anyFontDataFound = byteData != null && await byteData != null;
   if (anyFontDataFound) {
     final fontLoader = FontLoader(familyWithVariantString);
-    fontLoader.addFont(byteData);
+    fontLoader.addFont(byteData as Future<ByteData>);
     await fontLoader.load();
   }
 }
@@ -202,8 +199,8 @@ GoogleFontsVariant _closestMatch(
   GoogleFontsVariant sourceVariant,
   Iterable<GoogleFontsVariant> variantsToCompare,
 ) {
-  int bestScore;
-  GoogleFontsVariant bestMatch;
+  int? bestScore;
+  late GoogleFontsVariant bestMatch;
   for (final variantToCompare in variantsToCompare) {
     final score = _computeMatch(sourceVariant, variantToCompare);
     if (bestScore == null || score < bestScore) {
@@ -266,9 +263,9 @@ int _computeMatch(GoogleFontsVariant a, GoogleFontsVariant b) {
 
 /// Looks for a matching [familyWithVariant] font, provided the asset manifest.
 /// Returns the path of the font asset if found, otherwise an empty string.
-String _findFamilyWithVariantAssetPath(
+String? _findFamilyWithVariantAssetPath(
   GoogleFontsFamilyWithVariant familyWithVariant,
-  Map<String, List<String>> manifestJson,
+  Map<String, List<String>>? manifestJson,
 ) {
   if (manifestJson == null) return null;
 

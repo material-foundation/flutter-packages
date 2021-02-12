@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// @dart=2.9
+
 import 'dart:io';
 
 import 'package:console/console.dart';
@@ -44,12 +46,12 @@ const _success = 'Success!';
 /// connection gets lost while downloading the directories, we just crash. But
 /// that's okay for now, because the generator is only executed in trusted
 /// environments by individual developers.
-Future<String> _getProtoUrl({int initialVersion = 1}) async {
+Future<Uri> _getProtoUrl({int initialVersion = 1}) async {
   var directoryVersion = initialVersion;
 
-  String url(int directoryVersion) {
+  Uri url(int directoryVersion) {
     final paddedVersion = directoryVersion.toString().padLeft(3, '0');
-    return 'http://fonts.gstatic.com/s/f/directory$paddedVersion.pb';
+    return Uri.parse('http://fonts.gstatic.com/s/f/directory$paddedVersion.pb');
   }
 
   var didReachLatestUrl = false;
@@ -78,16 +80,17 @@ Future<void> _verifyUrls(Directory fontDirectory) async {
   final client = http.Client();
   for (final family in fontDirectory.family) {
     for (final font in family.fonts) {
-      final urlString =
-          'https://fonts.gstatic.com/s/a/${_hashToString(font.file.hash)}.ttf';
-      await _tryUrl(client, urlString, font);
+      final url = Uri.parse(
+        'https://fonts.gstatic.com/s/a/${_hashToString(font.file.hash)}.ttf',
+      );
+      await _tryUrl(client, url, font);
       progressBar.update(progressBar.current + 1);
     }
   }
   client.close();
 }
 
-Future<void> _tryUrl(http.Client client, String url, Font font) async {
+Future<void> _tryUrl(http.Client client, Uri url, Font font) async {
   try {
     final fileContents = await client.get(url);
     final actualFileLength = fileContents.bodyBytes.length;
@@ -180,7 +183,7 @@ String _familyToMethodName(String family) {
   return words.join();
 }
 
-Future<Directory> _readFontsProtoData(String protoUrl) async {
+Future<Directory> _readFontsProtoData(Uri protoUrl) async {
   final fontsProtoFile = await http.get(protoUrl);
   return Directory.fromBuffer(fontsProtoFile.bodyBytes);
 }
