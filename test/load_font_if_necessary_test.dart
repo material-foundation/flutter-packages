@@ -279,7 +279,7 @@ void main() {
     expect(directoryContents.listSync().isEmpty, isTrue);
   });
 
-  test('loadFontByteData doesn\'t fail', () {
+  test("loadFontByteData doesn't fail", () {
     expect(
       () async => loadFontByteData('fontFamily', Future.value(ByteData(0))),
       returnsNormally,
