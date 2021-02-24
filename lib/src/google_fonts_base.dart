@@ -186,7 +186,7 @@ Future<void> _loadFontByteData(
   if (fontData == null) return;
 
   final fontLoader = FontLoader(familyWithVariantString);
-  fontLoader.addFont(byteData as Future<ByteData>);
+  fontLoader.addFont(Future.value(fontData));
   await fontLoader.load();
 }
 
