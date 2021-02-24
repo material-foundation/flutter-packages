@@ -1,3 +1,7 @@
+## [2.0.0-nullsafety.1] - 2021-02-24
+
+* Fixes an issue while loading fonts ([#146](https://github.com/material-foundation/google-fonts-flutter/issues/146))
+
 ## [2.0.0-nullsafety.0] - 2021-02-11
 
 * Migrated the main library to null safety.

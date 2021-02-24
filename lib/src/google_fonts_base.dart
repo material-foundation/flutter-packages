@@ -181,12 +181,13 @@ Future<void> _loadFontByteData(
   String familyWithVariantString,
   Future<ByteData?>? byteData,
 ) async {
-  final anyFontDataFound = byteData != null && await byteData != null;
-  if (anyFontDataFound) {
-    final fontLoader = FontLoader(familyWithVariantString);
-    fontLoader.addFont(byteData as Future<ByteData>);
-    await fontLoader.load();
-  }
+  if (byteData == null) return;
+  final fontData = await byteData;
+  if (fontData == null) return;
+
+  final fontLoader = FontLoader(familyWithVariantString);
+  fontLoader.addFont(byteData as Future<ByteData>);
+  await fontLoader.load();
 }
 
 /// Returns [GoogleFontsVariant] from [variantsToCompare] that most closely
