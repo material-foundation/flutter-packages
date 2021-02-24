@@ -242,12 +242,12 @@ void main() {
     );
 
     var directoryContents = await getApplicationSupportDirectory();
-    expect(directoryContents!.listSync().isEmpty, isTrue);
+    expect(directoryContents.listSync().isEmpty, isTrue);
 
     await loadFontIfNecessary(fakeDescriptor);
     directoryContents = await getApplicationSupportDirectory();
 
-    expect(directoryContents!.listSync().isNotEmpty, isTrue);
+    expect(directoryContents.listSync().isNotEmpty, isTrue);
     expect(
       directoryContents.listSync().single.toString().contains('Foo'),
       isTrue,
@@ -272,10 +272,10 @@ void main() {
     );
 
     var directoryContents = await getApplicationSupportDirectory();
-    expect(directoryContents!.listSync().isEmpty, isTrue);
+    expect(directoryContents.listSync().isEmpty, isTrue);
 
     await loadFontIfNecessary(fakeDescriptor);
     directoryContents = await getApplicationSupportDirectory();
-    expect(directoryContents!.listSync().isEmpty, isTrue);
+    expect(directoryContents.listSync().isEmpty, isTrue);
   });
 }
