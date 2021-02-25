@@ -278,4 +278,25 @@ void main() {
     directoryContents = await getApplicationSupportDirectory();
     expect(directoryContents.listSync().isEmpty, isTrue);
   });
+
+  test('loadFontByteData doesn\'t fail', () {
+    expect(
+      () async => loadFontByteData('fontFamily', Future.value(ByteData(0))),
+      returnsNormally,
+    );
+    expect(
+      () async => loadFontByteData('fontFamily', Future.value(null)),
+      returnsNormally,
+    );
+    expect(
+      () async => loadFontByteData('fontFamily', null),
+      returnsNormally,
+    );
+
+    expect(
+      () async => loadFontByteData('fontFamily',
+          Future.delayed(Duration(milliseconds: 100), () => null)),
+      returnsNormally,
+    );
+  });
 }
