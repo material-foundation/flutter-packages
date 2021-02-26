@@ -242,12 +242,12 @@ void main() {
     );
 
     var directoryContents = await getApplicationSupportDirectory();
-    expect(directoryContents!.listSync().isEmpty, isTrue);
+    expect(directoryContents.listSync().isEmpty, isTrue);
 
     await loadFontIfNecessary(fakeDescriptor);
     directoryContents = await getApplicationSupportDirectory();
 
-    expect(directoryContents!.listSync().isNotEmpty, isTrue);
+    expect(directoryContents.listSync().isNotEmpty, isTrue);
     expect(
       directoryContents.listSync().single.toString().contains('Foo'),
       isTrue,
@@ -272,10 +272,31 @@ void main() {
     );
 
     var directoryContents = await getApplicationSupportDirectory();
-    expect(directoryContents!.listSync().isEmpty, isTrue);
+    expect(directoryContents.listSync().isEmpty, isTrue);
 
     await loadFontIfNecessary(fakeDescriptor);
     directoryContents = await getApplicationSupportDirectory();
-    expect(directoryContents!.listSync().isEmpty, isTrue);
+    expect(directoryContents.listSync().isEmpty, isTrue);
+  });
+
+  test('loadFontByteData doesn\'t fail', () {
+    expect(
+      () async => loadFontByteData('fontFamily', Future.value(ByteData(0))),
+      returnsNormally,
+    );
+    expect(
+      () async => loadFontByteData('fontFamily', Future.value(null)),
+      returnsNormally,
+    );
+    expect(
+      () async => loadFontByteData('fontFamily', null),
+      returnsNormally,
+    );
+
+    expect(
+      () async => loadFontByteData('fontFamily',
+          Future.delayed(Duration(milliseconds: 100), () => null)),
+      returnsNormally,
+    );
   });
 }
