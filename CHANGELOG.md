@@ -1,4 +1,4 @@
-## [2.0.1] - 2021-05-14
+## [2.1.0] - 2021-05-14
 
 * Added the latest fonts from fonts.google.com.
 
