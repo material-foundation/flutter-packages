@@ -79,7 +79,8 @@ Future<void> _verifyUrls(Directory fontDirectory) async {
   int i = 1;
   for (final family in fontDirectory.family) {
     for (final font in family.fonts) {
-      final urlString = 'https://fonts.gstatic.com/s/a/${_hashToString(font.file.hash)}.ttf';
+      final urlString =
+          'https://fonts.gstatic.com/s/a/${_hashToString(font.file.hash)}.ttf';
       final url = Uri.parse(urlString);
       await _tryUrl(client, url, font);
       print('Verified URL ($i/$totalFonts): $urlString');
