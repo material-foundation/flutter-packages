@@ -102,6 +102,7 @@ class GoogleFonts {
         'Anaheim': GoogleFonts.anaheim,
         'Andada': GoogleFonts.andada,
         'Andika': GoogleFonts.andika,
+        'Andika New Basic': GoogleFonts.andikaNewBasic,
         'Annie Use Your Telescope': GoogleFonts.annieUseYourTelescope,
         'Anonymous Pro': GoogleFonts.anonymousPro,
         'Antic': GoogleFonts.antic,
@@ -158,6 +159,7 @@ class GoogleFonts {
         'Baloo Tamma': GoogleFonts.balooTamma,
         'Baloo Tammudu': GoogleFonts.balooTammudu,
         'Baloo Thambi': GoogleFonts.balooThambi,
+        'Balsamiq Sans': GoogleFonts.balsamiqSans,
         'Balthazar': GoogleFonts.balthazar,
         'Bangers': GoogleFonts.bangers,
         'Barlow': GoogleFonts.barlow,
@@ -181,6 +183,10 @@ class GoogleFonts {
         'Beth Ellen': GoogleFonts.bethEllen,
         'Bevan': GoogleFonts.bevan,
         'Big Shoulders Display': GoogleFonts.bigShouldersDisplay,
+        'Big Shoulders Inline Display': GoogleFonts.bigShouldersInlineDisplay,
+        'Big Shoulders Inline Text': GoogleFonts.bigShouldersInlineText,
+        'Big Shoulders Stencil Display': GoogleFonts.bigShouldersStencilDisplay,
+        'Big Shoulders Stencil Text': GoogleFonts.bigShouldersStencilText,
         'Big Shoulders Text': GoogleFonts.bigShouldersText,
         'Bigelow Rules': GoogleFonts.bigelowRules,
         'Bigshot One': GoogleFonts.bigshotOne,
@@ -232,6 +238,7 @@ class GoogleFonts {
         'Carrois Gothic': GoogleFonts.carroisGothic,
         'Carrois Gothic SC': GoogleFonts.carroisGothicSc,
         'Carter One': GoogleFonts.carterOne,
+        'Castoro': GoogleFonts.castoro,
         'Catamaran': GoogleFonts.catamaran,
         'Caudex': GoogleFonts.caudex,
         'Caveat': GoogleFonts.caveat,
@@ -266,6 +273,7 @@ class GoogleFonts {
         'Comfortaa': GoogleFonts.comfortaa,
         'Comic Neue': GoogleFonts.comicNeue,
         'Coming Soon': GoogleFonts.comingSoon,
+        'Commissioner': GoogleFonts.commissioner,
         'Concert One': GoogleFonts.concertOne,
         'Condiment': GoogleFonts.condiment,
         'Contrail One': GoogleFonts.contrailOne,
@@ -295,6 +303,7 @@ class GoogleFonts {
         'Cute Font': GoogleFonts.cuteFont,
         'Cutive': GoogleFonts.cutive,
         'Cutive Mono': GoogleFonts.cutiveMono,
+        'DM Mono': GoogleFonts.dmMono,
         'DM Sans': GoogleFonts.dmSans,
         'DM Serif Display': GoogleFonts.dmSerifDisplay,
         'DM Serif Text': GoogleFonts.dmSerifText,
@@ -348,6 +357,7 @@ class GoogleFonts {
         'Engagement': GoogleFonts.engagement,
         'Englebert': GoogleFonts.englebert,
         'Enriqueta': GoogleFonts.enriqueta,
+        'Epilogue': GoogleFonts.epilogue,
         'Erica One': GoogleFonts.ericaOne,
         'Esteban': GoogleFonts.esteban,
         'Euphoria Script': GoogleFonts.euphoriaScript,
@@ -383,6 +393,7 @@ class GoogleFonts {
         'Forum': GoogleFonts.forum,
         'Francois One': GoogleFonts.francoisOne,
         'Frank Ruhl Libre': GoogleFonts.frankRuhlLibre,
+        'Fraunces': GoogleFonts.fraunces,
         'Freckle Face': GoogleFonts.freckleFace,
         'Fredericka the Great': GoogleFonts.frederickaTheGreat,
         'Fredoka One': GoogleFonts.fredokaOne,
@@ -416,15 +427,18 @@ class GoogleFonts {
         'Gloria Hallelujah': GoogleFonts.gloriaHallelujah,
         'Goblin One': GoogleFonts.goblinOne,
         'Gochi Hand': GoogleFonts.gochiHand,
+        'Goldman': GoogleFonts.goldman,
         'Gorditas': GoogleFonts.gorditas,
         'Gothic A1': GoogleFonts.gothicA1,
         'Gotu': GoogleFonts.gotu,
         'Goudy Bookletter 1911': GoogleFonts.goudyBookletter1911,
         'Graduate': GoogleFonts.graduate,
         'Grand Hotel': GoogleFonts.grandHotel,
+        'Grandstander': GoogleFonts.grandstander,
         'Gravitas One': GoogleFonts.gravitasOne,
         'Great Vibes': GoogleFonts.greatVibes,
         'Grenze': GoogleFonts.grenze,
+        'Grenze Gotisch': GoogleFonts.grenzeGotisch,
         'Griffy': GoogleFonts.griffy,
         'Gruppo': GoogleFonts.gruppo,
         'Gudea': GoogleFonts.gudea,
@@ -432,6 +446,7 @@ class GoogleFonts {
         'Gupter': GoogleFonts.gupter,
         'Gurajada': GoogleFonts.gurajada,
         'Habibi': GoogleFonts.habibi,
+        'Hachi Maru Pop': GoogleFonts.hachiMaruPop,
         'Halant': GoogleFonts.halant,
         'Hammersmith One': GoogleFonts.hammersmithOne,
         'Hanalei': GoogleFonts.hanalei,
@@ -487,6 +502,7 @@ class GoogleFonts {
         'Jacques Francois': GoogleFonts.jacquesFrancois,
         'Jacques Francois Shadow': GoogleFonts.jacquesFrancoisShadow,
         'Jaldi': GoogleFonts.jaldi,
+        'JetBrains Mono': GoogleFonts.jetBrainsMono,
         'Jim Nightshade': GoogleFonts.jimNightshade,
         'Jockey One': GoogleFonts.jockeyOne,
         'Jolly Lodger': GoogleFonts.jollyLodger,
@@ -494,6 +510,7 @@ class GoogleFonts {
         'Jomolhari': GoogleFonts.jomolhari,
         'Josefin Sans': GoogleFonts.josefinSans,
         'Josefin Slab': GoogleFonts.josefinSlab,
+        'Jost': GoogleFonts.jost,
         'Joti One': GoogleFonts.jotiOne,
         'Jua': GoogleFonts.jua,
         'Judson': GoogleFonts.judson,
@@ -534,9 +551,11 @@ class GoogleFonts {
         'Kristi': GoogleFonts.kristi,
         'Krona One': GoogleFonts.kronaOne,
         'Krub': GoogleFonts.krub,
+        'Kufam': GoogleFonts.kufam,
         'Kulim Park': GoogleFonts.kulimPark,
         'Kumar One': GoogleFonts.kumarOne,
         'Kumar One Outline': GoogleFonts.kumarOneOutline,
+        'Kumbh Sans': GoogleFonts.kumbhSans,
         'Kurale': GoogleFonts.kurale,
         'La Belle Aurore': GoogleFonts.laBelleAurore,
         'Lacquer': GoogleFonts.lacquer,
@@ -544,6 +563,7 @@ class GoogleFonts {
         'Lakki Reddy': GoogleFonts.lakkiReddy,
         'Lalezar': GoogleFonts.lalezar,
         'Lancelot': GoogleFonts.lancelot,
+        'Langar': GoogleFonts.langar,
         'Lateef': GoogleFonts.lateef,
         'Lato': GoogleFonts.lato,
         'League Script': GoogleFonts.leagueScript,
@@ -672,7 +692,8 @@ class GoogleFonts {
         'Mukta Mahee': GoogleFonts.muktaMahee,
         'Mukta Malar': GoogleFonts.muktaMalar,
         'Mukta Vaani': GoogleFonts.muktaVaani,
-        'Muli': GoogleFonts.muli,
+        'Mulish': GoogleFonts.mulish,
+        'MuseoModerno': GoogleFonts.museoModerno,
         'Mystery Quest': GoogleFonts.mysteryQuest,
         'NTR': GoogleFonts.ntr,
         'Nanum Brush Script': GoogleFonts.nanumBrushScript,
@@ -680,6 +701,7 @@ class GoogleFonts {
         'Nanum Gothic Coding': GoogleFonts.nanumGothicCoding,
         'Nanum Myeongjo': GoogleFonts.nanumMyeongjo,
         'Nanum Pen Script': GoogleFonts.nanumPenScript,
+        'Nerko One': GoogleFonts.nerkoOne,
         'Neucha': GoogleFonts.neucha,
         'Neuton': GoogleFonts.neuton,
         'New Rocker': GoogleFonts.newRocker,
@@ -759,6 +781,7 @@ class GoogleFonts {
         'Petit Formal Script': GoogleFonts.petitFormalScript,
         'Petrona': GoogleFonts.petrona,
         'Philosopher': GoogleFonts.philosopher,
+        'Piazzolla': GoogleFonts.piazzolla,
         'Piedra': GoogleFonts.piedra,
         'Pinyon Script': GoogleFonts.pinyonScript,
         'Pirata One': GoogleFonts.pirataOne,
@@ -777,6 +800,7 @@ class GoogleFonts {
         'Poppins': GoogleFonts.poppins,
         'Port Lligat Sans': GoogleFonts.portLligatSans,
         'Port Lligat Slab': GoogleFonts.portLligatSlab,
+        'Potta One': GoogleFonts.pottaOne,
         'Pragati Narrow': GoogleFonts.pragatiNarrow,
         'Prata': GoogleFonts.prata,
         'Press Start 2P': GoogleFonts.pressStart2p,
@@ -813,8 +837,10 @@ class GoogleFonts {
         'Rasa': GoogleFonts.rasa,
         'Rationale': GoogleFonts.rationale,
         'Ravi Prakash': GoogleFonts.raviPrakash,
+        'Recursive': GoogleFonts.recursive,
         'Red Hat Display': GoogleFonts.redHatDisplay,
         'Red Hat Text': GoogleFonts.redHatText,
+        'Red Rose': GoogleFonts.redRose,
         'Redressed': GoogleFonts.redressed,
         'Reem Kufi': GoogleFonts.reemKufi,
         'Reenie Beanie': GoogleFonts.reenieBeanie,
@@ -836,6 +862,7 @@ class GoogleFonts {
         'Rosario': GoogleFonts.rosario,
         'Rosarivo': GoogleFonts.rosarivo,
         'Rouge Script': GoogleFonts.rougeScript,
+        'Rowdies': GoogleFonts.rowdies,
         'Rozha One': GoogleFonts.rozhaOne,
         'Rubik': GoogleFonts.rubik,
         'Rubik Mono One': GoogleFonts.rubikMonoOne,
@@ -860,6 +887,7 @@ class GoogleFonts {
         'Sanchez': GoogleFonts.sanchez,
         'Sancreek': GoogleFonts.sancreek,
         'Sansita': GoogleFonts.sansita,
+        'Sansita Swashed': GoogleFonts.sansitaSwashed,
         'Sarabun': GoogleFonts.sarabun,
         'Sarala': GoogleFonts.sarala,
         'Sarina': GoogleFonts.sarina,
@@ -909,10 +937,12 @@ class GoogleFonts {
         'Solway': GoogleFonts.solway,
         'Song Myung': GoogleFonts.songMyung,
         'Sonsie One': GoogleFonts.sonsieOne,
+        'Sora': GoogleFonts.sora,
         'Sorts Mill Goudy': GoogleFonts.sortsMillGoudy,
         'Source Code Pro': GoogleFonts.sourceCodePro,
         'Source Sans Pro': GoogleFonts.sourceSansPro,
         'Source Serif Pro': GoogleFonts.sourceSerifPro,
+        'Space Grotesk': GoogleFonts.spaceGrotesk,
         'Space Mono': GoogleFonts.spaceMono,
         'Spartan': GoogleFonts.spartan,
         'Special Elite': GoogleFonts.specialElite,
@@ -946,6 +976,9 @@ class GoogleFonts {
         'Suravaram': GoogleFonts.suravaram,
         'Swanky and Moo Moo': GoogleFonts.swankyAndMooMoo,
         'Syncopate': GoogleFonts.syncopate,
+        'Syne': GoogleFonts.syne,
+        'Syne Mono': GoogleFonts.syneMono,
+        'Syne Tactile': GoogleFonts.syneTactile,
         'Tajawal': GoogleFonts.tajawal,
         'Tangerine': GoogleFonts.tangerine,
         'Tauri': GoogleFonts.tauri,
@@ -966,6 +999,7 @@ class GoogleFonts {
         'Tomorrow': GoogleFonts.tomorrow,
         'Trade Winds': GoogleFonts.tradeWinds,
         'Trirong': GoogleFonts.trirong,
+        'Trispace': GoogleFonts.trispace,
         'Trocchi': GoogleFonts.trocchi,
         'Trochut': GoogleFonts.trochut,
         'Trykker': GoogleFonts.trykker,
@@ -987,6 +1021,7 @@ class GoogleFonts {
         'Vampiro One': GoogleFonts.vampiroOne,
         'Varela': GoogleFonts.varela,
         'Varela Round': GoogleFonts.varelaRound,
+        'Varta': GoogleFonts.varta,
         'Vast Shadow': GoogleFonts.vastShadow,
         'Vesper Libre': GoogleFonts.vesperLibre,
         'Viaoda Libre': GoogleFonts.viaodaLibre,
@@ -1007,6 +1042,7 @@ class GoogleFonts {
         'Wendy One': GoogleFonts.wendyOne,
         'Wire One': GoogleFonts.wireOne,
         'Work Sans': GoogleFonts.workSans,
+        'Xanh Mono': GoogleFonts.xanhMono,
         'Yanone Kaffeesatz': GoogleFonts.yanoneKaffeesatz,
         'Yantramanav': GoogleFonts.yantramanav,
         'Yatra One': GoogleFonts.yatraOne,
@@ -1015,6 +1051,7 @@ class GoogleFonts {
         'Yeseva One': GoogleFonts.yesevaOne,
         'Yesteryear': GoogleFonts.yesteryear,
         'Yrsa': GoogleFonts.yrsa,
+        'Yusei Magic': GoogleFonts.yuseiMagic,
         'ZCOOL KuaiLe': GoogleFonts.zcoolKuaiLe,
         'ZCOOL QingKe HuangYou': GoogleFonts.zcoolQingKeHuangYou,
         'ZCOOL XiaoWei': GoogleFonts.zcoolXiaoWei,
@@ -1075,6 +1112,7 @@ class GoogleFonts {
         'Anaheim': GoogleFonts.anaheimTextTheme,
         'Andada': GoogleFonts.andadaTextTheme,
         'Andika': GoogleFonts.andikaTextTheme,
+        'Andika New Basic': GoogleFonts.andikaNewBasicTextTheme,
         'Annie Use Your Telescope': GoogleFonts.annieUseYourTelescopeTextTheme,
         'Anonymous Pro': GoogleFonts.anonymousProTextTheme,
         'Antic': GoogleFonts.anticTextTheme,
@@ -1131,6 +1169,7 @@ class GoogleFonts {
         'Baloo Tamma': GoogleFonts.balooTammaTextTheme,
         'Baloo Tammudu': GoogleFonts.balooTammuduTextTheme,
         'Baloo Thambi': GoogleFonts.balooThambiTextTheme,
+        'Balsamiq Sans': GoogleFonts.balsamiqSansTextTheme,
         'Balthazar': GoogleFonts.balthazarTextTheme,
         'Bangers': GoogleFonts.bangersTextTheme,
         'Barlow': GoogleFonts.barlowTextTheme,
@@ -1154,6 +1193,14 @@ class GoogleFonts {
         'Beth Ellen': GoogleFonts.bethEllenTextTheme,
         'Bevan': GoogleFonts.bevanTextTheme,
         'Big Shoulders Display': GoogleFonts.bigShouldersDisplayTextTheme,
+        'Big Shoulders Inline Display':
+            GoogleFonts.bigShouldersInlineDisplayTextTheme,
+        'Big Shoulders Inline Text':
+            GoogleFonts.bigShouldersInlineTextTextTheme,
+        'Big Shoulders Stencil Display':
+            GoogleFonts.bigShouldersStencilDisplayTextTheme,
+        'Big Shoulders Stencil Text':
+            GoogleFonts.bigShouldersStencilTextTextTheme,
         'Big Shoulders Text': GoogleFonts.bigShouldersTextTextTheme,
         'Bigelow Rules': GoogleFonts.bigelowRulesTextTheme,
         'Bigshot One': GoogleFonts.bigshotOneTextTheme,
@@ -1205,6 +1252,7 @@ class GoogleFonts {
         'Carrois Gothic': GoogleFonts.carroisGothicTextTheme,
         'Carrois Gothic SC': GoogleFonts.carroisGothicScTextTheme,
         'Carter One': GoogleFonts.carterOneTextTheme,
+        'Castoro': GoogleFonts.castoroTextTheme,
         'Catamaran': GoogleFonts.catamaranTextTheme,
         'Caudex': GoogleFonts.caudexTextTheme,
         'Caveat': GoogleFonts.caveatTextTheme,
@@ -1239,6 +1287,7 @@ class GoogleFonts {
         'Comfortaa': GoogleFonts.comfortaaTextTheme,
         'Comic Neue': GoogleFonts.comicNeueTextTheme,
         'Coming Soon': GoogleFonts.comingSoonTextTheme,
+        'Commissioner': GoogleFonts.commissionerTextTheme,
         'Concert One': GoogleFonts.concertOneTextTheme,
         'Condiment': GoogleFonts.condimentTextTheme,
         'Contrail One': GoogleFonts.contrailOneTextTheme,
@@ -1268,6 +1317,7 @@ class GoogleFonts {
         'Cute Font': GoogleFonts.cuteFontTextTheme,
         'Cutive': GoogleFonts.cutiveTextTheme,
         'Cutive Mono': GoogleFonts.cutiveMonoTextTheme,
+        'DM Mono': GoogleFonts.dmMonoTextTheme,
         'DM Sans': GoogleFonts.dmSansTextTheme,
         'DM Serif Display': GoogleFonts.dmSerifDisplayTextTheme,
         'DM Serif Text': GoogleFonts.dmSerifTextTextTheme,
@@ -1323,6 +1373,7 @@ class GoogleFonts {
         'Engagement': GoogleFonts.engagementTextTheme,
         'Englebert': GoogleFonts.englebertTextTheme,
         'Enriqueta': GoogleFonts.enriquetaTextTheme,
+        'Epilogue': GoogleFonts.epilogueTextTheme,
         'Erica One': GoogleFonts.ericaOneTextTheme,
         'Esteban': GoogleFonts.estebanTextTheme,
         'Euphoria Script': GoogleFonts.euphoriaScriptTextTheme,
@@ -1359,6 +1410,7 @@ class GoogleFonts {
         'Forum': GoogleFonts.forumTextTheme,
         'Francois One': GoogleFonts.francoisOneTextTheme,
         'Frank Ruhl Libre': GoogleFonts.frankRuhlLibreTextTheme,
+        'Fraunces': GoogleFonts.frauncesTextTheme,
         'Freckle Face': GoogleFonts.freckleFaceTextTheme,
         'Fredericka the Great': GoogleFonts.frederickaTheGreatTextTheme,
         'Fredoka One': GoogleFonts.fredokaOneTextTheme,
@@ -1392,15 +1444,18 @@ class GoogleFonts {
         'Gloria Hallelujah': GoogleFonts.gloriaHallelujahTextTheme,
         'Goblin One': GoogleFonts.goblinOneTextTheme,
         'Gochi Hand': GoogleFonts.gochiHandTextTheme,
+        'Goldman': GoogleFonts.goldmanTextTheme,
         'Gorditas': GoogleFonts.gorditasTextTheme,
         'Gothic A1': GoogleFonts.gothicA1TextTheme,
         'Gotu': GoogleFonts.gotuTextTheme,
         'Goudy Bookletter 1911': GoogleFonts.goudyBookletter1911TextTheme,
         'Graduate': GoogleFonts.graduateTextTheme,
         'Grand Hotel': GoogleFonts.grandHotelTextTheme,
+        'Grandstander': GoogleFonts.grandstanderTextTheme,
         'Gravitas One': GoogleFonts.gravitasOneTextTheme,
         'Great Vibes': GoogleFonts.greatVibesTextTheme,
         'Grenze': GoogleFonts.grenzeTextTheme,
+        'Grenze Gotisch': GoogleFonts.grenzeGotischTextTheme,
         'Griffy': GoogleFonts.griffyTextTheme,
         'Gruppo': GoogleFonts.gruppoTextTheme,
         'Gudea': GoogleFonts.gudeaTextTheme,
@@ -1408,6 +1463,7 @@ class GoogleFonts {
         'Gupter': GoogleFonts.gupterTextTheme,
         'Gurajada': GoogleFonts.gurajadaTextTheme,
         'Habibi': GoogleFonts.habibiTextTheme,
+        'Hachi Maru Pop': GoogleFonts.hachiMaruPopTextTheme,
         'Halant': GoogleFonts.halantTextTheme,
         'Hammersmith One': GoogleFonts.hammersmithOneTextTheme,
         'Hanalei': GoogleFonts.hanaleiTextTheme,
@@ -1463,6 +1519,7 @@ class GoogleFonts {
         'Jacques Francois': GoogleFonts.jacquesFrancoisTextTheme,
         'Jacques Francois Shadow': GoogleFonts.jacquesFrancoisShadowTextTheme,
         'Jaldi': GoogleFonts.jaldiTextTheme,
+        'JetBrains Mono': GoogleFonts.jetBrainsMonoTextTheme,
         'Jim Nightshade': GoogleFonts.jimNightshadeTextTheme,
         'Jockey One': GoogleFonts.jockeyOneTextTheme,
         'Jolly Lodger': GoogleFonts.jollyLodgerTextTheme,
@@ -1470,6 +1527,7 @@ class GoogleFonts {
         'Jomolhari': GoogleFonts.jomolhariTextTheme,
         'Josefin Sans': GoogleFonts.josefinSansTextTheme,
         'Josefin Slab': GoogleFonts.josefinSlabTextTheme,
+        'Jost': GoogleFonts.jostTextTheme,
         'Joti One': GoogleFonts.jotiOneTextTheme,
         'Jua': GoogleFonts.juaTextTheme,
         'Judson': GoogleFonts.judsonTextTheme,
@@ -1510,9 +1568,11 @@ class GoogleFonts {
         'Kristi': GoogleFonts.kristiTextTheme,
         'Krona One': GoogleFonts.kronaOneTextTheme,
         'Krub': GoogleFonts.krubTextTheme,
+        'Kufam': GoogleFonts.kufamTextTheme,
         'Kulim Park': GoogleFonts.kulimParkTextTheme,
         'Kumar One': GoogleFonts.kumarOneTextTheme,
         'Kumar One Outline': GoogleFonts.kumarOneOutlineTextTheme,
+        'Kumbh Sans': GoogleFonts.kumbhSansTextTheme,
         'Kurale': GoogleFonts.kuraleTextTheme,
         'La Belle Aurore': GoogleFonts.laBelleAuroreTextTheme,
         'Lacquer': GoogleFonts.lacquerTextTheme,
@@ -1520,6 +1580,7 @@ class GoogleFonts {
         'Lakki Reddy': GoogleFonts.lakkiReddyTextTheme,
         'Lalezar': GoogleFonts.lalezarTextTheme,
         'Lancelot': GoogleFonts.lancelotTextTheme,
+        'Langar': GoogleFonts.langarTextTheme,
         'Lateef': GoogleFonts.lateefTextTheme,
         'Lato': GoogleFonts.latoTextTheme,
         'League Script': GoogleFonts.leagueScriptTextTheme,
@@ -1649,7 +1710,8 @@ class GoogleFonts {
         'Mukta Mahee': GoogleFonts.muktaMaheeTextTheme,
         'Mukta Malar': GoogleFonts.muktaMalarTextTheme,
         'Mukta Vaani': GoogleFonts.muktaVaaniTextTheme,
-        'Muli': GoogleFonts.muliTextTheme,
+        'Mulish': GoogleFonts.mulishTextTheme,
+        'MuseoModerno': GoogleFonts.museoModernoTextTheme,
         'Mystery Quest': GoogleFonts.mysteryQuestTextTheme,
         'NTR': GoogleFonts.ntrTextTheme,
         'Nanum Brush Script': GoogleFonts.nanumBrushScriptTextTheme,
@@ -1657,6 +1719,7 @@ class GoogleFonts {
         'Nanum Gothic Coding': GoogleFonts.nanumGothicCodingTextTheme,
         'Nanum Myeongjo': GoogleFonts.nanumMyeongjoTextTheme,
         'Nanum Pen Script': GoogleFonts.nanumPenScriptTextTheme,
+        'Nerko One': GoogleFonts.nerkoOneTextTheme,
         'Neucha': GoogleFonts.neuchaTextTheme,
         'Neuton': GoogleFonts.neutonTextTheme,
         'New Rocker': GoogleFonts.newRockerTextTheme,
@@ -1736,6 +1799,7 @@ class GoogleFonts {
         'Petit Formal Script': GoogleFonts.petitFormalScriptTextTheme,
         'Petrona': GoogleFonts.petronaTextTheme,
         'Philosopher': GoogleFonts.philosopherTextTheme,
+        'Piazzolla': GoogleFonts.piazzollaTextTheme,
         'Piedra': GoogleFonts.piedraTextTheme,
         'Pinyon Script': GoogleFonts.pinyonScriptTextTheme,
         'Pirata One': GoogleFonts.pirataOneTextTheme,
@@ -1754,6 +1818,7 @@ class GoogleFonts {
         'Poppins': GoogleFonts.poppinsTextTheme,
         'Port Lligat Sans': GoogleFonts.portLligatSansTextTheme,
         'Port Lligat Slab': GoogleFonts.portLligatSlabTextTheme,
+        'Potta One': GoogleFonts.pottaOneTextTheme,
         'Pragati Narrow': GoogleFonts.pragatiNarrowTextTheme,
         'Prata': GoogleFonts.prataTextTheme,
         'Press Start 2P': GoogleFonts.pressStart2pTextTheme,
@@ -1790,8 +1855,10 @@ class GoogleFonts {
         'Rasa': GoogleFonts.rasaTextTheme,
         'Rationale': GoogleFonts.rationaleTextTheme,
         'Ravi Prakash': GoogleFonts.raviPrakashTextTheme,
+        'Recursive': GoogleFonts.recursiveTextTheme,
         'Red Hat Display': GoogleFonts.redHatDisplayTextTheme,
         'Red Hat Text': GoogleFonts.redHatTextTextTheme,
+        'Red Rose': GoogleFonts.redRoseTextTheme,
         'Redressed': GoogleFonts.redressedTextTheme,
         'Reem Kufi': GoogleFonts.reemKufiTextTheme,
         'Reenie Beanie': GoogleFonts.reenieBeanieTextTheme,
@@ -1813,6 +1880,7 @@ class GoogleFonts {
         'Rosario': GoogleFonts.rosarioTextTheme,
         'Rosarivo': GoogleFonts.rosarivoTextTheme,
         'Rouge Script': GoogleFonts.rougeScriptTextTheme,
+        'Rowdies': GoogleFonts.rowdiesTextTheme,
         'Rozha One': GoogleFonts.rozhaOneTextTheme,
         'Rubik': GoogleFonts.rubikTextTheme,
         'Rubik Mono One': GoogleFonts.rubikMonoOneTextTheme,
@@ -1837,6 +1905,7 @@ class GoogleFonts {
         'Sanchez': GoogleFonts.sanchezTextTheme,
         'Sancreek': GoogleFonts.sancreekTextTheme,
         'Sansita': GoogleFonts.sansitaTextTheme,
+        'Sansita Swashed': GoogleFonts.sansitaSwashedTextTheme,
         'Sarabun': GoogleFonts.sarabunTextTheme,
         'Sarala': GoogleFonts.saralaTextTheme,
         'Sarina': GoogleFonts.sarinaTextTheme,
@@ -1886,10 +1955,12 @@ class GoogleFonts {
         'Solway': GoogleFonts.solwayTextTheme,
         'Song Myung': GoogleFonts.songMyungTextTheme,
         'Sonsie One': GoogleFonts.sonsieOneTextTheme,
+        'Sora': GoogleFonts.soraTextTheme,
         'Sorts Mill Goudy': GoogleFonts.sortsMillGoudyTextTheme,
         'Source Code Pro': GoogleFonts.sourceCodeProTextTheme,
         'Source Sans Pro': GoogleFonts.sourceSansProTextTheme,
         'Source Serif Pro': GoogleFonts.sourceSerifProTextTheme,
+        'Space Grotesk': GoogleFonts.spaceGroteskTextTheme,
         'Space Mono': GoogleFonts.spaceMonoTextTheme,
         'Spartan': GoogleFonts.spartanTextTheme,
         'Special Elite': GoogleFonts.specialEliteTextTheme,
@@ -1923,6 +1994,9 @@ class GoogleFonts {
         'Suravaram': GoogleFonts.suravaramTextTheme,
         'Swanky and Moo Moo': GoogleFonts.swankyAndMooMooTextTheme,
         'Syncopate': GoogleFonts.syncopateTextTheme,
+        'Syne': GoogleFonts.syneTextTheme,
+        'Syne Mono': GoogleFonts.syneMonoTextTheme,
+        'Syne Tactile': GoogleFonts.syneTactileTextTheme,
         'Tajawal': GoogleFonts.tajawalTextTheme,
         'Tangerine': GoogleFonts.tangerineTextTheme,
         'Tauri': GoogleFonts.tauriTextTheme,
@@ -1943,6 +2017,7 @@ class GoogleFonts {
         'Tomorrow': GoogleFonts.tomorrowTextTheme,
         'Trade Winds': GoogleFonts.tradeWindsTextTheme,
         'Trirong': GoogleFonts.trirongTextTheme,
+        'Trispace': GoogleFonts.trispaceTextTheme,
         'Trocchi': GoogleFonts.trocchiTextTheme,
         'Trochut': GoogleFonts.trochutTextTheme,
         'Trykker': GoogleFonts.trykkerTextTheme,
@@ -1964,6 +2039,7 @@ class GoogleFonts {
         'Vampiro One': GoogleFonts.vampiroOneTextTheme,
         'Varela': GoogleFonts.varelaTextTheme,
         'Varela Round': GoogleFonts.varelaRoundTextTheme,
+        'Varta': GoogleFonts.vartaTextTheme,
         'Vast Shadow': GoogleFonts.vastShadowTextTheme,
         'Vesper Libre': GoogleFonts.vesperLibreTextTheme,
         'Viaoda Libre': GoogleFonts.viaodaLibreTextTheme,
@@ -1984,6 +2060,7 @@ class GoogleFonts {
         'Wendy One': GoogleFonts.wendyOneTextTheme,
         'Wire One': GoogleFonts.wireOneTextTheme,
         'Work Sans': GoogleFonts.workSansTextTheme,
+        'Xanh Mono': GoogleFonts.xanhMonoTextTheme,
         'Yanone Kaffeesatz': GoogleFonts.yanoneKaffeesatzTextTheme,
         'Yantramanav': GoogleFonts.yantramanavTextTheme,
         'Yatra One': GoogleFonts.yatraOneTextTheme,
@@ -1992,6 +2069,7 @@ class GoogleFonts {
         'Yeseva One': GoogleFonts.yesevaOneTextTheme,
         'Yesteryear': GoogleFonts.yesteryearTextTheme,
         'Yrsa': GoogleFonts.yrsaTextTheme,
+        'Yusei Magic': GoogleFonts.yuseiMagicTextTheme,
         'ZCOOL KuaiLe': GoogleFonts.zcoolKuaiLeTextTheme,
         'ZCOOL QingKe HuangYou': GoogleFonts.zcoolQingKeHuangYouTextTheme,
         'ZCOOL XiaoWei': GoogleFonts.zcoolXiaoWeiTextTheme,
@@ -6395,6 +6473,112 @@ class GoogleFonts {
       caption: GoogleFonts.andika(textStyle: textTheme.caption),
       button: GoogleFonts.andika(textStyle: textTheme.button),
       overline: GoogleFonts.andika(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Andika New Basic font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Andika+New+Basic
+  static TextStyle andikaNewBasic({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '48b18f488f9907c784ac7924a2d763257e1057f5ac3ee22c804ab0ba194253fb',
+        71420,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '65eed85f74c45790107ec98d6a3098e99d4f54a7580b53d536891a35385b16ba',
+        75508,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '50bbb54d0ec04a720a330e87931ea2be85d5fc406fd2e171ce44ca67855f8a8d',
+        72220,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'a2a105533f2063ef7f4a489f1d438cf7af064f1c5ed1c3ebc6ba7c1d46c8db40',
+        76148,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'AndikaNewBasic',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Andika New Basic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Andika+New+Basic
+  static TextTheme andikaNewBasicTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.andikaNewBasic(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.andikaNewBasic(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.andikaNewBasic(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.andikaNewBasic(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.andikaNewBasic(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.andikaNewBasic(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.andikaNewBasic(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.andikaNewBasic(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.andikaNewBasic(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.andikaNewBasic(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.andikaNewBasic(textStyle: textTheme.caption),
+      button: GoogleFonts.andikaNewBasic(textStyle: textTheme.button),
+      overline: GoogleFonts.andikaNewBasic(textStyle: textTheme.overline),
     );
   }
 
@@ -11764,6 +11948,112 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Balsamiq Sans font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Balsamiq+Sans
+  static TextStyle balsamiqSans({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'e06cc657444119a9850424b46ff940639699d52e1c3031047cb7fc3691a6c33e',
+        303084,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '029988fdbc0ec2b09771bb360c222d7c13d7247fd1c37c3e82858febc4f78349',
+        283788,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'de004fda1323e24a4c16a3f11bb31263cbef6c1ed531a72ff49866f47c488fa1',
+        275832,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'f7734baad3cbcee8aea5640e4c79b22fe23e57a1a619020095e4e4d2d723f98b',
+        257140,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'BalsamiqSans',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Balsamiq Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Balsamiq+Sans
+  static TextTheme balsamiqSansTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.balsamiqSans(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.balsamiqSans(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.balsamiqSans(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.balsamiqSans(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.balsamiqSans(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.balsamiqSans(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.balsamiqSans(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.balsamiqSans(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.balsamiqSans(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.balsamiqSans(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.balsamiqSans(textStyle: textTheme.caption),
+      button: GoogleFonts.balsamiqSans(textStyle: textTheme.button),
+      overline: GoogleFonts.balsamiqSans(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Balthazar font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -14324,6 +14614,591 @@ class GoogleFonts {
       caption: GoogleFonts.bigShouldersDisplay(textStyle: textTheme.caption),
       button: GoogleFonts.bigShouldersDisplay(textStyle: textTheme.button),
       overline: GoogleFonts.bigShouldersDisplay(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Big Shoulders Inline Display font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Inline+Display
+  static TextStyle bigShouldersInlineDisplay({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'cecd28ac71e6d26fe426d809a967ca89fd34ebf00666daf5e72be698043690f8',
+        98144,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '3710b6162121414170f4ee83003c9a801a07d3a8b78f6abbab39e670edc08a0b',
+        99972,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '45fd384c9df07fc26138ac660041a108fad83e7e900169cd69ff9e1ff683c79e',
+        100792,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '4485432c8a8581e0b3f3b507691b848e4673ba5d3606ccc8c51d573b9950d995',
+        101060,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '8429a118926e0997b6894777f001d3c63d792b7b82f9bbd3ee909b393e049c73',
+        101340,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '80e5e506aebe63f25614ef4b8b1a69935d750ff148abb1ed248d7c94b23cfb19',
+        101752,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'e1b12519d38230d280f84445cb7e50edb127c715cdd6fb9e7697e29f7f77a0bf',
+        102272,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '9d986bf2e9666f76e4a791c20a4aa9255ec6f92d62eac8c45365f456e9b64bc1',
+        102192,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'BigShouldersInlineDisplay',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Big Shoulders Inline Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Inline+Display
+  static TextTheme bigShouldersInlineDisplayTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.headline1),
+      headline2:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.headline2),
+      headline3:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.headline3),
+      headline4:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.headline4),
+      headline5:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.headline5),
+      headline6:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.headline6),
+      subtitle1:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.subtitle1),
+      subtitle2:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.subtitle2),
+      bodyText1:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.bodyText1),
+      bodyText2:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.bodyText2),
+      caption:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.caption),
+      button:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.button),
+      overline:
+          GoogleFonts.bigShouldersInlineDisplay(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Big Shoulders Inline Text font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Inline+Text
+  static TextStyle bigShouldersInlineText({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '914a99a3f7a36509645da4d56298db3eaf53f8fe091adc6f511305a5b5415d94',
+        98832,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'a4e1ca3362feca7026abcdc3f6cd27be00d437bdca4963451e70f627fc47285e',
+        100608,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '8171ef16c4d2ccf81271d6bb77a9a25723b54e3033e75e930b47738e9f8f738c',
+        101584,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '07dddac8ecdf608d7eecb9031c91626e78dc9e0721d6e3861ce58cd5b205d8a7',
+        101584,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'b3e3a0152deb77bbf594da21360ad2cd1012e94424ef6fb664f876cbeec5ee45',
+        101692,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'a0a7d5ffddfee40b18b44e3f89aac2801f82ed5cabcc11e6707b05525a55d3bb',
+        102024,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '26b8f325b1bcca1f6b88728184699789e3bf7ec260804d04421b5db694ae4157',
+        102752,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '0169fdfd36818b76f6f2182152276acbf8129be7a3e4d0ad77755b6d069acb71',
+        102380,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'BigShouldersInlineText',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Big Shoulders Inline Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Inline+Text
+  static TextTheme bigShouldersInlineTextTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.headline1),
+      headline2:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.headline2),
+      headline3:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.headline3),
+      headline4:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.headline4),
+      headline5:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.headline5),
+      headline6:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.headline6),
+      subtitle1:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.subtitle1),
+      subtitle2:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.subtitle2),
+      bodyText1:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.bodyText1),
+      bodyText2:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.bigShouldersInlineText(textStyle: textTheme.caption),
+      button: GoogleFonts.bigShouldersInlineText(textStyle: textTheme.button),
+      overline:
+          GoogleFonts.bigShouldersInlineText(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Big Shoulders Stencil Display font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Stencil+Display
+  static TextStyle bigShouldersStencilDisplay({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'e745115111f02d5a11cdf1328f3eecff1bb5f775cb0f2b06b4d8f24b196ac32e',
+        57612,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '0f312a4998a7fdb735ce3e5c2cebb4c88987d6b221039c3ec51117af72a7a92d',
+        59556,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '3b8e0ce085bdd03707db89704d38ea6f6523ee0a6dc14dbe5e41ca65b3266958',
+        59596,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '4d0ca21a6f86141b1d824eecc8a4b221e2f9b0a2d99c35b4b8da6132324a2431',
+        59536,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '1c5b5b3228b0893035ab61f43b1666de4e2ac70346c6b5a0af6212dc881b2895',
+        59488,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'f18fa1842c04a9bb7b65cd8865d8db3ad6129de5aba757f7dac332de21e2e557',
+        59548,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '999379e5037b63a0d57539a9aa7b10a200910a43531557a752265827a074c079',
+        59848,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '6055fdd83b00cf395678263ba7a8d07c043046f85db67776ca586dfd72ced1a5',
+        59592,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'BigShouldersStencilDisplay',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Big Shoulders Stencil Display font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Stencil+Display
+  static TextTheme bigShouldersStencilDisplayTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.bigShouldersStencilDisplay(
+          textStyle: textTheme.headline1),
+      headline2: GoogleFonts.bigShouldersStencilDisplay(
+          textStyle: textTheme.headline2),
+      headline3: GoogleFonts.bigShouldersStencilDisplay(
+          textStyle: textTheme.headline3),
+      headline4: GoogleFonts.bigShouldersStencilDisplay(
+          textStyle: textTheme.headline4),
+      headline5: GoogleFonts.bigShouldersStencilDisplay(
+          textStyle: textTheme.headline5),
+      headline6: GoogleFonts.bigShouldersStencilDisplay(
+          textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.bigShouldersStencilDisplay(
+          textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.bigShouldersStencilDisplay(
+          textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.bigShouldersStencilDisplay(
+          textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.bigShouldersStencilDisplay(
+          textStyle: textTheme.bodyText2),
+      caption:
+          GoogleFonts.bigShouldersStencilDisplay(textStyle: textTheme.caption),
+      button:
+          GoogleFonts.bigShouldersStencilDisplay(textStyle: textTheme.button),
+      overline:
+          GoogleFonts.bigShouldersStencilDisplay(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Big Shoulders Stencil Text font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Stencil+Text
+  static TextStyle bigShouldersStencilText({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'ce5239dead961193d7ed14ae8ad117d8ac7c38b3004ce5268f79858cb05dff20',
+        58792,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'b72cc9791d7c353499dd3cdd8cb057f1b737306474a92e64d32b94e60e63300a',
+        60148,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '1c3218546f3f3c56203170cf14894c6b0f93024f0759022205174bd64fe18b52',
+        60140,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '0b32127d757a06294d75c04041ebf65257d3b861075010b125b52b1872f0164a',
+        60000,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'f502e0a1bfb3a7c94c8bd1d80fce760f9dbc080b53d928803846e0705859c342',
+        59900,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '3e82a1e08ebbaaabd1a452bd3461bc4174ec94b641c99774dd41a1d552de12a7',
+        59980,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '814371b884bf588132731087f41533e3852bfa4953739fca42c71fcba588f073',
+        59980,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '4b6e75385f85cfb30647c3935bf4ed6f0dfad6012a0a38bad71cf46c32d2d9ce',
+        59508,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'BigShouldersStencilText',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Big Shoulders Stencil Text font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Big+Shoulders+Stencil+Text
+  static TextTheme bigShouldersStencilTextTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.headline1),
+      headline2:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.headline2),
+      headline3:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.headline3),
+      headline4:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.headline4),
+      headline5:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.headline5),
+      headline6:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.headline6),
+      subtitle1:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.subtitle1),
+      subtitle2:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.subtitle2),
+      bodyText1:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.bodyText1),
+      bodyText2:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.bodyText2),
+      caption:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.caption),
+      button: GoogleFonts.bigShouldersStencilText(textStyle: textTheme.button),
+      overline:
+          GoogleFonts.bigShouldersStencilText(textStyle: textTheme.overline),
     );
   }
 
@@ -19078,6 +19953,98 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Castoro font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Castoro
+  static TextStyle castoro({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'a1c0fdc4bf42e6acc4514d8e123a56bfa4101a0bf4d339c2f0a71bfcb0f6d02e',
+        70892,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '14b88401404e0d4111e8147bff13b3e811ece5feb299cd9259f3571ceb0de230',
+        72080,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Castoro',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Castoro font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Castoro
+  static TextTheme castoroTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.castoro(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.castoro(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.castoro(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.castoro(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.castoro(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.castoro(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.castoro(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.castoro(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.castoro(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.castoro(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.castoro(textStyle: textTheme.caption),
+      button: GoogleFonts.castoro(textStyle: textTheme.button),
+      overline: GoogleFonts.castoro(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Catamaran font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -22360,6 +23327,147 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Commissioner font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Commissioner
+  static TextStyle commissioner({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'f3f150dcb086a17069e52d54fa21cb1f24dc198b7e05359b9b24fa4697da6bd7',
+        345392,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '1978b19a2dcf7ed0ba2354f75892138d7ae51193a8afe0df8359513bff60c42e',
+        352032,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '759373804a16aef0f59d2c1c0ef804972ad9ad65708142d58807d7eac8a311f6',
+        356932,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '9ea57d9c20f9490ea132318ac9b31671cbe5253e441caf88d170d86d5f00d950',
+        363648,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '9e3fadda38391b661f465e8511fce1ae10c4f52b08b3e4879191039f0de43c75',
+        364704,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'a56720c0fc63f34becc7efc84659cbdacd2bca91b73617065d62ff00f255c2f6',
+        367584,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'a70994c9420407b957fdc6ed64040600d77318665536587db62dcd33b03e6516',
+        368552,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'e80c7844535ca64a4b3af21c23f195c9b9bb1f10bd74b7520474fb574b967177',
+        367652,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '04a4f501c4e3bc2ac11cee31535057bad6c58b0bf9620c3f1acd704c333eb689',
+        362176,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Commissioner',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Commissioner font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Commissioner
+  static TextTheme commissionerTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.commissioner(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.commissioner(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.commissioner(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.commissioner(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.commissioner(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.commissioner(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.commissioner(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.commissioner(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.commissioner(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.commissioner(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.commissioner(textStyle: textTheme.caption),
+      button: GoogleFonts.commissioner(textStyle: textTheme.button),
+      overline: GoogleFonts.commissioner(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Concert One font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -25319,6 +26427,126 @@ class GoogleFonts {
       caption: GoogleFonts.cutiveMono(textStyle: textTheme.caption),
       button: GoogleFonts.cutiveMono(textStyle: textTheme.button),
       overline: GoogleFonts.cutiveMono(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the DM Mono font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/DM+Mono
+  static TextStyle dmMono({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '67638f30d87fc69f052f1ff91f488200a8696ecf2b7e200036b6ba7134665f02',
+        27896,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '531245107d1e3f2c1cd8ddeb9bbf214cc2f7412495cc15ffd4a9a6553b677537',
+        29060,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'a9692116a4d8c7abc9a734c6963264b73434254a7b6997a40c0df383364df2c2',
+        27932,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'eb74ddafb17f67359ab3426667e45e12054b3f2cd578a90880155a897a551ebf',
+        29072,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '0c46ab9994bad814204dd36ade2daafac04937ed6c8620de135d159ee5a4aaad',
+        27776,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'fe7c6a70b6d89fc903dcb90540d3cba6a078c080ad52ed9eda41becba14ff343',
+        29096,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'DMMono',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the DM Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/DM+Mono
+  static TextTheme dmMonoTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.dmMono(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.dmMono(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.dmMono(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.dmMono(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.dmMono(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.dmMono(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.dmMono(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.dmMono(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.dmMono(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.dmMono(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.dmMono(textStyle: textTheme.caption),
+      button: GoogleFonts.dmMono(textStyle: textTheme.button),
+      overline: GoogleFonts.dmMono(textStyle: textTheme.overline),
     );
   }
 
@@ -30427,6 +31655,210 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Epilogue font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Epilogue
+  static TextStyle epilogue({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '934ed8ab6e183975f80ad82892575488c2782a9615b1400a387aad7620523914',
+        62672,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '21e429f05987a7aca3a77bb0363f1173299780f5a8639421f5a907e75382dda2',
+        62740,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'aecc8fc018c4c0c01656e7b5b240e7ad991724dbc1632f587aa4fb25b9d3d347',
+        62704,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '9bd3b9b33996414143458aa43a3493658b0e1de32e07ae92f79d99d74477ddc7',
+        62724,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '09a4cc8f9ea019cc7dd32ef52c655e35bbfbbe2b638b7e220005770d755b4253',
+        62724,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'c2302ab2f5cea5ca2227c52a78bfb1781d26fc8d5c1aa195463a946e0e123d57',
+        62932,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '37ffd49cdad9eab49dcef1051878acdaabb57eddfd7c18e399cc9c5bbf36f68d',
+        62900,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '6c619d499262fb8366255790c916b2b1bd0ae203635a5b9d9394fe932f5b55ed',
+        63064,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'bfd277d5255f4737808869f0e783828dac257c19970023681d7b096446212ad8',
+        63112,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'c0990ee09b7f5a5c312282656658441e1bb45f351d85817a8b51ae36e1812ae6',
+        63172,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '1d5813f9f268cc0af9827b8a88a024d3fa4b4e427a11d14df7d2993de7de09e8',
+        63228,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '44568c2c560d85bf1b8f39042351a0706e6136b3fe2313a772f775eff64b03f8',
+        63112,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '27aed996948a7545acb378db00d78ffd89a2b2969ce69080c8dfcb53ba1a2827',
+        63020,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '2b19fa21b613f1c9097824173a63f396e8beb7b0b9b630989498ee837424cfb5',
+        63132,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '4348c0a36320d21529131aea11b56f9d7978ef1929efecb3bf4bd50b9b8cc514',
+        63332,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '0bb89cdcf45aca9840f41ac7aff2f2e0a112faf5fa7f99e7467d9157d0e6425f',
+        63236,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'f6a9879b4cda595ff7e74ad85300d0aeb3e496a2b4b24c1bc9538dd6d518392d',
+        63468,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '7a714f90ed7246693aa0cdcabddb0af0cc70a78a591943311a735d4ba049c087',
+        63432,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Epilogue',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Epilogue font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Epilogue
+  static TextTheme epilogueTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.epilogue(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.epilogue(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.epilogue(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.epilogue(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.epilogue(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.epilogue(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.epilogue(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.epilogue(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.epilogue(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.epilogue(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.epilogue(textStyle: textTheme.caption),
+      button: GoogleFonts.epilogue(textStyle: textTheme.button),
+      overline: GoogleFonts.epilogue(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Erica One font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -34295,6 +35727,210 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Fraunces font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fraunces
+  static TextStyle fraunces({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'd900c5e7c21d6a656061f76e8b35850081e6b5f4d1c79b3ccc810de326856264',
+        64836,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '44a19981fe2aa754aaeb06cf74c310df1b0a3f8b39480f0f062c91519630d135',
+        65092,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '4ca9190aefdfe929bf1bf7d8427e0698deb0e431e1d227ab44422fd2f9e6ab0f',
+        65156,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '6614ff6a91390010260d3a667c5376fe821f8a42cb80b6aafd7cda6742f01bb8',
+        65180,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'bd1da6d4ca2fb801a00575fc9f126c39971a6bd892c8f0a6e618351a32bef3cd',
+        65204,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'f2479851101e2899e533b00b37198a6d0651c0ec6d71f0ac394b00b9108905e1',
+        65236,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'a93a3e6559a15ea27733c53e6e7502e5cf7293c46a26e9e1fa84705e65b10bc4',
+        65192,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'b03d8878b2e916deb87f3248147de1f5a362a78c9dcbd90d3aa4c4f092d75a7d',
+        65248,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '627caa3761664db664fc5696dca651dc39185ff859c73f0cf45c6fd5459f3a66',
+        65284,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'fe71fdadb7f0f3291a48c18ce4ea85c5d43311da4f1cf1beb3c9eb7fdae5578f',
+        78464,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'b026994e693313f3192474e6c97c7342f4bb901f76197c904f2db4716f14a9a3',
+        78628,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'f8ec75b94bf9bf34ce44fa022134ae5cb8f071ebc35e86da2ed1299daff3d784',
+        78684,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '646ab5bcfa86872b15fc6ec5c75dc6aa5e71959ddd4dbbf7b1379791ad0cacba',
+        78632,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '89f7a03ab5876ff35d51603bf66e41fc46a218b6990bae89e752844b6a7bd504',
+        78712,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'd58f242796551124a334dd48265d36ee828d367d78e377f599b6efde4325fb0a',
+        78784,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '4e842fa45d7770f0d2be7bae12e6694838b5e7f0cfc4185ebedcad05ccb0c86a',
+        78688,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '9eb1f4be3bb43f44d63b98bfd7ed4ea85c24aeb9bc588b88bef34e42f8e45413',
+        78720,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'debe015577f85100a540d7110609c10a9ec1818cb48814478ff9401c34a4dfa9',
+        78684,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Fraunces',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Fraunces font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Fraunces
+  static TextTheme frauncesTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.fraunces(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.fraunces(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.fraunces(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.fraunces(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.fraunces(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.fraunces(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.fraunces(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.fraunces(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.fraunces(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.fraunces(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.fraunces(textStyle: textTheme.caption),
+      button: GoogleFonts.fraunces(textStyle: textTheme.button),
+      overline: GoogleFonts.fraunces(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Freckle Face font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -37254,6 +38890,98 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Goldman font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Goldman
+  static TextStyle goldman({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'dcd1ae24891a07f6290dc08c898027cce4db97ed083aa2a36fc100e4b14afcb6',
+        53460,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '22fe54c333c535b13743b02667f696f92fafb66605f4cc08de38154504789f8e',
+        53248,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Goldman',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Goldman font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Goldman
+  static TextTheme goldmanTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.goldman(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.goldman(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.goldman(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.goldman(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.goldman(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.goldman(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.goldman(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.goldman(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.goldman(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.goldman(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.goldman(textStyle: textTheme.caption),
+      button: GoogleFonts.goldman(textStyle: textTheme.button),
+      overline: GoogleFonts.goldman(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Gorditas font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -37837,6 +39565,210 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Grandstander font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Grandstander
+  static TextStyle grandstander({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '4728f0d725d8b6a76c16070768044b9e6b6236a1628bb1ad24e9f50d95e85322',
+        77324,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'ae29f98ccf49de9457db8cb4d9146e1c4ba7e9d2a45b5075c9dedfec40abf67f',
+        77436,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '8193fdba834ec833e32ab815cdb1c7637a538abac0a55e2643d1a21920a7e0d9',
+        77428,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'e2c1590aac3af3109a3f0f52084234f7d917d5446571816e7be76ef662aa05b1',
+        77376,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '29dccd81bd511856971d9e11bcfb9c1e4b724f2c99d71ba4640765e0f74eddc7',
+        77440,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'baff651d2552b4ff658decc4c24b9d1441f7e2f4edb2320302eba113473a3f4a',
+        77524,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'a2168833f9cb80d9d3adcb7b1a9435f687a76914791e8a3419387728a9e232ac',
+        77428,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '5d505c16c32b5d8c7d7cde0728a342d3a573f37e6a9ef881f0a0129aa3ab6f04',
+        77524,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'cbb55db42cb6dfee25da8fcfbf0c4c3b46c6362b1f7b9c5f0164b1f473ea2b03',
+        77388,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '5443451f9161dd49fcf0d8d005fa4c515212104a03ae55cc97aec53e9a7c2d2f',
+        77988,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'ef9d72ee3df361c727f567bad43b474be4b602a25122af6ad4678a302f7dbf92',
+        78116,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'f51d56b5df52fe7659247f6bfa8ad45ba13e1476512b42c520eb1c9834080849',
+        77952,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'd43f0a89cc73b807dd79cff8a129e8d307413088dbfd9aeb43dfc5afdb5818e1',
+        77816,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '833f88d7d64e5f6e66783359b2e830e690548e64bed4b0222b3cac874860c653',
+        77932,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '5fb6a65ca4e9bd753f2a2d2996602407ced5748f0ab0c16492c700e2f5bfbfd4',
+        77952,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'bdad650a656e4ee7285056730af9939c46c0137ab7e534126aa5b1b117354289',
+        77876,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'cf38a0abf71444761ea9920e2bd481d20c2cb7ae9c54e42b481d98d5fb8f5be0',
+        78012,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'eb1dc21dffbf8e7edc9f5a5d7f465b65cd836849be40c3c234c976c668d5b2e2',
+        77912,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Grandstander',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Grandstander font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Grandstander
+  static TextTheme grandstanderTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.grandstander(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.grandstander(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.grandstander(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.grandstander(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.grandstander(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.grandstander(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.grandstander(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.grandstander(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.grandstander(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.grandstander(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.grandstander(textStyle: textTheme.caption),
+      button: GoogleFonts.grandstander(textStyle: textTheme.button),
+      overline: GoogleFonts.grandstander(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Gravitas One font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -38208,6 +40140,147 @@ class GoogleFonts {
       caption: GoogleFonts.grenze(textStyle: textTheme.caption),
       button: GoogleFonts.grenze(textStyle: textTheme.button),
       overline: GoogleFonts.grenze(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Grenze Gotisch font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Grenze+Gotisch
+  static TextStyle grenzeGotisch({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '630eddc1a2f2cf8afebfc8fa0195e160fc518760531dc30f6db8bcac1438161f',
+        61512,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'b9839fe32fe46b5f6944aa5a606dbfce3b3d3b0bc0c0d754aa3ab8aac65ee400',
+        61668,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '7045b9de777a2a5a10b243555575e0b557bb010d12e8a8130d2defb5c87dbb98',
+        61716,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '66e9cb492a660dcf2f6845561edcaccd7e3de7cb23b39d658ab0068c1cb2a86b',
+        61580,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '5f87b69505d4746d8702cd79495b820385e7d8c381b94486ce7db3bbeca5cd05',
+        61708,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'cd890da87927a99881c558f0cdd02ddc9fd27eb8fbe93dce51b3f45b78d0c6b9',
+        61800,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'a3adffa3e98ccd30dc75f064ef660b6e0c25ac58975e3acc6600c1f4700421cd',
+        61736,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'bbc64ccba2dd0be9a898ff22c2baf7e251f48d1fa437d46493bece1afebf6bf6',
+        61820,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '822b841e7c07f59217780cbbf7a49b3744dc75bb0e0644dfee1e3d4a7ff1ca43',
+        61776,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'GrenzeGotisch',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Grenze Gotisch font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Grenze+Gotisch
+  static TextTheme grenzeGotischTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.grenzeGotisch(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.grenzeGotisch(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.grenzeGotisch(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.grenzeGotisch(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.grenzeGotisch(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.grenzeGotisch(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.grenzeGotisch(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.grenzeGotisch(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.grenzeGotisch(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.grenzeGotisch(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.grenzeGotisch(textStyle: textTheme.caption),
+      button: GoogleFonts.grenzeGotisch(textStyle: textTheme.button),
+      overline: GoogleFonts.grenzeGotisch(textStyle: textTheme.overline),
     );
   }
 
@@ -38831,6 +40904,91 @@ class GoogleFonts {
       caption: GoogleFonts.habibi(textStyle: textTheme.caption),
       button: GoogleFonts.habibi(textStyle: textTheme.button),
       overline: GoogleFonts.habibi(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Hachi Maru Pop font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hachi+Maru+Pop
+  static TextStyle hachiMaruPop({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'decd9292c362ead9975bf878b925165ad643d3cb7e6b671962f6dfe790a07acb',
+        4374692,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'HachiMaruPop',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Hachi Maru Pop font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Hachi+Maru+Pop
+  static TextTheme hachiMaruPopTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.hachiMaruPop(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.hachiMaruPop(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.hachiMaruPop(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.hachiMaruPop(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.hachiMaruPop(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.hachiMaruPop(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.hachiMaruPop(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.hachiMaruPop(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.hachiMaruPop(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.hachiMaruPop(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.hachiMaruPop(textStyle: textTheme.caption),
+      button: GoogleFonts.hachiMaruPop(textStyle: textTheme.button),
+      overline: GoogleFonts.hachiMaruPop(textStyle: textTheme.overline),
     );
   }
 
@@ -44460,6 +46618,196 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the JetBrains Mono font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/JetBrains+Mono
+  static TextStyle jetBrainsMono({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '2d9c45ef613517fe16ef9b98e22bf42c9cde2e64c3b5dec28eccf19ef951214f',
+        100036,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'd8b7b6fd7549d056bacd72fc5a44509b6dd60e79e23ca39138266fef6eec1d99',
+        100112,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '8bbf6f151ea26ab4020ab3909444b7c480cd0bdd14f3c9bf990940802430a691',
+        100048,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'bcad6628b88dabe2c7128a8d8da7517d30d291d2196c242d6bd064803b6bc81b',
+        99952,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '72df06f080fd2a3a7de54b16f2f4fe430ea07ac88edb13547f226cf40fad1359',
+        99964,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '1c883998d81a7f0fc7d29b754d6d4c760f78c2c2754cd83d4be49deacfde3eea',
+        99920,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '62eedf885d199e8fd5996d76b7d0b957d51de06048b818877cb45dd5e6cc886a',
+        99860,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '5a90822ddce5280355142856207a3cdb8ceff10d064bad9984be6d4f9538ca54',
+        99880,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '17cd635d99cdf2bc587f7edfa12afb833fe73442f6c24bb75416096abf343c4c',
+        102952,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '082c46dba74facd18763c2f8b46464050249389890cc0525442bfe5b9dcb696f',
+        103036,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '8019ed5d2dbb8b331bbe43d8b629a7ba5e60ce45a97c73b9aaa909f92cd68a82',
+        102924,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '06f5559c182b0ee9933f08da76d9029034d0acf76dd368b61b0f804d5dffe847',
+        102740,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '3b8cba00588c1b76e016aed0322ec1115b1911eb617aa0c3d8d964ba93172f33',
+        102848,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'ac952bea8f76559fa60e09cbf07cd2e30763530ee53b62399a6057ed8e503b2b',
+        102796,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'f5e1d2fb4b360d37a9a0dd3b54218280d0c71852e56d046d3a1ec88b61457eae',
+        102732,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'dcc9bc14c86097e41cd2ff409e2bfd72f92ab8c5a6e1d3f0f55ae8078b37c79f',
+        102808,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'JetBrainsMono',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the JetBrains Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/JetBrains+Mono
+  static TextTheme jetBrainsMonoTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.jetBrainsMono(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.jetBrainsMono(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.jetBrainsMono(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.jetBrainsMono(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.jetBrainsMono(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.jetBrainsMono(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.jetBrainsMono(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.jetBrainsMono(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.jetBrainsMono(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.jetBrainsMono(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.jetBrainsMono(textStyle: textTheme.caption),
+      button: GoogleFonts.jetBrainsMono(textStyle: textTheme.button),
+      overline: GoogleFonts.jetBrainsMono(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Jim Nightshade font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -45178,6 +47526,210 @@ class GoogleFonts {
       caption: GoogleFonts.josefinSlab(textStyle: textTheme.caption),
       button: GoogleFonts.josefinSlab(textStyle: textTheme.button),
       overline: GoogleFonts.josefinSlab(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Jost font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jost
+  static TextStyle jost({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '31432208500b7e66df8a5d57e07a15f8e19d393d52c66c1235b6f96cd67fb8a8',
+        55268,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '35fe1d6bba11d22fcc08d886caff10018f9ba95aeafb027b41d7b2586de1df73',
+        55380,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '3a6599583e03ffc84b1c01cc9fcbc561a5622de236557a41ab56be41974d74d0',
+        55308,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '36eb9b6e0e94dfd1365f08c9c8e37814033cae517e950ebf055cc379799c0858',
+        55196,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '3a5a78c6e6cf8e5f36debdb534e39fc078da16f3fc6ef10929f3d0b168b5f84e',
+        55332,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'ab8278b6cf97aa444c220fd6090733690620c191570e0f61470346cd536ba134',
+        55332,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '7cfbb2aadaea6d6c0696ee82db2dee3dfd9bd89628bc1c14b861f1da86d60e02',
+        55276,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'c8e684e803f32dbae5ad9b45ae980c40c898972641a78d441469b89432707dc3',
+        55396,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '65f8b5baa6c4889d4ad2f68ae989147de8186bc7ef87cfcf256ea9a78e04a841',
+        55368,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'e6ac5ab9629d57d9df4d798a1453231439e40641633bac30b2e3852f5e284b7d',
+        58936,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '257071dd21f3821a5d7a2c380126160b553eb24154ecdaa9f5649c558fc2ea41',
+        59140,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '683edc2f30f8d2164e6553ebe92f11f02f5316ef0505b9536cdebbddf7260b03',
+        59112,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'd1d09478db8be26fb7b6479bdc340c9186f450a6eaf59730c13bedba7c7a48a4',
+        59052,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'e444b83bcb702db1b08395ed4749d541cfef5445bc9dc75b152365dda25f0527',
+        59232,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '61bb2ccedeb641b230a6dcc2c035e4206bba308fc1cb8cbc61a0646b73ee44cc',
+        59168,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '60e2bcbc06ff7e44cf657267af33dec235628900a555eeb3578039d5f0fb2f4a',
+        59024,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '76bad08c8165c8029d667758703fb5d17e464c5abafb306c7650148c9337f263',
+        59036,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'c8ba2e060d6c68ce19e625780c780a90009416e4ed1a69c272fc70ebcc33f3db',
+        59008,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Jost',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Jost font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Jost
+  static TextTheme jostTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.jost(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.jost(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.jost(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.jost(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.jost(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.jost(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.jost(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.jost(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.jost(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.jost(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.jost(textStyle: textTheme.caption),
+      button: GoogleFonts.jost(textStyle: textTheme.button),
+      overline: GoogleFonts.jost(textStyle: textTheme.overline),
     );
   }
 
@@ -49249,6 +51801,168 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Kufam font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kufam
+  static TextStyle kufam({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '5c2bb31f9dd171bed88ba502db12721774a13319071394e56e851504328cced1',
+        141620,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '628f6fa7084fc9014fba2e3c27aba50a901a708970eb6979b3fda1ec867cc2ba',
+        141724,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '26c69927ca903d5e5ddedc392efcbf0623458d9d352cb29d93560e14a9091a15',
+        141764,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '18dcfedf39aa5d3740934b3acb3353f04a783bd3837cc96274c8d41714c10959',
+        141772,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '80506455dc52f96e1c01dc03895ffd7b6acb1f00e8f25fe7e31f9f23ecd11b5e',
+        141780,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '91956312f9838b7521ffc47c1f995a3e8dab1db5066c4a0c795bb0859bae2d3c',
+        141636,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '1fb37298bd90094fe92ba44840e627b41bfd6e6efb0815463dd4d930f5c1147a',
+        73236,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '8d94116c2e09feac74f75c363668984bebf577bf9b7ca8536389327c3307d3f5',
+        73392,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'acba03eb543ba4c89ad5147f7e9e38a08359468fd5207a25654c7ac769fc4f74',
+        73420,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'c905cb847568b45ec8c0e52155436db8588c324545088a9152d3e65b0cec2cf9',
+        73292,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '65a1ad9ba5604756d5e0cc9e15ad2e96b5eca8118c8686f1b7a60b10853a0d84',
+        73356,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '3d2ee6303973ef6ff89e5b07b8ee5193f461009ed343aea533496c3c5e2f3f15',
+        73304,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Kufam',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Kufam font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kufam
+  static TextTheme kufamTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.kufam(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.kufam(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.kufam(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.kufam(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.kufam(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.kufam(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.kufam(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.kufam(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.kufam(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.kufam(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.kufam(textStyle: textTheme.caption),
+      button: GoogleFonts.kufam(textStyle: textTheme.button),
+      overline: GoogleFonts.kufam(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Kulim Park font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -49564,6 +52278,105 @@ class GoogleFonts {
       caption: GoogleFonts.kumarOneOutline(textStyle: textTheme.caption),
       button: GoogleFonts.kumarOneOutline(textStyle: textTheme.button),
       overline: GoogleFonts.kumarOneOutline(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Kumbh Sans font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kumbh+Sans
+  static TextStyle kumbhSans({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '43966dbbdeb9f3181e27f1b0dd5f376b20aeae923063baf51cdf00f5a5824b86',
+        29836,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'cd7e6e35c2af2000577cd756754e4bf710f2fb83ecb7bd9c2252d606f4692770',
+        39632,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'c164b10128145b6c5fe70f3178d4723c7e6c0c73a40c2a529441dbbe775c61d3',
+        33032,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'KumbhSans',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Kumbh Sans font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Kumbh+Sans
+  static TextTheme kumbhSansTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.kumbhSans(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.kumbhSans(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.kumbhSans(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.kumbhSans(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.kumbhSans(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.kumbhSans(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.kumbhSans(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.kumbhSans(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.kumbhSans(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.kumbhSans(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.kumbhSans(textStyle: textTheme.caption),
+      button: GoogleFonts.kumbhSans(textStyle: textTheme.button),
+      overline: GoogleFonts.kumbhSans(textStyle: textTheme.overline),
     );
   }
 
@@ -50187,6 +53000,91 @@ class GoogleFonts {
       caption: GoogleFonts.lancelot(textStyle: textTheme.caption),
       button: GoogleFonts.lancelot(textStyle: textTheme.button),
       overline: GoogleFonts.lancelot(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Langar font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Langar
+  static TextStyle langar({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '3d494b520a215cbab3c0c1e50463bfebb2e00da8370f5ea578b2c88e43ea824d',
+        137468,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Langar',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Langar font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Langar
+  static TextTheme langarTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.langar(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.langar(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.langar(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.langar(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.langar(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.langar(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.langar(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.langar(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.langar(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.langar(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.langar(textStyle: textTheme.caption),
+      button: GoogleFonts.langar(textStyle: textTheme.button),
+      overline: GoogleFonts.langar(textStyle: textTheme.overline),
     );
   }
 
@@ -62617,12 +65515,12 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Muli font family from Google Fonts to the
+  /// Applies the Mulish font family from Google Fonts to the
   /// given [textStyle].
   ///
   /// See:
-  ///  * https://fonts.google.com/specimen/Muli
-  static TextStyle muli({
+  ///  * https://fonts.google.com/specimen/Mulish
+  static TextStyle mulish({
     TextStyle? textStyle,
     Color? color,
     Color? backgroundColor,
@@ -62648,105 +65546,119 @@ class GoogleFonts {
         fontWeight: FontWeight.w200,
         fontStyle: FontStyle.normal,
       ): GoogleFontsFile(
-        'dbcba4190351f997830d7652727c7f42e0c882f325d1f75ba8a3c606f8ab0e23',
-        66880,
+        'dc074694927dbce58bd63b595cc483ded638a26c22f710d73845272851b2213c',
+        54528,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'dbbab3b59151f460bdf1f12758d040c9e37221fdefdbf9fd481a7f50e9498569',
+        54552,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'd52df2665a07c5362afe32bf698279bafe9ab2a37600e7497bda6db762c77ee8',
+        54520,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'd9b94a4c139afb4207b54e2c678fb1f22ec963e2cee2971851ac2ca63db17bd6',
+        54524,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'd471469a6b88140da82d8d273049b27e5b3aceabdc838a96638f37249ebe794a',
+        54564,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'e8bc3182a11f1754d82bfd883278a476fd5aed240f3563114703b3a2e6639f15',
+        54496,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '32d3d52cf3d09684d2cd75cd09bc7d04f22dc8d3c814f83cad9b392425c751e4',
+        54564,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '74162598504efb80255ca4edc6f6102f5d9c22ccbc48f6c1a46c4c61431b9a0a',
+        54520,
       ),
       GoogleFontsVariant(
         fontWeight: FontWeight.w200,
         fontStyle: FontStyle.italic,
       ): GoogleFontsFile(
-        '939afc08c356b9f83c67ee2b78dec42c2f7e1eed1ade0be8b8fc1095d1429b04',
-        68176,
-      ),
-      GoogleFontsVariant(
-        fontWeight: FontWeight.w300,
-        fontStyle: FontStyle.normal,
-      ): GoogleFontsFile(
-        '5de108957fcdaef883f06a6d0852f415189779437851b0d6d7abb06c9b717a86',
-        66540,
+        '995c490c95855f035c47bbe977ce3a1dbf25274a927c70878e505882f289b519',
+        55608,
       ),
       GoogleFontsVariant(
         fontWeight: FontWeight.w300,
         fontStyle: FontStyle.italic,
       ): GoogleFontsFile(
-        '7cc6d79998df498ec95b3c68aa52f263ad62a25202e7971a6b75de645da069c2',
-        67788,
-      ),
-      GoogleFontsVariant(
-        fontWeight: FontWeight.w400,
-        fontStyle: FontStyle.normal,
-      ): GoogleFontsFile(
-        'ea4701f9a5e0b0e4c96b45b1c04278e62159ddb385941274af0394132622a139',
-        66444,
+        '9ac161b22df9d48b43d4da45af4f3007eab8333ff64f40a93632161598120480',
+        55616,
       ),
       GoogleFontsVariant(
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.italic,
       ): GoogleFontsFile(
-        'e5a17a307589ccf860441ba4904d3819f0ce0a4d7001a6e4b7d0efd5858bcde8',
-        67632,
+        '2c129f664b0b43ed35946c2fdedabba6b0e6d4bcc9aa2c9962a69c4e54854db5',
+        55524,
       ),
       GoogleFontsVariant(
-        fontWeight: FontWeight.w600,
-        fontStyle: FontStyle.normal,
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.italic,
       ): GoogleFontsFile(
-        '10d78b9b78e06d25335389823e4383b15fea791de3324adb6497069821c2e214',
-        66332,
+        '69b8fe61efaa11f5f869f2ae7b076bfdc68fe0ac6eda05b3937509de8893c377',
+        55616,
       ),
       GoogleFontsVariant(
         fontWeight: FontWeight.w600,
         fontStyle: FontStyle.italic,
       ): GoogleFontsFile(
-        '9844bb9dc82723a3d8c41821d7ed75f37aa979969dbcf244e03676190a26c279',
-        67648,
-      ),
-      GoogleFontsVariant(
-        fontWeight: FontWeight.w700,
-        fontStyle: FontStyle.normal,
-      ): GoogleFontsFile(
-        '3ab6877022dc43f69329d1c8e73ede36b36ef3cd49a833da18c388c6311a18c7',
-        66100,
+        'c4afaac18b96a0f0e80cc5f1ec8636eaf19a44ba4f3fa9c7c93779e658d030af',
+        55668,
       ),
       GoogleFontsVariant(
         fontWeight: FontWeight.w700,
         fontStyle: FontStyle.italic,
       ): GoogleFontsFile(
-        '93112f6142019f2669649529f27d3d42f5bc8859bf1dadaaf1ab66b07492b366',
-        67360,
-      ),
-      GoogleFontsVariant(
-        fontWeight: FontWeight.w800,
-        fontStyle: FontStyle.normal,
-      ): GoogleFontsFile(
-        '9ba6c90c1b1b2a61cc450ef443603f86e5acffbba7430c4d41e9ce1ef434b516',
-        66120,
+        '9133e97bd644680203fea17a613c54fcd160a6d4ca9e3b941762359ba186ea67',
+        55572,
       ),
       GoogleFontsVariant(
         fontWeight: FontWeight.w800,
         fontStyle: FontStyle.italic,
       ): GoogleFontsFile(
-        'dc2a00ad0b251d39d19272f9277b6940bb685b29b9cecca33bfb4008d5188d2c',
-        67316,
-      ),
-      GoogleFontsVariant(
-        fontWeight: FontWeight.w900,
-        fontStyle: FontStyle.normal,
-      ): GoogleFontsFile(
-        'a887d75b7f4ca0f8a220638d755864474c4a89972ef84be00ba81d5764519e8c',
-        66128,
+        '9f4fd9f9b2e55994361ce16aa2163406eeb8bc74416b02d1f90a254477655d30',
+        55652,
       ),
       GoogleFontsVariant(
         fontWeight: FontWeight.w900,
         fontStyle: FontStyle.italic,
       ): GoogleFontsFile(
-        'c1c38c7b31e983faf9ac1ba63d8a98cb93cdf7c854abd833e826a7bea94248c6',
-        67448,
+        '41d7defaa9cd7ffb2ed9a76faa3a89f305b1359f572133232ecc1d35a18e2fe7',
+        55616,
       ),
     };
 
     return googleFontsTextStyle(
       textStyle: textStyle,
-      fontFamily: 'Muli',
+      fontFamily: 'Mulish',
       color: color,
       backgroundColor: backgroundColor,
       fontSize: fontSize,
@@ -62769,27 +65681,168 @@ class GoogleFonts {
     );
   }
 
-  /// Applies the Muli font family from Google Fonts to every
+  /// Applies the Mulish font family from Google Fonts to every
   /// [TextStyle] in the given [textTheme].
   ///
   /// See:
-  ///  * https://fonts.google.com/specimen/Muli
-  static TextTheme muliTextTheme([TextTheme? textTheme]) {
+  ///  * https://fonts.google.com/specimen/Mulish
+  static TextTheme mulishTextTheme([TextTheme? textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
-      headline1: GoogleFonts.muli(textStyle: textTheme.headline1),
-      headline2: GoogleFonts.muli(textStyle: textTheme.headline2),
-      headline3: GoogleFonts.muli(textStyle: textTheme.headline3),
-      headline4: GoogleFonts.muli(textStyle: textTheme.headline4),
-      headline5: GoogleFonts.muli(textStyle: textTheme.headline5),
-      headline6: GoogleFonts.muli(textStyle: textTheme.headline6),
-      subtitle1: GoogleFonts.muli(textStyle: textTheme.subtitle1),
-      subtitle2: GoogleFonts.muli(textStyle: textTheme.subtitle2),
-      bodyText1: GoogleFonts.muli(textStyle: textTheme.bodyText1),
-      bodyText2: GoogleFonts.muli(textStyle: textTheme.bodyText2),
-      caption: GoogleFonts.muli(textStyle: textTheme.caption),
-      button: GoogleFonts.muli(textStyle: textTheme.button),
-      overline: GoogleFonts.muli(textStyle: textTheme.overline),
+      headline1: GoogleFonts.mulish(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.mulish(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.mulish(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.mulish(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.mulish(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.mulish(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.mulish(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.mulish(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.mulish(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.mulish(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.mulish(textStyle: textTheme.caption),
+      button: GoogleFonts.mulish(textStyle: textTheme.button),
+      overline: GoogleFonts.mulish(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the MuseoModerno font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/MuseoModerno
+  static TextStyle museoModerno({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '3cac957efd66e1fe4dc998a948578d0471cf18aa442a9a8f2f4d9174f5c1ae85',
+        45816,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'b98ce4cb9c3f6d5b3a8e1a9e40d8ddf9fefca2892751c78af2a6341fd75ea039',
+        45836,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '4ce4f8c87125d83b607172cc4b2726e1802fb331be7e2cfee607108fc3b84686',
+        45792,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '04f3a18b5a0e5e4fe7d617eac6117871f7181659f7fc1c6b05ff948d6e287e8a',
+        45740,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'd9998799cff52088708609e7e5f54ee0d8a833144d937036e932bb7d36c977be',
+        45720,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '812e04e6d5e42c6dcb8b016e5174959bd94fee17658653b9c2c2d9204fd75aba',
+        45744,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'c5e29fd93e2824b7d21f84cc95d9a04adc84707e76fa2152184f883aa09802b9',
+        45684,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '6bdab1653eee057851ba7fff16af3f2aed3fcb223f32fdd0b3eb31f5488dcd80',
+        45700,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '0fe3f5ff8e5303a6624b6ffb654c57a87c095ac8172cd65d3dc1eeddb96933b4',
+        45652,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'MuseoModerno',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the MuseoModerno font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/MuseoModerno
+  static TextTheme museoModernoTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.museoModerno(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.museoModerno(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.museoModerno(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.museoModerno(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.museoModerno(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.museoModerno(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.museoModerno(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.museoModerno(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.museoModerno(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.museoModerno(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.museoModerno(textStyle: textTheme.caption),
+      button: GoogleFonts.museoModerno(textStyle: textTheme.button),
+      overline: GoogleFonts.museoModerno(textStyle: textTheme.overline),
     );
   }
 
@@ -63420,6 +66473,91 @@ class GoogleFonts {
       caption: GoogleFonts.nanumPenScript(textStyle: textTheme.caption),
       button: GoogleFonts.nanumPenScript(textStyle: textTheme.button),
       overline: GoogleFonts.nanumPenScript(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Nerko One font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nerko+One
+  static TextStyle nerkoOne({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '878f83135fb709ecde10c8995a744ad075b82815f89387dc1804f7a288fe9ff6',
+        102004,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'NerkoOne',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Nerko One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Nerko+One
+  static TextTheme nerkoOneTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.nerkoOne(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.nerkoOne(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.nerkoOne(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.nerkoOne(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.nerkoOne(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.nerkoOne(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.nerkoOne(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.nerkoOne(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.nerkoOne(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.nerkoOne(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.nerkoOne(textStyle: textTheme.caption),
+      button: GoogleFonts.nerkoOne(textStyle: textTheme.button),
+      overline: GoogleFonts.nerkoOne(textStyle: textTheme.overline),
     );
   }
 
@@ -64720,8 +67858,8 @@ class GoogleFonts {
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
       ): GoogleFontsFile(
-        '975e5d89d39fa5ce6e443f0acba2d714cdff5675202a3ce66012c61a5fec1698',
-        10236828,
+        '91b16ef6f3c56ba2d6efbdc0ae5fcc2b585ff33e8dca237b42185a467f08ee91',
+        10589920,
       ),
     };
 
@@ -71096,6 +74234,210 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Piazzolla font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Piazzolla
+  static TextStyle piazzolla({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '853bced8b15b4dac1826650854c71cd8768f3f17492865bbd87527322ac07997',
+        122204,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '12e6ee6c72b71f1cec3046f5202f32326bdeedc1d99eba4e2a959302c7b95d8c',
+        122292,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '1db122cbdeb9ecae7425cb66d950048a8ebb3514958c02750b42b342d32aa3ff',
+        122300,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'ac4e7964cbc511d29ef648da51186bef1cb533bb0c51a05f914177cc78db20d6',
+        122336,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'c12af6331700aca9a9ae4213fc8d9dafff7bad454d208fc8d69872eee8c08386',
+        122420,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '1d96e29c9bb1c8c5c98c18420a84efc14960d1028c7f0ba0cf8ef3a685315596',
+        122508,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'f81540363cf6ba6fd3a6b271f2c91e8dd246fd22bc513e69e2eb18b91222ab00',
+        122544,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '9997d5c8c01dcaa3d884beb7575564aedc5c048a4df9e8dcc16aa425be26c5ec',
+        122688,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '876ac0f870cd43d375383de91157d5afa87d6ab46c69db29fe06eebc70f277dd',
+        122736,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '0ce1c16e7786a82b37c31b73324f97dd5673c1b508a3c0fa10c951a984bd0882',
+        124876,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'dd21ee34892172c0e0ca6a13bcbc80c0745d9936ee536b5c95c41fd0b1737fc1',
+        125024,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '0afba99a98a8ba9511665bad6711b19933daf6cfc71752362247d287af610b89',
+        125024,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '2a326a8fa339a54db374a2868e50ea10f8d94bc9f98f4cfb8ea82db180b32f87',
+        124940,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '8aab5a4c7dfa4e0b43104ad463e1c0fa78d54c8b7116c8c3bc36acb75d3cb30a',
+        125116,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'bd992effa8448c4cd917c9a45d384396019b442df8266af0d5cde06e88e1b400',
+        125184,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '7febcdb00d6f588c3152ee01de7ea04f9baf7ec0e261ff0dea723b809e9bead5',
+        125216,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        'c33ba0247044ea9d88b9a81c0c0ec8d6b31b43534856567a32f010d9fad3868e',
+        125300,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '07ae846598d075d2908961487ede708db0f1d372009edffa72e49cb73ebaf559',
+        125256,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Piazzolla',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Piazzolla font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Piazzolla
+  static TextTheme piazzollaTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.piazzolla(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.piazzolla(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.piazzolla(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.piazzolla(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.piazzolla(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.piazzolla(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.piazzolla(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.piazzolla(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.piazzolla(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.piazzolla(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.piazzolla(textStyle: textTheme.caption),
+      button: GoogleFonts.piazzolla(textStyle: textTheme.button),
+      overline: GoogleFonts.piazzolla(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Piedra font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -72854,6 +76196,91 @@ class GoogleFonts {
       caption: GoogleFonts.portLligatSlab(textStyle: textTheme.caption),
       button: GoogleFonts.portLligatSlab(textStyle: textTheme.button),
       overline: GoogleFonts.portLligatSlab(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Potta One font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Potta+One
+  static TextStyle pottaOne({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '56773288a5bd09c28d1bbaceb69bc83dc390929b2f9a8742525d71eabca3e15d',
+        4911480,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'PottaOne',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Potta One font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Potta+One
+  static TextTheme pottaOneTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.pottaOne(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.pottaOne(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.pottaOne(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.pottaOne(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.pottaOne(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.pottaOne(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.pottaOne(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.pottaOne(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.pottaOne(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.pottaOne(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.pottaOne(textStyle: textTheme.caption),
+      button: GoogleFonts.pottaOne(textStyle: textTheme.button),
+      overline: GoogleFonts.pottaOne(textStyle: textTheme.overline),
     );
   }
 
@@ -76561,6 +79988,133 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Recursive font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Recursive
+  static TextStyle recursive({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'c0847d0ce19141b62404037e0e538fa4188b661e8f713e7e6fbd0e43b5659d2b',
+        109496,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '8ddab815f7bb04362f167840c2e94628e2a2353e7c2d01ac761e1b66731423c0',
+        109588,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '3a14d6b88d6c6a0a0cb04cada3bcc337d4ceb2b27aa3b619ca1b5ef2628f5277',
+        109576,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '77d39252fcfe666b638bbd040852805d82047fb2fc9748fdc4f9edd3ebb81854',
+        109616,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'd091e69dc6d59217184d52e679acf2a566d8d83717fa05f0d13942f64051c85d',
+        109516,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '7212a09cda61d996e3c5d2c4b08fd097d1fd0ac10597b533197f251ad4f3085a',
+        109544,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '3a704e1c9c987cd117cb0878ca3f9895235fd16eace4859f428b8da348516211',
+        109628,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Recursive',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Recursive font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Recursive
+  static TextTheme recursiveTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.recursive(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.recursive(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.recursive(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.recursive(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.recursive(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.recursive(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.recursive(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.recursive(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.recursive(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.recursive(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.recursive(textStyle: textTheme.caption),
+      button: GoogleFonts.recursive(textStyle: textTheme.button),
+      overline: GoogleFonts.recursive(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Red Hat Display font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -76812,6 +80366,119 @@ class GoogleFonts {
       caption: GoogleFonts.redHatText(textStyle: textTheme.caption),
       button: GoogleFonts.redHatText(textStyle: textTheme.button),
       overline: GoogleFonts.redHatText(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Red Rose font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Red+Rose
+  static TextStyle redRose({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'c2043da6d63c0299d2d8ccc4aec25f1f3a80e1db46d3736df80c20d134f760db',
+        57608,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '1540a59bbedb077165aecc6d9b229fec9477b8a2274795dca54587304d9d525c',
+        57568,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'ad118319928f083841c48d97b66f1df3e2c733f9278f06ca9d1665c9155b1fc4',
+        57552,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '11c8e1caee1164b286a7c7899bd6c0cc8947757b96aa7752783d78b7f0a7dbc1',
+        57560,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'c8dde6b08d14342f87332f1f35153250826cf1fae75cbea3d51fe11137dcf822',
+        57524,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'RedRose',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Red Rose font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Red+Rose
+  static TextTheme redRoseTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.redRose(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.redRose(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.redRose(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.redRose(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.redRose(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.redRose(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.redRose(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.redRose(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.redRose(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.redRose(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.redRose(textStyle: textTheme.caption),
+      button: GoogleFonts.redRose(textStyle: textTheme.button),
+      overline: GoogleFonts.redRose(textStyle: textTheme.overline),
     );
   }
 
@@ -78884,6 +82551,105 @@ class GoogleFonts {
       caption: GoogleFonts.rougeScript(textStyle: textTheme.caption),
       button: GoogleFonts.rougeScript(textStyle: textTheme.button),
       overline: GoogleFonts.rougeScript(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Rowdies font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rowdies
+  static TextStyle rowdies({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '521cbb7d3827c8c6e287e95b4ebc5245d0f619161ff0340a8cb75f6dfeb5c925',
+        50616,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '38dce656a3831d089bb60fd9bbc7938c4c224edc533369ed23fbbdb9c565039f',
+        50336,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '935ab7e6d8f6852bf5576b7bc790b61b094794be5975bb6bdfe28c2222216217',
+        50268,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Rowdies',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Rowdies font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Rowdies
+  static TextTheme rowdiesTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.rowdies(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.rowdies(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.rowdies(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.rowdies(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.rowdies(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.rowdies(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.rowdies(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.rowdies(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.rowdies(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.rowdies(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.rowdies(textStyle: textTheme.caption),
+      button: GoogleFonts.rowdies(textStyle: textTheme.button),
+      overline: GoogleFonts.rowdies(textStyle: textTheme.overline),
     );
   }
 
@@ -81305,6 +85071,133 @@ class GoogleFonts {
       caption: GoogleFonts.sansita(textStyle: textTheme.caption),
       button: GoogleFonts.sansita(textStyle: textTheme.button),
       overline: GoogleFonts.sansita(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Sansita Swashed font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sansita+Swashed
+  static TextStyle sansitaSwashed({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '46bd39b8f615d07fdc7cecf44b42cb5d14cdf66da70aa05b66e7520ac9b50832',
+        104096,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '05e62a87f1460b7970799bf3f368a0fdc1b25a39739d9d88fe011a153e1ea5d2',
+        104144,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '76a665e8f726f9b8b14700a64df0e8ee7f5c57f3e6488bcbf8ef00bfc4284194',
+        104164,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '55f85d0cf13c0c8c44eceae9cfa14bf3543cbc03163a9568c10d7d24e89bca19',
+        104180,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'b5e225292e98feef5f130f0689f2af441cb497b0e814b5acec0ad1420094b311',
+        104072,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'e98f4b3fb17f6f7561d75c958248295b6d21af13e994ecc1308331685880db9a',
+        104080,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w900,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '98eb0092fabbca4305d33cdef9e6db2457c35963ce94c74940eabed7525c43d2',
+        104104,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'SansitaSwashed',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Sansita Swashed font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sansita+Swashed
+  static TextTheme sansitaSwashedTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.sansitaSwashed(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.sansitaSwashed(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.sansitaSwashed(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.sansitaSwashed(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.sansitaSwashed(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.sansitaSwashed(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.sansitaSwashed(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.sansitaSwashed(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.sansitaSwashed(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.sansitaSwashed(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.sansitaSwashed(textStyle: textTheme.caption),
+      button: GoogleFonts.sansitaSwashed(textStyle: textTheme.button),
+      overline: GoogleFonts.sansitaSwashed(textStyle: textTheme.overline),
     );
   }
 
@@ -85805,6 +89698,140 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Sora font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sora
+  static TextStyle sora({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '64d4cbd26de694ec801ad917d3c5a43436ee7982fad956e6d6d748adef743ecd',
+        43136,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '10e1f33d3a9eb7b9084257e3150626d0e5ae65963784367ae211693196fb350c',
+        43196,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'b745f6732aacc43ddac8ec3bab7443f3af6da26663557ea6838d0e7462031ff4',
+        43140,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '8fdab44c4a4386999298b584aa1f206f953a2fb931a2ee6ec38899f5db10a39d',
+        43104,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'fc19fd9674df1fd4ca7db321338aab809eaa602467812b10823dd95039445192',
+        43108,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'f60d0ed209fbf16025ff3c8f81fa826e24fd3b7a0c106d7f5035523dc91df799',
+        43124,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'c05902680317d01f35b1b110da938465cb8fc85c4606c7d1dca71e17f49a4872',
+        43052,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '5f3b77615262ef6157c6dbbfaef740184837e7c012009d8d3251fba62561d938',
+        43100,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Sora',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Sora font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Sora
+  static TextTheme soraTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.sora(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.sora(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.sora(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.sora(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.sora(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.sora(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.sora(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.sora(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.sora(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.sora(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.sora(textStyle: textTheme.caption),
+      button: GoogleFonts.sora(textStyle: textTheme.button),
+      overline: GoogleFonts.sora(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Sorts Mill Goudy font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -86282,6 +90309,119 @@ class GoogleFonts {
       caption: GoogleFonts.sourceSerifPro(textStyle: textTheme.caption),
       button: GoogleFonts.sourceSerifPro(textStyle: textTheme.button),
       overline: GoogleFonts.sourceSerifPro(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Space Grotesk font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Space+Grotesk
+  static TextStyle spaceGrotesk({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '78538bc64b6fc5ae6669761b5cdd3506b0158c3146a0dbf75ce7894cfc32f43f',
+        62548,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'ac7df787842e477e1f25aea92d7a62eebddab6df822e91fc12d846d93de3ed98',
+        62500,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '25f055989d0add3601ef96ee9e16a6b16d56789d7e1d9152b85c304361144659',
+        62532,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'be5fd5b8b5cce95f3932d341f4ab214a0fdb5a5b572a6b7736cd23e6a6b51ac9',
+        62488,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'cc1c7851cb7fdc9a545caf729159ed3a5647debd7ae514283a8e831b9b0b29ab',
+        62432,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'SpaceGrotesk',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Space Grotesk font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Space+Grotesk
+  static TextTheme spaceGroteskTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.spaceGrotesk(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.spaceGrotesk(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.spaceGrotesk(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.spaceGrotesk(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.spaceGrotesk(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.spaceGrotesk(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.spaceGrotesk(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.spaceGrotesk(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.spaceGrotesk(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.spaceGrotesk(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.spaceGrotesk(textStyle: textTheme.caption),
+      button: GoogleFonts.spaceGrotesk(textStyle: textTheme.button),
+      overline: GoogleFonts.spaceGrotesk(textStyle: textTheme.overline),
     );
   }
 
@@ -89439,6 +93579,289 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Syne font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Syne
+  static TextStyle syne({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '10a95c1d5441e25f26b113321ba395252616458e6bc6cb4ab2b30a6e1dff5f95',
+        41596,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'e9ec25bf50bdda60cae5ba089430a671b69e0eb0df474f513df3dc4af6a37eb4',
+        41688,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'b910b382d4f52c23227a1a5c42534c6e7a34c0ad59bb199c233e78ff07b715d7',
+        41780,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'cf8fa7ceef12ecbce519bb32e8812c4115c3907472effb279de7f994f4edba2f',
+        41748,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'e3fd3e1944f3aef431c55c83b8d1664b81f5a0eefcf5cf1f4f6a7cc95b9d5da3',
+        41956,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Syne',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Syne font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Syne
+  static TextTheme syneTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.syne(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.syne(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.syne(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.syne(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.syne(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.syne(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.syne(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.syne(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.syne(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.syne(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.syne(textStyle: textTheme.caption),
+      button: GoogleFonts.syne(textStyle: textTheme.button),
+      overline: GoogleFonts.syne(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Syne Mono font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Syne+Mono
+  static TextStyle syneMono({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'f193ba0e19a956372bbf64662ae7062fe4c130d8339ce679217867f1922e3049',
+        35128,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'SyneMono',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Syne Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Syne+Mono
+  static TextTheme syneMonoTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.syneMono(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.syneMono(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.syneMono(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.syneMono(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.syneMono(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.syneMono(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.syneMono(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.syneMono(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.syneMono(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.syneMono(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.syneMono(textStyle: textTheme.caption),
+      button: GoogleFonts.syneMono(textStyle: textTheme.button),
+      overline: GoogleFonts.syneMono(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Syne Tactile font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Syne+Tactile
+  static TextStyle syneTactile({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '3a9b880a161ac123e7e3413839ffeb154b4de7e8cc6ae2caa02b8b3b2877c9f9',
+        86160,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'SyneTactile',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Syne Tactile font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Syne+Tactile
+  static TextTheme syneTactileTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.syneTactile(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.syneTactile(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.syneTactile(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.syneTactile(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.syneTactile(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.syneTactile(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.syneTactile(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.syneTactile(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.syneTactile(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.syneTactile(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.syneTactile(textStyle: textTheme.caption),
+      button: GoogleFonts.syneTactile(textStyle: textTheme.button),
+      overline: GoogleFonts.syneTactile(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Tajawal font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -91727,6 +96150,140 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Trispace font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trispace
+  static TextStyle trispace({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w100,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'b3404c98e8b052927506deba2273cdeff5b08bf49bc3a775dbcb2d2695f56d5a',
+        53512,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w200,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '9412d5707c25a2fb98656127b7821c8578cf409832511eafff58b365122fcf12',
+        53572,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'ac2a043612ddf6a6ab209a0b9220cac2ea1a50e352b37e2c8bebdeba9baffea9',
+        53544,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '2775d9e85d7a86e22a08277823b8574695d6d856ceaeccee367699c7a9108a60',
+        53544,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '420c166488b9b29145af63bbaabdf0ddacd5cb4eaa5084a568274514f91cdc76',
+        53616,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '1a01819504ed7c14b6a89fc429166810ba37507d741e1dbd9eb3c0567b4fc6d1',
+        53808,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'd98f23221487bb9a3761267c52a362c092e195ceb1ff754670532170f3b32e31',
+        53876,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w800,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'ab1caf8338f45565ae7cbdd85a7bf8ee5fb58a44063836ee19ee2a89e3bc0af6',
+        54184,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Trispace',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Trispace font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Trispace
+  static TextTheme trispaceTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.trispace(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.trispace(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.trispace(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.trispace(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.trispace(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.trispace(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.trispace(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.trispace(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.trispace(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.trispace(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.trispace(textStyle: textTheme.caption),
+      button: GoogleFonts.trispace(textStyle: textTheme.button),
+      overline: GoogleFonts.trispace(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Trocchi font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -93659,6 +98216,119 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Varta font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Varta
+  static TextStyle varta({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '2aea56851bc37f1bd42371e8851887d38d8da945897da94b4bda866332ef0358',
+        59232,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '9b04506911ea313ea9e8ddcd0acb91527b5726610ef716c8a52d301598b263d4',
+        59200,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w500,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'afeb9cdc53886d1866c52d07df6bf4078bebaa70062b192491f8ba4181fafea6',
+        59192,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'cc2323f655465146d3347dddfb6fc3eb3b1017bbce627740e8c45e1b001d0df2',
+        59216,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'b1f85e3bc0f474c35e402ac2196cb76aad8fd65cb372d3bff84dcf25b4fc63ba',
+        59104,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'Varta',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Varta font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Varta
+  static TextTheme vartaTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.varta(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.varta(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.varta(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.varta(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.varta(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.varta(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.varta(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.varta(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.varta(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.varta(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.varta(textStyle: textTheme.caption),
+      button: GoogleFonts.varta(textStyle: textTheme.button),
+      overline: GoogleFonts.varta(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Vast Shadow font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -95537,6 +100207,98 @@ class GoogleFonts {
     );
   }
 
+  /// Applies the Xanh Mono font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Xanh+Mono
+  static TextStyle xanhMono({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        'bc590c4a0c719a3c555ab48c1de299db800f5ecdef7513b712a22392951ed119',
+        38648,
+      ),
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '481a22208d7f528069ac13b1f1c67837e9cbad6e73b4feb6368a0dce2bf6faf1',
+        41664,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'XanhMono',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Xanh Mono font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Xanh+Mono
+  static TextTheme xanhMonoTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.xanhMono(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.xanhMono(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.xanhMono(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.xanhMono(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.xanhMono(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.xanhMono(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.xanhMono(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.xanhMono(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.xanhMono(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.xanhMono(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.xanhMono(textStyle: textTheme.caption),
+      button: GoogleFonts.xanhMono(textStyle: textTheme.button),
+      overline: GoogleFonts.xanhMono(textStyle: textTheme.overline),
+    );
+  }
+
   /// Applies the Yanone Kaffeesatz font family from Google Fonts to the
   /// given [textStyle].
   ///
@@ -96298,6 +101060,91 @@ class GoogleFonts {
       caption: GoogleFonts.yrsa(textStyle: textTheme.caption),
       button: GoogleFonts.yrsa(textStyle: textTheme.button),
       overline: GoogleFonts.yrsa(textStyle: textTheme.overline),
+    );
+  }
+
+  /// Applies the Yusei Magic font family from Google Fonts to the
+  /// given [textStyle].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yusei+Magic
+  static TextStyle yuseiMagic({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
+      GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '16d55d48fe2bfe47ec060bfdd4c140508f2bfa0587db2478e1717aa2663880ca',
+        3129996,
+      ),
+    };
+
+    return googleFontsTextStyle(
+      textStyle: textStyle,
+      fontFamily: 'YuseiMagic',
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+      fonts: fonts,
+    );
+  }
+
+  /// Applies the Yusei Magic font family from Google Fonts to every
+  /// [TextStyle] in the given [textTheme].
+  ///
+  /// See:
+  ///  * https://fonts.google.com/specimen/Yusei+Magic
+  static TextTheme yuseiMagicTextTheme([TextTheme? textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      headline1: GoogleFonts.yuseiMagic(textStyle: textTheme.headline1),
+      headline2: GoogleFonts.yuseiMagic(textStyle: textTheme.headline2),
+      headline3: GoogleFonts.yuseiMagic(textStyle: textTheme.headline3),
+      headline4: GoogleFonts.yuseiMagic(textStyle: textTheme.headline4),
+      headline5: GoogleFonts.yuseiMagic(textStyle: textTheme.headline5),
+      headline6: GoogleFonts.yuseiMagic(textStyle: textTheme.headline6),
+      subtitle1: GoogleFonts.yuseiMagic(textStyle: textTheme.subtitle1),
+      subtitle2: GoogleFonts.yuseiMagic(textStyle: textTheme.subtitle2),
+      bodyText1: GoogleFonts.yuseiMagic(textStyle: textTheme.bodyText1),
+      bodyText2: GoogleFonts.yuseiMagic(textStyle: textTheme.bodyText2),
+      caption: GoogleFonts.yuseiMagic(textStyle: textTheme.caption),
+      button: GoogleFonts.yuseiMagic(textStyle: textTheme.button),
+      overline: GoogleFonts.yuseiMagic(textStyle: textTheme.overline),
     );
   }
 
