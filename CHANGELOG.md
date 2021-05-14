@@ -1,3 +1,7 @@
+## [2.1.0] - 2021-05-14
+
+* Added the latest fonts from fonts.google.com.
+
 ## [2.0.0] - 2021-02-26
 
 * Migrated the main library to null safety.

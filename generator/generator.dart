@@ -6,7 +6,6 @@
 
 import 'dart:io';
 
-import 'package:console/console.dart';
 import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
 import 'package:mustache/mustache.dart';
@@ -75,16 +74,17 @@ Future<Uri> _getProtoUrl({int initialVersion = 1}) async {
 Future<void> _verifyUrls(Directory fontDirectory) async {
   final totalFonts =
       fontDirectory.family.map((f) => f.fonts.length).reduce((a, b) => a + b);
-  final progressBar = ProgressBar(complete: totalFonts);
 
   final client = http.Client();
+  int i = 1;
   for (final family in fontDirectory.family) {
     for (final font in family.fonts) {
-      final url = Uri.parse(
-        'https://fonts.gstatic.com/s/a/${_hashToString(font.file.hash)}.ttf',
-      );
+      final urlString =
+          'https://fonts.gstatic.com/s/a/${_hashToString(font.file.hash)}.ttf';
+      final url = Uri.parse(urlString);
       await _tryUrl(client, url, font);
-      progressBar.update(progressBar.current + 1);
+      print('Verified URL ($i/$totalFonts): $urlString');
+      i += 1;
     }
   }
   client.close();
