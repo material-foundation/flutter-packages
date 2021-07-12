@@ -40,8 +40,10 @@ class AdaptiveColumn extends StatelessWidget {
     this.gutter,
     this.margin,
     required this.children,
+    Key? key,
   })  : assert(margin == null || margin >= 0),
-        assert(gutter == null || gutter >= 0);
+        assert(gutter == null || gutter >= 0),
+        super(key: key);
 
   /// Empty space at the left and right of this widget.
   ///
@@ -91,8 +93,7 @@ class AdaptiveColumn extends StatelessWidget {
               for (AdaptiveContainer child in this.children) {
                 // The if statement checks if the adaptiveContainer child fits
                 // within the adaptive constraints.
-                if (child.constraints
-                    .withinAdaptiveConstraint(context)) {
+                if (child.constraints.withinAdaptiveConstraint(context)) {
                   row.add(child);
                   currentColumns += child.columnSpan;
 
@@ -105,15 +106,18 @@ class AdaptiveColumn extends StatelessWidget {
                     int rowGutters = 0;
                     for (AdaptiveContainer rowItem in row) {
                       // Periodic width is the width of 1 column + 1 gutter.
-                      double periodicWidth = (MediaQuery.of(context).size.width -
-                          _margin * 2 + _gutter) / _entry.columns;
+                      double periodicWidth =
+                          (MediaQuery.of(context).size.width -
+                                  _margin * 2 +
+                                  _gutter) /
+                              _entry.columns;
 
                       // For a row item with a column span of k, its width is
                       // k * column + (k - 1) * gutter, which equals
                       // k * (column + gutter) - gutter, which is
                       // k * periodicWidth - gutter.
-                      double maxWidth = periodicWidth * rowItem.columnSpan -
-                          _gutter;
+                      double maxWidth =
+                          periodicWidth * rowItem.columnSpan - _gutter;
                       children.add(
                         ConstrainedBox(
                           constraints: BoxConstraints(

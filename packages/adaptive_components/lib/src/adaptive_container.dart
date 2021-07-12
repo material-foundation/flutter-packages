@@ -44,7 +44,7 @@ class AdaptiveContainer extends StatelessWidget {
             'Cannot provide both a color and a decoration\n'
             'To provide both, use "decoration: BoxDecoration(color: color)".'),
         super(key: key) {
-    this.constraints = constraints ?? AdaptiveConstraints();
+    this.constraints = constraints ?? const AdaptiveConstraints();
   }
 
   /// The [child] contained by the container.
