@@ -57,6 +57,7 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double titleSpacing;
   final double toolbarOpacity;
   final double bottomOpacity;
+  @override
   final Size preferredSize;
   final double? toolbarHeight;
   final double? leadingWidth;

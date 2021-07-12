@@ -79,7 +79,7 @@ class _CustomScaffoldDemoState extends State<CustomScaffoldDemo> {
           ),
           const Text('includeBaseDestinationsInMenu'),
           const SizedBox(height: 40),
-          RaisedButton(
+          ElevatedButton(
             child: const Text('BACK'),
             onPressed: () {
               Navigator.of(context).pushReplacementNamed('/');

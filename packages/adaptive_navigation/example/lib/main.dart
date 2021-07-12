@@ -25,7 +25,7 @@ class DemoSelector extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RaisedButton(
+            ElevatedButton(
               child: Text('Default Scaffold'),
               onPressed: () {
                 Navigator.of(context).pushReplacement(
@@ -38,7 +38,7 @@ class DemoSelector extends StatelessWidget {
               },
             ),
             SizedBox(height: 16),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Custom Scaffold'),
               onPressed: () {
                 Navigator.of(context).pushReplacement(

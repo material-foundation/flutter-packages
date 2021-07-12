@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 import 'dart:math' as math;
 
-typedef NavigationType NavigationTypeResolver(BuildContext context);
+typedef NavigationTypeResolver = NavigationType Function(BuildContext context);
 
 // The navigation mechanism to configure the [Scaffold] with.
 enum NavigationType {
@@ -69,7 +69,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     this.drawerHeader,
     this.fabInRail = true,
     this.includeBaseDestinationsInMenu = true,
-  })  : super(key: key);
+  }) : super(key: key);
 
   /// See [Scaffold.appBar].
   final PreferredSizeWidget? appBar;
@@ -196,7 +196,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   }
 
   Widget _buildBottomNavigationScaffold() {
-    final int bottomNavigationOverflow = 5;
+    const int bottomNavigationOverflow = 5;
     final bottomDestinations = destinations.sublist(
       0,
       math.min(destinations.length, bottomNavigationOverflow),
@@ -228,7 +228,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   }
 
   Widget _buildNavigationRailScaffold() {
-    final int railDestinationsOverflow = 7;
+    const int railDestinationsOverflow = 7;
     final railDestinations = destinations.sublist(
       0,
       math.min(destinations.length, railDestinationsOverflow),
@@ -256,7 +256,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
             selectedIndex: selectedIndex,
             onDestinationSelected: onDestinationSelected ?? (_) {},
           ),
-          VerticalDivider(
+          const VerticalDivider(
             width: 1,
             thickness: 1,
           ),
@@ -340,7 +340,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
             ],
           ),
         ),
-        VerticalDivider(
+        const VerticalDivider(
           width: 1,
           thickness: 1,
         ),

@@ -4,7 +4,7 @@ import 'package:adaptive_navigation/adaptive_navigation.dart';
 
 void main() {
   testWidgets('Adaptive Navigation test', (WidgetTester tester) async {
-    const mediumWindowSize = const Size(960, 1000);
+    const mediumWindowSize = Size(960, 1000);
     tester.binding.window.physicalSizeTestValue = mediumWindowSize;
     tester.binding.window.devicePixelRatioTestValue = 1.0;
 
@@ -25,9 +25,9 @@ void main() {
         home: AdaptiveNavigationScaffold(
           selectedIndex: 0,
           destinations: _allDestinations,
-          appBar: AdaptiveAppBar(title: Text('Default Demo')),
+          appBar: AdaptiveAppBar(title: const Text('Default Demo')),
           floatingActionButton: FloatingActionButton(
-            child: Icon(Icons.add),
+            child: const Icon(Icons.add),
             onPressed: () {},
           ),
           body: Container(
