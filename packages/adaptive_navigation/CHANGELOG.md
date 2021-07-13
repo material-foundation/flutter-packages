@@ -1,4 +1,4 @@
-# [0.0.4] - Ju;ly 14, 2021
+# [0.0.4] - July 14, 2021
 
 Adopt `flutter_lints` and migrate from `RaisedButton` to `ElevatedButton`.
 
