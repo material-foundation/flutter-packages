@@ -29,7 +29,7 @@ class DemoSelector extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RaisedButton(
+            ElevatedButton(
               child: Text('Adaptive Column'),
               onPressed: () {
                 Navigator.of(context).pushReplacement(
@@ -41,7 +41,7 @@ class DemoSelector extends StatelessWidget {
                 );
               },
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Adaptive Container'),
               onPressed: () {
                 Navigator.of(context).pushReplacement(

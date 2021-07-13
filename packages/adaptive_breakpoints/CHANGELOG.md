@@ -1,3 +1,7 @@
+# [0.0.5] - July 14, 2021
+
+Adopt `flutter_lints` and `dart format`.
+
 # [0.0.4] - December 14, 2020
 
 Migrate to NNBD
