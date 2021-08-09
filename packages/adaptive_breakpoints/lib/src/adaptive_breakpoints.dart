@@ -13,108 +13,83 @@ import 'package:flutter/material.dart';
 /// Extra large represents large computer screens.
 ///
 /// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
-enum AdaptiveWindowType {
-  xsmall,
-  small,
-  medium,
-  large,
-  xlarge,
-}
+class AdaptiveWindowType {
+  const AdaptiveWindowType._({
+    required this.name,
+    required this.relativeSize,
+    required this.widthRangeValues,
+    required this.heightLandscapeRangeValues,
+    required this.heightPortraitRangeValues,
+  });
 
-/// Used to set custom comparison operators for the [AdaptiveWindowType] enum.
-final Map<AdaptiveWindowType, int> _operatorMap = {
-  AdaptiveWindowType.xsmall: 0,
-  AdaptiveWindowType.small: 1,
-  AdaptiveWindowType.medium: 2,
-  AdaptiveWindowType.large: 3,
-  AdaptiveWindowType.xlarge: 4,
-};
+  /// Name based on the [AdaptiveWindowType].
+  ///
+  /// Can be: xsmall, small, medium, large or xlarge
+  final String name;
 
-int _relativeSize(AdaptiveWindowType adaptiveWindowType) {
-  return _operatorMap[adaptiveWindowType]!;
-}
+  /// Used to set custom comparison operators for the [AdaptiveWindowType] enum.
+  final int relativeSize;
 
-/// This extension lets you access variables associated with each window type.
-extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
-  String get name {
-    switch (this) {
-      case AdaptiveWindowType.xsmall:
-        return 'xsmall';
-      case AdaptiveWindowType.small:
-        return 'small';
-      case AdaptiveWindowType.medium:
-        return 'medium';
-      case AdaptiveWindowType.large:
-        return 'large';
-      case AdaptiveWindowType.xlarge:
-        return 'xlarge';
-      default:
-        throw AssertionError('Unsupported AdaptiveWindowType');
-    }
-  }
+  /// Valid range of width for this window type.
+  final RangeValues widthRangeValues;
 
-  RangeValues get widthRangeValues {
-    switch (this) {
-      case AdaptiveWindowType.xsmall:
-        return const RangeValues(0, 599);
-      case AdaptiveWindowType.small:
-        return const RangeValues(600, 1023);
-      case AdaptiveWindowType.medium:
-        return const RangeValues(1024, 1439);
-      case AdaptiveWindowType.large:
-        return const RangeValues(1440, 1919);
-      case AdaptiveWindowType.xlarge:
-        return const RangeValues(1920, double.infinity);
-      default:
-        throw AssertionError('Unsupported AdaptiveWindowType');
-    }
-  }
+  /// Valid range of height for this window type on landscape mode.
+  final RangeValues heightLandscapeRangeValues;
 
-  RangeValues get heightLandscapeRangeValues {
-    switch (this) {
-      case AdaptiveWindowType.xsmall:
-        return const RangeValues(0, 359);
-      case AdaptiveWindowType.small:
-        return const RangeValues(360, 719);
-      case AdaptiveWindowType.medium:
-        return const RangeValues(720, 959);
-      case AdaptiveWindowType.large:
-        return const RangeValues(960, 1279);
-      case AdaptiveWindowType.xlarge:
-        return const RangeValues(1280, double.infinity);
-      default:
-        throw AssertionError('Unsupported AdaptiveWindowType');
-    }
-  }
+  /// Valid range of height for this window type on portrait mode.
+  final RangeValues heightPortraitRangeValues;
 
-  RangeValues get heightPortraitRangeValues {
-    switch (this) {
-      case AdaptiveWindowType.xsmall:
-        return const RangeValues(0, 959);
-      case AdaptiveWindowType.small:
-        return const RangeValues(360, 1599);
-      case AdaptiveWindowType.medium:
-        return const RangeValues(720, 1919);
-      case AdaptiveWindowType.large:
-        return const RangeValues(1920, double.infinity);
-      case AdaptiveWindowType.xlarge:
-        return const RangeValues(1920, double.infinity);
-      default:
-        throw AssertionError('Unsupported AdaptiveWindowType');
-    }
-  }
+  static const AdaptiveWindowType xsmall = AdaptiveWindowType._(
+    name: 'xsmall',
+    relativeSize: 0,
+    widthRangeValues: RangeValues(0, 599),
+    heightLandscapeRangeValues: RangeValues(0, 359),
+    heightPortraitRangeValues: RangeValues(0, 959),
+  );
+
+  static const AdaptiveWindowType small = AdaptiveWindowType._(
+    name: 'small',
+    relativeSize: 1,
+    widthRangeValues: RangeValues(600, 1023),
+    heightLandscapeRangeValues: RangeValues(360, 719),
+    heightPortraitRangeValues: RangeValues(360, 1599),
+  );
+
+  static const AdaptiveWindowType medium = AdaptiveWindowType._(
+    name: 'medium',
+    relativeSize: 2,
+    widthRangeValues: RangeValues(1024, 1439),
+    heightLandscapeRangeValues: RangeValues(720, 959),
+    heightPortraitRangeValues: RangeValues(720, 1919),
+  );
+
+  static const AdaptiveWindowType large = AdaptiveWindowType._(
+    name: 'large',
+    relativeSize: 3,
+    widthRangeValues: RangeValues(1440, 1919),
+    heightLandscapeRangeValues: RangeValues(960, 1279),
+    heightPortraitRangeValues: RangeValues(1920, double.infinity),
+  );
+
+  static const AdaptiveWindowType xlarge = AdaptiveWindowType._(
+    name: 'xlarge',
+    relativeSize: 4,
+    widthRangeValues: RangeValues(1920, double.infinity),
+    heightLandscapeRangeValues: RangeValues(1280, double.infinity),
+    heightPortraitRangeValues: RangeValues(1920, double.infinity),
+  );
 
   bool operator <=(AdaptiveWindowType other) =>
-      _relativeSize(this) <= _relativeSize(other);
+      relativeSize <= other.relativeSize;
 
   bool operator <(AdaptiveWindowType other) =>
-      _relativeSize(this) < _relativeSize(other);
+      relativeSize < other.relativeSize;
 
   bool operator >=(AdaptiveWindowType other) =>
-      _relativeSize(this) >= _relativeSize(other);
+      relativeSize >= other.relativeSize;
 
   bool operator >(AdaptiveWindowType other) =>
-      _relativeSize(this) > _relativeSize(other);
+      relativeSize > other.relativeSize;
 }
 
 /// This class represents the Material breakpoint system entry.
@@ -171,8 +146,8 @@ class BreakpointSystemEntry {
 /// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
 ///
 /// This list is in sequential order.
-List<BreakpointSystemEntry> breakpointSystem = [
-  const BreakpointSystemEntry(
+const List<BreakpointSystemEntry> breakpointSystem = [
+  BreakpointSystemEntry(
     range: RangeValues(0, 359),
     portrait: 'small handset',
     adaptiveWindowType: AdaptiveWindowType.xsmall,
@@ -180,7 +155,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 16.0,
     gutter: 16.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(360, 399),
     portrait: 'medium handset',
     adaptiveWindowType: AdaptiveWindowType.xsmall,
@@ -188,7 +163,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 16.0,
     gutter: 16.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(400, 479),
     portrait: 'large handset',
     adaptiveWindowType: AdaptiveWindowType.xsmall,
@@ -196,7 +171,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 16.0,
     gutter: 16.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(480, 599),
     portrait: 'large handset',
     landscape: 'small handset',
@@ -205,7 +180,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 16.0,
     gutter: 16.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(600, 719),
     portrait: 'small tablet',
     landscape: 'medium handset',
@@ -214,7 +189,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 16.0,
     gutter: 16.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(720, 839),
     portrait: 'large tablet',
     landscape: 'large handset',
@@ -223,7 +198,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 24.0,
     gutter: 24.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(840, 959),
     portrait: 'large tablet',
     landscape: 'large handset',
@@ -232,7 +207,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 24.0,
     gutter: 24.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(960, 1023),
     landscape: 'small tablet',
     adaptiveWindowType: AdaptiveWindowType.small,
@@ -240,7 +215,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 24.0,
     gutter: 24.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(1024, 1279),
     landscape: 'large tablet',
     adaptiveWindowType: AdaptiveWindowType.medium,
@@ -248,7 +223,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 24.0,
     gutter: 24.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(1280, 1439),
     landscape: 'large tablet',
     adaptiveWindowType: AdaptiveWindowType.medium,
@@ -256,7 +231,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 24.0,
     gutter: 24.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(1440, 1599),
     portrait: 'small handset',
     adaptiveWindowType: AdaptiveWindowType.large,
@@ -264,7 +239,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 24.0,
     gutter: 24.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(1600, 1919),
     portrait: 'small handset',
     adaptiveWindowType: AdaptiveWindowType.large,
@@ -272,7 +247,7 @@ List<BreakpointSystemEntry> breakpointSystem = [
     margin: 24.0,
     gutter: 24.0,
   ),
-  const BreakpointSystemEntry(
+  BreakpointSystemEntry(
     range: RangeValues(1920, double.infinity),
     portrait: 'small handset',
     adaptiveWindowType: AdaptiveWindowType.xlarge,
