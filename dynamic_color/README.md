@@ -17,6 +17,10 @@ There are two ways to use this plugin.
 1. `DynamicColorsBuilder`, a convenience stateful builder widget that provides
    the dynamic colors in a [`TonalPalette`](lib/tonal_palette.dart). This uses 
    `2.` under the hood. [Example](example/lib/dynamic_colors_builder_example.dart)
+   
+   Android S+ | Other device 
+    --- | ---
+   ![Using dynamic color](https://user-images.githubusercontent.com/6655696/131153023-21ed468c-ea99-406b-937a-7043ab9798d5.png) | ![Not using dynamic color](https://user-images.githubusercontent.com/6655696/131153002-e4c33c66-d806-4fa2-bdb1-2b4bbef87375.png)
 
 2. `DynamicColorsPlugin.getDynamicColors()`, which requests the colors 
    asynchronously, returns the dynamic colors in a 
