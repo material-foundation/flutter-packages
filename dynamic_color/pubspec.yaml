@@ -1,0 +1,25 @@
+name: dynamic_colors
+description: Flutter plugin to obtain dynamic colors on Android.
+version: 0.0.1
+repository: https://github.com/material-foundation/material-dynamic-color-flutter
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+  meta: ^1.3.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: io.material.plugins.dynamic_colors
+        pluginClass: DynamicColorsPlugin
