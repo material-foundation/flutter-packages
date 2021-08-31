@@ -19,13 +19,13 @@ class CompleteExample extends StatelessWidget {
         ColorScheme darkColorScheme = const ColorScheme.dark();
 
         if (dynamicColors != null) {
-          // On Android S+ devices, use the 400 and 800 shades of the dynamic
+          // On Android S+ devices, use the 600 and 200 shades of the dynamic
           // primary tonal range for the light and dark schemes, respectively.
           colorScheme = colorScheme.copyWith(
-            primary: dynamicColors.primary.shade400,
+            primary: dynamicColors.primary.shade600,
           );
           darkColorScheme = darkColorScheme.copyWith(
-            primary: dynamicColors.primary.shade800,
+            primary: dynamicColors.primary.shade200,
           );
 
           // Harmonize the dynamic color schemes' semantic colors.
@@ -34,16 +34,16 @@ class CompleteExample extends StatelessWidget {
 
           _isDemoUsingDynamicColors = true; // ignore, only for demo purposes
         } else {
-          // On other platforms, default to a mid-range amber and dark amber for
-          // the light and dark schemes, respectively. It is typical to use
-          // colors with the same luminance values as those used for dynamic
-          // color schemes.
+          // On other platforms, default to 600 and 200 shades of amber for the
+          // light and dark schemes, respectively. It is typical to use colors
+          // with the same luminance values as those used for dynamic color
+          // schemes.
           // TODO(guidezpl): remove last sentence if false
           colorScheme = colorScheme.copyWith(
-            primary: Colors.amber.shade400,
+            primary: Colors.amber.shade600,
           );
           darkColorScheme = colorScheme.copyWith(
-            primary: Colors.amber.shade800,
+            primary: Colors.amber.shade200,
           );
         }
 
