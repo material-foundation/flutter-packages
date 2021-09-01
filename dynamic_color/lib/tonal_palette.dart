@@ -88,7 +88,7 @@ class TonalPalette {
 
 /// Each tonal range contains 13 color shades.
 ///
-/// The shades range from 0 to 1000, from most luminant to the least luminant.
+/// The shades range from 0 to 1000, from most brighest to the least bright.
 /// In other words, the 0 shade is always white and the 1000 shade is always
 /// black.
 class _TonalRange {

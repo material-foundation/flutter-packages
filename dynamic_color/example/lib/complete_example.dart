@@ -35,10 +35,8 @@ class CompleteExample extends StatelessWidget {
           _isDemoUsingDynamicColors = true; // ignore, only for demo purposes
         } else {
           // On other platforms, default to 600 and 200 shades of amber for the
-          // light and dark schemes, respectively. It is typical to use colors
-          // with the same luminance values as those used for dynamic color
-          // schemes.
-          // TODO(guidezpl): remove last sentence if false
+          // light and dark schemes, respectively. By design, we use colors
+          // with the same tonal values.
           colorScheme = colorScheme.copyWith(
             primary: Colors.amber.shade600,
           );
