@@ -2,23 +2,28 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
+import 'dynamic_colors_builder.dart';
 import 'tonal_palette.dart';
 
-/// This plugin allows apps to use the dynamic colors defined by the Android OS.
+/// Plugin for obtaining dynamic colors defined by the Android OS.
 class DynamicColorsPlugin {
-  /// Method channel for requesting the dynamic color tonal palette from the
-  /// Android OS.
+  /// Optional method channel so that it returns null on non-Android platforms.
   static const channel = OptionalMethodChannel(
     'io.material.plugins/dynamic_colors',
   );
 
-  /// The method name that the java plugin will listen for and return the
-  /// dynamic color tonal palette when called.
+  /// The method name that the Kotlin plugin listens for.
   static const methodName = 'getDynamicColors';
 
-  /// Fetches the dynamic tonal palette from the Android OS.
+  /// Returns the Android OS' dynamic colors asynchronously as a [TonalPalette].
   ///
-  /// Returns null if called on a device where tonal palettes are unavailable.
+  /// Completes with null on pre-Android S and non-Android platforms.
+  ///
+  /// See also:
+  ///
+  ///  * [getDynamicColors() example](https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/get_dynamic_colors_example.dart)
+  ///  * [DynamicColorsBuilder] a convenience stateful builder widget that
+  ///  provides the dynamic colors
   static Future<TonalPalette?> getDynamicColors() async {
     final result = await channel.invokeMethod(methodName);
     return result == null ? null : TonalPalette.fromList(result.toList());
