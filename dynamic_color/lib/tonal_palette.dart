@@ -2,8 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 
-/// Respresents a Material You tonal palette, consisting of 5 tonal
-/// ranges.
+/// Respresents a Material You tonal palette, consisting of 5 [TonalRange]s.
 ///
 /// TODO(guidezpl): expand explanation, add screenshot, link to spec
 class TonalPalette {
@@ -16,39 +15,39 @@ class TonalPalette {
   });
 
   /// The neutral tonal range (N).
-  final _TonalRange neutral;
+  final TonalRange neutral;
 
   /// The neutral variant tonal range (NV).
-  final _TonalRange neutralVariant;
+  final TonalRange neutralVariant;
 
   /// The primary tonal range (P).
-  final _TonalRange primary;
+  final TonalRange primary;
 
   /// The secondary tonal range (S).
-  final _TonalRange secondary;
+  final TonalRange secondary;
 
   /// The tertiary tonal range (T).
-  final _TonalRange tertiary;
+  final TonalRange tertiary;
 
   /// Turns a [List] of color [int]s representing concatenated tonal ranges into
   /// a [TonalPalette] object.
   ///
   /// This is the reverse of [asList].
   TonalPalette.fromList(List<int> palettes)
-      : neutral = _TonalRange._fromList(
-          palettes.getPartition(0, _TonalRange.tonalRangeSize),
+      : neutral = TonalRange._fromList(
+          palettes.getPartition(0, TonalRange.tonalRangeSize),
         ),
-        neutralVariant = _TonalRange._fromList(
-          palettes.getPartition(1, _TonalRange.tonalRangeSize),
+        neutralVariant = TonalRange._fromList(
+          palettes.getPartition(1, TonalRange.tonalRangeSize),
         ),
-        primary = _TonalRange._fromList(
-          palettes.getPartition(2, _TonalRange.tonalRangeSize),
+        primary = TonalRange._fromList(
+          palettes.getPartition(2, TonalRange.tonalRangeSize),
         ),
-        secondary = _TonalRange._fromList(
-          palettes.getPartition(3, _TonalRange.tonalRangeSize),
+        secondary = TonalRange._fromList(
+          palettes.getPartition(3, TonalRange.tonalRangeSize),
         ),
-        tertiary = _TonalRange._fromList(
-          palettes.getPartition(4, _TonalRange.tonalRangeSize),
+        tertiary = TonalRange._fromList(
+          palettes.getPartition(4, TonalRange.tonalRangeSize),
         );
 
   /// Returns all of the colors in each tonal range in one long [List] of color [int]s.
@@ -91,8 +90,8 @@ class TonalPalette {
 /// The shades range from 0 to 1000, from most brighest to the least bright.
 /// In other words, the 0 shade is always white and the 1000 shade is always
 /// black.
-class _TonalRange {
-  const _TonalRange({
+class TonalRange {
+  const TonalRange({
     required this.shade0,
     required this.shade10,
     required this.shade50,
@@ -108,7 +107,7 @@ class _TonalRange {
     required this.shade1000,
   });
 
-  _TonalRange._fromList(List<int> colors)
+  TonalRange._fromList(List<int> colors)
       : shade0 = Color(colors[0]),
         shade10 = Color(colors[1]),
         shade50 = Color(colors[2]),
@@ -175,7 +174,7 @@ class _TonalRange {
 
   @override
   bool operator ==(Object other) {
-    return other is _TonalRange && listEquals(allShades, other.allShades);
+    return other is TonalRange && listEquals(allShades, other.allShades);
   }
 
   @override
