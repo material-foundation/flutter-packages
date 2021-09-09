@@ -1,19 +1,18 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:monet/blend/blend.dart';
 
 /// Shifts color [from] towards color [to].
 Color _harmonizeColor(Color from, Color to) {
   if (from == to) return from;
-  return from;
-  // TODO(guidezpl): enable when available
-  // return monet.smartBlend(from.value, to.value, hueP: 0.25, chroma: 0);
+  return Color(Blend.harmonize(from.value, to.value));
 }
 
 extension ColorHarmonization on Color {
   /// Harmonizes this color with [color].
   ///
-  /// Intended to be used with [ColorScheme.primary].
+  /// [color] will typically be a dynamic [ColorScheme.primary] color.
   Color harmonizeWith(Color color) => _harmonizeColor(this, color);
 }
 
