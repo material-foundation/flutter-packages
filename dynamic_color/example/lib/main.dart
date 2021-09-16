@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'complete_example.dart';
 import 'dynamic_colors_builder_example.dart';
 import 'get_dynamic_colors_example.dart';
+import 'key_palettes_visualization.dart';
 
 void main() {
   runApp(const ExampleApp());
@@ -22,6 +23,11 @@ class ExampleApp extends StatelessWidget {
             children: const [
               _ExampleAppButton(
                   title: CompleteExample.title, widget: CompleteExample()),
+              Divider(),
+              _ExampleAppButton(
+                title: KeyPalettesVisualization.title,
+                widget: KeyPalettesVisualization(),
+              ),
               Divider(),
               _ExampleAppButton(title: Example1.title, widget: Example1()),
               _ExampleAppButton(title: Example2.title, widget: Example2()),

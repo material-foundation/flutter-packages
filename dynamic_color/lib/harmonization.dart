@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:monet/blend/blend.dart';
+import 'package:libmonet/monet.dart';
 
 /// Shifts color [from] towards color [to].
 Color _harmonizeColor(Color from, Color to) {

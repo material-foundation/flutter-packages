@@ -11,9 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  monet:
+  libmonet:
     git:
-      url: https://github.com/googlestaging/material-foundation-monet.git
+      url: https://github.com/material-foundation/material-monet.git
       path: dart
 
 dev_dependencies:
