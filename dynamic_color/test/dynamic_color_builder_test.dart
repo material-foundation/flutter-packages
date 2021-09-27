@@ -1,5 +1,5 @@
-import 'package:dynamic_colors/dynamic_colors_builder.dart';
-import 'package:dynamic_colors/tonal_palette.dart';
+import 'package:dynamic_color/src/dynamic_color_builder.dart';
+import 'package:dynamic_color/src/core_palette.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -8,18 +8,18 @@ import 'utils.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('DynamicColorsBuilder', (WidgetTester tester) async {
-    TonalPalette sampleColors = generateTonalPalette((i) => 12345);
-    DynamicColorsTestingUtils.setMockDynamicColors(sampleColors);
+  testWidgets('DynamicColorBuilder', (WidgetTester tester) async {
+    CorePalette samplePalette = generateCorePalette((i) => 12345);
+    DynamicColorsTestingUtils.setMockDynamicColors(samplePalette);
 
     const containerKey = Key('myContainer');
 
     await tester.pumpWidget(
-      DynamicColorsBuilder(
-        builder: (TonalPalette? dynamicColors) {
+      DynamicColorBuilder(
+        builder: (CorePalette? corePalette) {
           return Container(
             key: containerKey,
-            color: dynamicColors?.primary.shade10,
+            color: corePalette?.primary.tone99,
           );
         },
       ),

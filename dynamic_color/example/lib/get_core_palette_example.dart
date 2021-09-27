@@ -1,21 +1,20 @@
 import 'dart:async';
 
-import 'package:dynamic_colors/dynamic_colors_plugin.dart';
-import 'package:dynamic_colors/tonal_palette.dart';
+import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class Example2 extends StatefulWidget {
   const Example2({Key? key}) : super(key: key);
 
-  static const title = 'DynamicColorsPlugin.getDynamicColors()';
+  static const title = 'DynamicColorPlugin.getCorePalette()';
 
   @override
   State<Example2> createState() => _Example2State();
 }
 
 class _Example2State extends State<Example2> {
-  TonalPalette? _dynamicColors;
+  CorePalette? _corePalette;
 
   @override
   void initState() {
@@ -25,10 +24,10 @@ class _Example2State extends State<Example2> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    TonalPalette? dynamicColors;
+    CorePalette? corePalette;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      dynamicColors = await DynamicColorsPlugin.getDynamicColors();
+      corePalette = await DynamicColorPlugin.getCorePalette();
     } on PlatformException {
       debugPrint('Failed to get dynamic colors.');
     }
@@ -39,7 +38,7 @@ class _Example2State extends State<Example2> {
     if (!mounted) return;
 
     setState(() {
-      _dynamicColors = dynamicColors;
+      _corePalette = corePalette;
     });
   }
 
@@ -48,9 +47,9 @@ class _Example2State extends State<Example2> {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          // On Android S+ devices, use the 600 shade of the dynamic primary tonal range.
-          // On other platforms, default to a 600 shade amber.
-          color: _dynamicColors?.primary.shade600 ?? Colors.amber.shade600,
+          // On Android S+ devices, use the 40 tone of the dynamic primary tonal palette.
+          // Otherwise, default to a 600 shade amber.
+          color: _corePalette?.primary.tone40 ?? Colors.amber.shade600,
           child: const Center(
             child: Text('The background color is either dynamic or amber'),
           ),

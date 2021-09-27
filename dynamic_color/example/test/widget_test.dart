@@ -5,7 +5,7 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:dynamic_colors_example/dynamic_colors_builder_example.dart';
+import 'package:dynamic_color_example/dynamic_color_builder_example.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -18,7 +18,7 @@ void main() {
     expect(
       find.byWidgetPredicate(
         (Widget widget) =>
-            widget is Container && widget.color == Colors.amber[500],
+            widget is Container && widget.color == Colors.amber.shade600,
       ),
       findsOneWidget,
     );

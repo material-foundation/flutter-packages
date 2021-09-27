@@ -1,6 +1,4 @@
-import 'package:dynamic_colors/dynamic_colors_builder.dart';
-import 'package:dynamic_colors/harmonization.dart';
-import 'package:dynamic_colors/tonal_palette.dart';
+import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 
 bool _isDemoUsingDynamicColors = false;
@@ -8,24 +6,25 @@ bool _isDemoUsingDynamicColors = false;
 class CompleteExample extends StatelessWidget {
   const CompleteExample({Key? key}) : super(key: key);
 
-  static const title = 'DynamicColorsBuilder + ColorScheme';
+  static const title = 'DynamicColorBuilder + ColorScheme';
 
   @override
   Widget build(BuildContext context) {
-    return DynamicColorsBuilder(
-      builder: (TonalPalette? dynamicColors) {
-        // One can create ColorSchemes from scratch, but we'll start from the default schemes.
+    return DynamicColorBuilder(
+      builder: (CorePalette? corePalette) {
+        // One can create ColorSchemes from scratch, but we'll start from the
+        // default schemes.
         ColorScheme colorScheme = const ColorScheme.light();
         ColorScheme darkColorScheme = const ColorScheme.dark();
 
-        if (dynamicColors != null) {
-          // On Android S+ devices, use the 600 and 200 shades of the dynamic
-          // primary tonal range for the light and dark schemes, respectively.
+        if (corePalette != null) {
+          // On Android S+ devices, use the 40 and 80 tones of the dynamic
+          // primary tonal palette for the light and dark schemes, respectively.
           colorScheme = colorScheme.copyWith(
-            primary: dynamicColors.primary.shade600,
+            primary: corePalette.primary.tone40,
           );
           darkColorScheme = darkColorScheme.copyWith(
-            primary: dynamicColors.primary.shade200,
+            primary: corePalette.primary.tone80,
           );
 
           // Harmonize the dynamic color schemes' semantic colors.
@@ -34,9 +33,7 @@ class CompleteExample extends StatelessWidget {
 
           _isDemoUsingDynamicColors = true; // ignore, only for demo purposes
         } else {
-          // On other platforms, default to 600 and 200 shades of amber for the
-          // light and dark schemes, respectively. By design, we use colors
-          // with the same tonal values.
+          // Otherwise, use a fallback scheme and customize as needed.
           colorScheme = colorScheme.copyWith(
             primary: Colors.amber.shade600,
           );
@@ -78,8 +75,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    String dynamicMsg =
-        _isDemoUsingDynamicColors ? ' is dynamic and using' : '';
+    String dynamicMsg = _isDemoUsingDynamicColors ? ' dynamic and using' : '';
 
     return Scaffold(
       body: Container(
@@ -88,11 +84,11 @@ class _HomeState extends State<Home> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('The background color$dynamicMsg ColorScheme.primary'),
+            Text('The background color is$dynamicMsg ColorScheme.primary'),
             TextField(
               controller: _textEditingController,
               decoration: InputDecoration(
-                errorText: 'The text color$dynamicMsg ColorScheme.error',
+                errorText: 'The text color is$dynamicMsg ColorScheme.error',
               ),
             ),
           ],

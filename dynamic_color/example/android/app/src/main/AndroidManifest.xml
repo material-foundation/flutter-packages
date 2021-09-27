@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.material.plugins.dynamic_colors_example">
+    package="io.material.plugins.dynamic_color_example">
    <application
-        android:label="dynamic_colors_example"
+        android:label="dynamic_color_example"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

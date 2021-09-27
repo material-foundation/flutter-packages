@@ -50,10 +50,17 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.3"
-  dynamic_colors:
+  dynamic_color:
     dependency: "direct main"
     description:
       path: ".."
+      relative: true
+    source: path
+    version: "0.1.0"
+  dynamic_color_tools:
+    dependency: transitive
+    description:
+      path: "../../dynamic-color-tools/dart"
       relative: true
     source: path
     version: "0.1.0"
@@ -81,15 +88,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  libmonet:
-    dependency: transitive
-    description:
-      path: dart
-      ref: HEAD
-      resolved-ref: "7b3f1d4aa076064542521823c0ebffd10e4efbd8"
-      url: "https://github.com/material-foundation/material-monet.git"
-    source: git
-    version: "0.1.0"
   lints:
     dependency: transitive
     description:

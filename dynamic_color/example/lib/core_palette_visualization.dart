@@ -1,17 +1,17 @@
-import 'package:dynamic_colors/key_palettes.dart';
+import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 
-class KeyPalettesVisualization extends StatelessWidget {
-  const KeyPalettesVisualization({Key? key}) : super(key: key);
+class CorePaletteVisualization extends StatelessWidget {
+  const CorePaletteVisualization({Key? key}) : super(key: key);
 
-  static const title = 'KeyPalettes Visualization';
+  static const title = 'CorePalette Visualization';
 
   @override
   Widget build(BuildContext context) {
-    /// A sample key palette, as obtained by the [DynamicColorsPlugin] from the
+    /// A sample [CorePalette], as obtained by the [DynamicColorPlugin] from the
     /// Android OS.
-    const sampleKeyPalettes = KeyPalettes(
-      primary: KeyPalette(
+    const sampleCorePalette = CorePalette(
+      primary: TonalPalette(
         Color(0xFF000000),
         Color(0xFF21005E),
         Color(0xFF380094),
@@ -26,7 +26,7 @@ class KeyPalettesVisualization extends StatelessWidget {
         Color(0xFFFFFBFE),
         Color(0xFFFFFFFF),
       ),
-      secondary: KeyPalette(
+      secondary: TonalPalette(
         Color(0xFF000000),
         Color(0xFF1E1635),
         Color(0xFF332B4B),
@@ -41,7 +41,7 @@ class KeyPalettesVisualization extends StatelessWidget {
         Color(0xFFFFFBFE),
         Color(0xFFFFFFFF),
       ),
-      tertiary: KeyPalette(
+      tertiary: TonalPalette(
         Color(0xFF000000),
         Color(0xFF31101D),
         Color(0xFF492532),
@@ -56,7 +56,7 @@ class KeyPalettesVisualization extends StatelessWidget {
         Color(0xFFFCFCFC),
         Color(0xFFFFFFFF),
       ),
-      neutral: KeyPalette(
+      neutral: TonalPalette(
         Color(0xFF000000),
         Color(0xFF1C1A22),
         Color(0xFF322F38),
@@ -71,7 +71,7 @@ class KeyPalettesVisualization extends StatelessWidget {
         Color(0xFFFFFBFE),
         Color(0xFFFFFFFF),
       ),
-      neutralVariant: KeyPalette(
+      neutralVariant: TonalPalette(
         Color(0xFF000000),
         Color(0xFF1C1B1E),
         Color(0xFF313033),
@@ -93,19 +93,19 @@ class KeyPalettesVisualization extends StatelessWidget {
       children: const [
         Padding(
           padding: EdgeInsets.only(top: 8),
-          child: _RenderKeyPalettes(sampleKeyPalettes),
+          child: _RenderCorePalette(sampleCorePalette),
         )
       ],
     );
   }
 }
 
-class _RenderKeyPalettes extends StatelessWidget {
-  const _RenderKeyPalettes(this.kps, {Key? key}) : super(key: key);
+class _RenderCorePalette extends StatelessWidget {
+  const _RenderCorePalette(this.corePalette, {Key? key}) : super(key: key);
 
-  final KeyPalettes kps;
+  final CorePalette corePalette;
 
-  static const keyPaletteLabels = [
+  static const corePaletteLabels = [
     'Primary',
     'Secondary',
     'Tertiary',
@@ -117,11 +117,11 @@ class _RenderKeyPalettes extends StatelessWidget {
   Widget build(BuildContext context) {
     final captionStyle = Theme.of(context).textTheme.caption;
     List<List<Color>> tones = [
-      kps.primary.allTones,
-      kps.secondary.allTones,
-      kps.tertiary.allTones,
-      kps.neutral.allTones,
-      kps.neutralVariant.allTones,
+      corePalette.primary.allTones,
+      corePalette.secondary.allTones,
+      corePalette.tertiary.allTones,
+      corePalette.neutral.allTones,
+      corePalette.neutralVariant.allTones,
     ];
     return Column(
       children: tones.mapIndexed(
@@ -132,14 +132,14 @@ class _RenderKeyPalettes extends StatelessWidget {
               SizedBox(
                 width: 70,
                 child: Text(
-                  keyPaletteLabels[i],
+                  corePaletteLabels[i],
                   style: captionStyle,
                   textAlign: TextAlign.end,
                 ),
               ),
               const SizedBox(width: 16),
               ...tones.mapIndexed((Color color, int i) {
-                final toneValue = KeyPalette.toneValues[i];
+                final toneValue = TonalPalette.toneValues[i];
                 return Container(
                   constraints: const BoxConstraints.tightFor(
                     height: 80,

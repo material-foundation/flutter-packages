@@ -1,4 +1,4 @@
-group 'io.material.plugins.dynamic_colors'
+group 'io.material.plugins.dynamic_color'
 version '1.0-SNAPSHOT'
 
 buildscript {

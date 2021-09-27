@@ -1,4 +1,4 @@
-import 'package:dynamic_colors/harmonization.dart';
+import 'package:dynamic_color/src/harmonization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -35,7 +35,7 @@ void main() {
     test('green with white', () {
       Color colorA = Colors.green;
       Color colorB = Colors.white;
-      Color harmonized = const Color(0xff48af53); // Green with a bit of white
+      Color harmonized = const Color(0xff47af52); // Green with a bit of white
       expect(colorA.harmonizeWith(colorB), harmonized);
     });
 

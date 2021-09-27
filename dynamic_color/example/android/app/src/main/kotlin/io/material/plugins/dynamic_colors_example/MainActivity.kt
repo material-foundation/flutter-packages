@@ -1,4 +1,4 @@
-package io.material.plugins.dynamic_colors_example
+package io.material.plugins.dynamic_color_example
 
 import io.flutter.embedding.android.FlutterActivity
 
