@@ -35,10 +35,10 @@ class CompleteExample extends StatelessWidget {
         } else {
           // Otherwise, use a fallback scheme and customize as needed.
           colorScheme = colorScheme.copyWith(
-            primary: Colors.amber.shade600,
+            primary: Colors.orange.shade600,
           );
           darkColorScheme = colorScheme.copyWith(
-            primary: Colors.amber.shade200,
+            primary: Colors.orange.shade200,
           );
         }
 
@@ -75,24 +75,31 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    String dynamicMsg = _isDemoUsingDynamicColors ? ' dynamic and using' : '';
+    String dynamicMsg =
+        _isDemoUsingDynamicColors ? ' (dynamic)' : ' (not dynamic)';
 
     return Scaffold(
-      body: Container(
-        color: Theme.of(context).colorScheme.primary,
-        padding: const EdgeInsets.all(50),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('The background color is$dynamicMsg ColorScheme.primary'),
-            TextField(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            width: 100,
+            height: 100,
+            color: Theme.of(context).colorScheme.primary,
+          ),
+          Text(
+            'The square\'s color is colorScheme.primary$dynamicMsg',
+          ),
+          Padding(
+            padding: const EdgeInsets.all(32.0),
+            child: TextField(
               controller: _textEditingController,
               decoration: InputDecoration(
-                errorText: 'The text color is$dynamicMsg ColorScheme.error',
+                errorText: 'The text color is colorScheme.error$dynamicMsg',
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
       resizeToAvoidBottomInset: false,
     );

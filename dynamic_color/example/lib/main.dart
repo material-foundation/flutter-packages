@@ -18,34 +18,32 @@ class ExampleApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Examples')),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Complete example', style: textTheme.headline6),
-              const _ExampleAppButton(
-                title: CompleteExample.title,
-                widget: CompleteExample(),
-              ),
-              const Divider(),
-              Text('What\'s a core palette?', style: textTheme.headline6),
-              const _ExampleAppButton(
-                title: CorePaletteVisualization.title,
-                widget: CorePaletteVisualization(),
-              ),
-              const Divider(),
-              Text('Advanced examples', style: textTheme.headline6),
-              const _ExampleAppButton(
-                title: Example1.title,
-                widget: Example1(),
-              ),
-              const _ExampleAppButton(
-                title: Example2.title,
-                widget: Example2(),
-              ),
-            ],
-          ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('Complete example', style: textTheme.headline6),
+            const _ExampleAppButton(
+              title: CompleteExample.title,
+              widget: CompleteExample(),
+            ),
+            const Divider(),
+            Text('CorePalette visualization', style: textTheme.headline6),
+            const _ExampleAppButton(
+              title: CorePaletteVisualization.title,
+              widget: CorePaletteVisualization(),
+            ),
+            const Divider(),
+            Text('Advanced examples', style: textTheme.headline6),
+            const _ExampleAppButton(
+              title: AdvancedExample1.title,
+              widget: AdvancedExample1(),
+            ),
+            const _ExampleAppButton(
+              title: AdvancedExample2.title,
+              widget: AdvancedExample2(),
+            ),
+          ],
         ),
       ),
     );
@@ -61,16 +59,19 @@ class _ExampleAppButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      child: Text(title),
-      onPressed: () => Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => Scaffold(
-            appBar: AppBar(
-              title: Text(title, style: const TextStyle(fontSize: 14)),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: ElevatedButton(
+        child: Text(title),
+        onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => Scaffold(
+              appBar: AppBar(
+                title: Text(title, style: const TextStyle(fontSize: 14)),
+              ),
+              body: widget,
             ),
-            body: widget,
           ),
         ),
       ),

@@ -4,16 +4,16 @@ import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class Example2 extends StatefulWidget {
-  const Example2({Key? key}) : super(key: key);
+class AdvancedExample2 extends StatefulWidget {
+  const AdvancedExample2({Key? key}) : super(key: key);
 
   static const title = 'DynamicColorPlugin.getCorePalette()';
 
   @override
-  State<Example2> createState() => _Example2State();
+  State<AdvancedExample2> createState() => _AdvancedExample2State();
 }
 
-class _Example2State extends State<Example2> {
+class _AdvancedExample2State extends State<AdvancedExample2> {
   CorePalette? _corePalette;
 
   @override
@@ -46,12 +46,20 @@ class _Example2State extends State<Example2> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(
-          // On Android S+ devices, use the 40 tone of the dynamic primary tonal palette.
-          // Otherwise, default to a 600 shade amber.
-          color: _corePalette?.primary.tone40 ?? Colors.amber.shade600,
-          child: const Center(
-            child: Text('The background color is either dynamic or amber'),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 100,
+                height: 100,
+                // On Android S+ devices, use the 40 tone of the dynamic primary
+                // tonal palette. Otherwise, default to a 600 shade orange.
+                color: _corePalette?.primary.tone40 ?? Colors.orange.shade600,
+              ),
+              Text(
+                  'The square\'s color is ${(_corePalette?.primary.tone40 != null) ? 'dynamic' : 'orange'}'),
+            ],
           ),
         ),
       ),

@@ -12,13 +12,13 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   testWidgets('Verify default color', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const Example1());
+    await tester.pumpWidget(const AdvancedExample1());
 
     // Verify that default color is used.
     expect(
       find.byWidgetPredicate(
         (Widget widget) =>
-            widget is Container && widget.color == Colors.amber.shade600,
+            widget is Container && widget.color == Colors.orange.shade600,
       ),
       findsOneWidget,
     );
