@@ -10,7 +10,30 @@ TODO(guidezpl): link to API docs once published
 
 ## Features
 
-TODO(guidezpl): List what your package can do. Maybe include images, gifs, or videos.
+### Builder widget
+
+For convenience, this package includes `DynamicColorBuilder`, a stateful widget
+that provides the device's dynamic colors in a [`CorePalette`][corepalette].
+
+### Plugin
+
+Under the hood, `DynamicColorBuilder` uses a plugin to talk to the Android OS.
+
+### Color and color scheme harmonization
+
+Color harmonization solves the problem: "How do we ensure any particular
+Reserved color (i.e. semantic or brand color) look good next to a
+user's dynamically-generated color?"
+
+This package provides two extension methods, `Color.harmonizeWith()` and
+`ColorScheme.harmonized()` to accomplish this.
+
+`Color.harmonizeWith()` shift the hue of the color towards the passed in 
+color, typically `colorScheme.primary`. This leaves the color recognizable
+while harmonizing it.
+
+`ColorScheme.harmonized()` does the same thing, for all semantic colors.
+See [harmonization.dart] for more.
 
 ## Getting started
 
@@ -26,7 +49,7 @@ See this [complete example] for obtaining dynamic colors and creating
 a harmonized color scheme. Essentially, we wrap our `MaterialApp` with a
 `DynamicColorBuilder`, and create:
 
-- a dynamic color scheme that we harmonize with `colorScheme.harmonized()`
+- a dynamic color scheme that we harmonize
 - a fallback color scheme
 
 Run all examples with
@@ -39,12 +62,11 @@ flutter run
 <details> 
 <Summary>Advanced</Summary>
 
-`DynamicColorBuilder` is a stateful widget that provides the device's
-dynamic colors in a [`CorePalette`][corepalette]. [Example][dynamiccolorbuilder example]
+[`DynamicColorBuilder` example][dynamiccolorbuilder example]
 
 | Android S+                                                                                                                                                | Other device                                                                                                                                                  |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img width="100%" alt="Using dynamic color" src="https://user-images.githubusercontent.com/6655696/131468852-9e79837d-4109-40b8-82d7-3ef5fe8c225e.png" /> | <img width="100%" alt="Not using dynamic color" src="https://user-images.githubusercontent.com/6655696/131468869-180c0cad-80d5-4e5a-8f2a-6518c525b0a7.png" /> |
+| <img width="100%" alt="Using dynamic color" src="https://user-images.githubusercontent.com/6655696/135142179-ce080344-cd20-4776-b9f0-b1e12e1662e1.png" /> | <img width="100%" alt="Not using dynamic color" src="https://user-images.githubusercontent.com/6655696/135142176-5bba6a1a-59e9-469c-b61f-327ebd274825.png" /> |
 
 Under the hood, `DynamicColorBuilder` uses `DynamicColorPlugin.getCorePalette()`
 to obtain the [`CorePalette`][corepalette] asynchronously. Unlike with
@@ -54,7 +76,8 @@ storing the [`CorePalette`][corepalette].
 
 </details>
 
-[corepalette]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/lib/tonal_palette.dart
+[corepalette]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/lib/core_palette.dart
 [complete example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/complete_example.dart
 [dynamiccolorbuilder example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/dynamic_color_builder_example.dart
 [dynamiccolorplugin.getcorepalette example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/get_core_palette_example.dart
+[harmonization.dart]: https://github.com/material-foundation/material-dynamic-color-flutter/blob/main/lib/src/harmonization.dart
