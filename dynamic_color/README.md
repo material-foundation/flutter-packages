@@ -76,7 +76,7 @@ storing the [`CorePalette`][corepalette].
 
 </details>
 
-[corepalette]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/lib/core_palette.dart
+[corepalette]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/lib/src/core_palette.dart
 [complete example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/complete_example.dart
 [dynamiccolorbuilder example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/dynamic_color_builder_example.dart
 [dynamiccolorplugin.getcorepalette example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/get_core_palette_example.dart
