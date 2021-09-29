@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'complete_example.dart';
+import 'core_palette_visualization.dart';
 import 'dynamic_color_builder_example.dart';
 import 'get_core_palette_example.dart';
-import 'core_palette_visualization.dart';
+import 'harmonization_example.dart';
 
 void main() {
   runApp(const ExampleApp());
@@ -34,6 +35,12 @@ class ExampleApp extends StatelessWidget {
               widget: CorePaletteVisualization(),
             ),
             const Divider(),
+            Text('Harmonization', style: textTheme.headline6),
+            const _ExampleAppButton(
+              title: HarmonizationExample.title,
+              widget: HarmonizationExample(),
+            ),
+            const Divider(),
             Text('Advanced examples', style: textTheme.headline6),
             const _ExampleAppButton(
               title: AdvancedExample1.title,
@@ -51,8 +58,11 @@ class ExampleApp extends StatelessWidget {
 }
 
 class _ExampleAppButton extends StatelessWidget {
-  const _ExampleAppButton({Key? key, required this.title, required this.widget})
-      : super(key: key);
+  const _ExampleAppButton({
+    Key? key,
+    required this.title,
+    required this.widget,
+  }) : super(key: key);
 
   final String title;
   final Widget widget;

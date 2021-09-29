@@ -22,8 +22,10 @@ class _AdvancedExample2State extends State<AdvancedExample2> {
     initPlatformState();
   }
 
-  // Platform messages are asynchronous, so we initialize in an async method.
+  /// Unlike with [DynamicColorBuilder], we're responsible for obtaining and
+  /// storing the [ColorPalette].
   Future<void> initPlatformState() async {
+    // Platform messages are asynchronous, so we initialize in an async method.
     CorePalette? corePalette;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {

@@ -28,7 +28,7 @@ user's dynamically-generated color?"
 This package provides two extension methods, `Color.harmonizeWith()` and
 `ColorScheme.harmonized()` to accomplish this.
 
-`Color.harmonizeWith()` shift the hue of the color towards the passed in 
+`Color.harmonizeWith()` shift the hue of the color towards the passed in
 color, typically `colorScheme.primary`. This leaves the color recognizable
 while harmonizing it.
 
@@ -52,31 +52,17 @@ a harmonized color scheme. Essentially, we wrap our `MaterialApp` with a
 - a dynamic color scheme that we harmonize
 - a fallback color scheme
 
-Run all examples with
+Run [all examples] with
 
 ```
 cd example
 flutter run
 ```
 
-<details> 
-<Summary>Advanced</Summary>
-
-[`DynamicColorBuilder` example][dynamiccolorbuilder example]
-
-| Android S+                                                                                                                                                | Other device                                                                                                                                                  |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img width="100%" alt="Using dynamic color" src="https://user-images.githubusercontent.com/6655696/135142179-ce080344-cd20-4776-b9f0-b1e12e1662e1.png" /> | <img width="100%" alt="Not using dynamic color" src="https://user-images.githubusercontent.com/6655696/135142176-5bba6a1a-59e9-469c-b61f-327ebd274825.png" /> |
-
-Under the hood, `DynamicColorBuilder` uses `DynamicColorPlugin.getCorePalette()`
-to obtain the [`CorePalette`][corepalette] asynchronously. Unlike with
-`DynamicColorBuilder`, the developer is responsible for obtaining and
-storing the [`CorePalette`][corepalette].
-[Example][dynamiccolorplugin.getcorepalette example]
-
-</details>
+![](https://user-images.githubusercontent.com/6655696/135313804-a5fc0ba2-e56c-4b5e-92fb-65056bbffcee.png)
 
 [corepalette]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/lib/src/core_palette.dart
+[all examples]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/
 [complete example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/complete_example.dart
 [dynamiccolorbuilder example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/dynamic_color_builder_example.dart
 [dynamiccolorplugin.getcorepalette example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/get_core_palette_example.dart
