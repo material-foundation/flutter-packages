@@ -22,7 +22,7 @@ Under the hood, `DynamicColorBuilder` uses a plugin to talk to the Android OS.
 ### Color and color scheme harmonization
 
 Color harmonization solves the problem: "How do we ensure any particular
-Reserved color (i.e. semantic or brand color) look good next to a
+Reserved color (i.e. semantic or brand color) looks good next to a
 user's dynamically-generated color?"
 
 This package provides two extension methods, `Color.harmonizeWith()` and
