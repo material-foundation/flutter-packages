@@ -27,8 +27,8 @@ class CompleteExample extends StatelessWidget {
             primary: corePalette.primary.tone80,
           );
 
-          // Harmonize the dynamic color schemes' error and onError colors (which 
-          // are built in semantic colors).
+          // Harmonize the dynamic color schemes' error and onError colors
+          // (which are built-in semantic colors).
           colorScheme = colorScheme.harmonized();
           darkColorScheme = darkColorScheme.harmonized();
 
