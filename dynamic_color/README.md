@@ -59,7 +59,7 @@ cd example
 flutter run
 ```
 
-![](https://user-images.githubusercontent.com/6655696/135313804-a5fc0ba2-e56c-4b5e-92fb-65056bbffcee.png)
+<img src="https://user-images.githubusercontent.com/6655696/135640136-4067dea1-99de-4693-b583-081e276ec7bf.png" width="400" />
 
 [corepalette]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/lib/src/core_palette.dart
 [all examples]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/
