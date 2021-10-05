@@ -1,7 +1,6 @@
 import 'dart:typed_data';
 
-import 'package:dynamic_color/src/dynamic_color_plugin.dart';
-import 'package:dynamic_color/src/core_palette.dart';
+import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:meta/meta.dart';
@@ -13,7 +12,7 @@ CorePalette generateCorePalette(int Function(int index) generator) =>
     );
 
 /// Static methods used for testing apps with dynamic [CorePalette]s.
-class DynamicColorsTestingUtils {
+class DynamicColorTestingUtils {
   /// Initializes the dynamic color plugin with mock values for testing.
   @visibleForTesting
   static void setMockDynamicColors(CorePalette? colors) {

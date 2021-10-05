@@ -1,16 +1,14 @@
-import 'package:dynamic_color/src/dynamic_color_builder.dart';
-import 'package:dynamic_color/src/core_palette.dart';
+import 'package:dynamic_color/dynamic_color.dart';
+import 'package:dynamic_color/test_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'utils.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   testWidgets('DynamicColorBuilder', (WidgetTester tester) async {
     CorePalette samplePalette = generateCorePalette((i) => 12345);
-    DynamicColorsTestingUtils.setMockDynamicColors(samplePalette);
+    DynamicColorTestingUtils.setMockDynamicColors(samplePalette);
 
     const containerKey = Key('myContainer');
 
