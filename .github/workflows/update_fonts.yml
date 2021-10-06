@@ -1,0 +1,23 @@
+name: Update fonts
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  pull_request:
+  workflow_dispatch: # Enable manual run from Github
+jobs:
+  update:
+    runs-on: $ubuntu-latest
+    steps:
+      - name: Setup Dart SDK
+        uses: dart-lang/setup-dart@v1.2
+      - uses: actions/checkout@v2
+      - run: dart generator/generator.dart
+      - uses: peter-evans/create-pull-request@v3
+        with:
+          branch: create-pull-request/update
+          delete-branch: true
+          title: [create-pull-request] Update fonts
+          body: |
+            Automated changes by [create-pull-request](https://github.com/peter-evans/create-pull-request) GitHub action
+          team-reviewers: maintainers # material-foundation/material-cross-platform
+          labels: 
