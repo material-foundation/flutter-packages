@@ -8,9 +8,10 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Setup Dart SDK
         uses: dart-lang/setup-dart@v1.2
-      - uses: actions/checkout@v2
+      - run: dart pub get
       - run: dart generator/generator.dart
       - uses: peter-evans/create-pull-request@v3
         with:
