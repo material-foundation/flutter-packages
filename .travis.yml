@@ -22,9 +22,8 @@ cache:
   directories:
     - $HOME/shared/.pub-cache
 notifications:
-  email:
-    johnsonmh+github@gmail.com
+  email: johnsonmh+github@gmail.com
 
-# Only building develop means that we don't run two builds for each pull request.
+# Only building main means that we don't run two builds for each pull request.
 branches:
-  only: [develop]
+  only: [main]
