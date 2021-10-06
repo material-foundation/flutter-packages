@@ -1,4 +1,4 @@
-name: Google Fonts Flutter Unit Tests
+name: Tests
 on:
   push:
     branches:
@@ -16,9 +16,9 @@ jobs:
       - name: Clone Flutter repository
         uses: actions/checkout@v2
         with:
-          repository: 'flutter/flutter'
-          ref: 'beta'
-          path: 'flutter'
+          repository: "flutter/flutter"
+          ref: "beta"
+          path: "flutter"
           fetch-depth: 0
       - name: Add Flutter to the PATH for Unix
         if: startsWith(matrix.os, 'macOS') || startsWith(matrix.os, 'ubuntu')
@@ -33,7 +33,7 @@ jobs:
       - name: Clone the google_fonts repository
         uses: actions/checkout@v2
         with:
-          path: 'code'
+          path: "code"
 
       # Analyze, check format, and run tests for the repository.
       - name: Get packages for the Flutter project

@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Enable manual run from Github
 jobs:
   update:
-    runs-on: $ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Setup Dart SDK
         uses: dart-lang/setup-dart@v1.2
