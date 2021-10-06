@@ -10,10 +10,15 @@ import 'package:google_fonts/src/google_fonts_base.dart';
 import 'package:google_fonts/src/google_fonts_descriptor.dart';
 import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:google_fonts/src/google_fonts_variant.dart';
-import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
+import 'package:mockito/mockito.dart';
 
-class MockHttpClient extends Mock implements http.Client {}
+class MockHttpClient extends Mock implements http.Client {
+  Future<http.Response> gets(dynamic uri, {dynamic headers}) {
+    super.noSuchMethod(Invocation.method(#get, [uri], {#headers: headers}));
+    return Future.value(http.Response('', 200));
+  }
+}
 
 const _fakeResponse = 'fake response body - success';
 // The number of bytes in _fakeResponse.
@@ -31,15 +36,18 @@ final _fakeResponseFile = GoogleFontsFile(
 // handler (flutter/assets), that can not be undone, no other tests should be
 // written in this file.
 void main() {
+  late MockHttpClient _httpClient;
+
   setUp(() async {
-    httpClient = MockHttpClient();
+    _httpClient = MockHttpClient();
+    httpClient = _httpClient;
     GoogleFonts.config.allowRuntimeFetching = true;
-    when(httpClient.get(any)).thenAnswer((_) async {
+    when(_httpClient.gets(any)).thenAnswer((_) async {
       return http.Response(_fakeResponse, 200);
     });
 
     // Add Foo-BlackItalic to mock asset bundle.
-    ServicesBinding.instance.defaultBinaryMessenger
+    ServicesBinding.instance!.defaultBinaryMessenger
         .setMockMessageHandler('flutter/assets', (message) {
       final Uint8List encoded =
           utf8.encoder.convert('{"google_fonts/Foo-BlackItalic.ttf":'
@@ -76,7 +84,7 @@ void main() {
     // Call loadFontIfNecessary and verify no http request happens because
     // Foo-BlackItalic is in the asset bundle.
     await loadFontIfNecessary(descriptorInAssets);
-    verifyNever(httpClient.get(anything));
+    verifyNever(_httpClient.gets(anything));
 
     final descriptorNotInAssets = GoogleFontsDescriptor(
       familyWithVariant: GoogleFontsFamilyWithVariant(
@@ -92,6 +100,6 @@ void main() {
     // Call loadFontIfNecessary and verify that an http request happens because
     // Bar-BoldItalic is not in the asset bundle.
     await loadFontIfNecessary(descriptorNotInAssets);
-    verify(httpClient.get(anything)).called(1);
+    verify(_httpClient.gets(anything)).called(1);
   });
 }

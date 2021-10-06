@@ -1,7 +1,7 @@
 # google_fonts
 
-The `google_fonts` package for Flutter allows you to easily use any of the 977 fonts
-(and their variants) from [fonts.google.com](https://fonts.google.com/) in your Flutter app.
+The `google_fonts` package for Flutter allows you to easily use any of the thousands of fonts
+available from [fonts.google.com](https://fonts.google.com/) in your Flutter app.
 
 ## Getting Started
 
@@ -56,7 +56,7 @@ or
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.lato(textStyle: Theme.of(context).textTheme.display1),
+  style: GoogleFonts.lato(textStyle: Theme.of(context).textTheme.headline4),
 ),
 ```
 
@@ -66,7 +66,7 @@ To override the `fontSize`, `fontWeight`, or `fontStyle`:
 Text(
   'This is Google Fonts',
   style: GoogleFonts.lato(
-    textStyle: Theme.of(context).textTheme.display1,
+    textStyle: Theme.of(context).textTheme.headline4,
     fontSize: 48,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.italic,
@@ -80,7 +80,7 @@ You can also use `GoogleFonts.latoTextTheme()` to make or modify an entire text 
 MaterialApp(
   theme: ThemeData(
     textTheme: GoogleFonts.latoTextTheme(
-      Theme.of(context).textTheme,
+      Theme.of(context).textTheme, // If this is not set, then ThemeData.light().textTheme is used.
     ),
   ),
 );

@@ -1,8 +1,25 @@
+## [2.1.0] - 2021-05-14
+
+* Added the latest fonts from fonts.google.com.
+
+## [2.0.0] - 2021-02-26
+
+* Migrated the main library to null safety.
+* Require Dart 2.12 or greater.
+
+## [1.1.2] - 2021-01-25
+
+* Bump dependency constraints for null safety.
+
+## [1.1.1] - 2020-10-02
+
+* Use conditional imports to separate out web from destkop + mobile file_io implementations.
+
 ## [1.1.0] - 2020-05-11
 
-* Increase the flutter SDK dependency to version `1.17` (latest stable). This is needed for updated 
+* Increase the flutter SDK dependency to version `1.17` (latest stable). This is needed for updated
   text theme names and a fix in the engine.
-* Update text theme names. 
+* Update text theme names.
 
 ## [1.0.0] - 2020-04-22
 
@@ -47,7 +64,7 @@
 
 ## [0.4.3] - 2020-04-14
 
-* Add `GoogleFonts.getTextTheme(...)` method for dynamically getting a text theme from a font name. 
+* Add `GoogleFonts.getTextTheme(...)` method for dynamically getting a text theme from a font name.
 
 ## [0.4.2] - 2020-04-14
 
@@ -55,7 +72,7 @@
 
 ## [0.4.1] - 2020-04-13
 
-* Update README to include instructions for how to include licenses for fonts. 
+* Update README to include instructions for how to include licenses for fonts.
 
 ## [0.4.0] - 2020-03-20
 
@@ -64,7 +81,7 @@
 
 ## [0.3.10] - 2020-03-18
 
-Update Fonts API url in generator to add in missing fonts. 
+Update Fonts API url in generator to add in missing fonts.
 
 ## [0.3.9] - 2020-02-13
 
@@ -72,12 +89,12 @@ Update Fonts API url in generator to add in missing fonts.
 
 ## [0.3.8] - 2020-02-10
 
-* Add byte length and checksum verification for font files downloaded. 
+* Add byte length and checksum verification for font files downloaded.
 
 ## [0.3.7] - 2020-02-03
 
 * Fix asset font loading bug
-* Update asset font README instructions 
+* Update asset font README instructions
 
 ## [0.3.6] - 2020-01-31
 
@@ -85,7 +102,7 @@ Update Fonts API url in generator to add in missing fonts.
 
 ## [0.3.5] - 2020-01-23
 
-* Update generator to get most up-to-date urls from fonts.google.com. 
+* Update generator to get most up-to-date urls from fonts.google.com.
 * Add `CONTRIBUTING.md`.
 
 ## [0.3.4] - 2020-01-23
@@ -183,5 +200,5 @@ Update README with import instructions.
 The initial release supports all 960 fonts and variants from fonts.google.com.
 
 ttf files are downloaded via http on demand, and saved to local disk so that they can be loaded
-without making another http request for future font requests. Fonts are loaded asynchronously 
+without making another http request for future font requests. Fonts are loaded asynchronously
 through the font loader and Text widgets that use them are refreshed when they are ready.

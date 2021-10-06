@@ -2,9 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// @dart=2.9
+
 import 'dart:io';
 
-import 'package:console/console.dart';
 import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
 import 'package:mustache/mustache.dart';
@@ -44,12 +45,12 @@ const _success = 'Success!';
 /// connection gets lost while downloading the directories, we just crash. But
 /// that's okay for now, because the generator is only executed in trusted
 /// environments by individual developers.
-Future<String> _getProtoUrl({int initialVersion = 1}) async {
+Future<Uri> _getProtoUrl({int initialVersion = 1}) async {
   var directoryVersion = initialVersion;
 
-  String url(int directoryVersion) {
+  Uri url(int directoryVersion) {
     final paddedVersion = directoryVersion.toString().padLeft(3, '0');
-    return 'http://fonts.gstatic.com/s/f/directory$paddedVersion.pb';
+    return Uri.parse('http://fonts.gstatic.com/s/f/directory$paddedVersion.pb');
   }
 
   var didReachLatestUrl = false;
@@ -73,21 +74,23 @@ Future<String> _getProtoUrl({int initialVersion = 1}) async {
 Future<void> _verifyUrls(Directory fontDirectory) async {
   final totalFonts =
       fontDirectory.family.map((f) => f.fonts.length).reduce((a, b) => a + b);
-  final progressBar = ProgressBar(complete: totalFonts);
 
   final client = http.Client();
+  int i = 1;
   for (final family in fontDirectory.family) {
     for (final font in family.fonts) {
       final urlString =
           'https://fonts.gstatic.com/s/a/${_hashToString(font.file.hash)}.ttf';
-      await _tryUrl(client, urlString, font);
-      progressBar.update(progressBar.current + 1);
+      final url = Uri.parse(urlString);
+      await _tryUrl(client, url, font);
+      print('Verified URL ($i/$totalFonts): $urlString');
+      i += 1;
     }
   }
   client.close();
 }
 
-Future<void> _tryUrl(http.Client client, String url, Font font) async {
+Future<void> _tryUrl(http.Client client, Uri url, Font font) async {
   try {
     final fileContents = await client.get(url);
     final actualFileLength = fileContents.bodyBytes.length;
@@ -180,7 +183,7 @@ String _familyToMethodName(String family) {
   return words.join();
 }
 
-Future<Directory> _readFontsProtoData(String protoUrl) async {
+Future<Directory> _readFontsProtoData(Uri protoUrl) async {
   final fontsProtoFile = await http.get(protoUrl);
   return Directory.fromBuffer(fontsProtoFile.bodyBytes);
 }

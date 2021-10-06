@@ -2,7 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 
@@ -11,11 +10,12 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
-import 'package:path_provider/path_provider.dart';
-import 'package:pedantic/pedantic.dart';
 
 import '../google_fonts.dart';
 import 'asset_manifest.dart';
+import 'file_io.dart' // Stubbed implementation by default.
+    // Concrete implementation if File IO is available.
+    if (dart.library.io) 'file_io_desktop_and_mobile.dart' as file_io;
 import 'google_fonts_descriptor.dart';
 import 'google_fonts_family_with_variant.dart';
 import 'google_fonts_variant.dart';
@@ -25,9 +25,6 @@ import 'google_fonts_variant.dart';
 // not need to be attempted to load again, unless the attempted load resulted
 // in an error.
 final Set<String> _loadedFonts = {};
-
-@visibleForTesting
-bool isWeb = kIsWeb;
 
 @visibleForTesting
 http.Client httpClient = http.Client();
@@ -44,31 +41,28 @@ void clearCache() => _loadedFonts.clear();
 /// This function has a side effect of loading the font into the [FontLoader],
 /// either by network or from the device file system.
 TextStyle googleFontsTextStyle({
-  @required String fontFamily,
-  TextStyle textStyle,
-  Color color,
-  Color backgroundColor,
-  double fontSize,
-  FontWeight fontWeight,
-  FontStyle fontStyle,
-  double letterSpacing,
-  double wordSpacing,
-  TextBaseline textBaseline,
-  double height,
-  Locale locale,
-  Paint foreground,
-  Paint background,
-  List<Shadow> shadows,
-  List<FontFeature> fontFeatures,
-  TextDecoration decoration,
-  Color decorationColor,
-  TextDecorationStyle decorationStyle,
-  double decorationThickness,
-  @required Map<GoogleFontsVariant, GoogleFontsFile> fonts,
+  required String fontFamily,
+  TextStyle? textStyle,
+  Color? color,
+  Color? backgroundColor,
+  double? fontSize,
+  FontWeight? fontWeight,
+  FontStyle? fontStyle,
+  double? letterSpacing,
+  double? wordSpacing,
+  TextBaseline? textBaseline,
+  double? height,
+  Locale? locale,
+  Paint? foreground,
+  Paint? background,
+  List<Shadow>? shadows,
+  List<FontFeature>? fontFeatures,
+  TextDecoration? decoration,
+  Color? decorationColor,
+  TextDecorationStyle? decorationStyle,
+  double? decorationThickness,
+  required Map<GoogleFontsVariant, GoogleFontsFile> fonts,
 }) {
-  assert(fontFamily != null);
-  assert(fonts != null);
-
   textStyle ??= TextStyle();
   textStyle = textStyle.copyWith(
     color: color,
@@ -103,7 +97,7 @@ TextStyle googleFontsTextStyle({
 
   final descriptor = GoogleFontsDescriptor(
     familyWithVariant: familyWithVariant,
-    file: fonts[matchedVariant],
+    file: fonts[matchedVariant]!,
   );
 
   loadFontIfNecessary(descriptor);
@@ -137,7 +131,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   }
 
   try {
-    Future<ByteData> byteData;
+    Future<ByteData?>? byteData;
 
     // Check if this font can be loaded by the pre-bundled assets.
     final assetManifestJson = await assetManifest.json();
@@ -149,15 +143,14 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       byteData = rootBundle.load(assetPath);
     }
     if (await byteData != null) {
-      return _loadFontByteData(familyWithVariantString, byteData);
+      return loadFontByteData(familyWithVariantString, byteData);
     }
 
     // Check if this font can be loaded from the device file system.
-    if (!isWeb) {
-      byteData = _loadFontFromDeviceFileSystem(familyWithVariantString);
-    }
+    byteData = file_io.loadFontFromDeviceFileSystem(familyWithVariantString);
+
     if (await byteData != null) {
-      return _loadFontByteData(familyWithVariantString, byteData);
+      return loadFontByteData(familyWithVariantString, byteData);
     }
 
     // Attempt to load this font via http, unless disallowed.
@@ -167,7 +160,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
         descriptor.file,
       );
       if (await byteData != null) {
-        return _loadFontByteData(familyWithVariantString, byteData);
+        return loadFontByteData(familyWithVariantString, byteData);
       }
     } else {
       throw Exception(
@@ -184,16 +177,18 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 }
 
 /// Loads a font with [FontLoader], given its name and byte-representation.
-Future<void> _loadFontByteData(
+@visibleForTesting
+Future<void> loadFontByteData(
   String familyWithVariantString,
-  Future<ByteData> byteData,
+  Future<ByteData?>? byteData,
 ) async {
-  final anyFontDataFound = byteData != null && await byteData != null;
-  if (anyFontDataFound) {
-    final fontLoader = FontLoader(familyWithVariantString);
-    fontLoader.addFont(byteData);
-    await fontLoader.load();
-  }
+  if (byteData == null) return;
+  final fontData = await byteData;
+  if (fontData == null) return;
+
+  final fontLoader = FontLoader(familyWithVariantString);
+  fontLoader.addFont(Future.value(fontData));
+  await fontLoader.load();
 }
 
 /// Returns [GoogleFontsVariant] from [variantsToCompare] that most closely
@@ -206,8 +201,8 @@ GoogleFontsVariant _closestMatch(
   GoogleFontsVariant sourceVariant,
   Iterable<GoogleFontsVariant> variantsToCompare,
 ) {
-  int bestScore;
-  GoogleFontsVariant bestMatch;
+  int? bestScore;
+  late GoogleFontsVariant bestMatch;
   for (final variantToCompare in variantsToCompare) {
     final score = _computeMatch(sourceVariant, variantToCompare);
     if (bestScore == null || score < bestScore) {
@@ -243,48 +238,15 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
         'File from ${file.url} did not match expected length and checksum.',
       );
     }
-    if (!isWeb) {
-      unawaited(_saveFontToDeviceFileSystem(fontName, response.bodyBytes));
-    }
+
+    _unawaited(
+        file_io.saveFontToDeviceFileSystem(fontName, response.bodyBytes));
+
     return ByteData.view(response.bodyBytes.buffer);
   } else {
     // If that call was not successful, throw an error.
     throw Exception('Failed to load font with url: ${file.url}');
   }
-}
-
-Future<String> get _localPath async {
-  final directory = await getApplicationSupportDirectory();
-  return directory.path;
-}
-
-Future<File> _localFile(String name) async {
-  final path = await _localPath;
-  // We expect only ttf files to be provided to us by the Google Fonts API.
-  // That's why we can be sure a previously saved Google Font is in the ttf
-  // format instead of, for example, otf.
-  return File('$path/$name.ttf');
-}
-
-Future<File> _saveFontToDeviceFileSystem(String name, List<int> bytes) async {
-  final file = await _localFile(name);
-  return file.writeAsBytes(bytes);
-}
-
-Future<ByteData> _loadFontFromDeviceFileSystem(String name) async {
-  try {
-    final file = await _localFile(name);
-    final fileExists = file.existsSync();
-    if (fileExists) {
-      List<int> contents = await file.readAsBytes();
-      if (contents != null && contents.isNotEmpty) {
-        return ByteData.view(Uint8List.fromList(contents).buffer);
-      }
-    }
-  } catch (e) {
-    return null;
-  }
-  return null;
 }
 
 // This logic is taken from the following section of the minikin library, which
@@ -303,9 +265,9 @@ int _computeMatch(GoogleFontsVariant a, GoogleFontsVariant b) {
 
 /// Looks for a matching [familyWithVariant] font, provided the asset manifest.
 /// Returns the path of the font asset if found, otherwise an empty string.
-String _findFamilyWithVariantAssetPath(
+String? _findFamilyWithVariantAssetPath(
   GoogleFontsFamilyWithVariant familyWithVariant,
-  Map<String, List<String>> manifestJson,
+  Map<String, List<String>>? manifestJson,
 ) {
   if (manifestJson == null) return null;
 
@@ -332,3 +294,5 @@ bool _isFileSecure(GoogleFontsFile file, Uint8List bytes) {
   return file.expectedLength == actualFileLength &&
       file.expectedFileHash == actualFileHash;
 }
+
+void _unawaited(Future<void> future) {}

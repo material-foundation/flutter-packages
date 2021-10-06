@@ -35,25 +35,25 @@ class GoogleFonts {
   /// Returns a map where the key is the name of the font family and the value
   /// is the corresponding [GoogleFonts] method.
   static Map<String, TextStyle Function({
-    TextStyle textStyle,
-    Color color,
-    Color backgroundColor,
-    double fontSize,
-    FontWeight fontWeight,
-    FontStyle fontStyle,
-    double letterSpacing,
-    double wordSpacing,
-    TextBaseline textBaseline,
-    double height,
-    Locale locale,
-    Paint foreground,
-    Paint background,
-    List<ui.Shadow> shadows,
-    List<ui.FontFeature> fontFeatures,
-    TextDecoration decoration,
-    Color decorationColor,
-    TextDecorationStyle decorationStyle,
-    double decorationThickness,
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
   })> asMap() => const {
     {{#method}}
     '{{fontFamilyDisplay}}': GoogleFonts.{{methodName}},
@@ -64,7 +64,7 @@ class GoogleFonts {
   ///
   /// Returns a map where the key is the name of the font family and the value
   /// is the corresponding [GoogleFonts] `TextTheme` method.
-  static Map<String, TextTheme Function([TextTheme])> _asMapOfTextThemes() => const {
+  static Map<String, TextTheme Function([TextTheme?])> _asMapOfTextThemes() => const {
     {{#method}}
     '{{fontFamilyDisplay}}': GoogleFonts.{{methodName}}TextTheme,
     {{/method}}
@@ -80,32 +80,31 @@ class GoogleFonts {
   /// Parameter [fontFamily] must not be `null`. Throws if no font by name
   /// [fontFamily] exists.
   static TextStyle getFont(String fontFamily, {
-    TextStyle textStyle,
-    Color color,
-    Color backgroundColor,
-    double fontSize,
-    FontWeight fontWeight,
-    FontStyle fontStyle,
-    double letterSpacing,
-    double wordSpacing,
-    TextBaseline textBaseline,
-    double height,
-    Locale locale,
-    Paint foreground,
-    Paint background,
-    List<ui.Shadow> shadows,
-    List<ui.FontFeature> fontFeatures,
-    TextDecoration decoration,
-    Color decorationColor,
-    TextDecorationStyle decorationStyle,
-    double decorationThickness,
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
   }) {
-    assert(fontFamily != null);
     final fonts = GoogleFonts.asMap();
     if (!fonts.containsKey(fontFamily)) {
       throw Exception("No font family by name '$fontFamily' was found.");
     }
-    return fonts[fontFamily](
+    return fonts[fontFamily]!(
       textStyle: textStyle,
       color: color,
       backgroundColor: backgroundColor,
@@ -137,13 +136,12 @@ class GoogleFonts {
   ///
   /// Parameter [fontFamily] must not be `null`. Throws if no font by name
   /// [fontFamily] exists.
-  static TextTheme getTextTheme(String fontFamily, [TextTheme textTheme]) {
-    assert(fontFamily != null);
+  static TextTheme getTextTheme(String fontFamily, [TextTheme? textTheme]) {
     final fonts = _asMapOfTextThemes();
     if (!fonts.containsKey(fontFamily)) {
       throw Exception("No font family by name '$fontFamily' was found.");
     }
-    return fonts[fontFamily](textTheme);
+    return fonts[fontFamily]!(textTheme);
   }
 
   {{#method}}
@@ -153,25 +151,25 @@ class GoogleFonts {
   /// See:
   ///  * {{docsUrl}}
   static TextStyle {{methodName}}({
-    TextStyle textStyle,
-    Color color,
-    Color backgroundColor,
-    double fontSize,
-    FontWeight fontWeight,
-    FontStyle fontStyle,
-    double letterSpacing,
-    double wordSpacing,
-    TextBaseline textBaseline,
-    double height,
-    Locale locale,
-    Paint foreground,
-    Paint background,
-    List<ui.Shadow> shadows,
-    List<ui.FontFeature> fontFeatures,
-    TextDecoration decoration,
-    Color decorationColor,
-    TextDecorationStyle decorationStyle,
-    double decorationThickness,
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
   }) {
     final fonts = <GoogleFontsVariant, GoogleFontsFile>{
       {{#fontUrls}}
@@ -209,11 +207,11 @@ class GoogleFonts {
   ///
   /// See:
   ///  * {{docsUrl}}
-  static TextTheme {{methodName}}TextTheme([TextTheme textTheme]) {
+  static TextTheme {{methodName}}TextTheme([TextTheme? textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       {{#themeParams}}
-      {{value}}: GoogleFonts.{{methodName}}(textStyle: textTheme?.{{value}}),
+      {{value}}: GoogleFonts.{{methodName}}(textStyle: textTheme.{{value}}),
       {{/themeParams}}
     );
   }
