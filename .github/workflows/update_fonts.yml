@@ -16,8 +16,8 @@ jobs:
         with:
           branch: create-pull-request/update
           delete-branch: true
-          title: [create-pull-request] Update fonts
+          title: Update fonts
           body: |
             Automated changes by [create-pull-request](https://github.com/peter-evans/create-pull-request) GitHub action
           team-reviewers: maintainers # material-foundation/material-cross-platform
-          labels: 
+          labels: automated
