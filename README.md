@@ -5,7 +5,7 @@ available from [fonts.google.com](https://fonts.google.com/) in your Flutter app
 
 ## Getting Started
 
-![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/master/readme_images/main.gif)
+![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/main/readme_images/main.gif)
 
 With the `google_fonts` package, `.ttf` or `.otf` files do not need to be stored in your assets folder and mapped in
 the pubspec. Instead, they can be fetched via HTTP at runtime and cached in the app's file system. This is ideal for development and can be the preferred behaviour for production apps looking to reduce the app bundle size. Still, you may choose to include the font file in the assets, and the Google Fonts package will prioritize pre-bundled files over HTTP fetching.
@@ -106,8 +106,8 @@ The `google_fonts` package will automatically use matching font files in your `p
 you want to use:
 
 1. Download the font files from [https://fonts.google.com](https://fonts.google.com).
-You only need to download the weights and styles you are using for any given family.
-Italic styles will include `Italic` in the filename. Font weights map to file names as follows:
+   You only need to download the weights and styles you are using for any given family.
+   Italic styles will include `Italic` in the filename. Font weights map to file names as follows:
 
 ```dart
 {
@@ -125,17 +125,18 @@ Italic styles will include `Italic` in the filename. Font weights map to file na
 
 2. Move those fonts to a top-level app directory (e.g. `google_fonts`).
 
-![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/master/readme_images/google_fonts_folder.png)
+![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/main/readme_images/google_fonts_folder.png)
 
 3. Ensure that you have listed the folder (e.g. `google_fonts/`) in your `pubspec.yaml` under `assets`.
 
-![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/master/readme_images/google_fonts_pubspec_assets.png)
+![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/main/readme_images/google_fonts_pubspec_assets.png)
 
 Note: Since these files are listed as assets, there is no need to list them in the `fonts` section
 of the `pubspec.yaml`. This can be done because the files are consistently named from the Google Fonts API
 (so be sure not to rename them!)
 
 ### Licensing Fonts
+
 The fonts on [fonts.google.com](https://fonts.google.com/) include license files for each font. For
 example, the [Lato](https://fonts.google.com/specimen/Lato) font comes with an `OFL.txt` file.
 
@@ -143,6 +144,7 @@ Once you've decided on the fonts you want in your published app, you should add 
 licenses to your flutter app's [LicenseRegistry](https://api.flutter.dev/flutter/foundation/LicenseRegistry-class.html).
 
 For example:
+
 ```dart
 void main() {
   LicenseRegistry.addLicense(() async* {
