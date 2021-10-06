@@ -23,6 +23,7 @@ jobs:
         with:
           branch: create-pull-request/update
           delete-branch: true
+          base: main
           title: Update fonts
           body: |
             Automated changes by [create-pull-request](https://github.com/peter-evans/create-pull-request) GitHub action
