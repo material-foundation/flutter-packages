@@ -79,7 +79,7 @@
 - Added ability to load fonts dynamically through `getFont` method.
 - Added `asMap` method which returns a map with font family names mapped to methods.
 
-## 0.3.1] - 2020-03-18
+## 0.3.10 - 2020-03-18
 
 Update Fonts API url in generator to add in missing fonts.
 
