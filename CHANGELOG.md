@@ -27,26 +27,7 @@
 
 ## 0.7.0 - 2020-04-22
 ### Changed
-- Added the following variable fonts:
-
-    * Bellota
-    * Bellota Text
-    * Comic Neue
-    * Crimson Pro
-    * Fira Code
-    * Gotu
-    * Hepta Slab
-    * Inria Sans
-    * Inter
-    * Literata
-    * Manrope
-    * Markazi Text
-    * Public Sans
-    * Sen
-    * Spartan
-    * Viaoda Libre
-
-
+- Added the following variable fonts: Bellota, Bellota Text, Comic Neue, Fira Code, Gotu, Hepta Slab, Inria Sans, Inter, Literata, Manrope, Markazi Text, Public Sans, Sen, Spartan, Viaoda Libre
 
 ## 0.6.2 - 2020-04-17
 ### Changed
@@ -82,9 +63,7 @@
 - Added `asMap` method which returns a map with font family names mapped to methods.
 
 ## 0.3.10 - 2020-03-18
-
 ### Changed
-
 - Update Fonts API url in generator to add in missing fonts.
 
 ## 0.3.9 - 2020-02-13
@@ -146,9 +125,11 @@
 
 - Text theme parameters are now optional positional parameters (breaking change). For example, `GoogleFonts.latoTextTheme(textTheme: TextTheme(...))` is now `GoogleFonts.latoTextTheme(TextTheme(...))`.
 
+
 ## 0.1.0 - 2019-12-06
 ### Changed
 - Generated method names changed (breaking change). For example,
+
 - Text theme support. Every font family now *also* has a `TextTheme` method. For example, the `Lato` font now has `GoogleFonts.latoTextStyle()` and `GoogleFonts.latoTextTheme()`. See README for more examples.
 
 - Refactored implementation, updated READMEs, and usage docs.
