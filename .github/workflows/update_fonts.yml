@@ -18,6 +18,7 @@ jobs:
 
       - run: dart generator/generator.dart
 
+      - run: dart pub global activate cider
       - run: cider log changed 'Added the latest fonts from fonts.google.com'
       - run: cider bump minor
       - run: cider release
