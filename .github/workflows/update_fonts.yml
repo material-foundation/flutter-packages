@@ -2,7 +2,6 @@ name: Update fonts
 on:
   schedule:
     - cron: "0 0 1 * *"
-  pull_request:
   workflow_dispatch: # Enable manual run from Github
 jobs:
   update:
@@ -16,15 +15,15 @@ jobs:
       - run: flutter doctor -v
       - run: flutter pub get
 
-      - run: |
+      - run: dart generator/generator.dart
+      - name: Exit if there are no changes
+        run: |
           if [[ `git status --porcelain -- lib/google_fonts.dart` ]]; then 
             echo lib/google_fonts.dart has been updated
           else 
             echo No changes
             exit 1
           fi
-
-      - run: dart generator/generator.dart
 
       - run: dart pub global activate cider
       - run: cider log changed 'Added the latest fonts from fonts.google.com'
