@@ -1,5 +1,4 @@
 ## 2.1.0 - 2021-05-14
-
 ### Changed
 
 - Added the latest fonts from fonts.google.com.
@@ -43,22 +42,22 @@
 ### Changed
 
 - Added the following variable fonts:
-  - Bellota
-  - Bellota Text
-  - Comic Neue
-  - Crimson Pro
-  - Fira Code
-  - Gotu
-  - Hepta Slab
-  - Inria Sans
-  - Inter
-  - Literata
-  - Manrope
-  - Markazi Text
-  - Public Sans
-  - Sen
-  - Spartan
-  - Viaoda Libre
+    - Bellota
+    - Bellota Text
+    - Comic Neue
+    - Crimson Pro
+    - Fira Code
+    - Gotu
+    - Hepta Slab
+    - Inria Sans
+    - Inter
+    - Literata
+    - Manrope
+    - Markazi Text
+    - Public Sans
+    - Sen
+    - Spartan
+    - Viaoda Libre
 
 ## 0.6.2 - 2020-04-17
 
@@ -131,7 +130,7 @@ Update Fonts API url in generator to add in missing fonts.
 
 ### Changed
 
-- Fix asset font loading bug]
+- Fix asset font loading bug
 
 ### Fixed
 
@@ -165,19 +164,19 @@ Update Fonts API url in generator to add in missing fonts.
 
 - Update font URLs to https to properly support web.
 
-## 0.3.2 - 2019-01-07
+## 0.3.2 - 2020-01-07
 
 ### Fixed
 
 - README image path fixes.
 
-## 0.3.1 - 2019-01-07
+## 0.3.1 - 2020-01-07
 
 ### Fixed
 
 - README fixes.
 
-## 0.3.0 - 2019-01-07
+## 0.3.0 - 2020-01-07
 
 ### Added
 
