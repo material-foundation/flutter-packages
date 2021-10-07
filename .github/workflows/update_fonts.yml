@@ -19,9 +19,9 @@ jobs:
       - name: Exit if there are no changes
         run: |
           if [[ `git status --porcelain -- lib/google_fonts.dart` ]]; then 
-            echo lib/google_fonts.dart has been updated
+            echo lib/google_fonts.dart has been updated.
           else 
-            echo No changes
+            echo No changes. Exiting...
             exit 1
           fi
 
