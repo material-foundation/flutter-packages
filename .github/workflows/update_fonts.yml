@@ -21,7 +21,7 @@ jobs:
       - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
-          committer: material-robot <featherless+materialrobot@google.com>
+          # committer: material-robot <featherless+materialrobot@google.com>
           commit-message: "[automated] update fonts"
           base: main
           branch: create-pull-request/update
