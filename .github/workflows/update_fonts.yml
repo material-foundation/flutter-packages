@@ -1,7 +1,7 @@
 name: Update fonts
 on:
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: "0 0 1 * *"
   pull_request:
   workflow_dispatch: # Enable manual run from Github
 jobs:
@@ -15,6 +15,14 @@ jobs:
           channel: beta
       - run: flutter doctor -v
       - run: flutter pub get
+
+      - run: |
+          if [[ `git status --porcelain -- lib/google_fonts.dart` ]]; then 
+            echo lib/google_fonts.dart has been updated
+          else 
+            echo No changes
+            exit 1
+          fi
 
       - run: dart generator/generator.dart
 
