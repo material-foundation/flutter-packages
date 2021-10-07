@@ -27,7 +27,7 @@ Future<void> main() async {
 
   print('\nGenerating $_generatedFilePath...');
   // await _writeDartFile(_generateDartCode(fontDirectory));
-  await _writeDartFile('test file contents');
+  await _writeDartFile('test file coneeetents');
   print(_success);
 
   print('\nFormatting $_generatedFilePath...');
