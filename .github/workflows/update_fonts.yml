@@ -18,6 +18,10 @@ jobs:
 
       - run: dart generator/generator.dart
 
+      - run: cider log changed 'Added the latest fonts from fonts.google.com'
+      - run: cider bump minor
+      - run: cider release
+
       - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
