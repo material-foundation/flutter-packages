@@ -1,4 +1,23 @@
-## [2.1.0] - 2021-05-14
+## 2.2.0 - 2021-10-07
+### Changed
+- Added the latest fonts from fonts.google.com
+
+## 2.1.0 - 2021-05-14
+### Changed
+- Added the latest fonts from fonts.google.com.
+
+## 2.0.0 - 2021-02-26
+### Changed
+- Migrated the main library to null safety.
+- Require Dart 2.12 or greater.
+
+## 1.1.2 - 2021-01-25
+### Changed
+- Bump dependency constraints for null safety.
+
+## 1.1.1 - 2020-10-02
+### Changed
+- Use conditional imports to separate out web from destkop + mobile `file_io` implementations.
 
 * Added the latest fonts from fonts.google.com.
 
