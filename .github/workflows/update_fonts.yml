@@ -1,0 +1,46 @@
+name: Update fonts
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+  workflow_dispatch: # Enable manual run from Github
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Clone Flutter repository with beta channel
+        uses: subosito/flutter-action@v1.5.3
+        with:
+          channel: beta
+      - run: flutter doctor -v
+      - run: flutter pub get
+
+      - run: dart generator/generator.dart
+      - name: Exit if there are no changes
+        run: |
+          if [[ `git status --porcelain -- lib/google_fonts.dart` ]]; then 
+            echo lib/google_fonts.dart has been updated.
+          else 
+            echo No changes. Exiting...
+            exit 1
+          fi
+
+      - run: dart pub global activate cider
+      - run: cider log changed 'Added the latest fonts from fonts.google.com'
+      - run: cider bump minor
+      - run: cider release
+
+      - uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
+          committer: material-robot <featherless+materialrobot@google.com>
+          commit-message: "[automated] update fonts"
+          base: main
+          branch: create-pull-request/update
+          delete-branch: true
+          author: material-robot <featherless+materialrobot@google.com>
+          title: Update fonts
+          body: | #TODO: add changelog
+            Adds the latest fonts from https://fonts.google.com
+          team-reviewers: google-fonts-flutter-package-maintainers
+          labels: automated
