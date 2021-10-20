@@ -34,9 +34,9 @@ jobs:
       # TODO: Remove when public
       - uses: actions/checkout@v2
         with:
-          repository: material-foundation/dynamic-color-tools
+          repository: material-foundation/material-color-utilities
           token: ${{ secrets.TEMP_PAT }}
-          path: "repos/dynamic-color-tools"
+          path: "repos/material-color-utilities"
 
       - name: Install dependencies
         run: flutter pub get
