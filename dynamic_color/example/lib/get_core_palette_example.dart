@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:dynamic_color/dynamic_color.dart';
+import 'package:material_color_utilities/material_color_utilities.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -55,12 +56,13 @@ class _AdvancedExample2State extends State<AdvancedExample2> {
               Container(
                 width: 100,
                 height: 100,
-                // On Android S+ devices, use the 40 tone of the dynamic primary
-                // tonal palette. Otherwise, default to a 600 shade orange.
-                color: _corePalette?.primary.tone40 ?? Colors.orange.shade600,
+                // On Android S+ devices, use the 40 tone of the dynamic
+                // primary tonal palette. Otherwise, default to a 40 tone
+                // orange (Colors.orange.shade600).
+                color: Color(_corePalette?.primary.get(40) ?? 0xFFFB8C00),
               ),
               Text(
-                  'The square\'s color is ${(_corePalette?.primary.tone40 != null) ? 'dynamic' : 'orange'}'),
+                  'The square\'s color is ${_corePalette != null ? 'dynamic' : 'orange'}'),
             ],
           ),
         ),

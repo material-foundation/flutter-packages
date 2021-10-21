@@ -1,88 +1,84 @@
 import 'dart:io';
 
 import 'package:dynamic_color/dynamic_color.dart';
+import 'package:material_color_utilities/material_color_utilities.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 /// A sample [CorePalette], as obtained by the [DynamicColorPlugin] from the
 /// Android OS.
-const sampleCorePalette = CorePalette(
-  primary: TonalPalette(
-    Color(0xFF000000),
-    Color(0xFF21005E),
-    Color(0xFF380094),
-    Color(0xFF5200CE),
-    Color(0xFF6D23F8),
-    Color(0xFF8752FF),
-    Color(0xFF9F79FF),
-    Color(0xFFB79BFF),
-    Color(0xFFD0BCFF),
-    Color(0xFFEADDFF),
-    Color(0xFFF6EEFF),
-    Color(0xFFFFFBFE),
-    Color(0xFFFFFFFF),
-  ),
-  secondary: TonalPalette(
-    Color(0xFF000000),
-    Color(0xFF1E1635),
-    Color(0xFF332B4B),
-    Color(0xFF4B4263),
-    Color(0xFF63597C),
-    Color(0xFF7C7296),
-    Color(0xFF968BB1),
-    Color(0xFFB1A5CD),
-    Color(0xFFCCC0E8),
-    Color(0xFFE9DDFF),
-    Color(0xFFF6EEFF),
-    Color(0xFFFFFBFE),
-    Color(0xFFFFFFFF),
-  ),
-  tertiary: TonalPalette(
-    Color(0xFF000000),
-    Color(0xFF31101D),
-    Color(0xFF492532),
-    Color(0xFF633b48),
-    Color(0xFF7D5260),
-    Color(0xFF996A79),
-    Color(0xFFB48392),
-    Color(0xFFD29DAD),
-    Color(0xFFEFB7C8),
-    Color(0xFFFFD8E4),
-    Color(0xFFFFECF1),
-    Color(0xFFFCFCFC),
-    Color(0xFFFFFFFF),
-  ),
-  neutral: TonalPalette(
-    Color(0xFF000000),
-    Color(0xFF1C1A22),
-    Color(0xFF322F38),
-    Color(0xFF48454E),
-    Color(0xFF615D67),
-    Color(0xFF79757F),
-    Color(0xFF948F99),
-    Color(0xFFAEA9B4),
-    Color(0xFFCAC4D0),
-    Color(0xFFE6E0EB),
-    Color(0xFFF5EEFA),
-    Color(0xFFFFFBFE),
-    Color(0xFFFFFFFF),
-  ),
-  neutralVariant: TonalPalette(
-    Color(0xFF000000),
-    Color(0xFF1C1B1E),
-    Color(0xFF313033),
-    Color(0xFF484649),
-    Color(0xFF605D62),
-    Color(0xFF79767A),
-    Color(0xFF938F94),
-    Color(0xFFAEAAAE),
-    Color(0xFFCAC5CA),
-    Color(0xFFE6E1E6),
-    Color(0xFFF4EFF3),
-    Color(0xFFFFFBFE),
-    Color(0xFFFFFFFF),
-  ),
-);
+final sampleCorePalette = CorePalette.fromList([
+  // Primary
+  0xFF000000,
+  0xFF21005E,
+  0xFF380094,
+  0xFF5200CE,
+  0xFF6D23F8,
+  0xFF8752FF,
+  0xFF9F79FF,
+  0xFFB79BFF,
+  0xFFD0BCFF,
+  0xFFEADDFF,
+  0xFFF6EEFF,
+  0xFFFFFBFE,
+  0xFFFFFFFF,
+  // Secondary
+  0xFF000000,
+  0xFF1E1635,
+  0xFF332B4B,
+  0xFF4B4263,
+  0xFF63597C,
+  0xFF7C7296,
+  0xFF968BB1,
+  0xFFB1A5CD,
+  0xFFCCC0E8,
+  0xFFE9DDFF,
+  0xFFF6EEFF,
+  0xFFFFFBFE,
+  0xFFFFFFFF,
+  // Tertiary
+  0xFF000000,
+  0xFF31101D,
+  0xFF492532,
+  0xFF633b48,
+  0xFF7D5260,
+  0xFF996A79,
+  0xFFB48392,
+  0xFFD29DAD,
+  0xFFEFB7C8,
+  0xFFFFD8E4,
+  0xFFFFECF1,
+  0xFFFCFCFC,
+  0xFFFFFFFF,
+  // Neutral
+  0xFF000000,
+  0xFF1C1A22,
+  0xFF322F38,
+  0xFF48454E,
+  0xFF615D67,
+  0xFF79757F,
+  0xFF948F99,
+  0xFFAEA9B4,
+  0xFFCAC4D0,
+  0xFFE6E0EB,
+  0xFFF5EEFA,
+  0xFFFFFBFE,
+  0xFFFFFFFF,
+  // Neutral Variant
+  0xFF000000,
+  0xFF1C1B1E,
+  0xFF313033,
+  0xFF484649,
+  0xFF605D62,
+  0xFF79767A,
+  0xFF938F94,
+  0xFFAEAAAE,
+  0xFFCAC5CA,
+  0xFFE6E1E6,
+  0xFFF4EFF3,
+  0xFFFFFBFE,
+  0xFFFFFFFF,
+]);
 
 class CorePaletteVisualization extends StatefulWidget {
   const CorePaletteVisualization({Key? key}) : super(key: key);
@@ -149,16 +145,16 @@ class _RenderCorePalette extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final captionStyle = Theme.of(context).textTheme.caption;
-    List<List<Color>> tones = [
-      corePalette.primary.allTones,
-      corePalette.secondary.allTones,
-      corePalette.tertiary.allTones,
-      corePalette.neutral.allTones,
-      corePalette.neutralVariant.allTones,
+    List<List<int>> colors = [
+      corePalette.primary.asList,
+      corePalette.secondary.asList,
+      corePalette.tertiary.asList,
+      corePalette.neutral.asList,
+      corePalette.neutralVariant.asList,
     ];
     return Column(
-      children: tones.mapIndexed(
-        (List<Color> tones, int i) {
+      children: colors.mapIndexed(
+        (List<int> tones, int i) {
           return Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -171,14 +167,14 @@ class _RenderCorePalette extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 16),
-              ...tones.mapIndexed((Color color, int i) {
-                final toneValue = TonalPalette.toneValues[i];
+              ...tones.mapIndexed((int color, int i) {
+                final toneValue = TonalPalette.commonTones[i];
                 return Container(
                   constraints: const BoxConstraints.tightFor(
                     height: 80,
                     width: 60,
                   ),
-                  color: color,
+                  color: Color(color),
                   child: Center(
                     child: Text(
                       toneValue.toString(),

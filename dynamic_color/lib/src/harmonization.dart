@@ -1,7 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:dynamic_color_tools/dynamic_color_tools.dart';
+import 'package:material_color_utilities/material_color_utilities.dart';
 
 /// Shifts color [from] towards color [to].
 Color _harmonizeColor(Color from, Color to) {

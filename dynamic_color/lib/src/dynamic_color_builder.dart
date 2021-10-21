@@ -1,8 +1,8 @@
+import 'package:material_color_utilities/material_color_utilities.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
 import 'dynamic_color_plugin.dart';
-import 'core_palette.dart';
 
 /// A stateful builder widget that provides a [CorePalette].
 ///
