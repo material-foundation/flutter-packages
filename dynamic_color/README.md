@@ -21,9 +21,8 @@ Under the hood, `DynamicColorBuilder` uses a plugin to talk to the Android OS.
 
 ### Color and color scheme harmonization
 
-Color harmonization solves the problem: "How do we ensure any particular
-Reserved color (i.e. semantic or brand color) looks good next to a
-user's dynamically-generated color?"
+How do we ensure any particular reserved color (i.e. semantic or brand color)
+looks good next to a user's dynamically-generated color?
 
 This package provides two extension methods, `Color.harmonizeWith()` and
 `ColorScheme.harmonized()` to accomplish this.
@@ -32,8 +31,8 @@ This package provides two extension methods, `Color.harmonizeWith()` and
 color, typically `colorScheme.primary`. This leaves the color recognizable
 while harmonizing it.
 
-`ColorScheme.harmonized()` does the same thing, for all semantic colors.
-See [harmonization.dart] for more.
+`ColorScheme.harmonized()` does the same thing, for all `ColorScheme`'s
+semantic colors. See [harmonization.dart] for more.
 
 ## Getting started
 
