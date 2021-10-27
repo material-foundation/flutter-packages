@@ -35,7 +35,7 @@ void main() {
     test('green with white', () {
       Color colorA = Colors.green;
       Color colorB = Colors.white;
-      Color harmonized = const Color(0xff47af52); // Green with a bit of white
+      Color harmonized = const Color(0xff00b26f); // Green with a bit of white
       expect(colorA.harmonizeWith(colorB), harmonized);
     });
 
