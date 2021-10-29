@@ -18,28 +18,30 @@ extension ColorSchemeHarmonization on ColorScheme {
   /// Harmonizes [color] with this [ColorScheme]'s [primary].
   Color _harmonizeWithPrimary(Color color) => _harmonizeColor(color, primary);
 
-  /// Harmonizes semantic [ColorScheme] colors with its [primary] color.
+  /// Harmonizes semantic and custom [ColorScheme] colors with its [primary] color.
   ///
-  /// TODO(guidezpl): link to spec
+  /// Harmonization makes adding and introducing new colors to your app more
+  /// seamless by automatically shifting hue and chroma slightly so that a
+  /// product's colors feel more cohesive with user colors.
   ///
-  /// Semantic colors (i.e. colors with meaning) are [error] and [onError]. Not
-  /// harmonizing them would cause semantic colors to look out of place next to
-  /// dynamic colors.
+  /// Semantic colors (i.e. colors with meaning) include [error] and [onError].
+  /// See https://m3.material.io/styles/color/the-color-system/custom-colors#harmonization
+  /// for more information.
   ///
-  /// Subclasses of [ColorScheme] with additional semantic colors should
-  /// re-implement [harmonized]. For example:
+  /// Subclasses of [ColorScheme] that add custom colors should re-implement
+  /// [harmonized]. For example:
   /// import 'package:dynamic_color/dynamic_color.dart';
   ///
   /// class CustomColorScheme extends ColorScheme {
-  ///   const CustomColorScheme(this.customSemanticColor) : super(...);
+  ///   const CustomColorScheme(this.customYellow) : super(...);
   ///
-  ///   final Color customSemanticColor;
+  ///   final Color customYellow;
   ///
   ///   CustomColorScheme copyWith({ ... }) {}
   ///
   ///   CustomColorScheme harmonized() {
   ///     return copyWith(
-  ///       customSemanticColor: _harmonizeWithPrimary(customSemanticColor),
+  ///       customYellow: _harmonizeWithPrimary(customYellow),
   ///       error: _harmonizeWithPrimary(error),
   ///       onError: _harmonizeWithPrimary(onError),
   ///     );

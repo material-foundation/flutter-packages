@@ -29,28 +29,21 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
-          path: "repos/dynamic_colors"
-
-      # TODO: Remove when public
-      - uses: actions/checkout@v2
-        with:
-          repository: material-foundation/material-color-utilities
-          token: ${{ secrets.TEMP_PAT }}
-          path: "repos/material-color-utilities"
+          path: "repos/dynamic_color"
 
       - name: Install dependencies
         run: flutter pub get
-        working-directory: "repos/dynamic_colors"
+        working-directory: "repos/dynamic_color"
 
       - name: Verify formatting
         run: flutter format --dry-run --set-exit-if-changed .
-        working-directory: "repos/dynamic_colors"
+        working-directory: "repos/dynamic_color"
 
       # Consider passing '--fatal-infos' for slightly stricter analysis.
       - name: Analyze project source
         run: flutter analyze
-        working-directory: "repos/dynamic_colors"
+        working-directory: "repos/dynamic_color"
 
       - name: Run tests
         run: flutter test
-        working-directory: "repos/dynamic_colors"
+        working-directory: "repos/dynamic_color"
