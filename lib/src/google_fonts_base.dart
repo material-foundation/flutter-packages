@@ -25,6 +25,10 @@ import 'google_fonts_variant.dart';
 // in an error.
 final Set<String> _loadedFonts = {};
 
+// When a font is being loaded, it's future is added to this list. When it is
+// done loading, it's future will be removed from this list.
+final List<Future<void>> _pendingFontLoads = [];
+
 @visibleForTesting
 http.Client httpClient = http.Client();
 
@@ -33,6 +37,10 @@ AssetManifest assetManifest = AssetManifest();
 
 @visibleForTesting
 void clearCache() => _loadedFonts.clear();
+
+Future<List<void>> pendingFontLoadsInternal() async {
+  return Future.wait(_pendingFontLoads);
+}
 
 /// Creates a [TextStyle] that either uses the [fontFamily] for the requested
 /// GoogleFont, or falls back to the pre-bundled [fontFamily].
@@ -99,7 +107,9 @@ TextStyle googleFontsTextStyle({
     file: fonts[matchedVariant]!,
   );
 
-  loadFontIfNecessary(descriptor);
+  final loadingFuture = loadFontIfNecessary(descriptor);
+  _pendingFontLoads.add(loadingFuture);
+  loadingFuture.then((_) => _pendingFontLoads.remove(loadingFuture));
 
   return textStyle.copyWith(
     fontFamily: familyWithVariant.toString(),

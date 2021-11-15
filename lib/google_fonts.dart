@@ -30,6 +30,19 @@ class GoogleFonts {
   /// ```
   static final config = _Config();
 
+  /// Returns the list of Futures for the fonts being loaded.
+  /// 
+  /// To wait for all the fonts requested thus far to finish loading, call 
+  /// `await pendingFontLoads()`.
+  ///
+  /// Example:
+  /// ```dart
+  /// GoogleFonts.lato();
+  /// GoogleFonts.pacifico();
+  /// await pendingFontLoads(); // <-- waits until Lato and pacifico files have loaded.
+  /// ```
+  static Future<List<void>> pendingFontLoads() => pendingFontLoadsInternal();
+
   /// Get a map of all available fonts.
   ///
   /// Returns a map where the key is the name of the font family and the value
