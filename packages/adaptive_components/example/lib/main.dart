@@ -8,13 +8,15 @@ import 'adaptive_column_example.dart';
 import 'adaptive_container_example.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Adaptive Navigation Scaffold Demo',
       home: DemoSelector(),
     );
@@ -22,6 +24,8 @@ class MyApp extends StatelessWidget {
 }
 
 class DemoSelector extends StatelessWidget {
+  const DemoSelector({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,30 +34,30 @@ class DemoSelector extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: Text('Adaptive Column'),
+              child: const Text('Adaptive Column'),
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
-                      return AdaptiveColumnsExample();
+                      return const AdaptiveColumnsExample();
                     },
                   ),
                 );
               },
             ),
             ElevatedButton(
-              child: Text('Adaptive Container'),
+              child: const Text('Adaptive Container'),
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
-                      return AdaptiveContainerExample();
+                      return const AdaptiveContainerExample();
                     },
                   ),
                 );
               },
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
           ],
         ),
       ),

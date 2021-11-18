@@ -1,7 +1,7 @@
 name: adaptive_navigation_example
 description: An example to show how to use the adaptive_navigation_scaffold
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
 
@@ -16,6 +16,7 @@ dependencies:
   adaptive_breakpoints: ^0.0.4
 
 dev_dependencies:
+  flutter_lints: ^1.0.4
   flutter_test:
     sdk: flutter
 

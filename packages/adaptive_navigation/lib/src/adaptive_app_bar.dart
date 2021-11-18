@@ -4,6 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
+import 'package:flutter/services.dart';
 
 /// AdaptiveAppBar has a leading width of 72.0. Everything else is the same as
 /// [AppBar].
@@ -20,10 +21,8 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.shadowColor,
     this.shape,
     this.backgroundColor,
-    this.brightness,
     this.iconThemeData,
     this.actionsIconThemeData,
-    this.textTheme,
     this.primary = true,
     this.centerTitle,
     this.excludeHeaderSemantics = false,
@@ -32,6 +31,9 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.bottomOpacity = 1.0,
     this.toolbarHeight,
     this.leadingWidth,
+    this.toolbarTextStyle,
+    this.titleTextStyle,
+    this.systemOverlayStyle,
   })  : assert(elevation == null || elevation >= 0.0),
         preferredSize = Size.fromHeight(toolbarHeight ??
             kToolbarHeight + (bottom?.preferredSize.height ?? 0.0)),
@@ -47,10 +49,8 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Color? shadowColor;
   final ShapeBorder? shape;
   final Color? backgroundColor;
-  final Brightness? brightness;
   final IconThemeData? iconThemeData;
   final IconThemeData? actionsIconThemeData;
-  final TextTheme? textTheme;
   final bool primary;
   final bool? centerTitle;
   final bool excludeHeaderSemantics;
@@ -61,6 +61,9 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Size preferredSize;
   final double? toolbarHeight;
   final double? leadingWidth;
+  final TextStyle? toolbarTextStyle;
+  final TextStyle? titleTextStyle;
+  final SystemUiOverlayStyle? systemOverlayStyle;
 
   @override
   Widget build(BuildContext context) {
@@ -76,10 +79,8 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
       shadowColor: shadowColor,
       shape: shape,
       backgroundColor: backgroundColor,
-      brightness: brightness,
       iconTheme: iconThemeData,
       actionsIconTheme: actionsIconThemeData,
-      textTheme: textTheme,
       primary: primary,
       centerTitle: centerTitle,
       excludeHeaderSemantics: excludeHeaderSemantics,
@@ -91,6 +92,9 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
       // This needs to depend on whether the rail is showing or not.
       leadingWidth:
           getWindowType(context) == AdaptiveWindowType.medium ? 72.0 : 56.0,
+      toolbarTextStyle: toolbarTextStyle,
+      titleTextStyle: titleTextStyle,
+      systemOverlayStyle: systemOverlayStyle,
     );
   }
 }

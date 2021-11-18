@@ -2,10 +2,12 @@ import 'package:adaptive_navigation/adaptive_navigation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: DefaultScaffoldDemo()));
+  runApp(const MaterialApp(home: DefaultScaffoldDemo()));
 }
 
 class DefaultScaffoldDemo extends StatefulWidget {
+  const DefaultScaffoldDemo({Key? key}) : super(key: key);
+
   @override
   _DefaultScaffoldDemoState createState() => _DefaultScaffoldDemoState();
 }
@@ -20,10 +22,10 @@ class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
     return AdaptiveNavigationScaffold(
       selectedIndex: 0,
       destinations: _allDestinations.sublist(0, _destinationCount),
-      appBar: AdaptiveAppBar(title: Text('Default Demo')),
+      appBar: AdaptiveAppBar(title: const Text('Default Demo')),
       body: _body(),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         onPressed: () {},
       ),
       fabInRail: _fabInRail,

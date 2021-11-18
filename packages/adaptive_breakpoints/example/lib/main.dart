@@ -2,6 +2,8 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 
@@ -10,6 +12,8 @@ void main() {
 }
 
 class AdaptiveBreakpointsExample extends StatelessWidget {
+  const AdaptiveBreakpointsExample({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,46 +21,47 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
         body: Column(
           children: [
             _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(xs: true),
+              adaptiveConstraints: const _AdaptiveConstraints(xs: true),
               color: Colors.red,
-              child: Text('This is an extra small window'),
+              child: const Text('This is an extra small window'),
             ),
             _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(sm: true),
+              adaptiveConstraints: const _AdaptiveConstraints(sm: true),
               color: Colors.orange,
-              child: Text('This is a small window'),
+              child: const Text('This is a small window'),
             ),
             _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(md: true),
+              adaptiveConstraints: const _AdaptiveConstraints(md: true),
               color: Colors.yellow,
-              child: Text('This is a medium window'),
+              child: const Text('This is a medium window'),
             ),
             _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(lg: true),
+              adaptiveConstraints: const _AdaptiveConstraints(lg: true),
               color: Colors.green,
-              child: Text('This is a large window'),
+              child: const Text('This is a large window'),
             ),
             _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(xl: true),
+              adaptiveConstraints: const _AdaptiveConstraints(xl: true),
               color: Colors.blue,
-              child: Text('This is an extra large window'),
+              child: const Text('This is an extra large window'),
             ),
             _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(
+              adaptiveConstraints: const _AdaptiveConstraints(
                 xs: true,
                 sm: true,
               ),
               color: Colors.indigo,
-              child: Text('This is a small or extra small window'),
+              child: const Text('This is a small or extra small window'),
             ),
             _AdaptiveContainer(
-              adaptiveConstraints: _AdaptiveConstraints(
+              adaptiveConstraints: const _AdaptiveConstraints(
                 md: true,
                 lg: true,
                 xl: true,
               ),
               color: Colors.pink,
-              child: Text('This is a medium, large, or extra large window'),
+              child:
+                  const Text('This is a medium, large, or extra large window'),
             ),
           ],
         ),

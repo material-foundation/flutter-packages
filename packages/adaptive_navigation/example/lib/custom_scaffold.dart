@@ -2,6 +2,8 @@ import 'package:adaptive_navigation/adaptive_navigation.dart';
 import 'package:flutter/material.dart';
 
 class CustomScaffoldDemo extends StatefulWidget {
+  const CustomScaffoldDemo({Key? key}) : super(key: key);
+
   @override
   _CustomScaffoldDemoState createState() => _CustomScaffoldDemoState();
 }
@@ -19,7 +21,7 @@ class _CustomScaffoldDemoState extends State<CustomScaffoldDemo> {
       appBar: AdaptiveAppBar(title: const Text('Custom Demo')),
       body: _body(),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         onPressed: () {},
       ),
       navigationTypeResolver: (context) {

@@ -6,10 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:adaptive_components/adaptive_components.dart';
 
 void main() {
-  runApp(AdaptiveColumnsExample());
+  runApp(const AdaptiveColumnsExample());
 }
 
 class AdaptiveColumnsExample extends StatelessWidget {
+  const AdaptiveColumnsExample({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,113 +19,114 @@ class AdaptiveColumnsExample extends StatelessWidget {
         body: AdaptiveColumn(
           children: [
             AdaptiveContainer(
-              constraints: AdaptiveConstraints.xsmall(),
+              constraints: const AdaptiveConstraints.xsmall(),
               columnSpan: 2,
               color: Colors.red,
-              child: Text('This is an extra small window'),
+              child: const Text('This is an extra small window'),
             ),
             AdaptiveContainer(
-              constraints: AdaptiveConstraints.small(),
+              constraints: const AdaptiveConstraints.small(),
               columnSpan: 2,
               color: Colors.orange,
-              child: Text('This is a small window'),
+              child: const Text('This is a small window'),
             ),
             AdaptiveContainer(
-              constraints: AdaptiveConstraints.medium(),
+              constraints: const AdaptiveConstraints.medium(),
               columnSpan: 2,
               color: Colors.yellow,
-              child: Text('This is a medium window'),
+              child: const Text('This is a medium window'),
             ),
             AdaptiveContainer(
-              constraints: AdaptiveConstraints.large(),
+              constraints: const AdaptiveConstraints.large(),
               columnSpan: 2,
               color: Colors.green,
-              child: Text('This is a large window'),
+              child: const Text('This is a large window'),
             ),
             AdaptiveContainer(
-              constraints: AdaptiveConstraints.xlarge(),
+              constraints: const AdaptiveConstraints.xlarge(),
               columnSpan: 2,
               color: Colors.blue,
-              child: Text('This is an extra large window'),
+              child: const Text('This is an extra large window'),
             ),
             AdaptiveContainer(
-              constraints: AdaptiveConstraints.xsmall(
+              constraints: const AdaptiveConstraints.xsmall(
                 xsmall: true,
                 small: true,
               ),
               columnSpan: 2,
               color: Colors.indigo,
-              child: Text('This is a small or extra small window'),
+              child: const Text('This is a small or extra small window'),
             ),
             AdaptiveContainer(
-              constraints: AdaptiveConstraints.medium(
+              constraints: const AdaptiveConstraints.medium(
                 medium: true,
                 large: true,
                 xlarge: true,
               ),
               columnSpan: 2,
               color: Colors.pink,
-              child: Text('This is a medium, large, or extra large window'),
+              child:
+                  const Text('This is a medium, large, or extra large window'),
             ),
             AdaptiveContainer(
               columnSpan: 12,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 6,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 6,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 4,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 4,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 4,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 2,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 2,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 2,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 2,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 2,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
             AdaptiveContainer(
               columnSpan: 2,
               color: Colors.black,
-              child: Text('This is for every screen size'),
+              child: const Text('This is for every screen size'),
             ),
           ],
         ),

@@ -4,13 +4,15 @@ import 'custom_scaffold.dart';
 import 'default_scaffold.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Adaptive Navigation Scaffold Demo',
       home: DemoSelector(),
     );
@@ -18,6 +20,8 @@ class MyApp extends StatelessWidget {
 }
 
 class DemoSelector extends StatelessWidget {
+  const DemoSelector({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,25 +30,25 @@ class DemoSelector extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: Text('Default Scaffold'),
+              child: const Text('Default Scaffold'),
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
-                      return DefaultScaffoldDemo();
+                      return const DefaultScaffoldDemo();
                     },
                   ),
                 );
               },
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             ElevatedButton(
-              child: Text('Custom Scaffold'),
+              child: const Text('Custom Scaffold'),
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
-                      return CustomScaffoldDemo();
+                      return const CustomScaffoldDemo();
                     },
                   ),
                 );
