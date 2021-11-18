@@ -206,6 +206,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
             includeBaseDestinationsInMenu ? 0 : bottomNavigationOverflow)
         : <AdaptiveScaffoldDestination>[];
     return Scaffold(
+      key: key,
       body: body,
       appBar: appBar,
       drawer: drawerDestinations.isEmpty
@@ -238,6 +239,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
             includeBaseDestinationsInMenu ? 0 : railDestinationsOverflow)
         : <AdaptiveScaffoldDestination>[];
     return Scaffold(
+      key: key,
       appBar: appBar,
       drawer: drawerDestinations.isEmpty
           ? null
@@ -286,6 +288,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
 
   Widget _buildNavigationDrawerScaffold() {
     return Scaffold(
+      key: key,
       body: body,
       appBar: appBar,
       drawer: Drawer(
@@ -346,6 +349,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
         ),
         Expanded(
           child: Scaffold(
+            key: key,
             appBar: appBar,
             body: body,
             floatingActionButton: floatingActionButton,

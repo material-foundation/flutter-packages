@@ -1,3 +1,7 @@
+# [0.0.5] - November 18, 2021
+
+Add missing key to Scaffold widgets.
+
 # [0.0.4] - July 14, 2021
 
 Adopt `flutter_lints` and migrate from `RaisedButton` to `ElevatedButton`.
