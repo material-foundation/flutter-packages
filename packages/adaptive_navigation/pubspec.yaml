@@ -1,6 +1,6 @@
 name: adaptive_navigation
 description: A component to be used in place of the Scaffold widget when you want automatic switching between Navigation Rail and Bottom Navigation Bar.
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/material-components/material-components-flutter-adaptive
 
 environment:
