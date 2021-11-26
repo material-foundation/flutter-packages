@@ -26,8 +26,8 @@ class GoogleFontsVariant {
   ///
   /// See [GoogleFontsVariant.toApiFilenamePart] for the inverse function.
   GoogleFontsVariant.fromApiFilenamePart(String filenamePart)
-      : this.fontWeight = _extractFontWeightFromApiFilenamePart(filenamePart),
-        this.fontStyle = _extractFontStyleFromApiFilenamePart(filenamePart);
+      : fontWeight = _extractFontWeightFromApiFilenamePart(filenamePart),
+        fontStyle = _extractFontStyleFromApiFilenamePart(filenamePart);
 
   /// Creates a [GoogleFontsVariant] from a Google Fonts API specific
   /// variant name.
@@ -40,11 +40,11 @@ class GoogleFontsVariant {
   ///
   /// See [GoogleFontsVariant.toString] for the inverse function.
   GoogleFontsVariant.fromString(String variantString)
-      : this.fontWeight = FontWeight.values[variantString == _regular ||
+      : fontWeight = FontWeight.values[variantString == _regular ||
                 variantString == _italic
             ? 3
             : (int.parse(variantString.replaceAll(_italic, '')) ~/ 100) - 1],
-        this.fontStyle = variantString.contains(_italic)
+        fontStyle = variantString.contains(_italic)
             ? FontStyle.italic
             : FontStyle.normal;
 

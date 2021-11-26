@@ -62,7 +62,7 @@ TextStyle googleFontsTextStyle({
   double? decorationThickness,
   required Map<GoogleFontsVariant, GoogleFontsFile> fonts,
 }) {
-  textStyle ??= TextStyle();
+  textStyle ??= const TextStyle();
   textStyle = textStyle.copyWith(
     color: color,
     backgroundColor: backgroundColor,
@@ -163,8 +163,8 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       }
     } else {
       throw Exception(
-        "GoogleFonts.config.allowRuntimeFetching is false but font $fontName was not "
-        "found in the application assets. Ensure $fontName.otf exists in a "
+        'GoogleFonts.config.allowRuntimeFetching is false but font $fontName was not '
+        'found in the application assets. Ensure $fontName.otf exists in a '
         "folder that is included in your pubspec's assets.",
       );
     }
