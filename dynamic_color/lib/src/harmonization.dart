@@ -24,7 +24,7 @@ extension ColorSchemeHarmonization on ColorScheme {
   /// seamless by automatically shifting hue and chroma slightly so that a
   /// product's colors feel more cohesive with user colors.
   ///
-  /// Semantic colors (i.e. colors with meaning) include [error] and [onError].
+  /// Semantic colors (i.e. colors with meaning) include colors such as [error].
   /// See https://m3.material.io/styles/color/the-color-system/custom-colors#harmonization
   /// for more information.
   ///
@@ -44,6 +44,8 @@ extension ColorSchemeHarmonization on ColorScheme {
   ///       customYellow: _harmonizeWithPrimary(customYellow),
   ///       error: _harmonizeWithPrimary(error),
   ///       onError: _harmonizeWithPrimary(onError),
+  ///       errorContainer: _harmonizeWithPrimary(errorContainer),
+  ///       onErrorContainer: _harmonizeWithPrimary(onErrorContainer),
   ///     );
   ///   }
   /// }
@@ -52,6 +54,8 @@ extension ColorSchemeHarmonization on ColorScheme {
     return copyWith(
       error: _harmonizeWithPrimary(error),
       onError: _harmonizeWithPrimary(onError),
+      errorContainer: _harmonizeWithPrimary(errorContainer),
+      onErrorContainer: _harmonizeWithPrimary(errorContainer),
     );
   }
 }

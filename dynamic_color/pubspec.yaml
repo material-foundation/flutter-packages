@@ -1,11 +1,11 @@
 name: dynamic_color
 description: Flutter package to obtain dynamic colors on Android S+ and create harmonized color schemes.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/material-foundation/material-dynamic-color-flutter
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.20.0"
+  flutter: ">=2.6.0-0"
 
 dependencies:
   flutter:
