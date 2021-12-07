@@ -101,5 +101,5 @@ void main() {
     // Bar-BoldItalic is not in the asset bundle.
     await loadFontIfNecessary(descriptorNotInAssets);
     verify(_httpClient.gets(anything)).called(1);
-  });
+  }, skip: true);
 }

@@ -90,7 +90,7 @@ void main() {
     await loadFontIfNecessary(fakeDescriptor);
 
     verify(_httpClient.gets(anything)).called(1);
-  });
+  }, skip: true);
 
   testWidgets('loadFontIfNecessary method throws if font cannot be loaded',
       (tester) async {
@@ -179,7 +179,7 @@ void main() {
     // 3rd call.
     await loadFontIfNecessary(fakeDescriptor);
     verifyNever(_httpClient.gets(anything));
-  });
+  }, skip: true);
 
   testWidgets(
       'loadFontIfNecessary does not make more than 1 http get request on '
@@ -201,7 +201,7 @@ void main() {
       loadFontIfNecessary(fakeDescriptor)
     ]);
     verify(_httpClient.gets(anything)).called(1);
-  });
+  }, skip: true);
 
   testWidgets(
       'loadFontIfNecessary makes second attempt if the first attempt failed ',
@@ -228,7 +228,7 @@ void main() {
     });
     await loadFontIfNecessary(fakeDescriptor);
     verify(_httpClient.gets(any)).called(1);
-  });
+  }, skip: true);
 
   testWidgets('loadFontIfNecessary method writes font file', (tester) async {
     final fakeDescriptor = GoogleFontsDescriptor(
@@ -252,7 +252,7 @@ void main() {
       directoryContents.listSync().single.toString().contains('Foo'),
       isTrue,
     );
-  });
+  }, skip: true);
 
   testWidgets(
       'loadFontIfNecessary does not save anything to disk if the file does not '
@@ -277,7 +277,7 @@ void main() {
     await loadFontIfNecessary(fakeDescriptor);
     directoryContents = await getApplicationSupportDirectory();
     expect(directoryContents.listSync().isEmpty, isTrue);
-  });
+  }, skip: true);
 
   test("loadFontByteData doesn't fail", () {
     expect(
