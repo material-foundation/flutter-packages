@@ -99,6 +99,13 @@ MaterialApp(
 );
 ```
 
+Please note that for macOS network fetching, the following must be present in the relevant .entitlements file:
+
+```
+<key>com.apple.security.network.client</key>
+<true/>
+```
+
 ### Bundling font files in your application's assets
 
 The `google_fonts` package will automatically use matching font files in your `pubspec.yaml`'s
