@@ -508,8 +508,8 @@ void main() {
 
   testWidgets('decoration is honored when passed in via the TextStyle param',
       (tester) async {
-    final decoration = TextDecoration.underline;
-    final textStyle = TextStyle(decoration: decoration);
+    const decoration = TextDecoration.underline;
+    const textStyle = TextStyle(decoration: decoration);
     final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
 
     expect(outputTextStyle.decoration, equals(decoration));
@@ -517,7 +517,7 @@ void main() {
 
   testWidgets('decoration is honored when passed in as a top-level param',
       (tester) async {
-    final decoration = TextDecoration.overline;
+    const decoration = TextDecoration.overline;
     final outputTextStyle = GoogleFonts.rancho(decoration: decoration);
 
     expect(outputTextStyle.decoration, equals(decoration));
@@ -526,9 +526,9 @@ void main() {
   testWidgets(
       'decoration from the top-level param takes precedence over '
       'decoration from the TextStyle param', (tester) async {
-    final decoration1 = TextDecoration.underline;
-    final decoration2 = TextDecoration.overline;
-    final textStyle = TextStyle(decoration: decoration1);
+    const decoration1 = TextDecoration.underline;
+    const decoration2 = TextDecoration.overline;
+    const textStyle = TextStyle(decoration: decoration1);
     final outputTextStyle = GoogleFonts.rancho(
       textStyle: textStyle,
       decoration: decoration2,
