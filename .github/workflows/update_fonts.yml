@@ -31,9 +31,9 @@ jobs:
       - run: cider bump minor
       - run: cider release
 
-      - name: Read added_fonts file
+      - name: Read fonts_latest_added file
         id: getaddedfonts
-        run: echo "::set-output name=added_fonts::$(cat generator/added_fonts)"
+        run: echo "::set-output name=fonts_latest_added::$(cat generator/fonts_latest_added)"
 
       - uses: peter-evans/create-pull-request@v3
         with:
@@ -47,6 +47,6 @@ jobs:
           title: Update fonts
           body: |
             Adds the latest fonts from [Google Fonts](https://fonts.google.com):
-            ${{ steps.getaddedfonts.outputs.added_fonts }}
+            ${{ steps.getaddedfonts.outputs.fonts_latest_added }}
           team-reviewers: google-fonts-flutter-package-maintainers
           labels: automated
