@@ -12,11 +12,26 @@ import 'package:google_fonts/src/google_fonts_family_with_variant.dart';
 import 'package:google_fonts/src/google_fonts_variant.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';
+import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
+import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockHttpClient extends Mock implements http.Client {
   Future<http.Response> gets(dynamic uri, {dynamic headers}) {
     super.noSuchMethod(Invocation.method(#get, [uri], {#headers: headers}));
     return Future.value(http.Response('', 200));
+  }
+}
+
+class FakePathProviderPlatform extends Fake
+    with MockPlatformInterfaceMixin
+    implements PathProviderPlatform {
+  FakePathProviderPlatform(this._applicationSupportPath);
+
+  final String _applicationSupportPath;
+
+  @override
+  Future<String?> getApplicationSupportPath() async {
+    return _applicationSupportPath;
   }
 }
 
@@ -55,23 +70,15 @@ void main() {
       return Future.value(encoded.buffer.asByteData());
     });
 
-    // The following snippet pulled from
-    //  * https://flutter.dev/docs/cookbook/persistence/reading-writing-files#testing
     final directory = await Directory.systemTemp.createTemp();
-    const MethodChannel('plugins.flutter.io/path_provider')
-        .setMockMethodCallHandler((methodCall) async {
-      if (methodCall.method == 'getApplicationSupportDirectory') {
-        return directory.path;
-      }
-      return null;
-    });
+    PathProviderPlatform.instance = FakePathProviderPlatform(directory.path);
   });
 
   testWidgets(
       'loadFontIfNecessary method does nothing if the font is in the '
       'Asset Manifest', (tester) async {
     final descriptorInAssets = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
+      familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
         googleFontsVariant: GoogleFontsVariant(
           fontWeight: FontWeight.w900,
@@ -87,7 +94,7 @@ void main() {
     verifyNever(_httpClient.gets(anything));
 
     final descriptorNotInAssets = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
+      familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Bar',
         googleFontsVariant: GoogleFontsVariant(
           fontWeight: FontWeight.w700,

@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
@@ -13,6 +14,8 @@ import 'package:google_fonts/src/google_fonts_variant.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
+import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockHttpClient extends Mock implements http.Client {
   Future<http.Response> gets(dynamic uri, {dynamic headers}) {
@@ -22,6 +25,19 @@ class MockHttpClient extends Mock implements http.Client {
 }
 
 class MockAssetManifest extends Mock implements AssetManifest {}
+
+class FakePathProviderPlatform extends Fake
+    with MockPlatformInterfaceMixin
+    implements PathProviderPlatform {
+  FakePathProviderPlatform(this._applicationSupportPath);
+
+  final String _applicationSupportPath;
+
+  @override
+  Future<String?> getApplicationSupportPath() async {
+    return _applicationSupportPath;
+  }
+}
 
 const _fakeResponse = 'fake response body - success';
 // The number of bytes in _fakeResponse.
@@ -36,7 +52,7 @@ final _fakeResponseFile = GoogleFontsFile(
 
 var printLog = <String>[];
 
-void overridePrint(Future<Null> testFn()) => () {
+void overridePrint(Future<void> Function() testFn) => () {
       var spec = ZoneSpecification(print: (_, __, ___, msg) {
         // Add to log instead of printing to stdout
         printLog.add(msg);
@@ -46,8 +62,9 @@ void overridePrint(Future<Null> testFn()) => () {
 
 void main() {
   late Directory directory;
-
   late MockHttpClient _httpClient;
+
+  TestWidgetsFlutterBinding.ensureInitialized();
 
   setUp(() async {
     _httpClient = MockHttpClient();
@@ -58,16 +75,8 @@ void main() {
       return http.Response(_fakeResponse, 200);
     });
 
-    // The following snippet pulled from
-    //  * https://flutter.dev/docs/cookbook/persistence/reading-writing-files#testing
     directory = await Directory.systemTemp.createTemp();
-    const MethodChannel('plugins.flutter.io/path_provider')
-        .setMockMethodCallHandler((methodCall) async {
-      if (methodCall.method == 'getApplicationSupportDirectory') {
-        return directory.path;
-      }
-      return null;
-    });
+    PathProviderPlatform.instance = FakePathProviderPlatform(directory.path);
   });
 
   tearDown(() {
@@ -78,7 +87,7 @@ void main() {
 
   testWidgets('loadFontIfNecessary method calls http get', (tester) async {
     final fakeDescriptor = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
+      familyWithVariant: const GoogleFontsFamilyWithVariant(
           family: 'Foo',
           googleFontsVariant: GoogleFontsVariant(
             fontWeight: FontWeight.w400,
@@ -100,7 +109,7 @@ void main() {
     });
 
     final descriptorInAssets = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
+      familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
         googleFontsVariant: GoogleFontsVariant(
           fontWeight: FontWeight.w900,
@@ -123,7 +132,7 @@ void main() {
 
   testWidgets('does not call http if config is false', (tester) async {
     final fakeDescriptor = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
+      familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
         googleFontsVariant: GoogleFontsVariant(
           fontWeight: FontWeight.w400,
@@ -141,7 +150,7 @@ void main() {
       expect(printLog.length, 1);
       expect(
         printLog[0],
-        startsWith("google_fonts was unable to load font Foo-Regular"),
+        startsWith('google_fonts was unable to load font Foo-Regular'),
       );
       expect(
         printLog[0],
@@ -158,7 +167,7 @@ void main() {
       'loadFontIfNecessary method does not make http get request on '
       'subsequent calls', (tester) async {
     final fakeDescriptor = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
+      familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
         googleFontsVariant: GoogleFontsVariant(
           fontWeight: FontWeight.w400,
@@ -185,7 +194,7 @@ void main() {
       'loadFontIfNecessary does not make more than 1 http get request on '
       'parallel calls', (tester) async {
     final fakeDescriptor = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
+      familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
         googleFontsVariant: GoogleFontsVariant(
           fontWeight: FontWeight.w400,
@@ -207,7 +216,7 @@ void main() {
       'loadFontIfNecessary makes second attempt if the first attempt failed ',
       (tester) async {
     final fakeDescriptor = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
+      familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
         googleFontsVariant: GoogleFontsVariant(
           fontWeight: FontWeight.w400,
@@ -232,7 +241,7 @@ void main() {
 
   testWidgets('loadFontIfNecessary method writes font file', (tester) async {
     final fakeDescriptor = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
+      familyWithVariant: const GoogleFontsFamilyWithVariant(
           family: 'Foo',
           googleFontsVariant: GoogleFontsVariant(
             fontWeight: FontWeight.w400,
@@ -261,7 +270,7 @@ void main() {
       return http.Response('malicious intercepted response', 200);
     });
     final fakeDescriptor = GoogleFontsDescriptor(
-      familyWithVariant: GoogleFontsFamilyWithVariant(
+      familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
         googleFontsVariant: GoogleFontsVariant(
           fontWeight: FontWeight.w400,
@@ -295,7 +304,7 @@ void main() {
 
     expect(
       () async => loadFontByteData('fontFamily',
-          Future.delayed(Duration(milliseconds: 100), () => null)),
+          Future.delayed(const Duration(milliseconds: 100), () => null)),
       returnsNormally,
     );
   });
