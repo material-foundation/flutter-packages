@@ -27,12 +27,8 @@ Future<void> main() async {
   await _verifyUrls(fontDirectory);
   print(_success);
 
-  print('\nGenerating the list of added fonts...');
-  _generateAddedFonts(fontDirectory);
-  print(_success);
-
-  print('\nGenerating the list of current fonts...');
-  _generateCurrentFonts(fontDirectory);
+  print('\nGenerating the lists for current and added fonts...');
+  _generateFontsLists(fontDirectory);
   print(_success);
 
   print('\nGenerating $_generatedFilePath...');
@@ -124,28 +120,22 @@ String _hashToString(List<int> bytes) {
   return fileName;
 }
 
-void _generateAddedFonts(Directory fontDirectory) {
+void _generateFontsLists(Directory fontDirectory) {
   List<String> currentFonts = File(_currentFontsPath).readAsLinesSync();
 
   List<String> addedFonts = [];
+  List<String> newCurrentFonts = [];
+
   for (final item in fontDirectory.family) {
     final family = item.name;
     if (!currentFonts.contains(family)) {
       addedFonts.add('* $family');
     }
+    newCurrentFonts.add(family);
   }
 
   File(_addedFontsPath).writeAsStringSync(addedFonts.join('\n'));
-}
-
-void _generateCurrentFonts(Directory fontDirectory) {
-  List<String> currentFonts = [];
-  for (final item in fontDirectory.family) {
-    final family = item.name;
-    currentFonts.add(family);
-  }
-
-  File(_currentFontsPath).writeAsStringSync(currentFonts.join('\n'));
+  File(_currentFontsPath).writeAsStringSync(newCurrentFonts.join('\n'));
 }
 
 String _generateDartCode(Directory fontDirectory) {
