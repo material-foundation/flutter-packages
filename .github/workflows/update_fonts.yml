@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: "0 0 * * 0"
   workflow_dispatch: # Enable manual run from Github
+  pull_request: # TODO: REMOVE
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -30,6 +31,10 @@ jobs:
       - run: cider bump minor
       - run: cider release
 
+      - name: Read added_fonts file
+        id: getaddedfonts
+        run: echo "::set-output name=added_fonts::$(cat generator/added_fonts)"
+
       - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
@@ -40,7 +45,8 @@ jobs:
           delete-branch: true
           author: material-robot <featherless+materialrobot@google.com>
           title: Update fonts
-          body: | #TODO: add changelog
-            Adds the latest fonts from https://fonts.google.com
+          body: |
+            Adds the latest fonts from [Google Fonts](https://fonts.google.com):
+            ${{ steps.getaddedfonts.outputs.added_fonts }}
           team-reviewers: google-fonts-flutter-package-maintainers
           labels: automated
