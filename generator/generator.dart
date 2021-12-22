@@ -7,14 +7,14 @@
 import 'dart:io';
 
 import 'package:crypto/crypto.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 import 'package:mustache/mustache.dart';
 
 import 'fonts.pb.dart';
 
 const _generatedFilePath = 'lib/google_fonts.dart';
-const _addedFontsPath = 'generator/added_fonts';
+const _currentFontsPath = 'generator/fonts_current';
+const _addedFontsPath = 'generator/fonts_latest_added';
 
 /// Generates the `GoogleFonts` class.
 Future<void> main() async {
@@ -29,6 +29,10 @@ Future<void> main() async {
 
   print('\nGenerating the list of added fonts...');
   _generateAddedFonts(fontDirectory);
+  print(_success);
+
+  print('\nGenerating the list of current fonts...');
+  _generateCurrentFonts(fontDirectory);
   print(_success);
 
   print('\nGenerating $_generatedFilePath...');
@@ -121,17 +125,27 @@ String _hashToString(List<int> bytes) {
 }
 
 void _generateAddedFonts(Directory fontDirectory) {
-  final currentFonts = GoogleFonts.asMap();
-  List<String> addedFonts = [];
+  List<String> currentFonts = File(_currentFontsPath).readAsLinesSync();
 
+  List<String> addedFonts = [];
   for (final item in fontDirectory.family) {
     final family = item.name;
-    if (!currentFonts.containsKey(family)) {
+    if (!currentFonts.contains(family)) {
       addedFonts.add('* $family');
     }
   }
 
   File(_addedFontsPath).writeAsStringSync(addedFonts.join('\n'));
+}
+
+void _generateCurrentFonts(Directory fontDirectory) {
+  List<String> currentFonts = [];
+  for (final item in fontDirectory.family) {
+    final family = item.name;
+    currentFonts.add(family);
+  }
+
+  File(_currentFontsPath).writeAsStringSync(currentFonts.join('\n'));
 }
 
 String _generateDartCode(Directory fontDirectory) {
