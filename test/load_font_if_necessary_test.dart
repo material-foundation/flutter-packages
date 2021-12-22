@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
@@ -13,6 +14,8 @@ import 'package:google_fonts/src/google_fonts_variant.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
+import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockHttpClient extends Mock implements http.Client {
   Future<http.Response> gets(dynamic uri, {dynamic headers}) {
@@ -22,6 +25,19 @@ class MockHttpClient extends Mock implements http.Client {
 }
 
 class MockAssetManifest extends Mock implements AssetManifest {}
+
+class FakePathProviderPlatform extends Fake
+    with MockPlatformInterfaceMixin
+    implements PathProviderPlatform {
+  FakePathProviderPlatform(this._applicationSupportPath);
+
+  final String _applicationSupportPath;
+
+  @override
+  Future<String?> getApplicationSupportPath() async {
+    return _applicationSupportPath;
+  }
+}
 
 const _fakeResponse = 'fake response body - success';
 // The number of bytes in _fakeResponse.
@@ -46,8 +62,9 @@ void overridePrint(Future<void> Function() testFn) => () {
 
 void main() {
   late Directory directory;
-
   late MockHttpClient _httpClient;
+
+  TestWidgetsFlutterBinding.ensureInitialized();
 
   setUp(() async {
     _httpClient = MockHttpClient();
@@ -58,16 +75,8 @@ void main() {
       return http.Response(_fakeResponse, 200);
     });
 
-    // The following snippet pulled from
-    //  * https://flutter.dev/docs/cookbook/persistence/reading-writing-files#testing
     directory = await Directory.systemTemp.createTemp();
-    const MethodChannel('plugins.flutter.io/path_provider')
-        .setMockMethodCallHandler((methodCall) async {
-      if (methodCall.method == 'getApplicationSupportDirectory') {
-        return directory.path;
-      }
-      return null;
-    });
+    PathProviderPlatform.instance = FakePathProviderPlatform(directory.path);
   });
 
   tearDown(() {
@@ -90,7 +99,7 @@ void main() {
     await loadFontIfNecessary(fakeDescriptor);
 
     verify(_httpClient.gets(anything)).called(1);
-  }, skip: true);
+  });
 
   testWidgets('loadFontIfNecessary method throws if font cannot be loaded',
       (tester) async {
@@ -179,7 +188,7 @@ void main() {
     // 3rd call.
     await loadFontIfNecessary(fakeDescriptor);
     verifyNever(_httpClient.gets(anything));
-  }, skip: true);
+  });
 
   testWidgets(
       'loadFontIfNecessary does not make more than 1 http get request on '
@@ -201,7 +210,7 @@ void main() {
       loadFontIfNecessary(fakeDescriptor)
     ]);
     verify(_httpClient.gets(anything)).called(1);
-  }, skip: true);
+  });
 
   testWidgets(
       'loadFontIfNecessary makes second attempt if the first attempt failed ',
@@ -228,7 +237,7 @@ void main() {
     });
     await loadFontIfNecessary(fakeDescriptor);
     verify(_httpClient.gets(any)).called(1);
-  }, skip: true);
+  });
 
   testWidgets('loadFontIfNecessary method writes font file', (tester) async {
     final fakeDescriptor = GoogleFontsDescriptor(
@@ -252,7 +261,7 @@ void main() {
       directoryContents.listSync().single.toString().contains('Foo'),
       isTrue,
     );
-  }, skip: true);
+  });
 
   testWidgets(
       'loadFontIfNecessary does not save anything to disk if the file does not '
@@ -277,7 +286,7 @@ void main() {
     await loadFontIfNecessary(fakeDescriptor);
     directoryContents = await getApplicationSupportDirectory();
     expect(directoryContents.listSync().isEmpty, isTrue);
-  }, skip: true);
+  });
 
   test("loadFontByteData doesn't fail", () {
     expect(
