@@ -16,12 +16,12 @@ jobs:
       - run: flutter pub get
 
       - run: dart generator/generator.dart
-      - name: Exit if there are no changes
+      - name: Exit if there are no new fonts
         run: |
-          if [[ `git status --porcelain -- lib/google_fonts.dart` ]]; then 
+          if [ -s generator/fonts_latest_added ]; then 
             echo lib/google_fonts.dart has been updated.
           else 
-            echo No changes. Exiting...
+            echo No new fonts. Exiting...
             exit 1
           fi
 
