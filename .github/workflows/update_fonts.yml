@@ -31,16 +31,22 @@ jobs:
       - run: cider release
 
       - name: Read fonts_latest_added file
+        uses: actions/github-script@v4
         id: getaddedfonts
-        run: echo "::set-output name=fonts_latest_added::$(cat generator/fonts_latest_added)"
+        with:
+          script: |
+            const fs = require('fs');
+            return fs.readFileSync('generator/fonts_latest_added','utf8').toString();
+          result-encoding: string
 
       - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
           commit-message: |
-            [automated] add fonts:
-            ${{ steps.getaddedfonts.outputs.fonts_latest_added }}
+            [automated] add fonts
+
+            ${{ steps.getaddedfonts.outputs.result }}
           base: main
           branch: create-pull-request/update
           delete-branch: true
@@ -48,6 +54,6 @@ jobs:
           title: Update fonts
           body: |
             Adds the latest fonts from [Google Fonts](https://fonts.google.com):
-            ${{ steps.getaddedfonts.outputs.fonts_latest_added }}
+            ${{ steps.getaddedfonts.outputs.result }}
           team-reviewers: google-fonts-flutter-package-maintainers
           labels: automated
