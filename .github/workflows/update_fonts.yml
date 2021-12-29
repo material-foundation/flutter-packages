@@ -32,6 +32,7 @@ jobs:
       - run: cider release
 
       - name: Read fonts_latest_added file
+        uses: actions/github-script@v4
         id: getaddedfonts
         with:
           script: |
