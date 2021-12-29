@@ -51,7 +51,7 @@ a harmonized color scheme. Essentially, we wrap our `MaterialApp` with a
 - a dynamic color scheme that we harmonize
 - a fallback color scheme
 
-Run [all examples] with
+All [examples] are [hosted on GitHub] and can be run with:
 
 ```
 cd example
@@ -61,8 +61,9 @@ flutter run
 <img src="https://user-images.githubusercontent.com/6655696/135640136-4067dea1-99de-4693-b583-081e276ec7bf.png" width="400" />
 
 [corepalette]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/lib/src/core_palette.dart
-[all examples]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/
 [complete example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/complete_example.dart
 [dynamiccolorbuilder example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/dynamic_color_builder_example.dart
 [dynamiccolorplugin.getcorepalette example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/get_core_palette_example.dart
+[examples]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/
 [harmonization.dart]: https://github.com/material-foundation/material-dynamic-color-flutter/blob/main/lib/src/harmonization.dart
+[hosted on github]: https://material-foundation.github.io/material-dynamic-color-flutter/example/build/web/
