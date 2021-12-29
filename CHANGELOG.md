@@ -1,3 +1,7 @@
+## 2.2.0 - 2021-12-29
+### Changed
+- Added the latest fonts from fonts.google.com
+
 ## 2.1.1 - 2021-12-07
 ### Changed
 - Migrated from `pedantic` to `flutter_lints`.
