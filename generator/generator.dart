@@ -13,6 +13,8 @@ import 'package:mustache/mustache.dart';
 import 'fonts.pb.dart';
 
 const _generatedFilePath = 'lib/google_fonts.dart';
+const _currentFontsPath = 'generator/fonts_current';
+const _addedFontsPath = 'generator/fonts_latest_added';
 
 /// Generates the `GoogleFonts` class.
 Future<void> main() async {
@@ -23,6 +25,10 @@ Future<void> main() async {
   final fontDirectory = await _readFontsProtoData(protoUrl);
   print('\nValidating font URLs and file contents...');
   await _verifyUrls(fontDirectory);
+  print(_success);
+
+  print('\nGenerating the lists for current and added fonts...');
+  _generateFontsLists(fontDirectory);
   print(_success);
 
   print('\nGenerating $_generatedFilePath...');
@@ -112,6 +118,24 @@ String _hashToString(List<int> bytes) {
     fileName += convertedByte;
   }
   return fileName;
+}
+
+void _generateFontsLists(Directory fontDirectory) {
+  List<String> currentFonts = File(_currentFontsPath).readAsLinesSync();
+
+  List<String> addedFonts = [];
+  List<String> newCurrentFonts = [];
+
+  for (final item in fontDirectory.family) {
+    final family = item.name;
+    if (!currentFonts.contains(family)) {
+      addedFonts.add('* $family');
+    }
+    newCurrentFonts.add(family);
+  }
+
+  File(_addedFontsPath).writeAsStringSync(addedFonts.join('\n'));
+  File(_currentFontsPath).writeAsStringSync(newCurrentFonts.join('\n'));
 }
 
 String _generateDartCode(Directory fontDirectory) {

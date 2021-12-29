@@ -16,12 +16,12 @@ jobs:
       - run: flutter pub get
 
       - run: dart generator/generator.dart
-      - name: Exit if there are no changes
+      - name: Exit if there are no new fonts
         run: |
-          if [[ `git status --porcelain -- lib/google_fonts.dart` ]]; then 
+          if [ -s generator/fonts_latest_added ]; then 
             echo lib/google_fonts.dart has been updated.
           else 
-            echo No changes. Exiting...
+            echo No new fonts. Exiting...
             exit 1
           fi
 
@@ -30,17 +30,24 @@ jobs:
       - run: cider bump minor
       - run: cider release
 
+      - name: Read fonts_latest_added file
+        id: getaddedfonts
+        run: echo "::set-output name=fonts_latest_added::$(cat generator/fonts_latest_added)"
+
       - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
-          commit-message: "[automated] update fonts"
+          commit-message: |
+            [automated] add fonts:
+            ${{ steps.getaddedfonts.outputs.fonts_latest_added }}
           base: main
           branch: create-pull-request/update
           delete-branch: true
           author: material-robot <featherless+materialrobot@google.com>
           title: Update fonts
-          body: | #TODO: add changelog
-            Adds the latest fonts from https://fonts.google.com
+          body: |
+            Adds the latest fonts from [Google Fonts](https://fonts.google.com):
+            ${{ steps.getaddedfonts.outputs.fonts_latest_added }}
           team-reviewers: google-fonts-flutter-package-maintainers
           labels: automated
