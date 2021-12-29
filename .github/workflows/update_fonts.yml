@@ -45,7 +45,8 @@ jobs:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
           commit-message: |
-            [automated] add fonts:
+            [automated] add fonts
+
             ${{ steps.getaddedfonts.outputs.result }}
           base: main
           branch: create-pull-request/update
