@@ -259,6 +259,8 @@ void main() {
     expect(directoryContents.listSync().isEmpty, isTrue);
 
     await loadFontIfNecessary(fakeDescriptor);
+    // Give enough time for the file to be saved
+    await Future.delayed(const Duration(seconds: 1), () {});
     directoryContents = await getApplicationSupportDirectory();
 
     expect(directoryContents.listSync().isNotEmpty, isTrue);
