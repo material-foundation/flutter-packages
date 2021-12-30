@@ -64,8 +64,6 @@ void main() {
   late Directory directory;
   late MockHttpClient _httpClient;
 
-  TestWidgetsFlutterBinding.ensureInitialized();
-
   setUp(() async {
     _httpClient = MockHttpClient();
     httpClient = _httpClient;
@@ -90,7 +88,7 @@ void main() {
     clearCache();
   });
 
-  testWidgets('loadFontIfNecessary method calls http get', (tester) async {
+  test('loadFontIfNecessary method calls http get', () async {
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: const GoogleFontsFamilyWithVariant(
           family: 'Foo',
@@ -106,8 +104,7 @@ void main() {
     verify(_httpClient.gets(anything)).called(1);
   });
 
-  testWidgets('loadFontIfNecessary method throws if font cannot be loaded',
-      (tester) async {
+  test('loadFontIfNecessary method throws if font cannot be loaded', () async {
     // Mock a bad response.
     when(_httpClient.gets(any)).thenAnswer((_) async {
       return http.Response('fake response body - failure', 300);
@@ -135,7 +132,7 @@ void main() {
     });
   });
 
-  testWidgets('does not call http if config is false', (tester) async {
+  test('does not call http if config is false', () async {
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
@@ -168,9 +165,9 @@ void main() {
     verifyNever(_httpClient.gets(anything));
   });
 
-  testWidgets(
+  test(
       'loadFontIfNecessary method does not make http get request on '
-      'subsequent calls', (tester) async {
+      'subsequent calls', () async {
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
@@ -195,9 +192,9 @@ void main() {
     verifyNever(_httpClient.gets(anything));
   });
 
-  testWidgets(
+  test(
       'loadFontIfNecessary does not make more than 1 http get request on '
-      'parallel calls', (tester) async {
+      'parallel calls', () async {
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
@@ -217,9 +214,8 @@ void main() {
     verify(_httpClient.gets(anything)).called(1);
   });
 
-  testWidgets(
-      'loadFontIfNecessary makes second attempt if the first attempt failed ',
-      (tester) async {
+  test('loadFontIfNecessary makes second attempt if the first attempt failed ',
+      () async {
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
@@ -244,7 +240,7 @@ void main() {
     verify(_httpClient.gets(any)).called(1);
   });
 
-  testWidgets('loadFontIfNecessary method writes font file', (tester) async {
+  test('loadFontIfNecessary method writes font file', () async {
     final fakeDescriptor = GoogleFontsDescriptor(
       familyWithVariant: const GoogleFontsFamilyWithVariant(
           family: 'Foo',
@@ -270,9 +266,9 @@ void main() {
     );
   });
 
-  testWidgets(
+  test(
       'loadFontIfNecessary does not save anything to disk if the file does not '
-      'match the expected hash', (tester) async {
+      'match the expected hash', () async {
     when(_httpClient.gets(any)).thenAnswer((_) async {
       return http.Response('malicious intercepted response', 200);
     });
