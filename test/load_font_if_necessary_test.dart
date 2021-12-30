@@ -261,8 +261,6 @@ void main() {
     await loadFontIfNecessary(fakeDescriptor);
     directoryContents = await getApplicationSupportDirectory();
 
-    print(directoryContents);
-
     expect(directoryContents.listSync().isNotEmpty, isTrue);
     expect(
       directoryContents.listSync().single.toString().contains('Foo'),

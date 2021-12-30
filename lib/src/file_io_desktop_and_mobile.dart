@@ -5,8 +5,6 @@ import 'package:path_provider/path_provider.dart';
 
 Future<void> saveFontToDeviceFileSystem(String name, List<int> bytes) async {
   final file = await _localFile(name);
-  print('here');
-  print(file);
   await file.writeAsBytes(bytes);
 }
 
