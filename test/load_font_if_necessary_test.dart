@@ -80,12 +80,7 @@ void main() {
   });
 
   tearDown(() {
-    try {
-      directory.deleteSync(recursive: true);
-    } catch (e) {
-      // Swallow errors on Windows, see https://github.com/flutter/flutter/issues/51421.
-      if (!Platform.isWindows) rethrow;
-    }
+    directory.deleteSync(recursive: true);
     printLog.clear();
     clearCache();
   });
