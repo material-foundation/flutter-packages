@@ -1,5 +1,5 @@
 ---
-name: Bug report.
+name: Bug report
 about: Create an issue to help us improve.
 title: ''
 labels: ''
