@@ -1,6 +1,7 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 
+const demoWidthConstraints = BoxConstraints(maxWidth: 400);
 bool _isDemoUsingDynamicColors = false;
 
 class CompleteExample extends StatelessWidget {
@@ -10,6 +11,7 @@ class CompleteExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // First let's wrap our MaterialApp with a DynamicColorBuilder.
     return DynamicColorBuilder(
       builder: (ColorScheme? light, ColorScheme? dark) {
         // One can create ColorSchemes from scratch, but we'll start from the
@@ -79,27 +81,29 @@ class _HomeState extends State<Home> {
         _isDemoUsingDynamicColors ? ' (dynamic)' : ' (not dynamic)';
 
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            width: 100,
-            height: 100,
-            color: Theme.of(context).colorScheme.primary,
-          ),
-          Text(
-            'The square\'s color is colorScheme.primary$dynamicMsg',
-          ),
-          Padding(
-            padding: const EdgeInsets.all(32.0),
-            child: TextField(
-              controller: _textEditingController,
-              decoration: InputDecoration(
-                errorText: 'The text color is colorScheme.error$dynamicMsg',
+      body: Center(
+        child: Container(
+          constraints: demoWidthConstraints,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 100,
+                height: 100,
+                color: Theme.of(context).colorScheme.primary,
               ),
-            ),
+              Text(
+                'The square\'s color is colorScheme.primary$dynamicMsg',
+              ),
+              TextField(
+                controller: _textEditingController,
+                decoration: InputDecoration(
+                  errorText: 'The text color is colorScheme.error$dynamicMsg',
+                ),
+              ),
+            ],
           ),
-        ],
+        ),
       ),
       resizeToAvoidBottomInset: false,
     );

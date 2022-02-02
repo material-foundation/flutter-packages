@@ -1,3 +1,7 @@
+## 1.0.1
+
+- Polish README and examples
+
 ## 1.0.0
 
 - `DynamicColorBuilder`'s `builder` now provides a light and dark `ColorScheme` rather than a `CorePalette`

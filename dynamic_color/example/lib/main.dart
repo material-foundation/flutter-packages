@@ -19,38 +19,43 @@ class ExampleApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Examples')),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Complete example', style: textTheme.headline6),
-            const _ExampleAppButton(
-              title: CompleteExample.title,
-              widget: CompleteExample(),
+        body: Center(
+          child: Container(
+            constraints: demoWidthConstraints,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text('Complete example', style: textTheme.headline6),
+                const _ExampleAppButton(
+                  title: CompleteExample.title,
+                  widget: CompleteExample(),
+                ),
+                const Divider(height: 50),
+                Text('CorePalette visualization', style: textTheme.headline6),
+                const _ExampleAppButton(
+                  title: CorePaletteVisualization.title,
+                  widget: CorePaletteVisualization(),
+                ),
+                const Divider(height: 50),
+                Text('Harmonization', style: textTheme.headline6),
+                const _ExampleAppButton(
+                  title: HarmonizationExample.title,
+                  widget: HarmonizationExample(),
+                ),
+                const Divider(height: 50),
+                Text('Advanced examples', style: textTheme.headline6),
+                const _ExampleAppButton(
+                  title: AdvancedExample1.title,
+                  widget: AdvancedExample1(),
+                ),
+                const _ExampleAppButton(
+                  title: AdvancedExample2.title,
+                  widget: AdvancedExample2(),
+                ),
+              ],
             ),
-            const Divider(),
-            Text('CorePalette visualization', style: textTheme.headline6),
-            const _ExampleAppButton(
-              title: CorePaletteVisualization.title,
-              widget: CorePaletteVisualization(),
-            ),
-            const Divider(),
-            Text('Harmonization', style: textTheme.headline6),
-            const _ExampleAppButton(
-              title: HarmonizationExample.title,
-              widget: HarmonizationExample(),
-            ),
-            const Divider(),
-            Text('Advanced examples', style: textTheme.headline6),
-            const _ExampleAppButton(
-              title: AdvancedExample1.title,
-              widget: AdvancedExample1(),
-            ),
-            const _ExampleAppButton(
-              title: AdvancedExample2.title,
-              widget: AdvancedExample2(),
-            ),
-          ],
+          ),
         ),
       ),
     );

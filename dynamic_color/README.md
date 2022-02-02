@@ -45,11 +45,10 @@ import 'package:dynamic_color/dynamic_color.dart';
 ## Usage
 
 See this [complete example] for obtaining dynamic colors and creating
-a harmonized color scheme. Essentially, we wrap our `MaterialApp` with a
-`DynamicColorBuilder`, and create:
+a harmonized color scheme.
 
-- a dynamic color scheme that we harmonize
-- a fallback color scheme
+<a href="https://material-foundation.github.io/material-dynamic-color-flutter/example/build/web/">
+<img src="https://user-images.githubusercontent.com/6655696/152188934-35e58f5c-2a3c-41af-8d49-faabb1701dcc.png" width="400" /> </a>
 
 All [examples] are [hosted on GitHub] and can be run with:
 
@@ -57,8 +56,6 @@ All [examples] are [hosted on GitHub] and can be run with:
 cd example
 flutter run
 ```
-
-<img src="https://user-images.githubusercontent.com/6655696/135640136-4067dea1-99de-4693-b583-081e276ec7bf.png" width="400" />
 
 [complete example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/complete_example.dart
 [dynamiccolorbuilder example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/dynamic_color_builder_example.dart
