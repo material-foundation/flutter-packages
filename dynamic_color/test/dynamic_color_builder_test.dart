@@ -1,6 +1,5 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:dynamic_color/test_utils.dart';
-import 'package:material_color_utilities/material_color_utilities.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -14,10 +13,10 @@ void main() {
 
     await tester.pumpWidget(
       DynamicColorBuilder(
-        builder: (CorePalette? corePalette) {
+        builder: (ColorScheme? light, ColorScheme? dark) {
           return Container(
             key: containerKey,
-            color: Color(corePalette?.primary.get(100) ?? 123),
+            color: light?.primary ?? const Color(0x00000123),
           );
         },
       ),
@@ -27,7 +26,7 @@ void main() {
 
     expect(
       (tester.firstWidget(find.byKey(containerKey)) as Container).color,
-      Colors.white,
+      const Color(0xff4355b9),
     );
   });
 }

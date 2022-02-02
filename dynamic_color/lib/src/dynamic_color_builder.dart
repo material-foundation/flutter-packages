@@ -1,20 +1,20 @@
-import 'package:material_color_utilities/material_color_utilities.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
+import 'package:material_color_utilities/material_color_utilities.dart';
 
 import 'dynamic_color_plugin.dart';
 
-/// A stateful builder widget that provides a [CorePalette].
+/// A stateful builder widget that provides a light and dark [ColorScheme].
 ///
-/// The [CorePalette] will be null on non-Android platforms and pre-Android S
-/// devices. See the linked examples for usage.
+/// The [ColorScheme]s are constructed from the [CorePalette] provided by the
+/// Android OS.
 ///
 /// See also:
 ///
 ///  * [DynamicColorBuilder example](https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/dynamic_color_builder_example.dart)
 ///  * [Complete example](https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/complete_example.dart)
 ///    for obtaining dynamic colors and creating a harmonized color scheme
-///  * [DynamicColorPlugin.getCorePalette] for requesting the colors
+///  * [DynamicColorPlugin.getCorePalette] for requesting the [CorePalette]
 ///    directly, asynchronously.
 class DynamicColorBuilder extends StatefulWidget {
   const DynamicColorBuilder({
@@ -22,18 +22,20 @@ class DynamicColorBuilder extends StatefulWidget {
     required this.builder,
   }) : super(key: key);
 
-  /// Builds the child widget of this widget, using the [CorePalette] passed in.
+  /// Builds the child widget of this widget, providing a light and dark [ColorScheme].
   ///
-  /// The [CorePalette] will be null if dynamic colors are not available,
-  /// or have not been returned yet.
-  final Widget Function(CorePalette?) builder;
+  /// The [ColorScheme]s will be null if dynamic color is not supported (i.e on
+  /// non-Android platforms and pre-Android S devices), or if the colors
+  /// have yet to be obtained.
+  final Widget Function(ColorScheme? light, ColorScheme? dark) builder;
 
   @override
   _DynamicColorBuilderState createState() => _DynamicColorBuilderState();
 }
 
 class _DynamicColorBuilderState extends State<DynamicColorBuilder> {
-  CorePalette? _corePalette;
+  ColorScheme? _light;
+  ColorScheme? _dark;
 
   @override
   void initState() {
@@ -57,12 +59,61 @@ class _DynamicColorBuilderState extends State<DynamicColorBuilder> {
     if (!mounted) return;
 
     setState(() {
-      _corePalette = corePalette;
+      _light = corePalette?.toColorScheme();
+      _dark = corePalette?.toColorScheme(brightness: Brightness.dark);
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return widget.builder(_corePalette);
+    return widget.builder(_light, _dark);
+  }
+}
+
+extension on CorePalette {
+  /// Create a [ColorScheme] from the given `palette` obtained from the Android OS.
+  ColorScheme? toColorScheme({
+    Brightness brightness = Brightness.light,
+  }) {
+    final Scheme scheme;
+
+    switch (brightness) {
+      case Brightness.light:
+        scheme = Scheme.lightFromCorePalette(this);
+        break;
+      case Brightness.dark:
+        scheme = Scheme.darkFromCorePalette(this);
+        break;
+    }
+    return ColorScheme(
+      primary: Color(scheme.primary),
+      onPrimary: Color(scheme.onPrimary),
+      primaryContainer: Color(scheme.primaryContainer),
+      onPrimaryContainer: Color(scheme.onPrimaryContainer),
+      secondary: Color(scheme.secondary),
+      onSecondary: Color(scheme.onSecondary),
+      secondaryContainer: Color(scheme.secondaryContainer),
+      onSecondaryContainer: Color(scheme.onSecondaryContainer),
+      tertiary: Color(scheme.tertiary),
+      onTertiary: Color(scheme.onTertiary),
+      tertiaryContainer: Color(scheme.tertiaryContainer),
+      onTertiaryContainer: Color(scheme.onTertiaryContainer),
+      error: Color(scheme.error),
+      onError: Color(scheme.onError),
+      errorContainer: Color(scheme.errorContainer),
+      onErrorContainer: Color(scheme.onErrorContainer),
+      outline: Color(scheme.outline),
+      background: Color(scheme.background),
+      onBackground: Color(scheme.onBackground),
+      surface: Color(scheme.surface),
+      onSurface: Color(scheme.onSurface),
+      surfaceVariant: Color(scheme.surfaceVariant),
+      onSurfaceVariant: Color(scheme.onSurfaceVariant),
+      inverseSurface: Color(scheme.inverseSurface),
+      onInverseSurface: Color(scheme.inverseOnSurface),
+      inversePrimary: Color(scheme.inversePrimary),
+      shadow: Color(scheme.shadow),
+      brightness: brightness,
+    );
   }
 }

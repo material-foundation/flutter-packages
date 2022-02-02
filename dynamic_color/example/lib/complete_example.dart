@@ -1,5 +1,4 @@
 import 'package:dynamic_color/dynamic_color.dart';
-import 'package:material_color_utilities/material_color_utilities.dart';
 import 'package:flutter/material.dart';
 
 bool _isDemoUsingDynamicColors = false;
@@ -12,20 +11,19 @@ class CompleteExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DynamicColorBuilder(
-      builder: (CorePalette? corePalette) {
+      builder: (ColorScheme? light, ColorScheme? dark) {
         // One can create ColorSchemes from scratch, but we'll start from the
         // default schemes.
         ColorScheme colorScheme = const ColorScheme.light();
         ColorScheme darkColorScheme = const ColorScheme.dark();
 
-        if (corePalette != null) {
-          // On Android S+ devices, use the 40 and 80 tones of the dynamic
-          // primary tonal palette for the light and dark schemes, respectively.
+        if (light != null && dark != null) {
+          // On Android S+ devices, use the dynamic primary color.
           colorScheme = colorScheme.copyWith(
-            primary: Color(corePalette.primary.get(40)),
+            primary: light.primary,
           );
           darkColorScheme = darkColorScheme.copyWith(
-            primary: Color(corePalette.primary.get(80)),
+            primary: dark.primary,
           );
 
           // Harmonize the dynamic color schemes' error and onError colors

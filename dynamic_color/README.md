@@ -13,7 +13,7 @@ Learn more about [dynamic color](https://m3.material.io/styles/color/dynamic-col
 ### Builder widget
 
 For convenience, this package includes `DynamicColorBuilder`, a stateful widget
-that provides the device's dynamic colors in a [`CorePalette`][corepalette].
+that provides the device's dynamic colors in a light and dark `ColorScheme`.
 
 ### Plugin
 
@@ -60,7 +60,6 @@ flutter run
 
 <img src="https://user-images.githubusercontent.com/6655696/135640136-4067dea1-99de-4693-b583-081e276ec7bf.png" width="400" />
 
-[corepalette]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/lib/src/core_palette.dart
 [complete example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/complete_example.dart
 [dynamiccolorbuilder example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/dynamic_color_builder_example.dart
 [dynamiccolorplugin.getcorepalette example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/get_core_palette_example.dart

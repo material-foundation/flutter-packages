@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:dynamic_color/dynamic_color.dart';
-import 'package:material_color_utilities/material_color_utilities.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:material_color_utilities/material_color_utilities.dart';
 
 /// A sample [CorePalette], as obtained by the [DynamicColorPlugin] from the
 /// Android OS.
@@ -113,11 +113,16 @@ class _CorePaletteVisualizationState extends State<CorePaletteVisualization> {
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 8),
-                child: DynamicColorBuilder(
-                  builder: (CorePalette? corePalette) {
-                    return _RenderCorePalette(showSystemDynamicColor
-                        ? corePalette ?? sampleCorePalette
-                        : sampleCorePalette);
+                child: FutureBuilder<CorePalette?>(
+                  future: DynamicColorPlugin.getCorePalette(),
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.done) {
+                      return _RenderCorePalette(showSystemDynamicColor
+                          ? snapshot.data ?? sampleCorePalette
+                          : sampleCorePalette);
+                    } else {
+                      return const CircularProgressIndicator();
+                    }
                   },
                 ),
               )
