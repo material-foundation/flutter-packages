@@ -1,3 +1,7 @@
+## 2.3.0 - 2022-02-04
+### Changed
+- Update 2018 text style names to 2021 text style names (`display`, `headline`, `title`, `body`, `label` X `large`, `medium`, `small`)
+
 ## 2.2.0 - 2021-12-29
 ### Changed
 - Added the latest fonts from fonts.google.com
