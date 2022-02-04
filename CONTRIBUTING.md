@@ -22,7 +22,13 @@ repo.
 1.  Make the changes to your local copy of the `google-fonts-flutter` package, testing the changes
     in the example app.
 1.  Write a unit test for your change, if possible, in one of the files in `test/`.
-1.  Update the `CHANGELOG.md` with a new version number, and a description of the change you're
+1.  Update the `CHANGELOG.md` using [`cider`](https://pub.dev/packages/cider). For example:
+    ```
+    dart pub global activate cider
+    cider log changed 'X now does Y'
+    cider bump minor
+    cider release
+    ```
     making.
 1.  Update the `version:` in the `pubspec.yaml` file to your new version.
 
@@ -39,13 +45,10 @@ repo.
 ## Updating the fonts
 
 If you notice fonts that are on [fonts.google.com](https://fonts.google.com) that do not appear in
-this package, it means that the generator needs to be run.
-
-Running the generator is easy, and are happy to accept PRs with new fonts.
-
-To do this, navigate to the root of the project, and run `dart generator/generator.dart`. It will
+this package, it means that the generator needs to be run. The generator will
 check [fonts.google.com](https://fonts.google.com) for any new fonts, manually test each URL, and
 regenerate the dart code.
 
-After running the script, update the `version:` number in `pubspec.yaml`, and add the new version
-to the `CHANGELOG.md` file, specifying that the package was updated to include new fonts.
+The generator is run multiple times a month by a GitHub [workflow](.github/workflows/update_fonts.yml).
+
+To run it manually, navigate to the root of the project, and run `dart generator/generator.dart`.
