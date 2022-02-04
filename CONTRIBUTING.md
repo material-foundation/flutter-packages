@@ -30,7 +30,6 @@ repo.
     cider release
     ```
     making.
-1.  Update the `version:` in the `pubspec.yaml` file to your new version.
 
 ### Review
 
