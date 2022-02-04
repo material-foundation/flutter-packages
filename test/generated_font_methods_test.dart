@@ -666,6 +666,15 @@ void main() {
     expect(textTheme.subtitle2!.fontStyle, equals(FontStyle.italic));
   });
 
+  // Regression test for https://github.com/material-foundation/google-fonts-flutter/issues/215
+  testWidgets('TextTheme equality when used in a ThemeData', (tester) async {
+    final ThemeData myAppTheme = ThemeData(
+      textTheme: GoogleFonts.poppinsTextTheme(),
+    );
+
+    expect(myAppTheme.textTheme, equals(GoogleFonts.poppinsTextTheme()));
+  });
+
   //////////////////
   // Method tests //
   //////////////////
