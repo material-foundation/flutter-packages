@@ -27,7 +27,10 @@ class DynamicColorBuilder extends StatefulWidget {
   /// The [ColorScheme]s will be null if dynamic color is not supported (i.e on
   /// non-Android platforms and pre-Android S devices), or if the colors
   /// have yet to be obtained.
-  final Widget Function(ColorScheme? light, ColorScheme? dark) builder;
+  final Widget Function(
+    ColorScheme? lightDynamic,
+    ColorScheme? darkDynamic,
+  ) builder;
 
   @override
   _DynamicColorBuilderState createState() => _DynamicColorBuilderState();

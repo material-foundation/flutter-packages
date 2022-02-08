@@ -9,7 +9,7 @@ class AdvancedExample1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DynamicColorBuilder(
-      builder: (ColorScheme? light, ColorScheme? dark) {
+      builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
         return MaterialApp(
           home: Scaffold(
             body: Center(
@@ -21,10 +21,10 @@ class AdvancedExample1 extends StatelessWidget {
                     height: 100,
                     // On Android S+ devices, use the primary dynamic color.
                     // Otherwise, default to a 40 tone orange (Colors.orange.shade600).
-                    color: light?.primary ?? const Color(0xFFFB8C00),
+                    color: lightDynamic?.primary ?? const Color(0xFFFB8C00),
                   ),
                   Text(
-                    'The square\'s color is ${light != null ? 'dynamic' : 'orange'}',
+                    'The square\'s color is ${lightDynamic != null ? 'dynamic' : 'orange'}',
                   ),
                 ],
               ),

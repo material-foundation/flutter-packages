@@ -13,19 +13,19 @@ class CompleteExample extends StatelessWidget {
   Widget build(BuildContext context) {
     // First let's wrap our MaterialApp with a DynamicColorBuilder.
     return DynamicColorBuilder(
-      builder: (ColorScheme? light, ColorScheme? dark) {
+      builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
         // One can create ColorSchemes from scratch, but we'll start from the
         // default schemes.
         ColorScheme colorScheme = const ColorScheme.light();
         ColorScheme darkColorScheme = const ColorScheme.dark();
 
-        if (light != null && dark != null) {
+        if (lightDynamic != null && darkDynamic != null) {
           // On Android S+ devices, use the dynamic primary color.
           colorScheme = colorScheme.copyWith(
-            primary: light.primary,
+            primary: lightDynamic.primary,
           );
           darkColorScheme = darkColorScheme.copyWith(
-            primary: dark.primary,
+            primary: darkDynamic.primary,
           );
 
           // Harmonize the dynamic color schemes' error and onError colors

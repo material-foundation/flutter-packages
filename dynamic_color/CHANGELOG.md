@@ -1,3 +1,7 @@
+## 1.1.0
+
+- Qualify builder parameters (light => lightDynamic, dark => darkDynamic) for clarity
+
 ## 1.0.1
 
 - Polish README and examples

@@ -13,10 +13,10 @@ void main() {
 
     await tester.pumpWidget(
       DynamicColorBuilder(
-        builder: (ColorScheme? light, ColorScheme? dark) {
+        builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
           return Container(
             key: containerKey,
-            color: light?.primary ?? const Color(0x00000123),
+            color: lightDynamic?.primary ?? const Color(0x00000123),
           );
         },
       ),
