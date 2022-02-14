@@ -1,3 +1,8 @@
+## 1.1.1
+
+- Provide sample [CorePalette]s and corresponding [ColorScheme]s to test utils
+- Make the extension method which converts a [CorePalette] to a [ColorScheme] public
+
 ## 1.1.0
 
 - Qualify builder parameters (light => lightDynamic, dark => darkDynamic) for clarity
