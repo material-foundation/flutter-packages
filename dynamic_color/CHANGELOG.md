@@ -1,3 +1,7 @@
+## 1.1.2
+
+- Move samples to their own library
+
 ## 1.1.1
 
 - Provide sample [CorePalette]s and corresponding [ColorScheme]s to test utils

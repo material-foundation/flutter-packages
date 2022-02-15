@@ -6,6 +6,8 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   test('getCorePalette', () async {
+    final sampleFromListCorePalette = generateCorePalette((i) => i);
+
     DynamicColorTestingUtils.setMockDynamicColors(sampleFromListCorePalette);
     final colors = await DynamicColorPlugin.getCorePalette();
     expect(colors, sampleFromListCorePalette);
