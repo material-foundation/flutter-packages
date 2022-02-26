@@ -19,7 +19,7 @@ Here is an example of how to implement the Adaptive Breakpoint entries in Flutte
 In this example, we created an adaptive container which will 'activate' anytime that window screen is
 on same as the window limit. If they are the same the child will show otherwise it will be an empty container.
 
-Try it yourself with this [dartpad](https://dartpad.dev/be6d3b390933220daf14bd4afd7e438c)
+Try it yourself with this [dartpad](https://dartpad.dev/?id=fd5f55145f74ffa9c66eb0fe11991d63)
 
 ```dart
 // Copyright 2020, the Flutter project authors. Please see the AUTHORS file
