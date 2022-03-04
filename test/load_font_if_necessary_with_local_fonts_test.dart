@@ -51,6 +51,8 @@ final _fakeResponseFile = GoogleFontsFile(
 // handler (flutter/assets), that can not be undone, no other tests should be
 // written in this file.
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+
   late MockHttpClient _httpClient;
 
   setUp(() async {
@@ -74,9 +76,9 @@ void main() {
     PathProviderPlatform.instance = FakePathProviderPlatform(directory.path);
   });
 
-  testWidgets(
+  test(
       'loadFontIfNecessary method does nothing if the font is in the '
-      'Asset Manifest', (tester) async {
+      'Asset Manifest', () async {
     final descriptorInAssets = GoogleFontsDescriptor(
       familyWithVariant: const GoogleFontsFamilyWithVariant(
         family: 'Foo',
