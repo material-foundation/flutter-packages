@@ -73,17 +73,13 @@ void main() {
       return http.Response(_fakeResponse, 200);
     });
 
-    directory = await Directory.systemTemp.createTemp();
+    directory = Directory('tempDir');
+    directory.createSync();
     PathProviderPlatform.instance = FakePathProviderPlatform(directory.path);
   });
 
   tearDown(() {
-    try {
-      directory.deleteSync(recursive: true);
-    } catch (e) {
-      // Swallow errors on Windows, see https://github.com/flutter/flutter/issues/51421.
-      if (!Platform.isWindows) rethrow;
-    }
+    directory.deleteSync(recursive: true);
     printLog.clear();
     clearCache();
   });

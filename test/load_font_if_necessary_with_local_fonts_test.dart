@@ -53,6 +53,7 @@ final _fakeResponseFile = GoogleFontsFile(
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
+  late Directory directory;
   late MockHttpClient _httpClient;
 
   setUp(() async {
@@ -72,8 +73,13 @@ void main() {
       return Future.value(encoded.buffer.asByteData());
     });
 
-    final directory = await Directory.systemTemp.createTemp();
+    directory = Directory('tempDirLocal');
+    directory.createSync();
     PathProviderPlatform.instance = FakePathProviderPlatform(directory.path);
+  });
+
+  tearDown(() {
+    directory.deleteSync(recursive: true);
   });
 
   test(
