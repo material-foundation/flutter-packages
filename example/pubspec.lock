@@ -101,7 +101,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "2.2.0"
+    version: "2.3.1"
   http:
     dependency: transitive
     description:
@@ -150,7 +150,7 @@ packages:
       name: path
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.8.0"
+    version: "1.8.1"
   path_provider:
     dependency: transitive
     description:
@@ -260,7 +260,7 @@ packages:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.8"
+    version: "0.4.9"
   typed_data:
     dependency: transitive
     description:
@@ -291,4 +291,4 @@ packages:
     version: "0.2.0"
 sdks:
   dart: ">=2.14.0 <3.0.0"
-  flutter: ">=1.20.0"
+  flutter: ">=2.10.0-0"
