@@ -79,7 +79,12 @@ void main() {
   });
 
   tearDown(() {
-    directory.deleteSync(recursive: true);
+    try {
+      directory.deleteSync(recursive: true);
+    } catch (e) {
+      // Swallow errors on Windows, see https://github.com/flutter/flutter/issues/51421.
+      if (!Platform.isWindows) rethrow;
+    }
   });
 
   test(
