@@ -55,7 +55,7 @@ extension ColorSchemeHarmonization on ColorScheme {
       error: _harmonizeWithPrimary(error),
       onError: _harmonizeWithPrimary(onError),
       errorContainer: _harmonizeWithPrimary(errorContainer),
-      onErrorContainer: _harmonizeWithPrimary(errorContainer),
+      onErrorContainer: _harmonizeWithPrimary(onErrorContainer),
     );
   }
 }
