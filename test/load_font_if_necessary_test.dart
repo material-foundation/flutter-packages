@@ -73,8 +73,7 @@ void main() {
       return http.Response(_fakeResponse, 200);
     });
 
-    directory = Directory('tempDir');
-    directory.createSync();
+    directory = await Directory.systemTemp.createTemp();
     PathProviderPlatform.instance = FakePathProviderPlatform(directory.path);
   });
 

@@ -73,8 +73,7 @@ void main() {
       return Future.value(encoded.buffer.asByteData());
     });
 
-    directory = Directory('tempDirLocal');
-    directory.createSync();
+    directory = await Directory.systemTemp.createTemp();
     PathProviderPlatform.instance = FakePathProviderPlatform(directory.path);
   });
 
