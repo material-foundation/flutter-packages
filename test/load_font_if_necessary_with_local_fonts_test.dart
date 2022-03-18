@@ -53,6 +53,7 @@ final _fakeResponseFile = GoogleFontsFile(
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
+  late Directory directory;
   late MockHttpClient _httpClient;
 
   setUp(() async {
@@ -72,8 +73,17 @@ void main() {
       return Future.value(encoded.buffer.asByteData());
     });
 
-    final directory = await Directory.systemTemp.createTemp();
+    directory = await Directory.systemTemp.createTemp();
     PathProviderPlatform.instance = FakePathProviderPlatform(directory.path);
+  });
+
+  tearDown(() {
+    try {
+      directory.deleteSync(recursive: true);
+    } catch (e) {
+      // Swallow errors on Windows, see https://github.com/flutter/flutter/issues/51421.
+      if (!Platform.isWindows) rethrow;
+    }
   });
 
   test(
