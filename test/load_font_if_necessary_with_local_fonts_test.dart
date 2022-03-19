@@ -77,14 +77,7 @@ void main() {
     PathProviderPlatform.instance = FakePathProviderPlatform(directory.path);
   });
 
-  tearDown(() {
-    try {
-      directory.deleteSync(recursive: true);
-    } catch (e) {
-      // Swallow errors on Windows, see https://github.com/flutter/flutter/issues/51421.
-      if (!Platform.isWindows) rethrow;
-    }
-  });
+  tearDown(() {});
 
   test(
       'loadFontIfNecessary method does nothing if the font is in the '
