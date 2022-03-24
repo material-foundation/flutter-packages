@@ -83,7 +83,7 @@ final sampleCorePalette = CorePalette.fromList([
 class CorePaletteVisualization extends StatefulWidget {
   const CorePaletteVisualization({Key? key}) : super(key: key);
 
-  static const title = 'Sample CorePalette';
+  static const title = 'CorePalette visualization';
 
   @override
   State<CorePaletteVisualization> createState() =>

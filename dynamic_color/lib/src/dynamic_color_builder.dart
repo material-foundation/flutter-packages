@@ -34,10 +34,10 @@ class DynamicColorBuilder extends StatefulWidget {
   ) builder;
 
   @override
-  _DynamicColorBuilderState createState() => _DynamicColorBuilderState();
+  DynamicColorBuilderState createState() => DynamicColorBuilderState();
 }
 
-class _DynamicColorBuilderState extends State<DynamicColorBuilder> {
+class DynamicColorBuilderState extends State<DynamicColorBuilder> {
   ColorScheme? _light;
   ColorScheme? _dark;
 

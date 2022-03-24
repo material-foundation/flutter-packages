@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'common.dart';
 import 'complete_example.dart';
 import 'core_palette_visualization.dart';
 import 'dynamic_color_builder_example.dart';
@@ -21,30 +22,31 @@ class ExampleApp extends StatelessWidget {
         appBar: AppBar(title: const Text('Examples')),
         body: Center(
           child: Container(
-            constraints: demoWidthConstraints,
+            constraints: contentMaxWidth,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text('Complete example', style: textTheme.headline6),
                 const _ExampleAppButton(
                   title: CompleteExample.title,
                   widget: CompleteExample(),
                 ),
-                const Divider(height: 50),
-                Text('CorePalette visualization', style: textTheme.headline6),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Text(
+                    'Advanced examples',
+                    style: textTheme.titleMedium,
+                  ),
+                ),
                 const _ExampleAppButton(
                   title: CorePaletteVisualization.title,
                   widget: CorePaletteVisualization(),
                 ),
-                const Divider(height: 50),
-                Text('Harmonization', style: textTheme.headline6),
                 const _ExampleAppButton(
                   title: HarmonizationExample.title,
                   widget: HarmonizationExample(),
                 ),
-                const Divider(height: 50),
-                Text('Advanced examples', style: textTheme.headline6),
                 const _ExampleAppButton(
                   title: AdvancedExample1.title,
                   widget: AdvancedExample1(),
@@ -75,7 +77,7 @@ class _ExampleAppButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(10),
       child: ElevatedButton(
         child: Text(title),
         onPressed: () => Navigator.push(
@@ -85,7 +87,11 @@ class _ExampleAppButton extends StatelessWidget {
               appBar: AppBar(
                 title: Text(title, style: const TextStyle(fontSize: 14)),
               ),
-              body: widget,
+              body: Padding(
+                  padding: (title == CompleteExample.title)
+                      ? EdgeInsets.zero
+                      : contentPadding,
+                  child: widget),
             ),
           ),
         ),

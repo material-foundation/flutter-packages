@@ -1,4 +1,5 @@
 import 'package:dynamic_color/dynamic_color.dart';
+import 'package:dynamic_color_example/common.dart';
 import 'package:flutter/material.dart';
 
 class HarmonizationExample extends StatelessWidget {
@@ -9,24 +10,15 @@ class HarmonizationExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const Color primaryColor = Color(0xff0b57d0);
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(width: 100, height: 100, color: primaryColor),
-          const Text('Primary color'),
-          const SizedBox(height: 20),
-          Container(width: 100, height: 100, color: Colors.red),
-          const Text('Red'),
-          const SizedBox(height: 20),
-          Container(
-            width: 100,
-            height: 100,
-            color: Colors.red.harmonizeWith(primaryColor),
-          ),
-          const Text('Red, harmonized with primary color'),
-        ],
-      ),
+    return Column(
+      children: [
+        const ColoredSquare(primaryColor, 'Primary color'),
+        const ColoredSquare(Colors.red, 'Red'),
+        ColoredSquare(
+          Colors.red.harmonizeWith(primaryColor),
+          'Red, harmonized with primary color',
+        ),
+      ],
     );
   }
 }

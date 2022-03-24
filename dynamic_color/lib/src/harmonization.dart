@@ -22,7 +22,7 @@ extension ColorSchemeHarmonization on ColorScheme {
   ///
   /// Harmonization makes adding and introducing new colors to your app more
   /// seamless by automatically shifting hue and chroma slightly so that a
-  /// product's colors feel more cohesive with user colors.
+  /// product's colors feel more cohesive with dynamic user colors.
   ///
   /// Semantic colors (i.e. colors with meaning) include colors such as [error].
   /// See https://m3.material.io/styles/color/the-color-system/custom-colors#harmonization

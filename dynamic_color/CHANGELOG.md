@@ -1,3 +1,7 @@
+## 1.2.0
+
+- Improve examples: show how to create dynamic and fallback color schemes, and use harmonization for color schemes and custom colors
+
 ## 1.1.2
 
 - Move samples to their own library
