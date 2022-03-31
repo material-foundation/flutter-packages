@@ -1,5 +1,7 @@
 import 'dart:typed_data' show ByteData;
 
+bool get isMacOS => false;
+
 /// By default, file IO is stubbed out.
 ///
 /// If the path provider library is available (on mobile or desktop), then the

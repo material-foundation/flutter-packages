@@ -172,6 +172,9 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     _loadedFonts.remove(familyWithVariantString);
     print('Error: google_fonts was unable to load font $fontName because the '
         'following exception occured:\n$e');
+    if (file_io.isMacOS) {
+      print('See https://docs.flutter.dev/desktop#setting-up-entitlements.');
+    }
   }
 }
 
