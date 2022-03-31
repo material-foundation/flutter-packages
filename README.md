@@ -5,7 +5,7 @@ available from [fonts.google.com](https://fonts.google.com/) in your Flutter app
 
 ## Getting Started
 
-![changing fonts with google_fonts and hot reload](https://user-images.githubusercontent.com/6655696/161120963-d2d9e371-bd62-4392-9436-384a8554c60f.gif)
+![changing fonts with google_fonts and hot reload](https://user-images.githubusercontent.com/6655696/161121395-bbda7d3e-0842-4fe2-b428-9b2f29da8a8f.gif)
 
 With the `google_fonts` package, `.ttf` or `.otf` files do not need to be stored in your assets folder and mapped in
 the pubspec. Instead, they can be fetched via HTTP at runtime and cached in the app's file system. This is ideal for development and can be the preferred behaviour for production apps looking to reduce the app bundle size. Still, you may choose to include the font file in the assets, and the Google Fonts package will prioritize pre-bundled files over HTTP fetching. 
