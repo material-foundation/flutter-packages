@@ -69,6 +69,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     this.drawerHeader,
     this.fabInRail = true,
     this.includeBaseDestinationsInMenu = true,
+    this.bottomNavigationOverflow = 5,
   }) : super(key: key);
 
   /// See [Scaffold.appBar].
@@ -166,6 +167,9 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   /// the overflow destinations.
   final bool includeBaseDestinationsInMenu;
 
+  /// Maximum number of items to display in [bottomNavigationBar]
+  final int bottomNavigationOverflow;
+
   NavigationType _defaultNavigationTypeResolver(BuildContext context) {
     if (_isLargeScreen(context)) {
       return NavigationType.permanentDrawer;
@@ -196,7 +200,6 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   }
 
   Widget _buildBottomNavigationScaffold() {
-    const int bottomNavigationOverflow = 5;
     final bottomDestinations = destinations.sublist(
       0,
       math.min(destinations.length, bottomNavigationOverflow),
