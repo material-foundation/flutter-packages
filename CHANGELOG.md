@@ -1,3 +1,7 @@
+## 2.3.2 - 2022-04-25
+### Added
+- Add warning on macOS about entitlements
+
 ## 2.3.1 - 2022-02-04
 ### Added
 - Introduce Flutter SDK constraint minimum of 2.10
