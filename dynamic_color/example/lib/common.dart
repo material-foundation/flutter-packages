@@ -21,7 +21,7 @@ class ColoredSquare extends StatelessWidget {
             color: color,
           ),
           const SizedBox(width: 10),
-          Text(description),
+          Flexible(child: Text(description)),
         ],
       ),
     );
