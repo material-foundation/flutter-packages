@@ -1,6 +1,5 @@
 # dynamic_color
 
-[![ci](https://github.com/material-foundation/material-dynamic-color-flutter/actions/workflows/test.yml/badge.svg)](https://github.com/material-foundation/material-dynamic-color-flutter/actions/workflows/test.yml)
 [![pub package](https://img.shields.io/pub/v/dynamic_color.svg)](https://pub.dev/packages/dynamic_color)
 
 A Flutter package to obtain dynamic colors on Android S+ and harmonize custom colors.
