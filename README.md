@@ -1,19 +1,23 @@
 # google_fonts
 
-The `google_fonts` package for Flutter allows you to easily use any of the thousands of fonts
-available from [fonts.google.com](https://fonts.google.com/) in your Flutter app.
+[![pub package](https://img.shields.io/pub/v/google_fonts.svg)](https://pub.dev/packages/google_fonts)
+
+A Flutter package to easily use any of the thousands of fonts
+available from [fonts.google.com](https://fonts.google.com/).
+
+<img alt="changing fonts with google_fonts and hot reload" src="https://user-images.githubusercontent.com/6655696/161121395-bbda7d3e-0842-4fe2-b428-9b2f29da8a8f.gif" width="100%" />
+
+## Features
+
+- HTTP fetching at runtime, ideal for development. Can also be used in production to reduce app size
+- Font file caching, on device file system
+- Font bundling in assets. Matching font files found in assets are prioritized over HTTP fetching. Useful for offline-first apps.
 
 ## Getting Started
 
-![changing fonts with google_fonts and hot reload](https://user-images.githubusercontent.com/6655696/161121395-bbda7d3e-0842-4fe2-b428-9b2f29da8a8f.gif)
-
-With the `google_fonts` package, `.ttf` or `.otf` files do not need to be stored in your assets folder and mapped in
-the pubspec. Instead, they can be fetched via HTTP at runtime and cached in the app's file system. This is ideal for development and can be the preferred behaviour for production apps looking to reduce the app bundle size. Still, you may choose to include the font file in the assets, and the Google Fonts package will prioritize pre-bundled files over HTTP fetching. 
-Because of this, the Google Fonts package allows developers to choose between pre-bundling the fonts and loading them over HTTP while using the same API. See the [API docs](https://pub.dev/documentation/google_fonts/latest/google_fonts/GoogleFonts/config.html) to disable HTTP fetching.
-
 For example, say you want to use the [Lato](https://fonts.google.com/specimen/Lato) font from Google Fonts in your Flutter app.
 
-First, add the `google_fonts` package to your [pubspec dependencies](https://pub.dev/packages/google_fonts#-installing-tab-).
+First, add the `google_fonts` package to your [pubspec dependencies](https://pub.dev/packages/google_fonts/install).
 
 To import `GoogleFonts`:
 
@@ -106,7 +110,7 @@ Please note that for macOS network fetching, the following must be present in th
 <true/>
 ```
 
-### Bundling font files in your application's assets
+### Font bundling in assets
 
 The `google_fonts` package will automatically use matching font files in your `pubspec.yaml`'s
 `assets` (rather than fetching them at runtime via HTTP). Once you've settled on the fonts
@@ -141,6 +145,8 @@ you want to use:
 Note: Since these files are listed as assets, there is no need to list them in the `fonts` section
 of the `pubspec.yaml`. This can be done because the files are consistently named from the Google Fonts API
 (so be sure not to rename them!)
+
+See the [API docs](https://pub.dev/documentation/google_fonts/latest/google_fonts/GoogleFonts/config.html) to completely disable HTTP fetching.
 
 ### Licensing Fonts
 
