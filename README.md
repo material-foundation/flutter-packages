@@ -9,6 +9,8 @@ available from [fonts.google.com](https://fonts.google.com/).
 
 ## Features
 
+[![video thumbnail](https://img.youtube.com/vi/8Vzv2CdbEY0/0.jpg)](https://www.youtube.com/watch?v=8Vzv2CdbEY0)
+
 - HTTP fetching at runtime, ideal for development. Can also be used in production to reduce app size
 - Font file caching, on device file system
 - Font bundling in assets. Matching font files found in assets are prioritized over HTTP fetching. Useful for offline-first apps.
