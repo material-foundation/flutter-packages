@@ -17,20 +17,6 @@ jobs:
 
       - run: dart generator/generator.dart
       
-      - name: Check if there are new fonts
-        id: check_files
-        uses: andstor/file-existence-action@v1
-        with:
-          files: "generator/fonts_latest_added"
-      - name: Cancel if there are no new fonts
-        uses: andymckay/cancel-action@0.2
-        if: steps.check_files.outputs.files_exists == 'false'
-
-      - run: dart pub global activate cider
-      - run: cider log changed 'Added the latest fonts from fonts.google.com'
-      - run: cider bump minor
-      - run: cider release
-
       - name: Read fonts_latest_added file
         uses: actions/github-script@v4
         id: getaddedfonts
@@ -39,6 +25,14 @@ jobs:
             const fs = require('fs');
             return fs.readFileSync('generator/fonts_latest_added','utf8').toString();
           result-encoding: string
+      - name: Cancel if there are no new fonts
+        uses: andymckay/cancel-action@0.2
+        if: steps.getaddedfonts.outputs.result == ''
+
+      - run: dart pub global activate cider
+      - run: cider log changed 'Added the latest fonts from fonts.google.com'
+      - run: cider bump minor
+      - run: cider release
 
       - uses: peter-evans/create-pull-request@v3
         with:
