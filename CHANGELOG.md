@@ -1,3 +1,7 @@
+## 2.4.0 - 2022-05-18
+### Changed
+- Added the latest fonts from fonts.google.com
+
 ## 2.3.2 - 2022-04-25
 ### Added
 - Add warning on macOS about entitlements
