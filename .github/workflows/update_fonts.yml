@@ -16,14 +16,15 @@ jobs:
       - run: flutter pub get
 
       - run: dart generator/generator.dart
-      - name: Exit if there are no new fonts
-        run: |
-          if [ -s generator/fonts_latest_added ]; then 
-            echo lib/google_fonts.dart has been updated.
-          else 
-            echo No new fonts. Exiting...
-            exit 1
-          fi
+      
+      - name: Check if there are new fonts
+        id: check_files
+        uses: andstor/file-existence-action@v1
+        with:
+          files: "generator/fonts_latest_added"
+      - name: Cancel if there are no new fonts
+        uses: andymckay/cancel-action@0.2
+        if: steps.check_files.outputs.files_exists == 'false'
 
       - run: dart pub global activate cider
       - run: cider log changed 'Added the latest fonts from fonts.google.com'
