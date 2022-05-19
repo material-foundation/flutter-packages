@@ -1,3 +1,7 @@
+# [0.1.2] - May 19, 2022
+
+- Updated the value of the pubspec 'repository' field.
+
 # [0.1.1] - November 18, 2021
 
 - Add linting to example
