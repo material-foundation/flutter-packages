@@ -1,3 +1,7 @@
+## 2.3.3 - 2022-05-19
+### Changed
+- Updated the value of the pubspec 'repository' field
+
 ## 2.3.2 - 2022-04-25
 ### Added
 - Add warning on macOS about entitlements
