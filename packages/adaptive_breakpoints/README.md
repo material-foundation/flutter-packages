@@ -14,8 +14,6 @@ To import `adaptive_breakpoints`:
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart
 ```
 
-Here is an example of how to implement the Adaptive Breakpoint entries in Flutter Development.
-
 In this example, we created an adaptive container which will 'activate' anytime that window screen is
 on same as the window limit. If they are the same the child will show otherwise it will be an empty container.
 

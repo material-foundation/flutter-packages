@@ -5,10 +5,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(AdaptiveBreakpointsExample());
+  runApp(const AdaptiveBreakpointsExample());
 }
 
 class AdaptiveBreakpointsExample extends StatelessWidget {
+  const AdaptiveBreakpointsExample({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,32 +18,27 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
         body: Column(
           children: [
             AdaptiveContainer(
-              adaptiveConstraints:
-                  const AdaptiveConstraints(xs: true),
+              adaptiveConstraints: const AdaptiveConstraints(xs: true),
               color: Colors.red,
               child: const Text('This is an extra small window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints:
-                 const AdaptiveConstraints(s: true),
+              adaptiveConstraints: const AdaptiveConstraints(s: true),
               color: Colors.orange,
-              child:const Text('This is a small window'),
+              child: const Text('This is a small window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints:
-                  const AdaptiveConstraints(m: true),
+              adaptiveConstraints: const AdaptiveConstraints(m: true),
               color: Colors.yellow,
-              child:const Text('This is a medium window'),
+              child: const Text('This is a medium window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints:
-                  const AdaptiveConstraints(l: true),
+              adaptiveConstraints: const AdaptiveConstraints(l: true),
               color: Colors.green,
-              child:const Text('This is a large window'),
+              child: const Text('This is a large window'),
             ),
             AdaptiveContainer(
-              adaptiveConstraints:
-                  const AdaptiveConstraints(xl: true),
+              adaptiveConstraints: const AdaptiveConstraints(xl: true),
               color: Colors.blue,
               child: const Text('This is an extra large window'),
             ),
@@ -60,7 +57,8 @@ class AdaptiveBreakpointsExample extends StatelessWidget {
                 xl: true,
               ),
               color: Colors.pink,
-              child: const Text('This is a medium, large, or extra large window'),
+              child:
+                  const Text('This is a medium, large, or extra large window'),
             ),
           ],
         ),
@@ -86,7 +84,7 @@ class AdaptiveContainer extends StatelessWidget {
   /// it would potentially result in the decoration drawing over the background
   /// color. To supply a decoration with a color, use `decoration:
   /// BoxDecoration(color: color)`.
-   AdaptiveContainer({
+  AdaptiveContainer({
     Key? key,
     this.alignment,
     this.padding,
@@ -114,10 +112,10 @@ class AdaptiveContainer extends StatelessWidget {
   /// container will expand to fill all available space in its parent, unless
   /// the parent provides unbounded constraints, in which case the container
   /// will attempt to be as small as possible.
-   Widget? child;
+  final Widget? child;
 
   /// Represents how height the container should be.
-   double? height;
+  final double? height;
 
   /// Creates constraints for adaptive windows.
   ///
@@ -139,14 +137,14 @@ class AdaptiveContainer extends StatelessWidget {
   ///    specify an [AlignmentGeometry].
   ///  * [AlignmentDirectional], like [Alignment] for specifying alignments
   ///    relative to text direction.
-   AlignmentGeometry? alignment;
+  final AlignmentGeometry? alignment;
 
   /// Empty space to inscribe inside the [decoration]. The [child], if any, is
   /// placed inside this padding.
   ///
   /// This padding is in addition to any padding inherent in the [decoration];
   /// see [Decoration.padding].
-   EdgeInsetsGeometry? padding;
+  final EdgeInsetsGeometry? padding;
 
   /// The color to paint behind the [child].
   ///
@@ -157,7 +155,7 @@ class AdaptiveContainer extends StatelessWidget {
   /// If the [decoration] is used, this property must be null. A background
   /// color may still be painted by the [decoration] even if this property is
   /// null.
-   Color? color;
+  final Color? color;
 
   /// The decoration to paint behind the [child].
   ///
@@ -165,21 +163,21 @@ class AdaptiveContainer extends StatelessWidget {
   ///
   /// The [child] is not clipped to the decoration. To clip a child to the shape
   /// of a particular [ShapeDecoration], consider using a [ClipPath] widget.
- Decoration? decoration;
+  final Decoration? decoration;
 
   /// The decoration to paint in front of the [child].
- Decoration? foregroundDecoration;
+  final Decoration? foregroundDecoration;
 
   /// Empty space to surround the [decoration] and [child].
-  EdgeInsetsGeometry? margin;
+  final EdgeInsetsGeometry? margin;
 
   /// The transformation matrix to apply before painting the container.
-   Matrix4? transform;
+  final Matrix4? transform;
 
   /// The clip behavior when [Container.decoration] has a clipPath.
   ///
   /// Defaults to [Clip.none].
-   Clip clipBehavior;
+  final Clip clipBehavior;
 
   @override
   Widget build(BuildContext context) {
@@ -220,7 +218,7 @@ class AdaptiveContainer extends StatelessWidget {
 /// If the user sets one of the variables below to true than that window type
 /// should be shown within the [AdaptiveContainer].
 class AdaptiveConstraints {
-  const AdaptiveConstraints ({
+  const AdaptiveConstraints({
     this.xs = false,
     this.s = false,
     this.m = false,
@@ -291,7 +289,7 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
     }
   }
 
-   RangeValues get widthRangeValues {
+  RangeValues get widthRangeValues {
     switch (this) {
       case AdaptiveWindowType.xs:
         return const RangeValues(0, 599);
@@ -308,7 +306,7 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
     }
   }
 
-   RangeValues get heightLandscapeRangeValues {
+  RangeValues get heightLandscapeRangeValues {
     switch (this) {
       case AdaptiveWindowType.xs:
         return const RangeValues(0, 359);
@@ -325,7 +323,7 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
     }
   }
 
-   RangeValues get heightPortraitRangeValues {
+  RangeValues get heightPortraitRangeValues {
     switch (this) {
       case AdaptiveWindowType.xs:
         return const RangeValues(0, 959);
@@ -346,10 +344,10 @@ extension AdaptiveWindowTypeExtension on AdaptiveWindowType {
 /// This class represents the Material breakpoint system entry.
 /// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
 class BreakpointSystemEntry {
-   BreakpointSystemEntry({
+  BreakpointSystemEntry({
     required this.range,
-     this.portrait,
-     this.landscape,
+    this.portrait,
+    this.landscape,
     required this.adaptiveWindowType,
     required this.columns,
     required this.margins,
@@ -357,13 +355,13 @@ class BreakpointSystemEntry {
   });
 
   /// The breakpoint range values represents a width range.
-  final  RangeValues range;
+  final RangeValues range;
 
   /// Type of device which uses this breakpoint range in portrait view.
-   String? portrait;
+  String? portrait;
 
   /// Type of device which uses this breakpoint range in landscape view.
-   String? landscape;
+  String? landscape;
 
   /// Material generalizes the device size into five different windows: extra
   /// small, small, medium, large, and extra large.
