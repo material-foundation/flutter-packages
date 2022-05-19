@@ -16,22 +16,26 @@ jobs:
       - run: flutter pub get
 
       - run: dart generator/generator.dart
-      
-      - name: Read fonts_latest_added file
+
+      - name: Read fonts_diff file
         uses: actions/github-script@v4
-        id: getaddedfonts
+        id: get_fonts_diff
         with:
           script: |
             const fs = require('fs');
-            return fs.readFileSync('generator/fonts_latest_added','utf8').toString();
+            return fs.readFileSync('generator/fonts_diff','utf8').toString();
           result-encoding: string
-      - name: Cancel if there are no new fonts
+      - name: Cancel if there are no added or removed fonts
         uses: andymckay/cancel-action@0.2
-        if: steps.getaddedfonts.outputs.result == ''
+        if: steps.get_fonts_diff.outputs.result == ''
 
       - run: dart pub global activate cider
-      - run: cider log changed 'Added the latest fonts from fonts.google.com'
+      - run: cider log changed 'Updated to include current Google Fonts.'
+      # Bump major version if fonts were removed, minor otherwise.
+      - run: cider bump major
+        if: "contains(steps.get_fonts_diff.outputs.result, 'Removed')"
       - run: cider bump minor
+        if: "!contains(steps.get_fonts_diff.outputs.result , 'Removed')"
       - run: cider release
 
       - uses: peter-evans/create-pull-request@v3
@@ -39,16 +43,16 @@ jobs:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
           commit-message: |
-            [automated] add fonts
+            [automated] update fonts
 
-            ${{ steps.getaddedfonts.outputs.result }}
+            ${{ steps.get_fonts_diff.outputs.result }}
           base: main
           branch: create-pull-request/update
           delete-branch: true
           author: material-robot <featherless+materialrobot@google.com>
           title: Update fonts
           body: |
-            Adds the latest fonts from [Google Fonts](https://fonts.google.com):
-            ${{ steps.getaddedfonts.outputs.result }}
+            Updated to include current [Google Fonts](https://fonts.google.com):
+            ${{ steps.get_fonts_diff.outputs.result }}
           team-reviewers: google-fonts-flutter-package-maintainers
           labels: automated

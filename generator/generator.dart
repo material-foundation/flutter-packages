@@ -12,7 +12,7 @@ import 'fonts.pb.dart';
 
 const _generatedFilePath = 'lib/google_fonts.dart';
 const _currentFontsPath = 'generator/fonts_current';
-const _addedFontsPath = 'generator/fonts_latest_added';
+const _diffFontsPath = 'generator/fonts_diff';
 
 /// Generates the `GoogleFonts` class.
 Future<void> main() async {
@@ -123,16 +123,34 @@ void _generateFontsLists(Directory fontDirectory) {
 
   List<String> addedFonts = [];
   List<String> newCurrentFonts = [];
+  List<String> removedFonts = [];
 
   for (final item in fontDirectory.family) {
     final family = item.name;
     if (!currentFonts.contains(family)) {
-      addedFonts.add('* $family');
+      addedFonts.add('* `$family`');
     }
     newCurrentFonts.add(family);
   }
 
-  File(_addedFontsPath).writeAsStringSync(addedFonts.join('\n'));
+  for (final family in currentFonts) {
+    if (!newCurrentFonts.contains(family)) {
+      removedFonts.add('* `$family`');
+    }
+  }
+
+  String fontsDiff = '';
+  if (removedFonts.isNotEmpty) {
+    fontsDiff += '## Removed:\n';
+    fontsDiff += removedFonts.join('\n');
+    fontsDiff += '\n';
+  }
+  if (addedFonts.isNotEmpty) {
+    fontsDiff += '## Added:\n';
+    fontsDiff += addedFonts.join('\n');
+    fontsDiff += '\n';
+  }
+  File(_diffFontsPath).writeAsStringSync(fontsDiff);
   File(_currentFontsPath).writeAsStringSync(newCurrentFonts.join('\n'));
 }
 
