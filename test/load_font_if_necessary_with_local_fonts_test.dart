@@ -54,13 +54,13 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   late Directory directory;
-  late MockHttpClient _httpClient;
+  late MockHttpClient mockHttpClient;
 
   setUp(() async {
-    _httpClient = MockHttpClient();
-    httpClient = _httpClient;
+    mockHttpClient = MockHttpClient();
+    httpClient = mockHttpClient;
     GoogleFonts.config.allowRuntimeFetching = true;
-    when(_httpClient.gets(any)).thenAnswer((_) async {
+    when(mockHttpClient.gets(any)).thenAnswer((_) async {
       return http.Response(_fakeResponse, 200);
     });
 
@@ -96,7 +96,7 @@ void main() {
     // Call loadFontIfNecessary and verify no http request happens because
     // Foo-BlackItalic is in the asset bundle.
     await loadFontIfNecessary(descriptorInAssets);
-    verifyNever(_httpClient.gets(anything));
+    verifyNever(mockHttpClient.gets(anything));
 
     final descriptorNotInAssets = GoogleFontsDescriptor(
       familyWithVariant: const GoogleFontsFamilyWithVariant(
@@ -112,6 +112,6 @@ void main() {
     // Call loadFontIfNecessary and verify that an http request happens because
     // Bar-BoldItalic is not in the asset bundle.
     await loadFontIfNecessary(descriptorNotInAssets);
-    verify(_httpClient.gets(anything)).called(1);
+    verify(mockHttpClient.gets(anything)).called(1);
   });
 }

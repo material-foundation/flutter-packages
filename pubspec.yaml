@@ -15,11 +15,11 @@ dependencies:
   crypto: ^3.0.0
 
 dev_dependencies:
-  flutter_lints: ^1.0.4
+  flutter_lints: ^2.0.1
   flutter_test:
     sdk: flutter
   mockito: ^5.0.0
-  mustache: ^1.1.1
+  mustache_template: ^2.0.0
   path_provider_platform_interface: ^2.0.1
   plugin_platform_interface: ^2.0.2
   protobuf: ^2.0.1
