@@ -25,12 +25,15 @@ jobs:
             const fs = require('fs');
             return fs.readFileSync('generator/fonts_diff','utf8').toString();
           result-encoding: string
-      - name: Cancel if there are no added or removed fonts
+      - name: Exit workflow if there are no added or removed fonts
         uses: andymckay/cancel-action@0.2
         if: steps.get_fonts_diff.outputs.result == ''
 
       - run: dart pub global activate cider
-      - run: cider log changed 'Updated to include current fonts from Google Fonts ${{ steps.get_fonts_diff.outputs.result }}'
+      - run: |
+          cider log changed 'Updated to include current fonts from Google Fonts
+
+          ${{ steps.get_fonts_diff.outputs.result }}'
       # Bump breaking version if fonts were removed, minor otherwise.
       - run: cider bump breaking
         if: "contains(steps.get_fonts_diff.outputs.result, 'removed')"
@@ -52,6 +55,7 @@ jobs:
           author: material-robot <featherless+materialrobot@google.com>
           title: Update fonts
           body: |
+            # Summary
             ${{ steps.get_fonts_diff.outputs.result }}
 
             Please note that all existing fonts are subject to being updated.

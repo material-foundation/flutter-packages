@@ -128,7 +128,7 @@ void _generateFontsLists(Directory fontDirectory) {
   for (final item in fontDirectory.family) {
     final family = item.name;
     if (!currentFonts.contains(family)) {
-      addedFonts.add('  - Added` $family`');
+      addedFonts.add('  - Added `$family`');
     }
     updatedCurrentFonts.add(family);
   }
