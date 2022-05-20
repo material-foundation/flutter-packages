@@ -1,3 +1,7 @@
+## Unreleased
+### Changed
+- Complete null safety migration
+
 ## 2.3.3 - 2022-05-19
 ### Changed
 - Updated the value of the pubspec 'repository' field
