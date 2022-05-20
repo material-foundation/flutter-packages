@@ -31,7 +31,9 @@ class AssetManifest {
           await rootBundle.loadString('AssetManifest.json', cache: enableCache);
       return _manifestParser(jsonString);
     } catch (e) {
-      print('Error loading AssetManifest.json, e: $e');
+      print(
+        'Error loading AssetManifest.json. Please file an issue at https://github.com/material-foundation/google-fonts-flutter/issues/new/choose.',
+      );
       rootBundle.evict('AssetManifest.json');
       rethrow;
     }
