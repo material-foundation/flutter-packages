@@ -9,10 +9,14 @@ bool get isMacOS => false;
 
 /// Stubbed out version of saveFontToDeviceFileSystem from
 /// `file_io_desktop_and_mobile.dart`.
-Future<void> saveFontToDeviceFileSystem(String name, List<int> bytes) =>
+Future<void> saveFontToDeviceFileSystem(
+  String name,
+  String fileHash,
+  List<int> bytes,
+) =>
     Future.value(null);
 
 /// Stubbed out version of loadFontFromDeviceFileSystem from
 /// `file_io_desktop_and_mobile.dart`.
-Future<ByteData?> loadFontFromDeviceFileSystem(String name) =>
+Future<ByteData?> loadFontFromDeviceFileSystem(String name, String fileHash) =>
     Future.value(null);
