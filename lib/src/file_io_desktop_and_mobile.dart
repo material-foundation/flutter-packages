@@ -4,6 +4,7 @@ import 'dart:typed_data';
 import 'package:path_provider/path_provider.dart';
 
 bool get isMacOS => Platform.isMacOS;
+bool get isAndroid => Platform.isAndroid;
 
 Future<void> saveFontToDeviceFileSystem(String name, List<int> bytes) async {
   final file = await _localFile(name);
