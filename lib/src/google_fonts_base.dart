@@ -148,8 +148,8 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 
     // Check if this font can be loaded from the device file system.
     byteData = file_io.loadFontFromDeviceFileSystem(
-      familyWithVariantString,
-      fileHash,
+      name: familyWithVariantString,
+      fileHash: fileHash,
     );
 
     if (await byteData != null) {
@@ -248,9 +248,9 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
     }
 
     _unawaited(file_io.saveFontToDeviceFileSystem(
-      fontName,
-      file.expectedFileHash,
-      response.bodyBytes,
+      name: fontName,
+      fileHash: file.expectedFileHash,
+      bytes: response.bodyBytes,
     ));
 
     return ByteData.view(response.bodyBytes.buffer);

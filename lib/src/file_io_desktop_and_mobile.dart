@@ -6,18 +6,20 @@ import 'package:path_provider/path_provider.dart';
 bool get isMacOS => Platform.isMacOS;
 bool get isAndroid => Platform.isAndroid;
 
-Future<void> saveFontToDeviceFileSystem(
-  String name,
-  String fileHash,
-  List<int> bytes,
-) async {
+Future<void> saveFontToDeviceFileSystem({
+  required String name,
+  required String fileHash,
+  required List<int> bytes,
+}) async {
   final file = await _localFile(name, fileHash);
   print('saving $file');
   await file.writeAsBytes(bytes);
 }
 
-Future<ByteData?> loadFontFromDeviceFileSystem(
-    String name, String fileHash) async {
+Future<ByteData?> loadFontFromDeviceFileSystem({
+  required String name,
+  required String fileHash,
+}) async {
   try {
     final file = await _localFile(name, fileHash);
     final fileExists = file.existsSync();

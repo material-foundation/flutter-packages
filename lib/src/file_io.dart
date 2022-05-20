@@ -10,14 +10,19 @@ bool get isAndroid => false;
 
 /// Stubbed out version of saveFontToDeviceFileSystem from
 /// `file_io_desktop_and_mobile.dart`.
-Future<void> saveFontToDeviceFileSystem(
-  String name,
-  String fileHash,
-  List<int> bytes,
-) =>
-    Future.value(null);
+Future<void> saveFontToDeviceFileSystem({
+  required String name,
+  required String fileHash,
+  required List<int> bytes,
+}) {
+  return Future.value(null);
+}
 
 /// Stubbed out version of loadFontFromDeviceFileSystem from
 /// `file_io_desktop_and_mobile.dart`.
-Future<ByteData?> loadFontFromDeviceFileSystem(String name, String fileHash) =>
-    Future.value(null);
+Future<ByteData?> loadFontFromDeviceFileSystem({
+  required String name,
+  required String fileHash,
+}) {
+  return Future.value(null);
+}
