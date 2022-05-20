@@ -15,6 +15,7 @@ jobs:
       - run: flutter doctor -v
       - run: flutter pub get
 
+      - run: dart pub global activate cider
       - run: dart generator/generator.dart
 
       - name: Read families_diff file
