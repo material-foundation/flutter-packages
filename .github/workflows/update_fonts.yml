@@ -33,9 +33,9 @@ jobs:
       - run: cider log changed 'Updated to include current fonts from Google Fonts ${{ steps.get_fonts_diff.outputs.result }}'
       # Bump breaking version if fonts were removed, minor otherwise.
       - run: cider bump breaking
-        if: "contains(steps.get_fonts_diff.outputs.result, 'Removed')"
+        if: "contains(steps.get_fonts_diff.outputs.result, 'removed')"
       - run: cider bump minor
-        if: "!contains(steps.get_fonts_diff.outputs.result , 'Removed')"
+        if: "!contains(steps.get_fonts_diff.outputs.result , 'removed')"
       - run: cider release
 
       - uses: peter-evans/create-pull-request@v3
