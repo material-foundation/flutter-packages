@@ -30,7 +30,7 @@ jobs:
         if: steps.get_fonts_diff.outputs.result == ''
 
       - run: dart pub global activate cider
-      - run: cider log changed 'Updated to include current fonts from Google Fonts ${{ steps.get_fonts_diff.outputs.result }}'
+      - run: cider log changed 'Updated to include current fonts from Google Fonts \n${{ steps.get_fonts_diff.outputs.result }}'
       # Bump breaking version if fonts were removed, minor otherwise.
       - run: cider bump breaking
         if: "contains(steps.get_fonts_diff.outputs.result, 'removed')"
