@@ -3,8 +3,9 @@
 - Cache busting for font updates
 
 ### Changed
-- Complete null safety migration
-- Improved support encountering HTTP fetching errors
+- Completed null safety migration
+- Improved documentation
+- Improved support around HTTP fetching errors
 
 ## 2.3.3 - 2022-05-19
 ### Changed
