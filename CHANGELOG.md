@@ -1,4 +1,4 @@
-## Unreleased
+## 3.0.0 - 2022-05-20
 ### Added
 - Cache busting for font updates
 - Support for removing fonts
