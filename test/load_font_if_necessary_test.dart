@@ -304,10 +304,10 @@ void main() {
 
     // What if the file is different (e.g. the font has been improved)?
     await loadFontIfNecessary(fakeDescriptorDifferentFile);
-    // Give enough time for the file to be saved
-    await Future.delayed(const Duration(seconds: 1), () {});
     verify(mockHttpClient.gets(any)).called(1);
 
+    // Give enough time for the file to be saved
+    await Future.delayed(const Duration(seconds: 1), () {});
     expect(directoryContents.listSync().length == 2, isTrue);
     expect(
       directoryContents.listSync().toString(),
