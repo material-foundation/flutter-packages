@@ -136,11 +136,11 @@ you want to use:
 }
 ```
 
-2. Move those fonts to a top-level app directory (e.g. `google_fonts`).
+2. Move those fonts to an assets folder (e.g. `google_fonts`). You can name this folder what you like and use subdirectories.
 
 ![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/main/readme_images/google_fonts_folder.png)
 
-3. Ensure that you have listed the folder (e.g. `google_fonts/`) in your `pubspec.yaml` under `assets`.
+3. Ensure that you have listed the root folder containing all assets (e.g. `google_fonts/`) in your `pubspec.yaml`, under `assets`.
 
 ![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/main/readme_images/google_fonts_pubspec_assets.png)
 
