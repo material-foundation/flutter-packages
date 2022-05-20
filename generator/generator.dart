@@ -139,9 +139,9 @@ void _generateFontsLists(Directory fontDirectory) {
     }
   }
 
-  String fontsDiff = '';
+  String fontsDiff = '\n';
   if (removedFonts.isNotEmpty) {
-    fontsDiff += removedFonts.join('\n');
+    fontsDiff += removedFonts.join('\n\n');
   }
   if (addedFonts.isNotEmpty) {
     fontsDiff += addedFonts.join('\n');
