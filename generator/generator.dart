@@ -11,7 +11,7 @@ import 'package:mustache_template/mustache.dart';
 import 'fonts.pb.dart';
 
 const _generatedFilePath = 'lib/google_fonts.dart';
-const _currentFontsPath = 'generator/fonts_current';
+const _allFamiliesPath = 'generator/fonts_current';
 const _diffFontsPath = 'generator/fonts_diff';
 
 /// Generates the `GoogleFonts` class.
@@ -25,8 +25,13 @@ Future<void> main() async {
   // await _verifyUrls(fontDirectory);
   print(_success);
 
-  print('\nGenerating the lists for current and added fonts...');
-  _generateFontsLists(fontDirectory);
+  print('\nDetermining font families delta...');
+  final familiesDelta = FamiliesDelta(fontDirectory);
+  print(_success);
+
+  print('\nGenerating $_allFamiliesPath and $_diffFontsPath...');
+  File(_allFamiliesPath).writeAsStringSync(familiesDelta.getPrintableAll());
+  File(_diffFontsPath).writeAsStringSync(familiesDelta.getPrintableDiff());
   print(_success);
 
   print('\nGenerating $_generatedFilePath...');
@@ -118,37 +123,53 @@ String _hashToString(List<int> bytes) {
   return fileName;
 }
 
-void _generateFontsLists(Directory fontDirectory) {
-  List<String> currentFonts = File(_currentFontsPath).readAsLinesSync();
-  List<String> updatedCurrentFonts = [];
+// Utility class to track font family deltas.
+class FamiliesDelta {
+  FamiliesDelta(Directory newFontDirectory) {
+    _initDelta(newFontDirectory);
+  }
 
-  List<String> addedFonts = [];
-  List<String> removedFonts = [];
+  final List<String> added = [];
+  final List<String> removed = [];
+  final List<String> all = [];
 
-  for (final item in fontDirectory.family) {
-    final family = item.name;
-    if (!currentFonts.contains(family)) {
-      addedFonts.add('  - Added `$family`');
+  void _initDelta(Directory newFontDirectory) {
+    List<String> currentFamilies = File(_allFamiliesPath).readAsLinesSync();
+
+    for (final item in newFontDirectory.family) {
+      final family = item.name;
+      if (!currentFamilies.contains(family)) {
+        added.add(family);
+      }
+      all.add(family);
     }
-    updatedCurrentFonts.add(family);
-  }
 
-  for (final family in currentFonts) {
-    if (!updatedCurrentFonts.contains(family)) {
-      removedFonts.add('  - Removed `$family`');
+    for (final family in currentFamilies) {
+      if (!all.contains(family)) {
+        removed.add(family);
+      }
     }
   }
 
-  String fontsDiff = '\n';
-  if (removedFonts.isNotEmpty) {
-    fontsDiff += removedFonts.join('\n');
-    fontsDiff += '\n';
+  // List of all available font families.
+  String getPrintableAll() => all.join('\n');
+
+  // Diff of font families, suitable for markdown (e.g. CHANGELOG, PR description).
+  String getPrintableDiff() {
+    final addedPrintable = added.map((family) => '  - Added `$family`');
+    final removedPrintable = removed.map((family) => '  - Removed `$family`');
+
+    String diff = '\n';
+    if (removedPrintable.isNotEmpty) {
+      diff += removedPrintable.join('\n');
+      diff += '\n';
+    }
+    if (addedPrintable.isNotEmpty) {
+      diff += addedPrintable.join('\n');
+    }
+
+    return diff;
   }
-  if (addedFonts.isNotEmpty) {
-    fontsDiff += addedFonts.join('\n');
-  }
-  File(_diffFontsPath).writeAsStringSync(fontsDiff);
-  File(_currentFontsPath).writeAsStringSync(updatedCurrentFonts.join('\n'));
 }
 
 String _generateDartCode(Directory fontDirectory) {
