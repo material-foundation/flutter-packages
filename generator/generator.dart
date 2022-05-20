@@ -11,8 +11,8 @@ import 'package:mustache_template/mustache.dart';
 import 'fonts.pb.dart';
 
 const _generatedFilePath = 'lib/google_fonts.dart';
-const _allFamiliesPath = 'generator/fonts_current';
-const _diffFontsPath = 'generator/fonts_diff';
+const _familiesSupportedPath = 'generator/families_supported';
+const _familiesDiffPath = 'generator/families_diff';
 
 /// Generates the `GoogleFonts` class.
 Future<void> main() async {
@@ -29,9 +29,14 @@ Future<void> main() async {
   final familiesDelta = FamiliesDelta(fontDirectory);
   print(_success);
 
-  print('\nGenerating $_allFamiliesPath and $_diffFontsPath...');
-  File(_allFamiliesPath).writeAsStringSync(familiesDelta.getPrintableAll());
-  File(_diffFontsPath).writeAsStringSync(familiesDelta.getPrintableDiff());
+  print('\nGenerating $_familiesSupportedPath...');
+  File(_familiesSupportedPath)
+      .writeAsStringSync(familiesDelta.getPrintableAll());
+  File(_familiesDiffPath).writeAsStringSync(familiesDelta.getPrintableAll());
+  print(_success);
+
+  print('\nUpdate CHANGELOG.md and pubspec.yaml...');
+  familiesDelta.updateChangelogAndPubspec();
   print(_success);
 
   print('\nGenerating $_generatedFilePath...');
@@ -134,7 +139,8 @@ class FamiliesDelta {
   final List<String> all = [];
 
   void _initDelta(Directory newFontDirectory) {
-    List<String> currentFamilies = File(_allFamiliesPath).readAsLinesSync();
+    List<String> currentFamilies =
+        File(_familiesSupportedPath).readAsLinesSync();
 
     for (final item in newFontDirectory.family) {
       final family = item.name;
@@ -169,6 +175,18 @@ class FamiliesDelta {
     }
 
     return diff;
+  }
+
+  // Use cider to update CHANGELOG.md and pubspec.yaml.
+  void updateChangelogAndPubspec() {
+    for (final family in removed) {
+      Process.run('cider', ['log' 'removed', '`$family`']);
+    }
+    for (final family in added) {
+      Process.run('cider', ['log' 'added', '`$family`']);
+    }
+
+    Process.run('cider', ['bump', removed.isNotEmpty ? 'breaking' : 'minor']);
   }
 }
 

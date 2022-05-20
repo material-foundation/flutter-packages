@@ -17,29 +17,18 @@ jobs:
 
       - run: dart generator/generator.dart
 
-      - name: Read fonts_diff file
+      - name: Read families_diff file
         uses: actions/github-script@v4
-        id: get_fonts_diff
+        id: get_families_diff
         with:
           script: |
             const fs = require('fs');
-            return fs.readFileSync('generator/fonts_diff','utf8').toString();
+            return fs.readFileSync('generator/families_diff','utf8').toString();
           result-encoding: string
-      - name: Exit workflow if there are no added or removed fonts
+
+      - name: Exit workflow if there is no diff
         uses: andymckay/cancel-action@0.2
-        if: steps.get_fonts_diff.outputs.result == ''
-
-      - run: dart pub global activate cider
-      - run: |
-          cider log changed 'Updated to include current fonts from Google Fonts
-
-          ${{ steps.get_fonts_diff.outputs.result }}'
-      # Bump breaking version if fonts were removed, minor otherwise.
-      - run: cider bump breaking
-        if: "contains(steps.get_fonts_diff.outputs.result, 'removed')"
-      - run: cider bump minor
-        if: "!contains(steps.get_fonts_diff.outputs.result , 'removed')"
-      - run: cider release
+        if: steps.get_families_diff.outputs.result == ''
 
       - uses: peter-evans/create-pull-request@v3
         with:
@@ -48,7 +37,7 @@ jobs:
           commit-message: |
             [automated] update fonts
 
-            ${{ steps.get_fonts_diff.outputs.result }}
+            ${{ steps.get_families_diff.outputs.result }}
           base: main
           branch: create-pull-request/update
           delete-branch: true
@@ -56,7 +45,7 @@ jobs:
           title: Update fonts
           body: |
             # Summary
-            ${{ steps.get_fonts_diff.outputs.result }}
+            ${{ steps.get_families_diff.outputs.result }}
 
             Please note that all existing fonts are subject to being updated.
           team-reviewers: google-fonts-flutter-package-maintainers
