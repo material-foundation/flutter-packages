@@ -1,7 +1,7 @@
 name: adaptive_components
 description: Implements Material Adaptive Components.
-version: 0.0.4
-homepage: https://github.com/material-components/material-components-flutter-adaptive/tree/develop/adaptive_components
+version: 0.0.4+1
+repository: https://github.com/material-components/material-components-flutter-adaptive/tree/develop/adaptive_components
 
 environment:
   sdk: ">=2.17.0 <3.0.0"
