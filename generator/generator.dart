@@ -31,7 +31,7 @@ Future<void> main() async {
   print('\nGenerating $_familiesSupportedPath & $_familiesDiffPath ...');
   File(_familiesSupportedPath)
       .writeAsStringSync(familiesDelta.printableSupported());
-  File(_familiesDiffPath).writeAsStringSync(familiesDelta.printableDiff());
+  File(_familiesDiffPath).writeAsStringSync(familiesDelta.markdownDiff());
   print(_success);
 
   print('\nUpdating CHANGELOG.md and pubspec.yaml...');
@@ -156,9 +156,9 @@ class _FamiliesDelta {
   // Printable list of supported font families.
   String printableSupported() => all.join('\n');
 
-  // Printable diff of font families, suitable for markdown
+  // Diff of font families, suitable for markdown
   // (e.g. CHANGELOG, PR description).
-  String printableDiff() {
+  String markdownDiff() {
     final addedPrintable = added.map((family) => '  - Added `$family`');
     final removedPrintable = removed.map((family) => '  - Removed `$family`');
 
