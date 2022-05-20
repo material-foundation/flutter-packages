@@ -34,7 +34,7 @@ Future<void> main() async {
   File(_familiesDiffPath).writeAsStringSync(familiesDelta.printableDiff());
   print(_success);
 
-  print('\nUpdate CHANGELOG.md and pubspec.yaml...');
+  print('\nUpdating CHANGELOG.md and pubspec.yaml...');
   await familiesDelta.updateChangelogAndPubspec();
   print(_success);
 
