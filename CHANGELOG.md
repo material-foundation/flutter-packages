@@ -1,9 +1,9 @@
 ## Unreleased
 ### Added
-- Add support for removing fonts
+- Support for removing fonts
 
 ### Changed
-- Complete null safety migration
+- Completed null safety migration
 
 ## 2.3.3 - 2022-05-19
 ### Changed
