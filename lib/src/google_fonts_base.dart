@@ -120,6 +120,7 @@ TextStyle googleFontsTextStyle({
 Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final familyWithVariantString = descriptor.familyWithVariant.toString();
   final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
+  final fileHash = descriptor.file.expectedFileHash;
   // If this font has already already loaded or is loading, then there is no
   // need to attempt to load it again, unless the attempted load results in an
   // error.
@@ -146,7 +147,10 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     }
 
     // Check if this font can be loaded from the device file system.
-    byteData = file_io.loadFontFromDeviceFileSystem(familyWithVariantString);
+    byteData = file_io.loadFontFromDeviceFileSystem(
+      familyWithVariantString,
+      fileHash,
+    );
 
     if (await byteData != null) {
       return loadFontByteData(familyWithVariantString, byteData);
@@ -164,7 +168,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     } else {
       throw Exception(
         'GoogleFonts.config.allowRuntimeFetching is false but font $fontName was not '
-        'found in the application assets. Ensure $fontName.otf exists in a '
+        'found in the application assets. Ensure $fontName.ttf exists in a '
         "folder that is included in your pubspec's assets.",
       );
     }
@@ -243,8 +247,11 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
       );
     }
 
-    _unawaited(
-        file_io.saveFontToDeviceFileSystem(fontName, response.bodyBytes));
+    _unawaited(file_io.saveFontToDeviceFileSystem(
+      fontName,
+      file.expectedFileHash,
+      response.bodyBytes,
+    ));
 
     return ByteData.view(response.bodyBytes.buffer);
   } else {

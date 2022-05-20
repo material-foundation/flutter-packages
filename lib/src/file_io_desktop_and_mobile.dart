@@ -6,14 +6,20 @@ import 'package:path_provider/path_provider.dart';
 bool get isMacOS => Platform.isMacOS;
 bool get isAndroid => Platform.isAndroid;
 
-Future<void> saveFontToDeviceFileSystem(String name, List<int> bytes) async {
-  final file = await _localFile(name);
+Future<void> saveFontToDeviceFileSystem(
+  String name,
+  String fileHash,
+  List<int> bytes,
+) async {
+  final file = await _localFile(name, fileHash);
+  print('saving $file');
   await file.writeAsBytes(bytes);
 }
 
-Future<ByteData?> loadFontFromDeviceFileSystem(String name) async {
+Future<ByteData?> loadFontFromDeviceFileSystem(
+    String name, String fileHash) async {
   try {
-    final file = await _localFile(name);
+    final file = await _localFile(name, fileHash);
     final fileExists = file.existsSync();
     if (fileExists) {
       List<int> contents = await file.readAsBytes();
@@ -32,10 +38,10 @@ Future<String> get _localPath async {
   return directory.path;
 }
 
-Future<File> _localFile(String name) async {
+Future<File> _localFile(String name, String fileHash) async {
   final path = await _localPath;
   // We expect only ttf files to be provided to us by the Google Fonts API.
   // That's why we can be sure a previously saved Google Font is in the ttf
   // format instead of, for example, otf.
-  return File('$path/$name.ttf');
+  return File('$path/${name}_$fileHash.ttf');
 }

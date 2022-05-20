@@ -1,4 +1,7 @@
 ## Unreleased
+### Added
+- Cache busting for font updates
+
 ### Changed
 - Complete null safety migration
 - Improved support encountering HTTP fetching errors
