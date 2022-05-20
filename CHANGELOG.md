@@ -1,4 +1,7 @@
 ## Unreleased
+### Added
+- Add support for removing fonts
+
 ### Changed
 - Complete null safety migration
 
