@@ -14,7 +14,6 @@ const _generatedFilePath = 'lib/google_fonts.dart';
 const _familiesSupportedPath = 'generator/families_supported';
 const _familiesDiffPath = 'generator/families_diff';
 
-/// Generates the `GoogleFonts` class.
 Future<void> main() async {
   print('Getting latest font directory...');
   final protoUrl = await _getProtoUrl();
@@ -29,10 +28,10 @@ Future<void> main() async {
   final familiesDelta = FamiliesDelta(fontDirectory);
   print(_success);
 
-  print('\nGenerating $_familiesSupportedPath...');
+  print('\nGenerating $_familiesSupportedPath & $_familiesDiffPath ...');
   File(_familiesSupportedPath)
-      .writeAsStringSync(familiesDelta.getPrintableAll());
-  File(_familiesDiffPath).writeAsStringSync(familiesDelta.getPrintableAll());
+      .writeAsStringSync(familiesDelta.printableSupported());
+  File(_familiesDiffPath).writeAsStringSync(familiesDelta.printableDiff());
   print(_success);
 
   print('\nUpdate CHANGELOG.md and pubspec.yaml...');
@@ -129,39 +128,37 @@ String _hashToString(List<int> bytes) {
 }
 
 // Utility class to track font family deltas.
+//
+// [fontDirectory] represents a possibly updated directory.
 class FamiliesDelta {
-  FamiliesDelta(Directory newFontDirectory) {
-    _initDelta(newFontDirectory);
+  FamiliesDelta(Directory fontDirectory) {
+    _init(fontDirectory);
   }
 
-  final List<String> added = [];
-  final List<String> removed = [];
-  final List<String> all = [];
+  late final Set<String> added;
+  late final Set<String> removed;
+  late final Set<String> all;
 
-  void _initDelta(Directory newFontDirectory) {
-    List<String> currentFamilies =
-        File(_familiesSupportedPath).readAsLinesSync();
+  void _init(Directory fontDirectory) {
+    // Currently supported families.
+    Set<String> familiesSupported =
+        Set.from(File(_familiesSupportedPath).readAsLinesSync());
 
-    for (final item in newFontDirectory.family) {
-      final family = item.name;
-      if (!currentFamilies.contains(family)) {
-        added.add(family);
-      }
-      all.add(family);
-    }
+    // Newly supported families.
+    all = Set<String>.from(
+      fontDirectory.family.map<String>((item) => item.name),
+    );
 
-    for (final family in currentFamilies) {
-      if (!all.contains(family)) {
-        removed.add(family);
-      }
-    }
+    added = all.difference(familiesSupported);
+    removed = familiesSupported.difference(all);
   }
 
-  // List of all available font families.
-  String getPrintableAll() => all.join('\n');
+  // Printable list of supported font families.
+  String printableSupported() => all.join('\n');
 
-  // Diff of font families, suitable for markdown (e.g. CHANGELOG, PR description).
-  String getPrintableDiff() {
+  // Printable diff of font families, suitable for markdown
+  // (e.g. CHANGELOG, PR description).
+  String printableDiff() {
     final addedPrintable = added.map((family) => '  - Added `$family`');
     final removedPrintable = removed.map((family) => '  - Removed `$family`');
 
