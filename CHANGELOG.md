@@ -1,5 +1,6 @@
 ## Unreleased
 ### Added
+- Cache busting for font updates
 - Support for removing fonts
 - `Akaya Kanadaka`
 - `Akshar`
@@ -108,7 +109,9 @@
 - `Zen Dots`
 
 ### Changed
-- Complete null safety migration
+- Completed null safety migration
+- Improved documentation
+- Improved support around HTTP fetching errors
 
 ### Removed
 - `Amatica SC`

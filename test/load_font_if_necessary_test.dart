@@ -45,9 +45,41 @@ const _fakeResponseLengthInBytes = 28;
 // Computed by converting _fakeResponse to bytes and getting sha 256 hash.
 const _fakeResponseHash =
     '1194f6ffe4d2f05258573616a77932c38041f3102763096c19437c3db1818a04';
+const expectedCachedFile =
+    'Foo_regular_1194f6ffe4d2f05258573616a77932c38041f3102763096c19437c3db1818a04.ttf';
+// ignore: unused_element
+const _fakeResponseDifferent = 'different response';
+// The number of bytes in _fakeResponseDifferent.
+const _fakeResponseDifferentLengthInBytes = 18;
+// Computed by converting _fakeResponseDifferent to bytes and getting sha 256 hash.
+const _fakeResponseDifferentHash =
+    '2a989d235f2408511069bc7d8460c62aec1a75ac399bd7f2a2ae740c4326dadf';
+const expectedDifferentCachedFile =
+    'Foo_regular_2a989d235f2408511069bc7d8460c62aec1a75ac399bd7f2a2ae740c4326dadf.ttf';
+
 final _fakeResponseFile = GoogleFontsFile(
   _fakeResponseHash,
   _fakeResponseLengthInBytes,
+);
+final _fakeResponseDifferentFile = GoogleFontsFile(
+  _fakeResponseDifferentHash,
+  _fakeResponseDifferentLengthInBytes,
+);
+
+final fakeDescriptor = GoogleFontsDescriptor(
+  familyWithVariant: const GoogleFontsFamilyWithVariant(
+      family: 'Foo',
+      googleFontsVariant: GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      )),
+  file: _fakeResponseFile,
+);
+
+// Same family & variant, different file.
+final fakeDescriptorDifferentFile = GoogleFontsDescriptor(
+  familyWithVariant: fakeDescriptor.familyWithVariant,
+  file: _fakeResponseDifferentFile,
 );
 
 var printLog = <String>[];
@@ -83,16 +115,6 @@ void main() {
   });
 
   test('loadFontIfNecessary method calls http get', () async {
-    final fakeDescriptor = GoogleFontsDescriptor(
-      familyWithVariant: const GoogleFontsFamilyWithVariant(
-          family: 'Foo',
-          googleFontsVariant: GoogleFontsVariant(
-            fontWeight: FontWeight.w400,
-            fontStyle: FontStyle.normal,
-          )),
-      file: _fakeResponseFile,
-    );
-
     await loadFontIfNecessary(fakeDescriptor);
 
     verify(mockHttpClient.gets(anything)).called(1);
@@ -151,7 +173,7 @@ void main() {
       expect(
         printLog[0],
         endsWith(
-          "Ensure Foo-Regular.otf exists in a folder that is included in your pubspec's assets.",
+          "Ensure Foo-Regular.ttf exists in a folder that is included in your pubspec's assets.",
         ),
       );
     });
@@ -234,17 +256,7 @@ void main() {
     verify(mockHttpClient.gets(any)).called(1);
   });
 
-  test('loadFontIfNecessary method writes font file', () async {
-    final fakeDescriptor = GoogleFontsDescriptor(
-      familyWithVariant: const GoogleFontsFamilyWithVariant(
-          family: 'Foo',
-          googleFontsVariant: GoogleFontsVariant(
-            fontWeight: FontWeight.w400,
-            fontStyle: FontStyle.normal,
-          )),
-      file: _fakeResponseFile,
-    );
-
+  test('loadFontIfNecessary method correctly stores in cache', () async {
     var directoryContents = await getApplicationSupportDirectory();
     expect(directoryContents.listSync().isEmpty, isTrue);
 
@@ -254,10 +266,59 @@ void main() {
     directoryContents = await getApplicationSupportDirectory();
 
     expect(directoryContents.listSync().isNotEmpty, isTrue);
-    expect(
-      directoryContents.listSync().single.toString().contains('Foo'),
-      isTrue,
+
+    expect(directoryContents.listSync().single.toString(),
+        contains(expectedCachedFile));
+  });
+
+  test('loadFontIfNecessary method correctly uses cache', () async {
+    var directoryContents = await getApplicationSupportDirectory();
+    expect(directoryContents.listSync().isEmpty, isTrue);
+
+    final cachedFile = File(
+      '${directoryContents.path}/$expectedCachedFile',
     );
+    cachedFile.createSync();
+    cachedFile.writeAsStringSync('file contents');
+
+    // Should use cache from now on.
+    await loadFontIfNecessary(fakeDescriptor);
+    await loadFontIfNecessary(fakeDescriptor);
+    await loadFontIfNecessary(fakeDescriptor);
+    verifyNever(mockHttpClient.gets(anything));
+  });
+
+  test('loadFontIfNecessary method re-caches when font file changes', () async {
+    when(mockHttpClient.gets(any)).thenAnswer((_) async {
+      return http.Response(_fakeResponseDifferent, 200);
+    });
+
+    var directoryContents = await getApplicationSupportDirectory();
+    expect(directoryContents.listSync().isEmpty, isTrue);
+
+    final cachedFile = File(
+      '${directoryContents.path}/$expectedCachedFile',
+    );
+    cachedFile.createSync();
+    cachedFile.writeAsStringSync('file contents');
+
+    // What if the file is different (e.g. the font has been improved)?
+    await loadFontIfNecessary(fakeDescriptorDifferentFile);
+    verify(mockHttpClient.gets(any)).called(1);
+
+    // Give enough time for the file to be saved
+    await Future.delayed(const Duration(seconds: 1), () {});
+    expect(directoryContents.listSync().length == 2, isTrue);
+    expect(
+      directoryContents.listSync().toString(),
+      contains(expectedDifferentCachedFile),
+    );
+
+    // Should use cache from now on.
+    await loadFontIfNecessary(fakeDescriptorDifferentFile);
+    await loadFontIfNecessary(fakeDescriptorDifferentFile);
+    await loadFontIfNecessary(fakeDescriptorDifferentFile);
+    verifyNever(mockHttpClient.gets(anything));
   });
 
   test(
