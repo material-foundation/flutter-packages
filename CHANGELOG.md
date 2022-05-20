@@ -1,6 +1,6 @@
 ## Unreleased
 ### Changed
-- Complete null safety migration
+- Completed null safety migration
 - Improved documentation
 
 ## 2.3.3 - 2022-05-19
