@@ -1,6 +1,138 @@
 ## Unreleased
+### Added
+- Support for removing fonts
+- `Akaya Kanadaka`
+- `Akshar`
+- `Alumni Sans Inline One`
+- `Anek Bangla`
+- `Anek Devanagari`
+- `Anek Gujarati`
+- `Anek Gurmukhi`
+- `Anek Kannada`
+- `Anek Latin`
+- `Anek Malayalam`
+- `Anek Odia`
+- `Anek Tamil`
+- `Anek Telugu`
+- `Angkor`
+- `Antonio`
+- `Anybody`
+- `Asap Condensed`
+- `BIZ UDGothic`
+- `BIZ UDMincho`
+- `BIZ UDPGothic`
+- `BIZ UDPMincho`
+- `Babylonica`
+- `Ballet`
+- `Battambang`
+- `Bayon`
+- `Beau Rivage`
+- `Benne`
+- `BhuTuka Expanded One`
+- `Bodoni Moda`
+- `Bokor`
+- `Chenla`
+- `Content`
+- `Dangrek`
+- `Familjen Grotesk`
+- `Fasthand`
+- `Fredoka`
+- `Freehand`
+- `Grape Nuts`
+- `Hanuman`
+- `Hubballi`
+- `Imbue`
+- `Imperial Script`
+- `Ingrid Darling`
+- `Inspiration`
+- `Island Moments`
+- `Karantina`
+- `Khmer`
+- `Kiwi Maru`
+- `Kolker Brush`
+- `Koulen`
+- `Lavishly Yours`
+- `League Gothic`
+- `League Spartan`
+- `Libre Barcode EAN13 Text`
+- `Libre Bodoni`
+- `Licorice`
+- `Love Light`
+- `Luxurious Roman`
+- `Mea Culpa`
+- `Metal`
+- `Moo Lah Lah`
+- `Moon Dance`
+- `Moul`
+- `Moulpali`
+- `Ms Madi`
+- `My Soul`
+- `Neonderthaw`
+- `Newsreader`
+- `Nokora`
+- `Noto Emoji`
+- `Ole`
+- `Oooh Baby`
+- `Orelega One`
+- `Plus Jakarta Sans`
+- `Preahvihear`
+- `Qwitcher Grypen`
+- `Radio Canada`
+- `Roboto Flex`
+- `Roboto Serif`
+- `Rubik Bubbles`
+- `Rubik Glitch`
+- `Rubik Microbe`
+- `Rubik Moonrocks`
+- `Rubik Puddles`
+- `Rubik Wet Paint`
+- `Send Flowers`
+- `Siemreap`
+- `Smooch Sans`
+- `Source Serif 4`
+- `Spline Sans`
+- `Square Peg`
+- `Suwannaphum`
+- `Tapestry`
+- `Taprom`
+- `Texturina`
+- `The Nautigal`
+- `Truculenta`
+- `Twinkle Star`
+- `Updock`
+- `Vazirmatn`
+- `Vujahday Script`
+- `Water Brush`
+- `Waterfall`
+- `Whisper`
+- `Zen Dots`
+
 ### Changed
 - Complete null safety migration
+
+### Removed
+- `Amatica SC`
+- `Andada`
+- `Baloo`
+- `Baloo Bhai`
+- `Baloo Bhaijaan`
+- `Baloo Bhaina`
+- `Baloo Chettan`
+- `Baloo Da`
+- `Baloo Paaji`
+- `Baloo Tamma`
+- `Baloo Tammudu`
+- `Baloo Thambi`
+- `Be Vietnam`
+- `Crimson Text`
+- `Droid Sans`
+- `Droid Sans Mono`
+- `Droid Serif`
+- `Muli`
+- `Noto Color Emoji Compat`
+- `Pushster`
+- `Scheherazade`
+- `Spartan`
 
 ## 2.3.3 - 2022-05-19
 ### Changed
