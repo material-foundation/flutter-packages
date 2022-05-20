@@ -1,6 +1,7 @@
 ## Unreleased
 ### Changed
 - Complete null safety migration
+- Improved support encountering HTTP fetching errors
 
 ## 2.3.3 - 2022-05-19
 ### Changed
