@@ -25,7 +25,7 @@ Future<void> main() async {
   print(_success);
 
   print('\nDetermining font families delta...');
-  final familiesDelta = FamiliesDelta(fontDirectory);
+  final familiesDelta = _FamiliesDelta(fontDirectory);
   print(_success);
 
   print('\nGenerating $_familiesSupportedPath & $_familiesDiffPath ...');
@@ -35,7 +35,7 @@ Future<void> main() async {
   print(_success);
 
   print('\nUpdate CHANGELOG.md and pubspec.yaml...');
-  familiesDelta.updateChangelogAndPubspec();
+  await familiesDelta.updateChangelogAndPubspec();
   print(_success);
 
   print('\nGenerating $_generatedFilePath...');
@@ -130,8 +130,8 @@ String _hashToString(List<int> bytes) {
 // Utility class to track font family deltas.
 //
 // [fontDirectory] represents a possibly updated directory.
-class FamiliesDelta {
-  FamiliesDelta(Directory fontDirectory) {
+class _FamiliesDelta {
+  _FamiliesDelta(Directory fontDirectory) {
     _init(fontDirectory);
   }
 
@@ -162,28 +162,32 @@ class FamiliesDelta {
     final addedPrintable = added.map((family) => '  - Added `$family`');
     final removedPrintable = removed.map((family) => '  - Removed `$family`');
 
-    String diff = '\n';
+    String diff = '';
     if (removedPrintable.isNotEmpty) {
       diff += removedPrintable.join('\n');
       diff += '\n';
     }
     if (addedPrintable.isNotEmpty) {
       diff += addedPrintable.join('\n');
+      diff += '\n';
     }
 
     return diff;
   }
 
   // Use cider to update CHANGELOG.md and pubspec.yaml.
-  void updateChangelogAndPubspec() {
+  Future<void> updateChangelogAndPubspec() async {
     for (final family in removed) {
-      Process.run('cider', ['log' 'removed', '`$family`']);
+      await Process.run('cider', ['log', "'removed `$family`'"]);
     }
     for (final family in added) {
-      Process.run('cider', ['log' 'added', '`$family`']);
+      await Process.run('cider', ['log', "'added `$family`'"]);
     }
 
-    Process.run('cider', ['bump', removed.isNotEmpty ? 'breaking' : 'minor']);
+    await Process.run(
+      'cider',
+      ['bump', removed.isNotEmpty ? 'breaking' : 'minor'],
+    );
   }
 }
 
