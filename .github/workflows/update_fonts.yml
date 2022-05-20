@@ -15,40 +15,39 @@ jobs:
       - run: flutter doctor -v
       - run: flutter pub get
 
+      - run: dart pub global activate cider
       - run: dart generator/generator.dart
-      
-      - name: Read fonts_latest_added file
+
+      - name: Read families_diff file
         uses: actions/github-script@v4
-        id: getaddedfonts
+        id: get_families_diff
         with:
           script: |
             const fs = require('fs');
-            return fs.readFileSync('generator/fonts_latest_added','utf8').toString();
+            return fs.readFileSync('generator/families_diff','utf8').toString();
           result-encoding: string
-      - name: Cancel if there are no new fonts
-        uses: andymckay/cancel-action@0.2
-        if: steps.getaddedfonts.outputs.result == ''
 
-      - run: dart pub global activate cider
-      - run: cider log changed 'Added the latest fonts from fonts.google.com'
-      - run: cider bump minor
-      - run: cider release
+      - name: Exit workflow if there is no diff
+        uses: andymckay/cancel-action@0.2
+        if: steps.get_families_diff.outputs.result == ''
 
       - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
           commit-message: |
-            [automated] add fonts
+            [automated] update fonts
 
-            ${{ steps.getaddedfonts.outputs.result }}
+            ${{ steps.get_families_diff.outputs.result }}
           base: main
           branch: create-pull-request/update
           delete-branch: true
           author: material-robot <featherless+materialrobot@google.com>
           title: Update fonts
           body: |
-            Adds the latest fonts from [Google Fonts](https://fonts.google.com):
-            ${{ steps.getaddedfonts.outputs.result }}
+            # Summary
+            ${{ steps.get_families_diff.outputs.result }}
+
+            Please note that all existing fonts are subject to being updated.
           team-reviewers: google-fonts-flutter-package-maintainers
           labels: automated
