@@ -82,13 +82,19 @@ Text(
 You can also use `GoogleFonts.latoTextTheme()` to make or modify an entire text theme to use the "Lato" font.
 
 ```dart
-MaterialApp(
-  theme: ThemeData(
-    textTheme: GoogleFonts.latoTextTheme(
-      Theme.of(context).textTheme, // If this is not set, then ThemeData.light().textTheme is used.
-    ),
-  ),
-);
+...
+  return MaterialApp(
+    theme: _buildTheme(Brightness.dark),
+  );
+}
+
+ThemeData _buildTheme(brightness) {
+  var baseTheme = ThemeData(brightness: brightness);
+
+  return baseTheme.copyWith(
+    textTheme: GoogleFonts.latoTextTheme(baseTheme.textTheme),
+  );
+}
 ```
 
 Or, if you want a `TextTheme` where a couple of styles should use a different font:
@@ -105,14 +111,18 @@ MaterialApp(
 );
 ```
 
-Please note that for macOS network fetching, the following must be present in the relevant .entitlements file:
+## HTTP fetching
+
+For HTTP fetching to work, certain platforms require additional steps when running the app in debug and/or release mode. For example, macOS requires the following be present in the relevant .entitlements file:
 
 ```
 <key>com.apple.security.network.client</key>
 <true/>
 ```
 
-### Font bundling in assets
+Learn more at https://docs.flutter.dev/development/data-and-backend/networking#platform-notes.
+
+## Font bundling in assets
 
 The `google_fonts` package will automatically use matching font files in your `pubspec.yaml`'s
 `assets` (rather than fetching them at runtime via HTTP). Once you've settled on the fonts
@@ -136,11 +146,11 @@ you want to use:
 }
 ```
 
-2. Move those fonts to a top-level app directory (e.g. `google_fonts`).
+2. Move those fonts to some asset folder (e.g. `google_fonts`). You can name this folder whatever you like and use subdirectories.
 
 ![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/main/readme_images/google_fonts_folder.png)
 
-3. Ensure that you have listed the folder (e.g. `google_fonts/`) in your `pubspec.yaml` under `assets`.
+3. Ensure that you have listed the asset folder (e.g. `google_fonts/`) in your `pubspec.yaml`, under `assets`.
 
 ![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/main/readme_images/google_fonts_pubspec_assets.png)
 
@@ -150,7 +160,7 @@ of the `pubspec.yaml`. This can be done because the files are consistently named
 
 See the [API docs](https://pub.dev/documentation/google_fonts/latest/google_fonts/GoogleFonts/config.html) to completely disable HTTP fetching.
 
-### Licensing Fonts
+## Licensing Fonts
 
 The fonts on [fonts.google.com](https://fonts.google.com/) include license files for each font. For
 example, the [Lato](https://fonts.google.com/specimen/Lato) font comes with an `OFL.txt` file.
