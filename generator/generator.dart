@@ -11,10 +11,9 @@ import 'package:mustache_template/mustache.dart';
 import 'fonts.pb.dart';
 
 const _generatedFilePath = 'lib/google_fonts.dart';
-const _currentFontsPath = 'generator/fonts_current';
-const _addedFontsPath = 'generator/fonts_latest_added';
+const _familiesSupportedPath = 'generator/families_supported';
+const _familiesDiffPath = 'generator/families_diff';
 
-/// Generates the `GoogleFonts` class.
 Future<void> main() async {
   print('Getting latest font directory...');
   final protoUrl = await _getProtoUrl();
@@ -25,8 +24,18 @@ Future<void> main() async {
   await _verifyUrls(fontDirectory);
   print(_success);
 
-  print('\nGenerating the lists for current and added fonts...');
-  _generateFontsLists(fontDirectory);
+  print('\nDetermining font families delta...');
+  final familiesDelta = _FamiliesDelta(fontDirectory);
+  print(_success);
+
+  print('\nGenerating $_familiesSupportedPath & $_familiesDiffPath ...');
+  File(_familiesSupportedPath)
+      .writeAsStringSync(familiesDelta.printableSupported());
+  File(_familiesDiffPath).writeAsStringSync(familiesDelta.markdownDiff());
+  print(_success);
+
+  print('\nUpdating CHANGELOG.md and pubspec.yaml...');
+  await familiesDelta.updateChangelogAndPubspec();
   print(_success);
 
   print('\nGenerating $_generatedFilePath...');
@@ -118,22 +127,68 @@ String _hashToString(List<int> bytes) {
   return fileName;
 }
 
-void _generateFontsLists(Directory fontDirectory) {
-  List<String> currentFonts = File(_currentFontsPath).readAsLinesSync();
-
-  List<String> addedFonts = [];
-  List<String> newCurrentFonts = [];
-
-  for (final item in fontDirectory.family) {
-    final family = item.name;
-    if (!currentFonts.contains(family)) {
-      addedFonts.add('* $family');
-    }
-    newCurrentFonts.add(family);
+// Utility class to track font family deltas.
+//
+// [fontDirectory] represents a possibly updated directory.
+class _FamiliesDelta {
+  _FamiliesDelta(Directory fontDirectory) {
+    _init(fontDirectory);
   }
 
-  File(_addedFontsPath).writeAsStringSync(addedFonts.join('\n'));
-  File(_currentFontsPath).writeAsStringSync(newCurrentFonts.join('\n'));
+  late final Set<String> added;
+  late final Set<String> removed;
+  late final Set<String> all;
+
+  void _init(Directory fontDirectory) {
+    // Currently supported families.
+    Set<String> familiesSupported =
+        Set.from(File(_familiesSupportedPath).readAsLinesSync());
+
+    // Newly supported families.
+    all = Set<String>.from(
+      fontDirectory.family.map<String>((item) => item.name),
+    );
+
+    added = all.difference(familiesSupported);
+    removed = familiesSupported.difference(all);
+  }
+
+  // Printable list of supported font families.
+  String printableSupported() => all.join('\n');
+
+  // Diff of font families, suitable for markdown
+  // (e.g. CHANGELOG, PR description).
+  String markdownDiff() {
+    final addedPrintable = added.map((family) => '  - Added `$family`');
+    final removedPrintable = removed.map((family) => '  - Removed `$family`');
+
+    String diff = '';
+    if (removedPrintable.isNotEmpty) {
+      diff += removedPrintable.join('\n');
+      diff += '\n';
+    }
+    if (addedPrintable.isNotEmpty) {
+      diff += addedPrintable.join('\n');
+      diff += '\n';
+    }
+
+    return diff;
+  }
+
+  // Use cider to update CHANGELOG.md and pubspec.yaml.
+  Future<void> updateChangelogAndPubspec() async {
+    for (final family in removed) {
+      await Process.run('cider', ['log', 'removed', '`$family`']);
+    }
+    for (final family in added) {
+      await Process.run('cider', ['log', 'added', '`$family`']);
+    }
+
+    await Process.run(
+      'cider',
+      ['bump', removed.isNotEmpty ? 'breaking' : 'minor'],
+    );
+  }
 }
 
 String _generateDartCode(Directory fontDirectory) {

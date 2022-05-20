@@ -1,6 +1,7 @@
 ## Unreleased
 ### Added
 - Cache busting for font updates
+- Support for removing fonts
 
 ### Changed
 - Completed null safety migration
