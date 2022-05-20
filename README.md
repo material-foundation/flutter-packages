@@ -82,13 +82,19 @@ Text(
 You can also use `GoogleFonts.latoTextTheme()` to make or modify an entire text theme to use the "Lato" font.
 
 ```dart
-MaterialApp(
-  theme: ThemeData(
-    textTheme: GoogleFonts.latoTextTheme(
-      Theme.of(context).textTheme, // If this is not set, then ThemeData.light().textTheme is used.
-    ),
-  ),
-);
+...
+  return MaterialApp(
+    theme: _buildTheme(Brightness.dark),
+  );
+}
+
+ThemeData _buildTheme(brightness) {
+  var baseTheme = ThemeData(brightness: brightness);
+
+  return baseTheme.copyWith(
+    textTheme: GoogleFonts.latoTextTheme(baseTheme.textTheme),
+  );
+}
 ```
 
 Or, if you want a `TextTheme` where a couple of styles should use a different font:
@@ -136,11 +142,11 @@ you want to use:
 }
 ```
 
-2. Move those fonts to an assets folder (e.g. `google_fonts`). You can name this folder what you like and use subdirectories.
+2. Move those fonts to some asset folder (e.g. `google_fonts`). You can name this folder whatever you like and use subdirectories.
 
 ![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/main/readme_images/google_fonts_folder.png)
 
-3. Ensure that you have listed the root folder containing all assets (e.g. `google_fonts/`) in your `pubspec.yaml`, under `assets`.
+3. Ensure that you have listed the asset folder (e.g. `google_fonts/`) in your `pubspec.yaml`, under `assets`.
 
 ![](https://raw.githubusercontent.com/material-foundation/google-fonts-flutter/main/readme_images/google_fonts_pubspec_assets.png)
 
