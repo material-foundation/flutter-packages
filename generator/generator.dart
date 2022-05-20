@@ -128,25 +128,25 @@ void _generateFontsLists(Directory fontDirectory) {
   for (final item in fontDirectory.family) {
     final family = item.name;
     if (!currentFonts.contains(family)) {
-      addedFonts.add('* `$family`');
+      addedFonts.add('    - `$family`');
     }
     newCurrentFonts.add(family);
   }
 
   for (final family in currentFonts) {
     if (!newCurrentFonts.contains(family)) {
-      removedFonts.add('* `$family`');
+      removedFonts.add('    - `$family`');
     }
   }
 
   String fontsDiff = '';
   if (removedFonts.isNotEmpty) {
-    fontsDiff += '## Removed:\n';
+    fontsDiff += '  - Removed\n';
     fontsDiff += removedFonts.join('\n');
     fontsDiff += '\n';
   }
   if (addedFonts.isNotEmpty) {
-    fontsDiff += '## Added:\n';
+    fontsDiff += '  - Added\n';
     fontsDiff += addedFonts.join('\n');
     fontsDiff += '\n';
   }

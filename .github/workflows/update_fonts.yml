@@ -30,9 +30,9 @@ jobs:
         if: steps.get_fonts_diff.outputs.result == ''
 
       - run: dart pub global activate cider
-      - run: cider log changed 'Updated to include current fonts from Google Fonts.'
-      # Bump major version if fonts were removed, minor otherwise.
-      - run: cider bump major
+      - run: cider log changed 'Updated to include current fonts from Google Fonts'
+      # Bump breaking version if fonts were removed, minor otherwise.
+      - run: cider bump breaking
         if: "contains(steps.get_fonts_diff.outputs.result, 'Removed')"
       - run: cider bump minor
         if: "!contains(steps.get_fonts_diff.outputs.result , 'Removed')"
@@ -52,7 +52,8 @@ jobs:
           author: material-robot <featherless+materialrobot@google.com>
           title: Update fonts
           body: |
-            Updated to include current fonts from [Google Fonts](https://fonts.google.com):
             ${{ steps.get_fonts_diff.outputs.result }}
+
+            Please note that all existing fonts are subject to being updated.
           team-reviewers: google-fonts-flutter-package-maintainers
           labels: automated
