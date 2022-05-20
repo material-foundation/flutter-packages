@@ -22,7 +22,7 @@ Future<void> main() async {
 
   final fontDirectory = await _readFontsProtoData(protoUrl);
   print('\nValidating font URLs and file contents...');
-  await _verifyUrls(fontDirectory);
+  // await _verifyUrls(fontDirectory);
   print(_success);
 
   print('\nGenerating the lists for current and added fonts...');
