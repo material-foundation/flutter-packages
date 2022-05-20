@@ -120,34 +120,35 @@ String _hashToString(List<int> bytes) {
 
 void _generateFontsLists(Directory fontDirectory) {
   List<String> currentFonts = File(_currentFontsPath).readAsLinesSync();
+  List<String> updatedCurrentFonts = [];
 
   List<String> addedFonts = [];
-  List<String> newCurrentFonts = [];
   List<String> removedFonts = [];
 
   for (final item in fontDirectory.family) {
     final family = item.name;
     if (!currentFonts.contains(family)) {
-      addedFonts.add('  - `$family` (added)');
+      addedFonts.add('  - Added` $family`');
     }
-    newCurrentFonts.add(family);
+    updatedCurrentFonts.add(family);
   }
 
   for (final family in currentFonts) {
-    if (!newCurrentFonts.contains(family)) {
-      removedFonts.add('  - `$family` (removed)');
+    if (!updatedCurrentFonts.contains(family)) {
+      removedFonts.add('  - Removed `$family`');
     }
   }
 
   String fontsDiff = '\n';
   if (removedFonts.isNotEmpty) {
-    fontsDiff += removedFonts.join('\n\n');
+    fontsDiff += removedFonts.join('\n');
+    fontsDiff += '\n';
   }
   if (addedFonts.isNotEmpty) {
     fontsDiff += addedFonts.join('\n');
   }
   File(_diffFontsPath).writeAsStringSync(fontsDiff);
-  File(_currentFontsPath).writeAsStringSync(newCurrentFonts.join('\n'));
+  File(_currentFontsPath).writeAsStringSync(updatedCurrentFonts.join('\n'));
 }
 
 String _generateDartCode(Directory fontDirectory) {
