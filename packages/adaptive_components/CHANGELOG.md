@@ -1,6 +1,7 @@
 ## 0.0.5 - May 23, 2022
 
 - Tweaked pubspec description.
+- Polished README.
 
 ## 0.0.4 - May 19, 2022
 
