@@ -1,3 +1,7 @@
+# [0.1.3] - May 21, 2022
+
+- Tweak pubspec description
+
 # [0.1.2] - May 19, 2022
 
 - Updated the value of the pubspec 'repository' field.
