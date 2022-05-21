@@ -2,8 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/google_fonts.svg)](https://pub.dev/packages/google_fonts)
 
-A Flutter package to easily use any of the thousands of fonts
-available from [fonts.google.com](https://fonts.google.com/).
+A Flutter package to use fonts from [fonts.google.com](https://fonts.google.com/).
 
 <img alt="changing fonts with google_fonts and hot reload" src="https://user-images.githubusercontent.com/6655696/161121395-bbda7d3e-0842-4fe2-b428-9b2f29da8a8f.gif" width="100%" />
 
