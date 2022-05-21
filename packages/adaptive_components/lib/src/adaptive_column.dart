@@ -4,6 +4,7 @@
 
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 import 'package:flutter/material.dart';
+
 import 'adaptive_container.dart';
 
 /// The [AdaptiveColumn] follows the Material guideline for responsive grids.
@@ -72,15 +73,15 @@ class AdaptiveColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
-        BreakpointSystemEntry _entry = getBreakpointEntry(context);
-        final double _margin = margin ?? _entry.margin;
-        final double _gutter = gutter ?? _entry.gutter;
+        BreakpointSystemEntry entry = getBreakpointEntry(context);
+        final double effectiveMargin = margin ?? entry.margin;
+        final double effectiveGutter = gutter ?? entry.gutter;
 
         return Container(
-          margin: EdgeInsets.symmetric(horizontal: _margin),
+          margin: EdgeInsets.symmetric(horizontal: effectiveMargin),
           constraints: BoxConstraints(
-            minWidth: _entry.adaptiveWindowType.widthRangeValues.start,
-            maxWidth: _entry.adaptiveWindowType.widthRangeValues.end,
+            minWidth: entry.adaptiveWindowType.widthRangeValues.start,
+            maxWidth: entry.adaptiveWindowType.widthRangeValues.end,
           ),
           child: Wrap(
             runSpacing: 8.0,
@@ -97,10 +98,10 @@ class AdaptiveColumn extends StatelessWidget {
                   row.add(child);
                   currentColumns += child.columnSpan;
 
-                  if (currentColumns < _entry.columns) {
+                  if (currentColumns < entry.columns) {
                     totalGutters++;
                   } else {
-                    if (currentColumns > _entry.columns) {
+                    if (currentColumns > entry.columns) {
                       totalGutters--;
                     }
                     int rowGutters = 0;
@@ -108,16 +109,16 @@ class AdaptiveColumn extends StatelessWidget {
                       // Periodic width is the width of 1 column + 1 gutter.
                       double periodicWidth =
                           (MediaQuery.of(context).size.width -
-                                  _margin * 2 +
-                                  _gutter) /
-                              _entry.columns;
+                                  effectiveMargin * 2 +
+                                  effectiveGutter) /
+                              entry.columns;
 
                       // For a row item with a column span of k, its width is
                       // k * column + (k - 1) * gutter, which equals
                       // k * (column + gutter) - gutter, which is
                       // k * periodicWidth - gutter.
                       double maxWidth =
-                          periodicWidth * rowItem.columnSpan - _gutter;
+                          periodicWidth * rowItem.columnSpan - effectiveGutter;
                       children.add(
                         ConstrainedBox(
                           constraints: BoxConstraints(
@@ -131,7 +132,7 @@ class AdaptiveColumn extends StatelessWidget {
                       if (rowGutters < totalGutters && 1 < row.length) {
                         children.add(
                           SizedBox(
-                            width: _gutter,
+                            width: effectiveGutter,
                             child: Container(),
                           ),
                         );
