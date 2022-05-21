@@ -1,6 +1,6 @@
 # adaptive_breakpoints
 
-The `adaptive_breakpoints` package for Flutter allows you to use the adaptive [breakpoints entries](https://material.io/design/layout/responsive-layout-grid.html#breakpoints) from the [Material Design System](https://material.io/).
+The `adaptive_breakpoints` package for Flutter allows you to use the adaptive [breakpoints entries](https://material.io/design/layout/responsive-layout-grid.html#breakpoints) from Material Design.
 
 ## Getting Started
 
