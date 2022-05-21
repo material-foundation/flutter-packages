@@ -1,6 +1,6 @@
 ## 0.1.3 - May 23, 2022
 
-- Tweak pubspec description
+- Tweaked pubspec description.
 
 ## 0.1.2 - May 19, 2022
 
