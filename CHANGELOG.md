@@ -1,3 +1,8 @@
+## 3.0.1 - 2022-05-23
+### Changed
+- Improve asset manifest loading errors 
+- Improve testing guidance
+
 ## 3.0.0 - 2022-05-20
 ### Added
 - Cache busting for font updates
@@ -109,9 +114,9 @@
 - `Zen Dots`
 
 ### Changed
-- Completed null safety migration
-- Improved documentation
-- Improved support around HTTP fetching errors
+- Complete null safety migration
+- Improve documentation
+- Improve support around HTTP fetching errors
 
 ### Removed
 - `Amatica SC`

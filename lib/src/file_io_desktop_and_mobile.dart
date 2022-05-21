@@ -5,6 +5,7 @@ import 'package:path_provider/path_provider.dart';
 
 bool get isMacOS => Platform.isMacOS;
 bool get isAndroid => Platform.isAndroid;
+bool get isTest => Platform.environment.containsKey('FLUTTER_TEST');
 
 Future<void> saveFontToDeviceFileSystem({
   required String name,
