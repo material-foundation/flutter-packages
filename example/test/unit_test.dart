@@ -9,6 +9,7 @@ void main() {
   // Disable this with HttpOverrides.global = null;
 
   late TextStyle expectedStyle;
+
   setUpAll(() {
     expectedStyle = GoogleFonts.getFont('ABeeZee');
   });
