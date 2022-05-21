@@ -180,12 +180,10 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       print('\nThere is likely something wrong with your test. Please see '
           'https://github.com/material-foundation/google-fonts-flutter/blob/main/example/test '
           'for examples of how to test with google_fonts.');
-    } else {
-      if (file_io.isMacOS || file_io.isAndroid) {
-        print(
-          '\nSee https://docs.flutter.dev/development/data-and-backend/networking#platform-notes.',
-        );
-      }
+    } else if (file_io.isMacOS || file_io.isAndroid) {
+      print(
+        '\nSee https://docs.flutter.dev/development/data-and-backend/networking#platform-notes.',
+      );
     }
     print('If that doesn\'t solve the problem, please file an issue at '
         'https://github.com/material-foundation/google-fonts-flutter/issues/new.\n');
