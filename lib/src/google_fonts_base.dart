@@ -189,8 +189,6 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     }
     print('If that doesn\'t solve the problem, please file an issue at '
         'https://github.com/material-foundation/google-fonts-flutter/issues/new.\n');
-
-    rethrow;
   }
 }
 
