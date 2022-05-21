@@ -1,4 +1,8 @@
-## 1.2.2, 1.2.1 (retracted)
+## 1.2.3
+
+- Tweak pubspec description
+
+## 1.2.2
 
 - Update lower Flutter SDK bound
 
