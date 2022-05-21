@@ -5,8 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 // flutter test --no-test-assets
 
 void main() {
-  // Installs a mock HTTP client
   TestWidgetsFlutterBinding.ensureInitialized();
+  // This has the side effect of setting up a mock HTTP client.
   // Disable this with HttpOverrides.global = null;
 
   test('Can test fonts', () {
