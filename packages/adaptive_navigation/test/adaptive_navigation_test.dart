@@ -8,7 +8,7 @@ void main() {
     tester.binding.window.physicalSizeTestValue = mediumWindowSize;
     tester.binding.window.devicePixelRatioTestValue = 1.0;
 
-    const _allDestinations = [
+    const allDestinations = [
       AdaptiveScaffoldDestination(title: 'Alarm', icon: Icons.alarm),
       AdaptiveScaffoldDestination(title: 'Book', icon: Icons.book),
       AdaptiveScaffoldDestination(title: 'Cake', icon: Icons.cake),
@@ -24,7 +24,7 @@ void main() {
       MaterialApp(
         home: AdaptiveNavigationScaffold(
           selectedIndex: 0,
-          destinations: _allDestinations,
+          destinations: allDestinations,
           appBar: AdaptiveAppBar(title: const Text('Default Demo')),
           floatingActionButton: FloatingActionButton(
             child: const Icon(Icons.add),

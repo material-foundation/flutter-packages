@@ -9,9 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  adaptive_breakpoints: ^0.0.4
+  adaptive_breakpoints: ^0.1.2
 
 dev_dependencies:
-  flutter_lints: ^1.0.4
+  flutter_lints: ^2.0.1
   flutter_test:
     sdk: flutter
