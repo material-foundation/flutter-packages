@@ -180,3 +180,7 @@ void main() {
   runApp(...);
 }
 ```
+
+## Testing
+
+See [example/test](https://github.com/material-foundation/google-fonts-flutter/blob/main/example/test) for testing examples.
