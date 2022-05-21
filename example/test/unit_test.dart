@@ -1,9 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// Consider using "--no-test-assets" if assets are not required.
-// flutter test --no-test-assets
-
+// Consider `flutter test --no-test-assets` if assets are not required.
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   // This has the side effect of setting up a mock HTTP client.
