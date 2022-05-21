@@ -1,4 +1,4 @@
-A collection of packages for applying adaptive behavior to Flutter apps:
+A collection of packages for applying adaptive behavior from Material Design to Flutter apps.
 
 Package | pub
 --- | ---
