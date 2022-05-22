@@ -27,8 +27,13 @@ jobs:
             return fs.readFileSync('generator/families_diff','utf8').toString();
           result-encoding: string
 
-      - name: Exit workflow if there is no diff
+      - name: Cancel workflow if there is no diff
         uses: andymckay/cancel-action@0.2
+        if: steps.get_families_diff.outputs.result == ''
+        
+      - name: If cancelling workflow, allow for enough time to do so
+        run: sleep 15s
+        shell: bash
         if: steps.get_families_diff.outputs.result == ''
 
       - uses: peter-evans/create-pull-request@v3
