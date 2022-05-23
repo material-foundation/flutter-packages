@@ -1,3 +1,6 @@
+# We want to check in the example app, as it is hosted on GitHub sites
+!example/build/web
+
 # Miscellaneous
 *.class
 *.log
