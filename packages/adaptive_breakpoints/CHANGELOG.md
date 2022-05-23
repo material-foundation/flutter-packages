@@ -1,3 +1,7 @@
+## 0.1.4 - May 23, 2022
+
+- Make example visible to pub.dev
+
 ## 0.1.3 - May 23, 2022
 
 - Tweaked pubspec description.
