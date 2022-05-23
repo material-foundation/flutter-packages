@@ -13,7 +13,6 @@ Future<void> saveFontToDeviceFileSystem({
   required List<int> bytes,
 }) async {
   final file = await _localFile(name, fileHash);
-  print('saving $file');
   await file.writeAsBytes(bytes);
 }
 
