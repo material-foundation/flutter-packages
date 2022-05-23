@@ -9,10 +9,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// Consider `flutter test --no-test-assets` if assets are not required.
 void main() {
   testWidgets('Can specify text style', (WidgetTester tester) async {
     await tester.pumpWidget(
-      MaterialApp(home: Text('Hello', style: GoogleFonts.lato())),
+      MaterialApp(home: Text('Hello', style: GoogleFonts.aBeeZee())),
     );
   });
 
@@ -22,7 +23,7 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         theme: baseTheme.copyWith(
-          textTheme: GoogleFonts.nunitoTextTheme(baseTheme.textTheme),
+          textTheme: GoogleFonts.aBeeZeeTextTheme(baseTheme.textTheme),
         ),
       ),
     );

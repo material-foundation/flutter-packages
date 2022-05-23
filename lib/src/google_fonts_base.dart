@@ -175,12 +175,18 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   } catch (e) {
     _loadedFonts.remove(familyWithVariantString);
     print('Error: google_fonts was unable to load font $fontName because the '
-        'following exception occured:\n$e');
-    if (file_io.isMacOS || file_io.isAndroid) {
+        'following exception occurred:\n$e');
+    if (file_io.isTest) {
+      print('\nThere is likely something wrong with your test. Please see '
+          'https://github.com/material-foundation/google-fonts-flutter/blob/main/example/test '
+          'for examples of how to test with google_fonts.');
+    } else if (file_io.isMacOS || file_io.isAndroid) {
       print(
-        'See https://docs.flutter.dev/development/data-and-backend/networking#platform-notes.',
+        '\nSee https://docs.flutter.dev/development/data-and-backend/networking#platform-notes.',
       );
     }
+    print('If troubleshooting doesn\'t solve the problem, please file an issue '
+        'at https://github.com/material-foundation/google-fonts-flutter/issues/new .\n');
   }
 }
 

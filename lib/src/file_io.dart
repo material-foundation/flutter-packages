@@ -2,6 +2,7 @@ import 'dart:typed_data' show ByteData;
 
 bool get isMacOS => false;
 bool get isAndroid => false;
+bool get isTest => false;
 
 /// By default, file IO is stubbed out.
 ///
