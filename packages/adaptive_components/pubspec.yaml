@@ -1,5 +1,5 @@
 name: adaptive_components
-description: A Flutter package to implement a responsive layouts in Material Design.
+description: A Flutter package to implement responsive layouts in Material Design.
 version: 0.0.6
 repository: https://github.com/material-components/material-components-flutter-adaptive/tree/develop/adaptive_components
 
