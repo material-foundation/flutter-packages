@@ -12,7 +12,13 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   testWidgets('Verify default color', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const AdvancedExample1());
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(
+          body: AdvancedExample1(),
+        ),
+      ),
+    );
 
     // Verify that default color is used.
     expect(
