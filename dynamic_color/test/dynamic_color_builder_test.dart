@@ -7,29 +7,57 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('DynamicColorBuilder', (WidgetTester tester) async {
+  setUp(() {
     DynamicColorTestingUtils.setMockDynamicColors(
-      colors: SampleCorePalettes.green,
+      colorPalette: SampleCorePalettes.green,
+      controlAccentColor: Colors.amber,
     );
+  });
 
-    const containerKey = Key('myContainer');
+  const containerKey = Key('myContainer');
 
-    await tester.pumpWidget(
-      DynamicColorBuilder(
+  Widget dynamicColorBuilder() => DynamicColorBuilder(
         builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
           return Container(
             key: containerKey,
             color: lightDynamic?.primary ?? const Color(0x00000123),
           );
         },
-      ),
+      );
+
+  testWidgets('DynamicColorBuilder is correct on Android',
+      (WidgetTester tester) async {
+    DynamicColorTestingUtils.setMockDynamicColors(
+      colorPalette: SampleCorePalettes.green,
     );
 
+    await tester.pumpWidget(dynamicColorBuilder());
     await tester.pumpAndSettle();
 
-    expect(
-      (tester.firstWidget(find.byKey(containerKey)) as Container).color,
-      const Color(0xff286b2a),
+    final container = tester.firstWidget(find.byKey(containerKey)) as Container;
+    expect(container.color, const Color(0xff286b2a));
+  });
+
+  testWidgets('DynamicColorBuilder is correct on macOS',
+      (WidgetTester tester) async {
+    DynamicColorTestingUtils.setMockDynamicColors(
+      controlAccentColor: Colors.amber,
     );
+    await tester.pumpWidget(dynamicColorBuilder());
+    await tester.pumpAndSettle();
+
+    final container = tester.firstWidget(find.byKey(containerKey)) as Container;
+    expect(container.color, const Color(0xff795900));
+  });
+
+  testWidgets('DynamicColorBuilder is correct on other platforms',
+      (WidgetTester tester) async {
+    DynamicColorTestingUtils.setMockDynamicColors();
+
+    await tester.pumpWidget(dynamicColorBuilder());
+    await tester.pumpAndSettle();
+
+    final container = tester.firstWidget(find.byKey(containerKey)) as Container;
+    expect(container.color, const Color(0x00000123));
   });
 }
