@@ -1,12 +1,11 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:dynamic_color_example/common.dart';
-
 import 'package:flutter/material.dart';
 
 class ControlAccentColorExample extends StatelessWidget {
   const ControlAccentColorExample({Key? key}) : super(key: key);
 
-  static const title = 'Control accent color';
+  static const title = 'Control accent color (macOS only)';
 
   @override
   Widget build(BuildContext context) {
