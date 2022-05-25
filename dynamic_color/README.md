@@ -2,9 +2,12 @@
 
 [![pub package](https://img.shields.io/pub/v/dynamic_color.svg)](https://pub.dev/packages/dynamic_color)
 
-A Flutter package to obtain dynamic colors on Android S+ and create harmonized color schemes.
+A Flutter package to create Material color schemes based on a platform's implementation of dynamic color. Currently supported platforms are:
 
-Learn more about [dynamic color](https://m3.material.io/styles/color/dynamic-color/overview), [custom colors and harmonization](https://m3.material.io/styles/color/the-color-system/custom-colors) on the Material 3 site.
+- Android S+: [color from user wallpaper](https://m3.material.io/styles/color/dynamic-color/user-generated-color)
+- macOS: [app accent color](https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/#app-accent-colors)
+
+This package also supports color and color scheme harmonization. Learn more about [custom colors and harmonization](https://m3.material.io/styles/color/the-color-system/custom-colors) on the Material 3 site.
 
 ## Features
 
@@ -15,7 +18,7 @@ that provides the device's dynamic colors in a light and dark `ColorScheme`.
 
 ### Plugin
 
-Under the hood, `DynamicColorBuilder` uses a plugin to talk to the Android OS.
+Under the hood, `DynamicColorBuilder` uses a plugin to talk to the OS.
 
 ### Color and color scheme harmonization
 

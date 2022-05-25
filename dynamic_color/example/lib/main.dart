@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'common.dart';
 import 'complete_example.dart';
+import 'control_accent_color.dart';
 import 'core_palette_visualization.dart';
 import 'dynamic_color_builder_example.dart';
 import 'get_core_palette_example.dart';
@@ -42,6 +43,10 @@ class ExampleApp extends StatelessWidget {
                 const _ExampleAppButton(
                   title: CorePaletteVisualization.title,
                   widget: CorePaletteVisualization(),
+                ),
+                const _ExampleAppButton(
+                  title: ControlAccentColorExample.title,
+                  widget: ControlAccentColorExample(),
                 ),
                 const _ExampleAppButton(
                   title: HarmonizationExample.title,

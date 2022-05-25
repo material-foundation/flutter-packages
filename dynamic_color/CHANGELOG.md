@@ -1,3 +1,7 @@
+## 1.3.0
+
+- Add support for macOS' control accent color ([#42](https://github.com/material-foundation/material-dynamic-color-flutter/pull/42))
+
 ## 1.2.3
 
 - Tweak pubspec description

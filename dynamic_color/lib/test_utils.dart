@@ -16,11 +16,17 @@ CorePalette generateCorePalette(int Function(int index) generator) =>
 class DynamicColorTestingUtils {
   /// Initializes the dynamic color plugin with mock values for testing.
   @visibleForTesting
-  static void setMockDynamicColors(CorePalette? colors) {
+  static void setMockDynamicColors({
+    CorePalette? colors,
+    Color? controlAccentColor,
+  }) {
     DynamicColorPlugin.channel
         .setMockMethodCallHandler((MethodCall methodCall) async {
       if (methodCall.method == DynamicColorPlugin.methodName) {
         return colors != null ? Int64List.fromList(colors.asList()) : null;
+      } else if (methodCall.method ==
+          DynamicColorPlugin.controlAccentColorMethodName) {
+        return controlAccentColor?.value;
       }
     });
     addTearDown(() {

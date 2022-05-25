@@ -8,7 +8,9 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   testWidgets('DynamicColorBuilder', (WidgetTester tester) async {
-    DynamicColorTestingUtils.setMockDynamicColors(SampleCorePalettes.green);
+    DynamicColorTestingUtils.setMockDynamicColors(
+      colors: SampleCorePalettes.green,
+    );
 
     const containerKey = Key('myContainer');
 

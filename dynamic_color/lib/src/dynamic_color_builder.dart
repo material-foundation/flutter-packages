@@ -7,8 +7,11 @@ import 'dynamic_color_plugin.dart';
 
 /// A stateful builder widget that provides a light and dark [ColorScheme].
 ///
-/// The [ColorScheme]s are constructed from the [CorePalette] provided by the
-/// Android OS.
+/// Android: the [ColorScheme]s are constructed from the [CorePalette] provided
+/// by the Android OS.
+///
+/// macOS: the [ColorScheme]s are constructed from the accent [Color] provided
+/// by macOS.
 ///
 /// See also:
 ///
@@ -17,6 +20,8 @@ import 'dynamic_color_plugin.dart';
 ///    for obtaining dynamic colors and creating a harmonized color scheme
 ///  * [DynamicColorPlugin.getCorePalette] for requesting the [CorePalette]
 ///    directly, asynchronously.
+///  * [DynamicColorPlugin.getControlAccentColor] for requesting the accent [Color]
+///    [ColorScheme] directly, asynchronously.
 class DynamicColorBuilder extends StatefulWidget {
   const DynamicColorBuilder({
     Key? key,
@@ -25,9 +30,8 @@ class DynamicColorBuilder extends StatefulWidget {
 
   /// Builds the child widget of this widget, providing a light and dark [ColorScheme].
   ///
-  /// The [ColorScheme]s will be null if dynamic color is not supported (i.e on
-  /// non-Android platforms and pre-Android S devices), or if the colors
-  /// have yet to be obtained.
+  /// The [ColorScheme]s will be null if dynamic color is not supported on the
+  /// platform, or if the OS has yet to respond.
   final Widget Function(
     ColorScheme? lightDynamic,
     ColorScheme? darkDynamic,
@@ -49,23 +53,51 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    CorePalette? corePalette;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      corePalette = await DynamicColorPlugin.getCorePalette();
+      CorePalette? corePalette = await DynamicColorPlugin.getCorePalette();
+
+      // If the widget was removed from the tree while the asynchronous platform
+      // message was in flight, we want to discard the reply rather than calling
+      // setState to update our non-existent appearance.
+      if (!mounted) return;
+
+      if (corePalette == null) {
+        debugPrint('Got null core palette.');
+      } else {
+        setState(() {
+          _light = corePalette.toColorScheme();
+          _dark = corePalette.toColorScheme(brightness: Brightness.dark);
+        });
+      }
     } on PlatformException {
-      debugPrint('Failed to obtain dynamic colors.');
+      debugPrint('Failed to obtain core palette.');
     }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-    if (!mounted) return;
+    try {
+      final Color? controlAccentColor =
+          await DynamicColorPlugin.getControlAccentColor();
 
-    setState(() {
-      _light = corePalette?.toColorScheme();
-      _dark = corePalette?.toColorScheme(brightness: Brightness.dark);
-    });
+      // Likewise above.
+      if (!mounted) return;
+
+      if (controlAccentColor == null) {
+        debugPrint('Got null control accent color.');
+      } else {
+        setState(() {
+          _light = ColorScheme.fromSeed(
+            seedColor: controlAccentColor,
+            brightness: Brightness.light,
+          );
+          _dark = ColorScheme.fromSeed(
+            seedColor: controlAccentColor,
+            brightness: Brightness.dark,
+          );
+        });
+      }
+    } on PlatformException {
+      debugPrint('Failed to obtain control accent color.');
+    }
   }
 
   @override
