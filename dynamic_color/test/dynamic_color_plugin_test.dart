@@ -11,7 +11,7 @@ void main() {
     final sampleFromListCorePalette = generateCorePalette((i) => i);
 
     DynamicColorTestingUtils.setMockDynamicColors(
-      colors: sampleFromListCorePalette,
+      colorPalette: sampleFromListCorePalette,
     );
     final colors = await DynamicColorPlugin.getCorePalette();
     expect(colors, sampleFromListCorePalette);
@@ -19,7 +19,7 @@ void main() {
 
   test('getCorePalette returns null', () async {
     DynamicColorTestingUtils.setMockDynamicColors(
-      colors: null,
+      colorPalette: null,
     );
     final colors = await DynamicColorPlugin.getCorePalette();
     expect(colors, equals(null));

@@ -17,13 +17,15 @@ class DynamicColorTestingUtils {
   /// Initializes the dynamic color plugin with mock values for testing.
   @visibleForTesting
   static void setMockDynamicColors({
-    CorePalette? colors,
+    CorePalette? colorPalette,
     Color? controlAccentColor,
   }) {
     DynamicColorPlugin.channel
         .setMockMethodCallHandler((MethodCall methodCall) async {
       if (methodCall.method == DynamicColorPlugin.methodName) {
-        return colors != null ? Int64List.fromList(colors.asList()) : null;
+        return colorPalette != null
+            ? Int64List.fromList(colorPalette.asList())
+            : null;
       } else if (methodCall.method ==
           DynamicColorPlugin.controlAccentColorMethodName) {
         return controlAccentColor?.value;
