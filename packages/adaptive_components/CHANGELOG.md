@@ -1,3 +1,7 @@
+## 0.0.7 - May 26, 2022
+
+- Fixed typo in pubspec description.
+
 ## 0.0.6 - May 23, 2022
 
 - Bump `adaptive_breakpoints` dependency
