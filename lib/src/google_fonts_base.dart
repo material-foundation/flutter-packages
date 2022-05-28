@@ -186,7 +186,8 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       );
     }
     print('If troubleshooting doesn\'t solve the problem, please file an issue '
-        'at https://github.com/material-foundation/google-fonts-flutter/issues/new .\n');
+        'at https://github.com/material-foundation/google-fonts-flutter/issues/new.\n');
+    rethrow;
   }
 }
 
@@ -244,7 +245,7 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
   try {
     response = await httpClient.get(uri);
   } catch (e) {
-    throw Exception('Failed to load font with url: ${file.url}');
+    throw Exception('Failed to load font with url ${file.url}: $e');
   }
   if (response.statusCode == 200) {
     if (!_isFileSecure(file, response.bodyBytes)) {
