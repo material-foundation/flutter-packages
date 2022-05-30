@@ -10,7 +10,7 @@ void main() {
   setUp(() {
     DynamicColorTestingUtils.setMockDynamicColors(
       colorPalette: SampleCorePalettes.green,
-      controlAccentColor: Colors.amber,
+      accentColor: Colors.amber,
     );
   });
 
@@ -38,10 +38,10 @@ void main() {
     expect(container.color, const Color(0xff286b2a));
   });
 
-  testWidgets('DynamicColorBuilder is correct on macOS',
+  testWidgets('DynamicColorBuilder is correct on macOS/Windows',
       (WidgetTester tester) async {
     DynamicColorTestingUtils.setMockDynamicColors(
-      controlAccentColor: Colors.amber,
+      accentColor: Colors.amber,
     );
     await tester.pumpWidget(dynamicColorBuilder());
     await tester.pumpAndSettle();

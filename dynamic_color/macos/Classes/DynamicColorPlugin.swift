@@ -10,7 +10,7 @@ public class DynamicColorPlugin: NSObject, FlutterPlugin {
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     switch call.method {
-    case "getControlAccentColor":
+    case "getAccentColor":
       if #available(macOS 10.14, *) {
         if let color = NSColor.controlAccentColor.usingColorSpace(.sRGB) {
           var r: CGFloat = 0

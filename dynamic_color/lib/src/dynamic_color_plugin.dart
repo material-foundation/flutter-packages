@@ -17,7 +17,7 @@ class DynamicColorPlugin {
   static const methodName = 'getCorePalette';
 
   /// A method name that the macOS plugin listens for.
-  static const controlAccentColorMethodName = 'getControlAccentColor';
+  static const accentColorMethodName = 'getAccentColor';
 
   /// Returns the Android OS' dynamic colors asynchronously in a [CorePalette].
   ///
@@ -33,16 +33,19 @@ class DynamicColorPlugin {
     return result == null ? null : CorePalette.fromList(result.toList());
   }
 
-  /// Returns the macOS' control accent color asynchronously as a [Color].
+  /// Returns the OS' accent color asynchronously as a [Color].
   ///
-  /// Supported since macOS 10.14 (Mojave).
+  /// Supported on macOS starting with 10.14 (Mojave) and on Windows with
+  /// Windows 10.
   ///
   /// See also:
   ///
-  /// * [Apple's introduction to macos accent color](https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/#app-accent-colors)
-  /// * [NSColor.controlAccentColor documentation](https://developer.apple.com/documentation/appkit/nscolor/3000782-controlaccentcolor)
-  static Future<Color?> getControlAccentColor() async {
-    final result = await channel.invokeMethod(controlAccentColorMethodName);
+  /// * [Apple's introduction to macOS accent color](https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/#app-accent-colors)
+  /// * [macOS's NSColor.controlAccentColor documentation](https://developer.apple.com/documentation/appkit/nscolor/3000782-controlaccentcolor)
+  /// * [Windows' accent color](https://docs.microsoft.com/en-us/windows/apps/design/style/color#accent-color)
+  /// * [Change colors in Windows](https://support.microsoft.com/en-us/windows/change-colors-in-windows-d26ef4d6-819a-581c-1581-493cfcc005fe)
+  static Future<Color?> getAccentColor() async {
+    final result = await channel.invokeMethod(accentColorMethodName);
     return result == null ? null : Color(result);
   }
 }

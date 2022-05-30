@@ -3,8 +3,8 @@ Pod::Spec.new do |s|
   s.authors          = 'Material Flutter team + Ebrahim Byagowi'
   s.license          = 'BSD-3-Clause'
   s.homepage         = 'https://github.com/material-foundation/material-dynamic-color-flutter'
-  s.summary          = 'Retrieves control accent color'
-  s.version          = '0.0.1'
+  s.summary          = 'Retrieves accent color'
+  s.version          = '0.0.2'
   s.source           = { :path => '.' }
   s.source_files     = 'Classes/**/*'
   s.dependency 'FlutterMacOS'

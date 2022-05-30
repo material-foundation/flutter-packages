@@ -1,3 +1,8 @@
+## 1.4.0
+- Add support for Windows' accent color ([#43](https://github.com/material-foundation/material-dynamic-color-flutter/pull/43))
+  - Rename `DynamicColorPlugin.getControlAccentColor` to `DynamicColorPlugin.getAccentColor`
+  - Rename `DynamicColorTestingUtils.setMockDynamicColors`'s argument `controlAccentColor` to `accentColor`
+
 ## 1.3.0
 
 - Add support for macOS' control accent color ([#42](https://github.com/material-foundation/material-dynamic-color-flutter/pull/42))

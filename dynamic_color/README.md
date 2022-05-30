@@ -6,6 +6,7 @@ A Flutter package to create Material color schemes based on a platform's impleme
 
 - Android S+: [color from user wallpaper](https://m3.material.io/styles/color/dynamic-color/user-generated-color)
 - macOS: [app accent color](https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/#app-accent-colors)
+- Windows: [accent color](https://docs.microsoft.com/en-us/windows/apps/design/style/color#accent-color)
 
 This package also supports color and color scheme harmonization. Learn more about [custom colors and harmonization](https://m3.material.io/styles/color/the-color-system/custom-colors) on the Material 3 site.
 
@@ -48,6 +49,8 @@ import 'package:dynamic_color/dynamic_color.dart';
 See this [complete example] for obtaining dynamic colors, creating
 harmonized color schemes, and harmonizing custom colors.
 
+See this [accent color example] for obtaining the macOS/Windows accent color.
+
 <a href="https://material-foundation.github.io/material-dynamic-color-flutter/example/build/web/">
 <img src="https://user-images.githubusercontent.com/6655696/152188934-35e58f5c-2a3c-41af-8d49-faabb1701dcc.png" width="400" /> </a>
 
@@ -73,3 +76,4 @@ flutter build web
 [examples]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/
 [harmonization.dart]: https://github.com/material-foundation/material-dynamic-color-flutter/blob/main/lib/src/harmonization.dart
 [hosted on github]: https://material-foundation.github.io/material-dynamic-color-flutter/example/build/web/
+[accent color example]: https://github.com/material-foundation/material-dynamic-color-flutter/blob/main/example/lib/accent_color.dart

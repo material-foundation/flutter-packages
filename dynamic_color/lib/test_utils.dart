@@ -18,7 +18,7 @@ class DynamicColorTestingUtils {
   @visibleForTesting
   static void setMockDynamicColors({
     CorePalette? colorPalette,
-    Color? controlAccentColor,
+    Color? accentColor,
   }) {
     DynamicColorPlugin.channel
         .setMockMethodCallHandler((MethodCall methodCall) async {
@@ -27,8 +27,8 @@ class DynamicColorTestingUtils {
             ? Int64List.fromList(colorPalette.asList())
             : null;
       } else if (methodCall.method ==
-          DynamicColorPlugin.controlAccentColorMethodName) {
-        return controlAccentColor?.value;
+          DynamicColorPlugin.accentColorMethodName) {
+        return accentColor?.value;
       }
     });
     addTearDown(() {

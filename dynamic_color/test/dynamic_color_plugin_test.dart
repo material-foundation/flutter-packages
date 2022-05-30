@@ -25,20 +25,20 @@ void main() {
     expect(colors, equals(null));
   });
 
-  test('getControlAccentColor', () async {
+  test('getAccentColor', () async {
     const color = Color.fromARGB(12, 24, 123, 53);
 
     DynamicColorTestingUtils.setMockDynamicColors(
-      controlAccentColor: color,
+      accentColor: color,
     );
-    final result = await DynamicColorPlugin.getControlAccentColor();
+    final result = await DynamicColorPlugin.getAccentColor();
     expect(result, color);
   });
 
-  test('getControlAccentColor returns null', () async {
-    DynamicColorTestingUtils.setMockDynamicColors(controlAccentColor: null);
+  test('getAccentColor returns null', () async {
+    DynamicColorTestingUtils.setMockDynamicColors(accentColor: null);
 
-    final colors = await DynamicColorPlugin.getControlAccentColor();
+    final colors = await DynamicColorPlugin.getAccentColor();
     expect(colors, equals(null));
   });
 }

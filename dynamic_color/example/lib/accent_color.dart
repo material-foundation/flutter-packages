@@ -2,25 +2,25 @@ import 'package:dynamic_color/dynamic_color.dart';
 import 'package:dynamic_color_example/common.dart';
 import 'package:flutter/material.dart';
 
-class ControlAccentColorExample extends StatelessWidget {
-  const ControlAccentColorExample({Key? key}) : super(key: key);
+class AccentColorExample extends StatelessWidget {
+  const AccentColorExample({Key? key}) : super(key: key);
 
-  static const title = 'Control accent color (macOS only)';
+  static const title = 'Accent color (macOS and Windows)';
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<Color?>(
-      future: DynamicColorPlugin.getControlAccentColor(),
+      future: DynamicColorPlugin.getAccentColor(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
           final color = snapshot.data;
           return color == null
               ? const Text(
-                  "Control accent color isn't supported on this platform",
+                  "Accent color isn't supported on this platform",
                 )
               : Column(
                   children: [
-                    ColoredSquare(color, 'Control Accent Color'),
+                    ColoredSquare(color, 'Accent color'),
                   ],
                 );
         } else {

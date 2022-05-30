@@ -10,8 +10,8 @@ import 'dynamic_color_plugin.dart';
 /// Android: the [ColorScheme]s are constructed from the [CorePalette] provided
 /// by the Android OS.
 ///
-/// macOS: the [ColorScheme]s are constructed from the accent [Color] provided
-/// by macOS.
+/// macOS and Windows: the [ColorScheme]s are constructed from the accent [Color]
+/// provided by the system.
 ///
 /// See also:
 ///
@@ -20,7 +20,7 @@ import 'dynamic_color_plugin.dart';
 ///    for obtaining dynamic colors and creating a harmonized color scheme
 ///  * [DynamicColorPlugin.getCorePalette] for requesting the [CorePalette]
 ///    directly, asynchronously.
-///  * [DynamicColorPlugin.getControlAccentColor] for requesting the accent [Color]
+///  * [DynamicColorPlugin.getAccentColor] for requesting the accent [Color]
 ///    [ColorScheme] directly, asynchronously.
 class DynamicColorBuilder extends StatefulWidget {
   const DynamicColorBuilder({
@@ -75,28 +75,27 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
     }
 
     try {
-      final Color? controlAccentColor =
-          await DynamicColorPlugin.getControlAccentColor();
+      final Color? accentColor = await DynamicColorPlugin.getAccentColor();
 
       // Likewise above.
       if (!mounted) return;
 
-      if (controlAccentColor == null) {
-        debugPrint('Got null control accent color.');
+      if (accentColor == null) {
+        debugPrint('Got null accent color.');
       } else {
         setState(() {
           _light = ColorScheme.fromSeed(
-            seedColor: controlAccentColor,
+            seedColor: accentColor,
             brightness: Brightness.light,
           );
           _dark = ColorScheme.fromSeed(
-            seedColor: controlAccentColor,
+            seedColor: accentColor,
             brightness: Brightness.dark,
           );
         });
       }
     } on PlatformException {
-      debugPrint('Failed to obtain control accent color.');
+      debugPrint('Failed to obtain accent color.');
     }
   }
 
