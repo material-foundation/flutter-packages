@@ -4,10 +4,10 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "ecfaadbcc8aa788d01eff100caba7c8d",
-"index.html": "fae1d2673d03a52beb008e11621a8dbe",
-"/": "fae1d2673d03a52beb008e11621a8dbe",
-"main.dart.js": "18c1d285b6699c0f6de37d903c634957",
-"flutter.js": "0816e65a103ba8ba51b174eeeeb2cb67",
+"index.html": "374f38b2c2720ac43573c7f731c1bee7",
+"/": "374f38b2c2720ac43573c7f731c1bee7",
+"main.dart.js": "ca45284a184d30139cd99f33a049009c",
+"flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
@@ -129,9 +129,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
