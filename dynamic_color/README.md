@@ -8,14 +8,32 @@ A Flutter package to create Material color schemes based on a platform's impleme
 - macOS: [app accent color](https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/#app-accent-colors)
 - Windows: [accent color](https://docs.microsoft.com/en-us/windows/apps/design/style/color#accent-color)
 
-This package also supports color and color scheme harmonization. Learn more about [custom colors and harmonization](https://m3.material.io/styles/color/the-color-system/custom-colors) on the Material 3 site.
+This package also supports color and color scheme harmonization.
+
+## Getting started
+
+```bash
+flutter pub add dynamic_color
+```
+
+```dart
+import 'package:dynamic_color/dynamic_color.dart';
+```
 
 ## Features
 
 ### Builder widget
 
-For convenience, this package includes `DynamicColorBuilder`, a stateful widget
+`DynamicColorBuilder` is a stateful widget
 that provides the device's dynamic colors in a light and dark `ColorScheme`.
+
+```dart
+DynamicColorBuilder(
+  builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
+    return ...;
+  }
+),
+```
 
 ### Plugin
 
@@ -23,47 +41,63 @@ Under the hood, `DynamicColorBuilder` uses a plugin to talk to the OS.
 
 ### Color and color scheme harmonization
 
-How do we ensure any particular color (i.e. semantic/custom color)
-looks good next to a user's dynamically-generated color?
+Harmonization makes adding and introducing new colors to your app more seamless by automatically shifting hue and chroma slightly so that a product's colors feel more cohesive with user colors.
 
-This package provides two extension methods, `Color.harmonizeWith()` and
-`ColorScheme.harmonized()` to accomplish this.
-
-`Color.harmonizeWith()` shift the hue of the color towards the passed in
-color, typically `colorScheme.primary`. This leaves the color recognizable
-while harmonizing it.
-
-`ColorScheme.harmonized()` does the same thing, for `ColorScheme`'s
-built-in semantic colors. See [harmonization.dart] for more.
-
-## Getting started
-
-`flutter pub add dynamic_color`
+This package provides two extension methods to accomplish this:
 
 ```dart
-import 'package:dynamic_color/dynamic_color.dart';
+Color color = Colors.red;
+// Shift's [color]'s hue towards the (dynamic) color scheme's primary color. This leaves the color recognizable while harmonizing it with a user's dynamic color.
+harmonizedColor = color.harmonizeWith(colorScheme.primary);
+
+// Does the same thing, for ColorScheme built-in semantic colors
+harmonizedColorScheme = colorScheme.harmonized();
 ```
 
-## Usage
+See [harmonization.dart] for details. Learn more about [custom colors and harmonization](https://m3.material.io/styles/color/the-color-system/custom-colors) on the Material 3 site.
 
-See this [complete example] for obtaining dynamic colors, creating
+## Examples
+
+See [example/lib/complete_example.dart][complete example] for obtaining dynamic colors, creating
 harmonized color schemes, and harmonizing custom colors.
 
-See this [accent color example] for obtaining the macOS/Windows accent color.
+See [example/lib/accent_color.dart][accent color example] for obtaining the macOS/Windows accent color.
 
 <a href="https://material-foundation.github.io/material-dynamic-color-flutter/example/build/web/">
 <img src="https://user-images.githubusercontent.com/6655696/152188934-35e58f5c-2a3c-41af-8d49-faabb1701dcc.png" width="400" /> </a>
 
-All [examples] are [hosted on GitHub] and can be run with:
+All examples are part of this [example app] ([source][example app source]). To run the example app:
 
 ```
 cd example
 flutter run
 ```
 
+## Testing
+
+```dart
+import 'package:dynamic_color/test_utils.dart';
+import 'package:dynamic_color/samples.dart';
+
+void main() {
+  // Reset for every test
+  setUp(() => DynamicColorTestingUtils.setMockDynamicColors());
+
+  testWidgets('Verify dynamic core palette is used ',
+      (WidgetTester tester) async {
+    DynamicColorTestingUtils.setMockDynamicColors(
+      corePalette: SampleCorePalettes.green,
+    );
+
+    // ...
+});
+```
+
+See [example/test/widget_test.dart](https://github.com/material-foundation/material-dynamic-color-flutter/blob/main/example/test/widget_test.dart) for an example.
+
 ## Development
 
-The [hosted examples][hosted on github] can be updated with:
+The [example app] is hosted via GitHub pages. To update it:
 
 ```
 cd example
@@ -73,7 +107,7 @@ flutter build web
 [complete example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/complete_example.dart
 [dynamiccolorbuilder example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/dynamic_color_builder_example.dart
 [dynamiccolorplugin.getcorepalette example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/get_core_palette_example.dart
-[examples]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/
+[example app source]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/
 [harmonization.dart]: https://github.com/material-foundation/material-dynamic-color-flutter/blob/main/lib/src/harmonization.dart
-[hosted on github]: https://material-foundation.github.io/material-dynamic-color-flutter/example/build/web/
+[example app]: https://material-foundation.github.io/material-dynamic-color-flutter/example/build/web/
 [accent color example]: https://github.com/material-foundation/material-dynamic-color-flutter/blob/main/example/lib/accent_color.dart
