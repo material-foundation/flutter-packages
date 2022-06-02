@@ -9,7 +9,7 @@ void main() {
 
   setUp(() {
     DynamicColorTestingUtils.setMockDynamicColors(
-      colorPalette: SampleCorePalettes.green,
+      corePalette: SampleCorePalettes.green,
       accentColor: Colors.amber,
     );
   });
@@ -28,14 +28,14 @@ void main() {
   testWidgets('DynamicColorBuilder is correct on Android',
       (WidgetTester tester) async {
     DynamicColorTestingUtils.setMockDynamicColors(
-      colorPalette: SampleCorePalettes.green,
+      corePalette: SampleCorePalettes.green,
     );
 
     await tester.pumpWidget(dynamicColorBuilder());
     await tester.pumpAndSettle();
 
     final container = tester.firstWidget(find.byKey(containerKey)) as Container;
-    expect(container.color, const Color(0xff286b2a));
+    expect(container.color, const Color(0xff286c2a));
   });
 
   testWidgets('DynamicColorBuilder is correct on macOS/Windows',
@@ -47,7 +47,7 @@ void main() {
     await tester.pumpAndSettle();
 
     final container = tester.firstWidget(find.byKey(containerKey)) as Container;
-    expect(container.color, const Color(0xff795900));
+    expect(container.color, const Color(0xff785900));
   });
 
   testWidgets('DynamicColorBuilder is correct on other platforms',
