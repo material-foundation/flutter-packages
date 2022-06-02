@@ -1,5 +1,7 @@
-## 1.4.0+1
+## 1.4.1
 
+- Expand and improve README
+- Add example tests
 - Rename `DynamicColorTestingUtils.setMockDynamicColors`'s argument `colorPalette` to `corePalette`
 
 ## 1.4.0
