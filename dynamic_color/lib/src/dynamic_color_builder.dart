@@ -63,7 +63,7 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
       if (!mounted) return;
 
       if (corePalette == null) {
-        debugPrint('Got null core palette.');
+        debugPrint('dynamic_color: Got null core palette.');
       } else {
         setState(() {
           _light = corePalette.toColorScheme();
@@ -81,7 +81,7 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
       if (!mounted) return;
 
       if (accentColor == null) {
-        debugPrint('Got null accent color.');
+        debugPrint('dynamic_color: Got null accent color.');
       } else {
         setState(() {
           _light = ColorScheme.fromSeed(
