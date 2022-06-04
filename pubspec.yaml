@@ -23,4 +23,4 @@ dev_dependencies:
   path_provider_platform_interface: ^2.0.1
   plugin_platform_interface: ^2.0.2
   protobuf: ^2.0.1
-  test: ^1.19.5
+  test: ^1.19.5 
