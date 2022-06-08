@@ -62,7 +62,7 @@ See [harmonization.dart] for details. Learn more about [custom colors and harmon
 See [example/lib/complete_example.dart][complete example] for obtaining dynamic colors, creating
 harmonized color schemes, and harmonizing custom colors.
 
-See [example/lib/accent_color.dart][accent color example] for obtaining the macOS/Windows accent color.
+See [example/lib/accent_color.dart][accent color example] for obtaining the accent color on desktop.
 
 <a href="https://material-foundation.github.io/material-dynamic-color-flutter/example/build/web/">
 <img src="https://user-images.githubusercontent.com/6655696/152188934-35e58f5c-2a3c-41af-8d49-faabb1701dcc.png" width="400" /> </a>
