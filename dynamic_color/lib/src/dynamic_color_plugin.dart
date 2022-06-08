@@ -35,8 +35,8 @@ class DynamicColorPlugin {
 
   /// Returns the OS' accent color asynchronously as a [Color].
   ///
-  /// Supported on macOS starting with 10.14 (Mojave) and on Windows with
-  /// Windows 10.
+  /// Supported on macOS starting with 10.14 (Mojave), on Windows with
+  /// Windows 10, and on GTK-based Linux desktops.
   ///
   /// See also:
   ///

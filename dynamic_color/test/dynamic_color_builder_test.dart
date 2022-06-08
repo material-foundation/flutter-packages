@@ -38,7 +38,7 @@ void main() {
     expect(container.color, const Color(0xff286c2a));
   });
 
-  testWidgets('DynamicColorBuilder is correct on macOS/Windows',
+  testWidgets('DynamicColorBuilder is correct on desktop',
       (WidgetTester tester) async {
     DynamicColorTestingUtils.setMockDynamicColors(
       accentColor: Colors.amber,
