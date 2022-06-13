@@ -1,3 +1,7 @@
+## 1.5.1
+
+- Add support for DWM/Windows Aero's color ([#50](https://github.com/material-foundation/material-dynamic-color-flutter/pull/50))
+
 ## 1.5.0
 
 - Add support for GTK's accent color on Linux ([#47](https://github.com/material-foundation/material-dynamic-color-flutter/pull/47))
