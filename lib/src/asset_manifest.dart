@@ -27,14 +27,15 @@ class AssetManifest {
 
   Future<Map<String, List<String>>?> _loadAssetManifestJson() async {
     try {
-      final jsonString =
-          await rootBundle.loadString('AssetManifest.json', cache: enableCache);
+      final jsonString = await rootBundle.loadString(
+        'AssetManifest.json',
+        cache: enableCache,
+      );
       return _manifestParser(jsonString);
     } catch (e) {
-      print('Error loading AssetManifest.json, e: $e');
       rootBundle.evict('AssetManifest.json');
+      rethrow;
     }
-    return null;
   }
 
   static Future<Map<String, List<String>>?> _manifestParser(String? jsonData) {

@@ -18,11 +18,19 @@ class _Config {
   var allowRuntimeFetching = true;
 }
 
+/// Provides configuration, and static methods to obtain [TextStyle]s and [TextTheme]s.
+///
+/// {@youtube 560 315 https://www.youtube.com/watch?v=8Vzv2CdbEY0}
+///
+/// Obtain a map of available fonts with [asMap]. Retrieve a font by family name
+/// with [getFont]. Retrieve a text theme by its font family name [getTextTheme].
+///
+/// Check out the [README](https://github.com/material-foundation/google-fonts-flutter/blob/main/README.md) for more info.
 class GoogleFonts {
   /// Configuration for the [GoogleFonts] library.
   ///
   /// Use this to define custom behavior of the GoogleFonts library in your app.
-  /// For example, if you do not want the GoogleFonts library to make any http
+  /// For example, if you do not want the GoogleFonts library to make any HTTP
   /// requests for fonts, add the following snippet to your app's `main` method.
   ///
   /// ```dart

@@ -1,5 +1,9 @@
 import 'dart:typed_data' show ByteData;
 
+bool get isMacOS => false;
+bool get isAndroid => false;
+bool get isTest => false;
+
 /// By default, file IO is stubbed out.
 ///
 /// If the path provider library is available (on mobile or desktop), then the
@@ -7,10 +11,19 @@ import 'dart:typed_data' show ByteData;
 
 /// Stubbed out version of saveFontToDeviceFileSystem from
 /// `file_io_desktop_and_mobile.dart`.
-Future<void> saveFontToDeviceFileSystem(String name, List<int> bytes) =>
-    Future.value(null);
+Future<void> saveFontToDeviceFileSystem({
+  required String name,
+  required String fileHash,
+  required List<int> bytes,
+}) {
+  return Future.value(null);
+}
 
 /// Stubbed out version of loadFontFromDeviceFileSystem from
 /// `file_io_desktop_and_mobile.dart`.
-Future<ByteData?> loadFontFromDeviceFileSystem(String name) =>
-    Future.value(null);
+Future<ByteData?> loadFontFromDeviceFileSystem({
+  required String name,
+  required String fileHash,
+}) {
+  return Future.value(null);
+}

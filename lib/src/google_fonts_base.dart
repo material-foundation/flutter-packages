@@ -130,6 +130,7 @@ TextStyle googleFontsTextStyle({
 Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final familyWithVariantString = descriptor.familyWithVariant.toString();
   final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
+  final fileHash = descriptor.file.expectedFileHash;
   // If this font has already already loaded or is loading, then there is no
   // need to attempt to load it again, unless the attempted load results in an
   // error.
@@ -156,7 +157,10 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     }
 
     // Check if this font can be loaded from the device file system.
-    byteData = file_io.loadFontFromDeviceFileSystem(familyWithVariantString);
+    byteData = file_io.loadFontFromDeviceFileSystem(
+      name: familyWithVariantString,
+      fileHash: fileHash,
+    );
 
     if (await byteData != null) {
       return loadFontByteData(familyWithVariantString, byteData);
@@ -174,14 +178,26 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     } else {
       throw Exception(
         'GoogleFonts.config.allowRuntimeFetching is false but font $fontName was not '
-        'found in the application assets. Ensure $fontName.otf exists in a '
+        'found in the application assets. Ensure $fontName.ttf exists in a '
         "folder that is included in your pubspec's assets.",
       );
     }
   } catch (e) {
     _loadedFonts.remove(familyWithVariantString);
     print('Error: google_fonts was unable to load font $fontName because the '
-        'following exception occured:\n$e');
+        'following exception occurred:\n$e');
+    if (file_io.isTest) {
+      print('\nThere is likely something wrong with your test. Please see '
+          'https://github.com/material-foundation/google-fonts-flutter/blob/main/example/test '
+          'for examples of how to test with google_fonts.');
+    } else if (file_io.isMacOS || file_io.isAndroid) {
+      print(
+        '\nSee https://docs.flutter.dev/development/data-and-backend/networking#platform-notes.',
+      );
+    }
+    print('If troubleshooting doesn\'t solve the problem, please file an issue '
+        'at https://github.com/material-foundation/google-fonts-flutter/issues/new.\n');
+    rethrow;
   }
 }
 
@@ -239,7 +255,7 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
   try {
     response = await httpClient.get(uri);
   } catch (e) {
-    throw Exception('Failed to load font with url: ${file.url}');
+    throw Exception('Failed to load font with url ${file.url}: $e');
   }
   if (response.statusCode == 200) {
     if (!_isFileSecure(file, response.bodyBytes)) {
@@ -248,8 +264,11 @@ Future<ByteData> _httpFetchFontAndSaveToDevice(
       );
     }
 
-    _unawaited(
-        file_io.saveFontToDeviceFileSystem(fontName, response.bodyBytes));
+    _unawaited(file_io.saveFontToDeviceFileSystem(
+      name: fontName,
+      fileHash: file.expectedFileHash,
+      bytes: response.bodyBytes,
+    ));
 
     return ByteData.view(response.bodyBytes.buffer);
   } else {

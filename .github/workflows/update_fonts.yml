@@ -15,32 +15,44 @@ jobs:
       - run: flutter doctor -v
       - run: flutter pub get
 
-      - run: dart generator/generator.dart
-      - name: Exit if there are no changes
-        run: |
-          if [[ `git status --porcelain -- lib/google_fonts.dart` ]]; then 
-            echo lib/google_fonts.dart has been updated.
-          else 
-            echo No changes. Exiting...
-            exit 1
-          fi
-
       - run: dart pub global activate cider
-      - run: cider log changed 'Added the latest fonts from fonts.google.com'
-      - run: cider bump minor
-      - run: cider release
+      - run: dart generator/generator.dart
+
+      - name: Read families_diff file
+        uses: actions/github-script@v4
+        id: get_families_diff
+        with:
+          script: |
+            const fs = require('fs');
+            return fs.readFileSync('generator/families_diff','utf8').toString();
+          result-encoding: string
+
+      - name: Cancel workflow if there is no diff
+        uses: andymckay/cancel-action@0.2
+        if: steps.get_families_diff.outputs.result == ''
+        
+      - name: If cancelling workflow, allow for enough time to do so
+        run: sleep 15s
+        shell: bash
+        if: steps.get_families_diff.outputs.result == ''
 
       - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
-          commit-message: "[automated] update fonts"
+          commit-message: |
+            [automated] update fonts
+
+            ${{ steps.get_families_diff.outputs.result }}
           base: main
           branch: create-pull-request/update
           delete-branch: true
           author: material-robot <featherless+materialrobot@google.com>
           title: Update fonts
-          body: | #TODO: add changelog
-            Adds the latest fonts from https://fonts.google.com
+          body: |
+            # Summary
+            ${{ steps.get_families_diff.outputs.result }}
+
+            Please note that all existing fonts are subject to being updated.
           team-reviewers: google-fonts-flutter-package-maintainers
           labels: automated

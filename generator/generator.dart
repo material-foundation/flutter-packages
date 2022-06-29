@@ -2,19 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// @dart=2.9
-
 import 'dart:io';
 
 import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
-import 'package:mustache/mustache.dart';
+import 'package:mustache_template/mustache.dart';
 
 import 'fonts.pb.dart';
 
 const _generatedFilePath = 'lib/google_fonts.dart';
+const _familiesSupportedPath = 'generator/families_supported';
+const _familiesDiffPath = 'generator/families_diff';
 
-/// Generates the `GoogleFonts` class.
 Future<void> main() async {
   print('Getting latest font directory...');
   final protoUrl = await _getProtoUrl();
@@ -23,6 +22,20 @@ Future<void> main() async {
   final fontDirectory = await _readFontsProtoData(protoUrl);
   print('\nValidating font URLs and file contents...');
   await _verifyUrls(fontDirectory);
+  print(_success);
+
+  print('\nDetermining font families delta...');
+  final familiesDelta = _FamiliesDelta(fontDirectory);
+  print(_success);
+
+  print('\nGenerating $_familiesSupportedPath & $_familiesDiffPath ...');
+  File(_familiesSupportedPath)
+      .writeAsStringSync(familiesDelta.printableSupported());
+  File(_familiesDiffPath).writeAsStringSync(familiesDelta.markdownDiff());
+  print(_success);
+
+  print('\nUpdating CHANGELOG.md and pubspec.yaml...');
+  await familiesDelta.updateChangelogAndPubspec();
   print(_success);
 
   print('\nGenerating $_generatedFilePath...');
@@ -114,6 +127,70 @@ String _hashToString(List<int> bytes) {
   return fileName;
 }
 
+// Utility class to track font family deltas.
+//
+// [fontDirectory] represents a possibly updated directory.
+class _FamiliesDelta {
+  _FamiliesDelta(Directory fontDirectory) {
+    _init(fontDirectory);
+  }
+
+  late final Set<String> added;
+  late final Set<String> removed;
+  late final Set<String> all;
+
+  void _init(Directory fontDirectory) {
+    // Currently supported families.
+    Set<String> familiesSupported =
+        Set.from(File(_familiesSupportedPath).readAsLinesSync());
+
+    // Newly supported families.
+    all = Set<String>.from(
+      fontDirectory.family.map<String>((item) => item.name),
+    );
+
+    added = all.difference(familiesSupported);
+    removed = familiesSupported.difference(all);
+  }
+
+  // Printable list of supported font families.
+  String printableSupported() => all.join('\n');
+
+  // Diff of font families, suitable for markdown
+  // (e.g. CHANGELOG, PR description).
+  String markdownDiff() {
+    final addedPrintable = added.map((family) => '  - Added `$family`');
+    final removedPrintable = removed.map((family) => '  - Removed `$family`');
+
+    String diff = '';
+    if (removedPrintable.isNotEmpty) {
+      diff += removedPrintable.join('\n');
+      diff += '\n';
+    }
+    if (addedPrintable.isNotEmpty) {
+      diff += addedPrintable.join('\n');
+      diff += '\n';
+    }
+
+    return diff;
+  }
+
+  // Use cider to update CHANGELOG.md and pubspec.yaml.
+  Future<void> updateChangelogAndPubspec() async {
+    for (final family in removed) {
+      await Process.run('cider', ['log', 'removed', '`$family`']);
+    }
+    for (final family in added) {
+      await Process.run('cider', ['log', 'added', '`$family`']);
+    }
+
+    await Process.run(
+      'cider',
+      ['bump', removed.isNotEmpty ? 'breaking' : 'minor'],
+    );
+  }
+}
+
 String _generateDartCode(Directory fontDirectory) {
   final methods = <Map<String, dynamic>>[];
 
@@ -124,19 +201,21 @@ String _generateDartCode(Directory fontDirectory) {
     final methodName = _familyToMethodName(family);
 
     const themeParams = [
-      'headline1',
-      'headline2',
-      'headline3',
-      'headline4',
-      'headline5',
-      'headline6',
-      'subtitle1',
-      'subtitle2',
-      'bodyText1',
-      'bodyText2',
-      'caption',
-      'button',
-      'overline',
+      'displayLarge',
+      'displayMedium',
+      'displaySmall',
+      'headlineLarge',
+      'headlineMedium',
+      'headlineSmall',
+      'titleLarge',
+      'titleMedium',
+      'titleSmall',
+      'bodyLarge',
+      'bodyMedium',
+      'bodySmall',
+      'labelLarge',
+      'labelMedium',
+      'labelSmall',
     ];
 
     methods.add(<String, dynamic>{

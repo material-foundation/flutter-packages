@@ -1,41 +1,78 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: "[BUG]"
+about: Create an issue to help us improve.
+title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Steps to Reproduce
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+<!-- Please include full steps to reproduce so that we can reproduce the problem. -->
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+1. Execute `flutter run` on the code sample <!-- (see "Code sample" section below) -->
+2. ... <!-- describe steps to demonstrate bug -->
+3. ... <!-- for example "Tap on X and see a crash" -->
 
-**Include the contents of your `google_fonts` directory**
-Add contents here.
+**Expected results:** <!-- what did you want to see? -->
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**Actual results:** <!-- what did you see? -->
 
-**Desktop (please complete the following information if applicable):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+<details>
+<summary>Code sample</summary>
 
-**Smartphone (please complete the following information if applicable):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+<!--
+      Please create a minimal reproducible sample that shows the problem
+      and attach it below between the lines with the backticks.
 
-**Additional context**
-Add any other context about the problem here.
+      To create it you can use `flutter create bug` command and update the `main.dart` file.
+
+      Alternatively, you can use https://dartpad.dev/
+      which is capable of creating and running small Flutter apps.
+
+      Without this we will unlikely be able to progress on the issue, and because of that
+      we regretfully will have to close it.
+-->
+
+```dart
+```
+
+</details>
+
+<details>
+  <summary>Logs</summary>
+
+<!--
+      Run your application with `flutter run --verbose` and attach all the
+      log output below between the lines with the backticks. If there is an
+      exception, please see if the error message includes enough information
+      to explain how to solve the issue.
+-->
+
+```
+```
+
+<!--
+     Run `flutter analyze` and attach any output of that command below.
+     If there are any analysis errors, try resolving them before filing this issue.
+-->
+
+```
+```
+
+<!-- Finally, paste the output of running `flutter doctor -v` here. -->
+
+```
+```
+
+</details>
+
+
+<!--
+      Consider also attaching screenshots and/or videos to better
+      illustrate the issue.
+
+      You can upload them directly on GitHub.
+      Beware that video file size is limited to 10MB.
+-->

@@ -1,4 +1,6 @@
-# Miscellaneous
+generator/fonts_diff
+
+ Miscellaneous
 *.class
 *.log
 *.pyc
@@ -30,7 +32,6 @@ example/.flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
-pubspec.lock
 /build/
 
 # Android related
