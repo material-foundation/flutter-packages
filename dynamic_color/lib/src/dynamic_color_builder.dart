@@ -62,16 +62,16 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
       // setState to update our non-existent appearance.
       if (!mounted) return;
 
-      if (corePalette == null) {
-        debugPrint('dynamic_color: Got null core palette.');
-      } else {
+      if (corePalette != null) {
+        debugPrint('dynamic_color: Core palette detected.');
         setState(() {
           _light = corePalette.toColorScheme();
           _dark = corePalette.toColorScheme(brightness: Brightness.dark);
         });
+        return;
       }
     } on PlatformException {
-      debugPrint('Failed to obtain core palette.');
+      debugPrint('dynamic_color: Failed to obtain core palette.');
     }
 
     try {
@@ -80,9 +80,8 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
       // Likewise above.
       if (!mounted) return;
 
-      if (accentColor == null) {
-        debugPrint('dynamic_color: Got null accent color.');
-      } else {
+      if (accentColor != null) {
+        debugPrint('dynamic_color: Accent color detected.');
         setState(() {
           _light = ColorScheme.fromSeed(
             seedColor: accentColor,
@@ -93,10 +92,13 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
             brightness: Brightness.dark,
           );
         });
+        return;
       }
     } on PlatformException {
-      debugPrint('Failed to obtain accent color.');
+      debugPrint('dynamic_color: Failed to obtain accent color.');
     }
+
+    debugPrint('dynamic_color: Dynamic color not detected on this device.');
   }
 
   @override
