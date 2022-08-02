@@ -1,5 +1,5 @@
 PODS:
-  - dynamic_color (0.0.1):
+  - dynamic_color (0.0.2):
     - FlutterMacOS
   - FlutterMacOS (1.0.0)
 
@@ -14,9 +14,9 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral
 
 SPEC CHECKSUMS:
-  dynamic_color: 27382bc54ac39a4c4011b6b575ee365703790de5
-  FlutterMacOS: 57701585bf7de1b3fc2bb61f6378d73bbdea8424
+  dynamic_color: 394d6a888650f8534e029b27d2f8bc5c64e44008
+  FlutterMacOS: 85f90bfb3f1703249cf1539e4dfbff31e8584698
 
-PODFILE CHECKSUM: 6eac6b3292e5142cfc23bdeb71848a40ec51c14c
+PODFILE CHECKSUM: a884f6dd3f7494f3892ee6c81feea3a3abbf9153
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
