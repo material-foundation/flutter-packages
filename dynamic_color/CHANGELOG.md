@@ -1,3 +1,6 @@
+## 1.5.3
+
+- Update constraint for `material_color_utilities`
 
 ## 1.5.2
 
