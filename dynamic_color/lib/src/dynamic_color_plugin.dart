@@ -3,8 +3,6 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
 
-import 'dynamic_color_builder.dart';
-
 /// Plugin for obtaining dynamic colors defined by the Android OS.
 class DynamicColorPlugin {
   /// Optional method channel so that it returns null on non-Android platforms.
