@@ -21,10 +21,10 @@ jobs:
           path: /opt/hostedtoolcache/flutter
           key: ubuntu-flutter-install-cache-stable
 
-      - name: Clone Flutter repository with beta channel
+      - name: Clone Flutter repository with stable channel
         uses: subosito/flutter-action@v1.5.3
         with:
-          channel: beta
+          channel: stable
       - run: flutter doctor -v
 
       - uses: actions/checkout@v2

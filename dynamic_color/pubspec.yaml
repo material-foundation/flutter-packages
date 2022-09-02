@@ -1,12 +1,11 @@
 name: dynamic_color
 description: A Flutter package to create Material color schemes based on a platform's implementation of dynamic color.
-version: 1.5.3
+version: 1.5.4
 repository: https://github.com/material-foundation/material-dynamic-color-flutter
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
-  # TODO: bump to 3.2.0 when available
-  flutter: ">=3.1.0-0.0.pre.1036"
+  flutter: ">=3.3.0"
 
 dependencies:
   flutter:

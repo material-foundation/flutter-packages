@@ -1,3 +1,7 @@
+## 1.5.4
+
+- Update constraint for Flutter SDK
+
 ## 1.5.3
 
 - Update constraint for `material_color_utilities`
