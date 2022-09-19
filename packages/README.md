@@ -11,4 +11,4 @@ Package | pub
 ## Material 3
 Package | pub
 --- | ---
-[flutter_adaptive_scaffold](https://github.com/flutter/packages/tree/main/packages/flutter_adaptive_scaffold) | [![pub package](https://img.shields.io/pub/v/adaptive_scaffold.svg)](https://pub.dev/packages/flutter_adaptive_scaffold)
+[flutter_adaptive_scaffold](https://github.com/flutter/packages/tree/main/packages/flutter_adaptive_scaffold) | [![pub package](https://img.shields.io/pub/v/flutter_adaptive_scaffold.svg)](https://pub.dev/packages/flutter_adaptive_scaffold)
