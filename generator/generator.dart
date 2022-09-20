@@ -216,6 +216,7 @@ String _generateDartCode(Directory fontDirectory) {
       'labelLarge',
       'labelMedium',
       'labelSmall',
+      'button',
     ];
 
     methods.add(<String, dynamic>{
