@@ -630,13 +630,19 @@ void main() {
     final textTheme = GoogleFonts.oswaldTextTheme();
     const expectedFamilyWithVariant = 'Oswald_regular';
 
-    expect(textTheme.displayLarge!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.displayMedium!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.displaySmall!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.headlineMedium!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.headlineSmall!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(
+        textTheme.displayLarge!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(
+        textTheme.displayMedium!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(
+        textTheme.displaySmall!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headlineMedium!.fontFamily,
+        equals(expectedFamilyWithVariant));
+    expect(
+        textTheme.headlineSmall!.fontFamily, equals(expectedFamilyWithVariant));
     expect(textTheme.titleLarge!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.titleMedium!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(
+        textTheme.titleMedium!.fontFamily, equals(expectedFamilyWithVariant));
     expect(textTheme.titleSmall!.fontFamily, equals(expectedFamilyWithVariant));
     expect(textTheme.bodyLarge!.fontFamily, equals(expectedFamilyWithVariant));
     expect(textTheme.bodyMedium!.fontFamily, equals(expectedFamilyWithVariant));
@@ -657,7 +663,8 @@ void main() {
     const expectedFamilyWithVariant = 'Oswald_regular';
 
     // Default is preserved.
-    expect(textTheme.headlineMedium!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headlineMedium!.fontFamily,
+        equals(expectedFamilyWithVariant));
     // Different font family gets overridden by oswald.
     expect(textTheme.bodyMedium!.fontFamily, equals(expectedFamilyWithVariant));
     // Weight is preserved.
