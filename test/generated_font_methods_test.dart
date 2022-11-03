@@ -630,40 +630,40 @@ void main() {
     final textTheme = GoogleFonts.oswaldTextTheme();
     const expectedFamilyWithVariant = 'Oswald_regular';
 
-    expect(textTheme.headline1!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.headline2!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.headline3!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.headline4!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.headline5!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.headline6!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.subtitle1!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.subtitle2!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.bodyText1!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.bodyText2!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.caption!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.button!.fontFamily, equals(expectedFamilyWithVariant));
-    expect(textTheme.overline!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.displayLarge!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.displayMedium!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.displaySmall!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headlineMedium!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headlineSmall!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.titleLarge!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.titleMedium!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.titleSmall!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.bodyLarge!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.bodyMedium!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.bodySmall!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.labelLarge!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.labelSmall!.fontFamily, equals(expectedFamilyWithVariant));
   });
 
   testWidgets('TextTheme method works with a base textTheme', (tester) async {
     // In app this is usually obtained by Theme.of(context).textTheme.
     final baseTextTheme = TextTheme(
-      headline3: const TextStyle(fontWeight: FontWeight.w700),
-      bodyText2: GoogleFonts.acme(),
-      subtitle2: const TextStyle(fontStyle: FontStyle.italic),
+      displaySmall: const TextStyle(fontWeight: FontWeight.w700),
+      bodyMedium: GoogleFonts.acme(),
+      titleSmall: const TextStyle(fontStyle: FontStyle.italic),
     );
 
     final textTheme = GoogleFonts.oswaldTextTheme(baseTextTheme);
     const expectedFamilyWithVariant = 'Oswald_regular';
 
     // Default is preserved.
-    expect(textTheme.headline4!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.headlineMedium!.fontFamily, equals(expectedFamilyWithVariant));
     // Different font family gets overridden by oswald.
-    expect(textTheme.bodyText2!.fontFamily, equals(expectedFamilyWithVariant));
+    expect(textTheme.bodyMedium!.fontFamily, equals(expectedFamilyWithVariant));
     // Weight is preserved.
-    expect(textTheme.headline3!.fontWeight, equals(FontWeight.w700));
+    expect(textTheme.displaySmall!.fontWeight, equals(FontWeight.w700));
     // Style is preserved.
-    expect(textTheme.subtitle2!.fontStyle, equals(FontStyle.italic));
+    expect(textTheme.titleSmall!.fontStyle, equals(FontStyle.italic));
   });
 
   // Regression test for https://github.com/material-foundation/google-fonts-flutter/issues/215
@@ -704,7 +704,7 @@ void main() {
 
     for (var fontFamily in allFonts) {
       final dynamicFont = GoogleFonts.getTextTheme(fontFamily);
-      expect(dynamicFont.bodyText1!.fontFamily, isNotNull);
+      expect(dynamicFont.bodyLarge!.fontFamily, isNotNull);
     }
 
     expect(allFonts, isNotEmpty);
