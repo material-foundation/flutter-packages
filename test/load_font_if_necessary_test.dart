@@ -243,16 +243,17 @@ void main() {
     );
 
     // Have the first call throw an error.
-    when(mockHttpClient.gets(any)).thenThrow('error');
-    await loadFontIfNecessary(fakeDescriptor);
-    verify(mockHttpClient.gets(any)).called(1);
+    when(mockHttpClient.gets(any)).thenThrow('some error');
+    await expectLater(
+      loadFontIfNecessary(fakeDescriptor),  throwsA(const TypeMatcher<Exception>()),
+    );
 
     // The second call will retry the http fetch.
     when(mockHttpClient.gets(any)).thenAnswer((_) async {
       return http.Response(_fakeResponse, 200);
     });
     await loadFontIfNecessary(fakeDescriptor);
-    verify(mockHttpClient.gets(any)).called(1);
+    verify(mockHttpClient.gets(any)).called(2);
   });
 
   test('loadFontIfNecessary method correctly stores in cache', () async {
@@ -340,9 +341,16 @@ void main() {
     var directoryContents = await getApplicationSupportDirectory();
     expect(directoryContents.listSync().isEmpty, isTrue);
 
-    await loadFontIfNecessary(fakeDescriptor);
-    directoryContents = await getApplicationSupportDirectory();
-    expect(directoryContents.listSync().isEmpty, isTrue);
+    overridePrint(() async {
+      await loadFontIfNecessary(fakeDescriptor);
+      expect(printLog.length, 1);
+      expect(
+        printLog[0],
+        startsWith('google_fonts was unable to load font Foo-BlackItalic'),
+      );
+      directoryContents = await getApplicationSupportDirectory();
+      expect(directoryContents.listSync().isEmpty, isTrue);
+    });
   });
 
   test("loadFontByteData doesn't fail", () {
