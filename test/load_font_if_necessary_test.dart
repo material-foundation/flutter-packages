@@ -245,7 +245,8 @@ void main() {
     // Have the first call throw an error.
     when(mockHttpClient.gets(any)).thenThrow('some error');
     await expectLater(
-      loadFontIfNecessary(fakeDescriptor),  throwsA(const TypeMatcher<Exception>()),
+      loadFontIfNecessary(fakeDescriptor),
+      throwsA(const TypeMatcher<Exception>()),
     );
 
     // The second call will retry the http fetch.
