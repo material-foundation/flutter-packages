@@ -21,23 +21,23 @@ Future<void> main() async {
   print('Success! Using $protoUrl');
 
   final fontDirectory = await _readFontsProtoData(protoUrl);
-  // print('\nValidating font URLs and file contents...');
-  // await _verifyUrls(fontDirectory);
-  // print(_success);
+  print('\nValidating font URLs and file contents...');
+  await _verifyUrls(fontDirectory);
+  print(_success);
 
-  // print('\nDetermining font families delta...');
-  // final familiesDelta = _FamiliesDelta(fontDirectory);
-  // print(_success);
+  print('\nDetermining font families delta...');
+  final familiesDelta = _FamiliesDelta(fontDirectory);
+  print(_success);
 
-  // print('\nGenerating $_familiesSupportedPath & $_familiesDiffPath ...');
-  // File(_familiesSupportedPath)
-  //     .writeAsStringSync(familiesDelta.printableSupported());
-  // File(_familiesDiffPath).writeAsStringSync(familiesDelta.markdownDiff());
-  // print(_success);
+  print('\nGenerating $_familiesSupportedPath & $_familiesDiffPath ...');
+  File(_familiesSupportedPath)
+      .writeAsStringSync(familiesDelta.printableSupported());
+  File(_familiesDiffPath).writeAsStringSync(familiesDelta.markdownDiff());
+  print(_success);
 
-  // print('\nUpdating CHANGELOG.md and pubspec.yaml...');
-  // await familiesDelta.updateChangelogAndPubspec();
-  // print(_success);
+  print('\nUpdating CHANGELOG.md and pubspec.yaml...');
+  await familiesDelta.updateChangelogAndPubspec();
+  print(_success);
 
   print('\nGenerating $_generatedFilePath...');
   await _writeDartFile(_generateDartCode(fontDirectory));
