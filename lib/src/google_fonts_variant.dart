@@ -121,7 +121,7 @@ class GoogleFontsVariant {
   }
 
   @override
-  int get hashCode => hashValues(fontWeight, fontStyle);
+  int get hashCode => Object.hash(fontWeight, fontStyle);
 
   @override
   bool operator ==(dynamic other) {

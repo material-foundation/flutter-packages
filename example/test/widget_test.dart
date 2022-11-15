@@ -13,7 +13,7 @@ import 'package:google_fonts/google_fonts.dart';
 void main() {
   testWidgets('Can specify text style', (WidgetTester tester) async {
     await tester.pumpWidget(
-      MaterialApp(home: Text('Hello', style: GoogleFonts.aBeeZee())),
+      MaterialApp(home: Text('Hello', style: const ABeeZeeFont().style())),
     );
   });
 
@@ -23,7 +23,7 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         theme: baseTheme.copyWith(
-          textTheme: GoogleFonts.aBeeZeeTextTheme(baseTheme.textTheme),
+          textTheme: const ABeeZeeFont().theme(baseTheme.textTheme),
         ),
       ),
     );

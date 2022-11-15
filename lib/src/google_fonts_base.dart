@@ -1,10 +1,6 @@
 // Copyright 2019 The Flutter team. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-
-import 'dart:typed_data';
-import 'dart:ui';
-
 import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -23,7 +19,8 @@ import 'google_fonts_variant.dart';
 // for the life of the app instance. Once a font is attempted to load, it does
 // not need to be attempted to load again, unless the attempted load resulted
 // in an error.
-final Set<String> _loadedFonts = {};
+@visibleForTesting
+final Set<String> loadedFonts = {};
 
 @visibleForTesting
 http.Client httpClient = http.Client();
@@ -32,63 +29,19 @@ http.Client httpClient = http.Client();
 AssetManifest assetManifest = AssetManifest();
 
 @visibleForTesting
-void clearCache() => _loadedFonts.clear();
+void clearCache() => loadedFonts.clear();
 
-/// Creates a [TextStyle] that either uses the [fontFamily] for the requested
-/// GoogleFont, or falls back to the pre-bundled [fontFamily].
-///
-/// This function has a side effect of loading the font into the [FontLoader],
-/// either by network or from the device file system.
-TextStyle googleFontsTextStyle({
+/// Preload font into the FontLoader
+Future<void> loadGoogleFontsFont({
   required String fontFamily,
-  TextStyle? textStyle,
-  Color? color,
-  Color? backgroundColor,
-  double? fontSize,
-  FontWeight? fontWeight,
-  FontStyle? fontStyle,
-  double? letterSpacing,
-  double? wordSpacing,
-  TextBaseline? textBaseline,
-  double? height,
-  Locale? locale,
-  Paint? foreground,
-  Paint? background,
-  List<Shadow>? shadows,
-  List<FontFeature>? fontFeatures,
-  TextDecoration? decoration,
-  Color? decorationColor,
-  TextDecorationStyle? decorationStyle,
-  double? decorationThickness,
-  required Map<GoogleFontsVariant, GoogleFontsFile> fonts,
-}) {
-  textStyle ??= const TextStyle();
-  textStyle = textStyle.copyWith(
-    color: color,
-    backgroundColor: backgroundColor,
-    fontSize: fontSize,
-    fontWeight: fontWeight,
-    fontStyle: fontStyle,
-    letterSpacing: letterSpacing,
-    wordSpacing: wordSpacing,
-    textBaseline: textBaseline,
-    height: height,
-    locale: locale,
-    foreground: foreground,
-    background: background,
-    shadows: shadows,
-    fontFeatures: fontFeatures,
-    decoration: decoration,
-    decorationColor: decorationColor,
-    decorationStyle: decorationStyle,
-    decorationThickness: decorationThickness,
-  );
-
+  required TextStyle textStyle,
+  required Map<GoogleFontsVariant, GoogleFontsFile> files,
+}) async {
   final variant = GoogleFontsVariant(
     fontWeight: textStyle.fontWeight ?? FontWeight.w400,
     fontStyle: textStyle.fontStyle ?? FontStyle.normal,
   );
-  final matchedVariant = _closestMatch(variant, fonts.keys);
+  final matchedVariant = _closestMatch(variant, files.keys);
   final familyWithVariant = GoogleFontsFamilyWithVariant(
     family: fontFamily,
     googleFontsVariant: matchedVariant,
@@ -96,7 +49,35 @@ TextStyle googleFontsTextStyle({
 
   final descriptor = GoogleFontsDescriptor(
     familyWithVariant: familyWithVariant,
-    file: fonts[matchedVariant]!,
+    file: files[matchedVariant]!,
+  );
+
+  await loadFontIfNecessary(descriptor);
+}
+
+/// Creates a [TextStyle] that either uses the [fontFamily] for the requested
+/// GoogleFont, or falls back to the pre-bundled [fontFamily].
+///
+/// This function has a side effect of loading the font into the [FontLoader],
+/// either by network or from the device file system.
+TextStyle makeGoogleFontsTextStyle({
+  required String fontFamily,
+  required TextStyle textStyle,
+  required Map<GoogleFontsVariant, GoogleFontsFile> files,
+}) {
+  final variant = GoogleFontsVariant(
+    fontWeight: textStyle.fontWeight ?? FontWeight.w400,
+    fontStyle: textStyle.fontStyle ?? FontStyle.normal,
+  );
+  final matchedVariant = _closestMatch(variant, files.keys);
+  final familyWithVariant = GoogleFontsFamilyWithVariant(
+    family: fontFamily,
+    googleFontsVariant: matchedVariant,
+  );
+
+  final descriptor = GoogleFontsDescriptor(
+    familyWithVariant: familyWithVariant,
+    file: files[matchedVariant]!,
   );
 
   loadFontIfNecessary(descriptor);
@@ -124,10 +105,10 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   // If this font has already already loaded or is loading, then there is no
   // need to attempt to load it again, unless the attempted load results in an
   // error.
-  if (_loadedFonts.contains(familyWithVariantString)) {
+  if (loadedFonts.contains(familyWithVariantString)) {
     return;
   } else {
-    _loadedFonts.add(familyWithVariantString);
+    loadedFonts.add(familyWithVariantString);
   }
 
   try {
@@ -142,6 +123,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     if (assetPath != null) {
       byteData = rootBundle.load(assetPath);
     }
+
     if (await byteData != null) {
       return loadFontByteData(familyWithVariantString, byteData);
     }
@@ -173,7 +155,7 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
       );
     }
   } catch (e) {
-    _loadedFonts.remove(familyWithVariantString);
+    loadedFonts.remove(familyWithVariantString);
     print('Error: google_fonts was unable to load font $fontName because the '
         'following exception occurred:\n$e');
     if (file_io.isTest) {

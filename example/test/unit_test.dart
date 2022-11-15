@@ -11,11 +11,11 @@ void main() {
   late TextStyle expectedStyle;
 
   setUpAll(() {
-    expectedStyle = GoogleFonts.getFont('ABeeZee');
+    expectedStyle = GoogleFonts.getFontDynamically('ABeeZee').style();
   });
 
   test('Can test fonts', () {
-    final styleFunc = GoogleFonts.asMap()['ABeeZee']!;
-    expect(styleFunc(), equals(expectedStyle));
+    final textStyle = const ABeeZeeFont().style();
+    expect(textStyle, equals(expectedStyle));
   });
 }

@@ -6,27 +6,27 @@
 
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
+import 'package:recase/recase.dart';
+
 import 'src/google_fonts_base.dart';
 import 'src/google_fonts_descriptor.dart';
 import 'src/google_fonts_variant.dart';
 
 /// A collection of properties used to specify custom behavior of the
-/// GoogleFonts library.
+/// [GoogleFonts] library.
 class _Config {
   /// Whether or not the GoogleFonts library can make requests to
   /// [fonts.google.com](https://fonts.google.com/) to retrieve font files.
   var allowRuntimeFetching = true;
 }
 
-/// Provides configuration, and static methods to obtain [TextStyle]s and [TextTheme]s.
+/// Provides configuration, and static methods to obtain [Font].
 ///
-/// {@youtube 560 315 https://www.youtube.com/watch?v=8Vzv2CdbEY0}
-///
-/// Obtain a map of available fonts with [asMap]. Retrieve a font by family name
-/// with [getFont]. Retrieve a text theme by its font family name [getTextTheme].
+/// Retrieve a font by family name with [getFont].
+/// The Font has methods to get the [TextStyle] and [TextTheme]
 ///
 /// Check out the [README](https://github.com/material-foundation/google-fonts-flutter/blob/main/README.md) for more info.
-class GoogleFonts {
+class GoogleFonts{
   /// Configuration for the [GoogleFonts] library.
   ///
   /// Use this to define custom behavior of the GoogleFonts library in your app.
@@ -38,191 +38,210 @@ class GoogleFonts {
   /// ```
   static final config = _Config();
 
-  /// Get a map of all available fonts.
-  ///
-  /// Returns a map where the key is the name of the font family and the value
-  /// is the corresponding [GoogleFonts] method.
-  static Map<String, TextStyle Function({
-    TextStyle? textStyle,
-    Color? color,
-    Color? backgroundColor,
-    double? fontSize,
-    FontWeight? fontWeight,
-    FontStyle? fontStyle,
-    double? letterSpacing,
-    double? wordSpacing,
-    TextBaseline? textBaseline,
-    double? height,
-    Locale? locale,
-    Paint? foreground,
-    Paint? background,
-    List<ui.Shadow>? shadows,
-    List<ui.FontFeature>? fontFeatures,
-    TextDecoration? decoration,
-    Color? decorationColor,
-    TextDecorationStyle? decorationStyle,
-    double? decorationThickness,
-  })> asMap() => const {
-    {{#method}}
-    '{{fontFamilyDisplay}}': GoogleFonts.{{methodName}},
-    {{/method}}
-  };
+  /// A getter to get all GoogleFont font families
+  static List<String> get fontFamilies => fonts.keys.toList();
 
-  /// Get a map of all available fonts and their associated text themes.
+  /// A method to get a font with [FontFamily]
   ///
-  /// Returns a map where the key is the name of the font family and the value
-  /// is the corresponding [GoogleFonts] `TextTheme` method.
-  static Map<String, TextTheme Function([TextTheme?])> _asMapOfTextThemes() => const {
-    {{#method}}
-    '{{fontFamilyDisplay}}': GoogleFonts.{{methodName}}TextTheme,
-    {{/method}}
-  };
-
-  /// Retrieve a font by family name.
-  /// 
-  /// Applies the given font family from Google Fonts to the given [textStyle]
-  /// and returns the resulting [TextStyle].
-  ///
-  /// Note: [fontFamily] is case-sensitive.
-  /// 
-  /// Parameter [fontFamily] must not be `null`. Throws if no font by name
-  /// [fontFamily] exists.
-  static TextStyle getFont(String fontFamily, {
-    TextStyle? textStyle,
-    Color? color,
-    Color? backgroundColor,
-    double? fontSize,
-    FontWeight? fontWeight,
-    FontStyle? fontStyle,
-    double? letterSpacing,
-    double? wordSpacing,
-    TextBaseline? textBaseline,
-    double? height,
-    Locale? locale,
-    Paint? foreground,
-    Paint? background,
-    List<ui.Shadow>? shadows,
-    List<ui.FontFeature>? fontFeatures,
-    TextDecoration? decoration,
-    Color? decorationColor,
-    TextDecorationStyle? decorationStyle,
-    double? decorationThickness,
-  }) {
-    final fonts = GoogleFonts.asMap();
-    if (!fonts.containsKey(fontFamily)) {
-      throw Exception("No font family by name '$fontFamily' was found.");
+  /// Returns instance of [Font] class 
+  /// that can be used to load and get a [TextStyle]
+  /// or [TextTheme]
+  static Font getFont(GoogleFontFamily fontFamily){
+    if (!fonts.containsKey(fontFamily.name)) {
+      throw Exception("No font family by name '${fontFamily.name}' was found.");
     }
-    return fonts[fontFamily]!(
-      textStyle: textStyle,
-      color: color,
-      backgroundColor: backgroundColor,
-      fontSize: fontSize,
-      fontWeight: fontWeight,
-      fontStyle: fontStyle,
-      letterSpacing: letterSpacing,
-      wordSpacing: wordSpacing,
-      textBaseline: textBaseline,
-      height: height,
-      locale: locale,
-      foreground: foreground,
-      background: background,
-      shadows: shadows,
-      fontFeatures: fontFeatures,
-      decoration: decoration,
-      decorationColor: decorationColor,
-      decorationStyle: decorationStyle,
-      decorationThickness: decorationThickness,
-    );
+    return fonts[fontFamily.name]!();
   }
 
-  /// Retrieve a text theme by its font family name.
+  /// A method to get a font dynamically
   ///
-  /// Applies the given font family from Google Fonts to the given [textTheme]
-  /// and returns the resulting [textTheme].
-  ///
-  /// Note: [fontFamily] is case-sensitive.
-  ///
-  /// Parameter [fontFamily] must not be `null`. Throws if no font by name
-  /// [fontFamily] exists.
-  static TextTheme getTextTheme(String fontFamily, [TextTheme? textTheme]) {
-    final fonts = _asMapOfTextThemes();
-    if (!fonts.containsKey(fontFamily)) {
-      throw Exception("No font family by name '$fontFamily' was found.");
+  /// Returns instance of [Font] class 
+  /// that can be used to load and get a [TextStyle]
+  /// or [TextTheme]
+  static Font getFontDynamically(String fontFamily){
+    final camelCase = fontFamily.camelCase;
+    if (!fonts.containsKey(camelCase)) {
+      throw Exception("No font family by name '$camelCase' was found.");
     }
-    return fonts[fontFamily]!(textTheme);
+    return fonts[camelCase]!();
   }
+}
 
+/// Enum where every value is font family from Google Fonts.
+enum GoogleFontFamily{
   {{#method}}
-  /// Applies the {{fontFamilyDisplay}} font family from Google Fonts to the
-  /// given [textStyle].
-  ///
-  /// See:
-  ///  * {{docsUrl}}
-  static TextStyle {{methodName}}({
-    TextStyle? textStyle,
-    Color? color,
-    Color? backgroundColor,
-    double? fontSize,
-    FontWeight? fontWeight,
-    FontStyle? fontStyle,
-    double? letterSpacing,
-    double? wordSpacing,
-    TextBaseline? textBaseline,
-    double? height,
-    Locale? locale,
-    Paint? foreground,
-    Paint? background,
-    List<ui.Shadow>? shadows,
-    List<ui.FontFeature>? fontFeatures,
-    TextDecoration? decoration,
-    Color? decorationColor,
-    TextDecorationStyle? decorationStyle,
-    double? decorationThickness,
-  }) {
-    final fonts = <GoogleFontsVariant, GoogleFontsFile>{
-      {{#fontUrls}}
-      const GoogleFontsVariant(fontWeight: FontWeight.w{{variantWeight}}, fontStyle: FontStyle.{{variantStyle}},): GoogleFontsFile('{{hash}}', {{length}},),
-      {{/fontUrls}}
-    };
-
-    return googleFontsTextStyle(
-      textStyle: textStyle,
-      fontFamily: '{{fontFamily}}',
-      color: color,
-      backgroundColor: backgroundColor,
-      fontSize: fontSize,
-      fontWeight: fontWeight,
-      fontStyle: fontStyle,
-      letterSpacing: letterSpacing,
-      wordSpacing: wordSpacing,
-      textBaseline: textBaseline,
-      height: height,
-      locale: locale,
-      foreground: foreground,
-      background: background,
-      shadows: shadows,
-      fontFeatures: fontFeatures,
-      decoration: decoration,
-      decorationColor: decorationColor,
-      decorationStyle: decorationStyle,
-      decorationThickness: decorationThickness,
-      fonts: fonts,
-    );
-  }
-
-  /// Applies the {{fontFamilyDisplay}} font family from Google Fonts to every
-  /// [TextStyle] in the given [textTheme].
-  ///
-  /// See:
-  ///  * {{docsUrl}}
-  static TextTheme {{methodName}}TextTheme([TextTheme? textTheme]) {
-    textTheme ??= ThemeData.light().textTheme;
-    return TextTheme(
-      {{#themeParams}}
-      {{value}}: GoogleFonts.{{methodName}}(textStyle: textTheme.{{value}}),
-      {{/themeParams}}
-    );
-  }
-
+  {{fontFamilyCamelCase}},
   {{/method}}
 }
+
+
+/// A map of fonts 
+///
+/// Returns a map where the key is the Google Font family 
+/// and the value is the corresponding class.
+@visibleForTesting
+const Map<String, Font Function()> fonts = {
+  {{#method}}
+  '{{fontFamilyCamelCase}}':{{fontFamilyPascalCase}}Font.new,
+  {{/method}}
+};
+
+/// Base class for fonts
+abstract class Font {
+  const Font();
+
+  // Getter for the name of the font family
+  String get name;
+
+  /// Get a map of all available files.
+  ///
+  /// Returns a map where the key is the variant and the value
+  /// is the corresponding file.
+  Map<GoogleFontsVariant, GoogleFontsFile> get files;
+
+  ///Preload a font.
+  Future<void> preload({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) async{
+    textStyle ??= const TextStyle();
+    textStyle = textStyle.copyWith(
+      color: color,
+      backgroundColor: backgroundColor,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      letterSpacing: letterSpacing,
+      wordSpacing: wordSpacing,
+      textBaseline: textBaseline,
+      height: height,
+      locale: locale,
+      foreground: foreground,
+      background: background,
+      shadows: shadows,
+      fontFeatures: fontFeatures,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+      decorationThickness: decorationThickness,
+    );
+
+    await loadGoogleFontsFont(
+      fontFamily: name,
+      textStyle: textStyle,
+      files: files,
+    );
+  }
+
+  /// Applies a font family to the given [textStyle].
+  TextStyle style({
+    TextStyle? textStyle,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+  }) {
+  textStyle ??= const TextStyle();
+  textStyle = textStyle.copyWith(
+    color: color,
+    backgroundColor: backgroundColor,
+    fontSize: fontSize,
+    fontWeight: fontWeight,
+    fontStyle: fontStyle,
+    letterSpacing: letterSpacing,
+    wordSpacing: wordSpacing,
+    textBaseline: textBaseline,
+    height: height,
+    locale: locale,
+    foreground: foreground,
+    background: background,
+    shadows: shadows,
+    fontFeatures: fontFeatures,
+    decoration: decoration,
+    decorationColor: decorationColor,
+    decorationStyle: decorationStyle,
+    decorationThickness: decorationThickness,
+  );
+
+    return makeGoogleFontsTextStyle(
+      fontFamily: name,
+      textStyle: textStyle,
+      files: files,
+    );
+  }
+
+  /// Applies a font family to every [TextStyle] in the given [textTheme].
+  TextTheme theme([TextTheme? textTheme]){
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      displayLarge: style(textStyle: textTheme.displayLarge),
+      displayMedium: style(textStyle: textTheme.displayMedium),
+      displaySmall: style(textStyle: textTheme.displaySmall),
+      headlineLarge: style(textStyle: textTheme.headlineLarge),
+      headlineMedium: style(textStyle: textTheme.headlineMedium),
+      headlineSmall: style(textStyle: textTheme.headlineSmall),
+      titleLarge: style(textStyle: textTheme.titleLarge),
+      titleMedium: style(textStyle: textTheme.titleMedium),
+      titleSmall: style(textStyle: textTheme.titleSmall),
+      bodyLarge: style(textStyle: textTheme.bodyLarge),
+      bodyMedium: style(textStyle: textTheme.bodyMedium),
+      bodySmall: style(textStyle: textTheme.bodySmall),
+      labelLarge: style(textStyle: textTheme.labelLarge),
+      labelMedium: style(textStyle: textTheme.labelMedium),
+      labelSmall: style(textStyle: textTheme.labelSmall),
+    );
+  }
+}
+
+{{#method}}
+/// Class for {{fontFamilyPascalCase}} font family from Google Fonts
+///
+/// See:
+///  * {{docsUrl}}
+class {{fontFamilyPascalCase}}Font extends Font {
+  const {{fontFamilyPascalCase}}Font();
+
+  @override
+  String get name => '{{fontFamily}}';
+
+  @override
+  Map<GoogleFontsVariant, GoogleFontsFile> get files{
+    return <GoogleFontsVariant, GoogleFontsFile>{
+      {{#fontUrls}}
+      const GoogleFontsVariant(fontWeight: FontWeight.w{{variantWeight}}, fontStyle: FontStyle.{{variantStyle}},): const GoogleFontsFile('{{hash}}', {{length}},),
+      {{/fontUrls}}
+    };
+  }
+}
+{{/method}}

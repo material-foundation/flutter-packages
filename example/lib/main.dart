@@ -13,7 +13,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: FutureBuilder(
+        future: Future.wait([
+          const AlikeFont().preload(),
+          const LatoFont().preload(),
+        ]),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState != ConnectionState.done) {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+          return const MyHomePage(title: 'Flutter Demo Home Page');
+        },
+      ),
     );
   }
 }
@@ -48,13 +61,15 @@ class MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               'You have pushed the button this many times:',
-              style: GoogleFonts.alike(
+              style: const AlikeFont().style(
                 textStyle: Theme.of(context).textTheme.displayMedium,
               ),
             ),
             Text(
               '$_counter',
-              style: GoogleFonts.lato(fontStyle: FontStyle.italic),
+              style: const LatoFont().style(
+                fontStyle: FontStyle.italic,
+              ),
             ),
           ],
         ),

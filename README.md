@@ -31,7 +31,16 @@ To use `GoogleFonts` with the default TextStyle:
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.lato(),
+  style: const LatoFont().style(),
+),
+```
+
+Or, if you want to load the font with an enum:
+
+```dart
+Text(
+  'This is Google Fonts',
+  style: const GoogleFonts.getFont(GoogleFontFamily.lato).style(),
 ),
 ```
 
@@ -40,7 +49,7 @@ Or, if you want to load the font dynamically:
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.getFont('Lato'),
+  style: GoogleFonts.getFontDynamically('Lato').style(),
 ),
 ```
 
@@ -49,8 +58,10 @@ To use `GoogleFonts` with an existing `TextStyle`:
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.lato(
-    textStyle: TextStyle(color: Colors.blue, letterSpacing: .5),
+  style: const LatoFont().style((
+    textStyle: TextStyle(
+      color: Colors.blue, letterSpacing: .5,
+    ),
   ),
 ),
 ```
@@ -60,7 +71,9 @@ or
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.lato(textStyle: Theme.of(context).textTheme.headline4),
+  style: const LatoFont().style((
+    textStyle: Theme.of(context).textTheme.headline4,
+  ),
 ),
 ```
 
@@ -69,7 +82,7 @@ To override the `fontSize`, `fontWeight`, or `fontStyle`:
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.lato(
+  style: const LatoFont().style((
     textStyle: Theme.of(context).textTheme.headline4,
     fontSize: 48,
     fontWeight: FontWeight.w700,
@@ -78,7 +91,7 @@ Text(
 ),
 ```
 
-You can also use `GoogleFonts.latoTextTheme()` to make or modify an entire text theme to use the "Lato" font.
+You can also use `const LatoFont().textTheme()` to make or modify an entire text theme to use the "Lato" font.
 
 ```dart
 ...
@@ -91,7 +104,7 @@ ThemeData _buildTheme(brightness) {
   var baseTheme = ThemeData(brightness: brightness);
 
   return baseTheme.copyWith(
-    textTheme: GoogleFonts.latoTextTheme(baseTheme.textTheme),
+    textTheme: const LatoFont().theme(baseTheme.textTheme),
   );
 }
 ```
@@ -103,11 +116,63 @@ final textTheme = Theme.of(context).textTheme;
 
 MaterialApp(
   theme: ThemeData(
-    textTheme: GoogleFonts.latoTextTheme(textTheme).copyWith(
-      body1: GoogleFonts.oswald(textStyle: textTheme.body1),
+    textTheme: const LatoFont().theme(textTheme).copyWith(
+      body1: const OswaldFont(textStyle: textTheme.body1),
     ),
   ),
 );
+```
+
+To use preload a font use:
+
+```dart
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Preload Example',
+      home: FutureBuilder(
+        future: Future.wait([
+          const AlikeFont().preload(),
+          const LatoFont().preload(),
+        ]),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState != ConnectionState.done) {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+          return const MyHomePage();
+        },
+      ),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Styled text',
+              style: const LatoFont().style(
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 ```
 
 ## HTTP fetching
