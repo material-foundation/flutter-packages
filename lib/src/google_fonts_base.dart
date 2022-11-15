@@ -31,7 +31,8 @@ AssetManifest assetManifest = AssetManifest();
 @visibleForTesting
 void clearCache() => loadedFonts.clear();
 
-Map<String, Future<void>> _pendingFontLoads = {};
+@visibleForTesting
+Map<String, Future<void>> pendingFontLoads = {};
 
 /// Preload font
 ///
@@ -59,11 +60,11 @@ Future<void> loadGoogleFontsFont({
   );
 
   final loadingKey = descriptor.familyWithVariant.toString();
-  _pendingFontLoads.putIfAbsent(loadingKey, () async {
+  pendingFontLoads.putIfAbsent(loadingKey, () async {
     await loadFontIfNecessary(descriptor);
-    _pendingFontLoads.remove(loadingKey);
+    pendingFontLoads.remove(loadingKey);
   });
-  await _pendingFontLoads[loadingKey];
+  await pendingFontLoads[loadingKey];
 }
 
 /// Creates a [TextStyle] that either uses the [fontFamily] for the requested
