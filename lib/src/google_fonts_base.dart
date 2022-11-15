@@ -31,7 +31,13 @@ AssetManifest assetManifest = AssetManifest();
 @visibleForTesting
 void clearCache() => loadedFonts.clear();
 
-/// Preload font into the FontLoader
+Map<String, Future<void>> _pendingFontLoads = {};
+
+/// Preload font
+///
+/// This function will load the font into the [FontLoader],
+/// either by network or from the device file system.
+/// It will also await subsquent preloads.
 Future<void> loadGoogleFontsFont({
   required String fontFamily,
   required TextStyle textStyle,
@@ -52,7 +58,12 @@ Future<void> loadGoogleFontsFont({
     file: files[matchedVariant]!,
   );
 
-  await loadFontIfNecessary(descriptor);
+  final loadingKey = descriptor.familyWithVariant.toString();
+  _pendingFontLoads.putIfAbsent(loadingKey, () async {
+    await loadFontIfNecessary(descriptor);
+    _pendingFontLoads.remove(loadingKey);
+  });
+  await _pendingFontLoads[loadingKey];
 }
 
 /// Creates a [TextStyle] that either uses the [fontFamily] for the requested
