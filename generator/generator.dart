@@ -188,6 +188,10 @@ class _FamiliesDelta {
       'cider',
       ['bump', removed.isNotEmpty ? 'breaking' : 'minor'],
     );
+    await Process.run(
+      'cider',
+      ['release'],
+    );
   }
 }
 
