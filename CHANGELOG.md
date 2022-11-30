@@ -1,6 +1,87 @@
+## Unreleased
+### Added
+- `Aboreto`
+- `Abyssinica SIL`
+- `Albert Sans`
+- `Alexandria`
+- `Alkalami`
+- `Alumni Sans Collegiate One`
+- `Alumni Sans Pinstripe`
+- `Amiri Quran`
+- `Aref Ruqaa Ink`
+- `Arima`
+- `Blaka`
+- `Blaka Hollow`
+- `Blaka Ink`
+- `Bungee Spice`
+- `Cairo Play`
+- `Charis SIL`
+- `Crimson Text`
+- `DynaPuff`
+- `Edu NSW ACT Foundation`
+- `Edu QLD Beginner`
+- `Edu SA Beginner`
+- `Edu TAS Beginner`
+- `Edu VIC WA NT Beginner`
+- `Figtree`
+- `Finlandica`
+- `Fragment Mono`
+- `Gantari`
+- `Gentium Book Plus`
+- `Gentium Plus`
+- `Gulzar`
+- `IBM Plex Sans JP`
+- `Inter Tight`
+- `Joan`
+- `Kantumruy Pro`
+- `Kdam Thmor Pro`
+- `Marhey`
+- `Mingzat`
+- `Nabla`
+- `Noto Color Emoji`
+- `Noto Sans Ethiopic`
+- `Noto Sans Lao Looped`
+- `Noto Sans Mende Kikakui`
+- `Noto Serif HK`
+- `Noto Serif Khojki`
+- `Noto Serif Oriya`
+- `Nuosu SIL`
+- `Reem Kufi Fun`
+- `Reem Kufi Ink`
+- `Rubik Burned`
+- `Rubik Dirt`
+- `Rubik Distressed`
+- `Rubik Iso`
+- `Rubik Marker Hatch`
+- `Rubik Maze`
+- `Silkscreen`
+- `Sono`
+- `Splash`
+- `Spline Sans Mono`
+- `Tai Heritage Pro`
+- `Tiro Bangla`
+- `Tiro Devanagari Hindi`
+- `Tiro Devanagari Marathi`
+- `Tiro Devanagari Sanskrit`
+- `Tiro Gurmukhi`
+- `Tiro Kannada`
+- `Tiro Tamil`
+- `Tiro Telugu`
+
+### Removed
+- `Andika New Basic`
+- `Gentium Basic`
+- `Kdam Thmor`
+- `Otomanopee One`
+- `Palette Mosaic`
+- `Rock 3D`
+- `Shizuru`
+- `Yuji Hentaigana Akari`
+- `Yuji Hentaigana Akebono`
+
 ## 3.0.1 - 2022-05-23
 ### Changed
-- Improve asset manifest loading errors 
+- Improve asset manifest loading errors
 - Improve testing guidance
 
 ## 3.0.0 - 2022-05-20
