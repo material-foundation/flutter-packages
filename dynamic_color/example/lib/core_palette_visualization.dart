@@ -149,7 +149,7 @@ class _RenderCorePalette extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final captionStyle = Theme.of(context).textTheme.caption;
+    final captionStyle = Theme.of(context).textTheme.bodySmall;
     List<List<int>> colors = [
       corePalette.primary.asList,
       corePalette.secondary.asList,

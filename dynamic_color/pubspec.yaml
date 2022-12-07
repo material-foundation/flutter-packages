@@ -5,14 +5,14 @@ repository: https://github.com/material-foundation/material-dynamic-color-flutte
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
-  flutter: ">=3.3.0"
+  flutter: ">=3.4.0-17.0.pre"
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_test:
     sdk: flutter
-  material_color_utilities: ">=0.1.5 <=0.2.0"
+  material_color_utilities: ^0.2.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
