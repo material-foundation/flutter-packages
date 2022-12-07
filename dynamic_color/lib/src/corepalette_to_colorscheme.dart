@@ -3,7 +3,7 @@ import 'package:material_color_utilities/material_color_utilities.dart';
 
 extension CorePaletteToColorScheme on CorePalette {
   /// Create a [ColorScheme] from the given `palette` obtained from the Android OS.
-  ColorScheme? toColorScheme({
+  ColorScheme toColorScheme({
     Brightness brightness = Brightness.light,
   }) {
     final Scheme scheme;

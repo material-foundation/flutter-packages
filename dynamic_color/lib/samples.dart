@@ -15,9 +15,9 @@ class SampleColorSchemes {
   static ColorScheme green(Brightness brightness) =>
       SampleCorePalettes.green.toColorScheme(
         brightness: brightness,
-      )!;
+      );
   static ColorScheme orange(Brightness brightness) =>
       SampleCorePalettes.orange.toColorScheme(
         brightness: brightness,
-      )!;
+      );
 }
