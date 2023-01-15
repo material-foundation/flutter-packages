@@ -104,7 +104,7 @@ final textTheme = Theme.of(context).textTheme;
 MaterialApp(
   theme: ThemeData(
     textTheme: GoogleFonts.latoTextTheme(textTheme).copyWith(
-      body1: GoogleFonts.oswald(textStyle: textTheme.body1),
+      bodyText2: GoogleFonts.oswald(textStyle: textTheme.bodyText2),
     ),
   ),
 );
