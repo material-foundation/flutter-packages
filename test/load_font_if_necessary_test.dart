@@ -2,7 +2,8 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/services.dart';
+// ignore: undefined_hidden_name
+import 'package:flutter/services.dart' hide AssetManifest;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_fonts/src/asset_manifest.dart';

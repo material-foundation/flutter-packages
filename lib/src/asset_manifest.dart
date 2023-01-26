@@ -5,7 +5,11 @@
 import 'dart:convert' as convert;
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
+// TODO(andrewkolos): remove this after flutter adds its own AssetManifest API
+// (see https://github.com/flutter/flutter/pull/119277) which will replace the
+// one defined here.
+// ignore: undefined_hidden_name
+import 'package:flutter/services.dart' hide AssetManifest;
 
 /// A class to obtain and memoize the app's asset manifest.
 ///

@@ -4,7 +4,8 @@
 
 import 'dart:convert';
 
-import 'package:flutter/services.dart';
+// ignore: undefined_hidden_name
+import 'package:flutter/services.dart' hide AssetManifest;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/src/asset_manifest.dart';
 
