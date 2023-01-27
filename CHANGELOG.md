@@ -1,3 +1,7 @@
+## 4.0.1
+### Changed
+- Hide AssetManifest from flutter services imports
+
 ## 4.0.0
 ### Added
 - `Aboreto`
