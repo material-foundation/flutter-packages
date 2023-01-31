@@ -1,4 +1,4 @@
-## 1.5.5
+## 1.6.0
 
 - Add support for `outlineVariant` and `scrim` colors
 - Update constraint for `material_color_utilities` to `0.2.0`
