@@ -2,6 +2,7 @@
 
 [![Build Status](https://api.cirrus-ci.com/github/material-foundation/flutter-packages.svg)](https://cirrus-ci.com/github/material-foundation/flutter-packages/main)
 [![Release Status](https://github.com/material-foundation/flutter-packages/actions/workflows/release.yml/badge.svg)](https://github.com/material-foundation/flutter-packages/actions/workflows/release.yml)
+[![ossf scorecard](https://img.shields.io/ossf-scorecard/github.com/material-foundation/flutter-packages?label=openssf%20scorecard&style=flat)](https://api.securityscorecards.dev/projects/github.com/material-foundation/flutter-packages)
 
 ## Welcome
 
