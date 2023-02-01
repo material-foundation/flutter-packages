@@ -1,12 +1,12 @@
 name: Checks
 on:
   push:
-    # branches:
-    #   - main
+    branches:
+      - main
   pull_request:
 jobs:
-  test:
-    name: Checks for packages/${{ matrix.package }}
+  check_package:
+    name: packages/${{ matrix.package }}
     runs-on: macos-latest
     strategy:
       matrix:
@@ -29,7 +29,7 @@ jobs:
         working-directory: packages/${{ matrix.package }}
 
       - name: Ensure Dart code is formatted correctly
-        run: flutter format --set-exit-if-changed --dry-run .
+        run: dart format --set-exit-if-changed .
         working-directory: packages/${{ matrix.package }}
 
       - name: Run Flutter unit tests

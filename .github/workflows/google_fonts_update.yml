@@ -1,4 +1,4 @@
-name: Update fonts
+name: Update google_fonts
 on:
   schedule:
     - cron: "0 0 * * 0"
