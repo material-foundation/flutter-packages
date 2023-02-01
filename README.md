@@ -16,10 +16,10 @@ please review our [contribution guide](https://github.com/material-foundation/fl
 and send a [pull request](https://github.com/material-foundation/flutter-packages/pulls).
 
 If you wish to contribute a new package to the Flutter ecosystem, please
-see the documentation for [developing packages](https://docs.flutter.dev/development/packages-and-plugins/developing-packages). You can store
-your package source code in any GitHub repository.
+see the documentation for [developing packages](https://docs.flutter.dev/development/packages-and-plugins/developing-packages).
 
 ## Packages
+
 
 | Package | Pub | Issues | Pull requests |
 |--------|-----|--------|---------------|
@@ -29,6 +29,10 @@ your package source code in any GitHub repository.
 | [adaptive\_navigation](./packages/adaptive_navigation/) | [![pub package](https://img.shields.io/pub/v/adaptive_navigation.svg)](https://pub.dev/packages/adaptive_navigation) | [![GitHub issues by-label](https://img.shields.io/github/issues/material-foundation/flutter-packages/p:%20adaptive_navigation?label=)](https://github.com/material-foundation/flutter-packages/labels/p%3A%20adaptive_navigation) | [![GitHub pull requests by-label](https://img.shields.io/github/issues-pr/material-foundation/flutter-packages/p:%20adaptive_navigation?label=)](https://github.com/material-foundation/flutter-packages/pulls?q=is%3Aopen+is%3Apr+label%3A%22p%3A+adaptive_navigation%22) |
 | [adaptive\_components](./packages/adaptive_components/) | [![pub package](https://img.shields.io/pub/v/adaptive_components.svg)](https://pub.dev/packages/adaptive_components) | [![GitHub issues by-label](https://img.shields.io/github/issues/material-foundation/flutter-packages/p:%20adaptive_components?label=)](https://github.com/material-foundation/flutter-packages/labels/p%3A%20adaptive_components) | [![GitHub pull requests by-label](https://img.shields.io/github/issues-pr/material-foundation/flutter-packages/p:%20adaptive_components?label=)](https://github.com/material-foundation/flutter-packages/pulls?q=is%3Aopen+is%3Apr+label%3A%22p%3A+adaptive_components%22) |
 | [symbols](./packages/symbols/) | [![pub package](https://img.shields.io/pub/v/symbols.svg)](https://pub.dev/packages/symbols) | [![GitHub issues by-label](https://img.shields.io/github/issues/material-foundation/flutter-packages/p:%20symbols?label=)](https://github.com/material-foundation/flutter-packages/labels/p%3A%20symbols) | [![GitHub pull requests by-label](https://img.shields.io/github/issues-pr/material-foundation/flutter-packages/p:%20symbols?label=)](https://github.com/material-foundation/flutter-packages/pulls?q=is%3Aopen+is%3Apr+label%3A%22p%3A+symbols%22) |
+
+The following packages are in other repositories.
+| Package | Pub | Issues | Pull requests |
+|--------|-----|--------|---------------|
 | [animations ↗](https://github.com/flutter/packages/tree/main/packages/animations) | [![pub package](https://img.shields.io/pub/v/animations.svg)](https://pub.dev/packages/animations) | [![GitHub issues by-label](https://img.shields.io/github/issues/flutter/flutter/p:%20animations?label=)](https://github.com/flutter/flutter/labels/p%3A%20animations) | [![GitHub pull requests by-label](https://img.shields.io/github/issues-pr/flutter/packages/p:%20animations?label=)](https://github.com/flutter/packages/labels/p%3A%20animations) |
 | [flutter_adaptive_scaffold ↗](https://github.com/flutter/packages/tree/main/packages/20flutter_adaptive_scaffold) | [![pub package](https://img.shields.io/pub/v/flutter_adaptive_scaffold.svg)](https://pub.dev/packages/flutter_adaptive_scaffold) | [![GitHub issues by-label](https://img.shields.io/github/issues/flutter/flutter/p:%20flutter_adaptive_scaffold?label=)](https://github.com/flutter/flutter/labels/p%3A%20flutter_adaptive_scaffold) | [![GitHub pull requests by-label](https://img.shields.io/github/issues-pr/flutter/packages/p:%20flutter_adaptive_scaffold?label=)](https://github.com/flutter/packages/labels/p%3A%20flutter_adaptive_scaffold) |
 | [material\_color\_utilities ↗](https://github.com/material-foundation/material-color-utilities/tree/main/dart) | [![pub package](https://img.shields.io/pub/v/material_color_utilities.svg)](https://pub.dev/packages/material_color_utilities) | [![GitHub issues](https://img.shields.io/github/issues/material-foundation/flutter-packages)](https://github.com/material-foundation/material-color-utilities/issues) | [![GitHub pull requests](https://img.shields.io/github/issues-pr/material-foundation/material-color-utilities)](https://github.com/material-foundation/material-color-utilities/pulls) |
