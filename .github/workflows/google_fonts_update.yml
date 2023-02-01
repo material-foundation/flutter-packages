@@ -19,7 +19,7 @@ jobs:
       - run: dart generator/generator.dart
 
       - name: Read families_diff file
-        uses: actions/github-script@deb7ae927cc19ae3a8b57293dd5cd2f16171e1e2 # v4.1.1
+        uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6.4.0
         id: get_families_diff
         with:
           script: |
