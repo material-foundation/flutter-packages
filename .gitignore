@@ -1,6 +1,4 @@
-generator/fonts_diff
-
- Miscellaneous
+# Miscellaneous
 *.class
 *.log
 *.pyc
