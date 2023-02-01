@@ -7,6 +7,9 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+permissions:
+  contents: read
+
 jobs:
   check_package:
     name: packages/${{ matrix.package }}
@@ -16,10 +19,10 @@ jobs:
         package: [google_fonts]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
 
       - name: Install Flutter
-        uses: subosito/flutter-action@v2
+        uses: subosito/flutter-action@dbf1fa04f4d2e52c33185153d06cdb5443aa189d # v2.8.0
         with:
           channel: 'beta'
 
