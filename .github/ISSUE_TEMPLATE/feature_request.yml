@@ -1,5 +1,5 @@
 name: Feature Request
-description: Suggest a new idea
+description: Suggest an enhancement.
 labels: ["enhancement", "triage"]
 body:
   - type: dropdown
