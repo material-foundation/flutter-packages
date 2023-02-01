@@ -14,7 +14,7 @@ jobs:
     steps:
       # Set up Flutter and add it to the path.
       - name: Clone Flutter repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: flutter/flutter
           ref: beta
@@ -31,7 +31,7 @@ jobs:
 
       # Clone the google_fonts repository under `code`, to avoid conflicts with `flutter`.
       - name: Clone the google_fonts repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: code
 
