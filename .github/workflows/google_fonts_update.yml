@@ -14,9 +14,11 @@ jobs:
           channel: beta
       - run: flutter doctor -v
       - run: flutter pub get
+        working-directory: packages/google_fonts
 
       - run: dart pub global activate cider
       - run: dart generator/generator.dart
+        working-directory: packages/google_fonts
 
       - name: Read families_diff file
         uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6.4.0
@@ -26,6 +28,7 @@ jobs:
             const fs = require('fs');
             return fs.readFileSync('generator/families_diff','utf8').toString();
           result-encoding: string
+        working-directory: packages/google_fonts
 
       - name: Cancel workflow if there is no diff
         uses: andymckay/cancel-action@8f8510d9dea52fcc8eb6ca10d6ce47fd5fc43cd8 # 0.2
@@ -41,14 +44,14 @@ jobs:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
           commit-message: |
-            [automated] update fonts
+            [automated] update google_fonts
 
             ${{ steps.get_families_diff.outputs.result }}
           base: main
           branch: create-pull-request/update
           delete-branch: true
           author: material-robot <featherless+materialrobot@google.com>
-          title: Update fonts
+          title: Update `google_fonts`
           body: |
             # Summary
             ${{ steps.get_families_diff.outputs.result }}
