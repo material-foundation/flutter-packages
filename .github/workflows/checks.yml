@@ -1,12 +1,12 @@
 name: Checks
 on:
   push:
-    # branches:
-    #   - main
+    branches:
+      - main
   pull_request:
 jobs:
   check_package:
-    name: Checks for packages/${{ matrix.package }}
+    name: packages/${{ matrix.package }}
     runs-on: macos-latest
     strategy:
       matrix:
