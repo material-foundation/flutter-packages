@@ -15,7 +15,6 @@ body:
         - adaptive_navigation
         - adaptive_components
         - symbols
-        - material_color_utilities
     validations:
       required: true
   - type: textarea
