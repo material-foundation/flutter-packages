@@ -21,7 +21,7 @@ body:
         - material_color_utilities
     validations:
       required: true
-  - type: checkbox
+  - type: checkboxes
     id: is-duplicate
     attributes:
       label: Existing issue?
