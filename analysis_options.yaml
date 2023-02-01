@@ -1,10 +1,9 @@
+# Specify analysis options for all packages
+
 include: package:flutter_lints/flutter.yaml
 
 analyzer:
-  exclude: [generator/fonts.pb.dart]
-  strong-mode:
-    implicit-casts: false
-    implicit-dynamic: false
+  exclude: [packages/google_fonts/generator/fonts.pb.dart]
 
 linter:
   rules:
