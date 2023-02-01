@@ -1,4 +1,4 @@
-# Material Flutter Packages
+# Material Flutter packages
 
 This repo contains the source code for packages developed by the Material Flutter team.
 Check the [`packages`](./packages) directory to see all packages.
