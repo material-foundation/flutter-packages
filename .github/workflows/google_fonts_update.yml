@@ -7,9 +7,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@dc323e67f16fb5f7663d20ff7941f27f5809e9b6 # v2.6.0
       - name: Clone Flutter repository with beta channel
-        uses: subosito/flutter-action@v1.5.3
+        uses: subosito/flutter-action@4389e6cbc6cb8a4b18c628ff96ff90be0e926aa8 # v1.5.3
         with:
           channel: beta
       - run: flutter doctor -v
@@ -19,7 +19,7 @@ jobs:
       - run: dart generator/generator.dart
 
       - name: Read families_diff file
-        uses: actions/github-script@v4
+        uses: actions/github-script@deb7ae927cc19ae3a8b57293dd5cd2f16171e1e2 # v4.1.1
         id: get_families_diff
         with:
           script: |
@@ -28,7 +28,7 @@ jobs:
           result-encoding: string
 
       - name: Cancel workflow if there is no diff
-        uses: andymckay/cancel-action@0.2
+        uses: andymckay/cancel-action@8f8510d9dea52fcc8eb6ca10d6ce47fd5fc43cd8 # 0.2
         if: steps.get_families_diff.outputs.result == ''
 
       - name: If cancelling workflow, allow for enough time to do so
@@ -36,7 +36,7 @@ jobs:
         shell: bash
         if: steps.get_families_diff.outputs.result == ''
 
-      - uses: peter-evans/create-pull-request@v3
+      - uses: peter-evans/create-pull-request@18f7dc018cc2cd597073088f7c7591b9d1c02672 # v3.14.0
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
