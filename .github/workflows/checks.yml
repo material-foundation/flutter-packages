@@ -5,7 +5,7 @@ on:
     #   - main
   pull_request:
 jobs:
-  test:
+  check_package:
     name: Checks for packages/${{ matrix.package }}
     runs-on: macos-latest
     strategy:
