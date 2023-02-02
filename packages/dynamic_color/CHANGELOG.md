@@ -1,5 +1,5 @@
 ## Unreleased
-### Change
+### Changed
 - Update pubspec `repository`
 
 ## 1.6.0 - 2023-01-31

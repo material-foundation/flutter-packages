@@ -1,30 +1,34 @@
-## 0.0.7 - May 26, 2022
+## Unreleased
+### Changed
+- Update pubspec `repository`
 
+## 0.0.7 - 2022-05-26
+### Fixed
 - Fixed typo in pubspec description
 
-## 0.0.6 - May 23, 2022
-
+## 0.0.6 - 2022-05-23
+### Changed
 - Bump `adaptive_breakpoints` dependency
 
-## 0.0.5 - May 23, 2022
-
+## 0.0.5 - 2022-05-23
+### Changed
 - Tweaked pubspec description
 - Polished README
 - Updated dependencies
 
-## 0.0.4 - May 19, 2022
-
+## 0.0.4 - 2022-05-19
+### Changed
 - Updated the value of the pubspec 'repository' field
 
-## 0.0.3 - November 18, 2021
-
+## 0.0.3 - 2021-11-18
+### Changed
 - Add linting to example
 
-## 0.0.2 - July 14, 2021
-
+## 0.0.2 - 2021-07-14
+### Changed
 - Adopt `flutter_lints` and migrate from `RaisedButton` to `ElevatedButton`
 
-## 0.0.1 - December 14, 2020
-
+## 0.0.1 - 2020-12-14
+### Changed
 - Create AdaptiveColumn and AdaptiveContainer
 - Migrate to NNBD
