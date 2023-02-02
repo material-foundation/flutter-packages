@@ -20,8 +20,7 @@ Please file bug reports and suggest enhancements [here](https://github.com/mater
 ## Contributing
 
 If you wish to contribute a change to any of the existing packages in this repo,
-please review our [contribution guide](https://github.com/material-foundation/flutter-packages/blob/main/CONTRIBUTING.md),
-and send a [pull request](https://github.com/material-foundation/flutter-packages/pulls).
+please review our [contribution guide](https://github.com/material-foundation/flutter-packages/blob/main/CONTRIBUTING.md).
 
 If you wish to contribute a new package to the Flutter ecosystem, please
 see the documentation for [developing packages](https://docs.flutter.dev/development/packages-and-plugins/developing-packages).
