@@ -1,0 +1,17 @@
+name: adaptive_navigation
+description: A Flutter package providing adaptive switching between various navigation components.
+version: 0.0.7
+repository: https://github.com/material-components/material-components-flutter-adaptive/tree/develop/adaptive_navigation
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  adaptive_breakpoints: ^0.1.2
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
+  flutter_test:
+    sdk: flutter
