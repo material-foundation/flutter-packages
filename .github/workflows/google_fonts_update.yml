@@ -38,7 +38,7 @@ jobs:
           result-encoding: string
 
       - name: Cancel workflow if there is no diff
-        uses: andymckay/cancel-action@8f8510d9dea52fcc8eb6ca10d6ce47fd5fc43cd8 # 0.2
+        uses: andymckay/cancel-action@b9280e3f8986d7a8e91c7462efc0fa318010c8b1 # 0.3
         if: steps.get_families_diff.outputs.result == ''
 
       - name: If cancelling workflow, allow for enough time to do so
