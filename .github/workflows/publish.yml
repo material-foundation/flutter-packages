@@ -31,6 +31,8 @@ jobs:
       working-directory: ${{needs.find-package.outputs.package}}
   # Publish using the reusable workflow from dart-lang.
   publish:
+    permissions:
+      id-token: write
     needs:
     - find-package
     - pana
