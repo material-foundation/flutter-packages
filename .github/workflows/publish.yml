@@ -24,8 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: find-package
     steps:
-    - uses: actions/checkout@v3
-    - uses: dart-lang/setup-dart@v1
+    - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
+    - uses: dart-lang/setup-dart@a57a6c04cf7d4840e88432aad6281d1e125f0d46 # v1.4
     - run: dart pub global activate pana
     - run: dart pub global run pana . >> "$GITHUB_STEP_SUMMARY"
       working-directory: ${{needs.find-package.outputs.package}}
