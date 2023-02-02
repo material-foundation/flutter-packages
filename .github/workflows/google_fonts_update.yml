@@ -45,7 +45,7 @@ jobs:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
           commit-message: |
-            [automated] update google_fonts
+            [google_fonts] update fonts
 
             ${{ steps.get_families_diff.outputs.result }}
           base: main
