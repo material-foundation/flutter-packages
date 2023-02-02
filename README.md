@@ -28,7 +28,7 @@ see the documentation for [developing packages](https://docs.flutter.dev/develop
 
 
 ## Other Material packages
-The following packages' source code exists in other repositories.
+The following packages' source code are maintained by other teams and exist outside of this repository.
 | Package | Pub | Issues | Pull requests |
 |--------|-----|--------|---------------|
 | [animations ↗](https://github.com/flutter/packages/tree/main/packages/animations) | [![pub package](https://img.shields.io/pub/v/animations.svg)](https://pub.dev/packages/animations) | [![GitHub issues by-label](https://img.shields.io/github/issues/flutter/flutter/p:%20animations?label=)](https://github.com/flutter/flutter/labels/p%3A%20animations) | [![GitHub pull requests by-label](https://img.shields.io/github/issues-pr/flutter/packages/p:%20animations?label=)](https://github.com/flutter/packages/labels/p%3A%20animations) |
