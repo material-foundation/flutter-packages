@@ -28,10 +28,9 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: What happened? What did you expect to happen? How can we reproduce the issue?
-      placeholder: What happened? What did you expect to happen? How can we reproduce the issue?
+      description: How can we reproduce the issue? What happened? What did you expect to happen? What actually happened?
       value: |
-        ## Steps to reproduce the issue:
+        ## Steps to reproduce:
         1.
         1.
         1.
