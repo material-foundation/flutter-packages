@@ -1,3 +1,6 @@
+## NEXT
+- Add `AdaptiveNavigationScaffold.drawerFooter`
+
 ## 0.0.7 - May 23, 2022
 
 - Tweaked pubspec description.
