@@ -1,7 +1,7 @@
 name: Update google_fonts
 on:
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: "30 1 1,15 * *"
   workflow_dispatch: # Enable manual run from Github
 
 # Declare default permissions as read only.
@@ -33,9 +33,8 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            return fs.readFileSync('generator/families_diff','utf8').toString();
+            return fs.readFileSync('packages/google_fonts/generator/families_diff','utf8').toString();
           result-encoding: string
-        working-directory: packages/google_fonts
 
       - name: Cancel workflow if there is no diff
         uses: andymckay/cancel-action@8f8510d9dea52fcc8eb6ca10d6ce47fd5fc43cd8 # 0.2
