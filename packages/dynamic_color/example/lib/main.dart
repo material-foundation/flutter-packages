@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'accent_color.dart';
 import 'common.dart';
 import 'complete_example.dart';
-import 'accent_color.dart';
 import 'core_palette_visualization.dart';
 import 'dynamic_color_builder_example.dart';
 import 'get_core_palette_example.dart';
