@@ -16,7 +16,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        package: [google_fonts]
+        package: [google_fonts, dynamic_color, adaptive_components, adaptive_breakpoints, symbols]
     steps:
       - name: Checkout code
         uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
