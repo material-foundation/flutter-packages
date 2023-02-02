@@ -5,18 +5,18 @@ packages:
     dependency: "direct main"
     description:
       name: adaptive_breakpoints
-      sha256: "176e6f44e18e0a86a1c5fc1c05414fbd6ef79ddb9900954d7ee92a81ecd3cd3b"
+      sha256: fe15e085d929c3765395f40753d372c516279b2734a485994e7a12b871123219
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.5"
+    version: "0.1.4"
   adaptive_navigation:
     dependency: "direct main"
     description:
       name: adaptive_navigation
-      sha256: "5a150f4a4003f502970238f9377deb9b91507883f96fb09332cfd7cad751d11a"
+      sha256: dca4250e0b16277741b0c35c41ffccc589532ff7abe331e56cccea2d305f9f58
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.6"
+    version: "0.0.7"
   async:
     dependency: transitive
     description:
@@ -74,10 +74,10 @@ packages:
     dependency: "direct dev"
     description:
       name: flutter_lints
-      sha256: b543301ad291598523947dc534aaddc5aaad597b709d2426d3a0e0d44c5cb493
+      sha256: aeb0b80a8b3709709c9cc496cdc027c5b3216796bc0af0ce1007eaf24464fd4c
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.4"
+    version: "2.0.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -95,10 +95,10 @@ packages:
     dependency: transitive
     description:
       name: lints
-      sha256: a2c3d198cb5ea2e179926622d433331d8b58374ab8f29cdda6e863bd62fd369c
+      sha256: "5e4a9cd06d447758280a8ac2405101e0e2094d2a1dbdd3756aec3fe7775ba593"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.1"
+    version: "2.0.1"
   matcher:
     dependency: transitive
     description:
