@@ -1,6 +1,6 @@
 # dynamic_color_example
 
-Demonstrates how to use the dynamic_color plugin.
+Demonstrates how to use the dynamic_color package.
 
 ## Getting Started
 
