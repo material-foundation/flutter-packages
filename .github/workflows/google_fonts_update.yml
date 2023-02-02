@@ -3,17 +3,23 @@ on:
   schedule:
     - cron: "0 0 * * 0"
   workflow_dispatch: # Enable manual run from Github
-permissions: read-all|write-all
+
+# Declare default permissions as read only.
+permissions: read-all
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - uses: actions/checkout@dc323e67f16fb5f7663d20ff7941f27f5809e9b6 # v2.6.0
       - name: Clone Flutter repository with beta channel
         uses: subosito/flutter-action@4389e6cbc6cb8a4b18c628ff96ff90be0e926aa8 # v1.5.3
         with:
           channel: beta
-      - run: flutter doctor -v
+          cache: true
+
       - run: flutter pub get
         working-directory: packages/google_fonts
 
