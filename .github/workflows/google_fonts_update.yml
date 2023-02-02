@@ -1,4 +1,4 @@
-name: Update google_fonts
+name: Update google_fonts' fonts
 on:
   schedule:
     - cron: "30 1 1,15 * *"
@@ -8,7 +8,7 @@ on:
 permissions: read-all
 
 jobs:
-  update:
+  update-fonts:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -57,7 +57,7 @@ jobs:
           branch: create-pull-request/update
           delete-branch: true
           author: material-robot <featherless+materialrobot@google.com>
-          title: Update `google_fonts`
+          title: Update `google_fonts`s fonts
           body: |
             # Summary
             ${{ steps.get_families_diff.outputs.result }}
