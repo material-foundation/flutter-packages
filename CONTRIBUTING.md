@@ -47,7 +47,7 @@ That's it! Releasing is done by team members, see the [Releasing](#releasing) se
 
 5. Push the commit and tag with:
     ```
-    git push --tags
+    git push --all
     ```
 
 Done! The [`publish.yml`](https://github.com/material-foundation/flutter-packages/blob/main/.github/workflows/publish.yml) workflow will pick up on the tag and take care of publishing the package to pub.dev.
