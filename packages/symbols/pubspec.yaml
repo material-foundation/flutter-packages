@@ -4,7 +4,7 @@ version: 0.0.0
 repository: https://github.com/material-foundation/flutter-packages/tree/main/packages/symbols
 
 environment:
-  sdk: '>=2.19.0 <3.0.0'
+  sdk: '>=2.17.0 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
