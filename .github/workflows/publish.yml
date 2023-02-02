@@ -10,9 +10,32 @@ on:
 permissions: read-all
 
 jobs:
+  find-package:
+    runs-on: ubuntu-latest
+    steps:
+    - id: sed
+      run: |
+        PACKAGE=$(echo "$GITHUB_REF" | sed 's#refs/tags/\([^-]*\)-.*#\1#')
+        echo "package=$PACKAGE">> "$GITHUB_OUTPUT"
+        echo "Prepare to publish \`$PACKAGE\`" >> "$GITHUB_STEP_SUMMARY"
+    outputs:
+      package: ${{steps.sed.outputs.package}}
+  pana:
+    runs-on: ubuntu-latest
+    needs: find-package
+    steps:
+    - uses: actions/checkout@v3
+    - uses: dart-lang/setup-dart@v1
+    - run: dart pub global activate pana
+    - run: dart pub global run pana . >> "$GITHUB_STEP_SUMMARY"
+      working-directory: ${{needs.find-package.outputs.package}}
+  # Publish using the reusable workflow from dart-lang.
   publish:
+    needs:
+    - find-package
+    - pana
     uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
     with:
       # Specify the github actions deployment environment
       environment: pub.dev
-      working-directory: path/to/package/within/repository
+      working-directory: ${{needs.find-package.outputs.package}}
