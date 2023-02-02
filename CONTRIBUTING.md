@@ -41,8 +41,8 @@ TODO(guidezpl)
 
 ### New packages
 New packages should be accounted for in:
-- [`.github/workflows/checks.yml`](.github/workflows/checks.yml)
-- [`.github/labeler.yml`](.github/workflows/labeler.yml)
 - [`.github/dependabot.yml`](.github/dependabot.yml)
 - [`.github/ISSUE_TEMPLATE/bug_report.yml`](.github/ISSUE_TEMPLATE/bug_report.yml)
 - [`.github/ISSUE_TEMPLATE/feature_request.yml`](.github/ISSUE_TEMPLATE/feature_request.yml)
+- [`.github/labeler.yml`](.github/workflows/labeler.yml)
+- [`.github/workflows/checks.yml`](.github/workflows/checks.yml)
