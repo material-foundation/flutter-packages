@@ -9,7 +9,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "monthly"
 
   # Maintain dependencies for pub
   - package-ecosystem: "pub"
