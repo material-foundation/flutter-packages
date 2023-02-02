@@ -24,7 +24,7 @@ jobs:
       - name: Install Flutter
         uses: subosito/flutter-action@dbf1fa04f4d2e52c33185153d06cdb5443aa189d # v2.8.0
         with:
-          channel: 'beta'
+          channel: beta
           cache: true
           cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash:'
 
