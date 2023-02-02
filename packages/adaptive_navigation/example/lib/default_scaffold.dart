@@ -9,10 +9,10 @@ class DefaultScaffoldDemo extends StatefulWidget {
   const DefaultScaffoldDemo({Key? key}) : super(key: key);
 
   @override
-  _DefaultScaffoldDemoState createState() => _DefaultScaffoldDemoState();
+  DefaultScaffoldDemoState createState() => DefaultScaffoldDemoState();
 }
 
-class _DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
+class DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
   int _destinationCount = 5;
   bool _fabInRail = false;
   bool _includeBaseDestinationsInMenu = true;

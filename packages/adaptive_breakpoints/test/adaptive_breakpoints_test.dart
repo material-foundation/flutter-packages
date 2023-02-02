@@ -1,6 +1,6 @@
+import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
 
 void main() {
   Color trueColor = Colors.green;

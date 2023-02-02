@@ -1,6 +1,6 @@
+import 'package:adaptive_navigation/adaptive_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:adaptive_navigation/adaptive_navigation.dart';
 
 void main() {
   testWidgets('Adaptive Navigation test', (WidgetTester tester) async {

@@ -2,8 +2,8 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-import 'package:flutter/material.dart';
 import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 /// AdaptiveAppBar has a leading width of 72.0. Everything else is the same as
@@ -88,7 +88,7 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
       toolbarOpacity: toolbarOpacity,
       bottomOpacity: bottomOpacity,
       toolbarHeight: toolbarHeight,
-      // TODO(https://github.com/material-components/material-components-flutter-adaptive/issues/2):
+      // TODO(https://github.com/material-foundation/flutter-packages/issues/320):
       // This needs to depend on whether the rail is showing or not.
       leadingWidth:
           getWindowType(context) == AdaptiveWindowType.medium ? 72.0 : 56.0,
