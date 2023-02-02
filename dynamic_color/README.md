@@ -64,7 +64,7 @@ harmonized color schemes, and harmonizing custom colors.
 
 See [example/lib/accent_color.dart][accent color example] for obtaining the accent color on desktop.
 
-<a href="https://material-foundation.github.io/material-dynamic-color-flutter/example/build/web/">
+<a href="https://material-foundation.github.io/flutter-packages/packages/dynamic_color/example/build/web/">
 <img src="https://user-images.githubusercontent.com/6655696/152188934-35e58f5c-2a3c-41af-8d49-faabb1701dcc.png" width="400" /> </a>
 
 All examples are part of this [example app] ([source][example app source]). To run the example app:
@@ -94,7 +94,7 @@ void main() {
 });
 ```
 
-See [example/test/widget_test.dart](https://github.com/material-foundation/material-dynamic-color-flutter/blob/main/example/test/widget_test.dart) for an example.
+See [example/test/widget_test.dart](https://github.com/material-foundation/flutter-packages/blob/main/packages/dynamic_color/example/test/widget_test.dart) for an example.
 
 ## Development
 
@@ -105,10 +105,10 @@ cd example
 flutter build web
 ```
 
-[complete example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/complete_example.dart
-[dynamiccolorbuilder example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/dynamic_color_builder_example.dart
-[dynamiccolorplugin.getcorepalette example]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/get_core_palette_example.dart
-[example app source]: https://github.com/material-foundation/material-dynamic-color-flutter/tree/main/example/lib/
-[harmonization.dart]: https://github.com/material-foundation/material-dynamic-color-flutter/blob/main/lib/src/harmonization.dart
-[example app]: https://material-foundation.github.io/material-dynamic-color-flutter/example/build/web/
-[accent color example]: https://github.com/material-foundation/material-dynamic-color-flutter/blob/main/example/lib/accent_color.dart
+[complete example]: https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color/example/lib/complete_example.dart
+[dynamiccolorbuilder example]: https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color/example/lib/dynamic_color_builder_example.dart
+[dynamiccolorplugin.getcorepalette example]: https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color/example/lib/get_core_palette_example.dart
+[example app source]: https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color/example/lib/
+[harmonization.dart]: https://github.com/material-foundation/flutter-packages/blob/main/packages/dynamic_color/lib/src/harmonization.dart
+[example app]: https://material-foundation.github.io/flutter-packages/packages/dynamic_color/example/build/web/
+[accent color example]: https://github.com/material-foundation/flutter-packages/blob/main/packages/dynamic_color/example/lib/accent_color.dart
