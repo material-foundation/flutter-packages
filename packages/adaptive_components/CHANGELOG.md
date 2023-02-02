@@ -1,6 +1,6 @@
 ## 0.0.7 - May 26, 2022
 
-- Fixed typo in pubspec description.
+- Fixed typo in pubspec description
 
 ## 0.0.6 - May 23, 2022
 
@@ -8,13 +8,13 @@
 
 ## 0.0.5 - May 23, 2022
 
-- Tweaked pubspec description.
-- Polished README.
-- Updated dependencies.
+- Tweaked pubspec description
+- Polished README
+- Updated dependencies
 
 ## 0.0.4 - May 19, 2022
 
-- Updated the value of the pubspec 'repository' field.
+- Updated the value of the pubspec 'repository' field
 
 ## 0.0.3 - November 18, 2021
 

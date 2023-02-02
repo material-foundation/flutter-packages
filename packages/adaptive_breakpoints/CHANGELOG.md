@@ -4,12 +4,12 @@
 
 ## 0.1.3 - May 23, 2022
 
-- Tweaked pubspec description.
-- Polished README.
+- Tweaked pubspec description
+- Polished README
 
 ## 0.1.2 - May 19, 2022
 
-- Updated the value of the pubspec 'repository' field.
+- Updated the value of the pubspec 'repository' field
 
 ## 0.1.1 - November 18, 2021
 
@@ -21,7 +21,7 @@
 
 ## 0.0.5 - July 14, 2021
 
-- Adopt `flutter_lints` and `dart format`.
+- Adopt `flutter_lints` and `dart format`
 
 ## 0.0.4 - December 14, 2020
 
@@ -29,11 +29,11 @@
 
 ## 0.0.3 - September 21, 2020
 
-- Remove adaptive container widget and update adaptive window types enums.
+- Remove adaptive container widget and update adaptive window types enums
 
 ## 0.0.2 - August 24, 2020
 
-- Add operator logic to AdaptiveWindowType.
+- Add operator logic to AdaptiveWindowType
 
 ## 0.0.1 - August 12, 2020
 
