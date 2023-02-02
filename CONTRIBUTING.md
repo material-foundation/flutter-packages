@@ -19,7 +19,6 @@ Thank you for your interest in contributing! Your work can help many developers.
 1.  Write a unit test for your change, under `test/`.
 1.  Update the `CHANGELOG.md` using [`cider`](https://pub.dev/packages/cider). For example:
     ```
-    dart pub global activate cider
     cider log changed 'X now does Y'
     # OR
     cider log added 'Added Z'
