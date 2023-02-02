@@ -15,7 +15,7 @@ This repo contains the source code for packages developed by the Material Flutte
 
 ## Issues
 
-Please file any issues, bugs, or feature requests [here](https://github.com/material-foundation/flutter-packages/issues/new).
+Please file bug reports and suggest enhancements [here](https://github.com/material-foundation/flutter-packages/issues/new/choose).
 
 ## Contributing
 
