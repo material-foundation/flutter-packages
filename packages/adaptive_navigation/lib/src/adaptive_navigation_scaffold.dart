@@ -67,6 +67,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     this.onDestinationSelected,
     this.navigationTypeResolver,
     this.drawerHeader,
+    this.drawerFooter,
     this.fabInRail = true,
     this.includeBaseDestinationsInMenu = true,
     this.bottomNavigationOverflow = 5,
@@ -156,6 +157,11 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   /// If null, then there is no header.
   final Widget? drawerHeader;
 
+  /// The footer item in the drawer when the navigation has a drawer.
+  ///
+  /// If null, then there is no footer.
+  final Widget? drawerFooter;
+
   /// Whether the [floatingActionButton] is inside or the rail or in the regular
   /// spot.
   ///
@@ -192,7 +198,9 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
               onTap: () {
                 onDestinationSelected?.call(i);
               },
-            )
+            ),
+          const Spacer(),
+          if (drawerFooter != null) drawerFooter!,
         ],
       ),
     );
@@ -304,6 +312,8 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
                 selected: destinations.indexOf(destination) == selectedIndex,
                 onTap: () => _destinationTapped(destination),
               ),
+            const Spacer(),
+            if (drawerFooter != null) drawerFooter!,
           ],
         ),
       ),
@@ -340,6 +350,8 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
                   selected: destinations.indexOf(destination) == selectedIndex,
                   onTap: () => _destinationTapped(destination),
                 ),
+              const Spacer(),
+              if (drawerFooter != null) drawerFooter!,
             ],
           ),
         ),
