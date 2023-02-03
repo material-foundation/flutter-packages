@@ -1,3 +1,7 @@
+## 0.1.6 - 2023-02-03
+### Added
+- Added screenshots
+
 ## 0.1.5 - 2023-02-03
 ### Changed
 - Update pubspec `repository`

@@ -1,3 +1,7 @@
+## 0.0.9 - 2023-02-03
+### Added
+- Added screenshots
+
 ## 0.0.8 - 2023-02-03
 ### Changed
 - Add `AdaptiveNavigationScaffold.drawerFooter`
