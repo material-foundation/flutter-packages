@@ -7,6 +7,8 @@
 Thank you for your interest in contributing! Your work can help many developers.
 
 ## Updating an existing package
+> **Note**
+> All packages target Flutter's beta channel
 
 ### Development
 
