@@ -1,7 +1,6 @@
 name: "Assign team review"
 on:
   pull_request:
-    types: [opened, ready_for_review]
 
 jobs:
   assign-reviewers:
