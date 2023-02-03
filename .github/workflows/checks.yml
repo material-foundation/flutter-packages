@@ -1,4 +1,6 @@
+# Checks that are run on every commit to main and every pull request.
 name: Checks
+
 on:
   push:
     branches:

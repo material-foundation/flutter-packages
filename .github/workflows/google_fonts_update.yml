@@ -1,4 +1,7 @@
+# Runs a generator script to update the fonts in the google_fonts package.
+# Updates the CHANGELOG, pubspec, and creates a pull request if there are changes.
 name: Update google_fonts' fonts
+
 on:
   schedule:
     - cron: "30 1 1,15 * *"

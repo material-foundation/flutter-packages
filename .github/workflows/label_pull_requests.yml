@@ -5,7 +5,6 @@
 # to configure labels.
 #
 # For more information, see: https://github.com/actions/labeler
-
 name: Label pull request
 
 on:
