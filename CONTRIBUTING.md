@@ -9,7 +9,7 @@ TODO(guidezpl): fix us
 
 Thank you for your interest in contributing! Your work can help many developers.
 
-## Notes
+## Updating an existing package
 
 ### Development
 
@@ -32,7 +32,7 @@ That's it! Releasing is done by team members, see the [Releasing](#releasing) se
 1.  Create a PR to merge your branch into `flutter-packages/main`.
 1.  A reviewer will be automatically assigned.
 
-### Releasing a package
+### Releasing
 
 1. Bump the pubspec version with:
     ```
@@ -52,7 +52,7 @@ That's it! Releasing is done by team members, see the [Releasing](#releasing) se
 
 Done! The [`publish.yml`](https://github.com/material-foundation/flutter-packages/blob/main/.github/workflows/publish.yml) workflow will pick up on the tag and take care of publishing the package to pub.dev.
 
-### New packages
+## New packages
 New packages should be accounted for in:
 - [`.github/dependabot.yml`](.github/dependabot.yml)
 - [`.github/ISSUE_TEMPLATE/bug_report.yml`](.github/ISSUE_TEMPLATE/bug_report.yml)
