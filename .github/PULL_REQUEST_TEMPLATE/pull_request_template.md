@@ -1,10 +1,10 @@
 ## Description
 
-Please describe the motivation behind this change.
+*Please describe the motivation behind this change.*
 
 ## Tests
 
-Please describe the tests that you added or updated to verify your changes.
+*Please describe the tests that you added or updated to verify your changes.*
 
 ## Issues
 Fixes #
