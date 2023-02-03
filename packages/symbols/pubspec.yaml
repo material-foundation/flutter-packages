@@ -2,6 +2,7 @@ name: symbols
 description: A package to include Material Symbols in your Flutter app.
 version: 0.0.0
 repository: https://github.com/material-foundation/flutter-packages/tree/main/packages/symbols
+issue_tracker: https://github.com/material-foundation/flutter-packages/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+symbols%22
 
 environment:
   sdk: '>=2.17.0 <3.0.0'
