@@ -34,23 +34,28 @@ That's it! Releasing is done by team members, see the [Releasing](#releasing) se
 > **Note**
 > For [package maintainers](https://github.com/orgs/material-foundation/teams/material-flutter-package-maintainers) only
 
-1. Bump the pubspec version with:
+> **Tip**
+> To run a command for all subpackages, use `for d in ./packages/*; do (cd "$d" && <command>); done`
+
+1. Bump `pubspec.yaml`'s `version` with:
     ```
     cider bump major|minor|patch
     ```
-2. Update the CHANGELOG.md, commit, and tag the changes with:
+1. Update the `CHANGELOG.md` with:
     ```
     cider release
+    ```
+
+1. Publish to [pub.dev](https://pub.dev/publishers/material.io/packages) with:
+    ```
+    flutter pub publish
+    ```
+1. Create and push a commit and tag
+    ```
     git commit -am "bump \`$(basename $PWD)\` to $(cider version)"
     git tag "$(basename $PWD)-$(cider version)"
-    ```
-
-5. Push the commit and tag with:
-    ```
     git push --all
     ```
-
-Done! The [`publish.yml`](https://github.com/material-foundation/flutter-packages/blob/main/.github/workflows/publish.yml) workflow will pick up on the tag and take care of publishing the package to pub.dev.
 
 ## New packages
 New packages should be accounted for in:
