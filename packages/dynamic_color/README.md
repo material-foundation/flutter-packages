@@ -12,7 +12,7 @@ A Flutter package to create Material color schemes based on a platform's impleme
 This package also supports color and color scheme harmonization.
 
 ## Getting started
-
+esfsefs
 ```bash
 flutter pub add dynamic_color
 ```
