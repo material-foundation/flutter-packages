@@ -1,4 +1,4 @@
-name: "Assign team review"
+name: "Review"
 on:
   pull_request:
 
@@ -10,4 +10,4 @@ jobs:
         uses: rowi1de/auto-assign-review-teams@3c2f3255c753fbb2ec6851d3d7c04921dd7135c3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          teams: "material-foundation/flutter-package-maintainers"
+          teams: "flutter-package-maintainers"
