@@ -4,6 +4,8 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the dynamic_color package path
   push:
+    branches:
+      - main
     paths:
       - 'packages/dynamic_color/**'
 
