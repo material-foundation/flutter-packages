@@ -13,27 +13,26 @@ updates:
 
   # Maintain dependencies for pub
   - package-ecosystem: "pub"
-    directory: "/google_fonts"
+    directory: "packages/google_fonts"
     schedule:
       interval: "monthly"
   - package-ecosystem: "pub"
-    directory: "/dynamic_color"
+    directory: "packages/dynamic_color"
     schedule:
       interval: "monthly"
   - package-ecosystem: "pub"
-    directory: "/adaptive_breakpoints"
+    directory: "packages/adaptive_breakpoints"
     schedule:
       interval: "monthly"
   - package-ecosystem: "pub"
-    directory: "/adaptive_navigation"
+    directory: "packages/adaptive_navigation"
     schedule:
       interval: "monthly"
   - package-ecosystem: "pub"
-    directory: "/adaptive_components"
+    directory: "packages/adaptive_components"
     schedule:
       interval: "monthly"
   - package-ecosystem: "pub"
-    directory: "/symbols"
+    directory: "packages/symbols"
     schedule:
       interval: "monthly"
-  # material_color_utilities is in https://github.com/material-foundation/material-color-utilities/tree/main/dart
