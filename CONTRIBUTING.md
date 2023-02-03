@@ -57,6 +57,8 @@ That's it! Releasing is done by team members, see the [Releasing](#releasing) se
     git push --all
     ```
 
+1. [Create a new release](https://github.com/material-foundation/flutter-packages/releases/new), using the aforementioned tag. Make sure to specify the previous tag (auto doesn't work) to generate the release notes.
+
 ## New packages
 New packages should be accounted for in:
 - [`.github/dependabot.yml`](.github/dependabot.yml)
