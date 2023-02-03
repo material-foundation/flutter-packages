@@ -1,6 +1,6 @@
 name: adaptive_breakpoints
 description: A Flutter package providing Material Design breakpoints for responsive layouts.
-version: 0.1.4
+version: 0.1.5
 repository: https://github.com/material-foundation/flutter-packages/tree/main/packages/adaptive_breakpoints
 
 environment:
