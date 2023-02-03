@@ -67,4 +67,4 @@ jobs:
             ${{ steps.get_families_diff.outputs.result }}
 
             Please note that all existing fonts are subject to being updated.
-          team-reviewers: flutter-package-maintainers
+          # team-reviewers: material-flutter-package-maintainers
