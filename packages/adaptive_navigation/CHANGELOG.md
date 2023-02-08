@@ -1,3 +1,14 @@
+## Unreleased
+### Changed
+- Move adaptive\_navigation\_scaffold to a dedicated folder
+- Extract helper methods to widgets, following flutter's best practices
+- Refactor defaultNavigationTypeResolver to a public method and add it as a default value to AdaptiveNavigationScaffold.navigationTypeResolver, to make it clear to the package user what happens when no custom navigationTypeResolver is provided
+- Refactor AdaptiveNavigationScaffold.navigationTypeResolver to a non-nullable value since it now has a default value
+- Remove the private identifiers from the extracted widgets/methods to make them available to all package files, and only export necessary members instead
+- Add doc comments for NavigationTypeResolver and refactor NavigationType comments to doc comments
+- Add doc comments for defaultNavigationTypeResolver
+- Minor other changes such as making some variables final and extracting a const variable as a widget static const member
+
 ## 0.0.9 - 2023-02-03
 ### Added
 - Added screenshots
