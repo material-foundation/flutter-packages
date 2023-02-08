@@ -5,4 +5,6 @@
 library adaptive_navigation;
 
 export 'src/adaptive_app_bar.dart';
-export 'src/adaptive_navigation_scaffold.dart';
+export 'src/adaptive_navigation_scaffold/adaptive_navigation_scaffold.dart';
+export 'src/adaptive_navigation_scaffold/definitions.dart'
+    show AdaptiveScaffoldDestination, NavigationTypeResolver, NavigationType;
