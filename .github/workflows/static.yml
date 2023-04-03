@@ -36,7 +36,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@fc89b04e7d263ef510d9e77d3a1d088fb2688522 # v3.0.4
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@253fd476ed429e83b7aae64a92a75b4ceb1a17cf # v1.0.7
+        uses: actions/upload-pages-artifact@64bcae551a7b18bcb9a09042ddf1960979799187 # v1.0.8
         with:
           # Upload entire repository
           path: '.'
