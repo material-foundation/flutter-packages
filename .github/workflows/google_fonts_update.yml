@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@dc323e67f16fb5f7663d20ff7941f27f5809e9b6 # v2.6.0
       - name: Clone Flutter repository with beta channel
-        uses: subosito/flutter-action@4389e6cbc6cb8a4b18c628ff96ff90be0e926aa8 # v1.5.3
+        uses: subosito/flutter-action@48cafc24713cca54bbe03cdc3a423187d413aafa # v1.5.3
         with:
           channel: beta
           cache: true
