@@ -1,3 +1,7 @@
+## 1.6.3 - 2023-04-04
+### Changed
+- Update constraint for `material_color_utilities` to `0.3.0`
+
 ## 1.6.2 - 2023-02-03
 ### Added
 - Added screenshots
@@ -71,7 +75,7 @@
 
 ## 1.1.0 - 2022-02-08
 ### Changed
-- Qualify builder parameters (`light` =&gt; `lightDynamic`, `dark` =&gt; `darkDynamic`) for clarity
+- Qualify builder parameters (`light` => `lightDynamic`, `dark` => `darkDynamic`) for clarity
 
 ## 1.0.1 - 2022-02-02
 ### Changed
