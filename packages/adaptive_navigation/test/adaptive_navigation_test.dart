@@ -5,8 +5,8 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   testWidgets('Adaptive Navigation test', (WidgetTester tester) async {
     const mediumWindowSize = Size(960, 1000);
-    tester.binding.window.physicalSizeTestValue = mediumWindowSize;
-    tester.binding.window.devicePixelRatioTestValue = 1.0;
+    tester.view.physicalSize = mediumWindowSize;
+    tester.view.devicePixelRatio = 1.0;
 
     const allDestinations = [
       AdaptiveScaffoldDestination(title: 'Alarm', icon: Icons.alarm),

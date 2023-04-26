@@ -20,8 +20,10 @@ class DynamicColorTestingUtils {
     CorePalette? corePalette,
     Color? accentColor,
   }) {
-    DynamicColorPlugin.channel
-        .setMockMethodCallHandler((MethodCall methodCall) async {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(DynamicColorPlugin.channel, (
+      MethodCall methodCall,
+    ) async {
       if (methodCall.method == DynamicColorPlugin.methodName) {
         return corePalette != null
             ? Int64List.fromList(corePalette.asList())
@@ -29,10 +31,16 @@ class DynamicColorTestingUtils {
       } else if (methodCall.method ==
           DynamicColorPlugin.accentColorMethodName) {
         return accentColor?.value;
+      } else {
+        return null;
       }
     });
     addTearDown(() {
-      DynamicColorPlugin.channel.setMockMethodCallHandler(null);
+      TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+          .setMockMethodCallHandler(
+        DynamicColorPlugin.channel,
+        (MethodCall methodCall) => null,
+      );
     });
   }
 }

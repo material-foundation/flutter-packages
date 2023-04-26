@@ -8,8 +8,8 @@ void main() {
 
   testWidgets('Adaptive Breakpoint window operators <=',
       (WidgetTester tester) async {
-    tester.binding.window.physicalSizeTestValue = const Size(399.5, 600);
-    tester.binding.window.devicePixelRatioTestValue = 1.0;
+    tester.view.physicalSize = const Size(399.5, 600);
+    tester.view.devicePixelRatio = 1.0;
 
     await tester.pumpWidget(
       MaterialApp(
@@ -61,8 +61,8 @@ void main() {
 
   testWidgets('Adaptive Breakpoint window operators <',
       (WidgetTester tester) async {
-    tester.binding.window.physicalSizeTestValue = const Size(399.5, 600);
-    tester.binding.window.devicePixelRatioTestValue = 1.0;
+    tester.view.physicalSize = const Size(399.5, 600);
+    tester.view.devicePixelRatio = 1.0;
 
     await tester.pumpWidget(
       MaterialApp(
@@ -114,8 +114,8 @@ void main() {
 
   testWidgets('Adaptive Breakpoint window operators >=',
       (WidgetTester tester) async {
-    tester.binding.window.physicalSizeTestValue = const Size(399.5, 600);
-    tester.binding.window.devicePixelRatioTestValue = 1.0;
+    tester.view.physicalSize = const Size(399.5, 600);
+    tester.view.devicePixelRatio = 1.0;
 
     await tester.pumpWidget(
       MaterialApp(
@@ -167,8 +167,8 @@ void main() {
 
   testWidgets('Adaptive Breakpoint window operators >',
       (WidgetTester tester) async {
-    tester.binding.window.physicalSizeTestValue = const Size(399.5, 600);
-    tester.binding.window.devicePixelRatioTestValue = 1.0;
+    tester.view.physicalSize = const Size(399.5, 600);
+    tester.view.devicePixelRatio = 1.0;
 
     await tester.pumpWidget(
       MaterialApp(
