@@ -1,3 +1,7 @@
+## 1.6.4 - 2023-05-05
+### Changed
+- Update constraint for `material_color_utilities` to `0.5.0`
+
 ## 1.6.3 - 2023-04-04
 ### Changed
 - Update constraint for `material_color_utilities` to `0.3.0`
