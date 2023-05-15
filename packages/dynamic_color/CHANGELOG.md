@@ -1,3 +1,7 @@
+## 1.6.5 - 2023-05-15
+### Changed
+- Broaden constraint for `material_color_utilities` to support multiple Flutter SDK versions
+
 ## 1.6.4 - 2023-05-05
 ### Changed
 - Update constraint for `material_color_utilities` to `0.5.0`
