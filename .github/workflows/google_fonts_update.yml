@@ -31,6 +31,9 @@ jobs:
       - run: dart generator/generator.dart
         working-directory: packages/google_fonts
 
+      - run: dart pub format
+        working-directory: packages/google_fonts
+
       - name: Read families_diff file
         uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6.4.1
         id: get_families_diff
@@ -41,7 +44,7 @@ jobs:
           result-encoding: string
 
       - name: Cancel workflow if there is no diff
-        uses: andymckay/cancel-action@b9280e3f8986d7a8e91c7462efc0fa318010c8b1 # 0.3
+        uses: andymckay/cancel-action@b9280e3f8986d7a8e91c7462efc0fa318010c8b1 # v0.3
         if: steps.get_families_diff.outputs.result == ''
 
       - name: If cancelling workflow, allow for enough time to do so
