@@ -9,7 +9,7 @@ name: Label pull request
 
 on:
   pull_request_target:
-    types: [created]
+    types: [opened]
 
 # Declare default permissions as read only.
 permissions: read-all
