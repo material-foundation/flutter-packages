@@ -1,15 +1,13 @@
+# Specify analysis options for all packages
+
 include: package:flutter_lints/flutter.yaml
 
 analyzer:
-  exclude: [generator/fonts.pb.dart]
-  strong-mode:
-    implicit-casts: false
-    implicit-dynamic: false
+  exclude: [packages/google_fonts/generator/fonts.pb.dart]
 
 linter:
   rules:
     avoid_print: false
-    avoid_types_on_closure_parameters: true
     avoid_void_async: true
     cancel_subscriptions: true
     close_sinks: true

@@ -1,53 +1,68 @@
-# Contributing to the google_fonts package.
+# Contributing
 
-Thank you for your interest in contributing to the `google_fonts` package! We love receiving
-contributions, and your work helps the whole community. This doc will walk you through the easiest
-way to make a change and have it submitted to the `google_fonts` package.
+[![Checks](https://github.com/material-foundation/flutter-packages/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/material-foundation/flutter-packages/actions/workflows/checks.yml)
+[![Release Status](https://github.com/material-foundation/flutter-packages/actions/workflows/publish.yml/badge.svg)](https://github.com/material-foundation/flutter-packages/actions/workflows/publish.yml)
+[![ossf scorecard](https://img.shields.io/ossf-scorecard/github.com/material-foundation/flutter-packages?label=openssf%20scorecard&style=flat)](https://api.securityscorecards.dev/projects/github.com/material-foundation/flutter-packages)
 
-## Developer workflow
+Thank you for your interest in contributing! Your work can help many developers.
 
-The easiest workflow for adding a feature/fixing a bug is to test it out on the example app in this
-repo.
-
-### Environment
-
-1.  Fork the [google-fonts-flutter](https://github.com/material-foundation/google-fonts-flutter)
-    repo on github.
-1.  Clone your fork of the `google-fonts-flutter` repo.
-1.  Build and run the example app in `example/lib/main.dart` (from the `example/` directory, use
-    `$ flutter run`).
+## Updating an existing package
+> **Note**
+> All packages target Flutter's beta channel
 
 ### Development
 
-1.  Make the changes to your local copy of the `google-fonts-flutter` package, testing the changes
-    in the example app.
-1.  Write a unit test for your change, if possible, in one of the files in `test/`.
+1.  Fork the repo and clone it to your local machine, creating a branch to work on.
+1.  Make the changes.
+1.  If there exists an example app under `/example`, use it to manually test your changes.
+1.  Write a unit test for your change, under `test/`.
 1.  Update the `CHANGELOG.md` using [`cider`](https://pub.dev/packages/cider). For example:
     ```
-    dart pub global activate cider
-    cider log changed 'X now does Y'
-    cider bump minor
-    cider release
+    cider log changed|added|fixed|removed 'Added a schmilblick'
     ```
-    making.
+1.  Make sure all the existing tests are passing with `flutter test`.
+1.  Make sure the repo is formatted using `flutter format .`.
+1.  Commit the changes to your branch and push.
+
+That's it! Releasing is done by team members, see the [Releasing](#releasing) section below.
 
 ### Review
 
-1.  Make sure all the existing tests are passing by using the following command (from the root of
-    the project): `$ flutter test test/`.
-1.  Make sure the repo is formatted using `$ flutter format .`.
-1.  Create a PR to merge the branch on your fork into `google-fonts-flutter/main`.
-1.  Add `johnsonmh` and `clocksmith` as reviewers on the PR. We will take a look and add any
-    comments. When the PR is ready to be merged, we will merge it and update the package on
-    [pub.dev](https://pub.dev/packages/google_fonts)!
+1.  Create a PR to merge your branch into `flutter-packages/main`.
+1.  A reviewer will be automatically assigned.
 
-## Updating the fonts
+### Releasing
 
-If you notice fonts that are on [fonts.google.com](https://fonts.google.com) that do not appear in
-this package, it means that the generator needs to be run. The generator will
-check [fonts.google.com](https://fonts.google.com) for any new fonts, manually test each URL, and
-regenerate the dart code.
+> **Note**
+> For [package maintainers](https://github.com/orgs/material-foundation/teams/material-flutter-package-maintainers) only
 
-The generator is run multiple times a month by a GitHub [workflow](.github/workflows/update_fonts.yml).
+> **Tip**
+> To run a command for all subpackages, use `for d in ./packages/*; do (cd "$d" && <command>); done`
 
-To run it manually, navigate to the root of the project, and run `dart generator/generator.dart`.
+1. Bump `pubspec.yaml`'s `version` with:
+    ```
+    cider bump major|minor|patch
+    ```
+1. Update the `CHANGELOG.md` with:
+    ```
+    cider release
+    ```
+
+1. Publish to [pub.dev](https://pub.dev/publishers/material.io/packages) with:
+    ```
+    flutter pub publish
+    ```
+1. Create and push a commit and tag
+    ```
+    git commit -am "bump \`$(basename $PWD)\` to $(cider version)"
+    git tag "$(basename $PWD)-$(cider version)"
+    git push --all
+    ```
+
+## Adding a new package
+New packages should be accounted for in:
+- [`.github/dependabot.yml`](.github/dependabot.yml)
+- [`.github/ISSUE_TEMPLATE/bug_report.yml`](.github/ISSUE_TEMPLATE/bug_report.yml)
+- [`.github/ISSUE_TEMPLATE/feature_request.yml`](.github/ISSUE_TEMPLATE/feature_request.yml)
+- [`.github/labeler.yml`](.github/labeler.yml)
+- [`.github/workflows/checks.yml`](.github/workflows/checks.yml)

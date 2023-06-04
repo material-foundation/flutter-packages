@@ -1,0 +1,72 @@
+# Runs a generator script to update the fonts in the google_fonts package.
+# Updates the CHANGELOG, pubspec, and creates a pull request if there are changes.
+name: Update google_fonts' fonts
+
+on:
+  schedule:
+    - cron: "30 1 1,15 * *"
+  workflow_dispatch: # Enable manual run from Github
+
+# Declare default permissions as read only.
+permissions: read-all
+
+jobs:
+  update-fonts:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      actions: write # Required for the cancel action
+    steps:
+      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v2.6.0
+      - name: Clone Flutter repository with beta channel
+        uses: subosito/flutter-action@48cafc24713cca54bbe03cdc3a423187d413aafa # v1.5.3
+        with:
+          channel: beta
+          cache: true
+
+      - run: flutter pub get
+        working-directory: packages/google_fonts
+
+      - run: dart pub global activate cider
+      - run: dart generator/generator.dart
+        working-directory: packages/google_fonts
+
+      - run: dart pub format
+        working-directory: packages/google_fonts
+
+      - name: Read families_diff file
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6.4.1
+        id: get_families_diff
+        with:
+          script: |
+            const fs = require('fs');
+            return fs.readFileSync('packages/google_fonts/generator/families_diff','utf8').toString();
+          result-encoding: string
+
+      - name: Cancel workflow if there is no diff
+        uses: andymckay/cancel-action@b9280e3f8986d7a8e91c7462efc0fa318010c8b1 # v0.3
+        if: steps.get_families_diff.outputs.result == ''
+
+      - name: If cancelling workflow, allow for enough time to do so
+        run: sleep 15s
+        shell: bash
+        if: steps.get_families_diff.outputs.result == ''
+
+      - uses: peter-evans/create-pull-request@284f54f989303d2699d373481a0cfa13ad5a6666 # v5.0.1
+        with:
+          token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
+          committer: material-robot <featherless+materialrobot@google.com>
+          commit-message: |
+            [google_fonts] update fonts
+
+            ${{ steps.get_families_diff.outputs.result }}
+          base: main
+          branch: create-pull-request/update
+          delete-branch: true
+          author: material-robot <featherless+materialrobot@google.com>
+          title: Update `google_fonts`s fonts
+          body: |
+            # Summary
+            ${{ steps.get_families_diff.outputs.result }}
+
+            Please note that all existing fonts are subject to being updated.

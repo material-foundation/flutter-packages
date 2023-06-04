@@ -1,0 +1,47 @@
+# Checks that are run on every commit to main and every pull request.
+name: Checks
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+
+jobs:
+  check_package:
+    name: packages/${{ matrix.package }}
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        package: [google_fonts, dynamic_color, adaptive_breakpoints, adaptive_navigation, adaptive_components, symbols]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+
+      - name: Install Flutter
+        uses: subosito/flutter-action@48cafc24713cca54bbe03cdc3a423187d413aafa # v2.10.0
+        with:
+          channel: beta
+          cache: true
+          cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash:'
+
+      - name: Get packages
+        run: flutter pub get
+        working-directory: packages/${{ matrix.package }}
+
+      - name: Analyze Dart code
+        run: flutter analyze
+        working-directory: packages/${{ matrix.package }}
+
+      - name: Ensure Dart code is formatted correctly
+        run: dart format --set-exit-if-changed .
+        working-directory: packages/${{ matrix.package }}
+
+      - name: Run Flutter unit tests
+        run: flutter test
+        working-directory: packages/${{ matrix.package }}

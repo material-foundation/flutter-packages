@@ -1,0 +1,35 @@
+# Picks up on tags that match the pattern `package-name-1.2.3` and publishes to pub.dev
+name: Publish to pub.dev
+
+on:
+  push:
+    tags:
+    # must align with the tag-pattern configured on pub.dev
+    - '*-[0-9]+.[0-9]+.[0-9]+*'
+
+# Declare default permissions as read only.
+permissions: read-all
+
+jobs:
+  find-package:
+    runs-on: ubuntu-latest
+    steps:
+    - id: sed
+      run: |
+        PACKAGE=$(echo "$GITHUB_REF" | sed 's#refs/tags/\([^-]*\)-.*#\1#')
+        echo "package=$PACKAGE">> "$GITHUB_OUTPUT"
+        echo "Prepare to publish \`$PACKAGE\`" >> "$GITHUB_STEP_SUMMARY"
+    outputs:
+      package: ${{steps.sed.outputs.package}}
+
+  # Publish using the reusable workflow from dart-lang.
+  publish:
+    permissions:
+      id-token: write
+    needs:
+    - find-package
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      # Specify the github actions deployment environment
+      environment: pub.dev
+      working-directory: packages/${{needs.find-package.outputs.package}}
