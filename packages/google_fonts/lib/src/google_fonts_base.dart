@@ -27,28 +27,25 @@ import 'google_fonts_descriptor.dart';
 import 'google_fonts_family_with_variant.dart';
 import 'google_fonts_variant.dart';
 
-// Keep track of the fonts that are loaded or currently loading in FontLoader
-// for the life of the app instance. Once a font is attempted to load, it does
-// not need to be attempted to load again, unless the attempted load resulted
-// in an error.
+/// Set of fonts that are loading or loaded.
+///
+/// Used to determine whether to load a font or not.
 final Set<String> _loadedFonts = {};
 
-// When a font is being loaded, it's future is added to this list. When it is
-// done loading, it's future will be removed from this list.
-final List<Future<void>> _pendingFontLoads = [];
+@visibleForTesting
+void clearCache() => _loadedFonts.clear();
+
+/// Set of [Future]s corresponding to fonts that are loading.
+///
+/// When a font is loading, a future is added to this set. When it is loaded in
+/// the [FontLoader], that future is removed from this set.
+final Set<Future<void>> pendingFontFutures = {};
 
 @visibleForTesting
 http.Client httpClient = http.Client();
 
 @visibleForTesting
 AssetManifest assetManifest = AssetManifest();
-
-@visibleForTesting
-void clearCache() => _loadedFonts.clear();
-
-Future<List<void>> pendingFontLoadsInternal() async {
-  return Future.wait(_pendingFontLoads);
-}
 
 /// Creates a [TextStyle] that either uses the [fontFamily] for the requested
 /// GoogleFont, or falls back to the pre-bundled [fontFamily].
@@ -116,8 +113,8 @@ TextStyle googleFontsTextStyle({
   );
 
   final loadingFuture = loadFontIfNecessary(descriptor);
-  _pendingFontLoads.add(loadingFuture);
-  loadingFuture.then((_) => _pendingFontLoads.remove(loadingFuture));
+  pendingFontFutures.add(loadingFuture);
+  loadingFuture.then((_) => pendingFontFutures.remove(loadingFuture));
 
   return textStyle.copyWith(
     fontFamily: familyWithVariant.toString(),
@@ -133,8 +130,8 @@ TextStyle googleFontsTextStyle({
 ///
 /// Otherwise, this method will first check to see if the font is available
 /// as an asset, then on the device file system. If it isn't, it is fetched via
-/// the [fontUrl] and stored on device. In all cases, the font is loaded into
-/// the [FontLoader].
+/// the [fontUrl] and stored on device. In all cases, the returned future
+/// completes once the font is loaded into the [FontLoader].
 Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
   final familyWithVariantString = descriptor.familyWithVariant.toString();
   final fontName = descriptor.familyWithVariant.toApiFilenamePrefix();
