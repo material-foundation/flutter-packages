@@ -61,7 +61,7 @@ void main() {
     clearCache();
   });
 
-  test('pendingFonts works as expected', () async {
+  test('pendingFonts waits for fonts to be loaded', () async {
     expect(await GoogleFonts.pendingFonts(), hasLength(0));
 
     final textStyle1 = googleFontsTextStyle(fontFamily: 'ab', fonts: fakeFonts);
