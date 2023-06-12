@@ -252,7 +252,7 @@ void _generateDartCode(Directory fontDirectory) {
 
   for (var map in methods) {
     String methodName = map['methodName'];
-    String firstLetter = methodName[0].toUpperCase();
+    String firstLetter = methodName[0];
     if (!methodsByLetter.containsKey(firstLetter)) {
       allParts.add({
         'partFilePath': _generatedPartFilePath(firstLetter).replaceFirst(
@@ -273,7 +273,7 @@ void _generateDartCode(Directory fontDirectory) {
   );
   methodsByLetter.forEach((letter, methods) async {
     final renderedTemplate = partTemplate.renderString({
-      'part': letter,
+      'part': letter.toUpperCase(),
       'method': methods,
     });
     _writeDartFile(_generatedPartFilePath(letter), renderedTemplate);
