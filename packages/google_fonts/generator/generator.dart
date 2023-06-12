@@ -40,12 +40,12 @@ Future<void> main() async {
   await familiesDelta.updateChangelogAndPubspec();
   print(_success);
 
-  print('\nGenerating $_generatedMainFilePath...');
+  print('\nGenerating $_generatedMainFilePath and part files...');
   _generateDartCode(fontDirectory);
   print(_success);
 
-  print('\nFormatting $_generatedMainFilePath...');
-  await Process.run('flutter', ['format', _generatedMainFilePath]);
+  print('\nFormatting $_generatedMainFilePath and part files...');
+  await Process.run('dart', ['format', 'lib']);
   print(_success);
 }
 

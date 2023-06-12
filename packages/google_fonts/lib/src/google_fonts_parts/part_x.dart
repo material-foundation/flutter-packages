@@ -39,8 +39,20 @@ class PartX {
     double? decorationThickness,
   }) {
     final fonts = <GoogleFontsVariant, GoogleFontsFile>{
-      const GoogleFontsVariant(fontWeight: FontWeight.w400, fontStyle: FontStyle.normal,): GoogleFontsFile('0325d32d45e93b20f30f53d8f184999ccfd62f97a0eb016689dbfb3a0d60d6e0', 38648,),
-      const GoogleFontsVariant(fontWeight: FontWeight.w400, fontStyle: FontStyle.italic,): GoogleFontsFile('57ec286629a38ab8e434c175017c9222e08d6de91a464c8d8fb72434ca6b8bd4', 41664,),
+      const GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+      ): GoogleFontsFile(
+        '0325d32d45e93b20f30f53d8f184999ccfd62f97a0eb016689dbfb3a0d60d6e0',
+        38648,
+      ),
+      const GoogleFontsVariant(
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.italic,
+      ): GoogleFontsFile(
+        '57ec286629a38ab8e434c175017c9222e08d6de91a464c8d8fb72434ca6b8bd4',
+        41664,
+      ),
     };
 
     return googleFontsTextStyle(
@@ -93,5 +105,4 @@ class PartX {
       labelSmall: xanhMono(textStyle: textTheme.labelSmall),
     );
   }
-
 }
