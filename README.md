@@ -2,7 +2,6 @@
 
 This repo contains the source code for packages developed by the Material Flutter team.
 
-
 | Package | Pub | Issues | Pull requests |
 |--------|-----|--------|---------------|
 | [google\_fonts](./packages/google_fonts/) | [![pub package](https://img.shields.io/pub/v/google_fonts.svg)](https://pub.dev/packages/google_fonts) | [![GitHub issues by-label](https://img.shields.io/github/issues/material-foundation/flutter-packages/p:%20google_fonts?label=)](https://github.com/material-foundation/flutter-packages/labels/p%3A%20google_fonts) | [![GitHub pull requests by-label](https://img.shields.io/github/issues-pr/material-foundation/flutter-packages/p:%20google_fonts?label=)](https://github.com/material-foundation/flutter-packages/pulls?q=is%3Aopen+is%3Apr+label%3A%22p%3A+google_fonts%22) |
