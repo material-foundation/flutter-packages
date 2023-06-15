@@ -31,7 +31,7 @@ jobs:
       - run: dart generator/generator.dart
         working-directory: packages/google_fonts
 
-      - run: dart pub format
+      - run: dart format
         working-directory: packages/google_fonts
 
       - name: Read families_diff file
