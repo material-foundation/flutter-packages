@@ -29,8 +29,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: subosito/flutter-action@v2
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+      - name: Setup Pages
+        uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3.0.6
+      - uses: subosito/flutter-action@48cafc24713cca54bbe03cdc3a423187d413aafa # v2.10.0
         with:
           channel: 'stable'
 
@@ -39,12 +41,11 @@ jobs:
       - run: flutter pub get
       - run: flutter build web --release
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@64bcae551a7b18bcb9a09042ddf1960979799187 # v1.0.8
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/web
-          force_orphan: true
-          user_name: 'github-ci[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Publish to gh-pages'
+          # Upload entire repository
+          path: './build/web'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@ee48c7b82e077d7b8ef30b50a719e6a792a50c9a # v2.0.2
