@@ -1,13 +1,12 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy dynamic_color example to GitHub Pages
+name: Deploy examples to GitHub Pages
 
 on:
-  # Runs on pushes to main targeting the dynamic_color package path
   push:
     branches:
-    - main
+      - main
     paths:
-      - 'packages/dynamic_color/**'
+      - 'packages/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -46,7 +45,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@64bcae551a7b18bcb9a09042ddf1960979799187 # v1.0.8
         with:
-          path: 'packages/dynamic_color/example/build/web'
+          # Upload entire repository
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@ee48c7b82e077d7b8ef30b50a719e6a792a50c9a # v2.0.2
