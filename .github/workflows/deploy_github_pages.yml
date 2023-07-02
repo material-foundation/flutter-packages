@@ -31,9 +31,8 @@ jobs:
         with:
           channel: 'stable'
 
-      - run: flutter pub get
-        working-directory: packages/${{ matrix.package }}/example
-      - run: flutter build web --release -v --output /tmp/${{ matrix.package }}
+      - name: Build Flutter web app
+        run: flutter build web -v --release --output /tmp/${{ matrix.package }} --base-href flutter-packages/${{ matrix.package }}
         working-directory: packages/${{ matrix.package }}/example
 
       - name: Upload web build
@@ -69,6 +68,7 @@ jobs:
     steps:
       - name: Setup Pages
         uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3.0.6
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@ee48c7b82e077d7b8ef30b50a719e6a792a50c9a # v2.0.2
