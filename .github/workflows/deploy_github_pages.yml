@@ -28,7 +28,7 @@ jobs:
         id: find-example-apps
         # Outputs a JSON list of packages with example apps, e.g. ["dynamic_color", "google_fonts"]
         run: |
-          example_apps=find . -name example -maxdepth 2 -exec dirname {} \; | sed 's/^.\///' | jq -R | jq -s
+          example_apps=find . -path '*/example' -maxdepth 2 -exec dirname {} \; | sed 's/^.\///' | jq -R | jq -s
           echo "example-apps=$example_apps >> $GITHUB_OUTPUT
         working-directory: packages
         shell: bash
