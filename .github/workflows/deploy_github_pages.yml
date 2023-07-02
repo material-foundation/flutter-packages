@@ -19,7 +19,7 @@ concurrency:
 jobs:
   # Determine which packages have example apps
   find-example-apps:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     outputs:
       example-apps: ${{ steps.find-example-apps.outputs.example-apps }}
     steps:
@@ -36,7 +36,7 @@ jobs:
   # Build example web apps job
   build:
     needs: find-example-apps
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     permissions:
       contents: read
     strategy:
@@ -62,7 +62,7 @@ jobs:
   # Upload pages artifact to pages job
   upload-to-pages:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Download all web builds
         uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
@@ -75,7 +75,7 @@ jobs:
   # Deploy job
   deploy-pages:
     needs: upload-to-pages
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     permissions:
       pages: write      # to deploy to Pages
       id-token: write   # to verify the deployment originates from an appropriate source
