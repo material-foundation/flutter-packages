@@ -24,6 +24,7 @@ jobs:
       example-apps: ${{ steps.find-example-apps.outputs.example-apps }}
     steps:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+      - run: man find
       - name: Find example apps
         id: find-example-apps
         # Outputs a JSON list of packages with example apps, e.g. ["dynamic_color", "google_fonts"]
