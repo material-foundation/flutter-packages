@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy examples to GitHub Pages
+name: Examples to GitHub Pages
 
 on:
   push:
@@ -11,41 +11,63 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 # Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
-  build-and-deploy:
+  # Build example web apps job
+  build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/dynamic_color/example
-
+    permissions:
+      contents: read
+    strategy:
+      matrix:
+        package: ['adaptive_breakpoints', 'adaptive_components', 'adaptive_navigation', 'dynamic_color', 'google_fonts', 'symbols']
     steps:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
-      - name: Setup Pages
-        uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3.0.6
       - uses: subosito/flutter-action@48cafc24713cca54bbe03cdc3a423187d413aafa # v2.10.0
         with:
           channel: 'stable'
 
-      - run: flutter clean
       - run: flutter pub get
-      - run: flutter build web --release -v
-      - name: Upload artifact
+        working-directory: packages/${{ matrix.package }}/example
+      - run: flutter build web --release -v --output /tmp/${{ matrix.package }}
+        working-directory: packages/${{ matrix.package }}/example
+
+      - name: Upload web build
+        uses: actions/upload-artifact@v3
+        with:
+          path: /tmp/${{ matrix.package }}
+          retention-days: 1
+
+  # Upload pages artifact to pages job
+  upload-to-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all web builds
+        uses: actions/download-artifact@v3
+
+      - name: Upload pages artifact
         uses: actions/upload-pages-artifact@64bcae551a7b18bcb9a09042ddf1960979799187 # v1.0.8
         with:
-          path: 'packages/dynamic_color/example/build/web'
+          path: '.'
 
+  # Deploy job
+  deploy-pages:
+    needs: upload-to-pages
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3.0.6
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@ee48c7b82e077d7b8ef30b50a719e6a792a50c9a # v2.0.2
