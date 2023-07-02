@@ -1,5 +1,5 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Examples to GitHub Pages
+# Builds and deploys example web apps for each of the packages to GitHub Pages
+name: Deploy examples to GitHub Pages
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       contents: read
     strategy:
       matrix:
-        package: ['adaptive_breakpoints', 'adaptive_components', 'adaptive_navigation', 'dynamic_color', 'google_fonts', 'symbols']
+        package: ['adaptive_breakpoints', 'adaptive_components', 'adaptive_navigation', 'dynamic_color', 'google_fonts',]
     steps:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
       - uses: subosito/flutter-action@48cafc24713cca54bbe03cdc3a423187d413aafa # v2.10.0
