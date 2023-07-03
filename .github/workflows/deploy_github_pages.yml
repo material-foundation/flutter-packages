@@ -32,7 +32,7 @@ jobs:
           example_apps=find . -name "example" -maxdepth 2 -exec dirname {} \; | sed 's/^.\///' | jq -R | jq -s
           echo "example-apps=$example_apps >> $GITHUB_OUTPUT
         working-directory: packages
-        shell: bash
+        shell: sh
 
   # Build example web apps job
   build:
