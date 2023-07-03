@@ -24,15 +24,14 @@ jobs:
       example-apps: ${{ steps.find-example-apps.outputs.example-apps }}
     steps:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
-      - run: man find
+      - run: man ls
       - name: Find example apps
         id: find-example-apps
         # Outputs a JSON list of packages with example apps, e.g. ["dynamic_color", "google_fonts"]
         run: |
-          example_apps=ls -d */example | xargs dirname | jq -R | jq -s
+          example_apps=$(ls -d */example | xargs dirname | jq -R | jq -s)
           echo "example-apps=$example_apps >> $GITHUB_OUTPUT
         working-directory: packages
-        shell: bash
 
   # Build example web apps job
   build:
