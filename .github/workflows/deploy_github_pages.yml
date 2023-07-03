@@ -29,7 +29,7 @@ jobs:
         id: find-example-apps
         # Outputs a JSON list of packages with example apps, e.g. ["dynamic_color", "google_fonts"]
         run: |
-          echo "example-apps=$(ls -d */example | xargs dirname | jq -R | jq -s | jq -c | sed 's/\"/\\\"/g')" >> $GITHUB_OUTPUT
+          echo "::set-output name=example-apps::$(ls -d */example | xargs dirname | jq -R -s -c 'split("\n")[:-1]')"
         working-directory: packages
 
   # Build example web apps job
