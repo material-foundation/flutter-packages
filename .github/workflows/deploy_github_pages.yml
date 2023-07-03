@@ -48,7 +48,7 @@ jobs:
           channel: 'stable'
 
       - name: Build Flutter web app
-        run: flutter build web -v --release --output /tmp/${{ matrix.package }} --base-href ${{ github.event.repository.name }}/${{ matrix.package }}
+        run: flutter build web -v --release --output /tmp/${{ matrix.package }} --base-href /${{ github.event.repository.name }}/${{ matrix.package }}
         working-directory: packages/${{ matrix.package }}/example
 
       - name: Upload web build temporarily
