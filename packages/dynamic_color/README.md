@@ -64,7 +64,7 @@ harmonized color schemes, and harmonizing custom colors.
 
 See [example/lib/accent_color.dart][accent color example] for obtaining the accent color on desktop.
 
-<a href="https://material-foundation.github.io/flutter-packages/packages/dynamic_color/example/build/web/">
+<a href="https://material-foundation.github.io/flutter-packages/dynamic_color">
 <img src="https://user-images.githubusercontent.com/6655696/152188934-35e58f5c-2a3c-41af-8d49-faabb1701dcc.png" width="400" /> </a>
 
 All examples are part of this [example app] ([source][example app source]). To run the example app:
@@ -110,5 +110,5 @@ flutter build web
 [dynamiccolorplugin.getcorepalette example]: https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color/example/lib/get_core_palette_example.dart
 [example app source]: https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color/example/lib/
 [harmonization.dart]: https://github.com/material-foundation/flutter-packages/blob/main/packages/dynamic_color/lib/src/harmonization.dart
-[example app]: https://material-foundation.github.io/flutter-packages/packages/dynamic_color/example/build/web/
+[example app]: https://material-foundation.github.io/flutter-packages/dynamic_color
 [accent color example]: https://github.com/material-foundation/flutter-packages/blob/main/packages/dynamic_color/example/lib/accent_color.dart
