@@ -1,3 +1,7 @@
+## 1.6.6 - 2023-07-04
+### Changed
+- Improved documentation for content-based color schemes
+
 ## 1.6.5 - 2023-05-15
 ### Changed
 - Broaden constraint for `material_color_utilities` to support multiple Flutter SDK versions

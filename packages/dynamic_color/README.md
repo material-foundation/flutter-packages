@@ -4,7 +4,8 @@
 
 A Flutter package to create Material color schemes based on a platform's implementation of dynamic color. Currently supported platforms are:
 
-- Android S+: [color from user wallpaper](https://m3.material.io/styles/color/dynamic-color/user-generated-color)
+- Android S+: user [wallpaper color](https://m3.material.io/styles/color/dynamic-color/user-generated-color#35bc06c5-35d9-4559-9f5d-07ea734cbcb1)
+    - For color schemes from [content color](https://m3.material.io/styles/color/dynamic-color/user-generated-color#8af550b9-a19e-4e9f-bb0a-7f611fed5d0f), use [`ColorScheme.fromImageProvider`](https://api.flutter.dev/flutter/material/ColorScheme/fromImageProvider.html)
 - Linux: GTK+ theme's `@theme_selected_bg_color`
 - macOS: [app accent color](https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/#app-accent-colors)
 - Windows: [accent color](https://docs.microsoft.com/en-us/windows/apps/design/style/color#accent-color) or [window/glass color](https://web.archive.org/web/20080812195923/http://www.microsoft.com/windows/windows-vista/features/aero.aspx?tabid=2&catid=4)
