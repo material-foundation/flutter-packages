@@ -158,9 +158,9 @@ class _RenderCorePalette extends StatelessWidget {
       corePalette.neutralVariant.asList,
     ];
     return Column(
-      children: colors.mapIndexed(
-        (List<int> tones, int i) {
-          return Row(
+      children: [
+        for (final (int i, List<int> tones) in colors.indexed)
+          Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
@@ -172,9 +172,8 @@ class _RenderCorePalette extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 16),
-              ...tones.mapIndexed((int color, int i) {
-                final toneValue = TonalPalette.commonTones[i];
-                return Container(
+              for (final (int i, int color) in tones.indexed)
+                Container(
                   constraints: const BoxConstraints.tightFor(
                     height: 80,
                     width: 60,
@@ -182,32 +181,19 @@ class _RenderCorePalette extends StatelessWidget {
                   color: Color(color),
                   child: Center(
                     child: Text(
-                      toneValue.toString(),
+                      TonalPalette.commonTones[i].toString(),
                       style: captionStyle!.copyWith(
                         // For contrast
-                        color: toneValue > 50 ? Colors.black : Colors.white,
+                        color: TonalPalette.commonTones[i] > 50
+                            ? Colors.black
+                            : Colors.white,
                       ),
                     ),
                   ),
-                );
-              }),
+                ),
             ],
-          );
-        },
-      ).toList(),
+          ),
+      ],
     );
-  }
-}
-
-extension ExtendedIterable<E> on Iterable<E> {
-  /// Like Iterable<T>.map but the callback has index as second argument.
-  Iterable<T> mapIndexed<T>(T Function(E e, int i) f) {
-    var i = 0;
-    return map((e) => f(e, i++));
-  }
-
-  void forEachIndexed(void Function(E e, int i) f) {
-    var i = 0;
-    forEach((e) => f(e, i++));
   }
 }
