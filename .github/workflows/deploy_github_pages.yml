@@ -23,7 +23,7 @@ jobs:
     outputs:
       example-apps: ${{ steps.find-example-apps.outputs.example-apps }}
     steps:
-      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
       - run: man ls
       - name: Find example apps
         id: find-example-apps
@@ -42,7 +42,7 @@ jobs:
       matrix:
         package: ${{ fromJson(needs.find-example-apps.outputs.example-apps) }}
     steps:
-      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
       - uses: subosito/flutter-action@48cafc24713cca54bbe03cdc3a423187d413aafa # v2.10.0
         with:
           channel: 'stable'
