@@ -1,3 +1,7 @@
+## 1.6.7 - 2023-09-15
+### Fixed
+- Upgraded dependencies
+
 ## 1.6.6 - 2023-07-04
 ### Changed
 - Improved documentation for content-based color schemes
