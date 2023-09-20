@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SelectorExample extends StatefulWidget {
-  const SelectorExample({super.key});
+class ExampleFontSelection extends StatefulWidget {
+  const ExampleFontSelection({super.key});
 
   @override
-  SelectorExampleState createState() => SelectorExampleState();
+  ExampleFontSelectionState createState() => ExampleFontSelectionState();
 }
 
-class SelectorExampleState extends State<SelectorExample> {
+class ExampleFontSelectionState extends State<ExampleFontSelection> {
   final Iterable<String> fonts = GoogleFonts.asMap().keys;
 
   final TextEditingController _textEditingController = TextEditingController(

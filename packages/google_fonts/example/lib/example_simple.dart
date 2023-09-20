@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SimpleExample extends StatefulWidget {
-  const SimpleExample({Key? key}) : super(key: key);
+class ExampleSimple extends StatefulWidget {
+  const ExampleSimple({Key? key}) : super(key: key);
 
   @override
-  SimpleExampleState createState() => SimpleExampleState();
+  ExampleSimpleState createState() => ExampleSimpleState();
 }
 
-class SimpleExampleState extends State<SimpleExample> {
+class ExampleSimpleState extends State<ExampleSimple> {
   int _counter = 0;
   late Future googleFontsPending;
 
