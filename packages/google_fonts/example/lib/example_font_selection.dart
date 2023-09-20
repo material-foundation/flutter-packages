@@ -48,7 +48,7 @@ class ExampleFontSelectionState extends State<ExampleFontSelection> {
                         width: 360,
                         child: TextField(
                           controller: _textEditingController,
-                          onChanged: (value) => setState(() {}),
+                          onChanged: (_) => setState(() {}),
                         ),
                       ),
                       DropdownMenu<String>(
@@ -75,21 +75,21 @@ class ExampleFontSelectionState extends State<ExampleFontSelection> {
                   const SizedBox(height: 100),
                   Expanded(
                     child: FutureBuilder(
-                        future: _googleFontsPending,
-                        builder: (context, snapshot) {
-                          if (snapshot.connectionState !=
-                              ConnectionState.done) {
-                            return const SizedBox();
-                          }
+                      future: _googleFontsPending,
+                      builder: (context, snapshot) {
+                        if (snapshot.connectionState != ConnectionState.done) {
+                          return const SizedBox();
+                        }
 
-                          return Text(
-                            _textEditingController.text,
-                            style: GoogleFonts.getFont(
-                              _selectedFont,
-                              fontSize: 50.0,
-                            ),
-                          );
-                        }),
+                        return Text(
+                          _textEditingController.text,
+                          style: GoogleFonts.getFont(
+                            _selectedFont,
+                            fontSize: 50.0,
+                          ),
+                        );
+                      },
+                    ),
                   ),
                 ],
               ),
