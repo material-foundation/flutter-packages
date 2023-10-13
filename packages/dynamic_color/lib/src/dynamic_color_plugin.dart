@@ -16,6 +16,8 @@ class DynamicColorPlugin {
   /// A method name that the macOS plugin listens for.
   static const accentColorMethodName = 'getAccentColor';
 
+  static const isCorePaletteSupportedMethodName = 'isCorePaletteSupported';
+
   /// Returns the Android OS' dynamic colors asynchronously in a [CorePalette].
   ///
   /// Completes with null on pre-Android S and non-Android platforms.
@@ -28,6 +30,14 @@ class DynamicColorPlugin {
   static Future<CorePalette?> getCorePalette() async {
     final result = await channel.invokeMethod(methodName);
     return result == null ? null : CorePalette.fromList(result.toList());
+  }
+
+  /// Returns whether the Android OS' dynamic colors are supported asynchronously.
+  ///
+  /// Completes with false on pre-Android S and non-Android platforms.
+  static Future<bool> isCorePaletteSupported() async {
+    final result = await channel.invokeMethod(isCorePaletteSupportedMethodName);
+    return result ?? false;
   }
 
   /// Returns the OS' accent color asynchronously as a [Color].

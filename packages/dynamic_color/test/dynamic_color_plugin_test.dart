@@ -17,6 +17,27 @@ void main() {
     expect(colors, sampleFromListCorePalette);
   });
 
+  test('isCorePaletteSupported returns false', () async {
+    DynamicColorTestingUtils.setMockSupportFlag(isCorePaletteSupported: false);
+    final isCorePaletteSupported =
+        await DynamicColorPlugin.isCorePaletteSupported();
+    expect(isCorePaletteSupported, isFalse);
+  });
+
+  test('isCorePaletteSupported returns true', () async {
+    DynamicColorTestingUtils.setMockSupportFlag(isCorePaletteSupported: true);
+    final isCorePaletteSupported =
+        await DynamicColorPlugin.isCorePaletteSupported();
+    expect(isCorePaletteSupported, isTrue);
+  });
+
+  test('isCorePaletteSupported returns null', () async {
+    DynamicColorTestingUtils.setMockSupportFlag(isCorePaletteSupported: null);
+    final isCorePaletteSupported =
+        await DynamicColorPlugin.isCorePaletteSupported();
+    expect(isCorePaletteSupported, isFalse);
+  });
+
   test('getCorePalette returns null', () async {
     DynamicColorTestingUtils.setMockDynamicColors(
       corePalette: null,

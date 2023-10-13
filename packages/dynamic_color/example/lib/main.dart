@@ -1,3 +1,4 @@
+import 'package:dynamic_color_example/is_core_palette_supported_api_example.dart';
 import 'package:flutter/material.dart';
 
 import 'accent_color.dart';
@@ -60,6 +61,10 @@ class ExampleApp extends StatelessWidget {
                   title: AdvancedExample2.title,
                   widget: AdvancedExample2(),
                 ),
+                const _ExampleAppButton(
+                  title: IsCorePaletteSupportedApiExample.title,
+                  widget: IsCorePaletteSupportedApiExample(),
+                ),
               ],
             ),
           ),
@@ -93,10 +98,11 @@ class _ExampleAppButton extends StatelessWidget {
                 title: Text(title, style: const TextStyle(fontSize: 14)),
               ),
               body: Padding(
-                  padding: (title == CompleteExample.title)
-                      ? EdgeInsets.zero
-                      : contentPadding,
-                  child: widget),
+                padding: (title == CompleteExample.title)
+                    ? EdgeInsets.zero
+                    : contentPadding,
+                child: widget,
+              ),
             ),
           ),
         ),

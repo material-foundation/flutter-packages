@@ -43,4 +43,27 @@ class DynamicColorTestingUtils {
       );
     });
   }
+
+  /// Initializes the dynamic color plugin with mock values for testing.
+  @visibleForTesting
+  static void setMockSupportFlag({required bool? isCorePaletteSupported}) {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(DynamicColorPlugin.channel, (
+      MethodCall methodCall,
+    ) async {
+      if (methodCall.method ==
+          DynamicColorPlugin.isCorePaletteSupportedMethodName) {
+        return isCorePaletteSupported;
+      } else {
+        return null;
+      }
+    });
+    addTearDown(() {
+      TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+          .setMockMethodCallHandler(
+        DynamicColorPlugin.channel,
+        (MethodCall methodCall) => null,
+      );
+    });
+  }
 }
