@@ -1,3 +1,7 @@
+## Unreleased
+### Added
+- Added \[isCorePaletteSupported\] API.
+
 ## 1.6.7 - 2023-09-15
 ### Fixed
 - Upgraded dependencies
