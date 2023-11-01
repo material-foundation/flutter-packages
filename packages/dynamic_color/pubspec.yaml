@@ -18,14 +18,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_test:
-    sdk: flutter
   # Since this package is an SDK dependency, we need to support a range of versions.
   material_color_utilities: ">=0.2.0 < 1.0.0"
 
 dev_dependencies:
   cider: ">=0.1.3 <0.3.0"
   flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
   meta: ^1.3.0
 
 flutter:

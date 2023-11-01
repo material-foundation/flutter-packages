@@ -1,3 +1,7 @@
+## Unreleased
+### Changed
+- Move flutter_test to dev_dependencies
+
 ## 1.6.8 - 2023-10-17
 ### Changed
 - Broaden constraint for `material_color_utilities` to support it until its `1.0.0` release
