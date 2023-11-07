@@ -41,10 +41,9 @@ class AdaptiveColumn extends StatelessWidget {
     this.gutter,
     this.margin,
     required this.children,
-    Key? key,
+    super.key,
   })  : assert(margin == null || margin >= 0),
-        assert(gutter == null || gutter >= 0),
-        super(key: key);
+        assert(gutter == null || gutter >= 0);
 
   /// Empty space at the left and right of this widget.
   ///
