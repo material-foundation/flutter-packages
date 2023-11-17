@@ -105,6 +105,22 @@ void main() {
     expect(outputTextStyle.fontFamily, equals('Lato_regular'));
   });
 
+  testWidgets('Combining text styles maintains fontFamily and fallback order',
+      (tester) async {
+    const textStyle = TextStyle();
+    final outputTextStyle = GoogleFonts.lato(
+      textStyle: GoogleFonts.notoColorEmoji(
+        textStyle: textStyle,
+      ),
+    );
+
+    expect(outputTextStyle.fontFamily, 'Lato_regular');
+    expect(
+      outputTextStyle.fontFamilyFallback,
+      ['Lato', 'NotoColorEmoji_regular', 'NotoColorEmoji'],
+    );
+  });
+
   ///////////////////////////
   // TextStyle param tests //
   ///////////////////////////
