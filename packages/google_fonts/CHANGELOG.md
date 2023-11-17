@@ -1,3 +1,7 @@
+## 6.2.0 - 2023-11-17
+### Added
+- Add font fallback mechanism. This update allows for more robust handling of unavailable fonts, ensuring graceful degradation to alternative fonts.
+
 ## 6.1.0 - 2023-09-20
 ### Added
 - Add an example where one can select any available font
