@@ -116,9 +116,15 @@ TextStyle googleFontsTextStyle({
   pendingFontFutures.add(loadingFuture);
   loadingFuture.then((_) => pendingFontFutures.remove(loadingFuture));
 
+  final currentFontFamily = textStyle.fontFamily;
+
   return textStyle.copyWith(
     fontFamily: familyWithVariant.toString(),
-    fontFamilyFallback: [fontFamily],
+    fontFamilyFallback: [
+      fontFamily,
+      if (currentFontFamily != null) currentFontFamily,
+      ...?textStyle.fontFamilyFallback,
+    ],
   );
 }
 
