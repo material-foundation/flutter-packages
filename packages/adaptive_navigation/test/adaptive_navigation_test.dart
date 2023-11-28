@@ -22,6 +22,7 @@ void main() {
 
     await tester.pumpWidget(
       MaterialApp(
+        theme: ThemeData(useMaterial3: true),
         home: AdaptiveNavigationScaffold(
           selectedIndex: 0,
           destinations: allDestinations,

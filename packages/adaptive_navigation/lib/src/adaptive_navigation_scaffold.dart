@@ -28,7 +28,8 @@ enum NavigationType {
 /// Used to configure items or destinations in the various navigation
 /// mechanism. For [BottomNavigationBar], see [BottomNavigationBarItem]. For
 /// [NavigationRail], see [NavigationRailDestination]. For [Drawer], see
-/// [ListTile].
+/// [ListTile]. For [NavigationBar], see [NavigationDestination]. For
+/// [NavigationDrawer], see [NavigationDrawerDestination].
 class AdaptiveScaffoldDestination {
   final String title;
   final IconData icon;
@@ -39,12 +40,12 @@ class AdaptiveScaffoldDestination {
   });
 }
 
-/// A widget that adapts to the current display size, displaying a [Drawer],
-/// [NavigationRail], or [BottomNavigationBar]. Navigation destinations are
+/// A widget that adapts to the current display size, displaying a [Drawer]/[NavigationDrawer],
+/// [NavigationRail], or [BottomNavigationBar]/[NavigationBar]. Navigation destinations are
 /// defined in the [destinations] parameter.
 class AdaptiveNavigationScaffold extends StatelessWidget {
-  const AdaptiveNavigationScaffold({
-    Key? key,
+  AdaptiveNavigationScaffold({
+    super.key,
     this.appBar,
     required this.body,
     this.floatingActionButton,
@@ -72,7 +73,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     this.fabInRail = true,
     this.includeBaseDestinationsInMenu = true,
     this.bottomNavigationOverflow = 5,
-  }) : super(key: key);
+  });
 
   /// See [Scaffold.appBar].
   final PreferredSizeWidget? appBar;
@@ -177,6 +178,8 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   /// Maximum number of items to display in [bottomNavigationBar]
   final int bottomNavigationOverflow;
 
+  late bool useMaterial3;
+
   NavigationType _defaultNavigationTypeResolver(BuildContext context) {
     if (_isLargeScreen(context)) {
       return NavigationType.permanentDrawer;
@@ -187,24 +190,40 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     }
   }
 
-  Drawer _defaultDrawer(List<AdaptiveScaffoldDestination> destinations) {
-    return Drawer(
-      child: ListView(
-        children: [
-          if (drawerHeader != null) drawerHeader!,
-          for (int i = 0; i < destinations.length; i++)
-            ListTile(
-              leading: Icon(destinations[i].icon),
-              title: Text(destinations[i].title),
-              onTap: () {
-                onDestinationSelected?.call(i);
-              },
+  StatelessWidget _defaultDrawer(
+      List<AdaptiveScaffoldDestination> destinations) {
+    return useMaterial3
+        ? NavigationDrawer(
+            selectedIndex: selectedIndex,
+            onDestinationSelected: onDestinationSelected ?? (_) {},
+            children: [
+              if (drawerHeader != null) drawerHeader!,
+              for (final destination in destinations)
+                NavigationDrawerDestination(
+                  icon: Icon(destination.icon),
+                  label: Text(destination.title),
+                ),
+              // const Spacer(),
+              if (drawerFooter != null) drawerFooter!,
+            ],
+          )
+        : Drawer(
+            child: ListView(
+              children: [
+                if (drawerHeader != null) drawerHeader!,
+                for (int i = 0; i < destinations.length; i++)
+                  ListTile(
+                    leading: Icon(destinations[i].icon),
+                    title: Text(destinations[i].title),
+                    onTap: () {
+                      onDestinationSelected?.call(i);
+                    },
+                  ),
+                const Spacer(),
+                if (drawerFooter != null) drawerFooter!,
+              ],
             ),
-          const Spacer(),
-          if (drawerFooter != null) drawerFooter!,
-        ],
-      ),
-    );
+          );
   }
 
   Widget _buildBottomNavigationScaffold() {
@@ -223,18 +242,30 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
       drawer: drawerDestinations.isEmpty
           ? null
           : _defaultDrawer(drawerDestinations),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          for (final destination in bottomDestinations)
-            BottomNavigationBarItem(
-              icon: Icon(destination.icon),
-              label: destination.title,
+      bottomNavigationBar: useMaterial3
+          ? NavigationBar(
+              destinations: [
+                for (final destination in bottomDestinations)
+                  NavigationDestination(
+                    icon: Icon(destination.icon),
+                    label: destination.title,
+                  ),
+              ],
+              selectedIndex: selectedIndex,
+              onDestinationSelected: onDestinationSelected ?? (_) {},
+            )
+          : BottomNavigationBar(
+              items: [
+                for (final destination in bottomDestinations)
+                  BottomNavigationBarItem(
+                    icon: Icon(destination.icon),
+                    label: destination.title,
+                  ),
+              ],
+              currentIndex: selectedIndex,
+              onTap: onDestinationSelected ?? (_) {},
+              type: BottomNavigationBarType.fixed,
             ),
-        ],
-        currentIndex: selectedIndex,
-        onTap: onDestinationSelected ?? (_) {},
-        type: BottomNavigationBarType.fixed,
-      ),
       floatingActionButton: floatingActionButton,
     );
   }
@@ -269,10 +300,11 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
             selectedIndex: selectedIndex,
             onDestinationSelected: onDestinationSelected ?? (_) {},
           ),
-          const VerticalDivider(
-            width: 1,
-            thickness: 1,
-          ),
+          if (!useMaterial3)
+            const VerticalDivider(
+              width: 1,
+              thickness: 1,
+            ),
           Expanded(
             child: body,
           ),
@@ -302,22 +334,38 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
       key: key,
       body: body,
       appBar: appBar,
-      drawer: Drawer(
-        child: Column(
-          children: [
-            if (drawerHeader != null) drawerHeader!,
-            for (final destination in destinations)
-              ListTile(
-                leading: Icon(destination.icon),
-                title: Text(destination.title),
-                selected: destinations.indexOf(destination) == selectedIndex,
-                onTap: () => _destinationTapped(destination),
+      drawer: useMaterial3
+          ? NavigationDrawer(
+              selectedIndex: selectedIndex,
+              onDestinationSelected: onDestinationSelected ?? (_) {},
+              children: [
+                if (drawerHeader != null) drawerHeader!,
+                for (final destination in destinations)
+                  NavigationDrawerDestination(
+                    icon: Icon(destination.icon),
+                    label: Text(destination.title),
+                  ),
+                // const Spacer(),
+                if (drawerFooter != null) drawerFooter!,
+              ],
+            )
+          : Drawer(
+              child: Column(
+                children: [
+                  if (drawerHeader != null) drawerHeader!,
+                  for (final destination in destinations)
+                    ListTile(
+                      leading: Icon(destination.icon),
+                      title: Text(destination.title),
+                      selected:
+                          destinations.indexOf(destination) == selectedIndex,
+                      onTap: () => _destinationTapped(destination),
+                    ),
+                  const Spacer(),
+                  if (drawerFooter != null) drawerFooter!,
+                ],
               ),
-            const Spacer(),
-            if (drawerFooter != null) drawerFooter!,
-          ],
-        ),
-      ),
+            ),
       floatingActionButton: floatingActionButton,
       floatingActionButtonLocation: floatingActionButtonLocation,
       floatingActionButtonAnimator: floatingActionButtonAnimator,
@@ -340,26 +388,65 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   Widget _buildPermanentDrawerScaffold() {
     return Row(
       children: [
-        Drawer(
-          child: Column(
-            children: [
-              if (drawerHeader != null) drawerHeader!,
-              for (final destination in destinations)
-                ListTile(
-                  leading: Icon(destination.icon),
-                  title: Text(destination.title),
-                  selected: destinations.indexOf(destination) == selectedIndex,
-                  onTap: () => _destinationTapped(destination),
+        useMaterial3
+            ? Builder(builder: (BuildContext context) {
+                NavigationDrawer navigation = NavigationDrawer(
+                  selectedIndex: selectedIndex,
+                  onDestinationSelected: onDestinationSelected ?? (_) {},
+                  children: [
+                    if (drawerHeader != null) drawerHeader!,
+                    for (final destination in destinations)
+                      NavigationDrawerDestination(
+                        icon: Icon(destination.icon),
+                        label: Text(destination.title),
+                      ),
+                    // const Spacer(),
+                    if (drawerFooter != null) drawerFooter!,
+                  ],
+                );
+                Color backgroundColor = navigation.backgroundColor ??
+                    Theme.of(context).navigationDrawerTheme.backgroundColor ??
+                    Theme.of(context).colorScheme.surface;
+                Color shadowColor = navigation.shadowColor ??
+                    Theme.of(context).navigationDrawerTheme.shadowColor ??
+                    Theme.of(context).colorScheme.shadow;
+                Color surfaceTintColor = navigation.surfaceTintColor ??
+                    Theme.of(context).navigationDrawerTheme.surfaceTintColor ??
+                    Theme.of(context).colorScheme.surfaceTint;
+                double elevation = navigation.elevation ??
+                    Theme.of(context).navigationDrawerTheme.elevation ??
+                    1.0;
+                return Material(
+                  // shape: const StadiumBorder(side: BorderSide.none),
+                  elevation: elevation,
+                  color: backgroundColor,
+                  shadowColor: shadowColor,
+                  surfaceTintColor: surfaceTintColor,
+                  child: navigation,
+                );
+              })
+            : Drawer(
+                child: Column(
+                  children: [
+                    if (drawerHeader != null) drawerHeader!,
+                    for (final destination in destinations)
+                      ListTile(
+                        leading: Icon(destination.icon),
+                        title: Text(destination.title),
+                        selected:
+                            destinations.indexOf(destination) == selectedIndex,
+                        onTap: () => _destinationTapped(destination),
+                      ),
+                    const Spacer(),
+                    if (drawerFooter != null) drawerFooter!,
+                  ],
                 ),
-              const Spacer(),
-              if (drawerFooter != null) drawerFooter!,
-            ],
+              ),
+        if (!useMaterial3)
+          const VerticalDivider(
+            width: 1,
+            thickness: 1,
           ),
-        ),
-        const VerticalDivider(
-          width: 1,
-          thickness: 1,
-        ),
         Expanded(
           child: Scaffold(
             key: key,
@@ -392,6 +479,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     final NavigationTypeResolver navigationTypeResolver =
         this.navigationTypeResolver ?? _defaultNavigationTypeResolver;
     final navigationType = navigationTypeResolver(context);
+    useMaterial3 = Theme.of(context).useMaterial3;
     switch (navigationType) {
       case NavigationType.bottom:
         return _buildBottomNavigationScaffold();

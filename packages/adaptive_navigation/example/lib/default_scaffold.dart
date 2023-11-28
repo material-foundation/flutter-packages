@@ -16,11 +16,12 @@ class DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
   int _destinationCount = 5;
   bool _fabInRail = false;
   bool _includeBaseDestinationsInMenu = true;
+  int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return AdaptiveNavigationScaffold(
-      selectedIndex: 0,
+      selectedIndex: _selectedIndex,
       destinations: _allDestinations.sublist(0, _destinationCount),
       appBar: AdaptiveAppBar(title: const Text('Default Demo')),
       body: _body(),
@@ -30,6 +31,11 @@ class DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
       ),
       fabInRail: _fabInRail,
       includeBaseDestinationsInMenu: _includeBaseDestinationsInMenu,
+      onDestinationSelected: (int selected) {
+        setState(() {
+          _selectedIndex = selected;
+        });
+      },
     );
   }
 
