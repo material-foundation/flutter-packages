@@ -44,7 +44,7 @@ class AdaptiveScaffoldDestination {
 /// defined in the [destinations] parameter.
 class AdaptiveNavigationScaffold extends StatelessWidget {
   const AdaptiveNavigationScaffold({
-    Key? key,
+    super.key,
     this.appBar,
     required this.body,
     this.floatingActionButton,
@@ -72,7 +72,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     this.fabInRail = true,
     this.includeBaseDestinationsInMenu = true,
     this.bottomNavigationOverflow = 5,
-  }) : super(key: key);
+  });
 
   /// See [Scaffold.appBar].
   final PreferredSizeWidget? appBar;
