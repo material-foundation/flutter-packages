@@ -10,7 +10,7 @@ import 'package:flutter/services.dart';
 /// [AppBar].
 class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
   AdaptiveAppBar({
-    Key? key,
+    super.key,
     this.leading,
     this.automaticallyImplyLeading = true,
     this.title,
@@ -36,8 +36,7 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.systemOverlayStyle,
   })  : assert(elevation == null || elevation >= 0.0),
         preferredSize = Size.fromHeight(toolbarHeight ??
-            kToolbarHeight + (bottom?.preferredSize.height ?? 0.0)),
-        super(key: key);
+            kToolbarHeight + (bottom?.preferredSize.height ?? 0.0));
 
   final Widget? leading;
   final bool automaticallyImplyLeading;
