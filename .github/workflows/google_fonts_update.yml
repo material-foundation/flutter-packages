@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - name: Clone Flutter repository with beta channel
-        uses: subosito/flutter-action@cc97e1648fff6ca5cc647fa67f47e70f7895510b # v1.5.3
+        uses: subosito/flutter-action@2783a3f08e1baf891508463f8c6653c258246225 # v1.5.3
         with:
           channel: beta
           cache: true
@@ -35,7 +35,7 @@ jobs:
         working-directory: packages/google_fonts
 
       - name: Read families_diff file
-        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6.4.1
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         id: get_families_diff
         with:
           script: |
