@@ -1,4 +1,4 @@
-## 0.1.7 - 2023-12-06
+## 0.0.10 - 2023-12-06
 ### Changed
 - Use `InheritedModel` instead of `InheritedWidget`
 
