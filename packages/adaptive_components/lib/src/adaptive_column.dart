@@ -106,11 +106,10 @@ class AdaptiveColumn extends StatelessWidget {
                     int rowGutters = 0;
                     for (AdaptiveContainer rowItem in row) {
                       // Periodic width is the width of 1 column + 1 gutter.
-                      double periodicWidth =
-                          (MediaQuery.of(context).size.width -
-                                  effectiveMargin * 2 +
-                                  effectiveGutter) /
-                              entry.columns;
+                      double periodicWidth = (MediaQuery.sizeOf(context).width -
+                              effectiveMargin * 2 +
+                              effectiveGutter) /
+                          entry.columns;
 
                       // For a row item with a column span of k, its width is
                       // k * column + (k - 1) * gutter, which equals
