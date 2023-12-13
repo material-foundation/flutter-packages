@@ -1,6 +1,10 @@
 ## Unreleased
 ### Added
-- Added \[isCorePaletteSupported\] API.
+- Added check for dynamic color support in `getCorePalette`, returns `null` if not supported.
+
+## 1.6.8 - 2023-10-17
+### Changed
+- Broaden constraint for `material_color_utilities` to support it until its `1.0.0` release
 
 ## 1.6.7 - 2023-09-15
 ### Fixed

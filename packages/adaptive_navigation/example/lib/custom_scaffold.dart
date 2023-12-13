@@ -25,7 +25,7 @@ class CustomScaffoldDemoState extends State<CustomScaffoldDemo> {
         onPressed: () {},
       ),
       navigationTypeResolver: (context) {
-        if (MediaQuery.of(context).size.width > 600) {
+        if (MediaQuery.sizeOf(context).width > 600) {
           return NavigationType.drawer;
         } else {
           return NavigationType.bottom;

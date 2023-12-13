@@ -1,3 +1,7 @@
+## 0.1.7 - 2023-12-06
+### Changed
+- Use `InheritedModel` instead of `InheritedWidget`
+
 ## 0.1.6 - 2023-02-03
 ### Added
 - Added screenshots
