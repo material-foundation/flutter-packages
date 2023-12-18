@@ -1,7 +1,5 @@
 package io.material.plugins.dynamic_color
 
-import androidx.annotation.NonNull
-
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
@@ -10,6 +8,7 @@ import io.flutter.plugin.common.MethodChannel.Result
 import android.content.res.Resources
 import android.os.Build
 import androidx.annotation.RequiresApi
+import com.google.android.material.color.DynamicColors
 import io.flutter.embedding.engine.plugins.FlutterPlugin.FlutterPluginBinding
 
 class DynamicColorPlugin : FlutterPlugin, MethodCallHandler {
@@ -21,29 +20,28 @@ class DynamicColorPlugin : FlutterPlugin, MethodCallHandler {
 
   private lateinit var binding: FlutterPluginBinding
 
-  override fun onAttachedToEngine(
-    @NonNull flutterPluginBinding: FlutterPluginBinding
-  ) {
+  override fun onAttachedToEngine(flutterPluginBinding: FlutterPluginBinding) {
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "io.material.plugins/dynamic_color")
     channel.setMethodCallHandler(this)
     this.binding = flutterPluginBinding
   }
 
-  override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    if (call.method.equals("getCorePalette")) {
-      // Dynamic colors are only available on Android S and up.
-      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-        val resources: Resources = binding.applicationContext.resources
-        result.success(getCorePalette(resources))
-      } else {
-        result.success(null)
+  override fun onMethodCall(call: MethodCall, result: Result) {
+    when (call.method) {
+      "getCorePalette" -> {
+        if (DynamicColors.isDynamicColorAvailable()) {
+          val resources: Resources = binding.applicationContext.resources
+          result.success(getCorePalette(resources))
+        } else {
+          result.success(null)
+        }
       }
-    } else {
-      result.notImplemented()
+
+      else -> result.notImplemented()
     }
   }
 
-  override fun onDetachedFromEngine(@NonNull binding: FlutterPluginBinding) {
+  override fun onDetachedFromEngine(binding: FlutterPluginBinding) {
     channel.setMethodCallHandler(null)
   }
 

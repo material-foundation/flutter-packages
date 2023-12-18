@@ -21,7 +21,7 @@ Thank you for your interest in contributing! Your work can help many developers.
     cider log changed|added|fixed|removed 'Added a schmilblick'
     ```
 1.  Make sure all the existing tests are passing with `flutter test`.
-1.  Make sure the repo is formatted using `flutter format .`.
+1.  Make sure the repo is formatted using `dart format .`.
 1.  Commit the changes to your branch and push.
 
 That's it! Releasing is done by team members, see the [Releasing](#releasing) section below.
