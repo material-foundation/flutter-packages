@@ -1,3 +1,7 @@
+## Unreleased
+### Changed
+- Use Widget instead of Icon for navigation items
+
 ## 0.0.10 - 2023-12-06
 ### Changed
 - Use `InheritedModel` instead of `InheritedWidget` in example

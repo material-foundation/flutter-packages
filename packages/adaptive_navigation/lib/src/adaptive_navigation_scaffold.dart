@@ -31,7 +31,7 @@ enum NavigationType {
 /// [ListTile].
 class AdaptiveScaffoldDestination {
   final String title;
-  final IconData icon;
+  final Widget icon;
 
   const AdaptiveScaffoldDestination({
     required this.title,
@@ -194,7 +194,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
           if (drawerHeader != null) drawerHeader!,
           for (int i = 0; i < destinations.length; i++)
             ListTile(
-              leading: Icon(destinations[i].icon),
+              leading: destinations[i].icon,
               title: Text(destinations[i].title),
               onTap: () {
                 onDestinationSelected?.call(i);
@@ -227,7 +227,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
         items: [
           for (final destination in bottomDestinations)
             BottomNavigationBarItem(
-              icon: Icon(destination.icon),
+              icon: destination.icon,
               label: destination.title,
             ),
         ],
@@ -262,7 +262,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
             destinations: [
               for (final destination in railDestinations)
                 NavigationRailDestination(
-                  icon: Icon(destination.icon),
+                  icon: destination.icon,
                   label: Text(destination.title),
                 ),
             ],
@@ -308,7 +308,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
             if (drawerHeader != null) drawerHeader!,
             for (final destination in destinations)
               ListTile(
-                leading: Icon(destination.icon),
+                leading: destination.icon,
                 title: Text(destination.title),
                 selected: destinations.indexOf(destination) == selectedIndex,
                 onTap: () => _destinationTapped(destination),
@@ -346,7 +346,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
               if (drawerHeader != null) drawerHeader!,
               for (final destination in destinations)
                 ListTile(
-                  leading: Icon(destination.icon),
+                  leading: destination.icon,
                   title: Text(destination.title),
                   selected: destinations.indexOf(destination) == selectedIndex,
                   onTap: () => _destinationTapped(destination),

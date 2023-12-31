@@ -91,13 +91,13 @@ class DefaultScaffoldDemoState extends State<DefaultScaffoldDemo> {
 }
 
 const _allDestinations = [
-  AdaptiveScaffoldDestination(title: 'Alarm', icon: Icons.alarm),
-  AdaptiveScaffoldDestination(title: 'Book', icon: Icons.book),
-  AdaptiveScaffoldDestination(title: 'Cake', icon: Icons.cake),
-  AdaptiveScaffoldDestination(title: 'Directions', icon: Icons.directions),
-  AdaptiveScaffoldDestination(title: 'Email', icon: Icons.email),
-  AdaptiveScaffoldDestination(title: 'Favorite', icon: Icons.favorite),
-  AdaptiveScaffoldDestination(title: 'Group', icon: Icons.group),
-  AdaptiveScaffoldDestination(title: 'Headset', icon: Icons.headset),
-  AdaptiveScaffoldDestination(title: 'Info', icon: Icons.info),
+  AdaptiveScaffoldDestination(title: 'Alarm', icon: Icon(Icons.alarm)),
+  AdaptiveScaffoldDestination(title: 'Book', icon: Icon(Icons.book)),
+  AdaptiveScaffoldDestination(title: 'Cake', icon: Icon(Icons.cake)),
+  AdaptiveScaffoldDestination(title: 'Directions', icon: Icon(Icons.directions)),
+  AdaptiveScaffoldDestination(title: 'Email', icon: Icon(Icons.email)),
+  AdaptiveScaffoldDestination(title: 'Favorite', icon: Icon(Icons.favorite)),
+  AdaptiveScaffoldDestination(title: 'Group', icon: Icon(Icons.group)),
+  AdaptiveScaffoldDestination(title: 'Headset', icon: Icon(Icons.headset)),
+  AdaptiveScaffoldDestination(title: 'Info', icon: Icon(Icons.info)),
 ];
