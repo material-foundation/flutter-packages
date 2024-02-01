@@ -93,10 +93,10 @@ packages:
     dependency: "direct dev"
     description:
       name: cider
-      sha256: "918ded9f4473d8042247b9e66a90101eb5ff72935c31df5d511a55f14e085ef0"
+      sha256: "2d449e99f0c2db791bfcbf013a3c2f7c0ef48c0085d8340686ff25ce8b94fd9b"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.4"
+    version: "0.2.5"
   clock:
     dependency: transitive
     description:
@@ -636,10 +636,10 @@ packages:
     dependency: transitive
     description:
       name: version_manipulation
-      sha256: "2fcb0597589e894082ebde9140b5c018c0858215eef39539d87c200e3da82ec0"
+      sha256: e90782d610bde19765d2808ec06bc8ed9e04640a4dd07d1a3d370728ce9dae7f
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.1"
+    version: "0.2.0"
   vm_service:
     dependency: transitive
     description:
