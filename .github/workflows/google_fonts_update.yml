@@ -44,7 +44,7 @@ jobs:
           result-encoding: string
 
       - name: Cancel workflow if there is no diff
-        uses: andymckay/cancel-action@b9280e3f8986d7a8e91c7462efc0fa318010c8b1 # v0.3
+        uses: andymckay/cancel-action@271cfbfa11ca9222f7be99a47e8f929574549e0a # v0.4
         if: steps.get_families_diff.outputs.result == ''
 
       - name: If cancelling workflow, allow for enough time to do so
@@ -52,7 +52,7 @@ jobs:
         shell: bash
         if: steps.get_families_diff.outputs.result == ''
 
-      - uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5.0.2
+      - uses: peter-evans/create-pull-request@b1ddad2c994a25fbc81a28b3ec0e368bb2021c50 # v6.0.0
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
