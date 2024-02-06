@@ -10,16 +10,28 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
 
   # Maintain dependencies for pub
   - package-ecosystem: "pub"
     directory: "packages/google_fonts"
     schedule:
       interval: "monthly"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
   - package-ecosystem: "pub"
     directory: "packages/dynamic_color"
     schedule:
       interval: "monthly"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
   # Unmaintained / unreleased
   # - package-ecosystem: "pub"
   #   directory: "packages/symbols"
