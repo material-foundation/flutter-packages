@@ -11,7 +11,7 @@ updates:
     schedule:
       interval: "monthly"
     groups:
-      dependencies:
+      github-dependencies:
         patterns:
           - "*"
 
@@ -21,7 +21,7 @@ updates:
     schedule:
       interval: "monthly"
     groups:
-      dependencies:
+      pub-dependencies:
         patterns:
           - "*"
   - package-ecosystem: "pub"
@@ -29,7 +29,7 @@ updates:
     schedule:
       interval: "monthly"
     groups:
-      dependencies:
+      pub-dependencies:
         patterns:
           - "*"
   # Unmaintained / unreleased
