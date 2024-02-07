@@ -18,7 +18,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        package: [google_fonts, dynamic_color, adaptive_breakpoints, adaptive_navigation, adaptive_components, symbols]
+        package: [google_fonts, dynamic_color] # Unmaintained / unreleased: adaptive_breakpoints, adaptive_navigation, adaptive_components, symbols]
     steps:
       - name: Checkout code
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
