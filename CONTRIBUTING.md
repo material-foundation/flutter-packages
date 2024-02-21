@@ -1,7 +1,6 @@
 # Contributing
 
 [![Checks](https://github.com/material-foundation/flutter-packages/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/material-foundation/flutter-packages/actions/workflows/checks.yml)
-[![Release Status](https://github.com/material-foundation/flutter-packages/actions/workflows/publish.yml/badge.svg)](https://github.com/material-foundation/flutter-packages/actions/workflows/publish.yml)
 [![ossf scorecard](https://img.shields.io/ossf-scorecard/github.com/material-foundation/flutter-packages?label=openssf%20scorecard&style=flat)](https://api.securityscorecards.dev/projects/github.com/material-foundation/flutter-packages)
 
 Thank you for your interest in contributing! Your work can help many developers.
