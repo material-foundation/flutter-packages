@@ -29,10 +29,10 @@ packages:
     dependency: transitive
     description:
       name: change
-      sha256: "75b6e28073433946a987e6082d00f08676a8260a6aa68cac8594c10611e7e9b9"
+      sha256: c92878d5d4f4960bda62201b5cae63f5d0aaaefc0377e856251920418070b96f
       url: "https://pub.dev"
     source: hosted
-    version: "0.7.2"
+    version: "0.7.3"
   characters:
     dependency: transitive
     description:
@@ -103,10 +103,10 @@ packages:
     dependency: transitive
     description:
       name: intl
-      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
+      sha256: d6f56758b7d3014a48af9701c085700aac781a92a87a62b1333b46d8879661cf
       url: "https://pub.dev"
     source: hosted
-    version: "0.18.1"
+    version: "0.19.0"
   json_annotation:
     dependency: transitive
     description:
@@ -151,10 +151,10 @@ packages:
     dependency: transitive
     description:
       name: markdown
-      sha256: acf35edccc0463a9d7384e437c015a3535772e09714cf60e07eeef3a15870dcd
+      sha256: "1b134d9f8ff2da15cb298efe6cd8b7d2a78958c1b00384ebcbdf13fe340a6c90"
       url: "https://pub.dev"
     source: hosted
-    version: "7.1.1"
+    version: "7.2.1"
   marker:
     dependency: transitive
     description:
