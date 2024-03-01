@@ -1,19 +1,25 @@
 # See .github/workflow/label_pull_requests.yml
 
 'p: google_fonts':
-  - packages/google_fonts/**/*
+- changed-files:
+  - any-glob-to-any-file: packages/google_fonts/**
 
 'p: dynamic_color':
-  - packages/dynamic_color/**/*
+- changed-files:
+  - any-glob-to-any-file: packages/dynamic_color/**
 
 'p: adaptive_breakpoints':
-  - packages/adaptive_breakpoints/**/*
+- changed-files:
+  - any-glob-to-any-file: packages/adaptive_breakpoints/**
 
 'p: adaptive_navigation':
-  - packages/adaptive_navigation/**/*
+- changed-files:
+  - any-glob-to-any-file: packages/adaptive_navigation/**
 
 'p: adaptive_components':
-  - packages/adaptive_components/**/*
+- changed-files:
+  - any-glob-to-any-file: packages/adaptive_components/**
 
 'p: symbols':
-  - packages/symbols/**/*
+- changed-files:
+  - any-glob-to-any-file: packages/symbols/**
