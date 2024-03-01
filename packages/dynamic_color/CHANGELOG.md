@@ -1,3 +1,7 @@
+## 1.7.0 - 2024-03-01
+### Changed
+- Update `material_color_utilities` to `0.8.0`
+
 ## 1.6.9 - 2023-12-16
 ### Changed
 - Use `DynamicColors.isDynamicColorAvailable` from `com.google.android.material:material` to verify if dynamic colors are available on Android
