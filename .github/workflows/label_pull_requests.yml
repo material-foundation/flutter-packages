@@ -10,12 +10,10 @@ name: Label pull request
 on:
 - pull_request
 
-# Declare default permissions as read only.
-permissions: read-all
-
 jobs:
   label:
     permissions:
+      contents: read
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
