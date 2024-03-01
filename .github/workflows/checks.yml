@@ -17,6 +17,7 @@ jobs:
     name: ${{ matrix.package }} using Flutter ${{ matrix.flutter-channel }}
     runs-on: macos-latest
     strategy:
+      fail-fast: false
       matrix:
         package: [google_fonts, dynamic_color] # Unmaintained / unreleased: adaptive_breakpoints, adaptive_navigation, adaptive_components, symbols]
         flutter-channel: [stable, beta]
