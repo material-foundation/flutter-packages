@@ -28,7 +28,12 @@ jobs:
         working-directory: packages/google_fonts
 
       - run: dart pub global activate cider
+
       - run: dart generator/generator.dart
+        working-directory: packages/google_fonts
+
+      - run: cider version
+        id: new_version
         working-directory: packages/google_fonts
 
       - run: dart format
@@ -64,7 +69,7 @@ jobs:
           branch: create-pull-request/update
           delete-branch: true
           author: material-robot <featherless+materialrobot@google.com>
-          title: Update `google_fonts`s fonts
+          title: Update `google_fonts` to ${{ steps.new_version.outputs.result }}
           body: |
             # Summary
             ${{ steps.get_families_diff.outputs.result }}
