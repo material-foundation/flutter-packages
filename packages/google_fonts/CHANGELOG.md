@@ -1,3 +1,4 @@
+## 6.2.0 - 2024-03-01
 ## 6.1.0 - 2023-09-20
 ### Added
 - Add an example where one can select any available font
