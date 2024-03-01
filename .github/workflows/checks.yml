@@ -14,11 +14,12 @@ permissions:
 
 jobs:
   check_package:
-    name: packages/${{ matrix.package }}
+    name: ${{ matrix.package }} using Flutter ${{ matrix.flutter-channel }}
     runs-on: macos-latest
     strategy:
       matrix:
         package: [google_fonts, dynamic_color] # Unmaintained / unreleased: adaptive_breakpoints, adaptive_navigation, adaptive_components, symbols]
+        flutter-channel: [stable, beta]
     steps:
       - name: Checkout code
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
@@ -26,7 +27,7 @@ jobs:
       - name: Install Flutter
         uses: subosito/flutter-action@2783a3f08e1baf891508463f8c6653c258246225 # v2.12.0
         with:
-          channel: beta
+          channel: ${{ matrix.flutter-channel }}
           cache: true
           cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash:'
 
