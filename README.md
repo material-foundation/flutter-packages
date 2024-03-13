@@ -1,6 +1,6 @@
-# Material Flutter packages
+# Material Design pub packages
 
-This repo contains the source code for packages developed by the Material Flutter team.
+This repo contains the source code for packages originally developed by the Material Flutter team.
 
 
 | Package | Pub | Issues | Pull requests | Example |
@@ -22,7 +22,7 @@ If you wish to contribute a new package to the Flutter ecosystem, please
 see the documentation for [developing packages](https://docs.flutter.dev/development/packages-and-plugins/developing-packages).
 
 
-## Other Material packages
+## Other Material Design packages
 The following packages' source code exists in other repositories.
 | Package | Pub | Issues | Pull requests |
 |--------|-----|--------|---------------|
