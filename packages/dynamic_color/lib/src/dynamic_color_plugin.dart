@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:dynamic_color/src/colorscheme_from_list.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
 
@@ -28,6 +30,11 @@ class DynamicColorPlugin {
   static Future<CorePalette?> getCorePalette() async {
     final result = await channel.invokeMethod(methodName);
     return result == null ? null : CorePalette.fromList(result.toList());
+  }
+
+  static Future<List<ColorScheme>?> getColorScheme() async {
+    final result = await channel.invokeMethod('getColorScheme');
+    return result == null ? null : colorSchemeFromList(result.toList());
   }
 
   /// Returns the OS' accent color asynchronously as a [Color].

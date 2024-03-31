@@ -56,6 +56,26 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
   Future<void> initPlatformState() async {
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
+      List<ColorScheme>? schemes = await DynamicColorPlugin.getColorScheme();
+
+      // If the widget was removed from the tree while the asynchronous platform
+      // message was in flight, we want to discard the reply rather than calling
+      // setState to update our non-existent appearance.
+      if (!mounted) return;
+
+      if (schemes != null) {
+        debugPrint('dynamic_color: Core palette detected.');
+        setState(() {
+          _light = schemes[0];
+          _dark = schemes[1];
+        });
+        return;
+      }
+    } on PlatformException {
+      debugPrint('dynamic_color: Failed to obtain core palette.');
+    }
+
+    try {
       CorePalette? corePalette = await DynamicColorPlugin.getCorePalette();
 
       // If the widget was removed from the tree while the asynchronous platform
