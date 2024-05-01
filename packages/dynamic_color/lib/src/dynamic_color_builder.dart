@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
@@ -63,7 +64,9 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
       if (!mounted) return;
 
       if (corePalette != null) {
-        debugPrint('dynamic_color: Core palette detected.');
+        if (kDebugMode) {
+          debugPrint('dynamic_color: Core palette detected.');
+        }
         setState(() {
           _light = corePalette.toColorScheme();
           _dark = corePalette.toColorScheme(brightness: Brightness.dark);
@@ -71,7 +74,9 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
         return;
       }
     } on PlatformException {
-      debugPrint('dynamic_color: Failed to obtain core palette.');
+      if (kDebugMode) {
+        debugPrint('dynamic_color: Failed to obtain core palette.');
+      }
     }
 
     try {
@@ -81,7 +86,9 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
       if (!mounted) return;
 
       if (accentColor != null) {
-        debugPrint('dynamic_color: Accent color detected.');
+        if (kDebugMode) {
+          debugPrint('dynamic_color: Accent color detected.');
+        }
         setState(() {
           _light = ColorScheme.fromSeed(
             seedColor: accentColor,
@@ -95,10 +102,13 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
         return;
       }
     } on PlatformException {
-      debugPrint('dynamic_color: Failed to obtain accent color.');
+      if (kDebugMode) {
+        debugPrint('dynamic_color: Failed to obtain accent color.');
+      }
     }
-
-    debugPrint('dynamic_color: Dynamic color not detected on this device.');
+    if (kDebugMode) {
+      debugPrint('dynamic_color: Dynamic color not detected on this device.');
+    }
   }
 
   @override
