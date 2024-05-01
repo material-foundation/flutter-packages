@@ -10,7 +10,7 @@ void main() {
 }
 
 class AdaptiveColumnsExample extends StatelessWidget {
-  const AdaptiveColumnsExample({Key? key}) : super(key: key);
+  const AdaptiveColumnsExample({super.key});
 
   @override
   Widget build(BuildContext context) {
