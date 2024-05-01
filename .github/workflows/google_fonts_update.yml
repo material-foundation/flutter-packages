@@ -17,9 +17,9 @@ jobs:
       pull-requests: write
       actions: write # Required for the cancel action
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
       - name: Clone Flutter repository with beta channel
-        uses: subosito/flutter-action@2783a3f08e1baf891508463f8c6653c258246225 # v1.5.3
+        uses: subosito/flutter-action@44ac965b96f18d999802d4b807e3256d5a3f9fa1 # v1.5.3
         with:
           channel: beta
           cache: true
@@ -57,7 +57,7 @@ jobs:
         shell: bash
         if: steps.get_families_diff.outputs.result == ''
 
-      - uses: peter-evans/create-pull-request@a4f52f8033a6168103c2538976c07b467e8163bc # v6.0.1
+      - uses: peter-evans/create-pull-request@6d6857d36972b65feb161a90e484f2984215f83e # v6.0.5
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
