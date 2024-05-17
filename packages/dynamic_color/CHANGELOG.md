@@ -1,6 +1,7 @@
 ## Unreleased
 ### Changed
 - Update `compileSdkVersion` to `34`
+- Add new material colors
 
 ## 1.7.0 - 2024-03-01
 ### Changed
