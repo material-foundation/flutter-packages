@@ -1,6 +1,9 @@
 ## Unreleased
 ### Changed
+- Update `material_color_utilities` to `0.11.1`
+- Update other dependencies
 - Update `compileSdkVersion` to `34`
+- Fix lints
 
 ## 1.7.0 - 2024-03-01
 ### Changed
