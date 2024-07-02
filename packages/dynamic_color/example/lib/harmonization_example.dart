@@ -3,7 +3,7 @@ import 'package:dynamic_color_example/common.dart';
 import 'package:flutter/material.dart';
 
 class HarmonizationExample extends StatelessWidget {
-  const HarmonizationExample({Key? key}) : super(key: key);
+  const HarmonizationExample({super.key});
 
   static const title = 'Color harmonization';
 

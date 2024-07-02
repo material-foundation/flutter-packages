@@ -5,7 +5,7 @@ import 'package:material_color_utilities/material_color_utilities.dart';
 import 'common.dart';
 
 class AdvancedExample2 extends StatelessWidget {
-  const AdvancedExample2({Key? key}) : super(key: key);
+  const AdvancedExample2({super.key});
 
   static const title = 'DynamicColorPlugin.getCorePalette()';
 

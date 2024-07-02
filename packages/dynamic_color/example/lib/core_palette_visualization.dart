@@ -81,7 +81,7 @@ final sampleCorePalette = CorePalette.fromList([
 ]);
 
 class CorePaletteVisualization extends StatefulWidget {
-  const CorePaletteVisualization({Key? key}) : super(key: key);
+  const CorePaletteVisualization({super.key});
 
   static const title = 'CorePalette visualization';
 
@@ -135,7 +135,7 @@ class _CorePaletteVisualizationState extends State<CorePaletteVisualization> {
 }
 
 class _RenderCorePalette extends StatelessWidget {
-  const _RenderCorePalette(this.corePalette, {Key? key}) : super(key: key);
+  const _RenderCorePalette(this.corePalette);
 
   final CorePalette corePalette;
 

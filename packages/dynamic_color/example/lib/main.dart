@@ -13,7 +13,7 @@ void main() {
 }
 
 class ExampleApp extends StatelessWidget {
-  const ExampleApp({Key? key}) : super(key: key);
+  const ExampleApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -71,10 +71,9 @@ class ExampleApp extends StatelessWidget {
 
 class _ExampleAppButton extends StatelessWidget {
   const _ExampleAppButton({
-    Key? key,
     required this.title,
     required this.widget,
-  }) : super(key: key);
+  });
 
   final String title;
   final Widget widget;
