@@ -17,7 +17,7 @@ jobs:
       pull-requests: write
       actions: write # Required for the cancel action
     steps:
-      - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Clone Flutter repository with beta channel
         uses: subosito/flutter-action@44ac965b96f18d999802d4b807e3256d5a3f9fa1 # v1.5.3
         with:
@@ -49,7 +49,7 @@ jobs:
           result-encoding: string
 
       - name: Cancel workflow if there is no diff
-        uses: andymckay/cancel-action@271cfbfa11ca9222f7be99a47e8f929574549e0a # v0.4
+        uses: andymckay/cancel-action@a955d435292c0d409d104b57d8e78435a93a6ef1 # v0.5
         if: steps.get_families_diff.outputs.result == ''
 
       - name: If cancelling workflow, allow for enough time to do so
@@ -57,7 +57,7 @@ jobs:
         shell: bash
         if: steps.get_families_diff.outputs.result == ''
 
-      - uses: peter-evans/create-pull-request@6d6857d36972b65feb161a90e484f2984215f83e # v6.0.5
+      - uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6.1.0
         with:
           token: ${{ secrets.MATERIAL_ROBOT_TOKEN }}
           committer: material-robot <featherless+materialrobot@google.com>
