@@ -12,7 +12,7 @@ CustomColors lightCustomColors = const CustomColors(danger: Color(0xFFE53935));
 CustomColors darkCustomColors = const CustomColors(danger: Color(0xFFEF9A9A));
 
 class CompleteExample extends StatelessWidget {
-  const CompleteExample({Key? key}) : super(key: key);
+  const CompleteExample({super.key});
 
   static const title = 'Complete example';
 
@@ -99,7 +99,7 @@ class CustomColors extends ThemeExtension<CustomColors> {
 }
 
 class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({super.key});
 
   @override
   HomeState createState() => HomeState();

@@ -3,7 +3,7 @@ import 'package:dynamic_color_example/common.dart';
 import 'package:flutter/material.dart';
 
 class AccentColorExample extends StatelessWidget {
-  const AccentColorExample({Key? key}) : super(key: key);
+  const AccentColorExample({super.key});
 
   static const title = 'Accent color (desktop)';
 

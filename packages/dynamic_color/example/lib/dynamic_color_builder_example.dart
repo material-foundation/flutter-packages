@@ -3,7 +3,7 @@ import 'package:dynamic_color_example/common.dart';
 import 'package:flutter/material.dart';
 
 class AdvancedExample1 extends StatelessWidget {
-  const AdvancedExample1({Key? key}) : super(key: key);
+  const AdvancedExample1({super.key});
 
   static const title = 'DynamicColorBuilder';
 
