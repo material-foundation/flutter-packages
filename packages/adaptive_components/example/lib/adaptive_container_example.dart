@@ -10,7 +10,7 @@ void main() {
 }
 
 class AdaptiveContainerExample extends StatelessWidget {
-  const AdaptiveContainerExample({Key? key}) : super(key: key);
+  const AdaptiveContainerExample({super.key});
 
   @override
   Widget build(BuildContext context) {

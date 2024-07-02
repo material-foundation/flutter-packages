@@ -6,7 +6,7 @@ void main() {
 }
 
 class DefaultScaffoldDemo extends StatefulWidget {
-  const DefaultScaffoldDemo({Key? key}) : super(key: key);
+  const DefaultScaffoldDemo({super.key});
 
   @override
   DefaultScaffoldDemoState createState() => DefaultScaffoldDemoState();

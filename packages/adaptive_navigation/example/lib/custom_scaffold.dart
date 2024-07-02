@@ -2,7 +2,7 @@ import 'package:adaptive_navigation/adaptive_navigation.dart';
 import 'package:flutter/material.dart';
 
 class CustomScaffoldDemo extends StatefulWidget {
-  const CustomScaffoldDemo({Key? key}) : super(key: key);
+  const CustomScaffoldDemo({super.key});
 
   @override
   CustomScaffoldDemoState createState() => CustomScaffoldDemoState();

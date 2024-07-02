@@ -85,7 +85,7 @@ class AdaptiveContainer extends StatelessWidget {
   /// color. To supply a decoration with a color, use `decoration:
   /// BoxDecoration(color: color)`.
   AdaptiveContainer({
-    Key? key,
+    super.key,
     this.alignment,
     this.padding,
     this.color,
@@ -103,8 +103,7 @@ class AdaptiveContainer extends StatelessWidget {
         assert(
             color == null || decoration == null,
             'Cannot provide both a color and a decoration\n'
-            'To provide both, use "decoration: BoxDecoration(color: color)".'),
-        super(key: key);
+            'To provide both, use "decoration: BoxDecoration(color: color)".');
 
   /// The [child] contained by the container.
   ///
