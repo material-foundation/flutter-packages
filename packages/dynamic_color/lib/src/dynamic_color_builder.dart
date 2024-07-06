@@ -1,3 +1,4 @@
+import 'package:dynamic_color/src/color_schemes.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -56,7 +57,7 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
   Future<void> initPlatformState() async {
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      List<ColorScheme>? schemes = await DynamicColorPlugin.getColorScheme();
+      ColorSchemes? schemes = await DynamicColorPlugin.getColorSchemes();
 
       // If the widget was removed from the tree while the asynchronous platform
       // message was in flight, we want to discard the reply rather than calling
@@ -64,15 +65,15 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
       if (!mounted) return;
 
       if (schemes != null) {
-        debugPrint('dynamic_color: Core palette detected.');
+        debugPrint('dynamic_color: Color scheme detected.');
         setState(() {
-          _light = schemes[0];
-          _dark = schemes[1];
+          _light = schemes.light;
+          _dark = schemes.dark;
         });
         return;
       }
     } on PlatformException {
-      debugPrint('dynamic_color: Failed to obtain core palette.');
+      debugPrint('dynamic_color: Failed to obtain color scheme.');
     }
 
     try {
