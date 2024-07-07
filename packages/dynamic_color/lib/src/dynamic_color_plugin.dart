@@ -12,7 +12,9 @@ class DynamicColorPlugin {
   );
 
   /// A method name that the Kotlin plugin listens for.
-  static const methodName = 'getCorePalette';
+  static const corePaletteMethodName = 'getCorePalette';
+
+  static const colorSchemesMethodName = 'getColorSchemes';
 
   /// A method name that the macOS plugin listens for.
   static const accentColorMethodName = 'getAccentColor';
@@ -27,7 +29,7 @@ class DynamicColorPlugin {
   ///  * [DynamicColorBuilder] a convenience stateful builder widget that
   ///  provides the dynamic colors
   static Future<CorePalette?> getCorePalette() async {
-    final result = await channel.invokeMethod(methodName);
+    final result = await channel.invokeMethod(corePaletteMethodName);
     return result == null ? null : CorePalette.fromList(result.toList());
   }
 
@@ -40,7 +42,7 @@ class DynamicColorPlugin {
   ///  * [DynamicColorBuilder] a convenience stateful builder widget that
   ///  provides the dynamic colors
   static Future<ColorSchemes?> getColorSchemes() async {
-    final result = await channel.invokeMethod('getColorSchemes');
+    final result = await channel.invokeMethod(colorSchemesMethodName);
     return result == null ? null : ColorSchemes.fromList(result.toList());
   }
 
