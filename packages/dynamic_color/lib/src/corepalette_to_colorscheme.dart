@@ -45,15 +45,15 @@ extension CorePaletteToColorScheme on CorePalette {
       onError: Color(error.get(100)),
       errorContainer: Color(error.get(90)),
       onErrorContainer: Color(error.get(10)),
-      surface: Color(neutral.get(98)),
+      surface: _guessTone(neutral, 98),
       onSurface: Color(neutral.get(10)),
-      surfaceDim: Color(neutral.get(87)),
-      surfaceBright: Color(neutral.get(98)),
+      surfaceDim: _guessTone(neutral, 87),
+      surfaceBright: _guessTone(neutral, 98),
       onSurfaceVariant: Color(neutralVariant.get(30)),
       surfaceContainerLowest: Color(neutral.get(100)),
-      surfaceContainerLow: Color(neutral.get(96)),
-      surfaceContainer: Color(neutral.get(94)),
-      surfaceContainerHigh: Color(neutral.get(92)),
+      surfaceContainerLow: _guessTone(neutral, 96),
+      surfaceContainer: _guessTone(neutral, 94),
+      surfaceContainerHigh: _guessTone(neutral, 92),
       surfaceContainerHighest: Color(neutral.get(90)),
       inverseSurface: Color(neutral.get(20)),
       onInverseSurface: Color(neutral.get(95)),
@@ -94,16 +94,16 @@ extension CorePaletteToColorScheme on CorePalette {
       onError: Color(error.get(20)),
       errorContainer: Color(error.get(30)),
       onErrorContainer: Color(error.get(90)),
-      surface: Color(neutral.get(6)),
+      surface: _guessTone(neutral, 6),
       onSurface: Color(neutral.get(90)),
-      surfaceDim: Color(neutral.get(6)),
-      surfaceBright: Color(neutral.get(24)),
+      surfaceDim: _guessTone(neutral, 6),
+      surfaceBright: _guessTone(neutral, 24),
       onSurfaceVariant: Color(neutralVariant.get(80)),
-      surfaceContainerLowest: Color(neutral.get(4)),
+      surfaceContainerLowest: _guessTone(neutral, 4),
       surfaceContainerLow: Color(neutral.get(10)),
-      surfaceContainer: Color(neutral.get(12)),
-      surfaceContainerHigh: Color(neutral.get(17)),
-      surfaceContainerHighest: Color(neutral.get(22)),
+      surfaceContainer: _guessTone(neutral, 12),
+      surfaceContainerHigh: _guessTone(neutral, 17),
+      surfaceContainerHighest: _guessTone(neutral, 22),
       inverseSurface: Color(neutral.get(90)),
       onInverseSurface: Color(neutral.get(20)),
       inversePrimary: Color(primary.get(40)),
@@ -111,4 +111,32 @@ extension CorePaletteToColorScheme on CorePalette {
       outlineVariant: Color(neutralVariant.get(30)),
     );
   }
+}
+
+// This logic is taken from material_color_utilities 0.12 - https://github.com/material-foundation/material-color-utilities/blob/be615fc90286787bbe0c04ef58a6987e0e8fdc29/dart/lib/palettes/tonal_palette.dart#L93C5-L111.
+// Once flutter updates to the latest version, this workaround can be removed.
+Color _guessTone(TonalPalette palette, double tone) {
+  // Approximately deduces the original hue and chroma that generated this
+  // list of colors.
+  // Uses the hue and chroma of the provided color with the highest chroma.
+
+  var bestHue = 0.0, bestChroma = 0.0;
+  for (final argb in palette.asList) {
+    final hct = Hct.fromInt(argb);
+    if (hct.tone == tone) {
+      return Color(hct.toInt());
+    }
+
+    // If the color is too close to white, its chroma may have been
+    // affected by a known issue, so we ignore it.
+    // https://github.com/material-foundation/material-color-utilities/issues/140
+
+    if (hct.tone > 98.0) continue;
+
+    if (hct.chroma > bestChroma) {
+      bestHue = hct.hue;
+      bestChroma = hct.chroma;
+    }
+  }
+  return Color(Hct.from(bestHue, bestChroma, tone).toInt());
 }
