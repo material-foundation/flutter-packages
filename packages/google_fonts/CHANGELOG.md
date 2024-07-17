@@ -1,3 +1,7 @@
+## 6.2.1 - 2024-07-17
+### Fixed
+- Added missing import for `dart:ui` in `google_fonts_base.dart` to fix the `FontFeature` not found error.
+
 ## 6.2.1 - 2024-03-04
 ### Changed
 - Update lowest supported Flutter version to current stable (`3.19.2`)
