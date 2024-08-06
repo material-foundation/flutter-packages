@@ -161,7 +161,6 @@ class AdaptiveColumn extends StatelessWidget {
               /// that any remaining children in the last row are processed and added to the
               /// child list.
               for (AdaptiveContainer child in this.children) {
-                var lastChild = child == this.children.last;
                 if (child.constraints.withinAdaptiveConstraint(context)) {
                   int tempColumns = currentColumns + child.columnSpan;
                   if (tempColumns > entry.columns) {
