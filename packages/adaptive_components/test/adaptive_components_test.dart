@@ -79,4 +79,26 @@ void main() {
       expect(box.color, adaptiveContainerColor);
     },
   );
+
+  testWidgets(
+    'Adaptive Column test partial Entry.columns',
+    (WidgetTester tester) async {
+      tester.view.physicalSize = const Size(1024.5, 1279);
+      tester.view.devicePixelRatio = 1.0;
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: AdaptiveColumn(
+            children: [
+              AdaptiveContainer(columnSpan: 12,),
+              AdaptiveContainer(columnSpan: 6,),
+              AdaptiveContainer(columnSpan: 2,),
+            ],
+          ),
+        ),
+      );
+
+      expect(find.byType(AdaptiveContainer), findsNWidgets(3));
+    },
+  );
 }
