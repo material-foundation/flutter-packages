@@ -37,6 +37,15 @@ class DynamicColorPlugin : FlutterPlugin, MethodCallHandler {
         }
       }
 
+      "getColorSchemes" -> {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+          val resources: Resources = binding.applicationContext.resources
+          result.success(getColorScheme(resources))
+        } else {
+          result.success(null)
+        }
+      }
+
       else -> result.notImplemented()
     }
   }
@@ -119,5 +128,99 @@ class DynamicColorPlugin : FlutterPlugin, MethodCallHandler {
       resources.getColor(android.R.color.system_neutral2_10, null),
       resources.getColor(android.R.color.system_neutral2_0, null),
     );
+  }
+
+  @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
+  private fun getColorScheme(resources: Resources): IntArray {
+    return intArrayOf(
+      // light
+      resources.getColor(android.R.color.system_primary_light, null),
+      resources.getColor(android.R.color.system_on_primary_light, null),
+      resources.getColor(android.R.color.system_primary_container_light, null),
+      resources.getColor(android.R.color.system_on_primary_container_light, null),
+      resources.getColor(android.R.color.system_primary_fixed, null),
+      resources.getColor(android.R.color.system_primary_fixed_dim, null),
+      resources.getColor(android.R.color.system_on_primary_fixed, null),
+      resources.getColor(android.R.color.system_on_primary_fixed_variant, null),
+      resources.getColor(android.R.color.system_secondary_light, null),
+      resources.getColor(android.R.color.system_on_secondary_light, null),
+      resources.getColor(android.R.color.system_secondary_container_light, null),
+      resources.getColor(android.R.color.system_on_secondary_container_light, null),
+      resources.getColor(android.R.color.system_secondary_fixed, null),
+      resources.getColor(android.R.color.system_secondary_fixed_dim, null),
+      resources.getColor(android.R.color.system_on_secondary_fixed, null),
+      resources.getColor(android.R.color.system_on_secondary_fixed_variant, null),
+      resources.getColor(android.R.color.system_tertiary_light, null),
+      resources.getColor(android.R.color.system_on_tertiary_light, null),
+      resources.getColor(android.R.color.system_tertiary_container_light, null),
+      resources.getColor(android.R.color.system_on_tertiary_container_light, null),
+      resources.getColor(android.R.color.system_tertiary_fixed, null),
+      resources.getColor(android.R.color.system_tertiary_fixed_dim, null),
+      resources.getColor(android.R.color.system_on_tertiary_fixed, null),
+      resources.getColor(android.R.color.system_on_tertiary_fixed_variant, null),
+      resources.getColor(android.R.color.system_error_light, null),
+      resources.getColor(android.R.color.system_on_error_light, null),
+      resources.getColor(android.R.color.system_error_container_light, null),
+      resources.getColor(android.R.color.system_on_error_container_light, null),
+      resources.getColor(android.R.color.system_surface_light, null),
+      resources.getColor(android.R.color.system_on_surface_light, null),
+      resources.getColor(android.R.color.system_surface_dim_light, null),
+      resources.getColor(android.R.color.system_surface_bright_light, null),
+      resources.getColor(android.R.color.system_on_surface_variant_light, null),
+      resources.getColor(android.R.color.system_surface_container_lowest_light, null),
+      resources.getColor(android.R.color.system_surface_container_low_light, null),
+      resources.getColor(android.R.color.system_surface_container_light, null),
+      resources.getColor(android.R.color.system_surface_container_high_light, null),
+      resources.getColor(android.R.color.system_surface_container_highest_light, null),
+      resources.getColor(android.R.color.system_surface_dark, null),
+      resources.getColor(android.R.color.system_on_surface_dark, null),
+      resources.getColor(android.R.color.system_primary_dark, null),
+      resources.getColor(android.R.color.system_outline_light, null),
+      resources.getColor(android.R.color.system_outline_variant_light, null),
+      // dark
+      resources.getColor(android.R.color.system_primary_dark, null),
+      resources.getColor(android.R.color.system_on_primary_dark, null),
+      resources.getColor(android.R.color.system_primary_container_dark, null),
+      resources.getColor(android.R.color.system_on_primary_container_dark, null),
+      resources.getColor(android.R.color.system_primary_fixed, null),
+      resources.getColor(android.R.color.system_primary_fixed_dim, null),
+      resources.getColor(android.R.color.system_on_primary_fixed, null),
+      resources.getColor(android.R.color.system_on_primary_fixed_variant, null),
+      resources.getColor(android.R.color.system_secondary_dark, null),
+      resources.getColor(android.R.color.system_on_secondary_dark, null),
+      resources.getColor(android.R.color.system_secondary_container_dark, null),
+      resources.getColor(android.R.color.system_on_secondary_container_dark, null),
+      resources.getColor(android.R.color.system_secondary_fixed, null),
+      resources.getColor(android.R.color.system_secondary_fixed_dim, null),
+      resources.getColor(android.R.color.system_on_secondary_fixed, null),
+      resources.getColor(android.R.color.system_on_secondary_fixed_variant, null),
+      resources.getColor(android.R.color.system_tertiary_dark, null),
+      resources.getColor(android.R.color.system_on_tertiary_dark, null),
+      resources.getColor(android.R.color.system_tertiary_container_dark, null),
+      resources.getColor(android.R.color.system_on_tertiary_container_dark, null),
+      resources.getColor(android.R.color.system_tertiary_fixed, null),
+      resources.getColor(android.R.color.system_tertiary_fixed_dim, null),
+      resources.getColor(android.R.color.system_on_tertiary_fixed, null),
+      resources.getColor(android.R.color.system_on_tertiary_fixed_variant, null),
+      resources.getColor(android.R.color.system_error_dark, null),
+      resources.getColor(android.R.color.system_on_error_dark, null),
+      resources.getColor(android.R.color.system_error_container_dark, null),
+      resources.getColor(android.R.color.system_on_error_container_dark, null),
+      resources.getColor(android.R.color.system_surface_dark, null),
+      resources.getColor(android.R.color.system_on_surface_dark, null),
+      resources.getColor(android.R.color.system_surface_dim_dark, null),
+      resources.getColor(android.R.color.system_surface_bright_dark, null),
+      resources.getColor(android.R.color.system_on_surface_variant_dark, null),
+      resources.getColor(android.R.color.system_surface_container_lowest_dark, null),
+      resources.getColor(android.R.color.system_surface_container_low_dark, null),
+      resources.getColor(android.R.color.system_surface_container_dark, null),
+      resources.getColor(android.R.color.system_surface_container_high_dark, null),
+      resources.getColor(android.R.color.system_surface_container_highest_dark, null),
+      resources.getColor(android.R.color.system_surface_light, null),
+      resources.getColor(android.R.color.system_on_surface_light, null),
+      resources.getColor(android.R.color.system_primary_light, null),
+      resources.getColor(android.R.color.system_outline_dark, null),
+      resources.getColor(android.R.color.system_outline_variant_dark, null),
+    )
   }
 }

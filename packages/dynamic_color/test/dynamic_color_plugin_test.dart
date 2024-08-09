@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:dynamic_color/test_utils.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -23,6 +24,22 @@ void main() {
     );
     final colors = await DynamicColorPlugin.getCorePalette();
     expect(colors, equals(null));
+  });
+
+  test('getColorSchemes', () async {
+    DynamicColorTestingUtils.setMockDynamicColors(
+      colorSchemes: sampleColorSchemesList,
+    );
+    final colorSchemes = await DynamicColorPlugin.getColorSchemes();
+    expect(colorSchemes?.dark.primary, equals(const Color(0x00000055)));
+  });
+
+  test('getColorSchemes returns null', () async {
+    DynamicColorTestingUtils.setMockDynamicColors(
+      colorSchemes: null,
+    );
+    final colorSchemes = await DynamicColorPlugin.getColorSchemes();
+    expect(colorSchemes, equals(null));
   });
 
   test('getAccentColor', () async {

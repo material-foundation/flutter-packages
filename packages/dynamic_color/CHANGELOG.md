@@ -4,6 +4,7 @@
 - Update other dependencies
 - Update `compileSdkVersion` to `34`
 - Fix lints
+- Add new tone-based colors from Flutter 3.22
 
 ## 1.7.0 - 2024-03-01
 ### Changed

@@ -17,6 +17,7 @@ class DynamicColorTestingUtils {
   /// Initializes the dynamic color plugin with mock values for testing.
   @visibleForTesting
   static void setMockDynamicColors({
+    List<int>? colorSchemes,
     CorePalette? corePalette,
     Color? accentColor,
   }) {
@@ -24,10 +25,13 @@ class DynamicColorTestingUtils {
         .setMockMethodCallHandler(DynamicColorPlugin.channel, (
       MethodCall methodCall,
     ) async {
-      if (methodCall.method == DynamicColorPlugin.methodName) {
+      if (methodCall.method == DynamicColorPlugin.corePaletteMethodName) {
         return corePalette != null
             ? Int64List.fromList(corePalette.asList())
             : null;
+      } else if (methodCall.method ==
+          DynamicColorPlugin.colorSchemesMethodName) {
+        return colorSchemes != null ? Int64List.fromList(colorSchemes) : null;
       } else if (methodCall.method ==
           DynamicColorPlugin.accentColorMethodName) {
         return accentColor?.value;
@@ -44,3 +48,5 @@ class DynamicColorTestingUtils {
     });
   }
 }
+
+final List<int> sampleColorSchemesList = List.generate(86, (i) => i + 42);
