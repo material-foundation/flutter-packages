@@ -41,9 +41,23 @@ class AdaptiveColumn extends StatelessWidget {
     this.gutter,
     this.margin,
     required this.children,
+    this.rowMainAxisAlignment = MainAxisAlignment.start,
+    this.rowCrossAxisAlignment = CrossAxisAlignment.start,
+    this.adjustColumnSpan = false,
     super.key,
   })  : assert(margin == null || margin >= 0),
         assert(gutter == null || gutter >= 0);
+
+  /// MainAxisAlignment of the row
+  final MainAxisAlignment rowMainAxisAlignment;
+
+  /// CrossAxisAlignment of the row
+  final CrossAxisAlignment rowCrossAxisAlignment;
+
+  /// Automatically expand to fill the entire row
+  ///
+  /// If the row item column span is less than the break entry columns in the row.
+  final bool adjustColumnSpan;
 
   /// Empty space at the left and right of this widget.
   ///
@@ -86,14 +100,13 @@ class AdaptiveColumn extends StatelessWidget {
             runSpacing: 8.0,
             children: () {
               int currentColumns = 0;
-              int totalGutters = 0;
               List<Widget> children = [];
               final List<AdaptiveContainer> row = [];
 
               // Periodic width is the width of 1 column + 1 gutter.
               double periodicWidth = (constraints.maxWidth -
-                  effectiveMargin * 2 +
-                  effectiveGutter) /
+                      effectiveMargin * 2 +
+                      effectiveGutter) /
                   entry.columns;
 
               /// Handles the row by adding each row item to the child list.
@@ -108,18 +121,36 @@ class AdaptiveColumn extends StatelessWidget {
               /// After processing the row, it resets the total gutters and current columns
               /// and clears the row for the next iteration.
               addRowItemsToChildren() {
-                int rowGutters = 0;
-                for (AdaptiveContainer rowItem in row) {
+                var autoExpandSpan = 0;
+                if (adjustColumnSpan) {
+                  autoExpandSpan = ((entry.columns -
+                              row.fold(0, (a, b) => a + b.columnSpan)) /
+                          row.length)
+                      .round();
+                }
+                final realRow = row.map((AdaptiveContainer rowItem) {
                   // For a row item with a column span of k, its width is
                   // k * column + (k - 1) * gutter, which equals
                   // k * (column + gutter) - gutter, which is
                   // k * periodicWidth - gutter.
-                  double maxWidth = periodicWidth * rowItem.columnSpan -
+                  double maxWidth = periodicWidth *
+                          (rowItem.columnSpan + autoExpandSpan)
+                              .clamp(0, entry.columns) -
                       effectiveGutter;
 
-                  // Add the row item to the child list with the calculated constraints.
-                  children.add(
-                    ConstrainedBox(
+                  return Container(
+                    margin: EdgeInsets.only(
+                      left: rowMainAxisAlignment == MainAxisAlignment.end &&
+                              row.indexOf(rowItem) != 0
+                          ? effectiveGutter
+                          : 0.0,
+                      right: (rowMainAxisAlignment == MainAxisAlignment.start ||
+                                  rowMainAxisAlignment == MainAxisAlignment.center) &&
+                              row.lastIndexOf(rowItem) != row.length - 1
+                          ? effectiveGutter
+                          : 0.0,
+                    ),
+                    child: ConstrainedBox(
                       constraints: BoxConstraints(
                         minWidth: maxWidth,
                         maxWidth: maxWidth,
@@ -127,18 +158,17 @@ class AdaptiveColumn extends StatelessWidget {
                       child: rowItem,
                     ),
                   );
+                }).toList(growable: false);
 
-                  // If there are multiple gutters in the row, add gutter children to the
-                  // child list.
-                  if (rowGutters < totalGutters - 1) {
-                    // add gutter child
-                    children.add(SizedBox(width: effectiveGutter,));
-                    rowGutters++;
-                  }
-                }
+                children.add(Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: rowMainAxisAlignment,
+                  crossAxisAlignment: rowCrossAxisAlignment,
+                  children: realRow,
+                ));
+
                 // Reset the total gutters and current columns, and clear the row for the
                 // next iteration.
-                totalGutters = 0;
                 currentColumns = 0;
                 row.clear();
               }
@@ -168,7 +198,6 @@ class AdaptiveColumn extends StatelessWidget {
                     currentColumns = tempColumns;
                   }
                   row.add(child);
-                  totalGutters++;
                 }
               }
               // Process and add the last row's items to the child list.
