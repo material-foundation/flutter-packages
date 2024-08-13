@@ -125,12 +125,11 @@ class AdaptiveColumn extends StatelessWidget {
               /// After processing the row, it resets the total gutters and current columns
               /// and clears the row for the next iteration.
               addRowItemsToChildren() {
-                var autoExpandSpan = 0;
+                var autoExpandSpan = 0.0;
                 if (adjustColumnSpan) {
                   autoExpandSpan = ((entry.columns -
                               row.fold(0, (a, b) => a + b.columnSpan)) /
-                          row.length)
-                      .round();
+                          row.length);
                 }
                 final realRow = row.map((AdaptiveContainer rowItem) {
                   // For a row item with a column span of k, its width is
