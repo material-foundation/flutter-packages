@@ -44,6 +44,7 @@ class AdaptiveColumn extends StatelessWidget {
     this.rowMainAxisAlignment = MainAxisAlignment.start,
     this.rowCrossAxisAlignment = CrossAxisAlignment.start,
     this.adjustColumnSpan = false,
+    this.rowTextBaseline,
     super.key,
   })  : assert(margin == null || margin >= 0),
         assert(gutter == null || gutter >= 0);
@@ -81,6 +82,9 @@ class AdaptiveColumn extends StatelessWidget {
   ///
   /// By default it is set to 1.
   final List<AdaptiveContainer> children;
+
+  /// [Row.textBaseline] of the row.
+  final TextBaseline? rowTextBaseline;
 
   @override
   Widget build(BuildContext context) {
@@ -161,6 +165,7 @@ class AdaptiveColumn extends StatelessWidget {
                 }).toList(growable: false);
 
                 children.add(Row(
+                  textBaseline: rowTextBaseline,
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: rowMainAxisAlignment,
                   crossAxisAlignment: rowCrossAxisAlignment,
