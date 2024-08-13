@@ -1,3 +1,10 @@
+## Unreleased
+### Changed
+- `AdaptiveNavigationScaffold` Use `primary` variable instead of fixed value
+
+### Fixed
+- `AdaptiveColumn` Fix gutter and row items not showing in some case
+
 ## 0.0.10 - 2023-12-06
 ### Changed
 - Use `InheritedModel` instead of `InheritedWidget`
