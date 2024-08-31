@@ -214,9 +214,8 @@ Future<void> loadFontByteData(
   final fontData = await byteData;
   if (fontData == null) return;
 
-  final fontLoader = FontLoader(familyWithVariantString);
-  fontLoader.addFont(Future.value(fontData));
-  await fontLoader.load();
+  final fontLoader = GoogleFonts.config.fontLoader;
+  await fontLoader.loadFont(familyWithVariantString, Future.value(fontData));
 }
 
 /// Returns [GoogleFontsVariant] from [variantsToCompare] that most closely

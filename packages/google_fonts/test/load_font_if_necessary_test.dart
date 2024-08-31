@@ -39,6 +39,14 @@ class FakePathProviderPlatform extends Fake
   }
 }
 
+class MockFontLoader extends Mock implements GoogleFontsLoader {
+  @override
+  Future<void> loadFont(String? familyName, Future<ByteData>? bytes) {
+    super.noSuchMethod(Invocation.method(#loadFont, [familyName, bytes]));
+    return Future.value();
+  }
+}
+
 const _fakeResponse = 'fake response body - success';
 // The number of bytes in _fakeResponse.
 const _fakeResponseLengthInBytes = 28;
@@ -95,12 +103,15 @@ void overridePrint(Future<void> Function() testFn) => () {
 void main() {
   late Directory directory;
   late MockHttpClient mockHttpClient;
+  late MockFontLoader mockFontLoader;
 
   setUp(() async {
     mockHttpClient = MockHttpClient();
     httpClient = mockHttpClient;
     assetManifest = MockAssetManifest();
+    mockFontLoader = MockFontLoader();
     GoogleFonts.config.allowRuntimeFetching = true;
+    GoogleFonts.config.fontLoader = DefaultGoogleFontsLoader();
     when(mockHttpClient.gets(any)).thenAnswer((_) async {
       return http.Response(_fakeResponse, 200);
     });
@@ -353,6 +364,12 @@ void main() {
       directoryContents = await getApplicationSupportDirectory();
       expect(directoryContents.listSync().isEmpty, isTrue);
     });
+  });
+
+  test("loadFontIfNecessary uses specified font loader", () async {
+    GoogleFonts.config.fontLoader = mockFontLoader;
+    await loadFontIfNecessary(fakeDescriptor);
+    verify(mockFontLoader.loadFont(any, any)).called(1);
   });
 
   test("loadFontByteData doesn't fail", () {

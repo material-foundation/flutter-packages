@@ -9,6 +9,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 
 import 'src/google_fonts_base.dart';
+import 'src/google_fonts_loader.dart';
 import 'src/google_fonts_parts/part_a.dart';
 import 'src/google_fonts_parts/part_b.dart';
 import 'src/google_fonts_parts/part_c.dart';
@@ -36,12 +37,17 @@ import 'src/google_fonts_parts/part_x.dart';
 import 'src/google_fonts_parts/part_y.dart';
 import 'src/google_fonts_parts/part_z.dart';
 
+export 'src/google_fonts_loader.dart';
+
 /// A collection of properties used to specify custom behavior of the
 /// GoogleFonts library.
 class _Config {
   /// Whether or not the GoogleFonts library can make requests to
   /// [fonts.google.com](https://fonts.google.com/) to retrieve font files.
   var allowRuntimeFetching = true;
+
+  /// The instance used to load font data into the Flutter engine.
+  GoogleFontsLoader fontLoader = DefaultGoogleFontsLoader();
 }
 
 /// Provides configuration, and static methods to obtain [TextStyle]s and [TextTheme]s.

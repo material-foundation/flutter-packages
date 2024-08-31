@@ -128,6 +128,27 @@ For HTTP fetching to work, certain platforms require additional steps when runni
 
 Learn more at https://docs.flutter.dev/development/data-and-backend/networking#platform-notes.
 
+### Custom font loaders
+
+Once the data for a font is successfully retrieved, it must be loaded into the Flutter engine for use. The default font loader, `DefaultGoogleFontsLoader`, uses the flutter `FontLoader`. You may also provide a custom font loader by implementing the `GoogleFontsLoader` interface and passing it in the global config object. For example:
+
+```dart
+// Custom font loader that performs some logging and then defers to the default implementation.
+class MyFontLoader implements GoogleFontsLoader {
+  final _impl = DefaultGoogleFontsLoader();
+
+  @override
+  Future<void> loadFont(String familyName, Future<ByteData> bytes) async {
+    final data = await bytes;
+    log('Loaded font $familyName; size ${data.lengthInBytes}');
+    return _impl.loadFont(familyName, Future.value(data));
+  }
+}
+
+// Elsewhere:
+GoogleFonts.config.fontLoader = MyFontLoader();
+```
+
 ## Bundling fonts when releasing
 
 The `google_fonts` package will automatically use matching font files in your `pubspec.yaml`'s
