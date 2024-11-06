@@ -38,6 +38,20 @@ void main() {
     expect(container.color, const Color(0xff286c2a));
   });
 
+  testWidgets('DynamicColorBuilder is correct on Android with colorSchemes',
+      (WidgetTester tester) async {
+    DynamicColorTestingUtils.setMockDynamicColors(
+      colorSchemes: sampleColorSchemesList,
+      corePalette: SampleCorePalettes.green,
+    );
+
+    await tester.pumpWidget(dynamicColorBuilder());
+    await tester.pumpAndSettle();
+
+    final container = tester.firstWidget(find.byKey(containerKey)) as Container;
+    expect(container.color, const Color(0x0000002a));
+  });
+
   testWidgets('DynamicColorBuilder is correct on desktop',
       (WidgetTester tester) async {
     DynamicColorTestingUtils.setMockDynamicColors(

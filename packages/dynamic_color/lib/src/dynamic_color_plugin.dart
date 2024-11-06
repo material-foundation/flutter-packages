@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:dynamic_color/src/color_schemes.dart';
 import 'package:flutter/services.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
 
@@ -11,7 +12,9 @@ class DynamicColorPlugin {
   );
 
   /// A method name that the Kotlin plugin listens for.
-  static const methodName = 'getCorePalette';
+  static const corePaletteMethodName = 'getCorePalette';
+
+  static const colorSchemesMethodName = 'getColorSchemes';
 
   /// A method name that the macOS plugin listens for.
   static const accentColorMethodName = 'getAccentColor';
@@ -26,8 +29,21 @@ class DynamicColorPlugin {
   ///  * [DynamicColorBuilder] a convenience stateful builder widget that
   ///  provides the dynamic colors
   static Future<CorePalette?> getCorePalette() async {
-    final result = await channel.invokeMethod(methodName);
+    final result = await channel.invokeMethod(corePaletteMethodName);
     return result == null ? null : CorePalette.fromList(result.toList());
+  }
+
+  /// Returns the Android OS' dynamic colors asynchronously as a [ColorSchemes].
+  ///
+  /// Completes with null on pre-Android U and non-Android platforms.
+  ///
+  /// See also:
+  ///
+  ///  * [DynamicColorBuilder] a convenience stateful builder widget that
+  ///  provides the dynamic colors
+  static Future<ColorSchemes?> getColorSchemes() async {
+    final result = await channel.invokeMethod(colorSchemesMethodName);
+    return result == null ? null : ColorSchemes.fromList(result.toList());
   }
 
   /// Returns the OS' accent color asynchronously as a [Color].
