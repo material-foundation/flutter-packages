@@ -4,6 +4,7 @@
 - Update other dependencies
 - Update `compileSdkVersion` to `34`
 - Fix lints
+- Add Swift Package Manager compatibility [#633](https://github.com/material-foundation/flutter-packages/issues/633).
 
 ## 1.7.0 - 2024-03-01
 ### Changed
