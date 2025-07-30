@@ -2,8 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-// ignore: undefined_hidden_name
-import 'package:flutter/services.dart' hide AssetManifest;
+import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_fonts/src/google_fonts_base.dart';
@@ -22,6 +21,12 @@ class MockHttpClient extends Mock implements http.Client {
   }
 }
 
+class MockAssetManifest extends Mock implements AssetManifest {
+  @override
+  List<String> listAssets() {
+    return ['google_fonts/Foo-BlackItalic.ttf'];
+  }
+}
 class FakePathProviderPlatform extends Fake
     with MockPlatformInterfaceMixin
     implements PathProviderPlatform {
@@ -59,6 +64,7 @@ void main() {
   setUp(() async {
     mockHttpClient = MockHttpClient();
     httpClient = mockHttpClient;
+    assetManifest = MockAssetManifest();
     GoogleFonts.config.allowRuntimeFetching = true;
     when(mockHttpClient.gets(any)).thenAnswer((_) async {
       return http.Response(_fakeResponse, 200);
