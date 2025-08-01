@@ -1,3 +1,7 @@
+## 1.8.1 - 2025-08-01
+### Fixed
+- Revert moving flutter_test to dev_dependencies
+
 ## 1.8.0 - 2025-08-01
 ### Changed
 - Update `material_color_utilities` upper constraint to `0.13.0`

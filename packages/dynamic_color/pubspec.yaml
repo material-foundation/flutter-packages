@@ -1,6 +1,6 @@
 name: dynamic_color
 description: A Flutter package to create Material color schemes based on a platform's implementation of dynamic color.
-version: 1.8.0
+version: 1.8.1
 repository: https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color
 issue_tracker: https://github.com/material-foundation/flutter-packages/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+dynamic_color%22
 screenshots:
@@ -18,6 +18,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_test:
+    sdk: flutter
   # Since this package is an SDK dependency, we need to support a range of versions.
   # See https://github.com/flutter/flutter/blob/main/packages/flutter/pubspec.yaml for current version used by the SDK.
   material_color_utilities: ">=0.2.0 <= 0.13.0"
@@ -25,8 +27,6 @@ dependencies:
 dev_dependencies:
   cider: ">=0.1.3 <0.3.0"
   flutter_lints: ">=4.0.0 <6.0.0"
-  flutter_test:
-    sdk: flutter
   meta: ^1.3.0
 
 flutter:
