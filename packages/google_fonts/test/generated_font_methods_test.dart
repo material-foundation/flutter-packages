@@ -12,7 +12,10 @@ import 'package:mockito/mockito.dart';
 
 class MockHttpClient extends Mock implements http.Client {}
 
-class MockAssetManifest extends Mock implements AssetManifest {}
+class MockAssetManifest extends Mock implements AssetManifest {
+  @override
+  List<String> listAssets() => [];
+}
 
 void main() {
   setUpAll(() {
