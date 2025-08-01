@@ -31,7 +31,7 @@ class DynamicColorTestingUtils {
             : null;
       } else if (methodCall.method ==
           DynamicColorPlugin.accentColorMethodName) {
-        return accentColor?.value;
+        return accentColor?.toARGB32();
       } else {
         return null;
       }
