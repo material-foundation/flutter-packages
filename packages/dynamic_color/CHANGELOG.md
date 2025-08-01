@@ -1,4 +1,4 @@
-## Unreleased
+## 1.8.0 - 2025-08-01
 ### Changed
 - Update `material_color_utilities` upper constraint to `0.13.0`
 - Update other dependencies
