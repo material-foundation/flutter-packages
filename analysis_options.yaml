@@ -13,7 +13,6 @@ linter:
     close_sinks: true
     constant_identifier_names: true
     directives_ordering: true
-    package_api_docs: true
     prefer_single_quotes: true
     test_types_in_equals: true
     throw_in_finally: true
