@@ -1,6 +1,6 @@
 ## Unreleased
 ### Changed
-- Update `material_color_utilities` to `0.11.1`
+- Update `material_color_utilities` upper constraint to `0.13.0`
 - Update other dependencies
 - Update `compileSdkVersion` to `34`
 - Fix lints
