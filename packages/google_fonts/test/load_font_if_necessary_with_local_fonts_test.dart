@@ -27,6 +27,7 @@ class MockAssetManifest extends Mock implements AssetManifest {
     return ['google_fonts/Foo-BlackItalic.ttf'];
   }
 }
+
 class FakePathProviderPlatform extends Fake
     with MockPlatformInterfaceMixin
     implements PathProviderPlatform {
