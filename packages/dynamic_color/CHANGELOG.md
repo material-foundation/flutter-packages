@@ -5,6 +5,9 @@
 - Update `compileSdkVersion` to `34`
 - Fix lints
 
+### Fixed
+- Move flutter_test to dev_dependencies
+
 ## 1.7.0 - 2024-03-01
 ### Changed
 - Update `material_color_utilities` to `0.8.0`
