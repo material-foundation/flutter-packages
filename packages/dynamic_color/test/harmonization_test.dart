@@ -19,7 +19,7 @@ void main() {
     });
 
     test('blue (no opacity) with green, opacity is ignored', () {
-      Color colorA = Colors.blue.withOpacity(0);
+      Color colorA = Colors.blue.withValues(alpha: 0);
       Color colorB = Colors.green;
       Color harmonized = const Color(0xff009bd9); // Blue with a bit of green
       expect(colorA.harmonizeWith(colorB), harmonized);
@@ -27,7 +27,7 @@ void main() {
 
     test('blue with green (no opacity), opacity is ignored', () {
       Color colorA = Colors.blue;
-      Color colorB = Colors.green.withOpacity(0);
+      Color colorB = Colors.green.withValues(alpha: 0);
       Color harmonized = const Color(0xff009bd9); // Blue with a bit of green
       expect(colorA.harmonizeWith(colorB), harmonized);
     });
