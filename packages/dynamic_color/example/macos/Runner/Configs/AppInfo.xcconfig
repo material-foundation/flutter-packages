@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = example
+PRODUCT_NAME = dynamic_color_example
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = io.material.plugins.example
+PRODUCT_BUNDLE_IDENTIFIER = io.material.plugins.dynamicColorExample
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2022 io.material.plugins. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2025 io.material.plugins. All rights reserved.
