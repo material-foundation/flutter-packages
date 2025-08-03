@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import '../google_fonts.dart';
 import 'google_fonts_family_with_variant.dart';
 
 /// Describes a Google Fonts API font.
@@ -29,5 +30,5 @@ class GoogleFontsFile {
   final String expectedFileHash;
   final int expectedLength;
 
-  String get url => 'https://fonts.gstatic.com/s/a/$expectedFileHash.ttf';
+  String get url => '${GoogleFonts.config.baseUrl}/s/a/$expectedFileHash.ttf';
 }
