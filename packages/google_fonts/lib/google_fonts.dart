@@ -43,9 +43,9 @@ class _Config {
   /// [fonts.google.com](https://fonts.google.com/) to retrieve font files.
   var allowRuntimeFetching = true;
 
-  /// By default, the package will make requests to `https://fonts.gstatic.com/`
+  /// By default, the package will make requests to `https://fonts.gstatic.com`
   /// to retrieve files. Files should be retrieved at '$baseUrl/s/a/$expectedFileHash.ttf'.
-  var baseUrl = 'https://fonts.gstatic.com/';
+  var baseUrl = 'https://fonts.gstatic.com';
 }
 
 /// Provides configuration, and static methods to obtain [TextStyle]s and [TextTheme]s.
