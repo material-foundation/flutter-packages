@@ -1,7 +1,8 @@
-## 6.3.0 - 2025-08-01
-### Changed
-- Update AssetManifest to use the builtin Flutter API.
+## Unreleased
+### Added
+- add `baseUrl` config option
 
+## 6.3.0 - 2025-08-01
 ### Added
 - `Anton SC`
 - `Arsenal SC`
@@ -114,6 +115,9 @@
 - `Yarndings 20`
 - `Yarndings 20 Charted`
 - `Zain`
+
+### Changed
+- Update AssetManifest to use the builtin Flutter API.
 
 ## 6.2.1 - 2024-03-04
 ### Changed
