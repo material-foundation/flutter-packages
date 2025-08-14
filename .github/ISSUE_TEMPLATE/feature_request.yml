@@ -11,10 +11,6 @@ body:
         - All packages
         - google_fonts
         - dynamic_color
-        - adaptive_breakpoints
-        - adaptive_navigation
-        - adaptive_components
-        - symbols
     validations:
       required: true
   - type: textarea
