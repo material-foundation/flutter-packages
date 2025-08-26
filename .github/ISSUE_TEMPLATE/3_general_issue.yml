@@ -1,22 +1,7 @@
-name: Bug report
-description: File a bug report.
-labels: ["bug", "triage"]
+name: Report a general issue
+description: Report a bug or file a feature request.
+labels: ["triage"]
 body:
-  - type: dropdown
-    id: package
-    attributes:
-      label: Package
-      description: Which package does this concern?
-      options:
-        - All packages
-        - google_fonts
-        - dynamic_color
-        - adaptive_breakpoints
-        - adaptive_navigation
-        - adaptive_components
-        - symbols
-    validations:
-      required: true
   - type: checkboxes
     id: is-duplicate
     attributes:

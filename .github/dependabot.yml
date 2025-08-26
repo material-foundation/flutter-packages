@@ -32,20 +32,3 @@ updates:
       pub-dependencies:
         patterns:
           - "*"
-  # Unmaintained / unreleased
-  # - package-ecosystem: "pub"
-  #   directory: "packages/symbols"
-  #   schedule:
-  #     interval: "monthly"
-  # - package-ecosystem: "pub"
-  #   directory: "packages/adaptive_breakpoints"
-  #   schedule:
-  #     interval: "monthly"
-  # - package-ecosystem: "pub"
-  #   directory: "packages/adaptive_navigation"
-  #   schedule:
-  #     interval: "monthly"
-  # - package-ecosystem: "pub"
-  #   directory: "packages/adaptive_components"
-  #   schedule:
-  #     interval: "monthly"

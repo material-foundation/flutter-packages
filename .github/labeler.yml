@@ -7,19 +7,3 @@
 'p: dynamic_color':
 - changed-files:
   - any-glob-to-any-file: packages/dynamic_color/**
-
-'p: adaptive_breakpoints':
-- changed-files:
-  - any-glob-to-any-file: packages/adaptive_breakpoints/**
-
-'p: adaptive_navigation':
-- changed-files:
-  - any-glob-to-any-file: packages/adaptive_navigation/**
-
-'p: adaptive_components':
-- changed-files:
-  - any-glob-to-any-file: packages/adaptive_components/**
-
-'p: symbols':
-- changed-files:
-  - any-glob-to-any-file: packages/symbols/**
