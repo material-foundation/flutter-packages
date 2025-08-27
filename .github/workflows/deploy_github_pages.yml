@@ -27,7 +27,7 @@ jobs:
       - run: man ls
       - name: Find example apps
         id: find-example-apps
-        # Outputs a JSON list of packages with example apps, e.g. ["dynamic_color", "google_fonts"]
+        # Outputs a JSON list of packages with example apps, e.g. ["dynamic_color", ...]
         run: |
           echo "::set-output name=example-apps::$(ls -d */example | xargs dirname | jq -R -s -c 'split("\n")[:-1]')"
         working-directory: packages

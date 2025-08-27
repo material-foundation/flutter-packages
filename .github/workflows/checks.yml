@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        package: [google_fonts, dynamic_color]
+        package: [dynamic_color]
         flutter-channel: [stable, beta]
     steps:
       - name: Checkout code

@@ -2,9 +2,6 @@
 
 include: package:flutter_lints/flutter.yaml
 
-analyzer:
-  exclude: [packages/google_fonts/generator/fonts.pb.dart]
-
 linter:
   rules:
     avoid_print: false

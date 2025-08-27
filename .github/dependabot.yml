@@ -17,14 +17,6 @@ updates:
 
   # Maintain dependencies for pub
   - package-ecosystem: "pub"
-    directory: "packages/google_fonts"
-    schedule:
-      interval: "monthly"
-    groups:
-      pub-dependencies:
-        patterns:
-          - "*"
-  - package-ecosystem: "pub"
     directory: "packages/dynamic_color"
     schedule:
       interval: "monthly"

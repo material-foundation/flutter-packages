@@ -1,9 +1,5 @@
 # See .github/workflow/label_pull_requests.yml
 
-'p: google_fonts':
-- changed-files:
-  - any-glob-to-any-file: packages/google_fonts/**
-
 'p: dynamic_color':
 - changed-files:
   - any-glob-to-any-file: packages/dynamic_color/**
