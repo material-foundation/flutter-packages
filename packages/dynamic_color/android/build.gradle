@@ -27,7 +27,7 @@ apply plugin: 'kotlin-android'
 android {
     namespace 'io.material.plugins.dynamic_color'
 
-    compileSdkVersion 34
+    compileSdkVersion flutter.compileSdkVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

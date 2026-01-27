@@ -1,3 +1,7 @@
+## Unreleased
+### Changed
+- Update `compileSdkVersion` to `flutter.compileSdkVersion`
+
 ## 1.8.1 - 2025-08-01
 ### Fixed
 - Revert moving flutter_test to dev_dependencies
