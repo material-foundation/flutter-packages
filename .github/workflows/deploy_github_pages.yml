@@ -48,8 +48,11 @@ jobs:
           channel: 'stable'
 
       - name: Build Flutter web app
-        run: flutter build web -v --release --output /tmp/${{ matrix.package }} --base-href /${{ github.event.repository.name }}/${{ matrix.package }}/
+        run: flutter build web -v --release --output /tmp/${MATRIX_PACKAGE} --base-href /${GITHUB_EVENT_REPOSITORY_NAME}/${MATRIX_PACKAGE}/
         working-directory: packages/${{ matrix.package }}/example
+        env:
+          MATRIX_PACKAGE: ${{ matrix.package }}
+          GITHUB_EVENT_REPOSITORY_NAME: ${{ github.event.repository.name }}
 
       - name: Upload web build temporarily
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
