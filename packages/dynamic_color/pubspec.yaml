@@ -18,8 +18,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_test:
-    sdk: flutter
   # Since this package is an SDK dependency, we need to support a range of versions.
   # See https://github.com/flutter/flutter/blob/main/packages/flutter/pubspec.yaml for current version used by the SDK.
   material_color_utilities: ">=0.2.0 <= 0.13.0"
@@ -28,6 +26,8 @@ dev_dependencies:
   cider: ">=0.1.3 <0.3.0"
   flutter_lints: ">=4.0.0 <7.0.0"
   meta: ^1.3.0
+  dynamic_color_test:
+    path: ../dynamic_color_test
 
 flutter:
   plugin:
