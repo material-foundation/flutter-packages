@@ -1,13 +1,16 @@
-## NEXT
+## Unreleased
 ### Added
-- Add support for Android Gradle Plugin versions 9.0.0+
+- Add support for AGP 9
 
 ### Changed
-- Migrate to Kotlin DSL
+- Migrate to Kotlin DSL in Android
+- Update `compileSdk` to `flutter.compileSdkVersion`
+- Update `minSdk` to `24`
+- Update `targetSdk` to `flutter.targetSdkVersion`
 
 ## 1.8.1 - 2025-08-01
 ### Fixed
-- Revert moving flutter_test to dev_dependencies
+- Revert moving flutter\_test to dev\_dependencies
 
 ## 1.8.0 - 2025-08-01
 ### Changed
@@ -15,10 +18,10 @@
 - Update other dependencies
 - Update `compileSdkVersion` to `34`
 - Fix lints
-- Add Swift Package Manager compatibility [#633](https://github.com/material-foundation/flutter-packages/issues/633).
+- Add Swift Package Manager compatibility [\#633](https://github.com/material-foundation/flutter-packages/issues/633).
 
 ### Fixed
-- Move flutter_test to dev_dependencies
+- Move flutter\_test to dev\_dependencies
 
 ## 1.7.0 - 2024-03-01
 ### Changed
