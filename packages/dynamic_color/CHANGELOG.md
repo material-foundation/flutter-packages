@@ -1,3 +1,10 @@
+## NEXT
+### Added
+- Add support for Android Gradle Plugin versions 9.0.0+
+
+### Changed
+- Migrate to Kotlin DSL
+
 ## 1.8.1 - 2025-08-01
 ### Fixed
 - Revert moving flutter_test to dev_dependencies
