@@ -6,8 +6,7 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:dynamic_color/dynamic_color.dart';
-import 'package:dynamic_color/samples.dart';
-import 'package:dynamic_color/test_utils.dart';
+import 'package:dynamic_color_testing/dynamic_color_testing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

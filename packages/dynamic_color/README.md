@@ -77,9 +77,14 @@ flutter run
 
 ## Testing
 
+For ease of testing, a separate package provides test utilities to mock dynamic colors. This allows you to test your app's behavior with different dynamic colors without having to change the device's wallpaper or accent color.
+
+```sh
+flutter pub add --dev dynamic_color_testing
+```
+
 ```dart
-import 'package:dynamic_color/test_utils.dart';
-import 'package:dynamic_color/samples.dart';
+import 'package:dynamic_color_testing/dynamic_color_testing.dart';
 
 void main() {
   // Reset for every test
@@ -92,7 +97,8 @@ void main() {
     );
 
     // ...
-});
+  });
+}
 ```
 
 See [example/test/widget_test.dart](https://github.com/material-foundation/flutter-packages/blob/main/packages/dynamic_color/example/test/widget_test.dart) for an example.
