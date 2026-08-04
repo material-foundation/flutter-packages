@@ -1,3 +1,14 @@
+## Unreleased
+### Added
+- Add support for AGP 9
+
+### Changed
+- Migrate to Kotlin DSL in Android
+- Update `compileSdk` to `flutter.compileSdkVersion`
+- Update `minSdk` to `24`
+- Update `targetSdk` to `flutter.targetSdkVersion`
+- Break out test utils from dynamic_color package into a separate package, `dynamic_color_testing`
+
 ## 1.8.1 - 2025-08-01
 ### Fixed
 - Revert moving flutter_test to dev_dependencies

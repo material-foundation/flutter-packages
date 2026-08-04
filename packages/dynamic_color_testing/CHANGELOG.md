@@ -1,3 +1,3 @@
 ## 0.1.0
 
-* Separate test utils from dynamic_colors package
+* Break out test utils from dynamic_color package
