@@ -10,7 +10,7 @@
 
 ## 1.8.1 - 2025-08-01
 ### Fixed
-- Revert moving flutter\_test to dev\_dependencies
+- Revert moving flutter_test to dev_dependencies
 
 ## 1.8.0 - 2025-08-01
 ### Changed
@@ -21,7 +21,7 @@
 - Add Swift Package Manager compatibility [\#633](https://github.com/material-foundation/flutter-packages/issues/633).
 
 ### Fixed
-- Move flutter\_test to dev\_dependencies
+- Move flutter_test to dev_dependencies
 
 ## 1.7.0 - 2024-03-01
 ### Changed
