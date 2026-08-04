@@ -1,4 +1,4 @@
-## Unreleased
+## 1.9.0 - 2025-08-04
 ### Added
 - Add support for AGP 9
 

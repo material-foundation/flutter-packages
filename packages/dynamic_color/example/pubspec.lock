@@ -55,7 +55,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "1.8.1"
+    version: "1.9.0"
   dynamic_color_testing:
     dependency: "direct dev"
     description:
