@@ -1,4 +1,7 @@
 ## 1.9.0 - 2025-08-04
+### Fixed
+- Populate the missing `ColorScheme` surface roles so dynamic color schemes render correctly ([#574](https://github.com/material-foundation/flutter-packages/issues/574), [#582](https://github.com/material-foundation/flutter-packages/issues/582), [#649](https://github.com/material-foundation/flutter-packages/issues/649)
+
 ### Added
 - Add support for AGP 9
 

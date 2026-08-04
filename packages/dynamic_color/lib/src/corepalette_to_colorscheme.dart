@@ -16,7 +16,12 @@ extension CorePaletteToColorScheme on CorePalette {
         scheme = Scheme.darkFromCorePalette(this);
         break;
     }
-    return ColorScheme(
+    final colorScheme = ColorScheme.fromSeed(
+      seedColor: Color(scheme.primary),
+      brightness: brightness,
+    );
+
+    return colorScheme.copyWith(
       primary: Color(scheme.primary),
       onPrimary: Color(scheme.onPrimary),
       primaryContainer: Color(scheme.primaryContainer),
@@ -37,14 +42,14 @@ extension CorePaletteToColorScheme on CorePalette {
       outlineVariant: Color(scheme.outlineVariant),
       surface: Color(scheme.surface),
       onSurface: Color(scheme.onSurface),
-      surfaceContainerHighest: Color(scheme.surfaceVariant),
+      surfaceVariant: Color(scheme.surfaceVariant),
       onSurfaceVariant: Color(scheme.onSurfaceVariant),
       inverseSurface: Color(scheme.inverseSurface),
       onInverseSurface: Color(scheme.inverseOnSurface),
       inversePrimary: Color(scheme.inversePrimary),
       shadow: Color(scheme.shadow),
+      surfaceTint: Color(scheme.primary),
       scrim: Color(scheme.scrim),
-      brightness: brightness,
     );
   }
 }
