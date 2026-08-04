@@ -6,6 +6,7 @@ This repo contains the source code for packages originally developed by the Mate
 | Package | Pub | Issues | Pull requests | Example |
 |--------|-----|--------|---------------|---|
 | [dynamic\_color](./packages/dynamic_color/) | [![pub package](https://img.shields.io/pub/v/dynamic_color.svg)](https://pub.dev/packages/dynamic_color) | [![GitHub issues by-label](https://img.shields.io/github/issues/material-foundation/flutter-packages/p:%20dynamic_color?label=)](https://github.com/material-foundation/flutter-packages/labels/p%3A%20dynamic_color) | [![GitHub pull requests by-label](https://img.shields.io/github/issues-pr/material-foundation/flutter-packages/p:%20dynamic_color?label=)](https://github.com/material-foundation/flutter-packages/pulls?q=is%3Aopen+is%3Apr+label%3A%22p%3A+dynamic_color%22) | [Example](https://material-foundation.github.io/flutter-packages/dynamic_color) |
+| [dynamic\_color\_testing](./packages/dynamic_color_testing/) | [![pub package](https://img.shields.io/pub/v/dynamic_color_testing.svg)](https://pub.dev/packages/dynamic_color_testing) |  |  |  |
 
 
 ## Issues
