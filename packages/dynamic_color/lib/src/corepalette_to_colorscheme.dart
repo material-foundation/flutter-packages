@@ -1,6 +1,3 @@
-// TODO(guidezpl): remove ignore after migration to new color roles
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
 
