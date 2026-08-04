@@ -21,6 +21,9 @@ please review our [contribution guide](https://github.com/material-foundation/fl
 If you wish to contribute a new package to the Flutter ecosystem, please
 see the documentation for [developing packages](https://docs.flutter.dev/development/packages-and-plugins/developing-packages).
 
+### Publishing
+
+`dart pub publish` from the root directory of a package, for admins of the publisher [material.io](https://pub.dev/publishers/material.io).
 
 ## Other Material Design packages
 The following packages' source code exists in other repositories.
