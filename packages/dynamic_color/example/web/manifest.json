@@ -1,6 +1,6 @@
 {
-    "name": "example",
-    "short_name": "example",
+    "name": "dynamic_color_example",
+    "short_name": "dynamic_color_example",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
