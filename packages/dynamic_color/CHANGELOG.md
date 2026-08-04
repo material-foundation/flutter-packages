@@ -20,7 +20,7 @@
 - Update other dependencies
 - Update `compileSdkVersion` to `34`
 - Fix lints
-- Add Swift Package Manager compatibility [#633](https://github.com/material-foundation/flutter-packages/issues/633).
+- Add Swift Package Manager compatibility [\#633](https://github.com/material-foundation/flutter-packages/issues/633).
 
 ### Fixed
 - Move flutter_test to dev_dependencies
