@@ -1,6 +1,3 @@
-// TODO(guidezpl): remove ignore after migration to new color roles
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
 
@@ -38,11 +35,9 @@ extension CorePaletteToColorScheme on CorePalette {
       onErrorContainer: Color(scheme.onErrorContainer),
       outline: Color(scheme.outline),
       outlineVariant: Color(scheme.outlineVariant),
-      background: Color(scheme.background),
-      onBackground: Color(scheme.onBackground),
       surface: Color(scheme.surface),
       onSurface: Color(scheme.onSurface),
-      surfaceVariant: Color(scheme.surfaceVariant),
+      surfaceContainerHighest: Color(scheme.surfaceVariant),
       onSurfaceVariant: Color(scheme.onSurfaceVariant),
       inverseSurface: Color(scheme.inverseSurface),
       onInverseSurface: Color(scheme.inverseOnSurface),

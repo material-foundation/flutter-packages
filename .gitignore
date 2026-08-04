@@ -25,6 +25,8 @@
 **/doc/api/
 .dart_tool/
 .flutter-plugins
+.build/
+.swiftpm/
 .flutter-plugins-dependencies
 example/.flutter-plugins-dependencies
 .packages
