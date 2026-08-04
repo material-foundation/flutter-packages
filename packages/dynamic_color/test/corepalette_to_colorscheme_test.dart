@@ -10,11 +10,16 @@ void main() {
     test('fills the new surface roles for light schemes', () {
       final corePalette = CorePalette.of(sourceColor.value);
       final colorScheme = corePalette.toColorScheme();
+      final scheme = Scheme.lightFromCorePalette(corePalette);
       final seedScheme = ColorScheme.fromSeed(
-        seedColor: Color(Scheme.lightFromCorePalette(corePalette).primary),
+        seedColor: Color(scheme.primary),
       );
 
-      expect(colorScheme.surface, seedScheme.surface);
+      // Keep legacy dynamic-color roles sourced from MCU's Scheme.
+      expect(colorScheme.surface, Color(scheme.surface));
+      expect(colorScheme.surfaceTint, Color(scheme.primary));
+
+      // New Material surface roles should be populated from seeded values.
       expect(colorScheme.surfaceDim, seedScheme.surfaceDim);
       expect(colorScheme.surfaceBright, seedScheme.surfaceBright);
       expect(
@@ -28,7 +33,6 @@ void main() {
         colorScheme.surfaceContainerHighest,
         seedScheme.surfaceContainerHighest,
       );
-      expect(colorScheme.surfaceTint, seedScheme.surfaceTint);
     });
 
     test('fills the new surface roles for dark schemes', () {
@@ -36,12 +40,17 @@ void main() {
       final colorScheme = corePalette.toColorScheme(
         brightness: Brightness.dark,
       );
+      final scheme = Scheme.darkFromCorePalette(corePalette);
       final seedScheme = ColorScheme.fromSeed(
-        seedColor: Color(Scheme.darkFromCorePalette(corePalette).primary),
+        seedColor: Color(scheme.primary),
         brightness: Brightness.dark,
       );
 
-      expect(colorScheme.surface, seedScheme.surface);
+      // Keep legacy dynamic-color roles sourced from MCU's Scheme.
+      expect(colorScheme.surface, Color(scheme.surface));
+      expect(colorScheme.surfaceTint, Color(scheme.primary));
+
+      // New Material surface roles should be populated from seeded values.
       expect(colorScheme.surfaceDim, seedScheme.surfaceDim);
       expect(colorScheme.surfaceBright, seedScheme.surfaceBright);
       expect(
@@ -55,7 +64,6 @@ void main() {
         colorScheme.surfaceContainerHighest,
         seedScheme.surfaceContainerHighest,
       );
-      expect(colorScheme.surfaceTint, seedScheme.surfaceTint);
     });
   });
 }
