@@ -8,6 +8,7 @@
 - Update `minSdk` to `24`
 - Update `targetSdk` to `flutter.targetSdkVersion`
 - Break out test utils from dynamic_color package into a separate package, `dynamic_color_testing`
+- Update testing docs and examples to use `package:dynamic_color_testing/dynamic_color_testing.dart`
 
 ## 1.8.1 - 2025-08-01
 ### Fixed
