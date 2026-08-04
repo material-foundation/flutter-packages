@@ -56,10 +56,10 @@ packages:
       relative: true
     source: path
     version: "1.8.1"
-  dynamic_color_test:
+  dynamic_color_testing:
     dependency: "direct dev"
     description:
-      path: "../../dynamic_color_test"
+      path: "../../dynamic_color_testing"
       relative: true
     source: path
     version: "0.1.0"

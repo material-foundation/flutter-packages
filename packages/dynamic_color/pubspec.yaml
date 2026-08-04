@@ -26,8 +26,10 @@ dev_dependencies:
   cider: ">=0.1.3 <0.3.0"
   flutter_lints: ">=4.0.0 <7.0.0"
   meta: ^1.3.0
-  dynamic_color_test:
-    path: ../dynamic_color_test
+  dynamic_color_testing:
+    path: ../dynamic_color_testing
+  flutter_test:
+    sdk: flutter
 
 flutter:
   plugin:

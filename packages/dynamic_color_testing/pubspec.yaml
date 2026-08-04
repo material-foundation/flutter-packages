@@ -1,4 +1,4 @@
-name: dynamic_color_test
+name: dynamic_color_testing
 description: "A Flutter package to support testing dynamic_color package."
 version: 0.1.0
 publish_to: 'none'

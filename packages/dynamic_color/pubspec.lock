@@ -73,10 +73,10 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.19.1"
-  dynamic_color_test:
+  dynamic_color_testing:
     dependency: "direct dev"
     description:
-      path: "../dynamic_color_test"
+      path: "../dynamic_color_testing"
       relative: true
     source: path
     version: "0.1.0"
@@ -102,7 +102,7 @@ packages:
     source: hosted
     version: "6.0.0"
   flutter_test:
-    dependency: transitive
+    dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
