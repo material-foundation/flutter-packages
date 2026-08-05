@@ -16,6 +16,14 @@ extension CorePaletteToColorScheme on CorePalette {
         scheme = Scheme.darkFromCorePalette(this);
         break;
     }
+
+    // Start from seeded values to populate newer ColorScheme roles introduced
+    // after the legacy Scheme API was defined (for example, surfaceContainer*).
+    // We then override roles that must stay aligned with the OS-provided dynamic
+    // palette values from [scheme]. Returning fromSeed directly would drift these
+    // roles away from Android's dynamic color output.
+    // TODO(#680): Migrate this conversion to MCU DynamicScheme/CorePalettes so
+    // all roles can be resolved from one canonical dynamic-color path.
     final colorScheme = ColorScheme.fromSeed(
       seedColor: Color(scheme.primary),
       brightness: brightness,
