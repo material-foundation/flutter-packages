@@ -10,6 +10,9 @@ name: Label pull request
 on:
 - pull_request_target
 
+permissions:
+  contents: read
+
 jobs:
   label:
     permissions:
