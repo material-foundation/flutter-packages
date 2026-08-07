@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:dynamic_color/src/corepalette_to_colorscheme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -14,10 +16,13 @@ void main() {
       final lightScheme = Scheme.lightFromCorePalette(corePalette);
       expect(lightColorScheme.primary, Color(lightScheme.primary));
       expect(lightColorScheme.onPrimary, Color(lightScheme.onPrimary));
-      expect(lightColorScheme.primaryContainer, Color(lightScheme.primaryContainer));
-      expect(lightColorScheme.onPrimaryContainer, Color(lightScheme.onPrimaryContainer));
+      expect(lightColorScheme.primaryContainer,
+          Color(lightScheme.primaryContainer));
+      expect(lightColorScheme.onPrimaryContainer,
+          Color(lightScheme.onPrimaryContainer));
       expect(lightColorScheme.surface, Color(lightScheme.surface));
-      expect(lightColorScheme.surfaceVariant, Color(lightScheme.surfaceVariant));
+      expect(
+          lightColorScheme.surfaceVariant, Color(lightScheme.surfaceVariant));
       expect(lightColorScheme.surfaceTint, Color(lightScheme.primary));
 
       final darkColorScheme = corePalette.toColorScheme(
@@ -26,8 +31,10 @@ void main() {
       final darkScheme = Scheme.darkFromCorePalette(corePalette);
       expect(darkColorScheme.primary, Color(darkScheme.primary));
       expect(darkColorScheme.onPrimary, Color(darkScheme.onPrimary));
-      expect(darkColorScheme.primaryContainer, Color(darkScheme.primaryContainer));
-      expect(darkColorScheme.onPrimaryContainer, Color(darkScheme.onPrimaryContainer));
+      expect(
+          darkColorScheme.primaryContainer, Color(darkScheme.primaryContainer));
+      expect(darkColorScheme.onPrimaryContainer,
+          Color(darkScheme.onPrimaryContainer));
       expect(darkColorScheme.surface, Color(darkScheme.surface));
       expect(darkColorScheme.surfaceVariant, Color(darkScheme.surfaceVariant));
       expect(darkColorScheme.surfaceTint, Color(darkScheme.primary));

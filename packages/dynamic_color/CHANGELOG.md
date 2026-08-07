@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+
+- Read GNOME's Linux accent-color setting before falling back to the GTK theme
+  color ([#658](https://github.com/material-foundation/flutter-packages/issues/658))
+
 - Populate the missing `ColorScheme` surface roles so dynamic color schemes render correctly ([#574](https://github.com/material-foundation/flutter-packages/issues/574), [#582](https://github.com/material-foundation/flutter-packages/issues/582), [#649](https://github.com/material-foundation/flutter-packages/issues/649))
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),

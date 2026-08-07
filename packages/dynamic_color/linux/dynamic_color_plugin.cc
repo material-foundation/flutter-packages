@@ -1,6 +1,8 @@
 #include "include/dynamic_color/dynamic_color_plugin.h"
+#include "dynamic_color_plugin_color.h"
 
 #include <flutter_linux/flutter_linux.h>
+#include <gio/gio.h>
 #include <gtk/gtk.h>
 #include <math.h>
 
@@ -15,10 +17,38 @@ struct _DynamicColorPlugin {
 
 G_DEFINE_TYPE(DynamicColorPlugin, dynamic_color_plugin, g_object_get_type())
 
+static gboolean get_gnome_accent_color(GdkRGBA* color) {
+  GSettingsSchemaSource* source = g_settings_schema_source_get_default();
+  if (source == nullptr) {
+    return FALSE;
+  }
+
+  g_autoptr(GSettingsSchema) schema = g_settings_schema_source_lookup(
+      source, "org.gnome.desktop.interface", TRUE);
+  if (schema == nullptr ||
+      !g_settings_schema_has_key(schema, "accent-color")) {
+    return FALSE;
+  }
+
+  g_autoptr(GSettings) settings = g_settings_new_full(schema, nullptr, nullptr);
+  g_autofree gchar* accent = g_settings_get_string(settings, "accent-color");
+
+  return dynamic_color_plugin_get_gnome_accent_color(accent, color);
+}
+
 static int get_accent_color(GtkWidget* widget) {
   GdkRGBA color;
+  if (get_gnome_accent_color(&color)) {
+    return lround(color.alpha * 255) << 24 | lround(color.red * 255) << 16 |
+           lround(color.green * 255) << 8 | lround(color.blue * 255);
+  }
+
+  color = GdkRGBA{};
   GtkStyleContext* context = gtk_widget_get_style_context(widget);
-  gtk_style_context_lookup_color(context, "theme_selected_bg_color", &color);
+  if (!gtk_style_context_lookup_color(context, "theme_selected_bg_color",
+                                      &color)) {
+    return 0;
+  }
   return lround(color.alpha * 255) << 24 | lround(color.red * 255) << 16 |
          lround(color.green * 255) << 8 | lround(color.blue * 255);
 }
