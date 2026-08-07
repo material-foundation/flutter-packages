@@ -7,7 +7,6 @@ on:
       - main
     paths:
       - 'packages/**'
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -23,7 +22,7 @@ jobs:
     outputs:
       example-apps: ${{ steps.find-example-apps.outputs.example-apps }}
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@v4
       - name: Find example apps
         id: find-example-apps
         # Outputs a JSON list of packages with example apps, e.g. ["dynamic_color", ...]
@@ -42,23 +41,20 @@ jobs:
       matrix:
         package: ${{ fromJson(needs.find-example-apps.outputs.example-apps) }}
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-      - uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2.23.0
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
 
       - name: Build Flutter web app
-        run: flutter build web -v --release --output /tmp/${MATRIX_PACKAGE} --base-href /${GITHUB_EVENT_REPOSITORY_NAME}/${MATRIX_PACKAGE}/
+        run: flutter build web -v --release --base-href /${{ github.event.repository.name }}/${{ matrix.package }}/
         working-directory: packages/${{ matrix.package }}/example
-        env:
-          MATRIX_PACKAGE: ${{ matrix.package }}
-          GITHUB_EVENT_REPOSITORY_NAME: ${{ github.event.repository.name }}
 
       - name: Upload web build temporarily
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.package }}
-          path: /tmp/${{ matrix.package }}
+          path: packages/${{ matrix.package }}/example/build/web
           retention-days: 1
 
   # Upload pages artifact to pages job
@@ -67,27 +63,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download all web builds
-        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        uses: actions/download-artifact@v4
         with:
-          path: artifacts
-          merge-multiple: false
+          path: site
 
-      - name: Assemble Pages directory structure
-        run: |
-          mkdir -p site
-          for artifact_path in artifacts/*; do
-            if [ -d "$artifact_path" ]; then
-              package_name="$(basename "$artifact_path")"
-              mkdir -p "site/$package_name"
-              cp -R "$artifact_path"/. "site/$package_name"/
-            elif [ -f "$artifact_path" ]; then
-              # If it is a standalone file like favicon.png, copy it to the site root
-              cp "$artifact_path" site/
-            fi
-          done
+      - name: Disable Jekyll
+        run: touch site/.nojekyll
 
       - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        uses: actions/upload-pages-artifact@v3
         with:
           path: 'site'
 
@@ -103,8 +87,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Setup Pages
-        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
-
+        uses: actions/configure-pages@v5
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+        uses: actions/deploy-pages@v4
