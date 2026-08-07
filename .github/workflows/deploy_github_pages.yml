@@ -75,10 +75,15 @@ jobs:
       - name: Assemble Pages directory structure
         run: |
           mkdir -p site
-          for artifact_dir in artifacts/*; do
-            package_name="$(basename "$artifact_dir")"
-            mkdir -p "site/$package_name"
-            cp -R "$artifact_dir"/. "site/$package_name"/
+          for artifact_path in artifacts/*; do
+            if [ -d "$artifact_path" ]; then
+              package_name="$(basename "$artifact_path")"
+              mkdir -p "site/$package_name"
+              cp -R "$artifact_path"/. "site/$package_name"/
+            elif [ -f "$artifact_path" ]; then
+              # If it is a standalone file like favicon.png, copy it to the site root
+              cp "$artifact_path" site/
+            fi
           done
 
       - name: Upload pages artifact
