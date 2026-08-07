@@ -40,6 +40,9 @@ void main() {
     DynamicColorTestingUtils.setMockDynamicColors(
       accentColor: Colors.green,
     );
+    final expectedColor = ColorScheme.fromSeed(
+      seedColor: Colors.green,
+    ).primary;
 
     await tester.pumpWidget(
       DynamicColorBuilder(
@@ -52,7 +55,7 @@ void main() {
     await tester.pumpAndSettle();
 
     final container = tester.widget<Container>(find.byKey(key));
-    expect(container.color, const Color(0xff006e1c));
+    expect(container.color, expectedColor);
   });
 
   testWidgets('Verify fallback color is used', (WidgetTester tester) async {
