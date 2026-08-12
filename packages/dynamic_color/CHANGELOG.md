@@ -5,6 +5,12 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Fixed
+
+- Apply Kotlin Android plugin conditionally for AGP 8.x compatibility ([\#695](https://github.com/material-foundation/flutter-packages/issues/695))
+
 ## 1.9.0 - 2025-08-07
 
 ### Fixed
