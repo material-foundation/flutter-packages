@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Apply Kotlin Android plugin conditionally for AGP 8.x compatibility ([\#695](https://github.com/material-foundation/flutter-packages/issues/695))
+- Apply Kotlin Android plugin conditionally for AGP version before 9 compatibility ([\#695](https://github.com/material-foundation/flutter-packages/issues/695))
 
 ## 1.9.0 - 2025-08-07
 
