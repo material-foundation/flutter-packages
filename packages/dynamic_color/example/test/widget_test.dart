@@ -19,21 +19,22 @@ void main() {
   testWidgets('Verify dynamic core palette is used ',
       (WidgetTester tester) async {
     DynamicColorTestingUtils.setMockDynamicColors(
-      corePalette: SampleCorePalettes.green,
-    );
+        // ignore: deprecated_member_use
+        corePalette: SampleCorePalettes.green,
+        tonalPalettes: SampleTonalPalettes.green);
 
     await tester.pumpWidget(
       DynamicColorBuilder(
-        builder: (lightDynamic, darkDynamic) => Container(
+        customBuilder: (schemes) => Container(
           key: key,
-          color: lightDynamic?.primary ?? Colors.red,
+          color: schemes?.light.primary ?? Colors.red,
         ),
       ),
     );
     await tester.pumpAndSettle();
 
     final container = tester.widget<Container>(find.byKey(key));
-    expect(container.color, const Color(0xff286c2a));
+    expect(container.color, const Color(0xff3c6939));
   });
   testWidgets('Verify dynamic accent color is used ',
       (WidgetTester tester) async {
@@ -61,12 +62,10 @@ void main() {
   testWidgets('Verify fallback color is used', (WidgetTester tester) async {
     await tester.pumpWidget(
       DynamicColorBuilder(
-        builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
-          return Container(
-            key: key,
-            color: lightDynamic?.primary ?? Colors.red,
-          );
-        },
+        customBuilder: (schemes) => Container(
+          key: key,
+          color: schemes?.light.primary ?? Colors.red,
+        ),
       ),
     );
     await tester.pumpAndSettle();
