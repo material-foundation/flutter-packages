@@ -1,6 +1,6 @@
 name: dynamic_color_testing
 description: "A Flutter package to support testing dynamic_color package."
-version: 0.1.0
+version: 1.0.0
 repository: https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color_testing
 issue_tracker: https://github.com/material-foundation/flutter-packages/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+dynamic_color%22
 
@@ -13,8 +13,10 @@ dependencies:
     sdk: flutter
   flutter_test:
     sdk: flutter
-  dynamic_color: ^1.8.1
+  # To avoid circular dependancy on the next `dynamic_color` major version bump.
+  dynamic_color: ">=2.0.0 <4.0.0"
   material_color_utilities: ^0.13.0
+  material_ui: ^1.0.0
 
 
 dev_dependencies:
