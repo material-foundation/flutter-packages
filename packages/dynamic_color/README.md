@@ -6,7 +6,7 @@ A Flutter package to create Material color schemes based on a platform's impleme
 
 - Android S+: user [wallpaper color](https://m3.material.io/styles/color/dynamic-color/user-generated-color#35bc06c5-35d9-4559-9f5d-07ea734cbcb1)
     - For color schemes from [content color](https://m3.material.io/styles/color/dynamic-color/user-generated-color#8af550b9-a19e-4e9f-bb0a-7f611fed5d0f), use [`ColorScheme.fromImageProvider`](https://pub.dev/documentation/material_ui/latest/material_ui/ColorScheme/fromImageProvider.html)
-- Linux: GTK+ theme's `@theme_selected_bg_color`
+- Linux: [XDG Desktop Portal Settings] or GTK+ theme's `@theme_selected_bg_color`
 - macOS: [app accent color](https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/#app-accent-colors)
 - Windows: [accent color](https://docs.microsoft.com/en-us/windows/apps/design/style/color#accent-color) or [window/glass color](https://web.archive.org/web/20080812195923/http://www.microsoft.com/windows/windows-vista/features/aero.aspx?tabid=2&catid=4)
 
@@ -119,3 +119,4 @@ flutter build web
 [harmonization.dart]: https://github.com/material-foundation/flutter-packages/blob/main/packages/dynamic_color/lib/src/harmonization.dart
 [example app]: https://material-foundation.github.io/flutter-packages/dynamic_color
 [accent color example]: https://github.com/material-foundation/flutter-packages/blob/main/packages/dynamic_color/example/lib/accent_color.dart
+[XDG Desktop Portal Settings]: https://flatpak.github.io/xdg-desktop-portal/docs/doc-org.freedesktop.portal.Settings.html
