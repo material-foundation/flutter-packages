@@ -29,22 +29,24 @@ class CompleteExample extends StatelessWidget {
     return DynamicColorBuilder(
       customBuilder: (schemes) {
         ColorScheme? light;
-        ColorScheme? lightMedium;
+        // Not yet available
+        // ColorScheme? lightMedium;
         ColorScheme? lightHigh;
 
         ColorScheme? dark;
-        ColorScheme? darkMedium;
+        // Not yet available
+        // ColorScheme? darkMedium;
         ColorScheme? darkHigh;
 
         if (schemes != null) {
           // On Android S+ devices and other platforms, use the provided dynamic
           // color scheme.
           light = _processColorScheme(schemes.light);
-          lightMedium = _processColorScheme(schemes.lightMediumContrast);
+          // lightMedium = _processColorScheme(schemes.lightMediumContrast);
           lightHigh = _processColorScheme(schemes.lightHighContrast);
 
           dark = _processColorScheme(schemes.dark);
-          darkMedium = _processColorScheme(schemes.darkMediumContrast);
+          // darkMedium = _processColorScheme(schemes.darkMediumContrast);
           darkHigh = _processColorScheme(schemes.darkHighContrast);
 
           _isDemoUsingDynamicColors = true; // ignore, only for demo purposes
@@ -64,7 +66,6 @@ class CompleteExample extends StatelessWidget {
             colorScheme: light,
             extensions: [lightCustomColors.harmonized(light)],
           ),
-          // Not yet available
           // mediumContrastTheme: ThemeData(
           //   colorScheme: lightMedium,
           //   extensions: [lightCustomColors.harmonized(lightMedium ?? light)],
@@ -77,7 +78,6 @@ class CompleteExample extends StatelessWidget {
             colorScheme: dark,
             extensions: [darkCustomColors.harmonized(dark)],
           ),
-          // Not yet available
           // mediumContrastDarkTheme: ThemeData(
           //   colorScheme: darkMedium,
           //   extensions: [darkCustomColors.harmonized(darkMedium ?? dark)],

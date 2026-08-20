@@ -50,9 +50,9 @@ class SampleColorSchemes {
   static ColorScheme green(Brightness brightness,
           {double contrastLevel = 0.0}) =>
       SampleDynamicSchemes.green
-          .generate(brightness: brightness, contrast: contrastLevel);
+          .generate(brightness: brightness, contrastLevel: contrastLevel);
   static ColorScheme orange(Brightness brightness,
           {double contrastLevel = 0.0}) =>
       SampleDynamicSchemes.orange
-          .generate(brightness: brightness, contrast: contrastLevel);
+          .generate(brightness: brightness, contrastLevel: contrastLevel);
 }
