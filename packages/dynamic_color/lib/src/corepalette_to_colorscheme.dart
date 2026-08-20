@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
+import 'package:material_ui/material_ui.dart';
 
 extension CorePaletteToColorScheme on CorePalette {
   /// Create a [ColorScheme] from the given `palette` obtained from the Android OS.

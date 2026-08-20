@@ -1,6 +1,6 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:dynamic_color_example/common.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 class HarmonizationExample extends StatelessWidget {
   const HarmonizationExample({super.key});

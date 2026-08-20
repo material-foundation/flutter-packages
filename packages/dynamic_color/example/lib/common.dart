@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 const contentMaxWidth = BoxConstraints(maxWidth: 400);
 const contentPadding = EdgeInsets.symmetric(horizontal: 10);
