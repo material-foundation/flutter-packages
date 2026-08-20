@@ -15,14 +15,12 @@ void main() {
 
   const containerKey = Key('myContainer');
 
-  Widget dynamicColorBuilder() => DynamicColorBuilder(
-        builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
-          return Container(
-            key: containerKey,
-            color: lightDynamic?.primary ?? const Color(0x00000123),
-          );
-        },
-      );
+  Widget dynamicColorBuilder() => DynamicColorBuilder(customBuilder: (schemes) {
+        return Container(
+          key: containerKey,
+          color: schemes?.light.primary ?? const Color(0x00000123),
+        );
+      });
 
   testWidgets('DynamicColorBuilder is correct on Android',
       (WidgetTester tester) async {

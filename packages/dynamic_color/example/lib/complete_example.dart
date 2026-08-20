@@ -8,44 +8,52 @@ bool _isDemoUsingDynamicColors = false;
 // Fictitious brand color.
 const _brandBlue = Color(0xFF1E88E5);
 
-CustomColors lightCustomColors = const CustomColors(danger: Color(0xFFE53935));
-CustomColors darkCustomColors = const CustomColors(danger: Color(0xFFEF9A9A));
+const CustomColors lightCustomColors = CustomColors(danger: Color(0xFFE53935));
+const CustomColors darkCustomColors = CustomColors(danger: Color(0xFFEF9A9A));
 
 class CompleteExample extends StatelessWidget {
   const CompleteExample({super.key});
 
   static const title = 'Complete example';
 
+  ColorScheme _processColorScheme(ColorScheme colorScheme) {
+    // (Recommended) Harmonize the dynamic color scheme' built-in semantic colors.
+    // (Optional) Customize the scheme as desired. For example, one might
+    // want to use a brand color to override the dynamic [ColorScheme.secondary].
+    return colorScheme.harmonized().copyWith(secondary: _brandBlue);
+  }
+
   @override
   Widget build(BuildContext context) {
     // Wrap MaterialApp with a DynamicColorBuilder.
     return DynamicColorBuilder(
-      builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
-        ColorScheme lightColorScheme;
-        ColorScheme darkColorScheme;
+      customBuilder: (schemes) {
+        ColorScheme? light;
+        ColorScheme? lightMedium;
+        ColorScheme? lightHigh;
 
-        if (lightDynamic != null && darkDynamic != null) {
-          // On Android S+ devices, use the provided dynamic color scheme.
-          // (Recommended) Harmonize the dynamic color scheme' built-in semantic colors.
-          lightColorScheme = lightDynamic.harmonized();
-          // (Optional) Customize the scheme as desired. For example, one might
-          // want to use a brand color to override the dynamic [ColorScheme.secondary].
-          lightColorScheme = lightColorScheme.copyWith(secondary: _brandBlue);
-          // (Optional) If applicable, harmonize custom colors.
-          lightCustomColors = lightCustomColors.harmonized(lightColorScheme);
+        ColorScheme? dark;
+        ColorScheme? darkMedium;
+        ColorScheme? darkHigh;
 
-          // Repeat for the dark color scheme.
-          darkColorScheme = darkDynamic.harmonized();
-          darkColorScheme = darkColorScheme.copyWith(secondary: _brandBlue);
-          darkCustomColors = darkCustomColors.harmonized(darkColorScheme);
+        if (schemes != null) {
+          // On Android S+ devices and other platforms, use the provided dynamic
+          // color scheme.
+          light = _processColorScheme(schemes.light);
+          lightMedium = _processColorScheme(schemes.lightMediumContrast);
+          lightHigh = _processColorScheme(schemes.lightHighContrast);
+
+          dark = _processColorScheme(schemes.dark);
+          darkMedium = _processColorScheme(schemes.darkMediumContrast);
+          darkHigh = _processColorScheme(schemes.darkHighContrast);
 
           _isDemoUsingDynamicColors = true; // ignore, only for demo purposes
         } else {
-          // Otherwise, use fallback schemes.
-          lightColorScheme = ColorScheme.fromSeed(
+          light = ColorScheme.fromSeed(
             seedColor: _brandBlue,
           );
-          darkColorScheme = ColorScheme.fromSeed(
+
+          dark = ColorScheme.fromSeed(
             seedColor: _brandBlue,
             brightness: Brightness.dark,
           );
@@ -53,12 +61,30 @@ class CompleteExample extends StatelessWidget {
 
         return MaterialApp(
           theme: ThemeData(
-            colorScheme: lightColorScheme,
-            extensions: [lightCustomColors],
+            colorScheme: light,
+            extensions: [lightCustomColors.harmonized(light)],
+          ),
+          // Not yet available
+          // mediumContrastTheme: ThemeData(
+          //   colorScheme: lightMedium,
+          //   extensions: [lightCustomColors.harmonized(lightMedium ?? light)],
+          // ),
+          highContrastTheme: ThemeData(
+            colorScheme: lightHigh,
+            extensions: [lightCustomColors.harmonized(lightHigh ?? light)],
           ),
           darkTheme: ThemeData(
-            colorScheme: darkColorScheme,
-            extensions: [darkCustomColors],
+            colorScheme: dark,
+            extensions: [darkCustomColors.harmonized(dark)],
+          ),
+          // Not yet available
+          // mediumContrastDarkTheme: ThemeData(
+          //   colorScheme: darkMedium,
+          //   extensions: [darkCustomColors.harmonized(darkMedium ?? dark)],
+          // ),
+          highContrastDarkTheme: ThemeData(
+            colorScheme: darkHigh,
+            extensions: [darkCustomColors.harmonized(darkHigh ?? dark)],
           ),
           home: const Home(),
           debugShowCheckedModeBanner: false,

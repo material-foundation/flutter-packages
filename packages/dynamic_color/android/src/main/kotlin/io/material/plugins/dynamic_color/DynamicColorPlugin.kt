@@ -37,6 +37,15 @@ class DynamicColorPlugin : FlutterPlugin, MethodCallHandler {
         }
       }
 
+      "getTonalPalettes" -> {
+        if(DynamicColors.isDynamicColorAvailable()) {
+          val resources: Resources = binding.applicationContext.resources
+          result.success(getTonalPalettes(resources))
+        } else {
+          result.success(null)
+        }
+      }
+
       else -> result.notImplemented()
     }
   }
@@ -119,5 +128,29 @@ class DynamicColorPlugin : FlutterPlugin, MethodCallHandler {
       resources.getColor(android.R.color.system_neutral2_10, null),
       resources.getColor(android.R.color.system_neutral2_0, null),
     );
+  }
+
+  @RequiresApi(Build.VERSION_CODES.S)
+  private fun getTonalPalettes(resources: Resources): IntArray {
+    return getCorePalette(resources) + if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
+      intArrayOf(
+        // Error tonal palette.
+        resources.getColor(android.R.color.system_error_1000, null),
+        resources.getColor(android.R.color.system_error_900, null),
+        resources.getColor(android.R.color.system_error_800, null),
+        resources.getColor(android.R.color.system_error_700, null),
+        resources.getColor(android.R.color.system_error_600, null),
+        resources.getColor(android.R.color.system_error_500, null),
+        resources.getColor(android.R.color.system_error_400, null),
+        resources.getColor(android.R.color.system_error_300, null),
+        resources.getColor(android.R.color.system_error_200, null),
+        resources.getColor(android.R.color.system_error_100, null),
+        resources.getColor(android.R.color.system_error_50, null),
+        resources.getColor(android.R.color.system_error_10, null),
+        resources.getColor(android.R.color.system_error_0, null),
+      )
+    } else {
+      intArrayOf()
+    }
   }
 }

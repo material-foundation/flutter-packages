@@ -4,10 +4,11 @@ import 'package:material_color_utilities/material_color_utilities.dart';
 
 import 'common.dart';
 
+@Deprecated('See [AdvancedExample3].')
 class AdvancedExample2 extends StatelessWidget {
   const AdvancedExample2({super.key});
 
-  static const title = 'DynamicColorPlugin.getCorePalette()';
+  static const title = 'DynamicColorPlugin.getCorePalette() (deprecated)';
 
   @override
   Widget build(BuildContext context) {
