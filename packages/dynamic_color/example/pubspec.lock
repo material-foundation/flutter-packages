@@ -63,7 +63,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "2.0.1"
+    version: "2.0.2"
   dynamic_color_testing:
     dependency: "direct dev"
     description:
