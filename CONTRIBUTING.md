@@ -15,12 +15,10 @@ Thank you for your interest in contributing! Your work can help many developers.
 1.  Make the changes.
 1.  If there exists an example app under `/example`, use it to manually test your changes.
 1.  Write a unit test for your change, under `test/`.
-1.  Update the `CHANGELOG.md` using [`cider`](https://pub.dev/packages/cider). For example:
-    ```
-    cider log changed|added|fixed|removed 'Added a schmilblick'
-    ```
 1.  Make sure all the existing tests are passing with `flutter test`.
 1.  Make sure the repo is formatted using `dart format .`.
+1.  Bump the version in `pubspec.yaml` according to [semantic versioning](https://semver.org/).
+1.  Update the `CHANGELOG.md`, following existing formatting and conventions.
 1.  Commit the changes to your branch and push.
 
 That's it! Releasing is done by team members, see the [Releasing](#releasing) section below.
@@ -33,35 +31,22 @@ That's it! Releasing is done by team members, see the [Releasing](#releasing) se
 ### Releasing
 
 > **Note**
-> For [package maintainers](https://github.com/orgs/material-foundation/teams/material-flutter-package-maintainers) only
+> For package maintainers only
 
 > **Tip**
 > To run a command for all subpackages, use `for d in ./packages/*; do (cd "$d" && <command>); done`
 
-1. Bump `pubspec.yaml`'s `version` with:
-    ```
-    cider bump major|minor|patch
-    ```
-1. Update the `CHANGELOG.md` with:
-    ```
-    cider release
-    ```
+1. Ensure `version` was bumped in `pubspec.yaml`.
+
+1. Ensure equivalent version is shown in `CHANGELOG.md`, and that there is no `## Unreleased` section.
 
 1. Publish to [pub.dev](https://pub.dev/publishers/material.io/packages) with:
     ```
     flutter pub publish
     ```
-1. Create and push a commit and tag
-    ```
-    git commit -am "bump \`$(basename $PWD)\` to $(cider version)"
-    git tag "$(basename $PWD)-$(cider version)"
-    git push --all
-    ```
 
 ## Adding a new package
 New packages should be accounted for in:
 - [`.github/dependabot.yml`](.github/dependabot.yml)
-- [`.github/ISSUE_TEMPLATE/bug_report.yml`](.github/ISSUE_TEMPLATE/bug_report.yml)
-- [`.github/ISSUE_TEMPLATE/feature_request.yml`](.github/ISSUE_TEMPLATE/feature_request.yml)
 - [`.github/labeler.yml`](.github/labeler.yml)
 - [`.github/workflows/checks.yml`](.github/workflows/checks.yml)
