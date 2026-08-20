@@ -4,25 +4,46 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
 
+/// Generates [ColorScheme]s using the platform-provided dynamic colors as seeds
+/// for the schemes.
+///
+/// See also:
+///  * [ColorPaletteSchemeFactory] used when the platform sends a color palette
+///    as seed for theming on Android.
+///  * [AccentColorSchemeFactory] used when the platform sends an accent color
+///    as seed for theming on other platforms.
 abstract class DynamicSchemeFactory {
   const DynamicSchemeFactory();
 
-  ColorScheme generate({required Brightness brightness, double contrast = 0.0});
+  /// Generates a [ColorScheme] depending on the requested [brightness] and
+  /// [contrastLevel].
+  ///
+  /// The [contrastLevel] is a floating value between -1 and 1, with 0 being the
+  /// default contrast level (the same as in Material specification documents),
+  /// 0.5 being the medium contrast level and 1 being the highest contrast
+  /// level.
+  ///
+  /// See also:
+  ///  * [Material specification](https://m3.material.io/styles/color/system/how-the-system-works#0207ef40-7f0d-4da8-9280-f062aa6b3e04).
+  ColorScheme generate(
+      {required Brightness brightness, double contrastLevel = 0.0});
 
   ColorScheme get light => generate(brightness: Brightness.light);
   ColorScheme get dark => generate(brightness: Brightness.dark);
 
   ColorScheme get lightMediumContrast =>
-      generate(brightness: Brightness.light, contrast: .5);
+      generate(brightness: Brightness.light, contrastLevel: .5);
   ColorScheme get darkMediumContrast =>
-      generate(brightness: Brightness.dark, contrast: .5);
+      generate(brightness: Brightness.dark, contrastLevel: .5);
 
   ColorScheme get lightHighContrast =>
-      generate(brightness: Brightness.light, contrast: 1.0);
+      generate(brightness: Brightness.light, contrastLevel: 1.0);
   ColorScheme get darkHighContrast =>
-      generate(brightness: Brightness.dark, contrast: 1.0);
+      generate(brightness: Brightness.dark, contrastLevel: 1.0);
 }
 
+/// Generates [ColorScheme]s directly from existing [tonalPalettes] using a
+/// [variant].
 class ColorPaletteSchemeFactory extends DynamicSchemeFactory {
   const ColorPaletteSchemeFactory(
       {required this.tonalPalettes,
@@ -33,13 +54,13 @@ class ColorPaletteSchemeFactory extends DynamicSchemeFactory {
 
   @override
   ColorScheme generate(
-      {required Brightness brightness, double contrast = 0.0}) {
+      {required Brightness brightness, double contrastLevel = 0.0}) {
     final scheme = DynamicScheme(
         // This is only used with the `fidelity` variant.
         sourceColorHct: tonalPalettes.first.keyColor,
         variant: variant.toVariant(),
         isDark: brightness == Brightness.dark,
-        contrastLevel: contrast,
+        contrastLevel: contrastLevel,
         primaryPalette: tonalPalettes[0],
         secondaryPalette: tonalPalettes[1],
         tertiaryPalette: tonalPalettes[2],
@@ -56,6 +77,8 @@ typedef _SchemeConstructor = DynamicScheme Function(
     required bool isDark,
     required double contrastLevel});
 
+/// Generates [ColorScheme]s using an accent [color] applied to a [variant] used
+/// for theming.
 class AccentColorSchemeFactory extends DynamicSchemeFactory {
   const AccentColorSchemeFactory(
       {required this.color, this.variant = DynamicSchemeVariant.tonalSpot});
@@ -79,7 +102,7 @@ class AccentColorSchemeFactory extends DynamicSchemeFactory {
 
   @override
   ColorScheme generate(
-      {required Brightness brightness, double contrast = 0.0}) {
+      {required Brightness brightness, double contrastLevel = 0.0}) {
     var constructor = _constructors[variant];
     assert(constructor != null, 'Unknown constructor for variant $variant.');
 
@@ -95,7 +118,7 @@ class AccentColorSchemeFactory extends DynamicSchemeFactory {
     constructor ??= SchemeTonalSpot.new;
 
     return constructor(
-            contrastLevel: contrast,
+            contrastLevel: contrastLevel,
             isDark: brightness == Brightness.dark,
             sourceColorHct: Hct.fromInt(color.toARGB32()))
         .toColorScheme();
