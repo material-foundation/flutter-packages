@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
+import 'package:material_ui/material_ui.dart';
 
 extension VariantToDynamicSchemeVariant on Variant {
   /// Create a [DynamicSchemeVariant] from the given variant.

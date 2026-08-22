@@ -1,6 +1,6 @@
 import 'package:dynamic_color/src/variant_to_dynamicschemevariant.dart';
-import 'package:flutter/material.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
+import 'package:material_ui/material_ui.dart';
 
 extension DynamicSchemeToColorScheme on DynamicScheme {
   /// Create a [ColorScheme] from the given scheme.

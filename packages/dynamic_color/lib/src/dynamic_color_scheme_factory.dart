@@ -1,8 +1,8 @@
 import 'package:dynamic_color/src/dynamicscheme_to_colorscheme.dart';
 import 'package:dynamic_color/src/variant_to_dynamicschemevariant.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Generates [ColorScheme]s using the platform-provided dynamic colors as seeds
 /// for the schemes.

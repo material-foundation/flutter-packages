@@ -52,10 +52,9 @@ packages:
   dynamic_color_testing:
     dependency: "direct dev"
     description:
-      name: dynamic_color_testing
-      sha256: "0c3e7c0d11bd78045547a3895a8d28293cdfe1126e94f4991a5c9c02eb517f01"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../dynamic_color_testing"
+      relative: true
+    source: path
     version: "1.0.0"
   fake_async:
     dependency: transitive
