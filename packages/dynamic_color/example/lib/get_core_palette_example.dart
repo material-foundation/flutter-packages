@@ -1,13 +1,14 @@
 import 'package:dynamic_color/dynamic_color.dart';
-import 'package:material_ui/material_ui.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'common.dart';
 
+@Deprecated('See [AdvancedExample3].')
 class AdvancedExample2 extends StatelessWidget {
   const AdvancedExample2({super.key});
 
-  static const title = 'DynamicColorPlugin.getCorePalette()';
+  static const title = 'DynamicColorPlugin.getCorePalette() (deprecated)';
 
   @override
   Widget build(BuildContext context) {

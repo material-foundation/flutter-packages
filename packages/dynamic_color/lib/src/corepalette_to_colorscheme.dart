@@ -1,6 +1,7 @@
 import 'package:material_color_utilities/material_color_utilities.dart';
 import 'package:material_ui/material_ui.dart';
 
+@Deprecated('Use [DynamicSchemeToColorScheme] instead.')
 extension CorePaletteToColorScheme on CorePalette {
   /// Create a [ColorScheme] from the given `palette` obtained from the Android OS.
   ColorScheme toColorScheme({
@@ -22,8 +23,6 @@ extension CorePaletteToColorScheme on CorePalette {
     // We then override roles that must stay aligned with the OS-provided dynamic
     // palette values from [scheme]. Returning fromSeed directly would drift these
     // roles away from Android's dynamic color output.
-    // TODO(#363): Migrate this conversion to MCU DynamicScheme/CorePalettes so
-    // all roles can be resolved from one canonical dynamic-color path.
     final colorScheme = ColorScheme.fromSeed(
       seedColor: Color(scheme.primary),
       brightness: brightness,

@@ -28,6 +28,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+dependency_overrides:
+  dynamic_color_testing:
+    path: ../dynamic_color_testing
+
 flutter:
   plugin:
     platforms:

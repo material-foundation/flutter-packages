@@ -10,10 +10,12 @@ class AdvancedExample1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DynamicColorBuilder(
-      builder: (ColorScheme? lightDynamic, ColorScheme? darkDynamic) {
+      customBuilder: (schemes) {
+        final lightDynamic = schemes?.light;
+
         return ColoredSquare(
           lightDynamic?.primary ?? const Color(0xFFFB8C00),
-          lightDynamic != null ? 'lightDynamic.primary' : 'Color(0xFFFB8C00)',
+          lightDynamic != null ? 'schemes.light.primary' : 'Color(0xFFFB8C00)',
         );
       },
     );

@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:cupertino_ui/cupertino_ui.dart';
 import 'package:material_ui/material_ui.dart';
 
 import 'accent_color.dart';
@@ -7,7 +7,9 @@ import 'complete_example.dart';
 import 'core_palette_visualization.dart';
 import 'dynamic_color_builder_example.dart';
 import 'get_core_palette_example.dart';
+import 'get_tonal_palettes_example.dart';
 import 'harmonization_example.dart';
+import 'tonal_palettes_visualization.dart';
 
 void main() {
   runApp(const ExampleApp());
@@ -58,6 +60,10 @@ class ExampleApp extends StatelessWidget {
                   widget: CorePaletteVisualization(),
                 ),
                 const _ExampleAppButton(
+                  title: TonalPalettesVisualization.title,
+                  widget: TonalPalettesVisualization(),
+                ),
+                const _ExampleAppButton(
                   title: AccentColorExample.title,
                   widget: AccentColorExample(),
                 ),
@@ -73,6 +79,8 @@ class ExampleApp extends StatelessWidget {
                   title: AdvancedExample2.title,
                   widget: AdvancedExample2(),
                 ),
+                const _ExampleAppButton(
+                    title: AdvancedExample3.title, widget: AdvancedExample3())
               ],
             ),
           ),
@@ -96,7 +104,10 @@ class _ExampleAppButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: ElevatedButton(
-        child: Text(title),
+        child: Text(
+          title,
+          textAlign: TextAlign.center,
+        ),
         onPressed: () => Navigator.push(
           context,
           MaterialPageRoute(
