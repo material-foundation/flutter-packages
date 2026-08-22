@@ -23,14 +23,54 @@ static int get_accent_color(GtkWidget* widget) {
          lround(color.green * 255) << 8 | lround(color.blue * 255);
 }
 
+static gboolean get_xdg_portal_accent_color(int* out_argb) {
+  g_autoptr(GDBusConnection) connection =
+      g_bus_get_sync(G_BUS_TYPE_SESSION, nullptr, nullptr);
+  if (!connection) {
+    return FALSE;
+  }
+
+  g_autoptr(GVariant) result = g_dbus_connection_call_sync(
+      connection, "org.freedesktop.portal.Desktop",
+      "/org/freedesktop/portal/desktop", "org.freedesktop.portal.Settings",
+      "Read",
+      g_variant_new("(ss)", "org.freedesktop.appearance", "accent-color"),
+      G_VARIANT_TYPE("(v)"), G_DBUS_CALL_FLAGS_NONE, -1, nullptr, nullptr);
+
+  if (!result) {
+    return FALSE;
+  }
+
+  g_autoptr(GVariant) inner = nullptr;
+  g_variant_get(result, "(v)", &inner);
+  if (!inner) {
+    return FALSE;
+  }
+
+  g_autoptr(GVariant) actual_value = g_variant_get_variant(inner);
+  if (actual_value &&
+      g_variant_is_of_type(actual_value, G_VARIANT_TYPE("(ddd)"))) {
+    double r, g, b;
+    g_variant_get(actual_value, "(ddd)", &r, &g, &b);
+    *out_argb = (255 << 24) | (lround(r * 255) << 16) | (lround(g * 255) << 8) |
+                lround(b * 255);
+    return TRUE;
+  }
+
+  return FALSE;
+}
+
 static void dynamic_color_plugin_handle_method_call(DynamicColorPlugin* self,
                                                     FlMethodCall* method_call) {
   g_autoptr(FlMethodResponse) response = nullptr;
 
   const gchar* method = fl_method_call_get_name(method_call);
   if (strcmp(method, "getAccentColor") == 0) {
-    FlView* view = fl_plugin_registrar_get_view(self->registrar);
-    int argb = get_accent_color(GTK_WIDGET(view));
+    int argb;
+    if (!get_xdg_portal_accent_color(&argb)) {
+      FlView* view = fl_plugin_registrar_get_view(self->registrar);
+      argb = get_accent_color(GTK_WIDGET(view));
+    }
     g_autoptr(FlValue) result = fl_value_new_int(argb);
     response = FL_METHOD_RESPONSE(fl_method_success_response_new(result));
   } else {

@@ -1,11 +1,33 @@
 # Changelog
 
-- Populate the missing `ColorScheme` surface roles so dynamic color schemes render correctly ([#574](https://github.com/material-foundation/flutter-packages/issues/574), [#582](https://github.com/material-foundation/flutter-packages/issues/582), [#649](https://github.com/material-foundation/flutter-packages/issues/649))
-
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.9.0 - 2025-08-07
+## 2.1.0 - 2026-08-20
+
+### Added
+
+- Add support for the XDG Desktop Portal Settings for accent-color on Linux
+
+## 2.0.2 - 2026-08-20
+
+### Fixed
+
+- Apply Kotlin Android plugin conditionally for AGP version before 9 compatibility ([#695](https://github.com/material-foundation/flutter-packages/issues/695))
+
+## 2.0.1 - 2026-08-20
+
+### Changed
+
+- Fix link to `ColorScheme.fromImageProvider` in README
+
+## 2.0.0 - 2026-08-20
+
+### Changed
+
+- Migrate to `material_ui` package version `1.0.0` and set minimum `material_color_utilities` to `0.13.0`
+
+## 1.9.0 - 2026-08-07
 
 ### Fixed
 

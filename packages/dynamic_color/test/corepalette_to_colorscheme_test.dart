@@ -1,7 +1,7 @@
 import 'package:dynamic_color/src/corepalette_to_colorscheme.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
   group('CorePalette.toColorScheme', () {

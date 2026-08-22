@@ -1,8 +1,8 @@
 import 'package:dynamic_color/src/dynamic_color_scheme_factory.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'dynamic_color_plugin.dart';
 
