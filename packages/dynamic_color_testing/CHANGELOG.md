@@ -1,3 +1,7 @@
+## 1.1.0 - 2026-09-10
+
+* Added support for accent color changes.
+
 ## 1.0.0 - 2025-08-21
 
 * Migrate to `material_ui` package version `1.0.0`.

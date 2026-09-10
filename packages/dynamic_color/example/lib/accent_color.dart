@@ -7,12 +7,24 @@ class AccentColorExample extends StatelessWidget {
 
   static const title = 'Accent color (desktop)';
 
+  Stream<Color> getAccentColor() async* {
+    final initialColor = await DynamicColorPlugin.getAccentColor();
+
+    if (initialColor == null) {
+      return;
+    }
+
+    yield initialColor;
+
+    yield* DynamicColorPlugin.onAccentColorChanged;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<Color?>(
-      future: DynamicColorPlugin.getAccentColor(),
+    return StreamBuilder<Color?>(
+      stream: getAccentColor(),
       builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.done) {
+        if (snapshot.connectionState != ConnectionState.waiting) {
           final color = snapshot.data;
           return color == null
               ? const Text(
