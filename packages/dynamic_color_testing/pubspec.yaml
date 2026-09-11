@@ -14,7 +14,7 @@ dependencies:
   flutter_test:
     sdk: flutter
   # To avoid circular dependancy on the next `dynamic_color` major version bump.
-  dynamic_color: ">=2.0.0 <4.0.0"
+  dynamic_color: ">=2.2.0 <4.0.0"
   material_color_utilities: ^0.13.0
   material_ui: ^1.0.0
 

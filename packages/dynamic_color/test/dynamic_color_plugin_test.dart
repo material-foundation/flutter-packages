@@ -41,4 +41,25 @@ void main() {
     final colors = await DynamicColorPlugin.getAccentColor();
     expect(colors, equals(null));
   });
+
+  test('onAccentColorChanged yields nothing', () async {
+    DynamicColorTestingUtils.mockAccentColorStream();
+    DynamicColorTestingUtils.setMockDynamicColors(accentColor: null);
+
+    final isEmpty = await DynamicColorPlugin.onAccentColorChanged.isEmpty;
+    expect(isEmpty, isTrue);
+  });
+
+  test('onAccentColorChanged yields a different color', () async {
+    const red = Color(0xFFFF0000);
+    const green = Color(0xFF00FF00);
+    DynamicColorTestingUtils.mockAccentColorStream();
+    DynamicColorTestingUtils.setMockDynamicColors(accentColor: red);
+
+    final stream = DynamicColorPlugin.onAccentColorChanged;
+
+    DynamicColorTestingUtils.setMockDynamicColors(accentColor: green);
+
+    await expectLater(stream, emits(green));
+  });
 }

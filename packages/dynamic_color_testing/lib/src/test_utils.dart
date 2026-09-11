@@ -35,6 +35,11 @@ class DynamicColorTestingUtils {
         return null;
       }
     });
+
+    if (accentColor != null) {
+      AccentColorMockStreamHandler().send(accentColor);
+    }
+
     addTearDown(() {
       TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
           .setMockMethodCallHandler(
@@ -43,4 +48,38 @@ class DynamicColorTestingUtils {
       );
     });
   }
+
+  static void mockAccentColorStream() {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockStreamHandler(DynamicColorPlugin.accentColorChannel,
+            AccentColorMockStreamHandler());
+
+    addTearDown(() {
+      TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+          .setMockStreamHandler(
+        DynamicColorPlugin.accentColorChannel,
+        null,
+      );
+    });
+  }
+}
+
+class AccentColorMockStreamHandler implements MockStreamHandler {
+  static final _instance = AccentColorMockStreamHandler();
+
+  MockStreamHandlerEventSink? _events;
+
+  factory AccentColorMockStreamHandler() => _instance;
+
+  @override
+  void onCancel(Object? arguments) {
+    // do nothing
+  }
+
+  @override
+  void onListen(Object? arguments, MockStreamHandlerEventSink events) {
+    _events = events;
+  }
+
+  void send(Object event) => _events?.success(event);
 }

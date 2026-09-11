@@ -17,6 +17,7 @@ set(PLUGIN_NAME "dynamic_color_plugin")
 # Any new source files that you add to the plugin should be added here.
 add_library(${PLUGIN_NAME} SHARED
   "dynamic_color_plugin.cc"
+  "xdg_accent_color.cc"
 )
 
 # Apply a standard set of build settings that are configured in the

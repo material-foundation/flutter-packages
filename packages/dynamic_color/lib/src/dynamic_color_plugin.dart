@@ -10,11 +10,38 @@ class DynamicColorPlugin {
     'io.material.plugins/dynamic_color',
   );
 
+  /// Event channel for accent color changes on desktop platforms.
+  static const accentColorChannel =
+      EventChannel('io.material.plugins/dynamic_color/accent_color');
+
   /// A method name that the Kotlin plugin listens for.
   static const methodName = 'getCorePalette';
 
-  /// A method name that the macOS plugin listens for.
+  /// A method name that the desktop plugin listens for.
   static const accentColorMethodName = 'getAccentColor';
+
+  static Stream<Color>? _onAccentColorChanged;
+
+  /// Returns the OS' accent color and subsequent changes as a [Color].
+  ///
+  /// Supported on macOS starting with 10.14 (Mojave), on Windows starting with
+  /// Vista, and on GTK-based or XDG-compliant Linux desktops.s
+  ///
+  /// Immediately returns with no value if the OS' does not support accent
+  /// colors.
+  ///
+  /// See also:
+  ///
+  /// * [Apple's introduction to macOS accent color](https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/#app-accent-colors)
+  /// * [macOS's NSColor.controlAccentColor documentation](https://developer.apple.com/documentation/appkit/nscolor/3000782-controlaccentcolor)
+  /// * [Windows' accent color](https://docs.microsoft.com/en-us/windows/apps/design/style/color#accent-color)
+  /// * [Windows Aero](https://web.archive.org/web/20080812195923/http://www.microsoft.com/windows/windows-vista/features/aero.aspx?tabid=2&catid=4)
+  /// * [Change colors in Windows](https://support.microsoft.com/en-us/windows/change-colors-in-windows-d26ef4d6-819a-581c-1581-493cfcc005fe)
+  /// * [XDG settings portal](http://flatpak.github.io/xdg-desktop-portal/docs/doc-org.freedesktop.portal.Settings.html#settings)
+  static Stream<Color> get onAccentColorChanged {
+    return _onAccentColorChanged ??=
+        accentColorChannel.receiveBroadcastStream().cast<int>().map(Color.new);
+  }
 
   /// Returns the Android OS' dynamic colors asynchronously in a [CorePalette].
   ///
@@ -42,6 +69,7 @@ class DynamicColorPlugin {
   /// * [Windows' accent color](https://docs.microsoft.com/en-us/windows/apps/design/style/color#accent-color)
   /// * [Windows Aero](https://web.archive.org/web/20080812195923/http://www.microsoft.com/windows/windows-vista/features/aero.aspx?tabid=2&catid=4)
   /// * [Change colors in Windows](https://support.microsoft.com/en-us/windows/change-colors-in-windows-d26ef4d6-819a-581c-1581-493cfcc005fe)
+  /// * [XDG settings portal](http://flatpak.github.io/xdg-desktop-portal/docs/doc-org.freedesktop.portal.Settings.html#settings)
   static Future<Color?> getAccentColor() async {
     final result = await channel.invokeMethod(accentColorMethodName);
     return result == null ? null : Color(result);
