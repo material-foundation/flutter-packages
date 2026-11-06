@@ -181,8 +181,8 @@ static FlMethodErrorResponse* accent_color_listen_cb(FlEventChannel* channel,
     self->portal_subscription_id = g_dbus_connection_signal_subscribe(
         self->portal_connection, "org.freedesktop.portal.Desktop",
         "org.freedesktop.portal.Settings", "SettingChanged",
-        "/org/freedesktop/portal/desktop", nullptr, G_DBUS_SIGNAL_FLAGS_NONE,
-        portal_setting_changed_cb, self, nullptr);
+        "/org/freedesktop/portal/desktop", "org.freedesktop.appearance",
+        G_DBUS_SIGNAL_FLAGS_NONE, portal_setting_changed_cb, self, nullptr);
   }
   return nullptr;
 }
