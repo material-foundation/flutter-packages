@@ -3,9 +3,10 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
 
-/// Plugin for obtaining dynamic colors defined by the Android OS.
+/// Plugin for obtaining dynamic colors defined by the OS.
 class DynamicColorPlugin {
-  /// Optional method channel so that it returns null on non-Android platforms.
+  /// Optional method channel so that it returns null on platforms without a
+  /// native implementation.
   static const channel = OptionalMethodChannel(
     'io.material.plugins/dynamic_color',
   );
@@ -13,7 +14,7 @@ class DynamicColorPlugin {
   /// A method name that the Kotlin plugin listens for.
   static const methodName = 'getCorePalette';
 
-  /// A method name that the macOS plugin listens for.
+  /// A method name that the desktop plugins listen for.
   static const accentColorMethodName = 'getAccentColor';
 
   /// Returns the Android OS' dynamic colors asynchronously in a [CorePalette].
@@ -33,7 +34,8 @@ class DynamicColorPlugin {
   /// Returns the OS' accent color asynchronously as a [Color].
   ///
   /// Supported on macOS starting with 10.14 (Mojave), on Windows starting with
-  /// Vista, and on GTK-based Linux desktops.
+  /// Vista, and on Linux desktops through the XDG Desktop Portal Settings or the
+  /// GTK theme. Completes with null when none of these provides a color.
   ///
   /// See also:
   ///
