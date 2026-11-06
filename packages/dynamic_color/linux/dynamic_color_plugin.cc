@@ -15,20 +15,26 @@ struct _DynamicColorPlugin {
 
 G_DEFINE_TYPE(DynamicColorPlugin, dynamic_color_plugin, g_object_get_type())
 
-static int get_accent_color(GtkWidget* widget) {
-  GdkRGBA color;
-  GtkStyleContext* context = gtk_widget_get_style_context(widget);
-  gtk_style_context_lookup_color(context, "theme_selected_bg_color", &color);
-  return lround(color.alpha * 255) << 24 | lround(color.red * 255) << 16 |
-         lround(color.green * 255) << 8 | lround(color.blue * 255);
-}
-
 // How long the portal may take to answer before the GTK theme color is used.
 static const gint kPortalTimeoutMs = 2000;
 
-static int get_theme_accent_color(DynamicColorPlugin* self) {
+// Returns FALSE when the view is gone or the GTK theme does not define the
+// color.
+static gboolean get_theme_accent_color(DynamicColorPlugin* self,
+                                       int* out_argb) {
   FlView* view = fl_plugin_registrar_get_view(self->registrar);
-  return get_accent_color(GTK_WIDGET(view));
+  if (view == nullptr) {
+    return FALSE;
+  }
+  GdkRGBA color;
+  GtkStyleContext* context = gtk_widget_get_style_context(GTK_WIDGET(view));
+  if (!gtk_style_context_lookup_color(context, "theme_selected_bg_color",
+                                      &color)) {
+    return FALSE;
+  }
+  *out_argb = lround(color.alpha * 255) << 24 | lround(color.red * 255) << 16 |
+              lround(color.green * 255) << 8 | lround(color.blue * 255);
+  return TRUE;
 }
 
 static gboolean is_color_channel(double value) {
@@ -65,15 +71,16 @@ typedef struct {
 } AccentColorRequest;
 
 // Answers [request] with the portal's accent color in [result], or with the
-// GTK theme color when [result] is null or holds no usable color, and frees
-// [request].
+// GTK theme color when [result] is null or holds no usable color, or with null
+// when there is no GTK theme color either, and frees [request].
 static void respond_accent_color(AccentColorRequest* request,
                                  GVariant* result) {
   int argb;
-  if (result == nullptr || !portal_value_to_argb(result, &argb)) {
-    argb = get_theme_accent_color(request->plugin);
-  }
-  g_autoptr(FlValue) value = fl_value_new_int(argb);
+  const gboolean has_color =
+      (result != nullptr && portal_value_to_argb(result, &argb)) ||
+      get_theme_accent_color(request->plugin, &argb);
+  g_autoptr(FlValue) value =
+      has_color ? fl_value_new_int(argb) : fl_value_new_null();
   g_autoptr(FlMethodResponse) response =
       FL_METHOD_RESPONSE(fl_method_success_response_new(value));
   fl_method_call_respond(request->method_call, response, nullptr);
