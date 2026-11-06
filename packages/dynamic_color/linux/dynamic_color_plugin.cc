@@ -23,6 +23,10 @@ static int get_accent_color(GtkWidget* widget) {
          lround(color.green * 255) << 8 | lround(color.blue * 255);
 }
 
+static gboolean is_color_channel(double value) {
+  return value >= 0 && value <= 1;
+}
+
 static gboolean get_xdg_portal_accent_color(int* out_argb) {
   g_autoptr(GDBusConnection) connection =
       g_bus_get_sync(G_BUS_TYPE_SESSION, nullptr, nullptr);
@@ -52,6 +56,10 @@ static gboolean get_xdg_portal_accent_color(int* out_argb) {
       g_variant_is_of_type(actual_value, G_VARIANT_TYPE("(ddd)"))) {
     double r, g, b;
     g_variant_get(actual_value, "(ddd)", &r, &g, &b);
+    // The portal reports an unset accent color with out-of-range values.
+    if (!is_color_channel(r) || !is_color_channel(g) || !is_color_channel(b)) {
+      return FALSE;
+    }
     *out_argb = (255 << 24) | (lround(r * 255) << 16) | (lround(g * 255) << 8) |
                 lround(b * 255);
     return TRUE;
