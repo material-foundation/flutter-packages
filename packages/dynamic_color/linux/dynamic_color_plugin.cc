@@ -11,6 +11,9 @@
 struct _DynamicColorPlugin {
   GObject parent_instance;
   FlPluginRegistrar* registrar;
+  FlEventChannel* accent_color_channel;
+  GDBusConnection* portal_connection;
+  guint portal_subscription_id;
 };
 
 G_DEFINE_TYPE(DynamicColorPlugin, dynamic_color_plugin, g_object_get_type())
@@ -126,6 +129,71 @@ static void read_accent_color(DynamicColorPlugin* self,
   g_bus_get(G_BUS_TYPE_SESSION, nullptr, session_bus_cb, request);
 }
 
+static void portal_setting_changed_cb(GDBusConnection* connection,
+                                      const gchar* sender_name,
+                                      const gchar* object_path,
+                                      const gchar* interface_name,
+                                      const gchar* signal_name,
+                                      GVariant* parameters,
+                                      gpointer user_data) {
+  DynamicColorPlugin* self = DYNAMIC_COLOR_PLUGIN(user_data);
+
+  if (!g_variant_is_of_type(parameters, G_VARIANT_TYPE("(ssv)"))) {
+    return;
+  }
+  const gchar* setting_namespace = nullptr;
+  const gchar* key = nullptr;
+  g_autoptr(GVariant) value = nullptr;
+  g_variant_get(parameters, "(&s&sv)", &setting_namespace, &key, &value);
+  if (g_strcmp0(setting_namespace, "org.freedesktop.appearance") != 0 ||
+      g_strcmp0(key, "accent-color") != 0) {
+    return;
+  }
+
+  int argb;
+  if (!portal_value_to_argb(value, &argb) &&
+      !get_theme_accent_color(self, &argb)) {
+    return;
+  }
+  g_autoptr(FlValue) event = fl_value_new_int(argb);
+  fl_event_channel_send(self->accent_color_channel, event, nullptr, nullptr);
+}
+
+static void unsubscribe_from_portal(DynamicColorPlugin* self) {
+  if (self->portal_subscription_id != 0) {
+    g_dbus_connection_signal_unsubscribe(self->portal_connection,
+                                         self->portal_subscription_id);
+    self->portal_subscription_id = 0;
+  }
+  g_clear_object(&self->portal_connection);
+}
+
+static FlMethodErrorResponse* accent_color_listen_cb(FlEventChannel* channel,
+                                                     FlValue* args,
+                                                     gpointer user_data) {
+  DynamicColorPlugin* self = DYNAMIC_COLOR_PLUGIN(user_data);
+
+  unsubscribe_from_portal(self);
+  g_set_object(&self->accent_color_channel, channel);
+  self->portal_connection =
+      g_bus_get_sync(G_BUS_TYPE_SESSION, nullptr, nullptr);
+  if (self->portal_connection) {
+    self->portal_subscription_id = g_dbus_connection_signal_subscribe(
+        self->portal_connection, "org.freedesktop.portal.Desktop",
+        "org.freedesktop.portal.Settings", "SettingChanged",
+        "/org/freedesktop/portal/desktop", nullptr, G_DBUS_SIGNAL_FLAGS_NONE,
+        portal_setting_changed_cb, self, nullptr);
+  }
+  return nullptr;
+}
+
+static FlMethodErrorResponse* accent_color_cancel_cb(FlEventChannel* channel,
+                                                     FlValue* args,
+                                                     gpointer user_data) {
+  unsubscribe_from_portal(DYNAMIC_COLOR_PLUGIN(user_data));
+  return nullptr;
+}
+
 static void dynamic_color_plugin_handle_method_call(DynamicColorPlugin* self,
                                                     FlMethodCall* method_call) {
   const gchar* method = fl_method_call_get_name(method_call);
@@ -140,6 +208,8 @@ static void dynamic_color_plugin_handle_method_call(DynamicColorPlugin* self,
 }
 
 static void dynamic_color_plugin_dispose(GObject* object) {
+  unsubscribe_from_portal(DYNAMIC_COLOR_PLUGIN(object));
+  g_clear_object(&DYNAMIC_COLOR_PLUGIN(object)->accent_color_channel);
   g_object_unref(DYNAMIC_COLOR_PLUGIN(object)->registrar);
   G_OBJECT_CLASS(dynamic_color_plugin_parent_class)->dispose(object);
 }
@@ -163,11 +233,18 @@ void dynamic_color_plugin_register_with_registrar(
   plugin->registrar = FL_PLUGIN_REGISTRAR(g_object_ref(registrar));
 
   g_autoptr(FlStandardMethodCodec) codec = fl_standard_method_codec_new();
+  FlBinaryMessenger* messenger = fl_plugin_registrar_get_messenger(registrar);
   g_autoptr(FlMethodChannel) channel = fl_method_channel_new(
-      fl_plugin_registrar_get_messenger(registrar),
-      "io.material.plugins/dynamic_color", FL_METHOD_CODEC(codec));
+      messenger, "io.material.plugins/dynamic_color", FL_METHOD_CODEC(codec));
   fl_method_channel_set_method_call_handler(
       channel, method_call_cb, g_object_ref(plugin), g_object_unref);
+
+  g_autoptr(FlEventChannel) accent_color_channel = fl_event_channel_new(
+      messenger, "io.material.plugins/dynamic_color/accent_color",
+      FL_METHOD_CODEC(codec));
+  fl_event_channel_set_stream_handlers(
+      accent_color_channel, accent_color_listen_cb, accent_color_cancel_cb,
+      g_object_ref(plugin), g_object_unref);
 
   g_object_unref(plugin);
 }

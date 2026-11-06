@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
@@ -12,7 +14,8 @@ import 'dynamic_color_plugin.dart';
 /// by the Android OS.
 ///
 /// macOS, Windows and Linux: the [ColorScheme]s are constructed from the accent
-/// [Color] provided by the system.
+/// [Color] provided by the system. On Linux they update when the accent color
+/// changes.
 ///
 /// See also:
 ///
@@ -45,11 +48,37 @@ class DynamicColorBuilder extends StatefulWidget {
 class DynamicColorBuilderState extends State<DynamicColorBuilder> {
   ColorScheme? _light;
   ColorScheme? _dark;
+  late final StreamSubscription<Color> _accentColorChanges;
+  bool _accentColorChangedDuringRead = false;
 
   @override
   void initState() {
     super.initState();
+    _accentColorChanges =
+        DynamicColorPlugin.onAccentColorChanged.listen((Color accentColor) {
+      _accentColorChangedDuringRead = true;
+      _setAccentColor(accentColor);
+    });
     initPlatformState();
+  }
+
+  @override
+  void dispose() {
+    _accentColorChanges.cancel();
+    super.dispose();
+  }
+
+  void _setAccentColor(Color accentColor) {
+    setState(() {
+      _light = ColorScheme.fromSeed(
+        seedColor: accentColor,
+        brightness: Brightness.light,
+      );
+      _dark = ColorScheme.fromSeed(
+        seedColor: accentColor,
+        brightness: Brightness.dark,
+      );
+    });
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -80,6 +109,7 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
     }
 
     try {
+      _accentColorChangedDuringRead = false;
       final Color? accentColor = await DynamicColorPlugin.getAccentColor();
 
       // Likewise above.
@@ -89,16 +119,9 @@ class DynamicColorBuilderState extends State<DynamicColorBuilder> {
         if (kDebugMode) {
           debugPrint('dynamic_color: Accent color detected.');
         }
-        setState(() {
-          _light = ColorScheme.fromSeed(
-            seedColor: accentColor,
-            brightness: Brightness.light,
-          );
-          _dark = ColorScheme.fromSeed(
-            seedColor: accentColor,
-            brightness: Brightness.dark,
-          );
-        });
+        if (!_accentColorChangedDuringRead) {
+          _setAccentColor(accentColor);
+        }
         return;
       }
     } on PlatformException {
