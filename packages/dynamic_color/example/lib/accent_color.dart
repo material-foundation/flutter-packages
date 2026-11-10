@@ -13,15 +13,21 @@ class AccentColorExample extends StatelessWidget {
       future: DynamicColorPlugin.getAccentColor(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          final color = snapshot.data;
-          return color == null
+          final initialColor = snapshot.data;
+          return initialColor == null
               ? const Text(
                   "Accent color isn't supported on this platform",
                 )
-              : Column(
-                  children: [
-                    ColoredSquare(color, 'Accent color'),
-                  ],
+              : StreamBuilder<Color>(
+                  stream: DynamicColorPlugin.onAccentColorChanged,
+                  builder: (context, changes) => Column(
+                    children: [
+                      ColoredSquare(
+                        changes.data ?? initialColor,
+                        'Accent color',
+                      ),
+                    ],
+                  ),
                 );
         } else {
           return const CircularProgressIndicator();
